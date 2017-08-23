@@ -1,12 +1,14 @@
-baseURL = "http://www.emadelsaid.com"
+baseURL = "/"
 languageCode = "en-us"
 title = "Emad Elsaid"
 theme = "cactus"
+publishDir = "../"
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
 disqusShortname = ""
+paginate = 20
 
 [params]
 	name = "Emad Elsaid"
@@ -18,15 +20,15 @@ disqusShortname = ""
 
 	# Integrate Javascript files or stylesheets by adding the url to the external assets or by
 	# linking local files with their path relative to the static folder, e.g. "css/styles.css"
-	customCSS = []
+	customCSS = ["css/custom_style.css"]
 	customJS  = []
 
 	# The variables below are optionally too and can be used to
 	# translate or customize each string of the theme.
 
 	# Navigation links
-	home = ""
-	subscribe = ""
+	home = "All Articles"
+	subscribe = "RSS"
 	# Pagination links
 	olderPosts = ""
 	newerPosts = ""
@@ -42,8 +44,8 @@ disqusShortname = ""
 
 	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
 	iconFont = "mono-social"
-    # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
-    socialIconStyle = "circle"
+  # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+  socialIconStyle = "rounded"
 
 # Add additional social link entries underneath
 [social]
