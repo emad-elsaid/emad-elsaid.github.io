@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Emad Elsaid">
+<meta name="description" content="Ruby/Go Web Developer">
+<meta name="generator" content="Hugo 0.26" />
+<title>Social stream review</title>
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/highlight.css">
+
+<link rel="stylesheet" href="/css/custom_style.css">
+
+
+
+<link rel="stylesheet" href="/css/monosocialiconsfont.css">
+
+
+
+<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Emad Elsaid" />
+
+
+<meta property="og:title" content="Social stream review" />
+<meta property="og:description" content="Social stream is a gem that acts as a base for your social network rails application, if you&rsquo;re building a social network application, basically it is a rails plugin, a set of models, controllers, views and built on the famous authentication gem &ldquo;devise&rdquo;.
+I started using social stream when i was hired for Zoser AG, a company that builds a Geographical social network, and they where using social stream as their application base." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2015-01-16-social-stream/" />
+
+
+
+<meta property="article:published_time" content="2015-01-16T18:38:29&#43;02:00"/>
+<meta property="article:modified_time" content="2015-01-16T18:38:29&#43;02:00"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Social stream review">
+<meta itemprop="description" content="Social stream is a gem that acts as a base for your social network rails application, if you&rsquo;re building a social network application, basically it is a rails plugin, a set of models, controllers, views and built on the famous authentication gem &ldquo;devise&rdquo;.
+I started using social stream when i was hired for Zoser AG, a company that builds a Geographical social network, and they where using social stream as their application base.">
+
+
+<meta itemprop="dateModified" content="2015-01-16T18:38:29&#43;02:00" />
+<meta itemprop="wordCount" content="390">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Social stream review"/>
+<meta name="twitter:description" content="Social stream is a gem that acts as a base for your social network rails application, if you&rsquo;re building a social network application, basically it is a rails plugin, a set of models, controllers, views and built on the famous authentication gem &ldquo;devise&rdquo;.
+I started using social stream when i was hired for Zoser AG, a company that builds a Geographical social network, and they where using social stream as their application base."/>
+<meta name="twitter:site" content="@https://www.twitter.com/emad__elsaid"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='/'> <span class="arrow">←</span>All Articles</a>
+	
+
+	
+
+	
+		<a class="cta" href="/index.xml">RSS</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Social stream review</h1>
+        <h2 class="headline">
+        January 16, 2015
+        <br>
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        <p><a href="http://social-stream.dit.upm.es/">Social stream</a> is a gem that acts as a base for your social network rails application, if you&rsquo;re building a social network application, basically it is a rails plugin, a set of models, controllers, views and built on the famous authentication gem &ldquo;devise&rdquo;.</p>
+
+<p>I started using social stream when i was hired for <a href="http://www.zoser.com">Zoser AG</a>, a company that builds a Geographical social network, and they where using social stream as their application base.</p>
+
+<p>Well, my impression at the first glance was <a href="https://github.com/ging/social_stream/wiki/Social-Stream-Base-database-schema">WOW</a>, they did a great job, thought of a lot of details, how groups, users, pages and other actors will behave, and how posts, checkins, images and other users activities will be stored and a lot of other great things.</p>
+
+<p><img src="/images/good-job.jpg" alt="" /></p>
+
+<p>After some digging i started the WTF state, well the idea is good but their implementation is so tights that forces you on certain architecture, other problems is the cleanness of the code, I sometimes get across some weird behavior and after some digging and tracing and banging my head against the wall i start to realize that social stream is the real problem in here, and to my surprise when i search the code i find it a known bug and the fix is there but no one did it for some reason.</p>
+
+<p><img src="/images/wtf-code.jpg" alt="" /></p>
+
+<p>Other problems with social stream that it is a really heavy gem, if you tried to start your project, run your specs it will be like hell, very looooong startup time + your application logic + jruby heavy startup, you&rsquo;ll stuck in a 2-5 mins startup time depends on your machine specs.</p>
+
+<p>Another problem is the <a href="https://github.com/ging/social_stream/commits/master">last commit</a> to the official repository is from 5 jun 2014, so apparently they abandoned it to the eagles to eat it.</p>
+
+<p>The last problem is when you start to realize the problem with it, you won&rsquo;t we able to get rid of it as your application will be to stick to it&rsquo;s architecture so your options are :</p>
+
+<ol>
+<li>Just keep going with it and fix and maintain your own version</li>
+<li>Build your app from the start without depending on it.</li>
+</ol>
+
+<p>And both of them are costy and will get you really upset.</p>
+
+<p>So my advice is, use it if you&rsquo;re prototyping your app, but don&rsquo;t use it in your long term development application plan it&rsquo;ll be like hell.</p>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="https://twitter.com/emad__elsaid">
+    <img class="avatar" src="/images/avatar.png">
+    <div>
+        <span class="dark">Emad Elsaid</span>
+        <span>Software Engineer, Ruby/Go Web Developer</span>
+    </div>
+    </a>
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=%2fposts%2f2015-01-16-social-stream%2f - Social%20stream%20review by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/posts/2016-05-31-deploy-rails-application-with-docker-compose-and-capistrano/">Deploy rails application with docker compose and capistrano<aside class="dates">May 31 2016</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/2016-02-28-learning-chess/">learning chess<aside class="dates">Feb 28 2016</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/2016-02-23-integerating-jekyll-and-octopress-in-emacs/">Integerating Jekyll and Octopress in Emacs<aside class="dates">Feb 23 2016</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/2015-03-23-rails-accepts_nested_attributes-for-polymorphic-relation-solution/">Rails Accepts_nested_attributes for polymorphic relation solution<aside class="dates">Mar 23 2015</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.facebook.com/emad.elsaid.hamed">
+        roundedfacebook
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/emad-elsaid">
+        roundedgithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/emad__elsaid">
+        roundedtwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2017 Emad Elsaid
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>

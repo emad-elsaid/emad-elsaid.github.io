@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Emad Elsaid</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Emad Elsaid</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 May 2016 17:57:18 +0200</lastBuildDate>
+    
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deploy rails application with docker compose and capistrano</title>
+      <link>/posts/2016-05-31-deploy-rails-application-with-docker-compose-and-capistrano/</link>
+      <pubDate>Tue, 31 May 2016 17:57:18 +0200</pubDate>
+      
+      <guid>/posts/2016-05-31-deploy-rails-application-with-docker-compose-and-capistrano/</guid>
+      <description>What do we have? In this article I will assume we have a ruby on rails application that is using a database to store some data, and capistrano for deployment and you want to deploy in on your server but instead of deploying directly on your server you want to dockerize the whole project to give it a separate environment and keep it away from your other applications.
+Why do we dockerize a rails application?</description>
+    </item>
+    
+    <item>
+      <title>learning chess</title>
+      <link>/posts/2016-02-28-learning-chess/</link>
+      <pubDate>Sun, 28 Feb 2016 20:47:38 +0100</pubDate>
+      
+      <guid>/posts/2016-02-28-learning-chess/</guid>
+      <description>I always wanted to play chess, it seems always hard to me to win a game, and I NEVER WON, even when i&amp;rsquo;m playing with a level 1 computer AI opponent.
+Couple weeks ago i decided to re-learn chess, and as i discover something new i&amp;rsquo;ll update this post, every video, article and resource i&amp;rsquo;ll read will be added in here.
+The platform first thing i was searching for is a FREE platform to play chess, and by &amp;ldquo;platform&amp;rdquo; i mean a website, mobile apps for oth android and iphone and a good community and maybe some learning resource that help kick me in the game.</description>
+    </item>
+    
+    <item>
+      <title>Integerating Jekyll and Octopress in Emacs</title>
+      <link>/posts/2016-02-23-integerating-jekyll-and-octopress-in-emacs/</link>
+      <pubDate>Tue, 23 Feb 2016 21:30:44 +0100</pubDate>
+      
+      <guid>/posts/2016-02-23-integerating-jekyll-and-octopress-in-emacs/</guid>
+      <description>I started using emacs couple weeks ago and i have to say that i&amp;rsquo;m amazed by how this editor is working, Emacs VS VIM war isn&amp;rsquo;t coming from nowhere after all.
+one thing that annoys me is that i stopped blogging for a long time, if you checked the last blog post, it&amp;rsquo;s been a year since the last one.
+so I had an idea, what if i made blogging more comforting for me?</description>
+    </item>
+    
+    <item>
+      <title>Rails Accepts_nested_attributes for polymorphic relation solution</title>
+      <link>/posts/2015-03-23-rails-accepts_nested_attributes-for-polymorphic-relation-solution/</link>
+      <pubDate>Mon, 23 Mar 2015 11:53:44 +0200</pubDate>
+      
+      <guid>/posts/2015-03-23-rails-accepts_nested_attributes-for-polymorphic-relation-solution/</guid>
+      <description>yesterday i faced a problem with my rails application, my models was as follows
+class Vehicle &amp;lt; ActiveRecord::Base MOVABLES = [:car, :bus, :plane] belongs_to :movable, polymorphic: true, dependent: :destroy, required: true, autosave: true accepts_nested_attributes_for :movable end  class Car &amp;lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  class Bus &amp;lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  class Plane &amp;lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  so, when i try to create a Veihcle with nested attributes for the movable it complain with error &amp;ldquo;are you trying to build a polymorphic relation?</description>
+    </item>
+    
+    <item>
+      <title>Social stream review</title>
+      <link>/posts/2015-01-16-social-stream/</link>
+      <pubDate>Fri, 16 Jan 2015 18:38:29 +0200</pubDate>
+      
+      <guid>/posts/2015-01-16-social-stream/</guid>
+      <description>Social stream is a gem that acts as a base for your social network rails application, if you&amp;rsquo;re building a social network application, basically it is a rails plugin, a set of models, controllers, views and built on the famous authentication gem &amp;ldquo;devise&amp;rdquo;.
+I started using social stream when i was hired for Zoser AG, a company that builds a Geographical social network, and they where using social stream as their application base.</description>
+    </item>
+    
+  </channel>
+</rss>

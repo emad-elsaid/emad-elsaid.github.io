@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Emad Elsaid">
+<meta name="description" content="Ruby/Go Web Developer">
+<meta name="generator" content="Hugo 0.26" />
+<title>Rails Accepts_nested_attributes for polymorphic relation solution</title>
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/highlight.css">
+
+<link rel="stylesheet" href="/css/custom_style.css">
+
+
+
+<link rel="stylesheet" href="/css/monosocialiconsfont.css">
+
+
+
+<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Emad Elsaid" />
+
+
+<meta property="og:title" content="Rails Accepts_nested_attributes for polymorphic relation solution" />
+<meta property="og:description" content="yesterday i faced a problem with my rails application, my models was as follows
+class Vehicle &lt; ActiveRecord::Base MOVABLES = [:car, :bus, :plane] belongs_to :movable, polymorphic: true, dependent: :destroy, required: true, autosave: true accepts_nested_attributes_for :movable end  class Car &lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  class Bus &lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  class Plane &lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  so, when i try to create a Veihcle with nested attributes for the movable it complain with error &ldquo;are you trying to build a polymorphic relation?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2015-03-23-rails-accepts_nested_attributes-for-polymorphic-relation-solution/" />
+
+
+
+<meta property="article:published_time" content="2015-03-23T11:53:44&#43;02:00"/>
+<meta property="article:modified_time" content="2015-03-23T11:53:44&#43;02:00"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Rails Accepts_nested_attributes for polymorphic relation solution">
+<meta itemprop="description" content="yesterday i faced a problem with my rails application, my models was as follows
+class Vehicle &lt; ActiveRecord::Base MOVABLES = [:car, :bus, :plane] belongs_to :movable, polymorphic: true, dependent: :destroy, required: true, autosave: true accepts_nested_attributes_for :movable end  class Car &lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  class Bus &lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  class Plane &lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  so, when i try to create a Veihcle with nested attributes for the movable it complain with error &ldquo;are you trying to build a polymorphic relation?">
+
+
+<meta itemprop="dateModified" content="2015-03-23T11:53:44&#43;02:00" />
+<meta itemprop="wordCount" content="394">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Rails Accepts_nested_attributes for polymorphic relation solution"/>
+<meta name="twitter:description" content="yesterday i faced a problem with my rails application, my models was as follows
+class Vehicle &lt; ActiveRecord::Base MOVABLES = [:car, :bus, :plane] belongs_to :movable, polymorphic: true, dependent: :destroy, required: true, autosave: true accepts_nested_attributes_for :movable end  class Car &lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  class Bus &lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  class Plane &lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  so, when i try to create a Veihcle with nested attributes for the movable it complain with error &ldquo;are you trying to build a polymorphic relation?"/>
+<meta name="twitter:site" content="@https://www.twitter.com/emad__elsaid"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='/'> <span class="arrow">←</span>All Articles</a>
+	
+
+	
+
+	
+		<a class="cta" href="/index.xml">RSS</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Rails Accepts_nested_attributes for polymorphic relation solution</h1>
+        <h2 class="headline">
+        March 23, 2015
+        <br>
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        <p>yesterday i faced a problem with my rails application, my models was as follows</p>
+
+<pre><code class="language-ruby">class Vehicle &lt; ActiveRecord::Base
+  MOVABLES = [:car, :bus, :plane]
+  belongs_to :movable, polymorphic: true, dependent: :destroy, required: true, autosave: true
+  accepts_nested_attributes_for :movable
+end
+</code></pre>
+
+<pre><code class="language-ruby">class Car &lt; ActiveRecord::Base
+  has_one :vehicle, dependent: :destroy, as: :movable
+end
+</code></pre>
+
+<pre><code class="language-ruby">class Bus &lt; ActiveRecord::Base
+  has_one :vehicle, dependent: :destroy, as: :movable
+end
+</code></pre>
+
+<pre><code class="language-ruby">class Plane &lt; ActiveRecord::Base
+  has_one :vehicle, dependent: :destroy, as: :movable
+end
+</code></pre>
+
+<p>so, when i try to create a Veihcle with nested attributes for the <code>movable</code> it complain
+with error &ldquo;are you trying to build a polymorphic relation?&rdquo; and i thought it will continue
+my code was as follows</p>
+
+<pre><code class="language-ruby">Veihcle.create! name: 'my car', movable_type: 'Car', movable_attributes: { color: red }
+</code></pre>
+
+<p>the previous code should create a Veihcle with extended attributes of a car with color = red,
+so i had to google first and guess what is the first thing to find?, Yup it is <a href="http://http://stackoverflow.com/questions/3969025/accepts-nested-attributes-for-with-belongs-to-polymorphic">Stackoverflow</a></p>
+
+<p>the highly rated solution didn&rsquo;t work for me :</p>
+
+<pre><code class="language-ruby">class Job &lt;ActiveRecord::Base
+  belongs_to :client, :polymorphic=&gt;:true
+  attr_accessible :client_attributes
+  accepts_nested_attributes_for :client
+
+  def attributes=(attributes = {})
+    self.client_type = attributes[:client_type]
+    super
+  end
+
+  def client_attributes=(attributes)
+    some_client = self.client_type.constantize.find_or_initilize_by_id(self.client_id)
+    some_client.attributes = attributes
+    self.client = some_client
+  end
+end
+</code></pre>
+
+<p>so i tried this solution</p>
+
+<pre><code class="language-ruby">class Job &lt;ActiveRecord::Base
+  belongs_to :client, :polymorphic=&gt;:true, :autosave=&gt;true
+  accepts_nested_attributes_for :client
+
+  def attributes=(attributes = {})
+    self.client_type = attributes[:client_type]
+    super
+  end
+
+  def client_attributes=(attributes)
+    self.client = eval(type).find_or_initialize_by_id(attributes.delete(:client_id)) if client_type.valid?
+  end
+end
+</code></pre>
+
+<p>and i had to modify it to suite my code like so</p>
+
+<pre><code class="language-ruby">class Vehicle &lt; ActiveRecord::Base
+  MOVABLES = [:car, :bus, :plane]
+  belongs_to :movable, polymorphic: true, dependent: :destroy, required: true, autosave: true
+  accepts_nested_attributes_for :movable
+
+  def attributes=(attributes = {})
+    self.movable_type = attributes[:movable_type]
+    super
+  end
+
+  def movable_attributes=(attributes)
+    self.movable = eval(type).find_or_initialize_by_id(attributes.delete(:movable_id)) if movable_type.valid?
+  end
+end
+</code></pre>
+
+<p>but yeah, that didn&rsquo;t work either so i got the idea from the previous code <code>movable_attributes=</code> is the method that is invoked
+when assigning the the mobable_attributes hash, so i have to override it to create/update the current child as follows</p>
+
+<pre><code class="language-ruby">class Vehicle &lt; ActiveRecord::Base
+  MOVABLES = [:car, :bus, :plane]
+  belongs_to :movable, polymorphic: true, dependent: :destroy, required: true, autosave: true
+  accepts_nested_attributes_for :movable
+
+  def movable_attributes=(attributes)
+    if MOVABLES.include?(movable_type.underscore.to_sym)
+      self.movable ||= self.movable_type.constantize.new
+      self.movable.assign_attributes(attributes)
+    end
+  end
+end
+</code></pre>
+
+<p>that will create a movable object if it doesn&rsquo;t exist, and it&rsquo;ll update it in case it
+already exists.</p>
+
+<p>i wish rails would behave like this by default, and i have no idea why it doesn&rsquo;t do that as it is
+a trivial solution.</p>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="https://twitter.com/emad__elsaid">
+    <img class="avatar" src="/images/avatar.png">
+    <div>
+        <span class="dark">Emad Elsaid</span>
+        <span>Software Engineer, Ruby/Go Web Developer</span>
+    </div>
+    </a>
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=%2fposts%2f2015-03-23-rails-accepts_nested_attributes-for-polymorphic-relation-solution%2f - Rails%20Accepts_nested_attributes%20for%20polymorphic%20relation%20solution by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/posts/2016-05-31-deploy-rails-application-with-docker-compose-and-capistrano/">Deploy rails application with docker compose and capistrano<aside class="dates">May 31 2016</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/2016-02-28-learning-chess/">learning chess<aside class="dates">Feb 28 2016</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/2016-02-23-integerating-jekyll-and-octopress-in-emacs/">Integerating Jekyll and Octopress in Emacs<aside class="dates">Feb 23 2016</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/2015-01-16-social-stream/">Social stream review<aside class="dates">Jan 16 2015</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.facebook.com/emad.elsaid.hamed">
+        roundedfacebook
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/emad-elsaid">
+        roundedgithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/emad__elsaid">
+        roundedtwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2017 Emad Elsaid
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>
