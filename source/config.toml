@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "http://www.emadelsaid.com/"
 languageCode = "en-us"
 title = "Emad Elsaid"
 theme = "cactus"

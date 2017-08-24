@@ -3,49 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/posts/2016-05-31-deploy-rails-application-with-docker-compose-and-capistrano/</loc>
+    <loc>http://www.emadelsaid.com/posts/2016-05-31-deploy-rails-application-with-docker-compose-and-capistrano/</loc>
     <lastmod>2016-05-31T17:57:18+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/2016-02-28-learning-chess/</loc>
+    <loc>http://www.emadelsaid.com/posts/2016-02-28-learning-chess/</loc>
     <lastmod>2016-02-28T20:47:38+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/2016-02-23-integerating-jekyll-and-octopress-in-emacs/</loc>
+    <loc>http://www.emadelsaid.com/posts/2016-02-23-integerating-jekyll-and-octopress-in-emacs/</loc>
     <lastmod>2016-02-23T21:30:44+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/2015-03-23-rails-accepts_nested_attributes-for-polymorphic-relation-solution/</loc>
+    <loc>http://www.emadelsaid.com/posts/2015-03-23-rails-accepts_nested_attributes-for-polymorphic-relation-solution/</loc>
     <lastmod>2015-03-23T11:53:44+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/2015-01-16-social-stream/</loc>
+    <loc>http://www.emadelsaid.com/posts/2015-01-16-social-stream/</loc>
     <lastmod>2015-01-16T18:38:29+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>http://www.emadelsaid.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>http://www.emadelsaid.com/</loc>
     <lastmod>2016-05-31T17:57:18+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/posts/</loc>
+    <loc>http://www.emadelsaid.com/posts/</loc>
     <lastmod>2016-05-31T17:57:18+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>http://www.emadelsaid.com/tags/</loc>
     <priority>0</priority>
   </url>
   
