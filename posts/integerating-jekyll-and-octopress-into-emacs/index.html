@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Emad Elsaid">
+<meta name="description" content="Ruby/Go Web Developer">
+<meta name="generator" content="Hugo 0.26" />
+<title>Integerating Jekyll and Octopress in Emacs</title>
+<link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/highlight.css">
+
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/custom_style.css">
+
+
+
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/monosocialiconsfont.css">
+
+
+
+<link href="http://www.emadelsaid.com/index.xml" rel="alternate" type="application/rss+xml" title="Emad Elsaid" />
+
+
+<meta property="og:title" content="Integerating Jekyll and Octopress in Emacs" />
+<meta property="og:description" content="I started using emacs couple weeks ago and i have to say that i&rsquo;m amazed by how this editor is working, Emacs VS VIM war isn&rsquo;t coming from nowhere after all.
+one thing that annoys me is that i stopped blogging for a long time, if you checked the last blog post, it&rsquo;s been a year since the last one.
+so I had an idea, what if i made blogging more comforting for me?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.emadelsaid.com/posts/integerating-jekyll-and-octopress-into-emacs/" />
+
+
+
+<meta property="article:published_time" content="2016-02-23T21:30:44&#43;01:00"/>
+<meta property="article:modified_time" content="2016-02-23T21:30:44&#43;01:00"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Integerating Jekyll and Octopress in Emacs">
+<meta itemprop="description" content="I started using emacs couple weeks ago and i have to say that i&rsquo;m amazed by how this editor is working, Emacs VS VIM war isn&rsquo;t coming from nowhere after all.
+one thing that annoys me is that i stopped blogging for a long time, if you checked the last blog post, it&rsquo;s been a year since the last one.
+so I had an idea, what if i made blogging more comforting for me?">
+
+
+<meta itemprop="dateModified" content="2016-02-23T21:30:44&#43;01:00" />
+<meta itemprop="wordCount" content="410">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Integerating Jekyll and Octopress in Emacs"/>
+<meta name="twitter:description" content="I started using emacs couple weeks ago and i have to say that i&rsquo;m amazed by how this editor is working, Emacs VS VIM war isn&rsquo;t coming from nowhere after all.
+one thing that annoys me is that i stopped blogging for a long time, if you checked the last blog post, it&rsquo;s been a year since the last one.
+so I had an idea, what if i made blogging more comforting for me?"/>
+<meta name="twitter:site" content="@https://www.twitter.com/emad__elsaid"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='http://www.emadelsaid.com/'> <span class="arrow">←</span>All Articles</a>
+	
+
+	
+
+	
+		<a class="cta" href="http://www.emadelsaid.com/index.xml">RSS</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Integerating Jekyll and Octopress in Emacs</h1>
+        <h2 class="headline">
+        February 23, 2016
+        <br>
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        <p>I started using emacs couple weeks ago and i have to say that i&rsquo;m amazed by how
+this editor is working, Emacs VS VIM war isn&rsquo;t coming from nowhere after all.</p>
+
+<p>one thing that annoys me is that i stopped blogging for a long time, if you checked the last
+blog post, it&rsquo;s been a year since the last one.</p>
+
+<p>so I had an idea, what if i made blogging more comforting for me? maybe integerating my
+blogging platform (jekyll + octopress + git) to Emacs, aaaand there was a problem,
+the current jekyll (hyde.el) looks weired to me that i couldn&rsquo;t even try to use it.</p>
+
+<p>I started writing my own integeration, to create a post and publish it I can write simple
+functions to execute these command from Emacs into my blog directory, that&rsquo;s not so hard right?</p>
+
+<p>nooooo, for a ELisp noob like me it&rsquo;s like hell, i had to Google how to define a variable,
+see? it&rsquo;s hell, and i was stuck for a while untill i knew that <code>C-x X-e</code> doesn&rsquo;t evaulate
+the whole buffer, yeah, I&rsquo;m a total noob.</p>
+
+<p>after a lot of sweat, blood and WTF moments i implemented 3 methods:</p>
+
+<ol>
+<li>the first one <code>octopress-post</code> is to create new post interactively and open the generated file in Emacs.</li>
+<li><code>octopress-dir</code> to open <code>_posts</code> directory, for fast access to posts and so.</li>
+<li><code>octopress-build-and-deploy</code> to build the blog with jekyll then deploy it with octopress to github pages</li>
+</ol>
+
+<p>the 3 functions are simple implementation, you should not expect much from my Elisp code, it&rsquo;s a simple
+straight forward implementation and there is a lot of room for enhancements.</p>
+
+<p>This post is the my first post from Emacs, Hope it works, wish me luck,</p>
+
+<p>Oh I forgot, here is my code, I just pasted it to my <code>~/.emacs</code> and execute it with <code>M-x RET &lt;function-name&gt;</code></p>
+
+<pre><code class="language-elisp">
+(defvar octopress-path &quot;/Users/emad/bitbucket/blazeeboy&quot;)
+(defun octopress-post (post-name)
+  (interactive &quot;sNew post name: &quot;)
+  (message &quot;Creating new post: %s&quot; post-name)
+  (defvar post-path
+    (shell-command-to-string
+     (concat &quot;cd &quot; octopress-path &quot;; octopress new post &quot; post-name)
+     )
+    )
+  (find-file-existing (trim-string post-path))
+  )
+
+(defun octopress-dir ()
+  (interactive)
+  (find-file-existing
+   (concat octopress-path &quot;/_posts&quot;))
+  )
+
+(defun octopress-build-and-deploy ()
+  (interactive)
+  (async-shell-command (concat &quot;cd &quot; octopress-path &quot;; jekyll build; octopress deploy&quot;))
+  )
+
+;;; third party code
+;;; http://ergoemacs.org/emacs/modernization_elisp_lib_problem.html
+(defun trim-string (string)
+  &quot;Remove white spaces in beginning and ending of STRING.
+White space here is any of: space, tab, emacs newline (line feed, ASCII 10).&quot;
+  (replace-regexp-in-string &quot;\\`[ \t\n]*&quot; &quot;&quot; (replace-regexp-in-string &quot;[ \t\n]*\\'&quot; &quot;&quot; string))
+  )
+</code></pre>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="https://twitter.com/emad__elsaid">
+    <img class="avatar" src="http://www.emadelsaid.com/images/avatar.png">
+    <div>
+        <span class="dark">Emad Elsaid</span>
+        <span>Software Engineer, Ruby/Go Web Developer</span>
+    </div>
+    </a>
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fwww.emadelsaid.com%2fposts%2fintegerating-jekyll-and-octopress-into-emacs%2f - Integerating%20Jekyll%20and%20Octopress%20in%20Emacs by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/posts/deploy-rails-application-with-docker-compose-and-capistrano/">Deploy rails application with docker compose and capistrano<aside class="dates">May 31 2016</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/rails-accepts-nested-attributes-for-polymorphic-relation-solution/">Rails Accepts_nested_attributes for polymorphic relation solution<aside class="dates">Mar 23 2015</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.facebook.com/emad.elsaid.hamed">
+        roundedfacebook
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/emad-elsaid">
+        roundedgithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/emad__elsaid">
+        roundedtwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2017 Emad Elsaid
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://www.emadelsaid.com/js/main.js"></script>
+<script src="http://www.emadelsaid.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>

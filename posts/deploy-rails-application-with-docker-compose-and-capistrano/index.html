@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Emad Elsaid">
+<meta name="description" content="Ruby/Go Web Developer">
+<meta name="generator" content="Hugo 0.26" />
+<title>Deploy rails application with docker compose and capistrano</title>
+<link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/highlight.css">
+
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/custom_style.css">
+
+
+
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/monosocialiconsfont.css">
+
+
+
+<link href="http://www.emadelsaid.com/index.xml" rel="alternate" type="application/rss+xml" title="Emad Elsaid" />
+
+
+<meta property="og:title" content="Deploy rails application with docker compose and capistrano" />
+<meta property="og:description" content="What do we have? In this article I will assume we have a ruby on rails application that is using a database to store some data, and capistrano for deployment and you want to deploy in on your server but instead of deploying directly on your server you want to dockerize the whole project to give it a separate environment and keep it away from your other applications.
+Why do we dockerize a rails application?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.emadelsaid.com/posts/deploy-rails-application-with-docker-compose-and-capistrano/" />
+
+
+
+<meta property="article:published_time" content="2016-05-31T17:57:18&#43;02:00"/>
+<meta property="article:modified_time" content="2016-05-31T17:57:18&#43;02:00"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Deploy rails application with docker compose and capistrano">
+<meta itemprop="description" content="What do we have? In this article I will assume we have a ruby on rails application that is using a database to store some data, and capistrano for deployment and you want to deploy in on your server but instead of deploying directly on your server you want to dockerize the whole project to give it a separate environment and keep it away from your other applications.
+Why do we dockerize a rails application?">
+
+
+<meta itemprop="dateModified" content="2016-05-31T17:57:18&#43;02:00" />
+<meta itemprop="wordCount" content="1526">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Deploy rails application with docker compose and capistrano"/>
+<meta name="twitter:description" content="What do we have? In this article I will assume we have a ruby on rails application that is using a database to store some data, and capistrano for deployment and you want to deploy in on your server but instead of deploying directly on your server you want to dockerize the whole project to give it a separate environment and keep it away from your other applications.
+Why do we dockerize a rails application?"/>
+<meta name="twitter:site" content="@https://www.twitter.com/emad__elsaid"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='http://www.emadelsaid.com/'> <span class="arrow">←</span>All Articles</a>
+	
+
+	
+
+	
+		<a class="cta" href="http://www.emadelsaid.com/index.xml">RSS</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Deploy rails application with docker compose and capistrano</h1>
+        <h2 class="headline">
+        May 31, 2016
+        <br>
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        
+
+<h2 id="what-do-we-have">What do we have?</h2>
+
+<p>In this article I will assume we have a ruby on rails application that is using a database to store some data, and capistrano for deployment and you want to deploy in on your server but instead of deploying directly on your server you want to dockerize the whole project to give it a separate environment and keep it away from your other applications.</p>
+
+<h2 id="why-do-we-dockerize-a-rails-application">Why do we dockerize a rails application?</h2>
+
+<p>Being here probably you already know, docker is a good way to separate give your application a separate environement to work on, you can limit resources and limit access to filesystem, also using docker means your server reuquirements is only the <code>Dockerfile</code> and on your server you don&rsquo;t need anything axcept <code>git</code> and <code>docker</code> installed, this makes it easier for your to destroy the whole server and you still can get it up by a single command <code>docker-compose up</code> as long as you have your data volumes in place.</p>
+
+<p>Also for dockerized applications it is easier to migrate to other server, you&rsquo;ll need to move your data directories or data volumes to the same path on the new server and then execute <code>docker-compose up</code> on the new server and your whole stack of application and database and any other services is up at an instance.</p>
+
+<h2 id="application-requirements">Application requirements</h2>
+
+<p>Lets make this tutorial as simple as possible, let&rsquo;s assume we have a rails application, and it needs a postgres server, nothing else, no background jobs, no redis, no elasticsearch, actually after this tutorial it will be easier for you to add these services to the stack without much effort.</p>
+
+<h2 id="dockerizing-the-application">Dockerizing the application</h2>
+
+<p>first we&rsquo;ll need to add a <code>Dockerfile</code> for your application, a <code>Dockerfile</code> is a file which contain your configuration for how to prepare a machine for your application and how to run the main process, and it should depend on a base image, you should use the nearest base image to your requirements, for me I found the ruby official image suitable and it has 3 variats i used the smallest one <code>ruby:slim</code></p>
+
+<p>So we&rsquo;ll do the following:</p>
+
+<ol>
+<li>use ruby slim image</li>
+<li>specify a locale for the image (this is optional but it removes a lot of warning message)</li>
+<li>install nodejs and our postgres-client packages and any other packages we need.</li>
+<li>create a directory for the application in <code>/app</code></li>
+<li>copy our <code>Gemfile</code> and <code>Gemfile.lock</code> to the temperory directory and install our gems with <code>bundle install</code></li>
+<li>copy all application files</li>
+<li>open the application port, by default it&rsquo;s 3000 if you changed it you should change this line</li>
+<li>set command that will be executed when the container get up to the rails server command</li>
+</ol>
+
+<pre><code class="language-bash">FROM ruby:2.3.0-slim
+ENV LANG=C.UTF-8
+RUN apt-get update &amp;&amp; apt-get install -qq -y build-essential nodejs libopencv-dev libpq-dev postgresql-client-9.5 imagemagick --fix-missing --no-install-recommends
+
+ENV app /app
+RUN mkdir -p $app
+ENV INSTALL_PATH $app
+ENV RAILS_ENV production
+EXPOSE 3000
+CMD foreman start
+
+COPY Gemfile* /tmp/
+WORKDIR /tmp
+RUN bundle install --without=&quot;development test&quot; -j4
+
+WORKDIR $app
+ADD . $app
+RUN mkdir -p tmp/pids
+</code></pre>
+
+<p><strong>Note:</strong> we copied <code>Gemfile</code> first before the application because docker is versioning each step, so if you didn&rsquo;t modify your <code>Gemfile</code> it won&rsquo;t re-install the gems and will use the cached version instead, that speed building the image, if you just copied the application each time, docker will see that there is a change in the step so it&rsquo;ll install the gems form scratch each time, and as the image is always a clean machine it will download and install the gems, and for native extensions it will recompile it, and we all know how <code>nokojiri</code> is a pain (and basically any other native extension gem).</p>
+
+<h2 id="specifying-your-services-in-docker-compose-yml">Specifying your services in <code>docker-compose.yml</code></h2>
+
+<p><code>docker-compose</code> is a tool provided by docker team to define images that works as a network, start and stop it together, and it works as a unit, as docker best practice is to run one process per container, and our application needs more than one process (rails application, postgres process), we&rsquo;ll need another container to hold our database process and link it to our application container.</p>
+
+<p>Our <code>docker-compose.yml</code> file could be in the following format:</p>
+
+<pre><code class="language-yaml">version: '2'
+services:
+  db:
+    image: &quot;postgres:9.5.2&quot;
+    restart: always
+    env_file:
+      - .env
+    expose:
+      - '5432'
+    volumes:
+      - /root/data/news/db:/var/lib/postgresql/data
+
+  web:
+    build: .
+    depends_on:
+      - db
+    links:
+      - db
+    volumes:
+      - /root/data/news/uploads:/app/public/system
+      - /tmp/news/assets:/app/public/assets
+    restart: always
+    ports:
+      - '127.0.0.1:3000:3000'
+    env_file:
+      - .env
+</code></pre>
+
+<p>In the previous file we defined 2 services each of them assigned a proper name:
+* web: for our main application service, it will  build the <code>Dockerfile</code> in the current directory <code>.</code>, it needs the other container to be up first as specified in <code>depends_on</code>, and links to the <code>db</code> container in the same network, also I linked 2 directories for a local directories, the uploads directory and the assets directory, so when you destroy an image and build a new one these are the olny directories that will be kept, also i set the <code>restart: always</code> to restart the machine whenever docker is restarted, and opened port 3000 to local machine only so that it will be accessible from an HTTP srever (nginx or so), if you wish to map the port to 80 and make it accessible from outside the machine you can replace it with <code>80:3000</code> and removing <code>127.0.0.1</code> will make it public, also we&rsquo;ll load an environment file <code>.env</code> which will be defined later.
+* db: a database container depends in <code>postgres</code> official image, it will open port <code>5432</code> to the other services inside thsi docker-compose network only ( this means you can make another docker-compose file with this port open and it won&rsquo;t conflict) and also it means that the database is not accessible form the host machine and could be accessed only from the <code>web</code> container, also mapped the data directory to local directory on host.</p>
+
+<h2 id="define-your-environment-file-env">Define your environment file <code>.env</code></h2>
+
+<p>we&rsquo;re having all of our secrets in one environement file for both containers as follows:</p>
+
+<pre><code class="language-bash">RAILS_ENV=production
+SECRET_KEY_BASE=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+DATABASE_NAME=production
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+DATABASE_HOST=db
+</code></pre>
+
+<ol>
+<li>RAILS_ENV: is the application environement, that is obvious.</li>
+<li>SECRET_KEY_BASE : a key used by rails to encrypt the session and othe stuff, please make sure that your <code>secrets.yml</code> file read it from <code>ENV[:SECRET_KEY_BASE]</code> for production.</li>
+<li>DATABASE_NAME : the application database name, make sure you read it fron <code>ENV</code> in your <code>database.yml</code> for production section.</li>
+<li>POSTGRES_USER : a variable needed by postgres image to define the user in image, also please use the same env variable in your <code>database.yml</code> production section.</li>
+<li>POSTGRES_PASSWORD : as postgres user.</li>
+<li>DATABASE_HOST : the database service name (it is defined as a dns record also for the docker-compose network), also please use it in your <code>database.yml</code>.</li>
+</ol>
+
+<p>so our <code>database.yml</code> file should read Env variables in production like the following</p>
+
+<pre><code class="language-yaml">production:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+  host: &lt;%= ENV['DATABASE_HOST'] %&gt;
+  database: &lt;%= ENV['DATABASE_NAME'] %&gt;
+  username: &lt;%= ENV['POSTGRES_USER'] %&gt;
+  password: &lt;%= ENV['POSTGRES_PASSWORD'] %&gt;
+</code></pre>
+
+<p>it&rsquo;s reading all most of the configuration fron our <code>ENV</code>, and these variables are passed from the <code>.env</code> by <code>docker-compose</code>, and it&rsquo;s only one <code>.env</code> file for all docker containers, so it&rsquo;s easier modify/create form your CI like jenkins.</p>
+
+<h2 id="testing-what-you-ve-done">Testing what you&rsquo;ve done</h2>
+
+<p>you can test this setup by issuing <code>docker-compose up</code> it should pull images and build yours and launch the stack, the only thing is that our database is not created yet, you can do that by isuing <code>rake db:setup</code> inside your web container like so <code>docker-compose run web rake db:setup</code>. You should be able to access your application from <code>http://localhost:3000</code>.</p>
+
+<h2 id="capistrano-integration">Capistrano integration</h2>
+
+<p>I created a set of tasks that is hooking to the capistrano deployment process and build your images and issue the up/down/restart command, you can use it from <a href="https://github.com/blazeeboy/capistrano-decompose">here</a>, so if you didn&rsquo;t <code>cap init</code> please do and now we should have <code>config/delpoy.rb</code> and <code>config/deploy/production.rb</code></p>
+
+<p>so you&rsquo;ll need to include <code>capistrano-decompose</code> to your gemfile <code>gem 'capistrano-decompose, require: false'</code> and <code>bundle install</code>, then add it to your <code>capfile</code>, <code>require 'capistrano/decompose'</code>, this will load the plugin to capistrano decpolyment flow, now you need to configure the plugin, either in the global <code>deploy.rb</code> to apply configuration to all environements or add environment specific deployment configuration to <code>config/deploy/production.rb</code> as follows:</p>
+
+<pre><code class="language-ruby">lock '3.5.0'
+
+set :application, 'application_name'
+set :repo_url, 'git@applicationhost.com/application_repo_name.git'
+set :deploy_to, &quot;/path/to/project/on/server/#{fetch(:application)}&quot;
+set :keep_releases, 1
+set :decompose_restart, [:web]
+set :decompose_web_service, :web
+set :decompose_rake_tasks, ['db:migrate', 'db:seed', 'assets:precompile']
+</code></pre>
+
+<p>in <code>decompose_rake_tasks</code> i always seed the database, and in my <code>seed.rb</code> I make sure that the seeded data is not inserted if it&rsquo;s already there, this is easier for me to modify and it&rsquo;ll be executed each deployment, before that if i needed to insert data to the database after the initial seed, I had to create a migration for it, now i reserve migration for structural changes and seed to insert new data as i need.</p>
+
+<p>now if you tried to <code>cap production deploy</code> you are good to go, your application will be deployed toa the server (make sure you install docker on your server of course), and it will be up on port 3000 as we specified, you can either change port to 80 in docker-compose.yml or add a http server like nginx to redirect traffic to this port for certain host.</p>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="https://twitter.com/emad__elsaid">
+    <img class="avatar" src="http://www.emadelsaid.com/images/avatar.png">
+    <div>
+        <span class="dark">Emad Elsaid</span>
+        <span>Software Engineer, Ruby/Go Web Developer</span>
+    </div>
+    </a>
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fwww.emadelsaid.com%2fposts%2fdeploy-rails-application-with-docker-compose-and-capistrano%2f - Deploy%20rails%20application%20with%20docker%20compose%20and%20capistrano by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/posts/integerating-jekyll-and-octopress-into-emacs/">Integerating Jekyll and Octopress in Emacs<aside class="dates">Feb 23 2016</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/rails-accepts-nested-attributes-for-polymorphic-relation-solution/">Rails Accepts_nested_attributes for polymorphic relation solution<aside class="dates">Mar 23 2015</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.facebook.com/emad.elsaid.hamed">
+        roundedfacebook
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/emad-elsaid">
+        roundedgithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/emad__elsaid">
+        roundedtwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2017 Emad Elsaid
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://www.emadelsaid.com/js/main.js"></script>
+<script src="http://www.emadelsaid.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>
