@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 May 2016 17:57:18 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jan 2018 04:44:27 +0100</lastBuildDate>
     
 	<atom:link href="http://www.emadelsaid.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bind Remote Server Port to Local Machine With SSH</title>
+      <link>http://www.emadelsaid.com/posts/bind-remote-server-port-to-local-machine-with-ssh/</link>
+      <pubDate>Mon, 08 Jan 2018 04:44:27 +0100</pubDate>
+      
+      <guid>http://www.emadelsaid.com/posts/bind-remote-server-port-to-local-machine-with-ssh/</guid>
+      <description>I have a VPS server that serves an application and a set of customer facing services like images server, analytics server and search server besides the main web server, but also I have some administrative services services like a database performace monitoring server called PgHero.
+that particular server is not visible to the outside world, it&#39;s there listening on port 8003 but the firewall doesn&#39;t allow connecting to that port from the outside world.</description>
+    </item>
     
     <item>
       <title>Deploy rails application with docker compose and capistrano</title>
