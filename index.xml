@@ -6,10 +6,20 @@
     <description>Recent content on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jan 2018 04:44:27 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jan 2018 15:32:48 +0100</lastBuildDate>
     
 	<atom:link href="http://www.emadelsaid.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Golang Bleve Experience</title>
+      <link>http://www.emadelsaid.com/posts/golang-bleve-experience/</link>
+      <pubDate>Sat, 13 Jan 2018 15:32:48 +0100</pubDate>
+      
+      <guid>http://www.emadelsaid.com/posts/golang-bleve-experience/</guid>
+      <description>I have a search engine for people profiles coming from wikipedia stored in my site, every person may have an english name or arabic name and also bilingual excerpt (the first 2 paragraphs about him from his wikipedia page),
+so I started my full text search engine, used golang and blevesearch package, in the beginning my search results were not up to my expectation, as I was storing name + excerpt as one text, so even if the person name is in the beginning of the text it doesn&amp;rsquo;t contribute to his order in the results, so it shows 10th or even 15th in the list of results.</description>
+    </item>
     
     <item>
       <title>Bind Remote Server Port to Local Machine With SSH</title>
