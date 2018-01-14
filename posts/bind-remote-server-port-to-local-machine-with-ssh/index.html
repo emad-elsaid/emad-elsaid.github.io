@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.31.1" />
+<meta name="generator" content="Hugo 0.32.4" />
 <title>Bind Remote Server Port to Local Machine With SSH</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -103,8 +103,7 @@ that port from the outside world.</p>
 <p>I just want me to be the only one to see it, so I bind that server port to my local machine with SSH and I can open http://localhost:8003
 to see the service as if it was working on my local machine with that command</p>
 
-<pre><code class="language-sh">
-ssh -L 8003:localhost:8003 user@serverip
+<pre><code class="language-sh">ssh -L 8003:localhost:8003 user@serverip
 </code></pre>
 
     </section>
@@ -203,6 +202,16 @@ ssh -L 8003:localhost:8003 user@serverip
 
 
 
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-112396214-1', 'auto');
+ga('send', 'pageview');
+</script>
 
 
 </body>
