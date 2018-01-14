@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.emadelsaid.com/posts/consistency-over-creativity/</loc>
+    <lastmod>2018-01-14T17:58:40+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.emadelsaid.com/posts/golang-bleve-experience/</loc>
     <lastmod>2018-01-13T15:32:48+01:00</lastmod>
   </url>
@@ -34,13 +39,13 @@
   
   <url>
     <loc>http://www.emadelsaid.com/</loc>
-    <lastmod>2018-01-13T15:32:48+01:00</lastmod>
+    <lastmod>2018-01-14T17:58:40+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.emadelsaid.com/posts/</loc>
-    <lastmod>2018-01-13T15:32:48+01:00</lastmod>
+    <lastmod>2018-01-14T17:58:40+01:00</lastmod>
     <priority>0</priority>
   </url>
   

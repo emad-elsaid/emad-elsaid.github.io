@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Jan 2018 15:32:48 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jan 2018 17:58:40 +0100</lastBuildDate>
     
 	<atom:link href="http://www.emadelsaid.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Consistency Over Creativity</title>
+      <link>http://www.emadelsaid.com/posts/consistency-over-creativity/</link>
+      <pubDate>Sun, 14 Jan 2018 17:58:40 +0100</pubDate>
+      
+      <guid>http://www.emadelsaid.com/posts/consistency-over-creativity/</guid>
+      <description>Consistency is doing the same thing in the same way everytime, in software engineering it means using same design pattern to accomplish the same task no matter who is doing the task or when he&amp;rsquo;s doing it.
+For example if you&amp;rsquo;re developing a new task, always looks for similar tasks that was done before, seek out the implementation, and do your new tasks in a similar way, use same directory structure, same naming convention, same patterns.</description>
+    </item>
     
     <item>
       <title>Golang Bleve Experience</title>
