@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jan 2018 23:01:46 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jan 2018 20:42:45 +0100</lastBuildDate>
     
 	<atom:link href="http://www.emadelsaid.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Projects Files Flame Graph</title>
+      <link>http://www.emadelsaid.com/posts/projects-files-flame-graph/</link>
+      <pubDate>Sun, 21 Jan 2018 20:42:45 +0100</pubDate>
+      
+      <guid>http://www.emadelsaid.com/posts/projects-files-flame-graph/</guid>
+      <description>Flame graphs are graphs of stack of steps over each other the define a call stack for an application, so an application probes your running application periodically and stores the call stack, then draw a graph out of it similar to the following:
+I have a project called Dirtree it takes a set of lines in this/unix/style/path/format/to/file.ext and output interactive graph of these file paths, using this tool with git ls-files you can see the whole project structure in one HTML page as a tree, similar to that</description>
+    </item>
     
     <item>
       <title>جينات توازن</title>
