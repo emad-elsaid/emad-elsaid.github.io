@@ -3,10 +3,10 @@ title: "Projects Files Flame Graph"
 date: 2018-01-21T20:42:45+01:00
 ---
 
-Flame graphs are graphs of stack of steps over each other the define a call
-stack for an application, so an application probes your running application
-periodically and stores the call stack, then draw a graph out of it similar to
-the following:
+Flame graphs are graphs of stack of steps over each other they define a call
+stack for an application over time, so an application probes your running
+process periodically and stores the call stack, then draw a graph out of it
+similar to the following:
 
 ![Flame graph](http://www.brendangregg.com/FlameGraphs/cpu-mysql-updated.svg "Interactive flame graph")
 
