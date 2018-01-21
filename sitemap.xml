@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.emadelsaid.com/posts/working-with-legacy-code/</loc>
+    <lastmod>2018-01-21T22:02:46+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.emadelsaid.com/posts/projects-files-flame-graph/</loc>
     <lastmod>2018-01-21T20:42:45+01:00</lastmod>
   </url>
@@ -49,13 +54,13 @@
   
   <url>
     <loc>http://www.emadelsaid.com/</loc>
-    <lastmod>2018-01-21T20:42:45+01:00</lastmod>
+    <lastmod>2018-01-21T22:02:46+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.emadelsaid.com/posts/</loc>
-    <lastmod>2018-01-21T20:42:45+01:00</lastmod>
+    <lastmod>2018-01-21T22:02:46+01:00</lastmod>
     <priority>0</priority>
   </url>
   
