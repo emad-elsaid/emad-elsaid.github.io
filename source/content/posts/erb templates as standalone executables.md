@@ -27,10 +27,10 @@ will output something similar to the following
 Today is : 2018-01-24 21:08:20 +0100
 ```
 
-As linux looks for [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) in
+As Linux looks for [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) in
 every executable file, then if this erb file given the executable permission and
 prepended by a shebang for erb it will be executed nearly the same way but
-without explictly specifying erb in the terminal, so first rename the file
+without explicitly specifying erb in the terminal, so first rename the file
 
 ```shell
 mv date.erb dateprinter
@@ -68,7 +68,7 @@ dateprinter
 So in that case your shell will look for executable file in the path, will find
 the dateprinter file, it'll try to figure out how to execute it with `exec` so
 it'll inspect for magic bytes, it'll find the shebang, so it'll pass the file
-the the apropriate interpreter `erb` and erb in that case will execute it and
+the the appropriate interpreter `erb` and erb in that case will execute it and
 had you the output.
 
 now lets do something useful with this idea, lets create a template that print
@@ -81,7 +81,7 @@ Bundle complete! 27 Gemfile dependencies, 109 gems now installed.
 Use `bundle info [gemname]` to see where a bundled gem is installed.
 ```
 
-so to get the apropriate line we need to but the output with `head` and `tail`
+so to get the appropriate line we need to but the output with `head` and `tail`
 as follows
 ```shell
 bundle --local | tail -n2 | head -n1
@@ -139,7 +139,7 @@ The final output will look like this
 Project Name: Web
 
 Direct Dependencies: 27
-Indirect Dpendencies: 109
+Indirect Dependencies: 109
 Direct Initializers:  5
 Initializers in Development Env: 119
 Initializers in Production Env: 117

@@ -117,10 +117,10 @@ files and output the result to the terminal.</p>
 <pre><code>Today is : 2018-01-24 21:08:20 +0100
 </code></pre>
 
-<p>As linux looks for <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a> in
+<p>As Linux looks for <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a> in
 every executable file, then if this erb file given the executable permission and
 prepended by a shebang for erb it will be executed nearly the same way but
-without explictly specifying erb in the terminal, so first rename the file</p>
+without explicitly specifying erb in the terminal, so first rename the file</p>
 
 <pre><code class="language-shell">mv date.erb dateprinter
 </code></pre>
@@ -157,7 +157,7 @@ you can execute it from anywhere by it&rsquo;s name like any other executable fi
 <p>So in that case your shell will look for executable file in the path, will find
 the dateprinter file, it&rsquo;ll try to figure out how to execute it with <code>exec</code> so
 it&rsquo;ll inspect for magic bytes, it&rsquo;ll find the shebang, so it&rsquo;ll pass the file
-the the apropriate interpreter <code>erb</code> and erb in that case will execute it and
+the the appropriate interpreter <code>erb</code> and erb in that case will execute it and
 had you the output.</p>
 
 <p>now lets do something useful with this idea, lets create a template that print
@@ -169,7 +169,7 @@ the number of dependencies for a rails application.</p>
 Use `bundle info [gemname]` to see where a bundled gem is installed.
 </code></pre>
 
-<p>so to get the apropriate line we need to but the output with <code>head</code> and <code>tail</code>
+<p>so to get the appropriate line we need to but the output with <code>head</code> and <code>tail</code>
 as follows</p>
 
 <pre><code class="language-shell">bundle --local | tail -n2 | head -n1
@@ -225,7 +225,7 @@ JPG: &lt;%= files_for('jpg').count %&gt; Files, &lt;%= size_for('jpg') / 1024 %&
 Project Name: Web
 
 Direct Dependencies: 27
-Indirect Dpendencies: 109
+Indirect Dependencies: 109
 Direct Initializers:  5
 Initializers in Development Env: 119
 Initializers in Production Env: 117
