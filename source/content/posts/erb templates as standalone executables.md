@@ -68,7 +68,7 @@ dateprinter
 So in that case your shell will look for executable file in the path, will find
 the dateprinter file, it'll try to figure out how to execute it with `exec` so
 it'll inspect for magic bytes, it'll find the shebang, so it'll pass the file
-the the appropriate interpreter `erb` and erb in that case will execute it and
+to the appropriate interpreter `erb` and erb in that case will execute it and
 had you the output.
 
 now lets do something useful with this idea, lets create a template that print
