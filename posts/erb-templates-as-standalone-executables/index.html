@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Emad Elsaid">
+<meta name="description" content="Ruby/Go Web Developer">
+<meta name="generator" content="Hugo 0.32.4" />
+<title>ERB Templates as Standalone Executables</title>
+<link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/highlight.css">
+
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/custom_style.css">
+
+
+
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/monosocialiconsfont.css">
+
+
+
+<link href="http://www.emadelsaid.com/index.xml" rel="alternate" type="application/rss+xml" title="Emad Elsaid" />
+
+
+<meta property="og:title" content="ERB Templates as Standalone Executables" />
+<meta property="og:description" content="The following is a technique that can convert ERB files (Embeded Ruby) to executable files like any other ruby/python/shell scripts, the difference is that ERB is more suitable in cases where you have some output that needs to be filled with data, like rails view files, or a text that needs report number of files/dependencies, in that post I will try to explore this idea.
+first I created a file with this content" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.emadelsaid.com/posts/erb-templates-as-standalone-executables/" />
+
+
+
+<meta property="article:published_time" content="2018-01-24T21:04:28&#43;01:00"/>
+
+<meta property="article:modified_time" content="2018-01-24T21:04:28&#43;01:00"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="ERB Templates as Standalone Executables">
+<meta itemprop="description" content="The following is a technique that can convert ERB files (Embeded Ruby) to executable files like any other ruby/python/shell scripts, the difference is that ERB is more suitable in cases where you have some output that needs to be filled with data, like rails view files, or a text that needs report number of files/dependencies, in that post I will try to explore this idea.
+first I created a file with this content">
+
+
+<meta itemprop="datePublished" content="2018-01-24T21:04:28&#43;01:00" />
+<meta itemprop="dateModified" content="2018-01-24T21:04:28&#43;01:00" />
+<meta itemprop="wordCount" content="931">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="ERB Templates as Standalone Executables"/>
+<meta name="twitter:description" content="The following is a technique that can convert ERB files (Embeded Ruby) to executable files like any other ruby/python/shell scripts, the difference is that ERB is more suitable in cases where you have some output that needs to be filled with data, like rails view files, or a text that needs report number of files/dependencies, in that post I will try to explore this idea.
+first I created a file with this content"/>
+<meta name="twitter:site" content="@https://www.twitter.com/emad__elsaid"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='http://www.emadelsaid.com/'> <span class="arrow">←</span>All Articles</a>
+	
+
+	
+
+	
+		<a class="cta" href="http://www.emadelsaid.com/index.xml">RSS</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>ERB Templates as Standalone Executables</h1>
+        <h2 class="headline">
+        January 24, 2018
+        <br>
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        
+
+<p>The following is a technique that can convert ERB files (Embeded Ruby) to
+executable files like any other ruby/python/shell scripts, the difference is
+that ERB is more suitable in cases where you have some output that needs to be
+filled with data, like rails view files, or a text that needs report number of
+files/dependencies, in that post I will try to explore this idea.</p>
+
+<p>first I created a file with this content</p>
+
+<pre><code class="language-erb">Today is : &lt;%= Time.new %&gt;
+</code></pre>
+
+<p>You can render the file with <code>erb</code> as it&rsquo;s command line tool to render <code>erb</code>
+files and output the result to the terminal.</p>
+
+<pre><code class="language-shell">erb date.erb
+</code></pre>
+
+<p>will output something similar to the following</p>
+
+<pre><code>Today is : 2018-01-24 21:08:20 +0100
+</code></pre>
+
+<p>As linux looks for <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a> in
+every executable file, then if this erb file given the executable permission and
+prepended by a shebang for erb it will be executed nearly the same way but
+without explictly specifying erb in the terminal, so first rename the file</p>
+
+<pre><code class="language-shell">mv date.erb dateprinter
+</code></pre>
+
+<p>and give it the executable permission</p>
+
+<pre><code class="language-shell">chmod +x dateprinter
+</code></pre>
+
+<p>now prepend it with a shebang for erb, it should look like this now</p>
+
+<pre><code class="language-erb">#!/usr/bin/env erb
+Today is : &lt;%= Time.new %&gt;
+</code></pre>
+
+<p>now it could be executed as follows</p>
+
+<pre><code class="language-shell">./dateprinter
+</code></pre>
+
+<p>the only difference is that the output will have the shebang line also, as ERB
+doesn&rsquo;t parse it and consider it part of the template file.</p>
+
+<pre><code class="language-text">#!/usr/bin/env erb
+Today is : 2018-01-24 21:08:20 +0100
+</code></pre>
+
+<p>if you put the previous file in a directory that is added to your shell <code>$PATH</code>
+you can execute it from anywhere by it&rsquo;s name like any other executable file.</p>
+
+<pre><code class="language-shell">dateprinter
+</code></pre>
+
+<p>So in that case your shell will look for executable file in the path, will find
+the dateprinter file, it&rsquo;ll try to figure out how to execute it with <code>exec</code> so
+it&rsquo;ll inspect for magic bytes, it&rsquo;ll find the shebang, so it&rsquo;ll pass the file
+the the apropriate interpreter <code>erb</code> and erb in that case will execute it and
+had you the output.</p>
+
+<p>now lets do something useful with this idea, lets create a template that print
+the number of dependencies for a rails application.</p>
+
+<p>When you execute <code>bundle install</code> the last 2 lines looks like this</p>
+
+<pre><code class="language-text">Bundle complete! 27 Gemfile dependencies, 109 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+</code></pre>
+
+<p>so to get the apropriate line we need to but the output with <code>head</code> and <code>tail</code>
+as follows</p>
+
+<pre><code class="language-shell">bundle --local | tail -n2 | head -n1
+</code></pre>
+
+<p>so the returned output will be similar to this</p>
+
+<pre><code class="language-text">Bundle complete! 27 Gemfile dependencies, 109 gems now installed.
+</code></pre>
+
+<p>now with ruby we can match the numbers in any string and extract them</p>
+
+<pre><code class="language-ruby">stats = `bundle --local | tail -n2 | head -n1`
+numbers = stats.scan(/[0-9]+/)
+direct_dep = numbers.first
+indirect_dep = numbers.last
+</code></pre>
+
+<p>so an ERB file as the following can print out these stats, I added some
+sprinkles on top</p>
+
+<pre><code class="language-ruby">#!/usr/bin/env erb
+Project Name: &lt;%= File.basename(Dir.pwd).capitalize %&gt;
+&lt;% stats = `bundle --local | tail -n2 | head -n1`.scan(/[0-9]+/) %&gt;
+Direct Dependencies: &lt;%= stats.first %&gt;
+Indirect Dpendencies: &lt;%= stats.last %&gt;
+Direct Initializers:  &lt;%= Dir.glob('config/initializers/*.rb').count %&gt;
+Initializers in Development Env: &lt;%= `rake initializers`.lines.count %&gt;
+Initializers in Production Env: &lt;%= `RAILS_ENV=production rake initializers`.lines.count %&gt;
+Controllers: &lt;%= Dir.glob('app/controllers/**/*_controller.rb').count %&gt;
+Models: &lt;%= Dir.glob('app/models/**/*.*').reject{|f| f.include?('concern') }.count %&gt;
+Views: &lt;%= Dir.glob('app/views/**/*.*').count %&gt;
+
+&lt;%
+def files_for(ext)
+  Dir.glob('**/*.' + ext)
+end
+
+def size_for(ext)
+  files_for(ext).map{|f| File.size(f) }.inject(:+).to_i
+end
+%&gt;
+Assets:
+JS: &lt;%= files_for('js').count %&gt; Files, &lt;%= size_for('js') / 1024 %&gt; KB
+SCSS: &lt;%= files_for('scss').count %&gt; Files, &lt;%= size_for('scss') / 1024 %&gt; KB
+PNG: &lt;%= files_for('png').count %&gt; Files, &lt;%= size_for('png') / 1024 %&gt; KB
+JPG: &lt;%= files_for('jpg').count %&gt; Files, &lt;%= size_for('jpg') / 1024 %&gt; KB
+</code></pre>
+
+<p>The final output will look like this</p>
+
+<pre><code class="language-ruby">#!/usr/bin/env erb
+Project Name: Web
+
+Direct Dependencies: 27
+Indirect Dpendencies: 109
+Direct Initializers:  5
+Initializers in Development Env: 119
+Initializers in Production Env: 117
+Controllers: 10
+Models: 16
+Views: 65
+
+
+Assets:
+JS: 15 Files, 2569 KB
+SCSS: 30 Files, 86 KB
+PNG: 42 Files, 596 KB
+JPG: 0 Files, 0 KB
+</code></pre>
+
+<p>Numbers will be different for your project.</p>
+
+<h2 id="generating-graphs">Generating Graphs</h2>
+
+<p>The following is my approach</p>
+
+<ol>
+<li>a template that is interpreted by ERB to generate <a href="https://en.wikipedia.org/wiki/DOT_(graph_description_language)">DOT format</a></li>
+<li>pass the output to <code>dot</code> command to generate another format like <code>pdf</code> or
+<code>svg</code></li>
+</ol>
+
+<p>So lets try to have the same data visualized, first a simple graph, lets name it <code>rails-graph</code></p>
+
+<pre><code class="language-text">#!/usr/bin/env erb
+digraph graphname {
+     a -&gt; b -&gt; c;
+     b -&gt; d;
+}
+</code></pre>
+
+<p>executing this file with</p>
+
+<pre><code class="language-shell">rails-graph | dot -Tpng &gt; graph.png
+</code></pre>
+
+<p>You should see the following</p>
+
+<p><img src="/images/erb-graph-1.png" alt="basic graph" /></p>
+
+<p>Now lets put more nodes and numbers to this graph</p>
+
+<pre><code class="language-ruby">#!/usr/bin/env erb
+&lt;%
+stats = `bundle --local | tail -n2 | head -n1`.scan(/[0-9]+/)
+def files_for(ext)
+  Dir.glob('**/*.' + ext)
+end
+
+def size_for(ext)
+  files_for(ext).map{|f| File.size(f) }.inject(:+).to_i
+end
+%&gt;
+digraph graphname {
+        direct_gems [label=&quot;Direct gems &lt;%= stats.first %&gt;&quot;]
+        indirect_gems [label=&quot;Indirect gems &lt;%= stats.last %&gt;&quot;]
+        initializers [label=&quot;&lt;%= Dir.glob('config/initializers/*.rb').count %&gt; initializers&quot;]
+        dev_initializers [label=&quot;&lt;%= `rake initializers`.lines.count %&gt; Development initializers&quot;]
+        prod_initializers [label=&quot;&lt;%= `RAILS_ENV=production rake initializers`.lines.count %&gt; Production initializers&quot;]
+
+        controllers [label=&quot;Controllers: &lt;%= Dir.glob('app/controllers/**/*_controller.rb').count %&gt;&quot;]
+        models [label=&quot;Models: &lt;%= Dir.glob('app/models/**/*.*').reject{|f| f.include?('concern') }.count %&gt;&quot;]
+        views [label=&quot;Views: &lt;%= Dir.glob('app/views/**/*.*').count %&gt;&quot;]
+
+
+        indirect_gems -&gt; direct_gems -&gt; initializers -&gt; controllers
+        direct_gems -&gt; dev_initializers -&gt; controllers
+        direct_gems -&gt; prod_initializers -&gt; controllers
+
+        controllers -&gt; models
+        controllers -&gt; views
+
+        js [label=&quot;JS: &lt;%= files_for('js').count %&gt; Files, &lt;%= size_for('js') / 1024 %&gt; KB&quot;]
+        scss [label=&quot;SCSS: &lt;%= files_for('scss').count %&gt; Files, &lt;%= size_for('scss') / 1024 %&gt; KB&quot;]
+        png [label=&quot;PNG: &lt;%= files_for('png').count %&gt; Files, &lt;%= size_for('png') / 1024 %&gt; KB&quot;]
+        jpg [label=&quot;JPG: &lt;%= files_for('jpg').count %&gt; Files, &lt;%= size_for('jpg') / 1024 %&gt; KB&quot;]
+
+        views -&gt; assets
+        assets -&gt; js
+        assets -&gt; scss
+        assets -&gt; png
+        assets -&gt; jpg
+
+}
+</code></pre>
+
+<p>The result will be as follows:
+<img src="/images/erb-graph-2.png" alt="basic graph" /></p>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="https://twitter.com/emad__elsaid">
+    <img class="avatar" src="http://www.emadelsaid.com/images/avatar.png">
+    <div>
+        <span class="dark">Emad Elsaid</span>
+        <span>Software Engineer, Ruby/Go Web Developer</span>
+    </div>
+    </a>
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fwww.emadelsaid.com%2fposts%2ferb-templates-as-standalone-executables%2f - ERB%20Templates%20as%20Standalone%20Executables by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/posts/working-with-legacy-code/">Working With Legacy Code<aside class="dates">Jan 21 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/projects-files-flame-graph/">Projects Files Flame Graph<aside class="dates">Jan 21 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/%D8%AA%D9%88%D8%A7%D8%B2%D9%86-%D8%AC%D9%8A%D9%86%D9%8A/">جينات توازن<aside class="dates">Jan 20 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/consistency-over-creativity/">Consistency Over Creativity<aside class="dates">Jan 14 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/golang-bleve-experience/">Golang Bleve Experience<aside class="dates">Jan 13 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/bind-remote-server-port-to-local-machine-with-ssh/">Bind Remote Server Port to Local Machine With SSH<aside class="dates">Jan 8 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/deploy-rails-application-with-docker-compose-and-capistrano/">Deploy rails application with docker compose and capistrano<aside class="dates">May 31 2016</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/integerating-jekyll-and-octopress-into-emacs/">Integerating Jekyll and Octopress in Emacs<aside class="dates">Feb 23 2016</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/rails-accepts-nested-attributes-for-polymorphic-relation-solution/">Rails Accepts_nested_attributes for polymorphic relation solution<aside class="dates">Mar 23 2015</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.facebook.com/emad.elsaid.hamed">
+        roundedfacebook
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/emad-elsaid">
+        roundedgithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/emad__elsaid">
+        roundedtwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2018 Emad Elsaid
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://www.emadelsaid.com/js/main.js"></script>
+<script src="http://www.emadelsaid.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-112396214-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>

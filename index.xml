@@ -6,10 +6,20 @@
     <description>Recent content on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Jan 2018 22:02:46 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jan 2018 21:04:28 +0100</lastBuildDate>
     
 	<atom:link href="http://www.emadelsaid.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ERB Templates as Standalone Executables</title>
+      <link>http://www.emadelsaid.com/posts/erb-templates-as-standalone-executables/</link>
+      <pubDate>Wed, 24 Jan 2018 21:04:28 +0100</pubDate>
+      
+      <guid>http://www.emadelsaid.com/posts/erb-templates-as-standalone-executables/</guid>
+      <description>The following is a technique that can convert ERB files (Embeded Ruby) to executable files like any other ruby/python/shell scripts, the difference is that ERB is more suitable in cases where you have some output that needs to be filled with data, like rails view files, or a text that needs report number of files/dependencies, in that post I will try to explore this idea.
+first I created a file with this content</description>
+    </item>
     
     <item>
       <title>Working With Legacy Code</title>
