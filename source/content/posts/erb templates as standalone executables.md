@@ -69,7 +69,7 @@ So in that case your shell will look for executable file in the path, will find
 the dateprinter file, it'll try to figure out how to execute it with `exec` so
 it'll inspect for magic bytes, it'll find the shebang, so it'll pass the file
 to the appropriate interpreter `erb` and erb in that case will execute it and
-had you the output.
+hand you the output.
 
 now lets do something useful with this idea, lets create a template that print
 the number of dependencies for a rails application.
@@ -81,7 +81,7 @@ Bundle complete! 27 Gemfile dependencies, 109 gems now installed.
 Use `bundle info [gemname]` to see where a bundled gem is installed.
 ```
 
-so to get the appropriate line we need to but the output with `head` and `tail`
+so to get the appropriate line we need to cut the output with `head` and `tail`
 as follows
 ```shell
 bundle --local | tail -n2 | head -n1

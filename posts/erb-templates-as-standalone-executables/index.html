@@ -158,7 +158,7 @@ you can execute it from anywhere by it&rsquo;s name like any other executable fi
 the dateprinter file, it&rsquo;ll try to figure out how to execute it with <code>exec</code> so
 it&rsquo;ll inspect for magic bytes, it&rsquo;ll find the shebang, so it&rsquo;ll pass the file
 to the appropriate interpreter <code>erb</code> and erb in that case will execute it and
-had you the output.</p>
+hand you the output.</p>
 
 <p>now lets do something useful with this idea, lets create a template that print
 the number of dependencies for a rails application.</p>
@@ -169,7 +169,7 @@ the number of dependencies for a rails application.</p>
 Use `bundle info [gemname]` to see where a bundled gem is installed.
 </code></pre>
 
-<p>so to get the appropriate line we need to but the output with <code>head</code> and <code>tail</code>
+<p>so to get the appropriate line we need to cut the output with <code>head</code> and <code>tail</code>
 as follows</p>
 
 <pre><code class="language-shell">bundle --local | tail -n2 | head -n1
