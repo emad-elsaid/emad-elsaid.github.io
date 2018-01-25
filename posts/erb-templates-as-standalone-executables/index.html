@@ -54,7 +54,7 @@ first I created a file with this content">
 
 <meta itemprop="datePublished" content="2018-01-24T21:04:28&#43;01:00" />
 <meta itemprop="dateModified" content="2018-01-24T21:04:28&#43;01:00" />
-<meta itemprop="wordCount" content="931">
+<meta itemprop="wordCount" content="967">
 
 
 
@@ -287,18 +287,29 @@ end
 digraph graphname {
         direct_gems [label=&quot;Direct gems &lt;%= stats.first %&gt;&quot;]
         indirect_gems [label=&quot;Indirect gems &lt;%= stats.last %&gt;&quot;]
+
         initializers [label=&quot;&lt;%= Dir.glob('config/initializers/*.rb').count %&gt; initializers&quot;]
         dev_initializers [label=&quot;&lt;%= `rake initializers`.lines.count %&gt; Development initializers&quot;]
         prod_initializers [label=&quot;&lt;%= `RAILS_ENV=production rake initializers`.lines.count %&gt; Production initializers&quot;]
+
+        { rank=same; initializers dev_initializers prod_initializers }
+
+        dev_middlewares [label=&quot;&lt;%= `rake middleware`.lines.count %&gt; Development middlewares&quot;]
+        prod_middlewares [label=&quot;&lt;%= `RAILS_ENV=production rake middleware`.lines.count %&gt; Production middlewares&quot;]
+
 
         controllers [label=&quot;Controllers: &lt;%= Dir.glob('app/controllers/**/*_controller.rb').count %&gt;&quot;]
         models [label=&quot;Models: &lt;%= Dir.glob('app/models/**/*.*').reject{|f| f.include?('concern') }.count %&gt;&quot;]
         views [label=&quot;Views: &lt;%= Dir.glob('app/views/**/*.*').count %&gt;&quot;]
 
+        routes [label=&quot;Routes &lt;%= `rake routes`.lines.count - 1 %&gt;&quot;]
 
-        indirect_gems -&gt; direct_gems -&gt; initializers -&gt; controllers
-        direct_gems -&gt; dev_initializers -&gt; controllers
-        direct_gems -&gt; prod_initializers -&gt; controllers
+
+        indirect_gems -&gt; direct_gems -&gt; initializers -&gt; routes
+        direct_gems -&gt; dev_initializers -&gt; dev_middlewares -&gt; routes
+        direct_gems -&gt; prod_initializers -&gt; prod_middlewares -&gt; routes
+
+        routes -&gt; controllers
 
         controllers -&gt; models
         controllers -&gt; views

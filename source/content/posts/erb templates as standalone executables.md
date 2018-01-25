@@ -200,18 +200,29 @@ end
 digraph graphname {
         direct_gems [label="Direct gems <%= stats.first %>"]
         indirect_gems [label="Indirect gems <%= stats.last %>"]
+
         initializers [label="<%= Dir.glob('config/initializers/*.rb').count %> initializers"]
         dev_initializers [label="<%= `rake initializers`.lines.count %> Development initializers"]
         prod_initializers [label="<%= `RAILS_ENV=production rake initializers`.lines.count %> Production initializers"]
+
+        { rank=same; initializers dev_initializers prod_initializers }
+
+        dev_middlewares [label="<%= `rake middleware`.lines.count %> Development middlewares"]
+        prod_middlewares [label="<%= `RAILS_ENV=production rake middleware`.lines.count %> Production middlewares"]
+
 
         controllers [label="Controllers: <%= Dir.glob('app/controllers/**/*_controller.rb').count %>"]
         models [label="Models: <%= Dir.glob('app/models/**/*.*').reject{|f| f.include?('concern') }.count %>"]
         views [label="Views: <%= Dir.glob('app/views/**/*.*').count %>"]
 
+        routes [label="Routes <%= `rake routes`.lines.count - 1 %>"]
 
-        indirect_gems -> direct_gems -> initializers -> controllers
-        direct_gems -> dev_initializers -> controllers
-        direct_gems -> prod_initializers -> controllers
+
+        indirect_gems -> direct_gems -> initializers -> routes
+        direct_gems -> dev_initializers -> dev_middlewares -> routes
+        direct_gems -> prod_initializers -> prod_middlewares -> routes
+
+        routes -> controllers
 
         controllers -> models
         controllers -> views
