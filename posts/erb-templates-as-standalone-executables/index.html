@@ -54,7 +54,7 @@ first I created a file with this content">
 
 <meta itemprop="datePublished" content="2018-01-24T21:04:28&#43;01:00" />
 <meta itemprop="dateModified" content="2018-01-24T21:04:28&#43;01:00" />
-<meta itemprop="wordCount" content="967">
+<meta itemprop="wordCount" content="998">
 
 
 
@@ -276,10 +276,23 @@ digraph graphname {
 <pre><code class="language-ruby">#!/usr/bin/env erb
 &lt;%
 stats = `bundle --local | tail -n2 | head -n1`.scan(/[0-9]+/)
+ini = Dir.glob('config/initializers/*.rb').count
+prod_ini = `RAILS_ENV=production rake initializers`.lines.count
+dev_ini = `rake initializers`.lines.count
+dev_mwares = `rake middleware`.lines.count
+prod_mwares = `RAILS_ENV=production rake middleware`.lines.count
+
+m = Dir.glob('app/models/**/*.*').reject{|f| f.include?('concern') }.count
+v = Dir.glob('app/views/**/*.*').count
+c = Dir.glob('app/controllers/**/*_controller.rb').count
+routes = `rake routes`.lines.count - 1
+
 def files_for(ext)
   Dir.glob('**/*.' + ext)
 end
-
+def count_for(ext)
+    files_for(ext).count
+end
 def size_for(ext)
   files_for(ext).map{|f| File.size(f) }.inject(:+).to_i
 end
@@ -288,21 +301,21 @@ digraph graphname {
         direct_gems [label=&quot;Direct gems &lt;%= stats.first %&gt;&quot;]
         indirect_gems [label=&quot;Indirect gems &lt;%= stats.last %&gt;&quot;]
 
-        initializers [label=&quot;&lt;%= Dir.glob('config/initializers/*.rb').count %&gt; initializers&quot;]
-        dev_initializers [label=&quot;&lt;%= `rake initializers`.lines.count %&gt; Development initializers&quot;]
-        prod_initializers [label=&quot;&lt;%= `RAILS_ENV=production rake initializers`.lines.count %&gt; Production initializers&quot;]
+        initializers [label=&quot;&lt;%= ini  %&gt; initializers&quot;]
+        dev_initializers [label=&quot;&lt;%= dev_ini %&gt; Development initializers&quot;]
+        prod_initializers [label=&quot;&lt;%= prod_ini %&gt; Production initializers&quot;]
 
         { rank=same; initializers dev_initializers prod_initializers }
 
-        dev_middlewares [label=&quot;&lt;%= `rake middleware`.lines.count %&gt; Development middlewares&quot;]
-        prod_middlewares [label=&quot;&lt;%= `RAILS_ENV=production rake middleware`.lines.count %&gt; Production middlewares&quot;]
+        dev_middlewares [label=&quot;&lt;%= dev_mwares %&gt; Development middlewares&quot;]
+        prod_middlewares [label=&quot;&lt;%= prod_mwares %&gt; Production middlewares&quot;]
 
 
-        controllers [label=&quot;Controllers: &lt;%= Dir.glob('app/controllers/**/*_controller.rb').count %&gt;&quot;]
-        models [label=&quot;Models: &lt;%= Dir.glob('app/models/**/*.*').reject{|f| f.include?('concern') }.count %&gt;&quot;]
-        views [label=&quot;Views: &lt;%= Dir.glob('app/views/**/*.*').count %&gt;&quot;]
+        controllers [label=&quot;Controllers: &lt;%= c %&gt;&quot;]
+        models [label=&quot;Models: &lt;%= m %&gt;&quot;]
+        views [label=&quot;Views: &lt;%= v %&gt;&quot;]
 
-        routes [label=&quot;Routes &lt;%= `rake routes`.lines.count - 1 %&gt;&quot;]
+        routes [label=&quot;Routes &lt;%= routes %&gt;&quot;]
 
 
         indirect_gems -&gt; direct_gems -&gt; initializers -&gt; routes
@@ -314,10 +327,10 @@ digraph graphname {
         controllers -&gt; models
         controllers -&gt; views
 
-        js [label=&quot;JS: &lt;%= files_for('js').count %&gt; Files, &lt;%= size_for('js') / 1024 %&gt; KB&quot;]
-        scss [label=&quot;SCSS: &lt;%= files_for('scss').count %&gt; Files, &lt;%= size_for('scss') / 1024 %&gt; KB&quot;]
-        png [label=&quot;PNG: &lt;%= files_for('png').count %&gt; Files, &lt;%= size_for('png') / 1024 %&gt; KB&quot;]
-        jpg [label=&quot;JPG: &lt;%= files_for('jpg').count %&gt; Files, &lt;%= size_for('jpg') / 1024 %&gt; KB&quot;]
+        js [label=&quot;JS: &lt;%= count_for('js') %&gt; Files, &lt;%= size_for('js') / 1024 %&gt; KB&quot;]
+        scss [label=&quot;SCSS: &lt;%= count_for('scss') %&gt; Files, &lt;%= size_for('scss') / 1024 %&gt; KB&quot;]
+        png [label=&quot;PNG: &lt;%= count_for('png') %&gt; Files, &lt;%= size_for('png') / 1024 %&gt; KB&quot;]
+        jpg [label=&quot;JPG: &lt;%= count_for('jpg') %&gt; Files, &lt;%= size_for('jpg') / 1024 %&gt; KB&quot;]
 
         views -&gt; assets
         assets -&gt; js

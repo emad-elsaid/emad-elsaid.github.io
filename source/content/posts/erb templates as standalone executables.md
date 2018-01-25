@@ -189,10 +189,23 @@ Now lets put more nodes and numbers to this graph
 #!/usr/bin/env erb
 <%
 stats = `bundle --local | tail -n2 | head -n1`.scan(/[0-9]+/)
+ini = Dir.glob('config/initializers/*.rb').count
+prod_ini = `RAILS_ENV=production rake initializers`.lines.count
+dev_ini = `rake initializers`.lines.count
+dev_mwares = `rake middleware`.lines.count
+prod_mwares = `RAILS_ENV=production rake middleware`.lines.count
+
+m = Dir.glob('app/models/**/*.*').reject{|f| f.include?('concern') }.count
+v = Dir.glob('app/views/**/*.*').count
+c = Dir.glob('app/controllers/**/*_controller.rb').count
+routes = `rake routes`.lines.count - 1
+
 def files_for(ext)
   Dir.glob('**/*.' + ext)
 end
-
+def count_for(ext)
+    files_for(ext).count
+end
 def size_for(ext)
   files_for(ext).map{|f| File.size(f) }.inject(:+).to_i
 end
@@ -201,21 +214,21 @@ digraph graphname {
         direct_gems [label="Direct gems <%= stats.first %>"]
         indirect_gems [label="Indirect gems <%= stats.last %>"]
 
-        initializers [label="<%= Dir.glob('config/initializers/*.rb').count %> initializers"]
-        dev_initializers [label="<%= `rake initializers`.lines.count %> Development initializers"]
-        prod_initializers [label="<%= `RAILS_ENV=production rake initializers`.lines.count %> Production initializers"]
+        initializers [label="<%= ini  %> initializers"]
+        dev_initializers [label="<%= dev_ini %> Development initializers"]
+        prod_initializers [label="<%= prod_ini %> Production initializers"]
 
         { rank=same; initializers dev_initializers prod_initializers }
 
-        dev_middlewares [label="<%= `rake middleware`.lines.count %> Development middlewares"]
-        prod_middlewares [label="<%= `RAILS_ENV=production rake middleware`.lines.count %> Production middlewares"]
+        dev_middlewares [label="<%= dev_mwares %> Development middlewares"]
+        prod_middlewares [label="<%= prod_mwares %> Production middlewares"]
 
 
-        controllers [label="Controllers: <%= Dir.glob('app/controllers/**/*_controller.rb').count %>"]
-        models [label="Models: <%= Dir.glob('app/models/**/*.*').reject{|f| f.include?('concern') }.count %>"]
-        views [label="Views: <%= Dir.glob('app/views/**/*.*').count %>"]
+        controllers [label="Controllers: <%= c %>"]
+        models [label="Models: <%= m %>"]
+        views [label="Views: <%= v %>"]
 
-        routes [label="Routes <%= `rake routes`.lines.count - 1 %>"]
+        routes [label="Routes <%= routes %>"]
 
 
         indirect_gems -> direct_gems -> initializers -> routes
@@ -227,10 +240,10 @@ digraph graphname {
         controllers -> models
         controllers -> views
 
-        js [label="JS: <%= files_for('js').count %> Files, <%= size_for('js') / 1024 %> KB"]
-        scss [label="SCSS: <%= files_for('scss').count %> Files, <%= size_for('scss') / 1024 %> KB"]
-        png [label="PNG: <%= files_for('png').count %> Files, <%= size_for('png') / 1024 %> KB"]
-        jpg [label="JPG: <%= files_for('jpg').count %> Files, <%= size_for('jpg') / 1024 %> KB"]
+        js [label="JS: <%= count_for('js') %> Files, <%= size_for('js') / 1024 %> KB"]
+        scss [label="SCSS: <%= count_for('scss') %> Files, <%= size_for('scss') / 1024 %> KB"]
+        png [label="PNG: <%= count_for('png') %> Files, <%= size_for('png') / 1024 %> KB"]
+        jpg [label="JPG: <%= count_for('jpg') %> Files, <%= size_for('jpg') / 1024 %> KB"]
 
         views -> assets
         assets -> js
