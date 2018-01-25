@@ -6,10 +6,21 @@
     <description>Recent content on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jan 2018 21:04:28 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jan 2018 20:14:14 +0100</lastBuildDate>
     
 	<atom:link href="http://www.emadelsaid.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About Me</title>
+      <link>http://www.emadelsaid.com/about/</link>
+      <pubDate>Thu, 25 Jan 2018 20:14:14 +0100</pubDate>
+      
+      <guid>http://www.emadelsaid.com/about/</guid>
+      <description>An Egyptian software engineer, I do back-end most of the time, sometimes front-end for fun, I mainly work with Ruby and Go, you can find me on GitHub, Twitter or Facebook
+I post to this blog some notes and ideas that may or may not be practical but it interests me and I wish other people find it interesting.
+I intentionally didn&amp;rsquo;t put any commenting system to my site, but tweeting the article will mention me and this could be a start of a potential thread of discussion.</description>
+    </item>
     
     <item>
       <title>ERB Templates as Standalone Executables</title>
