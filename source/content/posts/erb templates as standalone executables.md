@@ -6,8 +6,8 @@ date: 2018-01-24T21:04:28+01:00
 The following is a technique that can convert ERB files (Embeded Ruby) to
 executable files like any other ruby/python/shell scripts, the difference is
 that ERB is more suitable in cases where you have some output that needs to be
-filled with data, like rails view files, or a text that needs report number of
-files/dependencies, in that post I will try to explore this idea.
+filled with data, like rails view files, or a text that needs to report number of
+files/dependencies, in this post I will try to explore this idea.
 
 first I created a file with this content
 
