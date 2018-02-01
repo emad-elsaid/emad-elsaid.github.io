@@ -6,10 +6,20 @@
     <description>Recent content on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jan 2018 20:14:14 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 01 Feb 2018 22:26:12 +0100</lastBuildDate>
     
 	<atom:link href="http://www.emadelsaid.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Exporting a Facebook Group as a Website</title>
+      <link>http://www.emadelsaid.com/posts/exporting-a-facebook-group-as-a-website/</link>
+      <pubDate>Thu, 01 Feb 2018 22:26:12 +0100</pubDate>
+      
+      <guid>http://www.emadelsaid.com/posts/exporting-a-facebook-group-as-a-website/</guid>
+      <description>For couple of years I have been honored by administrating a large Facebook group, it has over 15K Egyptian developers, it&amp;rsquo;s been there for a while, people are posting quality content, asking and answering questions all the time, writing articles specific to Egypt and other related topics, which is a great journey to have.
+Facebook for a long time turned its back on groups, the interface was buggy and slow, no new features were introduced regularly, that changed for the past year, they started addressing issues, adding minor features like filters for join requests, and major features like group analytics.</description>
+    </item>
     
     <item>
       <title>About Me</title>
