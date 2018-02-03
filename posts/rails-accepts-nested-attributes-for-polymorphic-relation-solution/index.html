@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.32.4" />
+<meta name="generator" content="Hugo 0.35" />
 <title>Rails Accepts_nested_attributes for polymorphic relation solution</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -60,7 +60,8 @@ class Vehicle &lt; ActiveRecord::Base MOVABLES = [:car, :bus, :plane] belongs_to
 
 <meta itemprop="keywords" content="" />
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Rails Accepts_nested_attributes for polymorphic relation solution"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Rails Accepts_nested_attributes for polymorphic relation solution"/>
 <meta name="twitter:description" content="yesterday i faced a problem with my rails application, my models was as follows
 class Vehicle &lt; ActiveRecord::Base MOVABLES = [:car, :bus, :plane] belongs_to :movable, polymorphic: true, dependent: :destroy, required: true, autosave: true accepts_nested_attributes_for :movable end  class Car &lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  class Bus &lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  class Plane &lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  so, when i try to create a Veihcle with nested attributes for the movable it complain with error &ldquo;are you trying to build a polymorphic relation?"/>
 <meta name="twitter:site" content="@https://www.twitter.com/emad__elsaid"/>
@@ -239,6 +240,10 @@ a trivial solution.</p>
     
     
         <li>
+            <a href="/posts/how-to-find-a-solution-for-your-problem/">How to Find a Solution for Your Problem<aside class="dates">Feb 3 2018</aside></a>
+        </li>
+    
+        <li>
             <a href="/posts/exporting-a-facebook-group-as-a-website/">Exporting a Facebook Group as a Website<aside class="dates">Feb 1 2018</aside></a>
         </li>
     
@@ -272,10 +277,6 @@ a trivial solution.</p>
     
         <li>
             <a href="/posts/deploy-rails-application-with-docker-compose-and-capistrano/">Deploy rails application with docker compose and capistrano<aside class="dates">May 31 2016</aside></a>
-        </li>
-    
-        <li>
-            <a href="/posts/integerating-jekyll-and-octopress-into-emacs/">Integerating Jekyll and Octopress in Emacs<aside class="dates">Feb 23 2016</aside></a>
         </li>
     
 </ul>

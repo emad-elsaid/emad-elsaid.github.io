@@ -6,10 +6,21 @@
     <description>Recent content on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Feb 2018 22:26:12 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 03 Feb 2018 21:41:47 +0100</lastBuildDate>
     
 	<atom:link href="http://www.emadelsaid.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to Find a Solution for Your Problem</title>
+      <link>http://www.emadelsaid.com/posts/how-to-find-a-solution-for-your-problem/</link>
+      <pubDate>Sat, 03 Feb 2018 21:41:47 +0100</pubDate>
+      
+      <guid>http://www.emadelsaid.com/posts/how-to-find-a-solution-for-your-problem/</guid>
+      <description>Open Google.com Google your problem Open all links in the first page Read page by page until you find a solution If your problem still exists, back to number 2  For more clarification please refer to the following graph
+Exercise The previous image is generated from the following DOT graph, try to find how to generate the same png image from it on your machine.
+digraph google { google [label=&amp;quot;Open google.</description>
+    </item>
     
     <item>
       <title>Exporting a Facebook Group as a Website</title>
