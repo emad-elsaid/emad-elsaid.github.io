@@ -11,7 +11,7 @@ My current setup is a Hugo repository that is served from GitHub pages, linked
 it to my domain `emadelsaid.com`, whenever I need to post a new post I use
 spacemacs and a package called
 [easyhugo](https://github.com/masasam/emacs-easy-hugo) to create a new post,
-then a function called `easy-hugo-github-deploy** that regenerates the site,
+then a function called `easy-hugo-github-deploy` that regenerates the site,
 commit and deploy it, it's all open source, you can check it out from [this
 repository](https://github.com/emad-elsaid/emad-elsaid.github.io).
 
