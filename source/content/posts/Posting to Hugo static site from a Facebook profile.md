@@ -4,7 +4,7 @@ date: 2018-02-05T00:01:38+01:00
 ---
 
 [Hugo is a static site generator](https://gohugo.io/), it's very fast generator
-build on Go, it can convert markdown and org files into a beautiful blog, I use
+built on Go, it can convert markdown and org files into a beautiful blog, I use
 it for my blog.
 
 My current setup is a Hugo repository that is served from GitHub pages, linked
