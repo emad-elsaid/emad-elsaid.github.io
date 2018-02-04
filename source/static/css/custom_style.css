@@ -8,3 +8,7 @@ code {
 }
 
 ol li	{ list-style-type:inherit; }
+
+li ol, li ul {
+    margin-left: 20px;
+}
