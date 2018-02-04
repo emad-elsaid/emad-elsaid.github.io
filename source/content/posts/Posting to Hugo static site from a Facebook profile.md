@@ -177,4 +177,4 @@ The following is what will happen to trigger the whole setup:
 2. IFTTT.com will be triggered, sending the post to the webhook
 3. Your webhook script will get the request body and writing it to a file, then
    executing `Hugo` to regenerate the HTML.
-4. The HTML is served the the nginx service.
+4. The HTML is served with the nginx service.
