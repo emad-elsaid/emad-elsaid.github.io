@@ -16,7 +16,7 @@ commit and deploy it, it's all open source, you can check it out from [this
 repository](https://github.com/emad-elsaid/emad-elsaid.github.io).
 
 I needed to create a similar website for my wife, a blog where she writes some
-articles on it about fitness and exercising, but we don't want her to open
+articles about fitness and exercising, but we don't want her to open
 spacemacs or any other editor of course, it would be great if she can write the
 article on her Facebook profile and it gets magically published to the Hugo
 website.
