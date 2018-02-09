@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.emadelsaid.com/posts/enforcing-project-structure-with-rspec/</loc>
+    <lastmod>2018-02-09T23:14:27+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.emadelsaid.com/posts/posting-to-hugo-static-site-from-a-facebook-profile/</loc>
     <lastmod>2018-02-05T00:01:38+01:00</lastmod>
   </url>
@@ -79,13 +84,13 @@
   
   <url>
     <loc>http://www.emadelsaid.com/</loc>
-    <lastmod>2018-02-05T00:01:38+01:00</lastmod>
+    <lastmod>2018-02-09T23:14:27+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.emadelsaid.com/posts/</loc>
-    <lastmod>2018-02-05T00:01:38+01:00</lastmod>
+    <lastmod>2018-02-09T23:14:27+01:00</lastmod>
     <priority>0</priority>
   </url>
   

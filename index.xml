@@ -6,10 +6,20 @@
     <description>Recent content on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Feb 2018 00:01:38 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 09 Feb 2018 23:14:27 +0100</lastBuildDate>
     
 	<atom:link href="http://www.emadelsaid.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Enforcing Project Structure With Rspec</title>
+      <link>http://www.emadelsaid.com/posts/enforcing-project-structure-with-rspec/</link>
+      <pubDate>Fri, 09 Feb 2018 23:14:27 +0100</pubDate>
+      
+      <guid>http://www.emadelsaid.com/posts/enforcing-project-structure-with-rspec/</guid>
+      <description>I faced a situation where I&amp;rsquo;m working on a legacy project, that project was a normal ruby on rails project, with controllers, models, decorators, concerns, but with the long life of the project and turnover of the developers, inconsistency was introduced everywhere.
+One of the places where consistency were violated was the concerns directories, where concerns names were not the same, some of them are suffixed with Concern suffix, and others were not.</description>
+    </item>
     
     <item>
       <title>Posting to Hugo Static Site From a Facebook Profile</title>

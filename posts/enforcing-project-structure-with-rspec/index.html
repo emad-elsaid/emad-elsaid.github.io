@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Emad Elsaid">
+<meta name="description" content="Ruby/Go Web Developer">
+<meta name="generator" content="Hugo 0.35" />
+<title>Enforcing Project Structure With Rspec</title>
+<link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/highlight.css">
+
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/custom_style.css">
+
+
+
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/monosocialiconsfont.css">
+
+
+
+<link href="http://www.emadelsaid.com/index.xml" rel="alternate" type="application/rss+xml" title="Emad Elsaid" />
+
+
+<meta property="og:title" content="Enforcing Project Structure With Rspec" />
+<meta property="og:description" content="I faced a situation where I&rsquo;m working on a legacy project, that project was a normal ruby on rails project, with controllers, models, decorators, concerns, but with the long life of the project and turnover of the developers, inconsistency was introduced everywhere.
+One of the places where consistency were violated was the concerns directories, where concerns names were not the same, some of them are suffixed with Concern suffix, and others were not." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.emadelsaid.com/posts/enforcing-project-structure-with-rspec/" />
+
+
+
+<meta property="article:published_time" content="2018-02-09T23:14:27&#43;01:00"/>
+
+<meta property="article:modified_time" content="2018-02-09T23:14:27&#43;01:00"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Enforcing Project Structure With Rspec">
+<meta itemprop="description" content="I faced a situation where I&rsquo;m working on a legacy project, that project was a normal ruby on rails project, with controllers, models, decorators, concerns, but with the long life of the project and turnover of the developers, inconsistency was introduced everywhere.
+One of the places where consistency were violated was the concerns directories, where concerns names were not the same, some of them are suffixed with Concern suffix, and others were not.">
+
+
+<meta itemprop="datePublished" content="2018-02-09T23:14:27&#43;01:00" />
+<meta itemprop="dateModified" content="2018-02-09T23:14:27&#43;01:00" />
+<meta itemprop="wordCount" content="365">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Enforcing Project Structure With Rspec"/>
+<meta name="twitter:description" content="I faced a situation where I&rsquo;m working on a legacy project, that project was a normal ruby on rails project, with controllers, models, decorators, concerns, but with the long life of the project and turnover of the developers, inconsistency was introduced everywhere.
+One of the places where consistency were violated was the concerns directories, where concerns names were not the same, some of them are suffixed with Concern suffix, and others were not."/>
+<meta name="twitter:site" content="@https://www.twitter.com/emad__elsaid"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='http://www.emadelsaid.com/'> <span class="arrow">←</span>All Articles</a>
+	
+
+	
+
+	
+		<a class="cta" href="http://www.emadelsaid.com/index.xml">RSS</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Enforcing Project Structure With Rspec</h1>
+        <h2 class="headline">
+        February 9, 2018
+        <br>
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        <p>I faced a situation where I&rsquo;m working on a legacy project, that project was a
+normal ruby on rails project, with controllers, models, decorators, concerns,
+but with the long life of the project and turnover of the developers,
+inconsistency was introduced everywhere.</p>
+
+<p>One of the places where consistency were violated was the concerns directories,
+where concerns names were not the same, some of them are suffixed with <code>Concern</code>
+suffix, and others were not.</p>
+
+<p>That refactoring was pretty simple on it&rsquo;s own, you only need to rename,
+concerns files to the proper naming, rename the concerns modules themselves, and
+also any usage for these modules.</p>
+
+<p>The problem is that we don&rsquo;t just want to have that naming convention for the
+current concerns but we also need to inforce it for any future concerns, so
+we&rsquo;re trying to make it impossible to break that rule again.</p>
+
+<p>My approach is using the usual testing framework in place, as we use Rspec I
+just added a test suit for <code>ActiveSupport::Concern</code> where I get all concerns
+files and make sure all of them are meeting the criteria.</p>
+
+<p>And the following code snippet is the final result</p>
+
+<pre><code class="language-ruby">Rspec.describe ActiveSupport::Concern do
+  files_paths = Rails.root.join('app', 'controllers', 'concerns**, '**', '*.rb')
+  files = Dir.glob(files_paths)
+
+  files.each do |file|
+    describe file do
+      it &quot;must end with concern&quot; do
+        expect(file).to end_with('_concern.rb')
+      end
+    end
+  end
+end
+</code></pre>
+
+<p>this snippet will get all ruby files in <code>app/controllers/concerns</code> and make sure
+all of them meets the naming convention.</p>
+
+<p>The same technique could be applied to <code>app/decorators</code> if you&rsquo;re using Drapper
+gem and want to make sure the naming is not violated, or the inheritance is
+maintained for all decorators.</p>
+
+<p>it can be applied to basically any rule you need to keep in your project
+lifetime.</p>
+
+<p>That doesn&rsquo;t just prevent people from breaking the design decision you took for
+that project, but it&rsquo;s also for you as over time you&rsquo;ll forget the decisions
+you&rsquo;ve made and that&rsquo;s a safety net for you.</p>
+
+<p>along with that technique I also document the rules I decided for each directory
+in the project in a <code>README.md</code> file inside that project, and I link to it from
+the root <code>README.md</code> file, that makes it mode visible for contributors.</p>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="https://twitter.com/emad__elsaid">
+    <img class="avatar" src="http://www.emadelsaid.com/images/avatar.png">
+    <div>
+        <span class="dark">Emad Elsaid</span>
+        <span>Software Engineer, Ruby/Go Web Developer</span>
+    </div>
+    </a>
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fwww.emadelsaid.com%2fposts%2fenforcing-project-structure-with-rspec%2f - Enforcing%20Project%20Structure%20With%20Rspec by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/posts/posting-to-hugo-static-site-from-a-facebook-profile/">Posting to Hugo Static Site From a Facebook Profile<aside class="dates">Feb 5 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/how-to-find-a-solution-for-your-problem/">How to Find a Solution for Your Problem<aside class="dates">Feb 3 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/exporting-a-facebook-group-as-a-website/">Exporting a Facebook Group as a Website<aside class="dates">Feb 1 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/erb-templates-as-standalone-executables/">ERB Templates as Standalone Executables<aside class="dates">Jan 24 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/working-with-legacy-code/">Working With Legacy Code<aside class="dates">Jan 21 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/projects-files-flame-graph/">Projects Files Flame Graph<aside class="dates">Jan 21 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/%D8%AA%D9%88%D8%A7%D8%B2%D9%86-%D8%AC%D9%8A%D9%86%D9%8A/">جينات توازن<aside class="dates">Jan 20 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/consistency-over-creativity/">Consistency Over Creativity<aside class="dates">Jan 14 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/golang-bleve-experience/">Golang Bleve Experience<aside class="dates">Jan 13 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/bind-remote-server-port-to-local-machine-with-ssh/">Bind Remote Server Port to Local Machine With SSH<aside class="dates">Jan 8 2018</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.facebook.com/emad.elsaid.hamed">
+        roundedfacebook
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/emad-elsaid">
+        roundedgithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/emad__elsaid">
+        roundedtwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2018 Emad Elsaid
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://www.emadelsaid.com/js/main.js"></script>
+<script src="http://www.emadelsaid.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-112396214-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>
