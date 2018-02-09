@@ -28,7 +28,7 @@ And the following code snippet is the final result
 
 ```ruby
 Rspec.describe ActiveSupport::Concern do
-  files_paths = Rails.root.join('app', 'controllers', 'concerns**, '**', '*.rb')
+  files_paths = Rails.root.join('app', 'controllers', 'concerns', '**', '*.rb')
   files = Dir.glob(files_paths)
 
   files.each do |file|

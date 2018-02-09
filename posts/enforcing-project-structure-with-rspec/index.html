@@ -118,7 +118,7 @@ files and make sure all of them are meeting the criteria.</p>
 <p>And the following code snippet is the final result</p>
 
 <pre><code class="language-ruby">Rspec.describe ActiveSupport::Concern do
-  files_paths = Rails.root.join('app', 'controllers', 'concerns**, '**', '*.rb')
+  files_paths = Rails.root.join('app', 'controllers', 'concerns', '**', '*.rb')
   files = Dir.glob(files_paths)
 
   files.each do |file|
