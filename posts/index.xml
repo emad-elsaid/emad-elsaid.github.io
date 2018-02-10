@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Feb 2018 23:14:27 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 10 Feb 2018 15:58:41 +0100</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Don&#39;t Throw Your Question Over the Fence</title>
+      <link>/posts/dont-throw-your-question-over-the-fence/</link>
+      <pubDate>Sat, 10 Feb 2018 15:58:41 +0100</pubDate>
+      
+      <guid>/posts/dont-throw-your-question-over-the-fence/</guid>
+      <description>As software engineers problem solving is part of what we do, we tend to face a lot of problems during our work or learning time, problems is part of our life routine.
+But lately I noticed a pattern, it annoyed me so much that I had to write this article about it.
+It starts by finding someone facing a problem then without taking any time to solve it, he just jumps in a large group of professionals, dumping his question as a one-liner, without a context, without search effort, and even without the effort of writing it in a proper way, it feels like he&amp;rsquo;s throwing his question over the fence and waiting for his neighbor to solve it for him.</description>
+    </item>
     
     <item>
       <title>Enforcing Project Structure With Rspec</title>
