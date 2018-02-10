@@ -56,5 +56,6 @@ that project, but it's also for you as over time you'll forget the decisions
 you've made and that's a safety net for you.
 
 along with that technique I also document the rules I decided for each directory
-in the project in a `README.md` file inside that project, and I link to it from
-the root `README.md` file, that makes it mode visible for contributors.
+in the project in a `README.md` file inside the corresponding directory, and I
+link to it from the root `README.md` file, that makes it mode visible for
+contributors.
