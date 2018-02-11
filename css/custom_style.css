@@ -2,13 +2,6 @@ code {
     background-color: transparent;
 }
 
-#wrapper,
-.profile #wrapper{
-    max-width: 800px;
-}
-
-ol li	{ list-style-type:inherit; }
-
 li ol, li ul {
     margin-left: 20px;
 }
