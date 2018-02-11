@@ -49,3 +49,7 @@ for you.**
 
 **Stop wasting other people time, and if you're not into solving problems then
 stop wasting your own time and choose another line of work.**
+
+## Further reading
+
+* [How to ask a question](https://amreldib.gitlab.io/blog/HowToAskAQuestion/)
