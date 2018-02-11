@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.emadelsaid.com/posts/getting-your-cpu-speed-in-ghz-on-linux/</loc>
+    <lastmod>2018-02-12T00:08:43+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.emadelsaid.com/posts/dont-throw-your-question-over-the-fence/</loc>
     <lastmod>2018-02-10T15:58:41+01:00</lastmod>
   </url>
@@ -89,13 +94,13 @@
   
   <url>
     <loc>http://www.emadelsaid.com/</loc>
-    <lastmod>2018-02-10T15:58:41+01:00</lastmod>
+    <lastmod>2018-02-12T00:08:43+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.emadelsaid.com/posts/</loc>
-    <lastmod>2018-02-10T15:58:41+01:00</lastmod>
+    <lastmod>2018-02-12T00:08:43+01:00</lastmod>
     <priority>0</priority>
   </url>
   

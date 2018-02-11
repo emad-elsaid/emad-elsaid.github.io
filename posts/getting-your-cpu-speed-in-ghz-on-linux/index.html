@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Emad Elsaid">
+<meta name="description" content="Ruby/Go Web Developer">
+<meta name="generator" content="Hugo 0.35" />
+<title>Getting Your CPU Speed in GHz on Linux</title>
+<link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/highlight.css">
+
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/custom_style.css">
+
+
+
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/monosocialiconsfont.css">
+
+
+
+<link href="http://www.emadelsaid.com/index.xml" rel="alternate" type="application/rss+xml" title="Emad Elsaid" />
+
+
+<meta property="og:title" content="Getting Your CPU Speed in GHz on Linux" />
+<meta property="og:description" content="I&rsquo;m using I3 and I3blocks on my machine, and I wanted to show my current processor speed as one of the I3blocks sections just because!
+so the first problem I faced is how to get my current processor speed, lscpu returns the full CPU details as follows:
+Architecture: x86_64 CPU op-mode(s): 32-bit, 64-bit Byte Order: Little Endian CPU(s): 4 On-line CPU(s) list: 0-3 Thread(s) per core: 2 Core(s) per socket: 2 Socket(s): 1 NUMA node(s): 1 Vendor ID: GenuineIntel CPU family: 6 Model: 142 Model name: Intel(R) Core(TM) i7-7600U CPU @ 2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.emadelsaid.com/posts/getting-your-cpu-speed-in-ghz-on-linux/" />
+
+
+
+<meta property="article:published_time" content="2018-02-12T00:08:43&#43;01:00"/>
+
+<meta property="article:modified_time" content="2018-02-12T00:08:43&#43;01:00"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Getting Your CPU Speed in GHz on Linux">
+<meta itemprop="description" content="I&rsquo;m using I3 and I3blocks on my machine, and I wanted to show my current processor speed as one of the I3blocks sections just because!
+so the first problem I faced is how to get my current processor speed, lscpu returns the full CPU details as follows:
+Architecture: x86_64 CPU op-mode(s): 32-bit, 64-bit Byte Order: Little Endian CPU(s): 4 On-line CPU(s) list: 0-3 Thread(s) per core: 2 Core(s) per socket: 2 Socket(s): 1 NUMA node(s): 1 Vendor ID: GenuineIntel CPU family: 6 Model: 142 Model name: Intel(R) Core(TM) i7-7600U CPU @ 2.">
+
+
+<meta itemprop="datePublished" content="2018-02-12T00:08:43&#43;01:00" />
+<meta itemprop="dateModified" content="2018-02-12T00:08:43&#43;01:00" />
+<meta itemprop="wordCount" content="488">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Getting Your CPU Speed in GHz on Linux"/>
+<meta name="twitter:description" content="I&rsquo;m using I3 and I3blocks on my machine, and I wanted to show my current processor speed as one of the I3blocks sections just because!
+so the first problem I faced is how to get my current processor speed, lscpu returns the full CPU details as follows:
+Architecture: x86_64 CPU op-mode(s): 32-bit, 64-bit Byte Order: Little Endian CPU(s): 4 On-line CPU(s) list: 0-3 Thread(s) per core: 2 Core(s) per socket: 2 Socket(s): 1 NUMA node(s): 1 Vendor ID: GenuineIntel CPU family: 6 Model: 142 Model name: Intel(R) Core(TM) i7-7600U CPU @ 2."/>
+<meta name="twitter:site" content="@https://www.twitter.com/emad__elsaid"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='http://www.emadelsaid.com/'> <span class="arrow">←</span>All Articles</a>
+	
+
+	
+
+	
+		<a class="cta" href="http://www.emadelsaid.com/index.xml">RSS</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Getting Your CPU Speed in GHz on Linux</h1>
+        <h2 class="subtitle"></h2>
+        <h2 class="headline">
+        February 12, 2018
+        <br>
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        <p>I&rsquo;m using I3 and I3blocks on my machine, and I wanted to show my current
+processor speed as one of the I3blocks sections just because!</p>
+
+<p>so the first problem I faced is how to get my current processor speed, <code>lscpu</code>
+returns the full CPU details as follows:</p>
+
+<pre><code>Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              4
+On-line CPU(s) list: 0-3
+Thread(s) per core:  2
+Core(s) per socket:  2
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           GenuineIntel
+CPU family:          6
+Model:               142
+Model name:          Intel(R) Core(TM) i7-7600U CPU @ 2.80GHz
+Stepping:            9
+CPU MHz:             1490.249
+CPU max MHz:         3900.0000
+CPU min MHz:         400.0000
+BogoMIPS:            5810.00
+Virtualization:      VT-x
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            256K
+L3 cache:            4096K
+NUMA node0 CPU(s):   0-3
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti retpoline rsb_ctxsw tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp
+</code></pre>
+
+<p>I need to show only the &ldquo;CPU MHz&rdquo; line, <code>grep</code> could be a potential solution
+with</p>
+
+<pre><code class="language-bash">lscpu | grep &quot;CPU MHz&quot;
+</code></pre>
+
+<p>But that will give you this output</p>
+
+<pre><code>CPU MHz:             1484.185
+</code></pre>
+
+<p>so you need to get the number without the text, here we can use <code>awk</code> to extract
+the number, and as awk will consider it the 3rd column we can do the following
+to show only the number</p>
+
+<pre><code class="language-bash">lscpu | grep &quot;CPU MHz&quot; | awk '{print $3}'
+</code></pre>
+
+<p>that will output the number without any text, and as <code>awk</code> can be used to print
+in case a condition is true we can print the number if &ldquo;CPU MHz&rdquo; is found,
+getting rid of <code>grep</code></p>
+
+<pre><code class="language-bash">lscpu | awk '/CPU MHz/ {print $3}'
+</code></pre>
+
+<p>the number is in MHz, so if we want to display it in GHz we need to divide by
+1000</p>
+
+<pre><code class="language-bash">lscpu | awk '/CPU MHz/ {print $3/1000}'
+</code></pre>
+
+<p>that will print the number with all digits after floating point <code>2.08582</code>, if we
+need to print it with a certain precision we can use <code>printf</code> function to limit
+the digits to one or two digits, the following will limit the digits to 2 digits
+after floating point</p>
+
+<pre><code class="language-bash">lscpu | awk '/CPU MHz/ {printf(&quot;%0.2f&quot;, $3/1000)}'
+</code></pre>
+
+<p>that will print something like <code>3.07</code> depending on your processor speed, my
+script at the end looked like that</p>
+
+<pre><code class="language-bash">#!/usr/bin/env bash
+lscpu | awk '/CPU MHz/ {printf(&quot;%.1f GHz&quot;,$3/1000); }'
+</code></pre>
+
+<p>I prefer the 1 digit precision and added &ldquo;GHz&rdquo; at the end of the output.</p>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="https://twitter.com/emad__elsaid">
+    <img class="avatar" src="http://www.emadelsaid.com/images/avatar.png">
+    <div>
+        <span class="dark">Emad Elsaid</span>
+        <span>Software Engineer, Ruby/Go Web Developer</span>
+    </div>
+    </a>
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fwww.emadelsaid.com%2fposts%2fgetting-your-cpu-speed-in-ghz-on-linux%2f - Getting%20Your%20CPU%20Speed%20in%20GHz%20on%20Linux by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/posts/dont-throw-your-question-over-the-fence/">Don&#39;t Throw Your Question Over the Fence<aside class="dates">Feb 10 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/enforcing-project-structure-with-rspec/">Enforcing Project Structure With Rspec<aside class="dates">Feb 9 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/posting-to-hugo-static-site-from-a-facebook-profile/">Posting to Hugo Static Site From a Facebook Profile<aside class="dates">Feb 5 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/how-to-find-a-solution-for-your-problem/">How to Find a Solution for Your Problem<aside class="dates">Feb 3 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/exporting-a-facebook-group-as-a-website/">Exporting a Facebook Group as a Website<aside class="dates">Feb 1 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/erb-templates-as-standalone-executables/">ERB Templates as Standalone Executables<aside class="dates">Jan 24 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/working-with-legacy-code/">Working With Legacy Code<aside class="dates">Jan 21 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/projects-files-flame-graph/">Projects Files Flame Graph<aside class="dates">Jan 21 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/%D8%AA%D9%88%D8%A7%D8%B2%D9%86-%D8%AC%D9%8A%D9%86%D9%8A/">توازن جيني<aside class="dates">Jan 20 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/consistency-over-creativity/">Consistency Over Creativity<aside class="dates">Jan 14 2018</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.facebook.com/emad.elsaid.hamed">
+        roundedfacebook
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/emad-elsaid">
+        roundedgithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/emad__elsaid">
+        roundedtwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2018 Emad Elsaid
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://www.emadelsaid.com/js/main.js"></script>
+<script src="http://www.emadelsaid.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-112396214-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>

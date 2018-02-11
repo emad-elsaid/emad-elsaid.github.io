@@ -6,10 +6,21 @@
     <description>Recent content on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Feb 2018 15:58:41 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 12 Feb 2018 00:08:43 +0100</lastBuildDate>
     
 	<atom:link href="http://www.emadelsaid.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Getting Your CPU Speed in GHz on Linux</title>
+      <link>http://www.emadelsaid.com/posts/getting-your-cpu-speed-in-ghz-on-linux/</link>
+      <pubDate>Mon, 12 Feb 2018 00:08:43 +0100</pubDate>
+      
+      <guid>http://www.emadelsaid.com/posts/getting-your-cpu-speed-in-ghz-on-linux/</guid>
+      <description>I&amp;rsquo;m using I3 and I3blocks on my machine, and I wanted to show my current processor speed as one of the I3blocks sections just because!
+so the first problem I faced is how to get my current processor speed, lscpu returns the full CPU details as follows:
+Architecture: x86_64 CPU op-mode(s): 32-bit, 64-bit Byte Order: Little Endian CPU(s): 4 On-line CPU(s) list: 0-3 Thread(s) per core: 2 Core(s) per socket: 2 Socket(s): 1 NUMA node(s): 1 Vendor ID: GenuineIntel CPU family: 6 Model: 142 Model name: Intel(R) Core(TM) i7-7600U CPU @ 2.</description>
+    </item>
     
     <item>
       <title>Don&#39;t Throw Your Question Over the Fence</title>
