@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.emadelsaid.com/posts/%D9%85%D8%AA%D9%8A-%D8%AA%D9%88%D9%82%D9%81%D9%86%D8%A7-%D8%B9%D9%86-%D8%AA%D8%B5%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84/</loc>
+    <lastmod>2018-02-24T19:55:01+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.emadelsaid.com/posts/getting-your-cpu-speed-in-ghz-on-linux/</loc>
     <lastmod>2018-02-12T00:08:43+01:00</lastmod>
   </url>
@@ -94,13 +99,13 @@
   
   <url>
     <loc>http://www.emadelsaid.com/</loc>
-    <lastmod>2018-02-12T00:08:43+01:00</lastmod>
+    <lastmod>2018-02-24T19:55:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.emadelsaid.com/posts/</loc>
-    <lastmod>2018-02-12T00:08:43+01:00</lastmod>
+    <lastmod>2018-02-24T19:55:01+01:00</lastmod>
     <priority>0</priority>
   </url>
   
