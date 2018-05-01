@@ -1,5 +1,5 @@
 ---
-title: "مراجعة رواية the Gods Themselves"
+title: "مراجعة رواية The Gods Themselves"
 date: 2018-05-01T19:55:40+02:00
 ---
 
