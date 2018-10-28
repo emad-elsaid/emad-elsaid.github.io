@@ -16,12 +16,12 @@ respond with you output.
 
 But do we have to wait to either wait for all of them? what if we can render
 what's done and ignore the rest, and when we render the page again maybe other
-commands/queryies are finished so we render them and so on until we try to
+commands/queries are finished so we render them and so on until we try to
 request the page one time and all queries are done so we'll render the full
 page.
 
 I think this isn't a new idea, I vaguely remember a ruby framework that does
-this async widgets but can remember the name at all, maybe it was introduced in
+this Async widgets but can remember the name at all, maybe it was introduced in
 one of the ruby/rails conferences/talks.
 
 The solution I came up with is straight forward, the interface for you should be
@@ -38,11 +38,11 @@ should have a track of what blocks created and what's not, so a cache has to
 exist for each block you try to execute, and whenever this method is called it
 creates or gets the output of the block.
 
-The solution will allow you to render each part of the page asyncronously, as
+The solution will allow you to render each part of the page asynchronously, as
 the interface is simply a method call taking a block.
 
 The following gist may show you how this could be implemented, it's a simple
-sinatra server, that renders the output of `ps` executed on a remote server,
+Sinatra server, that renders the output of `ps` executed on a remote server,
 when the page is rendered the block will be sent to the background and the page
 will be empty, and when you refresh the method call will return the output if
 the block finished
