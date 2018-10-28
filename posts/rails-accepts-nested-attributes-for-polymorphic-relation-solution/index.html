@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.38" />
+<meta name="generator" content="Hugo 0.49.2" />
 <title>Rails Accepts_nested_attributes for polymorphic relation solution</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -27,23 +27,8 @@
 <meta property="og:description" content="yesterday i faced a problem with my rails application, my models was as follows
 class Vehicle &lt; ActiveRecord::Base MOVABLES = [:car, :bus, :plane] belongs_to :movable, polymorphic: true, dependent: :destroy, required: true, autosave: true accepts_nested_attributes_for :movable end  class Car &lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  class Bus &lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  class Plane &lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  so, when i try to create a Veihcle with nested attributes for the movable it complain with error &ldquo;are you trying to build a polymorphic relation?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.emadelsaid.com/posts/rails-accepts-nested-attributes-for-polymorphic-relation-solution/" />
-
-
-
-<meta property="article:published_time" content="2015-03-23T11:53:44&#43;02:00"/>
-
+<meta property="og:url" content="http://www.emadelsaid.com/posts/rails-accepts-nested-attributes-for-polymorphic-relation-solution/" /><meta property="article:published_time" content="2015-03-23T11:53:44&#43;02:00"/>
 <meta property="article:modified_time" content="2015-03-23T11:53:44&#43;02:00"/>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -241,6 +226,10 @@ a trivial solution.</p>
     
     
         <li>
+            <a href="/posts/async-rendering-a-page-with-sinatra/">Async Rendering a Page With Sinatra<aside class="dates">Oct 28 2018</aside></a>
+        </li>
+    
+        <li>
             <a href="/posts/%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9-%D8%B1%D9%88%D8%A7%D9%8A%D8%A9-the-gods-themselves/">مراجعة رواية The Gods Themselves<aside class="dates">May 1 2018</aside></a>
         </li>
     
@@ -274,10 +263,6 @@ a trivial solution.</p>
     
         <li>
             <a href="/posts/how-to-find-a-solution-for-your-problem/">How to Find a Solution for Your Problem<aside class="dates">Feb 3 2018</aside></a>
-        </li>
-    
-        <li>
-            <a href="/posts/exporting-a-facebook-group-as-a-website/">Exporting a Facebook Group as a Website<aside class="dates">Feb 1 2018</aside></a>
         </li>
     
 </ul>
@@ -324,14 +309,17 @@ a trivial solution.</p>
 
 
 
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-112396214-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-112396214-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
 
 

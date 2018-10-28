@@ -6,10 +6,21 @@
     <description>Recent content on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 May 2018 19:55:40 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 28 Oct 2018 14:30:04 +0100</lastBuildDate>
     
 	<atom:link href="http://www.emadelsaid.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Async Rendering a Page With Sinatra</title>
+      <link>http://www.emadelsaid.com/posts/async-rendering-a-page-with-sinatra/</link>
+      <pubDate>Sun, 28 Oct 2018 14:30:04 +0100</pubDate>
+      
+      <guid>http://www.emadelsaid.com/posts/async-rendering-a-page-with-sinatra/</guid>
+      <description>I was thinking, what if you need a server that serves a page that does alot of processing, it sends multiple commands, does alot of queries and most of them takes a long time.
+Waiting for all commands to finish isn&amp;rsquo;t an option, fast response time is also a requirement, so a solution could be warming up a cache then render the page from this cache.
+That solution means you will also wait for all commands/queries to finish then respond with you output.</description>
+    </item>
     
     <item>
       <title>مراجعة رواية The Gods Themselves</title>

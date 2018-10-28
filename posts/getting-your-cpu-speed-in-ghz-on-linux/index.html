@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.38" />
+<meta name="generator" content="Hugo 0.49.2" />
 <title>Getting Your CPU Speed in GHz on Linux</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -28,23 +28,8 @@
 so the first problem I faced is how to get my current processor speed, lscpu returns the full CPU details as follows:
 Architecture: x86_64 CPU op-mode(s): 32-bit, 64-bit Byte Order: Little Endian CPU(s): 4 On-line CPU(s) list: 0-3 Thread(s) per core: 2 Core(s) per socket: 2 Socket(s): 1 NUMA node(s): 1 Vendor ID: GenuineIntel CPU family: 6 Model: 142 Model name: Intel(R) Core(TM) i7-7600U CPU @ 2." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.emadelsaid.com/posts/getting-your-cpu-speed-in-ghz-on-linux/" />
-
-
-
-<meta property="article:published_time" content="2018-02-12T00:08:43&#43;01:00"/>
-
+<meta property="og:url" content="http://www.emadelsaid.com/posts/getting-your-cpu-speed-in-ghz-on-linux/" /><meta property="article:published_time" content="2018-02-12T00:08:43&#43;01:00"/>
 <meta property="article:modified_time" content="2018-02-12T00:08:43&#43;01:00"/>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -213,6 +198,10 @@ lscpu | awk '/CPU MHz/ {printf(&quot;%.1f GHz&quot;,$3/1000); }'
     
     
         <li>
+            <a href="/posts/async-rendering-a-page-with-sinatra/">Async Rendering a Page With Sinatra<aside class="dates">Oct 28 2018</aside></a>
+        </li>
+    
+        <li>
             <a href="/posts/%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9-%D8%B1%D9%88%D8%A7%D9%8A%D8%A9-the-gods-themselves/">مراجعة رواية The Gods Themselves<aside class="dates">May 1 2018</aside></a>
         </li>
     
@@ -246,10 +235,6 @@ lscpu | awk '/CPU MHz/ {printf(&quot;%.1f GHz&quot;,$3/1000); }'
     
         <li>
             <a href="/posts/exporting-a-facebook-group-as-a-website/">Exporting a Facebook Group as a Website<aside class="dates">Feb 1 2018</aside></a>
-        </li>
-    
-        <li>
-            <a href="/posts/erb-templates-as-standalone-executables/">ERB Templates as Standalone Executables<aside class="dates">Jan 24 2018</aside></a>
         </li>
     
 </ul>
@@ -296,14 +281,17 @@ lscpu | awk '/CPU MHz/ {printf(&quot;%.1f GHz&quot;,$3/1000); }'
 
 
 
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-112396214-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-112396214-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
 
 

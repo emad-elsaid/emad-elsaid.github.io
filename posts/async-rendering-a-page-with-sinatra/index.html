@@ -7,7 +7,7 @@
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
 <meta name="generator" content="Hugo 0.49.2" />
-<title>Integerating Jekyll and Octopress in Emacs</title>
+<title>Async Rendering a Page With Sinatra</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/highlight.css">
@@ -23,35 +23,35 @@
 <link href="http://www.emadelsaid.com/index.xml" rel="alternate" type="application/rss+xml" title="Emad Elsaid" />
 
 
-<meta property="og:title" content="Integerating Jekyll and Octopress in Emacs" />
-<meta property="og:description" content="I started using emacs couple weeks ago and i have to say that i&rsquo;m amazed by how this editor is working, Emacs VS VIM war isn&rsquo;t coming from nowhere after all.
-one thing that annoys me is that i stopped blogging for a long time, if you checked the last blog post, it&rsquo;s been a year since the last one.
-so I had an idea, what if i made blogging more comforting for me?" />
+<meta property="og:title" content="Async Rendering a Page With Sinatra" />
+<meta property="og:description" content="I was thinking, what if you need a server that serves a page that does alot of processing, it sends multiple commands, does alot of queries and most of them takes a long time.
+Waiting for all commands to finish isn&rsquo;t an option, fast response time is also a requirement, so a solution could be warming up a cache then render the page from this cache.
+That solution means you will also wait for all commands/queries to finish then respond with you output." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.emadelsaid.com/posts/integerating-jekyll-and-octopress-into-emacs/" /><meta property="article:published_time" content="2016-02-23T21:30:44&#43;01:00"/>
-<meta property="article:modified_time" content="2016-02-23T21:30:44&#43;01:00"/>
+<meta property="og:url" content="http://www.emadelsaid.com/posts/async-rendering-a-page-with-sinatra/" /><meta property="article:published_time" content="2018-10-28T14:30:04&#43;01:00"/>
+<meta property="article:modified_time" content="2018-10-28T14:30:04&#43;01:00"/>
 
 
 
-<meta itemprop="name" content="Integerating Jekyll and Octopress in Emacs">
-<meta itemprop="description" content="I started using emacs couple weeks ago and i have to say that i&rsquo;m amazed by how this editor is working, Emacs VS VIM war isn&rsquo;t coming from nowhere after all.
-one thing that annoys me is that i stopped blogging for a long time, if you checked the last blog post, it&rsquo;s been a year since the last one.
-so I had an idea, what if i made blogging more comforting for me?">
+<meta itemprop="name" content="Async Rendering a Page With Sinatra">
+<meta itemprop="description" content="I was thinking, what if you need a server that serves a page that does alot of processing, it sends multiple commands, does alot of queries and most of them takes a long time.
+Waiting for all commands to finish isn&rsquo;t an option, fast response time is also a requirement, so a solution could be warming up a cache then render the page from this cache.
+That solution means you will also wait for all commands/queries to finish then respond with you output.">
 
 
-<meta itemprop="datePublished" content="2016-02-23T21:30:44&#43;01:00" />
-<meta itemprop="dateModified" content="2016-02-23T21:30:44&#43;01:00" />
-<meta itemprop="wordCount" content="410">
+<meta itemprop="datePublished" content="2018-10-28T14:30:04&#43;01:00" />
+<meta itemprop="dateModified" content="2018-10-28T14:30:04&#43;01:00" />
+<meta itemprop="wordCount" content="406">
 
 
 
 <meta itemprop="keywords" content="" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Integerating Jekyll and Octopress in Emacs"/>
-<meta name="twitter:description" content="I started using emacs couple weeks ago and i have to say that i&rsquo;m amazed by how this editor is working, Emacs VS VIM war isn&rsquo;t coming from nowhere after all.
-one thing that annoys me is that i stopped blogging for a long time, if you checked the last blog post, it&rsquo;s been a year since the last one.
-so I had an idea, what if i made blogging more comforting for me?"/>
+<meta name="twitter:title" content="Async Rendering a Page With Sinatra"/>
+<meta name="twitter:description" content="I was thinking, what if you need a server that serves a page that does alot of processing, it sends multiple commands, does alot of queries and most of them takes a long time.
+Waiting for all commands to finish isn&rsquo;t an option, fast response time is also a requirement, so a solution could be warming up a cache then render the page from this cache.
+That solution means you will also wait for all commands/queries to finish then respond with you output."/>
 <meta name="twitter:site" content="@https://www.twitter.com/emad__elsaid"/>
 
 
@@ -74,79 +74,60 @@ so I had an idea, what if i made blogging more comforting for me?"/>
         
 <article class="post">
     <header>
-        <h1>Integerating Jekyll and Octopress in Emacs</h1>
+        <h1>Async Rendering a Page With Sinatra</h1>
         <h2 class="subtitle"></h2>
         <h2 class="headline">
-        February 23, 2016
+        October 28, 2018
         <br>
         
         </h2>
     </header>
     <section id="post-body">
-        <p>I started using emacs couple weeks ago and i have to say that i&rsquo;m amazed by how
-this editor is working, Emacs VS VIM war isn&rsquo;t coming from nowhere after all.</p>
+        <p>I was thinking, what if you need a server that serves a page that does alot of
+processing, it sends multiple commands, does alot of queries and most of them
+takes a long time.</p>
 
-<p>one thing that annoys me is that i stopped blogging for a long time, if you checked the last
-blog post, it&rsquo;s been a year since the last one.</p>
+<p>Waiting for all commands to finish isn&rsquo;t an option, fast response time is also a
+requirement, so a solution could be warming up a cache then render the page from
+this cache.</p>
 
-<p>so I had an idea, what if i made blogging more comforting for me? maybe integerating my
-blogging platform (jekyll + octopress + git) to Emacs, aaaand there was a problem,
-the current jekyll (hyde.el) looks weired to me that i couldn&rsquo;t even try to use it.</p>
+<p>That solution means you will also wait for all commands/queries to finish then
+respond with you output.</p>
 
-<p>I started writing my own integeration, to create a post and publish it I can write simple
-functions to execute these command from Emacs into my blog directory, that&rsquo;s not so hard right?</p>
+<p>But do we have to wait to either wait for all of them? what if we can render
+what&rsquo;s done and ignore the rest, and when we render the page again maybe other
+commands/queryies are finished so we render them and so on until we try to
+request the page one time and all queries are done so we&rsquo;ll render the full
+page.</p>
 
-<p>nooooo, for a ELisp noob like me it&rsquo;s like hell, i had to Google how to define a variable,
-see? it&rsquo;s hell, and i was stuck for a while untill i knew that <code>C-x X-e</code> doesn&rsquo;t evaulate
-the whole buffer, yeah, I&rsquo;m a total noob.</p>
+<p>I think this isn&rsquo;t a new idea, I vaguely remember a ruby framework that does
+this async widgets but can remember the name at all, maybe it was introduced in
+one of the ruby/rails conferences/talks.</p>
 
-<p>after a lot of sweat, blood and WTF moments i implemented 3 methods:</p>
+<p>The solution I came up with is straight forward, the interface for you should be
+a method that you can passing a block and a default value, that method will
+execute that block, if the block takes a long time it&rsquo;ll return the default
+value until one time that method is executed while requesting the page and it&rsquo;ll
+return the block return value.</p>
 
-<ol>
-<li>the first one <code>octopress-post</code> is to create new post interactively and open the generated file in Emacs.</li>
-<li><code>octopress-dir</code> to open <code>_posts</code> directory, for fast access to posts and so.</li>
-<li><code>octopress-build-and-deploy</code> to build the blog with jekyll then deploy it with octopress to github pages</li>
-</ol>
+<p>That solution require us to execute the block in a non-blocking wait, so to do
+that let&rsquo;s create a new thread for that block.</p>
 
-<p>the 3 functions are simple implementation, you should not expect much from my Elisp code, it&rsquo;s a simple
-straight forward implementation and there is a lot of room for enhancements.</p>
+<p>Now you have a thread running in the background, the method when called again
+should have a track of what blocks created and what&rsquo;s not, so a cache has to
+exist for each block you try to execute, and whenever this method is called it
+creates or gets the output of the block.</p>
 
-<p>This post is the my first post from Emacs, Hope it works, wish me luck,</p>
+<p>The solution will allow you to render each part of the page asyncronously, as
+the interface is simply a method call taking a block.</p>
 
-<p>Oh I forgot, here is my code, I just pasted it to my <code>~/.emacs</code> and execute it with <code>M-x RET &lt;function-name&gt;</code></p>
+<p>The following gist may show you how this could be implemented, it&rsquo;s a simple
+sinatra server, that renders the output of <code>ps</code> executed on a remote server,
+when the page is rendered the block will be sent to the background and the page
+will be empty, and when you refresh the method call will return the output if
+the block finished</p>
 
-<pre><code class="language-elisp">
-(defvar octopress-path &quot;/Users/emad/bitbucket/blazeeboy&quot;)
-(defun octopress-post (post-name)
-  (interactive &quot;sNew post name: &quot;)
-  (message &quot;Creating new post: %s&quot; post-name)
-  (defvar post-path
-    (shell-command-to-string
-     (concat &quot;cd &quot; octopress-path &quot;; octopress new post &quot; post-name)
-     )
-    )
-  (find-file-existing (trim-string post-path))
-  )
-
-(defun octopress-dir ()
-  (interactive)
-  (find-file-existing
-   (concat octopress-path &quot;/_posts&quot;))
-  )
-
-(defun octopress-build-and-deploy ()
-  (interactive)
-  (async-shell-command (concat &quot;cd &quot; octopress-path &quot;; jekyll build; octopress deploy&quot;))
-  )
-
-;;; third party code
-;;; http://ergoemacs.org/emacs/modernization_elisp_lib_problem.html
-(defun trim-string (string)
-  &quot;Remove white spaces in beginning and ending of STRING.
-White space here is any of: space, tab, emacs newline (line feed, ASCII 10).&quot;
-  (replace-regexp-in-string &quot;\\`[ \t\n]*&quot; &quot;&quot; (replace-regexp-in-string &quot;[ \t\n]*\\'&quot; &quot;&quot; string))
-  )
-</code></pre>
+<script type="application/javascript" src="//gist.github.com/emad-elsaid/c059b48191bde7030f34aa77b35bc304.js"></script>
 
     </section>
 </article>
@@ -160,7 +141,7 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10).&quo
     </div>
     </a>
     <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fwww.emadelsaid.com%2fposts%2fintegerating-jekyll-and-octopress-into-emacs%2f - Integerating%20Jekyll%20and%20Octopress%20in%20Emacs by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fwww.emadelsaid.com%2fposts%2fasync-rendering-a-page-with-sinatra%2f - Async%20Rendering%20a%20Page%20With%20Sinatra by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -180,10 +161,6 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10).&quo
 
     
     
-    
-        <li>
-            <a href="/posts/async-rendering-a-page-with-sinatra/">Async Rendering a Page With Sinatra<aside class="dates">Oct 28 2018</aside></a>
-        </li>
     
         <li>
             <a href="/posts/%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9-%D8%B1%D9%88%D8%A7%D9%8A%D8%A9-the-gods-themselves/">مراجعة رواية The Gods Themselves<aside class="dates">May 1 2018</aside></a>
@@ -219,6 +196,10 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10).&quo
     
         <li>
             <a href="/posts/how-to-find-a-solution-for-your-problem/">How to Find a Solution for Your Problem<aside class="dates">Feb 3 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/exporting-a-facebook-group-as-a-website/">Exporting a Facebook Group as a Website<aside class="dates">Feb 1 2018</aside></a>
         </li>
     
 </ul>

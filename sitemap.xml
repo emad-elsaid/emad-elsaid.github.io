@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.emadelsaid.com/posts/async-rendering-a-page-with-sinatra/</loc>
+    <lastmod>2018-10-28T14:30:04+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.emadelsaid.com/posts/%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9-%D8%B1%D9%88%D8%A7%D9%8A%D8%A9-the-gods-themselves/</loc>
     <lastmod>2018-05-01T19:55:40+02:00</lastmod>
   </url>
@@ -114,13 +119,13 @@
   
   <url>
     <loc>http://www.emadelsaid.com/</loc>
-    <lastmod>2018-05-01T19:55:40+02:00</lastmod>
+    <lastmod>2018-10-28T14:30:04+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.emadelsaid.com/posts/</loc>
-    <lastmod>2018-05-01T19:55:40+02:00</lastmod>
+    <lastmod>2018-10-28T14:30:04+01:00</lastmod>
     <priority>0</priority>
   </url>
   
