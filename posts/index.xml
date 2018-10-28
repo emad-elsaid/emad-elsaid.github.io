@@ -19,7 +19,7 @@
       <guid>http://www.emadelsaid.com/posts/async-rendering-a-page-with-sinatra/</guid>
       <description>I was thinking, what if you need a server that serves a page that does alot of processing, it sends multiple commands, does alot of queries and most of them takes a long time.
 Waiting for all commands to finish isn&amp;rsquo;t an option, fast response time is also a requirement, so a solution could be warming up a cache then render the page from this cache.
-That solution means you will also wait for all commands/queries to finish then respond with you output.</description>
+That solution means you will also wait for all commands/queries to finish then respond with your output.</description>
     </item>
     
     <item>

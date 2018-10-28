@@ -12,25 +12,24 @@ requirement, so a solution could be warming up a cache then render the page from
 this cache.
 
 That solution means you will also wait for all commands/queries to finish then
-respond with you output.
+respond with your output.
 
-But do we have to wait to either wait for all of them? what if we can render
-what's done and ignore the rest, and when we render the page again maybe other
-commands/queries are finished so we render them and so on until we try to
-request the page one time and all queries are done so we'll render the full
-page.
+But do we have to wait to for all of them? what if we can render what's done and
+ignore the rest, and when we render the page again maybe other commands/queries
+are finished so we render them and so on until we try to request the page one
+time and all queries are done so we'll render the full page.
 
 I think this isn't a new idea, I vaguely remember a ruby framework that does
-this Async widgets but can remember the name at all, maybe it was introduced in
+this Async widgets but can't remember the name at all, maybe it was introduced in
 one of the ruby/rails conferences/talks.
 
 The solution I came up with is straight forward, the interface for you should be
-a method that you can passing a block and a default value, that method will
+a method that you can pass a block and a default value, that method will
 execute that block, if the block takes a long time it'll return the default
 value until one time that method is executed while requesting the page and it'll
 return the block return value.
 
-That solution require us to execute the block in a non-blocking wait, so to do
+That solution require us to execute the block in a non-blocking way, so to do
 that let's create a new thread for that block.
 
 Now you have a thread running in the background, the method when called again
