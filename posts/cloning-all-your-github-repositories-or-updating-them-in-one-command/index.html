@@ -7,7 +7,7 @@
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
 <meta name="generator" content="Hugo 0.49.2" />
-<title>Enforcing Project Structure With Rspec</title>
+<title>Cloning All Your GitHub Repositories or Updating Them in One Command</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/highlight.css">
@@ -23,32 +23,29 @@
 <link href="http://www.emadelsaid.com/index.xml" rel="alternate" type="application/rss+xml" title="Emad Elsaid" />
 
 
-<meta property="og:title" content="Enforcing Project Structure With Rspec" />
-<meta property="og:description" content="I faced a situation where I&rsquo;m working on a legacy project, that project was a normal ruby on rails project, with controllers, models, decorators, concerns, but with the long life of the project and turnover of the developers, inconsistency was introduced everywhere.
-One of the places where consistency were violated was the concerns directories, where concerns names were not the same, some of them are suffixed with Concern suffix, and others were not." />
+<meta property="og:title" content="Cloning All Your GitHub Repositories or Updating Them in One Command" />
+<meta property="og:description" content="I had a new laptop couple weeks ago at work, and I had to set it up with everything I need including the projects I have been working on from GitHub, I remembered how I usually git clone every project I start working on, it involves going to GitHub to the project page, copy the clone URL then go to my terminal, change directory to my projects directory then execute git clone http://github." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.emadelsaid.com/posts/enforcing-project-structure-with-rspec/" /><meta property="article:published_time" content="2018-02-09T23:14:27&#43;01:00"/>
-<meta property="article:modified_time" content="2018-02-09T23:14:27&#43;01:00"/>
+<meta property="og:url" content="http://www.emadelsaid.com/posts/cloning-all-your-github-repositories-or-updating-them-in-one-command/" /><meta property="article:published_time" content="2018-10-29T21:04:15&#43;01:00"/>
+<meta property="article:modified_time" content="2018-10-29T21:04:15&#43;01:00"/>
 
 
 
-<meta itemprop="name" content="Enforcing Project Structure With Rspec">
-<meta itemprop="description" content="I faced a situation where I&rsquo;m working on a legacy project, that project was a normal ruby on rails project, with controllers, models, decorators, concerns, but with the long life of the project and turnover of the developers, inconsistency was introduced everywhere.
-One of the places where consistency were violated was the concerns directories, where concerns names were not the same, some of them are suffixed with Concern suffix, and others were not.">
+<meta itemprop="name" content="Cloning All Your GitHub Repositories or Updating Them in One Command">
+<meta itemprop="description" content="I had a new laptop couple weeks ago at work, and I had to set it up with everything I need including the projects I have been working on from GitHub, I remembered how I usually git clone every project I start working on, it involves going to GitHub to the project page, copy the clone URL then go to my terminal, change directory to my projects directory then execute git clone http://github.">
 
 
-<meta itemprop="datePublished" content="2018-02-09T23:14:27&#43;01:00" />
-<meta itemprop="dateModified" content="2018-02-09T23:14:27&#43;01:00" />
-<meta itemprop="wordCount" content="366">
+<meta itemprop="datePublished" content="2018-10-29T21:04:15&#43;01:00" />
+<meta itemprop="dateModified" content="2018-10-29T21:04:15&#43;01:00" />
+<meta itemprop="wordCount" content="214">
 
 
 
 <meta itemprop="keywords" content="" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Enforcing Project Structure With Rspec"/>
-<meta name="twitter:description" content="I faced a situation where I&rsquo;m working on a legacy project, that project was a normal ruby on rails project, with controllers, models, decorators, concerns, but with the long life of the project and turnover of the developers, inconsistency was introduced everywhere.
-One of the places where consistency were violated was the concerns directories, where concerns names were not the same, some of them are suffixed with Concern suffix, and others were not."/>
+<meta name="twitter:title" content="Cloning All Your GitHub Repositories or Updating Them in One Command"/>
+<meta name="twitter:description" content="I had a new laptop couple weeks ago at work, and I had to set it up with everything I need including the projects I have been working on from GitHub, I remembered how I usually git clone every project I start working on, it involves going to GitHub to the project page, copy the clone URL then go to my terminal, change directory to my projects directory then execute git clone http://github."/>
 <meta name="twitter:site" content="@https://www.twitter.com/emad__elsaid"/>
 
 
@@ -71,70 +68,38 @@ One of the places where consistency were violated was the concerns directories, 
         
 <article class="post">
     <header>
-        <h1>Enforcing Project Structure With Rspec</h1>
+        <h1>Cloning All Your GitHub Repositories or Updating Them in One Command</h1>
         <h2 class="subtitle"></h2>
         <h2 class="headline">
-        February 9, 2018
+        October 29, 2018
         <br>
         
         </h2>
     </header>
     <section id="post-body">
-        <p>I faced a situation where I&rsquo;m working on a legacy project, that project was a
-normal ruby on rails project, with controllers, models, decorators, concerns,
-but with the long life of the project and turnover of the developers,
-inconsistency was introduced everywhere.</p>
+        <p>I had a new laptop couple weeks ago at work, and I had to set it up with
+everything I need including the projects I have been working on from GitHub, I
+remembered how I usually <code>git clone</code> every project I start working on, it
+involves going to GitHub to the project page, copy the clone URL then go to my
+terminal, change directory to my projects directory then execute <code>git clone
+http://github.com/org/repo</code>.</p>
 
-<p>One of the places where consistency were violated was the concerns directories,
-where concerns names were not the same, some of them are suffixed with <code>Concern</code>
-suffix, and others were not.</p>
+<p>But what if I don&rsquo;t need to do that, what if I just cloned all the repositories
+at once and update them all with one command, that could save alot of time when
+I have a new machine or I came back from a long vacation and I want to update
+all the machines.</p>
 
-<p>That refactoring was pretty simple on it&rsquo;s own, you only need to rename,
-concerns files to the proper naming, rename the concerns modules themselves, and
-also any usage for these modules.</p>
+<p>The implementation is pretty trivial, I should connect to GitHub API and get the
+list of repositories for me or the organization I want to clone, iterate over
+every repo and clone or update it, and because GitHub doesn&rsquo;t return all
+repositories in one page I have to repeat that process until I get an empty
+page.</p>
 
-<p>The problem is that we don&rsquo;t just want to have that naming convention for the
-current concerns but we also need to inforce it for any future concerns, so
-we&rsquo;re trying to make it impossible to break that rule again.</p>
+<p>The following snippet does that, it needs some dependencies like <code>tty-prompt</code>
+and <code>colorize</code> both can be stripped down, but I line to have colored text and
+menus for that script.</p>
 
-<p>My approach is using the usual testing framework in place, as we use Rspec I
-just added a test suit for <code>ActiveSupport::Concern</code> where I get all concerns
-files and make sure all of them are meeting the criteria.</p>
-
-<p>And the following code snippet is the final result</p>
-
-<pre><code class="language-ruby">Rspec.describe ActiveSupport::Concern do
-  files_paths = Rails.root.join('app', 'controllers', 'concerns', '**', '*.rb')
-  files = Dir.glob(files_paths)
-
-  files.each do |file|
-    describe file do
-      it &quot;must end with concern&quot; do
-        expect(file).to end_with('_concern.rb')
-      end
-    end
-  end
-end
-</code></pre>
-
-<p>this snippet will get all ruby files in <code>app/controllers/concerns</code> and make sure
-all of them meets the naming convention.</p>
-
-<p>The same technique could be applied to <code>app/decorators</code> if you&rsquo;re using Drapper
-gem and want to make sure the naming is not violated, or the inheritance is
-maintained for all decorators.</p>
-
-<p>it can be applied to basically any rule you need to keep in your project
-lifetime.</p>
-
-<p>That doesn&rsquo;t just prevent people from breaking the design decision you took for
-that project, but it&rsquo;s also for you as over time you&rsquo;ll forget the decisions
-you&rsquo;ve made and that&rsquo;s a safety net for you.</p>
-
-<p>along with that technique I also document the rules I decided for each directory
-in the project in a <code>README.md</code> file inside the corresponding directory, and I
-link to it from the root <code>README.md</code> file, that makes it mode visible for
-contributors.</p>
+<script type="application/javascript" src="//gist.github.com/emad-elsaid/a2a1cd6cd81c8802defc19259d59525f.js"></script>
 
     </section>
 </article>
@@ -148,7 +113,7 @@ contributors.</p>
     </div>
     </a>
     <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fwww.emadelsaid.com%2fposts%2fenforcing-project-structure-with-rspec%2f - Enforcing%20Project%20Structure%20With%20Rspec by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fwww.emadelsaid.com%2fposts%2fcloning-all-your-github-repositories-or-updating-them-in-one-command%2f - Cloning%20All%20Your%20GitHub%20Repositories%20or%20Updating%20Them%20in%20One%20Command by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -168,10 +133,6 @@ contributors.</p>
 
     
     
-    
-        <li>
-            <a href="/posts/cloning-all-your-github-repositories-or-updating-them-in-one-command/">Cloning All Your GitHub Repositories or Updating Them in One Command<aside class="dates">Oct 29 2018</aside></a>
-        </li>
     
         <li>
             <a href="/posts/async-rendering-a-page-with-sinatra/">Async Rendering a Page With Sinatra<aside class="dates">Oct 28 2018</aside></a>
@@ -199,6 +160,10 @@ contributors.</p>
     
         <li>
             <a href="/posts/dont-throw-your-question-over-the-fence/">Don&#39;t Throw Your Question Over the Fence<aside class="dates">Feb 10 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/enforcing-project-structure-with-rspec/">Enforcing Project Structure With Rspec<aside class="dates">Feb 9 2018</aside></a>
         </li>
     
         <li>
