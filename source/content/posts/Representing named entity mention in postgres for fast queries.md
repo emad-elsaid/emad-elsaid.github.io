@@ -46,12 +46,14 @@ Now lets talk about the crawler part, it used to do a lot of stuff:
 
 So it's a simple idea, to see if someone is mentioned in a news article you can
 do the following:
+
 1. get people names, all of them in a list
 2. get the article you want to link with
 3. iterate over all names and see if the text contains that name, if so `create
    mention` (more is coming later on that part)
 
 That can be represented in that database with the following:
+
 1. auto increment ID
 2. person id
 3. news id
@@ -61,6 +63,7 @@ don't lock yourself, and not too much so you don't fall into the premature
 optimization hell, so lets assume we'll have `places` along with `people` in the
 future, and maybe also `organizations`, so instead of `person id` lets use a
 polymorphic relation, so the structure become like that:
+
 1. ID
 2. entity ID
 3. entity type
@@ -69,6 +72,7 @@ polymorphic relation, so the structure become like that:
 There is another problem here, that news are not one type, we have 4 types
 (YouTube videos, rss articles, tweets, Facebook posts), so `news id` should also
 be polymorphic relation
+
 1. ID
 2. entity ID
 3. entity type
@@ -87,6 +91,7 @@ expensive with more data.
 
 there is a simple solution here, whenever you're creating a mention add the
 source creation time to it so your table would look like this:
+
 1. ID
 2. entity ID
 3. entity type
@@ -115,6 +120,7 @@ With that structure you'll be able to do queries over time period, grouping by
 day/minute/second/months/years...etc.
 
 Now lets look at the big picture:
+
 1. We have many countries
 2. Every country has many Newspapers
 3. Every Newspaper has many News sources (twitter accounts, Facebook
@@ -216,6 +222,7 @@ potentially 100 visitors per second and you have 300ms query, if you doing 30 or
 them per page you'll be facing a 9000ms latency at worst, that's a 9 seconds.
 
 So the solution is always cache stuff `between requests` mostly:
+
 1. database results
 2. partial views
 

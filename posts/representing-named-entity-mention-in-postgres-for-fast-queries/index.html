@@ -39,7 +39,7 @@ Technology stack I&rsquo;m a backend developer so most of the solution is heavy 
 
 <meta itemprop="datePublished" content="2018-12-14T22:17:39&#43;01:00" />
 <meta itemprop="dateModified" content="2018-12-14T22:17:39&#43;01:00" />
-<meta itemprop="wordCount" content="1885">
+<meta itemprop="wordCount" content="1857">
 
 
 
@@ -126,35 +126,47 @@ faster).</p>
 <h1 id="the-linking-part">The linking part</h1>
 
 <p>So it&rsquo;s a simple idea, to see if someone is mentioned in a news article you can
-do the following:
-1. get people names, all of them in a list
-2. get the article you want to link with
-3. iterate over all names and see if the text contains that name, if so <code>create
-   mention</code> (more is coming later on that part)</p>
+do the following:</p>
 
-<p>That can be represented in that database with the following:
-1. auto increment ID
-2. person id
-3. news id</p>
+<ol>
+<li>get people names, all of them in a list</li>
+<li>get the article you want to link with</li>
+<li>iterate over all names and see if the text contains that name, if so <code>create
+mention</code> (more is coming later on that part)</li>
+</ol>
+
+<p>That can be represented in that database with the following:</p>
+
+<ol>
+<li>auto increment ID</li>
+<li>person id</li>
+<li>news id</li>
+</ol>
 
 <p>But keep in mind that you need to account for the future, just a little so you
 don&rsquo;t lock yourself, and not too much so you don&rsquo;t fall into the premature
 optimization hell, so lets assume we&rsquo;ll have <code>places</code> along with <code>people</code> in the
 future, and maybe also <code>organizations</code>, so instead of <code>person id</code> lets use a
-polymorphic relation, so the structure become like that:
-1. ID
-2. entity ID
-3. entity type
-4. news id</p>
+polymorphic relation, so the structure become like that:</p>
+
+<ol>
+<li>ID</li>
+<li>entity ID</li>
+<li>entity type</li>
+<li>news id</li>
+</ol>
 
 <p>There is another problem here, that news are not one type, we have 4 types
 (YouTube videos, rss articles, tweets, Facebook posts), so <code>news id</code> should also
-be polymorphic relation
-1. ID
-2. entity ID
-3. entity type
-4. source ID
-5. source type</p>
+be polymorphic relation</p>
+
+<ol>
+<li>ID</li>
+<li>entity ID</li>
+<li>entity type</li>
+<li>source ID</li>
+<li>source type</li>
+</ol>
 
 <p>With that structure you can know what are the entities mentioned in a source, or
 if you have a person you can get sources that mention him.</p>
@@ -166,13 +178,16 @@ you&rsquo;ll have to marge 4 tables together and then merge it with that table o
 expensive with more data.</p>
 
 <p>there is a simple solution here, whenever you&rsquo;re creating a mention add the
-source creation time to it so your table would look like this:
-1. ID
-2. entity ID
-3. entity type
-4. source ID
-5. source type
-6. created_at</p>
+source creation time to it so your table would look like this:</p>
+
+<ol>
+<li>ID</li>
+<li>entity ID</li>
+<li>entity type</li>
+<li>source ID</li>
+<li>source type</li>
+<li>created_at</li>
+</ol>
 
 <p>In that case you can get number of news for a person per day, a simple query on
 one table.</p>
@@ -194,13 +209,16 @@ thing to the <code>source ID</code> and <code>source type</code>.</p>
 <p>With that structure you&rsquo;ll be able to do queries over time period, grouping by
 day/minute/second/months/years&hellip;etc.</p>
 
-<p>Now lets look at the big picture:
-1. We have many countries
-2. Every country has many Newspapers
-3. Every Newspaper has many News sources (twitter accounts, Facebook
-   pages&hellip;etc)
-4. Every News source publishes many News Items
-5. Every News Item mentions many Entities</p>
+<p>Now lets look at the big picture:</p>
+
+<ol>
+<li>We have many countries</li>
+<li>Every country has many Newspapers</li>
+<li>Every Newspaper has many News sources (twitter accounts, Facebook
+pages&hellip;etc)</li>
+<li>Every News source publishes many News Items</li>
+<li>Every News Item mentions many Entities</li>
+</ol>
 
 <p>Now lets think of some elaborate queries and how we can do that with our
 mentions table.</p>
@@ -292,9 +310,12 @@ slow, a hammering of visits can destroy the server, so a 3ms query done by
 potentially 100 visitors per second and you have 300ms query, if you doing 30 or
 them per page you&rsquo;ll be facing a 9000ms latency at worst, that&rsquo;s a 9 seconds.</p>
 
-<p>So the solution is always cache stuff <code>between requests</code> mostly:
-1. database results
-2. partial views</p>
+<p>So the solution is always cache stuff <code>between requests</code> mostly:</p>
+
+<ol>
+<li>database results</li>
+<li>partial views</li>
+</ol>
 
 <h1 id="the-current-state-of-the-mentions-after-3-years-in-production">The current state of the Mentions after 3 years in production</h1>
 
