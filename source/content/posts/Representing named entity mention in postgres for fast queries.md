@@ -36,6 +36,7 @@ styling, G2 for charts ( it used to use D3 but I found that Alipay G2 is
 faster).
 
 Now lets talk about the crawler part, it used to do a lot of stuff:
+
 1. syncing people profiles with Wikipedia
 2. getting news from twitter, Facebook, rss feeds, YouTube
 3. crawling websites for open graph images for people without images on
