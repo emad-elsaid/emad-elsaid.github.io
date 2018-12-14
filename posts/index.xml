@@ -17,7 +17,7 @@
       <pubDate>Mon, 29 Oct 2018 21:04:15 +0100</pubDate>
       
       <guid>http://www.emadelsaid.com/posts/cloning-all-your-github-repositories-or-updating-them-in-one-command/</guid>
-      <description>I had a new laptop couple weeks ago at work, and I had to set it up with everything I need including the projects I have been working on from GitHub, I remembered how I usually git clone every project I start working on, it involves going to GitHub to the project page, copy the clone URL then go to my terminal, change directory to my projects directory then execute git clone http://github.</description>
+      <description>I had a new laptop couple weeks ago at work, and I had to set it up with everything I need including the projects I have been working on from GitHub, I remembered how I usually git clone every project I start working on, it involves going to GitHub to the project page, copy the clone URL then I go to my terminal, cd to the projects directory and executes git clone http://github.</description>
     </item>
     
     <item>
