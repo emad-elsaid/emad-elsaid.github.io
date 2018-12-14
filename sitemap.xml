@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.emadelsaid.com/posts/representing-named-entity-mention-in-postgres-for-fast-queries/</loc>
+    <lastmod>2018-12-14T22:17:39+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.emadelsaid.com/posts/cloning-all-your-github-repositories-or-updating-them-in-one-command/</loc>
     <lastmod>2018-10-29T21:04:15+01:00</lastmod>
   </url>
@@ -124,13 +129,13 @@
   
   <url>
     <loc>http://www.emadelsaid.com/</loc>
-    <lastmod>2018-10-29T21:04:15+01:00</lastmod>
+    <lastmod>2018-12-14T22:17:39+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.emadelsaid.com/posts/</loc>
-    <lastmod>2018-10-29T21:04:15+01:00</lastmod>
+    <lastmod>2018-12-14T22:17:39+01:00</lastmod>
     <priority>0</priority>
   </url>
   

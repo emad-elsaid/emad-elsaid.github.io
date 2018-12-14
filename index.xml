@@ -6,10 +6,20 @@
     <description>Recent content on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Oct 2018 21:04:15 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 14 Dec 2018 22:17:39 +0100</lastBuildDate>
     
 	<atom:link href="http://www.emadelsaid.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Representing Named Entity Mention in Postgres for Fast Queries</title>
+      <link>http://www.emadelsaid.com/posts/representing-named-entity-mention-in-postgres-for-fast-queries/</link>
+      <pubDate>Fri, 14 Dec 2018 22:17:39 +0100</pubDate>
+      
+      <guid>http://www.emadelsaid.com/posts/representing-named-entity-mention-in-postgres-for-fast-queries/</guid>
+      <description>For the past 3 years I have been working on a side project called www.whoispopulartoday.com, it&amp;rsquo;s specialized in collecting news and analyzing it to find public figures mentions and build analytics on it, in that article I&amp;rsquo;ll walk through the evolution of representing the relation between the entities (people figures) and the news (tweets, fb posts, YouTube videos and rss articles).
+Technology stack I&amp;rsquo;m a backend developer so most of the solution is heavy on the backend and lighter on the frontend, but as we&amp;rsquo;ll talk now about the &amp;ldquo;mentions&amp;rdquo; implementation I&amp;rsquo;ll talk only about the backend part, the tools I used were:</description>
+    </item>
     
     <item>
       <title>Cloning All Your GitHub Repositories or Updating Them in One Command</title>

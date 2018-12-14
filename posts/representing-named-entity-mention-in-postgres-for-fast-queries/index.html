@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Emad Elsaid">
+<meta name="description" content="Ruby/Go Web Developer">
+<meta name="generator" content="Hugo 0.51" />
+<title>Representing Named Entity Mention in Postgres for Fast Queries</title>
+<link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/highlight.css">
+
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/custom_style.css">
+
+
+
+<link rel="stylesheet" href="http://www.emadelsaid.com/css/monosocialiconsfont.css">
+
+
+
+<link href="http://www.emadelsaid.com/index.xml" rel="alternate" type="application/rss+xml" title="Emad Elsaid" />
+
+
+<meta property="og:title" content="Representing Named Entity Mention in Postgres for Fast Queries" />
+<meta property="og:description" content="For the past 3 years I have been working on a side project called www.whoispopulartoday.com, it&rsquo;s specialized in collecting news and analyzing it to find public figures mentions and build analytics on it, in that article I&rsquo;ll walk through the evolution of representing the relation between the entities (people figures) and the news (tweets, fb posts, YouTube videos and rss articles).
+Technology stack I&rsquo;m a backend developer so most of the solution is heavy on the backend and lighter on the frontend, but as we&rsquo;ll talk now about the &ldquo;mentions&rdquo; implementation I&rsquo;ll talk only about the backend part, the tools I used were:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.emadelsaid.com/posts/representing-named-entity-mention-in-postgres-for-fast-queries/" /><meta property="article:published_time" content="2018-12-14T22:17:39&#43;01:00"/>
+<meta property="article:modified_time" content="2018-12-14T22:17:39&#43;01:00"/>
+
+
+
+<meta itemprop="name" content="Representing Named Entity Mention in Postgres for Fast Queries">
+<meta itemprop="description" content="For the past 3 years I have been working on a side project called www.whoispopulartoday.com, it&rsquo;s specialized in collecting news and analyzing it to find public figures mentions and build analytics on it, in that article I&rsquo;ll walk through the evolution of representing the relation between the entities (people figures) and the news (tweets, fb posts, YouTube videos and rss articles).
+Technology stack I&rsquo;m a backend developer so most of the solution is heavy on the backend and lighter on the frontend, but as we&rsquo;ll talk now about the &ldquo;mentions&rdquo; implementation I&rsquo;ll talk only about the backend part, the tools I used were:">
+
+
+<meta itemprop="datePublished" content="2018-12-14T22:17:39&#43;01:00" />
+<meta itemprop="dateModified" content="2018-12-14T22:17:39&#43;01:00" />
+<meta itemprop="wordCount" content="1885">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Representing Named Entity Mention in Postgres for Fast Queries"/>
+<meta name="twitter:description" content="For the past 3 years I have been working on a side project called www.whoispopulartoday.com, it&rsquo;s specialized in collecting news and analyzing it to find public figures mentions and build analytics on it, in that article I&rsquo;ll walk through the evolution of representing the relation between the entities (people figures) and the news (tweets, fb posts, YouTube videos and rss articles).
+Technology stack I&rsquo;m a backend developer so most of the solution is heavy on the backend and lighter on the frontend, but as we&rsquo;ll talk now about the &ldquo;mentions&rdquo; implementation I&rsquo;ll talk only about the backend part, the tools I used were:"/>
+<meta name="twitter:site" content="@https://www.twitter.com/emad__elsaid"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='http://www.emadelsaid.com/'> <span class="arrow">←</span>All Articles</a>
+	
+
+	
+
+	
+		<a class="cta" href="http://www.emadelsaid.com/index.xml">RSS</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>Representing Named Entity Mention in Postgres for Fast Queries</h1>
+        <h2 class="subtitle"></h2>
+        <h2 class="headline">
+        December 14, 2018
+        <br>
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        
+
+<p>For the past 3 years I have been working on a side project called
+www.whoispopulartoday.com, it&rsquo;s specialized in collecting news and analyzing it
+to find public figures mentions and build analytics on it, in that article I&rsquo;ll
+walk through the evolution of representing the relation between the entities
+(people figures) and the news (tweets, fb posts, YouTube videos and rss
+articles).</p>
+
+<h1 id="technology-stack">Technology stack</h1>
+
+<p>I&rsquo;m a backend developer so most of the solution is heavy on the backend and
+lighter on the frontend, but as we&rsquo;ll talk now about the &ldquo;mentions&rdquo;
+implementation I&rsquo;ll talk only about the backend part, the tools I used were:</p>
+
+<ol>
+<li>Postgres</li>
+<li>Ruby on Rails</li>
+<li>Docker</li>
+<li>Go</li>
+</ol>
+
+<h1 id="how-did-it-start">How did it start</h1>
+
+<p>In most of my side project I tend to build stuff on my own, it gives me more
+knowledge, that using ready made solutions, so for my first implementation I had
+everything implemented in one Ruby on rails project connecting to the database,
+and some background jobs using clockwork gem to get news and analyze them.</p>
+
+<p>The solution looks good until I felt the code-base is getting bigger than it
+should be, so I split them to a <code>crawler</code> and <code>website</code>, 2 projects now, one of
+them had a read-only access to the database, serves the pages and keeps it
+simple, does most of the stuff on the server side, and uses foundation for
+styling, G2 for charts ( it used to use D3 but I found that Alipay G2 is
+faster).</p>
+
+<p>Now lets talk about the crawler part, it used to do a lot of stuff:
+1. syncing people profiles with Wikipedia
+2. getting news from twitter, Facebook, rss feeds, YouTube
+3. crawling websites for open graph images for people without images on
+   Wikipedia
+4. analyzing news text and linking them with people names</p>
+
+<h1 id="the-linking-part">The linking part</h1>
+
+<p>So it&rsquo;s a simple idea, to see if someone is mentioned in a news article you can
+do the following:
+1. get people names, all of them in a list
+2. get the article you want to link with
+3. iterate over all names and see if the text contains that name, if so <code>create
+   mention</code> (more is coming later on that part)</p>
+
+<p>That can be represented in that database with the following:
+1. auto increment ID
+2. person id
+3. news id</p>
+
+<p>But keep in mind that you need to account for the future, just a little so you
+don&rsquo;t lock yourself, and not too much so you don&rsquo;t fall into the premature
+optimization hell, so lets assume we&rsquo;ll have <code>places</code> along with <code>people</code> in the
+future, and maybe also <code>organizations</code>, so instead of <code>person id</code> lets use a
+polymorphic relation, so the structure become like that:
+1. ID
+2. entity ID
+3. entity type
+4. news id</p>
+
+<p>There is another problem here, that news are not one type, we have 4 types
+(YouTube videos, rss articles, tweets, Facebook posts), so <code>news id</code> should also
+be polymorphic relation
+1. ID
+2. entity ID
+3. entity type
+4. source ID
+5. source type</p>
+
+<p>With that structure you can know what are the entities mentioned in a source, or
+if you have a person you can get sources that mention him.</p>
+
+<p>Here is a problem, how do you get number of news per day in that case for a
+person (entity)? joining with the source can&rsquo;t be done in an easy way now,
+you&rsquo;ll have to marge 4 tables together and then merge it with that table on
+<code>source id</code> and <code>source type</code> to get that information, that will get extremely
+expensive with more data.</p>
+
+<p>there is a simple solution here, whenever you&rsquo;re creating a mention add the
+source creation time to it so your table would look like this:
+1. ID
+2. entity ID
+3. entity type
+4. source ID
+5. source type
+6. created_at</p>
+
+<p>In that case you can get number of news for a person per day, a simple query on
+one table.</p>
+
+<p>The problem you&rsquo;ll face in that case is that this query needs to be faster, over
+a big data set any query will be slower unless you put some indices in the right
+place and the right order in some cases, in our case here you&rsquo;ll need to add an
+index for the entity id + entity type as a composite key, so filter down with an
+entity id and name (that&rsquo;s always the case, you never query with the entity ID
+alone).</p>
+
+<p>The problem here is that an index over <code>entity type</code> will still be slow,
+indices over string columns perform slower that on numerical columns, but in our
+case we&rsquo;re lucky enough, as <code>entity_type</code> will have a small set of values, the
+classes names of the entities (Person, Place, Organization), converting that
+table into an enum will make it much faster, also while you&rsquo;re at it do the same
+thing to the <code>source ID</code> and <code>source type</code>.</p>
+
+<p>With that structure you&rsquo;ll be able to do queries over time period, grouping by
+day/minute/second/months/years&hellip;etc.</p>
+
+<p>Now lets look at the big picture:
+1. We have many countries
+2. Every country has many Newspapers
+3. Every Newspaper has many News sources (twitter accounts, Facebook
+   pages&hellip;etc)
+4. Every News source publishes many News Items
+5. Every News Item mentions many Entities</p>
+
+<p>Now lets think of some elaborate queries and how we can do that with our
+mentions table.</p>
+
+<h1 id="top-newspapers-publishing-about-a-person-in-the-last-month-scoped-by-a-country">Top newspapers publishing about a person in the last month scoped by a country</h1>
+
+<p>Here is the problem, with the <code>mentions</code> table now you can&rsquo;t even filter down
+mentions by country, you have to join on the sources tables the join that with
+sources accounts tables (Facebook pages, twitter accounts ..etc) that join them
+with newspapers table and finally you get the country id from the newspapers
+table, that&rsquo;s a lot of work, sooooo what if we just added the <code>newspaper_id</code> and
+the <code>country_id</code> to the <code>mentions</code> table? wouldn&rsquo;t that make it easier? now we
+can filter down mentions by country or by newspaper of both.</p>
+
+<p>For our query we can filter down by country ID and a person ID + type and by a
+creation time the group it by the newspapers and count the records</p>
+
+<pre><code class="language-sql">SELECT count(*) AS frequency
+FROM mentions
+WHERE entity_id = ?
+AND entity_type = ?
+AND created_at BETWEEN ? AND ?
+AND country_id = ?
+GROUP BY newspaper_id
+ORDER BY frequency DESC
+LIMIT 10
+</code></pre>
+
+<p>A simple query done on one table, now look at the where clause in that query and
+see what indices we need :D <code>country_id</code> and <code>created_at</code>.</p>
+
+<p>now that query can work fast on that one table, notice also that all the values
+we use in that table now are numerical but only one column is a timestamp
+<code>created_at</code> which is in some sense also numerical with special properties to
+it, that makes the size and processing of that table very fast, and as our
+operation to that table is 99% additions it rarely collects garbage and doesn&rsquo;t
+need vacuuming.</p>
+
+<h1 id="number-of-news-per-day-for-a-specific-person-for-the-past-month">Number of news per day for a specific person for the past month</h1>
+
+<p>you get the idea, it&rsquo;s even simpler, the following snippet of ruby may give you
+an idea how to do it:</p>
+
+<pre><code class="language-ruby">inner_query = entity
+  .mentions
+  .select(&quot;DATE(mentions.created_at + interval '#{timezone} seconds') AS day, count(*) AS frequency&quot;)
+  .where(created_at: date_range, country: country)
+  .group('day')
+  .to_sql
+
+connection = Mention.connection
+result = connection.execute(%{
+SELECT DATE(date) as date, coalesce(frequency,0) AS frequency
+FROM generate_series(
+DATE(#{connection.quote(start_day.to_date)}),
+DATE(#{connection.quote(end_day.to_date)}),
+'1 day') AS date
+LEFT OUTER JOIN (#{inner_query}) results
+ON (date = results.day)
+ORDER BY date
+})
+</code></pre>
+
+<p>the problem that snippet solves is the days without news or where the person
+wasn&rsquo;t mentioned at all, then suddenly the newspapers mentions him, so I get the
+stats for the days he&rsquo;s mentioned in first then join it with another query that
+generate days in the required period.</p>
+
+<p>That can be done partially by the database engine then augmented with a ruby
+code that generate the days array and merge with the result, but I found
+delegating all the work to the database engine is way faster so I ended up with
+that nested query here, but still works on one table though.</p>
+
+<p>Also a side note here that I found using 2 where clauses for limiting the
+<code>created_at</code> value is faster that the <code>BETWEEN</code> statement, no idea why it&rsquo;s just
+how it is.</p>
+
+<h1 id="caching-every-where">Caching every where</h1>
+
+<p>Ruby is known to be slow, so caching has to go everywhere, in some cases I case
+a hash of <code>newspapers_id -&gt; newspaper_name</code> that&rsquo;s useful when I have to render
+a news article and I have the newspaper ID but I don&rsquo;t want every time to get the
+newspaper record from the database, so I had to pull all the records from the
+database and cache them in memory, that allowed me to resolve newspapers ID to
+names in constant time without and IO blocking.</p>
+
+<p>Other caching had to be done for the previous queries, as even if the query is
+slow, a hammering of visits can destroy the server, so a 3ms query done by
+potentially 100 visitors per second and you have 300ms query, if you doing 30 or
+them per page you&rsquo;ll be facing a 9000ms latency at worst, that&rsquo;s a 9 seconds.</p>
+
+<p>So the solution is always cache stuff <code>between requests</code> mostly:
+1. database results
+2. partial views</p>
+
+<h1 id="the-current-state-of-the-mentions-after-3-years-in-production">The current state of the Mentions after 3 years in production</h1>
+
+<p>That table now holds around 5.1 Million records, queries are performing well
+without any noticeable latency over time, the data belongs to 22 countries, 1
+type of entities and 4 types of news.</p>
+
+<h1 id="the-state-of-the-crawler">The state of the crawler</h1>
+
+<p>Over time I realized that the <code>crawler</code> application should be split into smaller
+pieces, so I extracted the news analyzer into a Golang service I call it the
+<code>tagger</code> as it tags the news with people names, all it does is to poll the
+database for new news and create mentions for people mentioned in these news.</p>
+
+<p>Also tried to create a service that has a cache of some analytics of the
+mentions table, like number of news per day for a specific country, it polls the
+database news tables for new records, keeping an index of country news count
+separated by news type, that gives me the number of tweets for the day for that
+country, and number of fb posts, also number of RSS items&hellip;etc, you get the
+idea, also useful to get total number of posts for that country per day over a
+period of time, Go has proved to be really fast and easy to maintain, I
+basically wrote it once and didn&rsquo;t touch it for couple months now.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>That system is kinda my experiment, I sink my free time in it and I proved
+myself couple point by it so far:</p>
+
+<ol>
+<li>You don&rsquo;t have to use fancy ETL tools to process data</li>
+<li>The simpler the system the easier to maintain</li>
+<li>Less dependencies works way better (I have a check while I&rsquo;m deploying to
+force me to update dependencies if it&rsquo;s outdated)</li>
+<li>Ruby is slow but it&rsquo;s my friend when I need to write something in a short
+amount of time, and if it&rsquo;s small enough I can rewrite it in Go if it survived.</li>
+<li>You don&rsquo;t have to hire an army of developers to get a system like that
+working and evolving</li>
+</ol>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="https://twitter.com/emad__elsaid">
+    <img class="avatar" src="http://www.emadelsaid.com/images/avatar.png">
+    <div>
+        <span class="dark">Emad Elsaid</span>
+        <span>Software Engineer, Ruby/Go Web Developer</span>
+    </div>
+    </a>
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fwww.emadelsaid.com%2fposts%2frepresenting-named-entity-mention-in-postgres-for-fast-queries%2f - Representing%20Named%20Entity%20Mention%20in%20Postgres%20for%20Fast%20Queries by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/posts/cloning-all-your-github-repositories-or-updating-them-in-one-command/">Cloning All Your GitHub Repositories or Updating Them in One Command<aside class="dates">Oct 29 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/async-rendering-a-page-with-sinatra/">Async Rendering a Page With Sinatra<aside class="dates">Oct 28 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9-%D8%B1%D9%88%D8%A7%D9%8A%D8%A9-the-gods-themselves/">مراجعة رواية The Gods Themselves<aside class="dates">May 1 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/%D9%82%D8%A7%D9%87%D8%B1%D8%A9-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%86%D9%88%D9%88%D9%8A%D8%A9/">قاهرة الطاقة النووية<aside class="dates">Mar 25 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/%D8%A7%D9%84%D8%B9%D8%B5%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D9%82%D8%A8%D9%84%D9%8A%D8%A9-%D9%81%D9%89-%D9%85%D8%AC%D8%AA%D9%85%D8%B9-%D9%85%D8%B7%D9%88%D8%B1%D9%89-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA/">العصبية القبلية فى مجتمع مطورى البرمجيات<aside class="dates">Mar 22 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/%D9%85%D8%AA%D9%8A-%D8%AA%D9%88%D9%82%D9%81%D9%86%D8%A7-%D8%B9%D9%86-%D8%AA%D8%B5%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84/">متي توقفنا عن تصور المستقبل<aside class="dates">Feb 24 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/getting-your-cpu-speed-in-ghz-on-linux/">Getting Your CPU Speed in GHz on Linux<aside class="dates">Feb 12 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/dont-throw-your-question-over-the-fence/">Don&#39;t Throw Your Question Over the Fence<aside class="dates">Feb 10 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/enforcing-project-structure-with-rspec/">Enforcing Project Structure With Rspec<aside class="dates">Feb 9 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/posting-to-hugo-static-site-from-a-facebook-profile/">Posting to Hugo Static Site From a Facebook Profile<aside class="dates">Feb 5 2018</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.facebook.com/emad.elsaid.hamed">
+        roundedfacebook
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/emad-elsaid">
+        roundedgithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/emad__elsaid">
+        roundedtwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2018 Emad Elsaid
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://www.emadelsaid.com/js/main.js"></script>
+<script src="http://www.emadelsaid.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-112396214-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>
