@@ -1,0 +1,42 @@
+---
+title: "Micro Frontend Applications Architecture"
+date: 2018-11-09T08:25:31+01:00
+---
+
+#+TITLE: Micro Frontend Applications Architecture
+
+As some organizations move their backend systems to microservices their frontend
+applications gets stuck in the monolithic approach, leading to small services on
+the backend and big frontend applications, this makes the whole process slow,
+changes in the backend can be rolled out faster than frtonend.
+
+In this post I'll suggest an approach that could make frontend applications
+smaller with minimum coupling between these services, and the goal is to
+minimize the time to reflect changes in customer facing applications.
+
+* Definations
+
+Before we decribe the architecture lets agree first on the terms we're using,
+just to make sure we're on the page:
+
+** Frontend application
+
+an web application that's serves the end-user through a set of web pages, be it
+made from serverside rendering or clientside frontend framework it doesn't
+matter the implementation, as long as it serves web pages for end user then
+we're talking about the same thing.
+
+** Monoloith
+
+A project that holds a set of features, probably many business domains,
+maintainance costs are getting higher for it and it's becoming burdern on the
+teams.
+
+** Microservice
+
+A small project that serves one functionality for the end user, maybe managing
+his payment methods or changing his profile information or writing a post in a
+blog, or a background API that manage a resource, or a service that process data
+and result in some information and analytics.
+
+*
