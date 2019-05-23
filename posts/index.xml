@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Dec 2018 22:17:39 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 23 May 2019 17:46:35 +0200</lastBuildDate>
     
 	<atom:link href="http://www.emadelsaid.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tracing Ruby Applications Execution in 4 Lines</title>
+      <link>http://www.emadelsaid.com/posts/tracing-ruby-applications-execution-in-4-lines/</link>
+      <pubDate>Thu, 23 May 2019 17:46:35 +0200</pubDate>
+      
+      <guid>http://www.emadelsaid.com/posts/tracing-ruby-applications-execution-in-4-lines/</guid>
+      <description>I was researching a simple way to trace ruby code, so the problem I tried to solve (as usual) is to understand the code infront of me even more, so I need some monitor, when I open a rails server and I navigate around, I need to see the methods executed and where is it located, I need to see that in realtime.
+Turns out the solution is very simple, as Ruby has TracePoint module, you can use it to log any thing gets called in your application like so.</description>
+    </item>
     
     <item>
       <title>Representing Named Entity Mention in Postgres for Fast Queries</title>

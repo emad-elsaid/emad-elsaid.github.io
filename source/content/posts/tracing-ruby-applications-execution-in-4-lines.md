@@ -1,7 +1,6 @@
 ---
 title: "Tracing Ruby Applications Execution in 4 Lines"
 date: 2019-05-23T17:46:35+02:00
-draft: true
 ---
 
 I was researching a simple way to trace ruby code, so the problem I tried to

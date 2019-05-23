@@ -7,7 +7,7 @@
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
 <meta name="generator" content="Hugo 0.54.0" />
-<title>How to Find a Solution for Your Problem</title>
+<title>Tracing Ruby Applications Execution in 4 Lines</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/highlight.css">
@@ -23,36 +23,33 @@
 <link href="http://www.emadelsaid.com/index.xml" rel="alternate" type="application/rss+xml" title="Emad Elsaid" />
 
 
-<meta property="og:title" content="How to Find a Solution for Your Problem" />
-<meta property="og:description" content="Open Google.com Google your problem Open all links in the first page Read page by page until you find a solution If your problem still exists, back to number 2  For more clarification please refer to the following graph
-Exercise The previous image is generated from the following DOT graph, try to find how to generate the same png image from it on your machine.
-digraph google { google [label=&quot;Open google." />
+<meta property="og:title" content="Tracing Ruby Applications Execution in 4 Lines" />
+<meta property="og:description" content="I was researching a simple way to trace ruby code, so the problem I tried to solve (as usual) is to understand the code infront of me even more, so I need some monitor, when I open a rails server and I navigate around, I need to see the methods executed and where is it located, I need to see that in realtime.
+Turns out the solution is very simple, as Ruby has TracePoint module, you can use it to log any thing gets called in your application like so." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.emadelsaid.com/posts/how-to-find-a-solution-for-your-problem/" />
-<meta property="article:published_time" content="2018-02-03T21:41:47&#43;01:00"/>
-<meta property="article:modified_time" content="2018-02-03T21:41:47&#43;01:00"/>
+<meta property="og:url" content="http://www.emadelsaid.com/posts/tracing-ruby-applications-execution-in-4-lines/" />
+<meta property="article:published_time" content="2019-05-23T17:46:35&#43;02:00"/>
+<meta property="article:modified_time" content="2019-05-23T17:46:35&#43;02:00"/>
 
 
 
-<meta itemprop="name" content="How to Find a Solution for Your Problem">
-<meta itemprop="description" content="Open Google.com Google your problem Open all links in the first page Read page by page until you find a solution If your problem still exists, back to number 2  For more clarification please refer to the following graph
-Exercise The previous image is generated from the following DOT graph, try to find how to generate the same png image from it on your machine.
-digraph google { google [label=&quot;Open google.">
+<meta itemprop="name" content="Tracing Ruby Applications Execution in 4 Lines">
+<meta itemprop="description" content="I was researching a simple way to trace ruby code, so the problem I tried to solve (as usual) is to understand the code infront of me even more, so I need some monitor, when I open a rails server and I navigate around, I need to see the methods executed and where is it located, I need to see that in realtime.
+Turns out the solution is very simple, as Ruby has TracePoint module, you can use it to log any thing gets called in your application like so.">
 
 
-<meta itemprop="datePublished" content="2018-02-03T21:41:47&#43;01:00" />
-<meta itemprop="dateModified" content="2018-02-03T21:41:47&#43;01:00" />
-<meta itemprop="wordCount" content="114">
+<meta itemprop="datePublished" content="2019-05-23T17:46:35&#43;02:00" />
+<meta itemprop="dateModified" content="2019-05-23T17:46:35&#43;02:00" />
+<meta itemprop="wordCount" content="373">
 
 
 
 <meta itemprop="keywords" content="" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="How to Find a Solution for Your Problem"/>
-<meta name="twitter:description" content="Open Google.com Google your problem Open all links in the first page Read page by page until you find a solution If your problem still exists, back to number 2  For more clarification please refer to the following graph
-Exercise The previous image is generated from the following DOT graph, try to find how to generate the same png image from it on your machine.
-digraph google { google [label=&quot;Open google."/>
+<meta name="twitter:title" content="Tracing Ruby Applications Execution in 4 Lines"/>
+<meta name="twitter:description" content="I was researching a simple way to trace ruby code, so the problem I tried to solve (as usual) is to understand the code infront of me even more, so I need some monitor, when I open a rails server and I navigate around, I need to see the methods executed and where is it located, I need to see that in realtime.
+Turns out the solution is very simple, as Ruby has TracePoint module, you can use it to log any thing gets called in your application like so."/>
 <meta name="twitter:site" content="@https://www.twitter.com/emad__elsaid"/>
 
 
@@ -75,51 +72,68 @@ digraph google { google [label=&quot;Open google."/>
         
 <article class="post">
     <header>
-        <h1>How to Find a Solution for Your Problem</h1>
+        <h1>Tracing Ruby Applications Execution in 4 Lines</h1>
         <h2 class="subtitle"></h2>
         <h2 class="headline">
-        February 3, 2018
+        May 23, 2019
         <br>
         
         </h2>
     </header>
     <section id="post-body">
-        
+        <p>I was researching a simple way to trace ruby code, so the problem I tried to
+solve (as usual) is to understand the code infront of me even more, so I need
+some monitor, when I open a rails server and I navigate around, I need to see
+the methods executed and where is it located, I need to see that in realtime.</p>
 
-<ol>
-<li>Open <a href="https://www.google.com/">Google.com</a></li>
-<li>Google your problem</li>
-<li>Open all links in the first page</li>
-<li>Read page by page until you find a solution</li>
-<li>If your problem still exists, back to number 2</li>
-</ol>
+<p>Turns out the solution is very simple, as Ruby has <code>TracePoint</code> module, you can
+use it to log any thing gets called in your application like so.</p>
 
-<hr />
-
-<p>For more clarification please refer to the following graph</p>
-
-<p><img src="/images/googling_graph.png" alt="googling graph" /></p>
-
-<h2 id="exercise">Exercise</h2>
-
-<p>The previous image is generated from the following DOT graph, try to find how to
-generate the same png image from it on your machine.</p>
-
-<pre><code>digraph google {
-  google [label=&quot;Open google.com&quot;]
-  search [label=&quot;Search for your problem&quot;]
-  openlinks [label=&quot;open first page links&quot;]
-  read [label=&quot;read results&quot;]
-  solved [label=&quot;problem solved?&quot;]
-  end [label=&quot;Congrates&quot;]
-
-  google -&gt; search -&gt; openlinks -&gt; read -&gt; solved
-  solved -&gt; end [label=&quot;yes&quot;]
-  solved -&gt; search [label=&quot;no&quot;]
-}
+<pre><code class="language-ruby">TracePoint.new(:call) do |tp|
+  puts &quot;#{ tp.path }:#{tp.lineno}\t#{ tp.defined_class }\t#{ tp.method_id }&quot;
+end.enable
 </code></pre>
 
-<p>Congrates, you solved your problem, good job.</p>
+<p>That should print every method call to your standard output, but you&rsquo;ll discover
+early that everything is too much, you need to ignore method calls that doesn&rsquo;t
+belong to your application code, like <code>puma</code> server method calls, or any
+external gem calls, so lets limit it to our application by adding a suffix <code>if</code>
+to the <code>puts</code> line.</p>
+
+<pre><code class="language-ruby">TracePoint.new(:call) do |tp|
+  puts &quot;#{ tp.path }:#{tp.lineno}\t#{ tp.defined_class }\t#{ tp.method_id }&quot; if tp.path.include?('/app/')
+end.enable
+</code></pre>
+
+<p>that should limit it to method calls located under <code>/app</code> directory, but as you
+know your application also logs stuff, so it doesn&rsquo;t make sense to log to
+STDOUT, lets separate that logs to a log file, and as my <code>/tmp</code> directory is a
+<code>tmpfs</code> mapped to memory not SSD, it&rsquo;ll be fast and volatile, so I don&rsquo;t care to
+clean it up afterwards.</p>
+
+<p>And for that I&rsquo;ll createa a logger to a file in <code>/tmp</code> and use it to print these
+executions</p>
+
+<pre><code class="language-ruby">logger = Logger.new('/tmp/trace.log', File::WRONLY | File::APPEND | File::CREAT)
+TracePoint.new(:call) do |tp|
+  logger.debug &quot;#{ tp.path }:#{tp.lineno}\t#{ tp.defined_class }\t#{ tp.method_id }&quot; if tp.path.include?('/app/')
+end.enable
+</code></pre>
+
+<p>So now you can <code>tail -f /tmp/trace.log</code> to see your application execution in
+realtime, but you&rsquo;ll learn also that you need to filter the logs or search in
+them, so that can be done by piping your log file to <code>fzf</code> you can find it
+<a href="https://github.com/junegunn/fzf">here</a> so to see your logs and search through
+them now you can execute this in your shell</p>
+
+<pre><code class="language-bash">cat /tmp/trace.log | fzf
+</code></pre>
+
+<p>If you want to have your whole screen filled with fzf and the input prompt to
+the top you can add <code>--layout=reverse</code></p>
+
+<pre><code class="language-bash">cat /tmp/trace.log | fzf --layout=reverse
+</code></pre>
 
     </section>
 </article>
@@ -133,7 +147,7 @@ generate the same png image from it on your machine.</p>
     </div>
     </a>
     <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fwww.emadelsaid.com%2fposts%2fhow-to-find-a-solution-for-your-problem%2f - How%20to%20Find%20a%20Solution%20for%20Your%20Problem by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fwww.emadelsaid.com%2fposts%2ftracing-ruby-applications-execution-in-4-lines%2f - Tracing%20Ruby%20Applications%20Execution%20in%204%20Lines by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -153,10 +167,6 @@ generate the same png image from it on your machine.</p>
 
     
     
-    
-        <li>
-            <a href="/posts/tracing-ruby-applications-execution-in-4-lines/">Tracing Ruby Applications Execution in 4 Lines<aside class="dates">May 23 2019</aside></a>
-        </li>
     
         <li>
             <a href="/posts/representing-named-entity-mention-in-postgres-for-fast-queries/">Representing Named Entity Mention in Postgres for Fast Queries<aside class="dates">Dec 14 2018</aside></a>
@@ -192,6 +202,10 @@ generate the same png image from it on your machine.</p>
     
         <li>
             <a href="/posts/dont-throw-your-question-over-the-fence/">Don&#39;t Throw Your Question Over the Fence<aside class="dates">Feb 10 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/enforcing-project-structure-with-rspec/">Enforcing Project Structure With Rspec<aside class="dates">Feb 9 2018</aside></a>
         </li>
     
 </ul>
