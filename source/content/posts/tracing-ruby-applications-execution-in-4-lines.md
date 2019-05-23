@@ -9,7 +9,8 @@ some monitor, when I open a rails server and I navigate around, I need to see
 the methods executed and where is it located, I need to see that in realtime.
 
 Turns out the solution is very simple, as Ruby has `TracePoint` module, you can
-use it to log any thing gets called in your application like so.
+use it to log any thing gets called in your application, so adding this snippet
+to your rails initializers or anywhere before your application starts.
 
 ```ruby
 TracePoint.new(:call) do |tp|

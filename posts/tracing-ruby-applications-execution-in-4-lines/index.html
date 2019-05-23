@@ -25,7 +25,7 @@
 
 <meta property="og:title" content="Tracing Ruby Applications Execution in 4 Lines" />
 <meta property="og:description" content="I was researching a simple way to trace ruby code, so the problem I tried to solve (as usual) is to understand the code infront of me even more, so I need some monitor, when I open a rails server and I navigate around, I need to see the methods executed and where is it located, I need to see that in realtime.
-Turns out the solution is very simple, as Ruby has TracePoint module, you can use it to log any thing gets called in your application like so." />
+Turns out the solution is very simple, as Ruby has TracePoint module, you can use it to log any thing gets called in your application, so adding this snippet to your rails initializers or anywhere before your application starts." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.emadelsaid.com/posts/tracing-ruby-applications-execution-in-4-lines/" />
 <meta property="article:published_time" content="2019-05-23T17:46:35&#43;02:00"/>
@@ -35,12 +35,12 @@ Turns out the solution is very simple, as Ruby has TracePoint module, you can us
 
 <meta itemprop="name" content="Tracing Ruby Applications Execution in 4 Lines">
 <meta itemprop="description" content="I was researching a simple way to trace ruby code, so the problem I tried to solve (as usual) is to understand the code infront of me even more, so I need some monitor, when I open a rails server and I navigate around, I need to see the methods executed and where is it located, I need to see that in realtime.
-Turns out the solution is very simple, as Ruby has TracePoint module, you can use it to log any thing gets called in your application like so.">
+Turns out the solution is very simple, as Ruby has TracePoint module, you can use it to log any thing gets called in your application, so adding this snippet to your rails initializers or anywhere before your application starts.">
 
 
 <meta itemprop="datePublished" content="2019-05-23T17:46:35&#43;02:00" />
 <meta itemprop="dateModified" content="2019-05-23T17:46:35&#43;02:00" />
-<meta itemprop="wordCount" content="373">
+<meta itemprop="wordCount" content="385">
 
 
 
@@ -49,7 +49,7 @@ Turns out the solution is very simple, as Ruby has TracePoint module, you can us
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tracing Ruby Applications Execution in 4 Lines"/>
 <meta name="twitter:description" content="I was researching a simple way to trace ruby code, so the problem I tried to solve (as usual) is to understand the code infront of me even more, so I need some monitor, when I open a rails server and I navigate around, I need to see the methods executed and where is it located, I need to see that in realtime.
-Turns out the solution is very simple, as Ruby has TracePoint module, you can use it to log any thing gets called in your application like so."/>
+Turns out the solution is very simple, as Ruby has TracePoint module, you can use it to log any thing gets called in your application, so adding this snippet to your rails initializers or anywhere before your application starts."/>
 <meta name="twitter:site" content="@https://www.twitter.com/emad__elsaid"/>
 
 
@@ -87,7 +87,8 @@ some monitor, when I open a rails server and I navigate around, I need to see
 the methods executed and where is it located, I need to see that in realtime.</p>
 
 <p>Turns out the solution is very simple, as Ruby has <code>TracePoint</code> module, you can
-use it to log any thing gets called in your application like so.</p>
+use it to log any thing gets called in your application, so adding this snippet
+to your rails initializers or anywhere before your application starts.</p>
 
 <pre><code class="language-ruby">TracePoint.new(:call) do |tp|
   puts &quot;#{ tp.path }:#{tp.lineno}\t#{ tp.defined_class }\t#{ tp.method_id }&quot;
