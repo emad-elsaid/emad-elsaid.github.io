@@ -7,7 +7,7 @@ Hey, Good idea bad pitch, lets use Git as a messaging queue! lets use github to
 synchronize a cluster of them together.
 
 Lets get the obvious out of the way, You already know we use Git to keep track
-of our code changes, and we need a central point to pull and push these changes
+of our code changes, and we need a central point to pull and push these changes,
 this is why we use github/lab/bitbucket...etc.
 
 Alright, now lets introduce another idea, Git commits doesn't need to include
