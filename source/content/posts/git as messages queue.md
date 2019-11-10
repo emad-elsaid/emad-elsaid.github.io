@@ -10,7 +10,7 @@ Lets get the obvious out of the way, You already know we use Git to keep track
 of our code changes, and we need a central point to pull and push these changes,
 this is why we use github/lab/bitbucket...etc.
 
-Alright, now lets introduce another idea, Git commits doesn't need to include
+Alright, now lets introduce another idea: Git commits doesn't need to include
 changes, so you don't need to have to create files then commit these files to
 your git repo, you can create an empty commit with a command like this
 

@@ -19,7 +19,7 @@
       <guid>http://www.emadelsaid.com/posts/git-as-messages-queue/</guid>
       <description>Hey, Good idea bad pitch, lets use Git as a messaging queue! lets use github to synchronize a cluster of them together.
 Lets get the obvious out of the way, You already know we use Git to keep track of our code changes, and we need a central point to pull and push these changes, this is why we use github/lab/bitbucket&amp;hellip;etc.
-Alright, now lets introduce another idea, Git commits doesn&amp;rsquo;t need to include changes, so you don&amp;rsquo;t need to have to create files then commit these files to your git repo, you can create an empty commit with a command like this</description>
+Alright, now lets introduce another idea: Git commits doesn&amp;rsquo;t need to include changes, so you don&amp;rsquo;t need to have to create files then commit these files to your git repo, you can create an empty commit with a command like this</description>
     </item>
     
     <item>
