@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.58.3" />
 <title>Deploy rails application with docker compose and capistrano</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -28,9 +28,8 @@
 Why do we dockerize a rails application?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.emadelsaid.com/posts/deploy-rails-application-with-docker-compose-and-capistrano/" />
-<meta property="article:published_time" content="2016-05-31T17:57:18&#43;02:00"/>
-<meta property="article:modified_time" content="2016-05-31T17:57:18&#43;02:00"/>
-
+<meta property="article:published_time" content="2016-05-31T17:57:18+02:00" />
+<meta property="article:modified_time" content="2016-05-31T17:57:18+02:00" />
 
 
 <meta itemprop="name" content="Deploy rails application with docker compose and capistrano">
@@ -111,8 +110,8 @@ Why do we dockerize a rails application?"/>
 <li>copy our <code>Gemfile</code> and <code>Gemfile.lock</code> to the temperory directory and install our gems with <code>bundle install</code></li>
 <li>copy all application files</li>
 <li>open the application port, by default it&rsquo;s 3000 if you changed it you should change this line</li>
-<li>set command that will be executed when the container get up to the rails server command</li>
-</ol>
+
+<li><p>set command that will be executed when the container get up to the rails server command</p>
 
 <pre><code class="language-bash">FROM ruby:2.3.0-slim
 ENV LANG=C.UTF-8
@@ -132,7 +131,8 @@ RUN bundle install --without=&quot;development test&quot; -j4
 WORKDIR $app
 ADD . $app
 RUN mkdir -p tmp/pids
-</code></pre>
+</code></pre></li>
+</ol>
 
 <p><strong>Note:</strong> we copied <code>Gemfile</code> first before the application because docker is versioning each step, so if you didn&rsquo;t modify your <code>Gemfile</code> it won&rsquo;t re-install the gems and will use the cached version instead, that speed building the image, if you just copied the application each time, docker will see that there is a change in the step so it&rsquo;ll install the gems form scratch each time, and as the image is always a clean machine it will download and install the gems, and for native extensions it will recompile it, and we all know how <code>nokojiri</code> is a pain (and basically any other native extension gem).</p>
 
@@ -269,6 +269,10 @@ set :decompose_rake_tasks, ['db:migrate', 'db:seed', 'assets:precompile']
     
     
         <li>
+            <a href="/posts/git-as-messages-queue/">Git as Messages Queue<aside class="dates">Nov 10 2019</aside></a>
+        </li>
+    
+        <li>
             <a href="/posts/tracing-ruby-applications-execution-in-4-lines/">Tracing Ruby Applications Execution in 4 Lines<aside class="dates">May 23 2019</aside></a>
         </li>
     
@@ -302,10 +306,6 @@ set :decompose_rake_tasks, ['db:migrate', 'db:seed', 'assets:precompile']
     
         <li>
             <a href="/posts/getting-your-cpu-speed-in-ghz-on-linux/">Getting Your CPU Speed in GHz on Linux<aside class="dates">Feb 12 2018</aside></a>
-        </li>
-    
-        <li>
-            <a href="/posts/dont-throw-your-question-over-the-fence/">Don&#39;t Throw Your Question Over the Fence<aside class="dates">Feb 10 2018</aside></a>
         </li>
     
 </ul>

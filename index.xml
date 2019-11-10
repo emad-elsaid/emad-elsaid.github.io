@@ -6,10 +6,21 @@
     <description>Recent content on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 May 2019 17:46:35 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 10 Nov 2019 20:33:52 +0100</lastBuildDate>
     
 	<atom:link href="http://www.emadelsaid.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git as Messages Queue</title>
+      <link>http://www.emadelsaid.com/posts/git-as-messages-queue/</link>
+      <pubDate>Sun, 10 Nov 2019 20:33:52 +0100</pubDate>
+      
+      <guid>http://www.emadelsaid.com/posts/git-as-messages-queue/</guid>
+      <description>Hey, Good idea bad pitch, lets use Git as a messaging queue! lets use github to synchronize a cluster of them together.
+Lets get the obvious out of the way, You already know we use Git to keep track of our code changes, and we need a central point to pull and push these changes this is why we use github/lab/bitbucket&amp;hellip;etc.
+Alright, now lets introduce another idea, Git commits doesn&amp;rsquo;t need to include changes, so you don&amp;rsquo;t need to have to create files then commit these files to your git repo, you can create an empty commit with a command like this</description>
+    </item>
     
     <item>
       <title>Tracing Ruby Applications Execution in 4 Lines</title>
@@ -229,8 +240,7 @@ so I started my full text search engine, used golang and blevesearch package, in
       <pubDate>Mon, 08 Jan 2018 04:44:27 +0100</pubDate>
       
       <guid>http://www.emadelsaid.com/posts/bind-remote-server-port-to-local-machine-with-ssh/</guid>
-      <description>I have a VPS server that serves an application and a set of customer facing services like images server, analytics server and search server besides the main web server, but also I have some administrative services services like a database performace monitoring server called PgHero.
-that particular server is not visible to the outside world, it&#39;s there listening on port 8003 but the firewall doesn&#39;t allow connecting to that port from the outside world.</description>
+      <description>I have a VPS server that serves an application and a set of customer facing services like images server, analytics server and search server besides the main web server, but also I have some administrative services services like a database performace monitoring server called PgHero.  that particular server is not visible to the outside world, it&amp;#39;s there listening on port 8003 but the firewall doesn&amp;#39;t allow connecting to that port from the outside world.</description>
     </item>
     
     <item>

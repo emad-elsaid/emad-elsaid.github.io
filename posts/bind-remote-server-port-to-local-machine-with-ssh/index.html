@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.58.3" />
 <title>Bind Remote Server Port to Local Machine With SSH</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -24,18 +24,15 @@
 
 
 <meta property="og:title" content="Bind Remote Server Port to Local Machine With SSH" />
-<meta property="og:description" content="I have a VPS server that serves an application and a set of customer facing services like images server, analytics server and search server besides the main web server, but also I have some administrative services services like a database performace monitoring server called PgHero.
-that particular server is not visible to the outside world, it&#39;s there listening on port 8003 but the firewall doesn&#39;t allow connecting to that port from the outside world." />
+<meta property="og:description" content="I have a VPS server that serves an application and a set of customer facing services like images server, analytics server and search server besides the main web server, but also I have some administrative services services like a database performace monitoring server called PgHero.  that particular server is not visible to the outside world, it&#39;s there listening on port 8003 but the firewall doesn&#39;t allow connecting to that port from the outside world." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.emadelsaid.com/posts/bind-remote-server-port-to-local-machine-with-ssh/" />
-<meta property="article:published_time" content="2018-01-08T04:44:27&#43;01:00"/>
-<meta property="article:modified_time" content="2018-01-08T04:44:27&#43;01:00"/>
-
+<meta property="article:published_time" content="2018-01-08T04:44:27+01:00" />
+<meta property="article:modified_time" content="2018-01-08T04:44:27+01:00" />
 
 
 <meta itemprop="name" content="Bind Remote Server Port to Local Machine With SSH">
-<meta itemprop="description" content="I have a VPS server that serves an application and a set of customer facing services like images server, analytics server and search server besides the main web server, but also I have some administrative services services like a database performace monitoring server called PgHero.
-that particular server is not visible to the outside world, it&#39;s there listening on port 8003 but the firewall doesn&#39;t allow connecting to that port from the outside world.">
+<meta itemprop="description" content="I have a VPS server that serves an application and a set of customer facing services like images server, analytics server and search server besides the main web server, but also I have some administrative services services like a database performace monitoring server called PgHero.  that particular server is not visible to the outside world, it&#39;s there listening on port 8003 but the firewall doesn&#39;t allow connecting to that port from the outside world.">
 
 
 <meta itemprop="datePublished" content="2018-01-08T04:44:27&#43;01:00" />
@@ -48,8 +45,7 @@ that particular server is not visible to the outside world, it&#39;s there liste
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Bind Remote Server Port to Local Machine With SSH"/>
-<meta name="twitter:description" content="I have a VPS server that serves an application and a set of customer facing services like images server, analytics server and search server besides the main web server, but also I have some administrative services services like a database performace monitoring server called PgHero.
-that particular server is not visible to the outside world, it&#39;s there listening on port 8003 but the firewall doesn&#39;t allow connecting to that port from the outside world."/>
+<meta name="twitter:description" content="I have a VPS server that serves an application and a set of customer facing services like images server, analytics server and search server besides the main web server, but also I have some administrative services services like a database performace monitoring server called PgHero.  that particular server is not visible to the outside world, it&#39;s there listening on port 8003 but the firewall doesn&#39;t allow connecting to that port from the outside world."/>
 <meta name="twitter:site" content="@https://www.twitter.com/emad__elsaid"/>
 
 
@@ -81,18 +77,22 @@ that particular server is not visible to the outside world, it&#39;s there liste
         </h2>
     </header>
     <section id="post-body">
-        <p>I have a VPS server that serves an application and a set of customer facing services like images server, analytics server
+        <p>
+I have a VPS server that serves an application and a set of customer facing services like images server, analytics server
 and search server besides the main web server, but also I have some administrative services services like a database performace
-monitoring server called PgHero.</p>
-
-<p>that particular server is not visible to the outside world, it's there listening on port 8003 but the firewall doesn't allow connecting to
-that port from the outside world.</p>
-
-<p>I just want me to be the only one to see it, so I bind that server port to my local machine with SSH and I can open http://localhost:8003
-to see the service as if it was working on my local machine with that command</p>
-
-<pre><code class="language-sh">ssh -L 8003:localhost:8003 user@serverip
-</code></pre>
+monitoring server called PgHero.
+</p>
+<p>
+that particular server is not visible to the outside world, it&#39;s there listening on port 8003 but the firewall doesn&#39;t allow connecting to
+that port from the outside world.
+</p>
+<p>
+I just want me to be the only one to see it, so I bind that server port to my local machine with SSH and I can open <a href="http://localhost:8003">http://localhost:8003</a>
+to see the service as if it was working on my local machine with that command
+</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh -L <span style="color:#ae81ff">8003</span>:localhost:8003 user@serverip</code></pre></div>
+</div>
 
     </section>
 </article>
@@ -128,6 +128,10 @@ to see the service as if it was working on my local machine with that command</p
     
     
         <li>
+            <a href="/posts/git-as-messages-queue/">Git as Messages Queue<aside class="dates">Nov 10 2019</aside></a>
+        </li>
+    
+        <li>
             <a href="/posts/tracing-ruby-applications-execution-in-4-lines/">Tracing Ruby Applications Execution in 4 Lines<aside class="dates">May 23 2019</aside></a>
         </li>
     
@@ -161,10 +165,6 @@ to see the service as if it was working on my local machine with that command</p
     
         <li>
             <a href="/posts/getting-your-cpu-speed-in-ghz-on-linux/">Getting Your CPU Speed in GHz on Linux<aside class="dates">Feb 12 2018</aside></a>
-        </li>
-    
-        <li>
-            <a href="/posts/dont-throw-your-question-over-the-fence/">Don&#39;t Throw Your Question Over the Fence<aside class="dates">Feb 10 2018</aside></a>
         </li>
     
 </ul>

@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.emadelsaid.com/</loc>
+    <lastmod>2019-11-10T20:33:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.emadelsaid.com/posts/git-as-messages-queue/</loc>
+    <lastmod>2019-11-10T20:33:52+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.emadelsaid.com/posts/</loc>
+    <lastmod>2019-11-10T20:33:52+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.emadelsaid.com/posts/tracing-ruby-applications-execution-in-4-lines/</loc>
     <lastmod>2019-05-23T17:46:35+02:00</lastmod>
   </url>
@@ -129,24 +144,10 @@
   
   <url>
     <loc>http://www.emadelsaid.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.emadelsaid.com/</loc>
-    <lastmod>2019-05-23T17:46:35+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.emadelsaid.com/posts/</loc>
-    <lastmod>2019-05-23T17:46:35+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.emadelsaid.com/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

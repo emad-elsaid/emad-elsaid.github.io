@@ -7,7 +7,7 @@
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
 <meta name="generator" content="Hugo 0.58.3" />
-<title>Projects Files Flame Graph</title>
+<title>Git as Messages Queue</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/highlight.css">
@@ -23,32 +23,35 @@
 <link href="http://www.emadelsaid.com/index.xml" rel="alternate" type="application/rss+xml" title="Emad Elsaid" />
 
 
-<meta property="og:title" content="Projects Files Flame Graph" />
-<meta property="og:description" content="Flame graphs are graphs of stack of steps over each other they define a call stack for an application over time, so an application probes your running process periodically and stores the call stack, then draw a graph out of it similar to the following:
-I have a project called Dirtree it takes a set of lines in this/unix/style/path/format/to/file.ext and output interactive graph of these file paths, using this tool with git ls-files you can see the whole project structure in one HTML page as a tree, similar to that" />
+<meta property="og:title" content="Git as Messages Queue" />
+<meta property="og:description" content="Hey, Good idea bad pitch, lets use Git as a messaging queue! lets use github to synchronize a cluster of them together.
+Lets get the obvious out of the way, You already know we use Git to keep track of our code changes, and we need a central point to pull and push these changes this is why we use github/lab/bitbucket&hellip;etc.
+Alright, now lets introduce another idea, Git commits doesn&rsquo;t need to include changes, so you don&rsquo;t need to have to create files then commit these files to your git repo, you can create an empty commit with a command like this" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.emadelsaid.com/posts/projects-files-flame-graph/" />
-<meta property="article:published_time" content="2018-01-21T20:42:45+01:00" />
-<meta property="article:modified_time" content="2018-01-21T20:42:45+01:00" />
+<meta property="og:url" content="http://www.emadelsaid.com/posts/git-as-messages-queue/" />
+<meta property="article:published_time" content="2019-11-10T20:33:52+01:00" />
+<meta property="article:modified_time" content="2019-11-10T20:33:52+01:00" />
 
 
-<meta itemprop="name" content="Projects Files Flame Graph">
-<meta itemprop="description" content="Flame graphs are graphs of stack of steps over each other they define a call stack for an application over time, so an application probes your running process periodically and stores the call stack, then draw a graph out of it similar to the following:
-I have a project called Dirtree it takes a set of lines in this/unix/style/path/format/to/file.ext and output interactive graph of these file paths, using this tool with git ls-files you can see the whole project structure in one HTML page as a tree, similar to that">
+<meta itemprop="name" content="Git as Messages Queue">
+<meta itemprop="description" content="Hey, Good idea bad pitch, lets use Git as a messaging queue! lets use github to synchronize a cluster of them together.
+Lets get the obvious out of the way, You already know we use Git to keep track of our code changes, and we need a central point to pull and push these changes this is why we use github/lab/bitbucket&hellip;etc.
+Alright, now lets introduce another idea, Git commits doesn&rsquo;t need to include changes, so you don&rsquo;t need to have to create files then commit these files to your git repo, you can create an empty commit with a command like this">
 
 
-<meta itemprop="datePublished" content="2018-01-21T20:42:45&#43;01:00" />
-<meta itemprop="dateModified" content="2018-01-21T20:42:45&#43;01:00" />
-<meta itemprop="wordCount" content="363">
+<meta itemprop="datePublished" content="2019-11-10T20:33:52&#43;01:00" />
+<meta itemprop="dateModified" content="2019-11-10T20:33:52&#43;01:00" />
+<meta itemprop="wordCount" content="466">
 
 
 
 <meta itemprop="keywords" content="" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Projects Files Flame Graph"/>
-<meta name="twitter:description" content="Flame graphs are graphs of stack of steps over each other they define a call stack for an application over time, so an application probes your running process periodically and stores the call stack, then draw a graph out of it similar to the following:
-I have a project called Dirtree it takes a set of lines in this/unix/style/path/format/to/file.ext and output interactive graph of these file paths, using this tool with git ls-files you can see the whole project structure in one HTML page as a tree, similar to that"/>
+<meta name="twitter:title" content="Git as Messages Queue"/>
+<meta name="twitter:description" content="Hey, Good idea bad pitch, lets use Git as a messaging queue! lets use github to synchronize a cluster of them together.
+Lets get the obvious out of the way, You already know we use Git to keep track of our code changes, and we need a central point to pull and push these changes this is why we use github/lab/bitbucket&hellip;etc.
+Alright, now lets introduce another idea, Git commits doesn&rsquo;t need to include changes, so you don&rsquo;t need to have to create files then commit these files to your git repo, you can create an empty commit with a command like this"/>
 <meta name="twitter:site" content="@https://www.twitter.com/emad__elsaid"/>
 
 
@@ -71,66 +74,70 @@ I have a project called Dirtree it takes a set of lines in this/unix/style/path/
         
 <article class="post">
     <header>
-        <h1>Projects Files Flame Graph</h1>
+        <h1>Git as Messages Queue</h1>
         <h2 class="subtitle"></h2>
         <h2 class="headline">
-        January 21, 2018
+        November 10, 2019
         <br>
         
         </h2>
     </header>
     <section id="post-body">
-        <p>Flame graphs are graphs of stack of steps over each other they define a call
-stack for an application over time, so an application probes your running
-process periodically and stores the call stack, then draw a graph out of it
-similar to the following:</p>
+        <p>Hey, Good idea bad pitch, lets use Git as a messaging queue! lets use github to
+synchronize a cluster of them together.</p>
 
-<p><img src="http://www.brendangregg.com/FlameGraphs/cpu-mysql-updated.svg" alt="Flame graph" title="Interactive flame graph" /></p>
+<p>Lets get the obvious out of the way, You already know we use Git to keep track
+of our code changes, and we need a central point to pull and push these changes
+this is why we use github/lab/bitbucket&hellip;etc.</p>
 
-<p>I have a project called <a href="https://github.com/emad-elsaid/dirtree">Dirtree</a> it
-takes a set of lines in <code>this/unix/style/path/format/to/file.ext</code> and output
-interactive graph of these file paths, using this tool with <code>git ls-files</code> you
-can see the whole project structure in one HTML page as a tree, similar to that</p>
+<p>Alright, now lets introduce another idea, Git commits doesn&rsquo;t need to include
+changes, so you don&rsquo;t need to have to create files then commit these files to
+your git repo, you can create an empty commit with a command like this</p>
 
-<p><img src="/images/dirtree-tree.png" alt="Dirtree tree" />
-<img src="/images/dirtree-circles.png" alt="Dirtree tree" /></p>
-
-<p>It&rsquo;s interactive graph that lets you dive into the whole project structure, it
-helped me find unused files and clean my projects.</p>
-
-<p>Last week I was looking into some other d3js graphs and found that the flame
-graph is actually interesting, and it also display the same relation a tree does,
-so I wonder if it could be helpful for dirtree to have a flame graph as one of
-its outputs.</p>
-
-<p>so I implemented the template for dirtree and it gave me output similar to this</p>
-
-<p><img src="/images/dirtree-flamegraph.png" alt="Dirtree tree" /></p>
-
-<p>It&rsquo;s a flame graph showing you all files in you project, first time I used this
-graph on one of the projects I discovered a 5 years dead feature laying there
-unnoticed.</p>
-
-<p>My workflow is simple I generate a graph of my files with</p>
-
-<pre><code class="language-bash">git ls-files | dirtree -t flame -o /tmp/flame.html
-open /tmp/flame.html
+<pre><code>git commit --allow-empty -m &quot;commit message&quot;
 </code></pre>
 
-<p>I look at the generated graph, navigate through it, then I spot some anomaly, a
-directory that contains one file, or a directory that is too deep, or some files
-that are named in a weird way, then I got to my editor and inspect these files,
-most of the time I discover that these files shouldn&rsquo;t be there or could be
-restructured in a better way, so I do it, then I repeat the process again.</p>
+<p>OK, so the commit message can be any text right? that means you can have JSON
+messages or YAML or any other machine readable format as a commit message.</p>
 
-<p>dirtree is a ruby gem that could be installed with</p>
+<p>So now imagine this scenario:</p>
 
-<pre><code class="language-bash">gem install dirtree
-</code></pre>
+<ol>
+<li>Create a repo on github</li>
+<li>Clone it to your server</li>
+<li>Have your application commit a <code>message</code> to this repo every time you need to</li>
+<li>Push the repo every period say 10 seconds</li>
+<li>Clone same repo to another server</li>
+<li>Have an application there (consumer) pull periodically</li>
+<li>Another thread there that checks for new commits and for each one of them
+extracts the message and does the job</li>
+<li>Put a label on the processed message with that server identifier</li>
+<li>Push that label to keep track of the last processed message (pull it when you
+deploy that consumer again)</li>
+</ol>
 
-<p>it doesn&rsquo;t depend on any other gem and it outputs HTML file, so you can generate
-that as part of your project documentation with some push hook to GitHub, it&rsquo;s
-definitely useful tool that helped me a lot through the last couple months.</p>
+<p>Now you have a queue of messages that can&rsquo;t be altered, communicated between
+servers and all data saved in a git repository.</p>
+
+<p>This idea is flexible and can modified for several use cases:
+1. the central server doesn&rsquo;t have to be a github or a like, you can use your
+   own server as a git server.
+1. You can have more than one queue for messages by creating many branches each
+   for a type of messages or a different messages purpose.
+1. You can have the same branch consumed from different servers each message
+   processed multiple times in different ways like RabbitMQ fan out strategy
+1. You can keep browse your message queue with any git client UI or CLI
+1. You can clean your servers git local repo so that it deletes old commit
+   history to save space.
+1. You can have many messages producers write to different branches in the same
+   repository
+1. In the future you can join 2 branches or split a branch and have your
+   consumers adapt to that</p>
+
+<p>This idea can as simple as invoking git commands from your application with a
+system call, or use libgit to manipulate the repository for you, or even a small
+server application that communicate over a socket, or a repo service that
+communicate over even HTTP, there are so many ways to implement that concept.</p>
 
     </section>
 </article>
@@ -144,7 +151,7 @@ definitely useful tool that helped me a lot through the last couple months.</p>
     </div>
     </a>
     <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fwww.emadelsaid.com%2fposts%2fprojects-files-flame-graph%2f - Projects%20Files%20Flame%20Graph by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fwww.emadelsaid.com%2fposts%2fgit-as-messages-queue%2f - Git%20as%20Messages%20Queue by @emad__elsaid"><span class="icon-twitter"> tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -164,10 +171,6 @@ definitely useful tool that helped me a lot through the last couple months.</p>
 
     
     
-    
-        <li>
-            <a href="/posts/git-as-messages-queue/">Git as Messages Queue<aside class="dates">Nov 10 2019</aside></a>
-        </li>
     
         <li>
             <a href="/posts/tracing-ruby-applications-execution-in-4-lines/">Tracing Ruby Applications Execution in 4 Lines<aside class="dates">May 23 2019</aside></a>
@@ -203,6 +206,10 @@ definitely useful tool that helped me a lot through the last couple months.</p>
     
         <li>
             <a href="/posts/getting-your-cpu-speed-in-ghz-on-linux/">Getting Your CPU Speed in GHz on Linux<aside class="dates">Feb 12 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/dont-throw-your-question-over-the-fence/">Don&#39;t Throw Your Question Over the Fence<aside class="dates">Feb 10 2018</aside></a>
         </li>
     
 </ul>

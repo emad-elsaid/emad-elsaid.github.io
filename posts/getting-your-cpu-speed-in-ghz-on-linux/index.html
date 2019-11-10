@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.58.3" />
 <title>Getting Your CPU Speed in GHz on Linux</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -29,9 +29,8 @@ so the first problem I faced is how to get my current processor speed, lscpu ret
 Architecture: x86_64 CPU op-mode(s): 32-bit, 64-bit Byte Order: Little Endian CPU(s): 4 On-line CPU(s) list: 0-3 Thread(s) per core: 2 Core(s) per socket: 2 Socket(s): 1 NUMA node(s): 1 Vendor ID: GenuineIntel CPU family: 6 Model: 142 Model name: Intel(R) Core(TM) i7-7600U CPU @ 2." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.emadelsaid.com/posts/getting-your-cpu-speed-in-ghz-on-linux/" />
-<meta property="article:published_time" content="2018-02-12T00:08:43&#43;01:00"/>
-<meta property="article:modified_time" content="2018-02-12T00:08:43&#43;01:00"/>
-
+<meta property="article:published_time" content="2018-02-12T00:08:43+01:00" />
+<meta property="article:modified_time" content="2018-02-12T00:08:43+01:00" />
 
 
 <meta itemprop="name" content="Getting Your CPU Speed in GHz on Linux">
@@ -199,6 +198,10 @@ lscpu | awk '/CPU MHz/ {printf(&quot;%.1f GHz&quot;,$3/1000); }'
     
     
         <li>
+            <a href="/posts/git-as-messages-queue/">Git as Messages Queue<aside class="dates">Nov 10 2019</aside></a>
+        </li>
+    
+        <li>
             <a href="/posts/tracing-ruby-applications-execution-in-4-lines/">Tracing Ruby Applications Execution in 4 Lines<aside class="dates">May 23 2019</aside></a>
         </li>
     
@@ -232,10 +235,6 @@ lscpu | awk '/CPU MHz/ {printf(&quot;%.1f GHz&quot;,$3/1000); }'
     
         <li>
             <a href="/posts/dont-throw-your-question-over-the-fence/">Don&#39;t Throw Your Question Over the Fence<aside class="dates">Feb 10 2018</aside></a>
-        </li>
-    
-        <li>
-            <a href="/posts/enforcing-project-structure-with-rspec/">Enforcing Project Structure With Rspec<aside class="dates">Feb 9 2018</aside></a>
         </li>
     
 </ul>
