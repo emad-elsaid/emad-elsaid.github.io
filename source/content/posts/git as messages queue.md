@@ -38,7 +38,8 @@ So now imagine this scenario:
 Now you have a queue of messages that can't be altered, communicated between
 servers and all data saved in a git repository.
 
-This idea is flexible and can modified for several use cases:
+This idea is flexible and can be modified for several use cases:
+
 1. the central server doesn't have to be a github or a like, you can use your
    own server as a git server.
 1. You can have more than one queue for messages by creating many branches each
