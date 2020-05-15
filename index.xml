@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emad Elsaid</title>
@@ -6,10 +6,21 @@
     <description>Recent content on Emad Elsaid</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Nov 2019 20:33:52 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jan 2018 20:14:14 +0100</lastBuildDate>
     
 	<atom:link href="http://www.emadelsaid.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Window10 Disconnects Reconnects Usb Bluetooth</title>
+      <link>http://www.emadelsaid.com/posts/window10-disconnects-reconnects-usb-bluetooth/</link>
+      <pubDate>Fri, 15 May 2020 11:19:51 +0200</pubDate>
+      
+      <guid>http://www.emadelsaid.com/posts/window10-disconnects-reconnects-usb-bluetooth/</guid>
+      <description>On my PC I have windows 10 + USB bluetooth I use them for gaming with wireless xbox controller.
+I noticed in idle times that the PC was making sound of a USB device disconnecting, this is something that shouldn&amp;rsquo;t be hapenning, I wasn&amp;rsquo;t using the machine and it was idle doing nothing.
+Debugging I wanted to see some system logs like journalctl we have on linux, the nearest logger I found was the windows events viewer, under &amp;ldquo;System&amp;rdquo; I found warnings and errors from &amp;ldquo;Bluetooth HID device either went out of range or became unresponsive&amp;rdquo;.</description>
+    </item>
     
     <item>
       <title>Git as Messages Queue</title>
@@ -69,7 +80,7 @@ That solution means you will also wait for all commands/queries to finish then r
       
       <guid>http://www.emadelsaid.com/posts/%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9-%D8%B1%D9%88%D8%A7%D9%8A%D8%A9-the-gods-themselves/</guid>
       <description>امبارح خلصت رواية The gods themselves أو &amp;ldquo;الألهة ذاتهم&amp;rdquo; لإيزاك ازيموف، روايات قليلة اللى بعدها بحس بالإحساس اللى حسيته بعد ماخلصت الرواية دي، احساس ان فيه حاجة جديدة عرفتها، او نوع جديد من الخيال ماكنتش متصور انه موجود واكتشفت انه ممكن فجأة. علشان الرواية دي بالإنجليزي وتقريبا مش مترجمة للعربي هحاول الخصها بسرعة لأن فيه أفكار حلوة جدا خصوصا الجزء التاني منها.
-الرواية بتسرد فترة فاصلة فى حياة البشر على الأرض بدأت بعالم فى الكيمياء الاشعاعية اسمه &amp;ldquo;هالام&amp;rdquo; علي مكتبه عينة من التنجستين-186 كانت هنا من فترة طويلة تقريبا العالم اللى كان بيشغل المكتب ده قبله طلبها ما استخدمهاش، فى يوم من الايام لقي ان العينة شكلها متغير، غضب جدا لدرجة انه افتكر ان واحد من زملاؤه اللى بيكرهوه ممكن يكون تلاعب بيها، سأل العالم &amp;ldquo;دنيسون&amp;rdquo; عنها فقاله انه ماغيرهاش، وبعدين &amp;ldquo;ايش عرفك يعني انها مش تنجستين؟&amp;rdquo; ف&amp;rdquo;هالام&amp;rdquo; راح كنوع من ال&amp;rdquo;هوريك يا حمار انت انني بفهم وده مش تنجستين-186&amp;rdquo; وداها تتحلل فى معمل.</description>
+الرواية بتسرد فترة فاصلة فى حياة البشر على الأرض بدأت بعالم فى الكيمياء الاشعاعية اسمه &amp;ldquo;هالام&amp;rdquo; علي مكتبه عينة من التنجستين-186 كانت هنا من فترة طويلة تقريبا العالم اللى كان بيشغل المكتب ده قبله طلبها ما استخدمهاش، فى يوم من الايام لقي ان العينة شكلها متغير، غضب جدا لدرجة انه افتكر ان واحد من زملاؤه اللى بيكرهوه ممكن يكون تلاعب بيها، سأل العالم &amp;ldquo;دنيسون&amp;rdquo; عنها فقاله انه ماغيرهاش، وبعدين &amp;ldquo;ايش عرفك يعني انها مش تنجستين؟&amp;rdquo; ف&amp;quot;هالام&amp;rdquo; راح كنوع من ال&amp;quot;هوريك يا حمار انت انني بفهم وده مش تنجستين-186&amp;rdquo; وداها تتحلل فى معمل.</description>
     </item>
     
     <item>
@@ -148,7 +159,7 @@ My current setup is a Hugo repository that is served from GitHub pages, linked i
       <pubDate>Sat, 03 Feb 2018 21:41:47 +0100</pubDate>
       
       <guid>http://www.emadelsaid.com/posts/how-to-find-a-solution-for-your-problem/</guid>
-      <description>Open Google.com Google your problem Open all links in the first page Read page by page until you find a solution If your problem still exists, back to number 2  For more clarification please refer to the following graph
+      <description>Open Google.com Google your problem Open all links in the first page Read page by page until you find a solution If your problem still exists, back to number 2   For more clarification please refer to the following graph
 Exercise The previous image is generated from the following DOT graph, try to find how to generate the same png image from it on your machine.
 digraph google { google [label=&amp;quot;Open google.</description>
     </item>
@@ -271,7 +282,7 @@ so I had an idea, what if i made blogging more comforting for me?</description>
       
       <guid>http://www.emadelsaid.com/posts/rails-accepts-nested-attributes-for-polymorphic-relation-solution/</guid>
       <description>yesterday i faced a problem with my rails application, my models was as follows
-class Vehicle &amp;lt; ActiveRecord::Base MOVABLES = [:car, :bus, :plane] belongs_to :movable, polymorphic: true, dependent: :destroy, required: true, autosave: true accepts_nested_attributes_for :movable end  class Car &amp;lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  class Bus &amp;lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  class Plane &amp;lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end  so, when i try to create a Veihcle with nested attributes for the movable it complain with error &amp;ldquo;are you trying to build a polymorphic relation?</description>
+class Vehicle &amp;lt; ActiveRecord::Base MOVABLES = [:car, :bus, :plane] belongs_to :movable, polymorphic: true, dependent: :destroy, required: true, autosave: true accepts_nested_attributes_for :movable end class Car &amp;lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end class Bus &amp;lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end class Plane &amp;lt; ActiveRecord::Base has_one :vehicle, dependent: :destroy, as: :movable end so, when i try to create a Veihcle with nested attributes for the movable it complain with error &amp;ldquo;are you trying to build a polymorphic relation?</description>
     </item>
     
   </channel>
