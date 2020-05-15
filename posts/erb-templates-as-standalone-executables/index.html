@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.58.3" />
+<meta name="generator" content="Hugo 0.68.3" />
 <title>ERB Templates as Standalone Executables</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -35,8 +35,6 @@ first I created a file with this content" />
 <meta itemprop="name" content="ERB Templates as Standalone Executables">
 <meta itemprop="description" content="The following is a technique that can convert ERB files (Embeded Ruby) to executable files like any other ruby/python/shell scripts, the difference is that ERB is more suitable in cases where you have some output that needs to be filled with data, like rails view files, or a text that needs to report number of files/dependencies, in this post I will try to explore this idea.
 first I created a file with this content">
-
-
 <meta itemprop="datePublished" content="2018-01-24T21:04:28&#43;01:00" />
 <meta itemprop="dateModified" content="2018-01-24T21:04:28&#43;01:00" />
 <meta itemprop="wordCount" content="999">
@@ -44,7 +42,6 @@ first I created a file with this content">
 
 
 <meta itemprop="keywords" content="" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ERB Templates as Standalone Executables"/>
 <meta name="twitter:description" content="The following is a technique that can convert ERB files (Embeded Ruby) to executable files like any other ruby/python/shell scripts, the difference is that ERB is more suitable in cases where you have some output that needs to be filled with data, like rails view files, or a text that needs to report number of files/dependencies, in this post I will try to explore this idea.
@@ -80,256 +77,191 @@ first I created a file with this content"/>
         </h2>
     </header>
     <section id="post-body">
-        
-
-<p>The following is a technique that can convert ERB files (Embeded Ruby) to
+        <p>The following is a technique that can convert ERB files (Embeded Ruby) to
 executable files like any other ruby/python/shell scripts, the difference is
 that ERB is more suitable in cases where you have some output that needs to be
 filled with data, like rails view files, or a text that needs to report number of
 files/dependencies, in this post I will try to explore this idea.</p>
-
 <p>first I created a file with this content</p>
-
-<pre><code class="language-erb">Today is : &lt;%= Time.new %&gt;
-</code></pre>
-
-<p>You can render the file with <code>erb</code> as it&rsquo;s command line tool to render <code>erb</code>
+<pre><code class="language-erb" data-lang="erb">Today is : &lt;%= Time.new %&gt;
+</code></pre><p>You can render the file with <code>erb</code> as it&rsquo;s command line tool to render <code>erb</code>
 files and output the result to the terminal.</p>
-
-<pre><code class="language-shell">erb date.erb
-</code></pre>
-
-<p>will output something similar to the following</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">erb date.erb
+</code></pre></div><p>will output something similar to the following</p>
 <pre><code>Today is : 2018-01-24 21:08:20 +0100
-</code></pre>
-
-<p>As Linux looks for <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a> in
+</code></pre><p>As Linux looks for <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a> in
 every executable file, then if this erb file given the executable permission and
 prepended by a shebang for erb it will be executed nearly the same way but
 without explicitly specifying erb in the terminal, so first rename the file</p>
-
-<pre><code class="language-shell">mv date.erb dateprinter
-</code></pre>
-
-<p>and give it the executable permission</p>
-
-<pre><code class="language-shell">chmod +x dateprinter
-</code></pre>
-
-<p>now prepend it with a shebang for erb, it should look like this now</p>
-
-<pre><code class="language-erb">#!/usr/bin/env erb
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">mv date.erb dateprinter
+</code></pre></div><p>and give it the executable permission</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">chmod +x dateprinter
+</code></pre></div><p>now prepend it with a shebang for erb, it should look like this now</p>
+<pre><code class="language-erb" data-lang="erb">#!/usr/bin/env erb
 Today is : &lt;%= Time.new %&gt;
-</code></pre>
-
-<p>now it could be executed as follows</p>
-
-<pre><code class="language-shell">./dateprinter
-</code></pre>
-
-<p>the only difference is that the output will have the shebang line also, as ERB
+</code></pre><p>now it could be executed as follows</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">./dateprinter
+</code></pre></div><p>the only difference is that the output will have the shebang line also, as ERB
 doesn&rsquo;t parse it and consider it part of the template file.</p>
-
-<pre><code class="language-text">#!/usr/bin/env erb
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#!/usr/bin/env erb
 Today is : 2018-01-24 21:08:20 +0100
-</code></pre>
-
-<p>if you put the previous file in a directory that is added to your shell <code>$PATH</code>
+</code></pre></div><p>if you put the previous file in a directory that is added to your shell <code>$PATH</code>
 you can execute it from anywhere by it&rsquo;s name like any other executable file.</p>
-
-<pre><code class="language-shell">dateprinter
-</code></pre>
-
-<p>So in that case your shell will look for executable file in the path, will find
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">dateprinter
+</code></pre></div><p>So in that case your shell will look for executable file in the path, will find
 the dateprinter file, it&rsquo;ll try to figure out how to execute it with <code>exec</code> so
 it&rsquo;ll inspect for magic bytes, it&rsquo;ll find the shebang, so it&rsquo;ll pass the file
 to the appropriate interpreter <code>erb</code> and erb in that case will execute it and
 hand you the output.</p>
-
 <p>now lets do something useful with this idea, lets create a template that print
 the number of dependencies for a rails application.</p>
-
 <p>When you execute <code>bundle install</code> the last 2 lines looks like this</p>
-
-<pre><code class="language-text">Bundle complete! 27 Gemfile dependencies, 109 gems now installed.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Bundle complete! 27 Gemfile dependencies, 109 gems now installed.
 Use `bundle info [gemname]` to see where a bundled gem is installed.
-</code></pre>
-
-<p>so to get the appropriate line we need to cut the output with <code>head</code> and <code>tail</code>
+</code></pre></div><p>so to get the appropriate line we need to cut the output with <code>head</code> and <code>tail</code>
 as follows</p>
-
-<pre><code class="language-shell">bundle --local | tail -n2 | head -n1
-</code></pre>
-
-<p>so the returned output will be similar to this</p>
-
-<pre><code class="language-text">Bundle complete! 27 Gemfile dependencies, 109 gems now installed.
-</code></pre>
-
-<p>now with ruby we can match the numbers in any string and extract them</p>
-
-<pre><code class="language-ruby">stats = `bundle --local | tail -n2 | head -n1`
-numbers = stats.scan(/[0-9]+/)
-direct_dep = numbers.first
-indirect_dep = numbers.last
-</code></pre>
-
-<p>so an ERB file as the following can print out these stats, I added some
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">bundle --local | tail -n2 | head -n1
+</code></pre></div><p>so the returned output will be similar to this</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Bundle complete! 27 Gemfile dependencies, 109 gems now installed.
+</code></pre></div><p>now with ruby we can match the numbers in any string and extract them</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">stats <span style="color:#f92672">=</span> <span style="color:#e6db74">`bundle --local | tail -n2 | head -n1`</span>
+numbers <span style="color:#f92672">=</span> stats<span style="color:#f92672">.</span>scan(<span style="color:#e6db74">/[0-9]+/</span>)
+direct_dep <span style="color:#f92672">=</span> numbers<span style="color:#f92672">.</span>first
+indirect_dep <span style="color:#f92672">=</span> numbers<span style="color:#f92672">.</span>last
+</code></pre></div><p>so an ERB file as the following can print out these stats, I added some
 sprinkles on top</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e">#!/usr/bin/env erb</span>
+<span style="color:#66d9ef">Project</span> <span style="color:#e6db74">Name</span>: <span style="color:#f92672">&lt;</span><span style="color:#e6db74">%= File.basename(Dir.pwd).capitalize %&gt;
+</span><span style="color:#e6db74">&lt;% stats =</span> <span style="color:#e6db74">`bundle --local | tail -n2 | head -n1`</span><span style="color:#f92672">.</span>scan(<span style="color:#e6db74">/[0-9]+/</span>) <span style="color:#e6db74">%&gt;
+</span><span style="color:#e6db74">Direct Dependencies: &lt;%= stats.first %&gt;</span>
+<span style="color:#66d9ef">Indirect</span> <span style="color:#e6db74">Dpendencies</span>: <span style="color:#f92672">&lt;</span><span style="color:#e6db74">%= stats.last %&gt;
+</span><span style="color:#e6db74">Direct Initializers:  &lt;%=</span> <span style="color:#66d9ef">Dir</span><span style="color:#f92672">.</span>glob(<span style="color:#e6db74">&#39;config/initializers/*.rb&#39;</span>)<span style="color:#f92672">.</span>count <span style="color:#e6db74">%&gt;
+</span><span style="color:#e6db74">Initializers in Development Env: &lt;%= `rake initializers`.lines.count %&gt;</span>
+<span style="color:#66d9ef">Initializers</span> <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">Production</span> <span style="color:#e6db74">Env</span>: <span style="color:#f92672">&lt;</span><span style="color:#e6db74">%= `RAILS_ENV=</span>production rake initializers<span style="color:#e6db74">`.lines.count %&gt;
+</span><span style="color:#e6db74">Controllers: &lt;%= Dir.glob(&#39;app/controllers/**/*_controller.rb&#39;).count %&gt;
+</span><span style="color:#e6db74">Models: &lt;%= Dir.glob(&#39;app/models/**/*.*&#39;).reject{|f| f.include?(&#39;concern&#39;) }.count %&gt;
+</span><span style="color:#e6db74">Views: &lt;%= Dir.glob(&#39;app/views/**/*.*&#39;).count %&gt;
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">&lt;%
+</span><span style="color:#e6db74">def files_for(ext)
+</span><span style="color:#e6db74">  Dir.glob(&#39;**/*.&#39; + ext)
+</span><span style="color:#e6db74">end
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">def size_for(ext)
+</span><span style="color:#e6db74">  files_for(ext).map{|f| File.size(f) }.inject(:+).to_i
+</span><span style="color:#e6db74">end
+</span><span style="color:#e6db74">%&gt;
+</span><span style="color:#e6db74">Assets:
+</span><span style="color:#e6db74">JS: &lt;%= files_for(&#39;js&#39;).count %&gt; Files, &lt;%= size_for(&#39;js&#39;) / 1024 %&gt; KB
+</span><span style="color:#e6db74">SCSS: &lt;%= files_for(&#39;scss&#39;).count %&gt; Files, &lt;%= size_for(&#39;scss&#39;) / 1024 %&gt; KB
+</span><span style="color:#e6db74">PNG: &lt;%= files_for(&#39;png&#39;).count %&gt; Files, &lt;%= size_for(&#39;png&#39;) / 1024 %&gt; KB
+</span><span style="color:#e6db74">JPG: &lt;%= files_for(&#39;jpg&#39;).count %&gt; Files, &lt;%= size_for(&#39;jpg&#39;) / 1024 %&gt; KB
+</span></code></pre></div><p>The final output will look like this</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e">#!/usr/bin/env erb</span>
+<span style="color:#66d9ef">Project</span> <span style="color:#e6db74">Name</span>: <span style="color:#66d9ef">Web</span>
 
-<pre><code class="language-ruby">#!/usr/bin/env erb
-Project Name: &lt;%= File.basename(Dir.pwd).capitalize %&gt;
-&lt;% stats = `bundle --local | tail -n2 | head -n1`.scan(/[0-9]+/) %&gt;
-Direct Dependencies: &lt;%= stats.first %&gt;
-Indirect Dpendencies: &lt;%= stats.last %&gt;
-Direct Initializers:  &lt;%= Dir.glob('config/initializers/*.rb').count %&gt;
-Initializers in Development Env: &lt;%= `rake initializers`.lines.count %&gt;
-Initializers in Production Env: &lt;%= `RAILS_ENV=production rake initializers`.lines.count %&gt;
-Controllers: &lt;%= Dir.glob('app/controllers/**/*_controller.rb').count %&gt;
-Models: &lt;%= Dir.glob('app/models/**/*.*').reject{|f| f.include?('concern') }.count %&gt;
-Views: &lt;%= Dir.glob('app/views/**/*.*').count %&gt;
-
-&lt;%
-def files_for(ext)
-  Dir.glob('**/*.' + ext)
-end
-
-def size_for(ext)
-  files_for(ext).map{|f| File.size(f) }.inject(:+).to_i
-end
-%&gt;
-Assets:
-JS: &lt;%= files_for('js').count %&gt; Files, &lt;%= size_for('js') / 1024 %&gt; KB
-SCSS: &lt;%= files_for('scss').count %&gt; Files, &lt;%= size_for('scss') / 1024 %&gt; KB
-PNG: &lt;%= files_for('png').count %&gt; Files, &lt;%= size_for('png') / 1024 %&gt; KB
-JPG: &lt;%= files_for('jpg').count %&gt; Files, &lt;%= size_for('jpg') / 1024 %&gt; KB
-</code></pre>
-
-<p>The final output will look like this</p>
-
-<pre><code class="language-ruby">#!/usr/bin/env erb
-Project Name: Web
-
-Direct Dependencies: 27
-Indirect Dependencies: 109
-Direct Initializers:  5
-Initializers in Development Env: 119
-Initializers in Production Env: 117
-Controllers: 10
-Models: 16
-Views: 65
+<span style="color:#66d9ef">Direct</span> <span style="color:#e6db74">Dependencies</span>: <span style="color:#ae81ff">27</span>
+<span style="color:#66d9ef">Indirect</span> <span style="color:#e6db74">Dependencies</span>: <span style="color:#ae81ff">109</span>
+<span style="color:#66d9ef">Direct</span> <span style="color:#e6db74">Initializers</span>:  <span style="color:#ae81ff">5</span>
+<span style="color:#66d9ef">Initializers</span> <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">Development</span> <span style="color:#e6db74">Env</span>: <span style="color:#ae81ff">119</span>
+<span style="color:#66d9ef">Initializers</span> <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">Production</span> <span style="color:#e6db74">Env</span>: <span style="color:#ae81ff">117</span>
+<span style="color:#e6db74">Controllers</span>: <span style="color:#ae81ff">10</span>
+<span style="color:#e6db74">Models</span>: <span style="color:#ae81ff">16</span>
+<span style="color:#e6db74">Views</span>: <span style="color:#ae81ff">65</span>
 
 
-Assets:
-JS: 15 Files, 2569 KB
-SCSS: 30 Files, 86 KB
-PNG: 42 Files, 596 KB
-JPG: 0 Files, 0 KB
-</code></pre>
-
-<p>Numbers will be different for your project.</p>
-
+<span style="color:#e6db74">Assets</span>:
+<span style="color:#e6db74">JS</span>: <span style="color:#ae81ff">15</span> <span style="color:#66d9ef">Files</span>, <span style="color:#ae81ff">2569</span> <span style="color:#66d9ef">KB</span>
+<span style="color:#e6db74">SCSS</span>: <span style="color:#ae81ff">30</span> <span style="color:#66d9ef">Files</span>, <span style="color:#ae81ff">86</span> <span style="color:#66d9ef">KB</span>
+<span style="color:#e6db74">PNG</span>: <span style="color:#ae81ff">42</span> <span style="color:#66d9ef">Files</span>, <span style="color:#ae81ff">596</span> <span style="color:#66d9ef">KB</span>
+<span style="color:#e6db74">JPG</span>: <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">Files</span>, <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">KB</span>
+</code></pre></div><p>Numbers will be different for your project.</p>
 <h2 id="generating-graphs">Generating Graphs</h2>
-
 <p>The following is my approach</p>
-
 <ol>
 <li>a template that is interpreted by ERB to generate <a href="https://en.wikipedia.org/wiki/DOT_(graph_description_language)">DOT format</a></li>
 <li>pass the output to <code>dot</code> command to generate another format like <code>pdf</code> or
 <code>svg</code></li>
 </ol>
-
 <p>So lets try to have the same data visualized, first a simple graph, lets name it <code>rails-graph</code></p>
-
-<pre><code class="language-text">#!/usr/bin/env erb
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#!/usr/bin/env erb
 digraph graphname {
      a -&gt; b -&gt; c;
      b -&gt; d;
 }
-</code></pre>
-
-<p>executing this file with</p>
-
-<pre><code class="language-shell">rails-graph | dot -Tpng &gt; graph.png
-</code></pre>
-
-<p>You should see the following</p>
-
-<p><img src="/images/erb-graph-1.png" alt="basic graph" /></p>
-
+</code></pre></div><p>executing this file with</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">rails-graph | dot -Tpng &gt; graph.png
+</code></pre></div><p>You should see the following</p>
+<p><img src="/images/erb-graph-1.png" alt="basic graph"></p>
 <p>Now lets put more nodes and numbers to this graph</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e">#!/usr/bin/env erb</span>
+<span style="color:#f92672">&lt;%</span>
+stats <span style="color:#f92672">=</span> <span style="color:#e6db74">`bundle --local | tail -n2 | head -n1`</span><span style="color:#f92672">.</span>scan(<span style="color:#e6db74">/[0-9]+/</span>)
+ini <span style="color:#f92672">=</span> <span style="color:#66d9ef">Dir</span><span style="color:#f92672">.</span>glob(<span style="color:#e6db74">&#39;config/initializers/*.rb&#39;</span>)<span style="color:#f92672">.</span>count
+prod_ini <span style="color:#f92672">=</span> <span style="color:#e6db74">`RAILS_ENV=production rake initializers`</span><span style="color:#f92672">.</span>lines<span style="color:#f92672">.</span>count
+dev_ini <span style="color:#f92672">=</span> <span style="color:#e6db74">`rake initializers`</span><span style="color:#f92672">.</span>lines<span style="color:#f92672">.</span>count
+dev_mwares <span style="color:#f92672">=</span> <span style="color:#e6db74">`rake middleware`</span><span style="color:#f92672">.</span>lines<span style="color:#f92672">.</span>count
+prod_mwares <span style="color:#f92672">=</span> <span style="color:#e6db74">`RAILS_ENV=production rake middleware`</span><span style="color:#f92672">.</span>lines<span style="color:#f92672">.</span>count
 
-<pre><code class="language-ruby">#!/usr/bin/env erb
-&lt;%
-stats = `bundle --local | tail -n2 | head -n1`.scan(/[0-9]+/)
-ini = Dir.glob('config/initializers/*.rb').count
-prod_ini = `RAILS_ENV=production rake initializers`.lines.count
-dev_ini = `rake initializers`.lines.count
-dev_mwares = `rake middleware`.lines.count
-prod_mwares = `RAILS_ENV=production rake middleware`.lines.count
+m <span style="color:#f92672">=</span> <span style="color:#66d9ef">Dir</span><span style="color:#f92672">.</span>glob(<span style="color:#e6db74">&#39;app/models/**/*.*&#39;</span>)<span style="color:#f92672">.</span>reject{<span style="color:#f92672">|</span>f<span style="color:#f92672">|</span> f<span style="color:#f92672">.</span>include?(<span style="color:#e6db74">&#39;concern&#39;</span>) }<span style="color:#f92672">.</span>count
+v <span style="color:#f92672">=</span> <span style="color:#66d9ef">Dir</span><span style="color:#f92672">.</span>glob(<span style="color:#e6db74">&#39;app/views/**/*.*&#39;</span>)<span style="color:#f92672">.</span>count
+c <span style="color:#f92672">=</span> <span style="color:#66d9ef">Dir</span><span style="color:#f92672">.</span>glob(<span style="color:#e6db74">&#39;app/controllers/**/*_controller.rb&#39;</span>)<span style="color:#f92672">.</span>count
+routes <span style="color:#f92672">=</span> <span style="color:#e6db74">`rake routes`</span><span style="color:#f92672">.</span>lines<span style="color:#f92672">.</span>count <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
 
-m = Dir.glob('app/models/**/*.*').reject{|f| f.include?('concern') }.count
-v = Dir.glob('app/views/**/*.*').count
-c = Dir.glob('app/controllers/**/*_controller.rb').count
-routes = `rake routes`.lines.count - 1
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">files_for</span>(ext)
+  <span style="color:#66d9ef">Dir</span><span style="color:#f92672">.</span>glob(<span style="color:#e6db74">&#39;**/*.&#39;</span> <span style="color:#f92672">+</span> ext)
+<span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">count_for</span>(ext)
+    files_for(ext)<span style="color:#f92672">.</span>count
+<span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">size_for</span>(ext)
+  files_for(ext)<span style="color:#f92672">.</span>map{<span style="color:#f92672">|</span>f<span style="color:#f92672">|</span> <span style="color:#66d9ef">File</span><span style="color:#f92672">.</span>size(f) }<span style="color:#f92672">.</span>inject(<span style="color:#e6db74">:+</span>)<span style="color:#f92672">.</span>to_i
+<span style="color:#66d9ef">end</span>
+<span style="color:#e6db74">%&gt;
+</span><span style="color:#e6db74">digraph graphname {
+</span><span style="color:#e6db74">        direct_gems [label=&#34;Direct gems &lt;%= stats.first %&gt;</span><span style="color:#e6db74">&#34;]
+</span><span style="color:#e6db74">        indirect_gems [label=&#34;</span><span style="color:#66d9ef">Indirect</span> gems <span style="color:#f92672">&lt;</span><span style="color:#e6db74">%= stats.last %&gt;&#34;]
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">        initializers [label=</span><span style="color:#e6db74">&#34;&lt;%= ini  %&gt; initializers&#34;</span><span style="color:#f92672">]</span>
+        dev_initializers <span style="color:#f92672">[</span>label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;%= dev_ini %&gt; Development initializers&#34;</span><span style="color:#f92672">]</span>
+        prod_initializers <span style="color:#f92672">[</span>label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;%= prod_ini %&gt; Production initializers&#34;</span><span style="color:#f92672">]</span>
 
-def files_for(ext)
-  Dir.glob('**/*.' + ext)
-end
-def count_for(ext)
-    files_for(ext).count
-end
-def size_for(ext)
-  files_for(ext).map{|f| File.size(f) }.inject(:+).to_i
-end
-%&gt;
-digraph graphname {
-        direct_gems [label=&quot;Direct gems &lt;%= stats.first %&gt;&quot;]
-        indirect_gems [label=&quot;Indirect gems &lt;%= stats.last %&gt;&quot;]
+        { rank<span style="color:#f92672">=</span>same; initializers dev_initializers prod_initializers }
 
-        initializers [label=&quot;&lt;%= ini  %&gt; initializers&quot;]
-        dev_initializers [label=&quot;&lt;%= dev_ini %&gt; Development initializers&quot;]
-        prod_initializers [label=&quot;&lt;%= prod_ini %&gt; Production initializers&quot;]
-
-        { rank=same; initializers dev_initializers prod_initializers }
-
-        dev_middlewares [label=&quot;&lt;%= dev_mwares %&gt; Development middlewares&quot;]
-        prod_middlewares [label=&quot;&lt;%= prod_mwares %&gt; Production middlewares&quot;]
-
-
-        controllers [label=&quot;Controllers: &lt;%= c %&gt;&quot;]
-        models [label=&quot;Models: &lt;%= m %&gt;&quot;]
-        views [label=&quot;Views: &lt;%= v %&gt;&quot;]
-
-        routes [label=&quot;Routes &lt;%= routes %&gt;&quot;]
+        dev_middlewares <span style="color:#f92672">[</span>label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;%= dev_mwares %&gt; Development middlewares&#34;</span><span style="color:#f92672">]</span>
+        prod_middlewares <span style="color:#f92672">[</span>label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;%= prod_mwares %&gt; Production middlewares&#34;</span><span style="color:#f92672">]</span>
 
 
-        indirect_gems -&gt; direct_gems -&gt; initializers -&gt; routes
-        direct_gems -&gt; dev_initializers -&gt; dev_middlewares -&gt; routes
-        direct_gems -&gt; prod_initializers -&gt; prod_middlewares -&gt; routes
+        controllers <span style="color:#f92672">[</span>label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Controllers: &lt;%= c %&gt;&#34;</span><span style="color:#f92672">]</span>
+        models <span style="color:#f92672">[</span>label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Models: &lt;%= m %&gt;&#34;</span><span style="color:#f92672">]</span>
+        views <span style="color:#f92672">[</span>label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Views: &lt;%= v %&gt;&#34;</span><span style="color:#f92672">]</span>
 
-        routes -&gt; controllers
+        routes <span style="color:#f92672">[</span>label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Routes &lt;%= routes %&gt;&#34;</span><span style="color:#f92672">]</span>
 
-        controllers -&gt; models
-        controllers -&gt; views
 
-        js [label=&quot;JS: &lt;%= count_for('js') %&gt; Files, &lt;%= size_for('js') / 1024 %&gt; KB&quot;]
-        scss [label=&quot;SCSS: &lt;%= count_for('scss') %&gt; Files, &lt;%= size_for('scss') / 1024 %&gt; KB&quot;]
-        png [label=&quot;PNG: &lt;%= count_for('png') %&gt; Files, &lt;%= size_for('png') / 1024 %&gt; KB&quot;]
-        jpg [label=&quot;JPG: &lt;%= count_for('jpg') %&gt; Files, &lt;%= size_for('jpg') / 1024 %&gt; KB&quot;]
+        indirect_gems <span style="color:#f92672">-&gt;</span> direct_gems <span style="color:#f92672">-&gt;</span> initializers <span style="color:#f92672">-&gt;</span> routes
+        direct_gems <span style="color:#f92672">-&gt;</span> dev_initializers <span style="color:#f92672">-&gt;</span> dev_middlewares <span style="color:#f92672">-&gt;</span> routes
+        direct_gems <span style="color:#f92672">-&gt;</span> prod_initializers <span style="color:#f92672">-&gt;</span> prod_middlewares <span style="color:#f92672">-&gt;</span> routes
 
-        views -&gt; assets
-        assets -&gt; js
-        assets -&gt; scss
-        assets -&gt; png
-        assets -&gt; jpg
+        routes <span style="color:#f92672">-&gt;</span> controllers
+
+        controllers <span style="color:#f92672">-&gt;</span> models
+        controllers <span style="color:#f92672">-&gt;</span> views
+
+        js <span style="color:#f92672">[</span>label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;JS: &lt;%= count_for(&#39;js&#39;) %&gt; Files, &lt;%= size_for(&#39;js&#39;) / 1024 %&gt; KB&#34;</span><span style="color:#f92672">]</span>
+        scss <span style="color:#f92672">[</span>label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;SCSS: &lt;%= count_for(&#39;scss&#39;) %&gt; Files, &lt;%= size_for(&#39;scss&#39;) / 1024 %&gt; KB&#34;</span><span style="color:#f92672">]</span>
+        png <span style="color:#f92672">[</span>label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;PNG: &lt;%= count_for(&#39;png&#39;) %&gt; Files, &lt;%= size_for(&#39;png&#39;) / 1024 %&gt; KB&#34;</span><span style="color:#f92672">]</span>
+        jpg <span style="color:#f92672">[</span>label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;JPG: &lt;%= count_for(&#39;jpg&#39;) %&gt; Files, &lt;%= size_for(&#39;jpg&#39;) / 1024 %&gt; KB&#34;</span><span style="color:#f92672">]</span>
+
+        views <span style="color:#f92672">-&gt;</span> assets
+        assets <span style="color:#f92672">-&gt;</span> js
+        assets <span style="color:#f92672">-&gt;</span> scss
+        assets <span style="color:#f92672">-&gt;</span> png
+        assets <span style="color:#f92672">-&gt;</span> jpg
 
 }
-</code></pre>
-
-<p>The result will be as follows:
-<img src="/images/erb-graph-2.png" alt="basic graph" /></p>
+</code></pre></div><p>The result will be as follows:
+<img src="/images/erb-graph-2.png" alt="basic graph"></p>
 
     </section>
 </article>
@@ -363,6 +295,10 @@ digraph graphname {
 
     
     
+    
+        <li>
+            <a href="/posts/window10-disconnects-reconnects-usb-bluetooth/">Window10 Disconnects Reconnects Usb Bluetooth<aside class="dates">May 15 2020</aside></a>
+        </li>
     
         <li>
             <a href="/posts/git-as-messages-queue/">Git as Messages Queue<aside class="dates">Nov 10 2019</aside></a>
@@ -400,10 +336,6 @@ digraph graphname {
             <a href="/posts/%D9%85%D8%AA%D9%8A-%D8%AA%D9%88%D9%82%D9%81%D9%86%D8%A7-%D8%B9%D9%86-%D8%AA%D8%B5%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84/">متي توقفنا عن تصور المستقبل<aside class="dates">Feb 24 2018</aside></a>
         </li>
     
-        <li>
-            <a href="/posts/getting-your-cpu-speed-in-ghz-on-linux/">Getting Your CPU Speed in GHz on Linux<aside class="dates">Feb 12 2018</aside></a>
-        </li>
-    
 </ul>
 
 
@@ -434,7 +366,7 @@ digraph graphname {
     
     <p class="small">
     
-        © Copyright 2019 Emad Elsaid
+        © Copyright 2020 Emad Elsaid
     
     </p>
 </footer>

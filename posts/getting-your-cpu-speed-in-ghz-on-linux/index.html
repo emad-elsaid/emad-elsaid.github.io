@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.58.3" />
+<meta name="generator" content="Hugo 0.68.3" />
 <title>Getting Your CPU Speed in GHz on Linux</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -37,8 +37,6 @@ Architecture: x86_64 CPU op-mode(s): 32-bit, 64-bit Byte Order: Little Endian CP
 <meta itemprop="description" content="I&rsquo;m using I3 and I3blocks on my machine, and I wanted to show my current processor speed as one of the I3blocks sections just because!
 so the first problem I faced is how to get my current processor speed, lscpu returns the full CPU details as follows:
 Architecture: x86_64 CPU op-mode(s): 32-bit, 64-bit Byte Order: Little Endian CPU(s): 4 On-line CPU(s) list: 0-3 Thread(s) per core: 2 Core(s) per socket: 2 Socket(s): 1 NUMA node(s): 1 Vendor ID: GenuineIntel CPU family: 6 Model: 142 Model name: Intel(R) Core(TM) i7-7600U CPU @ 2.">
-
-
 <meta itemprop="datePublished" content="2018-02-12T00:08:43&#43;01:00" />
 <meta itemprop="dateModified" content="2018-02-12T00:08:43&#43;01:00" />
 <meta itemprop="wordCount" content="488">
@@ -46,7 +44,6 @@ Architecture: x86_64 CPU op-mode(s): 32-bit, 64-bit Byte Order: Little Endian CP
 
 
 <meta itemprop="keywords" content="" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Getting Your CPU Speed in GHz on Linux"/>
 <meta name="twitter:description" content="I&rsquo;m using I3 and I3blocks on my machine, and I wanted to show my current processor speed as one of the I3blocks sections just because!
@@ -85,10 +82,8 @@ Architecture: x86_64 CPU op-mode(s): 32-bit, 64-bit Byte Order: Little Endian CP
     <section id="post-body">
         <p>I&rsquo;m using I3 and I3blocks on my machine, and I wanted to show my current
 processor speed as one of the I3blocks sections just because!</p>
-
 <p>so the first problem I faced is how to get my current processor speed, <code>lscpu</code>
 returns the full CPU details as follows:</p>
-
 <pre><code>Architecture:        x86_64
 CPU op-mode(s):      32-bit, 64-bit
 Byte Order:          Little Endian
@@ -114,55 +109,32 @@ L2 cache:            256K
 L3 cache:            4096K
 NUMA node0 CPU(s):   0-3
 Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti retpoline rsb_ctxsw tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp
-</code></pre>
-
-<p>I need to show only the &ldquo;CPU MHz&rdquo; line, <code>grep</code> could be a potential solution
+</code></pre><p>I need to show only the &ldquo;CPU MHz&rdquo; line, <code>grep</code> could be a potential solution
 with</p>
-
-<pre><code class="language-bash">lscpu | grep &quot;CPU MHz&quot;
-</code></pre>
-
-<p>But that will give you this output</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">lscpu | grep <span style="color:#e6db74">&#34;CPU MHz&#34;</span>
+</code></pre></div><p>But that will give you this output</p>
 <pre><code>CPU MHz:             1484.185
-</code></pre>
-
-<p>so you need to get the number without the text, here we can use <code>awk</code> to extract
+</code></pre><p>so you need to get the number without the text, here we can use <code>awk</code> to extract
 the number, and as awk will consider it the 3rd column we can do the following
 to show only the number</p>
-
-<pre><code class="language-bash">lscpu | grep &quot;CPU MHz&quot; | awk '{print $3}'
-</code></pre>
-
-<p>that will output the number without any text, and as <code>awk</code> can be used to print
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">lscpu | grep <span style="color:#e6db74">&#34;CPU MHz&#34;</span> | awk <span style="color:#e6db74">&#39;{print $3}&#39;</span>
+</code></pre></div><p>that will output the number without any text, and as <code>awk</code> can be used to print
 in case a condition is true we can print the number if &ldquo;CPU MHz&rdquo; is found,
 getting rid of <code>grep</code></p>
-
-<pre><code class="language-bash">lscpu | awk '/CPU MHz/ {print $3}'
-</code></pre>
-
-<p>the number is in MHz, so if we want to display it in GHz we need to divide by
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">lscpu | awk <span style="color:#e6db74">&#39;/CPU MHz/ {print $3}&#39;</span>
+</code></pre></div><p>the number is in MHz, so if we want to display it in GHz we need to divide by
 1000</p>
-
-<pre><code class="language-bash">lscpu | awk '/CPU MHz/ {print $3/1000}'
-</code></pre>
-
-<p>that will print the number with all digits after floating point <code>2.08582</code>, if we
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">lscpu | awk <span style="color:#e6db74">&#39;/CPU MHz/ {print $3/1000}&#39;</span>
+</code></pre></div><p>that will print the number with all digits after floating point <code>2.08582</code>, if we
 need to print it with a certain precision we can use <code>printf</code> function to limit
 the digits to one or two digits, the following will limit the digits to 2 digits
 after floating point</p>
-
-<pre><code class="language-bash">lscpu | awk '/CPU MHz/ {printf(&quot;%0.2f&quot;, $3/1000)}'
-</code></pre>
-
-<p>that will print something like <code>3.07</code> depending on your processor speed, my
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">lscpu | awk <span style="color:#e6db74">&#39;/CPU MHz/ {printf(&#34;%0.2f&#34;, $3/1000)}&#39;</span>
+</code></pre></div><p>that will print something like <code>3.07</code> depending on your processor speed, my
 script at the end looked like that</p>
-
-<pre><code class="language-bash">#!/usr/bin/env bash
-lscpu | awk '/CPU MHz/ {printf(&quot;%.1f GHz&quot;,$3/1000); }'
-</code></pre>
-
-<p>I prefer the 1 digit precision and added &ldquo;GHz&rdquo; at the end of the output.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/usr/bin/env bash
+</span><span style="color:#75715e"></span>lscpu | awk <span style="color:#e6db74">&#39;/CPU MHz/ {printf(&#34;%.1f GHz&#34;,$3/1000); }&#39;</span>
+</code></pre></div><p>I prefer the 1 digit precision and added &ldquo;GHz&rdquo; at the end of the output.</p>
 
     </section>
 </article>
@@ -196,6 +168,10 @@ lscpu | awk '/CPU MHz/ {printf(&quot;%.1f GHz&quot;,$3/1000); }'
 
     
     
+    
+        <li>
+            <a href="/posts/window10-disconnects-reconnects-usb-bluetooth/">Window10 Disconnects Reconnects Usb Bluetooth<aside class="dates">May 15 2020</aside></a>
+        </li>
     
         <li>
             <a href="/posts/git-as-messages-queue/">Git as Messages Queue<aside class="dates">Nov 10 2019</aside></a>
@@ -233,10 +209,6 @@ lscpu | awk '/CPU MHz/ {printf(&quot;%.1f GHz&quot;,$3/1000); }'
             <a href="/posts/%D9%85%D8%AA%D9%8A-%D8%AA%D9%88%D9%82%D9%81%D9%86%D8%A7-%D8%B9%D9%86-%D8%AA%D8%B5%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84/">متي توقفنا عن تصور المستقبل<aside class="dates">Feb 24 2018</aside></a>
         </li>
     
-        <li>
-            <a href="/posts/dont-throw-your-question-over-the-fence/">Don&#39;t Throw Your Question Over the Fence<aside class="dates">Feb 10 2018</aside></a>
-        </li>
-    
 </ul>
 
 
@@ -267,7 +239,7 @@ lscpu | awk '/CPU MHz/ {printf(&quot;%.1f GHz&quot;,$3/1000); }'
     
     <p class="small">
     
-        © Copyright 2019 Emad Elsaid
+        © Copyright 2020 Emad Elsaid
     
     </p>
 </footer>

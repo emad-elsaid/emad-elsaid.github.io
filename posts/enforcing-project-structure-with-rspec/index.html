@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.58.3" />
+<meta name="generator" content="Hugo 0.68.3" />
 <title>Enforcing Project Structure With Rspec</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -35,8 +35,6 @@ One of the places where consistency were violated was the concerns directories, 
 <meta itemprop="name" content="Enforcing Project Structure With Rspec">
 <meta itemprop="description" content="I faced a situation where I&rsquo;m working on a legacy project, that project was a normal ruby on rails project, with controllers, models, decorators, concerns, but with the long life of the project and turnover of the developers, inconsistency was introduced everywhere.
 One of the places where consistency were violated was the concerns directories, where concerns names were not the same, some of them are suffixed with Concern suffix, and others were not.">
-
-
 <meta itemprop="datePublished" content="2018-02-09T23:14:27&#43;01:00" />
 <meta itemprop="dateModified" content="2018-02-09T23:14:27&#43;01:00" />
 <meta itemprop="wordCount" content="366">
@@ -44,7 +42,6 @@ One of the places where consistency were violated was the concerns directories, 
 
 
 <meta itemprop="keywords" content="" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Enforcing Project Structure With Rspec"/>
 <meta name="twitter:description" content="I faced a situation where I&rsquo;m working on a legacy project, that project was a normal ruby on rails project, with controllers, models, decorators, concerns, but with the long life of the project and turnover of the developers, inconsistency was introduced everywhere.
@@ -84,53 +81,41 @@ One of the places where consistency were violated was the concerns directories, 
 normal ruby on rails project, with controllers, models, decorators, concerns,
 but with the long life of the project and turnover of the developers,
 inconsistency was introduced everywhere.</p>
-
 <p>One of the places where consistency were violated was the concerns directories,
 where concerns names were not the same, some of them are suffixed with <code>Concern</code>
 suffix, and others were not.</p>
-
 <p>That refactoring was pretty simple on it&rsquo;s own, you only need to rename,
 concerns files to the proper naming, rename the concerns modules themselves, and
 also any usage for these modules.</p>
-
 <p>The problem is that we don&rsquo;t just want to have that naming convention for the
 current concerns but we also need to inforce it for any future concerns, so
 we&rsquo;re trying to make it impossible to break that rule again.</p>
-
 <p>My approach is using the usual testing framework in place, as we use Rspec I
 just added a test suit for <code>ActiveSupport::Concern</code> where I get all concerns
 files and make sure all of them are meeting the criteria.</p>
-
 <p>And the following code snippet is the final result</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">Rspec</span><span style="color:#f92672">.</span>describe <span style="color:#66d9ef">ActiveSupport</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Concern</span> <span style="color:#66d9ef">do</span>
+  files_paths <span style="color:#f92672">=</span> <span style="color:#66d9ef">Rails</span><span style="color:#f92672">.</span>root<span style="color:#f92672">.</span>join(<span style="color:#e6db74">&#39;app&#39;</span>, <span style="color:#e6db74">&#39;controllers&#39;</span>, <span style="color:#e6db74">&#39;concerns&#39;</span>, <span style="color:#e6db74">&#39;**&#39;</span>, <span style="color:#e6db74">&#39;*.rb&#39;</span>)
+  files <span style="color:#f92672">=</span> <span style="color:#66d9ef">Dir</span><span style="color:#f92672">.</span>glob(files_paths)
 
-<pre><code class="language-ruby">Rspec.describe ActiveSupport::Concern do
-  files_paths = Rails.root.join('app', 'controllers', 'concerns', '**', '*.rb')
-  files = Dir.glob(files_paths)
-
-  files.each do |file|
-    describe file do
-      it &quot;must end with concern&quot; do
-        expect(file).to end_with('_concern.rb')
-      end
-    end
-  end
-end
-</code></pre>
-
-<p>this snippet will get all ruby files in <code>app/controllers/concerns</code> and make sure
+  files<span style="color:#f92672">.</span>each <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>file<span style="color:#f92672">|</span>
+    describe file <span style="color:#66d9ef">do</span>
+      it <span style="color:#e6db74">&#34;must end with concern&#34;</span> <span style="color:#66d9ef">do</span>
+        expect(file)<span style="color:#f92672">.</span>to end_with(<span style="color:#e6db74">&#39;_concern.rb&#39;</span>)
+      <span style="color:#66d9ef">end</span>
+    <span style="color:#66d9ef">end</span>
+  <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span>
+</code></pre></div><p>this snippet will get all ruby files in <code>app/controllers/concerns</code> and make sure
 all of them meets the naming convention.</p>
-
 <p>The same technique could be applied to <code>app/decorators</code> if you&rsquo;re using Drapper
 gem and want to make sure the naming is not violated, or the inheritance is
 maintained for all decorators.</p>
-
 <p>it can be applied to basically any rule you need to keep in your project
 lifetime.</p>
-
 <p>That doesn&rsquo;t just prevent people from breaking the design decision you took for
 that project, but it&rsquo;s also for you as over time you&rsquo;ll forget the decisions
 you&rsquo;ve made and that&rsquo;s a safety net for you.</p>
-
 <p>along with that technique I also document the rules I decided for each directory
 in the project in a <code>README.md</code> file inside the corresponding directory, and I
 link to it from the root <code>README.md</code> file, that makes it mode visible for
@@ -170,6 +155,10 @@ contributors.</p>
     
     
         <li>
+            <a href="/posts/window10-disconnects-reconnects-usb-bluetooth/">Window10 Disconnects Reconnects Usb Bluetooth<aside class="dates">May 15 2020</aside></a>
+        </li>
+    
+        <li>
             <a href="/posts/git-as-messages-queue/">Git as Messages Queue<aside class="dates">Nov 10 2019</aside></a>
         </li>
     
@@ -205,10 +194,6 @@ contributors.</p>
             <a href="/posts/%D9%85%D8%AA%D9%8A-%D8%AA%D9%88%D9%82%D9%81%D9%86%D8%A7-%D8%B9%D9%86-%D8%AA%D8%B5%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84/">متي توقفنا عن تصور المستقبل<aside class="dates">Feb 24 2018</aside></a>
         </li>
     
-        <li>
-            <a href="/posts/getting-your-cpu-speed-in-ghz-on-linux/">Getting Your CPU Speed in GHz on Linux<aside class="dates">Feb 12 2018</aside></a>
-        </li>
-    
 </ul>
 
 
@@ -239,7 +224,7 @@ contributors.</p>
     
     <p class="small">
     
-        © Copyright 2019 Emad Elsaid
+        © Copyright 2020 Emad Elsaid
     
     </p>
 </footer>

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.58.3" />
+<meta name="generator" content="Hugo 0.68.3" />
 <title>Bind Remote Server Port to Local Machine With SSH</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -33,8 +33,6 @@
 
 <meta itemprop="name" content="Bind Remote Server Port to Local Machine With SSH">
 <meta itemprop="description" content="I have a VPS server that serves an application and a set of customer facing services like images server, analytics server and search server besides the main web server, but also I have some administrative services services like a database performace monitoring server called PgHero.  that particular server is not visible to the outside world, it&#39;s there listening on port 8003 but the firewall doesn&#39;t allow connecting to that port from the outside world.">
-
-
 <meta itemprop="datePublished" content="2018-01-08T04:44:27&#43;01:00" />
 <meta itemprop="dateModified" content="2018-01-08T04:44:27&#43;01:00" />
 <meta itemprop="wordCount" content="123">
@@ -42,7 +40,6 @@
 
 
 <meta itemprop="keywords" content="" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Bind Remote Server Port to Local Machine With SSH"/>
 <meta name="twitter:description" content="I have a VPS server that serves an application and a set of customer facing services like images server, analytics server and search server besides the main web server, but also I have some administrative services services like a database performace monitoring server called PgHero.  that particular server is not visible to the outside world, it&#39;s there listening on port 8003 but the firewall doesn&#39;t allow connecting to that port from the outside world."/>
@@ -91,7 +88,7 @@ I just want me to be the only one to see it, so I bind that server port to my lo
 to see the service as if it was working on my local machine with that command
 </p>
 <div class="src src-sh">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh -L <span style="color:#ae81ff">8003</span>:localhost:8003 user@serverip</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh -L 8003:localhost:8003 user@serverip</code></pre></div>
 </div>
 
     </section>
@@ -126,6 +123,10 @@ to see the service as if it was working on my local machine with that command
 
     
     
+    
+        <li>
+            <a href="/posts/window10-disconnects-reconnects-usb-bluetooth/">Window10 Disconnects Reconnects Usb Bluetooth<aside class="dates">May 15 2020</aside></a>
+        </li>
     
         <li>
             <a href="/posts/git-as-messages-queue/">Git as Messages Queue<aside class="dates">Nov 10 2019</aside></a>
@@ -163,10 +164,6 @@ to see the service as if it was working on my local machine with that command
             <a href="/posts/%D9%85%D8%AA%D9%8A-%D8%AA%D9%88%D9%82%D9%81%D9%86%D8%A7-%D8%B9%D9%86-%D8%AA%D8%B5%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84/">متي توقفنا عن تصور المستقبل<aside class="dates">Feb 24 2018</aside></a>
         </li>
     
-        <li>
-            <a href="/posts/getting-your-cpu-speed-in-ghz-on-linux/">Getting Your CPU Speed in GHz on Linux<aside class="dates">Feb 12 2018</aside></a>
-        </li>
-    
 </ul>
 
 
@@ -197,7 +194,7 @@ to see the service as if it was working on my local machine with that command
     
     <p class="small">
     
-        © Copyright 2019 Emad Elsaid
+        © Copyright 2020 Emad Elsaid
     
     </p>
 </footer>

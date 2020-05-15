@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.58.3" />
+<meta name="generator" content="Hugo 0.68.3" />
 <title>Representing Named Entity Mention in Postgres for Fast Queries</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -35,16 +35,13 @@ Technology stack I&rsquo;m a backend developer so most of the solution is heavy 
 <meta itemprop="name" content="Representing Named Entity Mention in Postgres for Fast Queries">
 <meta itemprop="description" content="For the past 3 years I have been working on a side project called www.whoispopulartoday.com, it&rsquo;s specialized in collecting news and analyzing it to find public figures mentions and build analytics on it, in that article I&rsquo;ll walk through the evolution of representing the relation between the entities (people figures) and the news (tweets, fb posts, YouTube videos and rss articles).
 Technology stack I&rsquo;m a backend developer so most of the solution is heavy on the backend and lighter on the frontend, but as we&rsquo;ll talk now about the &ldquo;mentions&rdquo; implementation I&rsquo;ll talk only about the backend part, the tools I used were:">
-
-
 <meta itemprop="datePublished" content="2018-12-14T22:17:39&#43;01:00" />
 <meta itemprop="dateModified" content="2018-12-14T22:17:39&#43;01:00" />
-<meta itemprop="wordCount" content="1853">
+<meta itemprop="wordCount" content="1852">
 
 
 
 <meta itemprop="keywords" content="" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Representing Named Entity Mention in Postgres for Fast Queries"/>
 <meta name="twitter:description" content="For the past 3 years I have been working on a side project called www.whoispopulartoday.com, it&rsquo;s specialized in collecting news and analyzing it to find public figures mentions and build analytics on it, in that article I&rsquo;ll walk through the evolution of representing the relation between the entities (people figures) and the news (tweets, fb posts, YouTube videos and rss articles).
@@ -80,44 +77,34 @@ Technology stack I&rsquo;m a backend developer so most of the solution is heavy 
         </h2>
     </header>
     <section id="post-body">
-        
-
-<p>For the past 3 years I have been working on a side project called
-www.whoispopulartoday.com, it&rsquo;s specialized in collecting news and analyzing it
+        <p>For the past 3 years I have been working on a side project called
+<a href="http://www.whoispopulartoday.com">www.whoispopulartoday.com</a>, it&rsquo;s specialized in collecting news and analyzing it
 to find public figures mentions and build analytics on it, in that article I&rsquo;ll
 walk through the evolution of representing the relation between the entities
 (people figures) and the news (tweets, fb posts, YouTube videos and rss
 articles).</p>
-
 <h1 id="technology-stack">Technology stack</h1>
-
 <p>I&rsquo;m a backend developer so most of the solution is heavy on the backend and
 lighter on the frontend, but as we&rsquo;ll talk now about the &ldquo;mentions&rdquo;
 implementation I&rsquo;ll talk only about the backend part, the tools I used were:</p>
-
 <ol>
 <li>Postgres</li>
 <li>Ruby on Rails</li>
 <li>Docker</li>
 <li>Go</li>
 </ol>
-
 <h1 id="how-did-it-start">How did it start</h1>
-
 <p>In most of my side project I tend to build stuff on my own, it gives me more
 knowledge, that using ready made solutions, so for my first implementation I had
 everything implemented in one Ruby on rails project connecting to the database,
 and some background jobs using clockwork gem to get news and analyze them.</p>
-
 <p>The solution looks good until I felt the code-base is getting bigger than it
 should be, so I split them to a <code>crawler</code> and <code>website</code>, 2 projects now, one of
 them had a read-only access to the database, serves the pages and keeps it
 simple, does most of the stuff on the server side, and uses foundation for
 styling, G2 for charts ( it used to use D3 but I found that Alipay G2 is
 faster).</p>
-
 <p>Now lets talk about the crawler part, it used to do a lot of stuff:</p>
-
 <ol>
 <li>syncing people profiles with Wikipedia</li>
 <li>getting news from twitter, Facebook, rss feeds, YouTube</li>
@@ -125,44 +112,34 @@ faster).</p>
 Wikipedia</li>
 <li>analyzing news text and linking them with people names</li>
 </ol>
-
 <h1 id="the-linking-part">The linking part</h1>
-
 <p>So it&rsquo;s a simple idea, to see if someone is mentioned in a news article you can
 do the following:</p>
-
 <ol>
 <li>get people names, all of them in a list</li>
 <li>get the article you want to link with</li>
-<li>iterate over all names and see if the text contains that name, if so <code>create
-mention</code> (more is coming later on that part)</li>
+<li>iterate over all names and see if the text contains that name, if so <code>create mention</code> (more is coming later on that part)</li>
 </ol>
-
 <p>That can be represented in that database with the following:</p>
-
 <ol>
 <li>auto increment ID</li>
 <li>person id</li>
 <li>news id</li>
 </ol>
-
 <p>But keep in mind that you need to account for the future, just a little so you
 don&rsquo;t lock yourself, and not too much so you don&rsquo;t fall into the premature
 optimization hell, so lets assume we&rsquo;ll have <code>places</code> along with <code>people</code> in the
 future, and maybe also <code>organizations</code>, so instead of <code>person id</code> lets use a
 polymorphic relation, so the structure become like that:</p>
-
 <ol>
 <li>ID</li>
 <li>entity ID</li>
 <li>entity type</li>
 <li>news id</li>
 </ol>
-
 <p>There is another problem here, that news are not one type, we have 4 types
 (YouTube videos, rss articles, tweets, Facebook posts), so <code>news id</code> should also
 be polymorphic relation</p>
-
 <ol>
 <li>ID</li>
 <li>entity ID</li>
@@ -170,19 +147,15 @@ be polymorphic relation</p>
 <li>source ID</li>
 <li>source type</li>
 </ol>
-
 <p>With that structure you can know what are the entities mentioned in a source, or
 if you have a person you can get sources that mention him.</p>
-
 <p>Here is a problem, how do you get number of news per day in that case for a
 person (entity)? joining with the source can&rsquo;t be done in an easy way now,
 you&rsquo;ll have to marge 4 tables together and then merge it with that table on
 <code>source id</code> and <code>source type</code> to get that information, that will get extremely
 expensive with more data.</p>
-
 <p>there is a simple solution here, whenever you&rsquo;re creating a mention add the
 source creation time to it so your table would look like this:</p>
-
 <ol>
 <li>ID</li>
 <li>entity ID</li>
@@ -191,29 +164,23 @@ source creation time to it so your table would look like this:</p>
 <li>source type</li>
 <li>created_at</li>
 </ol>
-
 <p>In that case you can get number of news for a person per day, a simple query on
 one table.</p>
-
 <p>The problem you&rsquo;ll face in that case is that this query needs to be faster, over
 a big data set any query will be slower unless you put some indices in the right
 place and the right order in some cases, in our case here you&rsquo;ll need to add an
 index for the entity id + entity type as a composite key, so filter down with an
 entity id and name (that&rsquo;s always the case, you never query with the entity ID
 alone).</p>
-
 <p>The problem here is that an index over <code>entity type</code> will still be slow,
 indices over string columns perform slower that on numerical columns, but in our
 case we&rsquo;re lucky enough, as <code>entity_type</code> will have a small set of values, the
 classes names of the entities (Person, Place, Organization), converting that
 table into an enum will make it much faster, also while you&rsquo;re at it do the same
 thing to the <code>source ID</code> and <code>source type</code>.</p>
-
 <p>With that structure you&rsquo;ll be able to do queries over time period, grouping by
 day/minute/second/months/years&hellip;etc.</p>
-
 <p>Now lets look at the big picture:</p>
-
 <ol>
 <li>We have many countries</li>
 <li>Every country has many Newspapers</li>
@@ -222,12 +189,9 @@ pages&hellip;etc)</li>
 <li>Every News source publishes many News Items</li>
 <li>Every News Item mentions many Entities</li>
 </ol>
-
 <p>Now lets think of some elaborate queries and how we can do that with our
 mentions table.</p>
-
 <h1 id="top-newspapers-publishing-about-a-person-in-the-last-month-scoped-by-a-country">Top newspapers publishing about a person in the last month scoped by a country</h1>
-
 <p>Here is the problem, with the <code>mentions</code> table now you can&rsquo;t even filter down
 mentions by country, you have to join on the sources tables the join that with
 sources accounts tables (Facebook pages, twitter accounts ..etc) that join them
@@ -235,104 +199,82 @@ with newspapers table and finally you get the country id from the newspapers
 table, that&rsquo;s a lot of work, sooooo what if we just added the <code>newspaper_id</code> and
 the <code>country_id</code> to the <code>mentions</code> table? wouldn&rsquo;t that make it easier? now we
 can filter down mentions by country or by newspaper of both.</p>
-
 <p>For our query we can filter down by country ID and a person ID + type and by a
 creation time the group it by the newspapers and count the records</p>
-
-<pre><code class="language-sql">SELECT count(*) AS frequency
-FROM mentions
-WHERE entity_id = ?
-AND entity_type = ?
-AND created_at BETWEEN ? AND ?
-AND country_id = ?
-GROUP BY newspaper_id
-ORDER BY frequency DESC
-LIMIT 10
-</code></pre>
-
-<p>A simple query done on one table, now look at the where clause in that query and
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">count</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">AS</span> frequency
+<span style="color:#66d9ef">FROM</span> mentions
+<span style="color:#66d9ef">WHERE</span> entity_id <span style="color:#f92672">=</span> <span style="color:#f92672">?</span>
+<span style="color:#66d9ef">AND</span> entity_type <span style="color:#f92672">=</span> <span style="color:#f92672">?</span>
+<span style="color:#66d9ef">AND</span> created_at <span style="color:#66d9ef">BETWEEN</span> <span style="color:#f92672">?</span> <span style="color:#66d9ef">AND</span> <span style="color:#f92672">?</span>
+<span style="color:#66d9ef">AND</span> country_id <span style="color:#f92672">=</span> <span style="color:#f92672">?</span>
+<span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> newspaper_id
+<span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> frequency <span style="color:#66d9ef">DESC</span>
+<span style="color:#66d9ef">LIMIT</span> <span style="color:#ae81ff">10</span>
+</code></pre></div><p>A simple query done on one table, now look at the where clause in that query and
 see what indices we need :D <code>country_id</code> and <code>created_at</code>.</p>
-
 <p>now that query can work fast on that one table, notice also that all the values
 we use in that table now are numerical but only one column is a timestamp
 <code>created_at</code> which is in some sense also numerical with special properties to
 it, that makes the size and processing of that table very fast, and as our
 operation to that table is 99% additions it rarely collects garbage and doesn&rsquo;t
 need vacuuming.</p>
-
 <h1 id="number-of-news-per-day-for-a-specific-person-for-the-past-month">Number of news per day for a specific person for the past month</h1>
-
 <p>you get the idea, it&rsquo;s even simpler, the following snippet of ruby may give you
 an idea how to do it:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">inner_query <span style="color:#f92672">=</span> entity
+  <span style="color:#f92672">.</span>mentions
+  <span style="color:#f92672">.</span>select(<span style="color:#e6db74">&#34;DATE(mentions.created_at + interval &#39;</span><span style="color:#e6db74">#{</span>timezone<span style="color:#e6db74">}</span><span style="color:#e6db74"> seconds&#39;) AS day, count(*) AS frequency&#34;</span>)
+  <span style="color:#f92672">.</span>where(<span style="color:#e6db74">created_at</span>: date_range, <span style="color:#e6db74">country</span>: country)
+  <span style="color:#f92672">.</span>group(<span style="color:#e6db74">&#39;day&#39;</span>)
+  <span style="color:#f92672">.</span>to_sql
 
-<pre><code class="language-ruby">inner_query = entity
-  .mentions
-  .select(&quot;DATE(mentions.created_at + interval '#{timezone} seconds') AS day, count(*) AS frequency&quot;)
-  .where(created_at: date_range, country: country)
-  .group('day')
-  .to_sql
-
-connection = Mention.connection
-result = connection.execute(%{
-SELECT DATE(date) as date, coalesce(frequency,0) AS frequency
-FROM generate_series(
-DATE(#{connection.quote(start_day.to_date)}),
-DATE(#{connection.quote(end_day.to_date)}),
-'1 day') AS date
-LEFT OUTER JOIN (#{inner_query}) results
-ON (date = results.day)
-ORDER BY date
-})
-</code></pre>
-
-<p>the problem that snippet solves is the days without news or where the person
+connection <span style="color:#f92672">=</span> <span style="color:#66d9ef">Mention</span><span style="color:#f92672">.</span>connection
+result <span style="color:#f92672">=</span> connection<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">%{
+</span><span style="color:#e6db74">SELECT DATE(date) as date, coalesce(frequency,0) AS frequency
+</span><span style="color:#e6db74">FROM generate_series(
+</span><span style="color:#e6db74">DATE(</span><span style="color:#e6db74">#{</span>connection<span style="color:#f92672">.</span>quote(start_day<span style="color:#f92672">.</span>to_date)<span style="color:#e6db74">}</span><span style="color:#e6db74">),
+</span><span style="color:#e6db74">DATE(</span><span style="color:#e6db74">#{</span>connection<span style="color:#f92672">.</span>quote(end_day<span style="color:#f92672">.</span>to_date)<span style="color:#e6db74">}</span><span style="color:#e6db74">),
+</span><span style="color:#e6db74">&#39;1 day&#39;) AS date
+</span><span style="color:#e6db74">LEFT OUTER JOIN (</span><span style="color:#e6db74">#{</span>inner_query<span style="color:#e6db74">}</span><span style="color:#e6db74">) results
+</span><span style="color:#e6db74">ON (date = results.day)
+</span><span style="color:#e6db74">ORDER BY date
+</span><span style="color:#e6db74">}</span>)
+</code></pre></div><p>the problem that snippet solves is the days without news or where the person
 wasn&rsquo;t mentioned at all, then suddenly the newspapers mentions him, so I get the
 stats for the days he&rsquo;s mentioned in first then join it with another query that
 generate days in the required period.</p>
-
 <p>That can be done partially by the database engine then augmented with a ruby
 code that generate the days array and merge with the result, but I found
 delegating all the work to the database engine is way faster so I ended up with
 that nested query here, but still works on one table though.</p>
-
 <p>Also a side note here that I found using 2 where clauses for limiting the
 <code>created_at</code> value is faster that the <code>BETWEEN</code> statement, no idea why it&rsquo;s just
 how it is.</p>
-
 <h1 id="caching-every-where">Caching every where</h1>
-
 <p>Ruby is known to be slow, so caching has to go everywhere, in some cases I case
 a hash of <code>newspapers_id -&gt; newspaper_name</code> that&rsquo;s useful when I have to render
 a news article and I have the newspaper ID but I don&rsquo;t want every time to get the
 newspaper record from the database, so I had to pull all the records from the
 database and cache them in memory, that allowed me to resolve newspapers ID to
 names in constant time without and IO blocking.</p>
-
 <p>Other caching had to be done for the previous queries, as even if the query is
 slow, a hammering of visits can destroy the server, so a 3ms query done by
 potentially 100 visitors per second and you have 300ms query, if you doing 30 or
 them per page you&rsquo;ll be facing a 9000ms latency at worst, that&rsquo;s a 9 seconds.</p>
-
 <p>So the solution is always cache stuff <code>between requests</code> mostly:</p>
-
 <ol>
 <li>database results</li>
 <li>partial views</li>
 </ol>
-
 <h1 id="the-current-state-of-the-mentions-after-3-years-in-production">The current state of the Mentions after 3 years in production</h1>
-
 <p>That table now holds around 5.1 Million records, queries are performing well
 without any noticeable latency over time, the data belongs to 22 countries, 1
 type of entities and 4 types of news.</p>
-
 <h1 id="the-state-of-the-crawler">The state of the crawler</h1>
-
 <p>Over time I realized that the <code>crawler</code> application should be split into smaller
 pieces, so I extracted the news analyzer into a Golang service I call it the
 <code>tagger</code> as it tags the news with people names, all it does is to poll the
 database for new news and create mentions for people mentioned in these news.</p>
-
 <p>Also tried to create a service that has a cache of some analytics of the
 mentions table, like number of news per day for a specific country, it polls the
 database news tables for new records, keeping an index of country news count
@@ -341,12 +283,9 @@ country, and number of fb posts, also number of RSS items&hellip;etc, you get th
 idea, also useful to get total number of posts for that country per day over a
 period of time, Go has proved to be really fast and easy to maintain, I
 basically wrote it once and didn&rsquo;t touch it for couple months now.</p>
-
 <h1 id="conclusion">Conclusion</h1>
-
 <p>That system is kinda my experiment, I sink my free time in it and I proved
 myself couple point by it so far:</p>
-
 <ol>
 <li>You don&rsquo;t have to use fancy ETL tools to process data</li>
 <li>The simpler the system the easier to maintain</li>
@@ -392,6 +331,10 @@ working and evolving</li>
     
     
         <li>
+            <a href="/posts/window10-disconnects-reconnects-usb-bluetooth/">Window10 Disconnects Reconnects Usb Bluetooth<aside class="dates">May 15 2020</aside></a>
+        </li>
+    
+        <li>
             <a href="/posts/git-as-messages-queue/">Git as Messages Queue<aside class="dates">Nov 10 2019</aside></a>
         </li>
     
@@ -427,10 +370,6 @@ working and evolving</li>
             <a href="/posts/getting-your-cpu-speed-in-ghz-on-linux/">Getting Your CPU Speed in GHz on Linux<aside class="dates">Feb 12 2018</aside></a>
         </li>
     
-        <li>
-            <a href="/posts/dont-throw-your-question-over-the-fence/">Don&#39;t Throw Your Question Over the Fence<aside class="dates">Feb 10 2018</aside></a>
-        </li>
-    
 </ul>
 
 
@@ -461,7 +400,7 @@ working and evolving</li>
     
     <p class="small">
     
-        © Copyright 2019 Emad Elsaid
+        © Copyright 2020 Emad Elsaid
     
     </p>
 </footer>

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.58.3" />
+<meta name="generator" content="Hugo 0.68.3" />
 <title>Integerating Jekyll and Octopress in Emacs</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -37,8 +37,6 @@ so I had an idea, what if i made blogging more comforting for me?" />
 <meta itemprop="description" content="I started using emacs couple weeks ago and i have to say that i&rsquo;m amazed by how this editor is working, Emacs VS VIM war isn&rsquo;t coming from nowhere after all.
 one thing that annoys me is that i stopped blogging for a long time, if you checked the last blog post, it&rsquo;s been a year since the last one.
 so I had an idea, what if i made blogging more comforting for me?">
-
-
 <meta itemprop="datePublished" content="2016-02-23T21:30:44&#43;01:00" />
 <meta itemprop="dateModified" content="2016-02-23T21:30:44&#43;01:00" />
 <meta itemprop="wordCount" content="410">
@@ -46,7 +44,6 @@ so I had an idea, what if i made blogging more comforting for me?">
 
 
 <meta itemprop="keywords" content="" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Integerating Jekyll and Octopress in Emacs"/>
 <meta name="twitter:description" content="I started using emacs couple weeks ago and i have to say that i&rsquo;m amazed by how this editor is working, Emacs VS VIM war isn&rsquo;t coming from nowhere after all.
@@ -85,44 +82,34 @@ so I had an idea, what if i made blogging more comforting for me?"/>
     <section id="post-body">
         <p>I started using emacs couple weeks ago and i have to say that i&rsquo;m amazed by how
 this editor is working, Emacs VS VIM war isn&rsquo;t coming from nowhere after all.</p>
-
 <p>one thing that annoys me is that i stopped blogging for a long time, if you checked the last
 blog post, it&rsquo;s been a year since the last one.</p>
-
 <p>so I had an idea, what if i made blogging more comforting for me? maybe integerating my
 blogging platform (jekyll + octopress + git) to Emacs, aaaand there was a problem,
 the current jekyll (hyde.el) looks weired to me that i couldn&rsquo;t even try to use it.</p>
-
 <p>I started writing my own integeration, to create a post and publish it I can write simple
 functions to execute these command from Emacs into my blog directory, that&rsquo;s not so hard right?</p>
-
 <p>nooooo, for a ELisp noob like me it&rsquo;s like hell, i had to Google how to define a variable,
 see? it&rsquo;s hell, and i was stuck for a while untill i knew that <code>C-x X-e</code> doesn&rsquo;t evaulate
 the whole buffer, yeah, I&rsquo;m a total noob.</p>
-
 <p>after a lot of sweat, blood and WTF moments i implemented 3 methods:</p>
-
 <ol>
 <li>the first one <code>octopress-post</code> is to create new post interactively and open the generated file in Emacs.</li>
 <li><code>octopress-dir</code> to open <code>_posts</code> directory, for fast access to posts and so.</li>
 <li><code>octopress-build-and-deploy</code> to build the blog with jekyll then deploy it with octopress to github pages</li>
 </ol>
-
 <p>the 3 functions are simple implementation, you should not expect much from my Elisp code, it&rsquo;s a simple
 straight forward implementation and there is a lot of room for enhancements.</p>
-
 <p>This post is the my first post from Emacs, Hope it works, wish me luck,</p>
-
 <p>Oh I forgot, here is my code, I just pasted it to my <code>~/.emacs</code> and execute it with <code>M-x RET &lt;function-name&gt;</code></p>
-
-<pre><code class="language-elisp">
-(defvar octopress-path &quot;/Users/emad/bitbucket/blazeeboy&quot;)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">
+(defvar octopress-path <span style="color:#e6db74">&#34;/Users/emad/bitbucket/blazeeboy&#34;</span>)
 (defun octopress-post (post-name)
-  (interactive &quot;sNew post name: &quot;)
-  (message &quot;Creating new post: %s&quot; post-name)
+  (interactive <span style="color:#e6db74">&#34;sNew post name: &#34;</span>)
+  (<span style="color:#a6e22e">message</span> <span style="color:#e6db74">&#34;Creating new post: %s&#34;</span> post-name)
   (defvar post-path
     (shell-command-to-string
-     (concat &quot;cd &quot; octopress-path &quot;; octopress new post &quot; post-name)
+     (<span style="color:#a6e22e">concat</span> <span style="color:#e6db74">&#34;cd &#34;</span> octopress-path <span style="color:#e6db74">&#34;; octopress new post &#34;</span> post-name)
      )
     )
   (find-file-existing (trim-string post-path))
@@ -131,23 +118,22 @@ straight forward implementation and there is a lot of room for enhancements.</p>
 (defun octopress-dir ()
   (interactive)
   (find-file-existing
-   (concat octopress-path &quot;/_posts&quot;))
+   (<span style="color:#a6e22e">concat</span> octopress-path <span style="color:#e6db74">&#34;/_posts&#34;</span>))
   )
 
 (defun octopress-build-and-deploy ()
   (interactive)
-  (async-shell-command (concat &quot;cd &quot; octopress-path &quot;; jekyll build; octopress deploy&quot;))
+  (async-shell-command (<span style="color:#a6e22e">concat</span> <span style="color:#e6db74">&#34;cd &#34;</span> octopress-path <span style="color:#e6db74">&#34;; jekyll build; octopress deploy&#34;</span>))
   )
 
-;;; third party code
-;;; http://ergoemacs.org/emacs/modernization_elisp_lib_problem.html
-(defun trim-string (string)
-  &quot;Remove white spaces in beginning and ending of STRING.
-White space here is any of: space, tab, emacs newline (line feed, ASCII 10).&quot;
-  (replace-regexp-in-string &quot;\\`[ \t\n]*&quot; &quot;&quot; (replace-regexp-in-string &quot;[ \t\n]*\\'&quot; &quot;&quot; string))
+<span style="color:#75715e">;;; third party code</span>
+<span style="color:#75715e">;;; http://ergoemacs.org/emacs/modernization_elisp_lib_problem.html</span>
+(defun trim-string (<span style="color:#a6e22e">string</span>)
+  <span style="color:#e6db74">&#34;Remove white spaces in beginning and ending of STRING.
+</span><span style="color:#e6db74">White space here is any of: space, tab, emacs newline (line feed, ASCII 10).&#34;</span>
+  (replace-regexp-in-string <span style="color:#e6db74">&#34;\\`[ \t\n]*&#34;</span> <span style="color:#e6db74">&#34;&#34;</span> (replace-regexp-in-string <span style="color:#e6db74">&#34;[ \t\n]*\\&#39;&#34;</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#a6e22e">string</span>))
   )
-</code></pre>
-
+</code></pre></div>
     </section>
 </article>
 
@@ -180,6 +166,10 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10).&quo
 
     
     
+    
+        <li>
+            <a href="/posts/window10-disconnects-reconnects-usb-bluetooth/">Window10 Disconnects Reconnects Usb Bluetooth<aside class="dates">May 15 2020</aside></a>
+        </li>
     
         <li>
             <a href="/posts/git-as-messages-queue/">Git as Messages Queue<aside class="dates">Nov 10 2019</aside></a>
@@ -217,10 +207,6 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10).&quo
             <a href="/posts/%D9%85%D8%AA%D9%8A-%D8%AA%D9%88%D9%82%D9%81%D9%86%D8%A7-%D8%B9%D9%86-%D8%AA%D8%B5%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84/">متي توقفنا عن تصور المستقبل<aside class="dates">Feb 24 2018</aside></a>
         </li>
     
-        <li>
-            <a href="/posts/getting-your-cpu-speed-in-ghz-on-linux/">Getting Your CPU Speed in GHz on Linux<aside class="dates">Feb 12 2018</aside></a>
-        </li>
-    
 </ul>
 
 
@@ -251,7 +237,7 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10).&quo
     
     <p class="small">
     
-        © Copyright 2019 Emad Elsaid
+        © Copyright 2020 Emad Elsaid
     
     </p>
 </footer>

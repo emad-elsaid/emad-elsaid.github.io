@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.58.3" />
+<meta name="generator" content="Hugo 0.68.3" />
 <title>Golang Bleve Experience</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -35,8 +35,6 @@ so I started my full text search engine, used golang and blevesearch package, in
 <meta itemprop="name" content="Golang Bleve Experience">
 <meta itemprop="description" content="I have a search engine for people profiles coming from wikipedia stored in my site, every person may have an english name or arabic name and also bilingual excerpt (the first 2 paragraphs about him from his wikipedia page),
 so I started my full text search engine, used golang and blevesearch package, in the beginning my search results were not up to my expectation, as I was storing name &#43; excerpt as one text,">
-
-
 <meta itemprop="datePublished" content="2018-01-13T15:32:48&#43;01:00" />
 <meta itemprop="dateModified" content="2018-01-13T15:32:48&#43;01:00" />
 <meta itemprop="wordCount" content="292">
@@ -44,7 +42,6 @@ so I started my full text search engine, used golang and blevesearch package, in
 
 
 <meta itemprop="keywords" content="" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Golang Bleve Experience"/>
 <meta name="twitter:description" content="I have a search engine for people profiles coming from wikipedia stored in my site, every person may have an english name or arabic name and also bilingual excerpt (the first 2 paragraphs about him from his wikipedia page),
@@ -83,36 +80,27 @@ so I started my full text search engine, used golang and blevesearch package, in
         <p>I have a search engine for people profiles coming from wikipedia stored in my
 site, every person may have an english name or arabic name and also bilingual
 excerpt (the first 2 paragraphs about him from his wikipedia page),</p>
-
 <p>so I started my full text search engine, used golang and blevesearch package, in
 the beginning my search results were not up to my expectation, as I was storing
 name + excerpt as one text,</p>
-
 <p>so even if the person name is in the beginning of the text it doesn&rsquo;t contribute
 to his order in the results, so it shows 10th or even 15th in the list of
 results.</p>
-
 <p>next I tried to store names only, and it worked better, way better that the name
 show in the beginning (as it&rsquo;s an exact value so makes sense), but I found
 another problem,</p>
-
 <p>now I need to show the person and any one else related to him, and by related to
 him I mean his name mentioned in their excerpt.</p>
-
 <p>so the usual solution is have the excerpt indexed as a separate field and
 continue to search on all fields, but I went back againg to the first problem,
 the order is incorrect.</p>
-
 <p>so I even tried to have an index for all fields (name, excerpt) but search only
 on names, and I was surprised that it didn&rsquo;t give me the correct results, it
 sounded like bleve searched in all fields</p>
-
 <p>although I instructed the routine to search only names.</p>
-
 <p>so I reverted to the other solution, just have the index for names, and search
 only names, that perfect results if you&rsquo;re looking for person by name, but it&rsquo;s
 incorrect if you&rsquo;re searching for people</p>
-
 <p>by job description or something else in their excerpt.</p>
 
     </section>
@@ -147,6 +135,10 @@ incorrect if you&rsquo;re searching for people</p>
 
     
     
+    
+        <li>
+            <a href="/posts/window10-disconnects-reconnects-usb-bluetooth/">Window10 Disconnects Reconnects Usb Bluetooth<aside class="dates">May 15 2020</aside></a>
+        </li>
     
         <li>
             <a href="/posts/git-as-messages-queue/">Git as Messages Queue<aside class="dates">Nov 10 2019</aside></a>
@@ -184,10 +176,6 @@ incorrect if you&rsquo;re searching for people</p>
             <a href="/posts/%D9%85%D8%AA%D9%8A-%D8%AA%D9%88%D9%82%D9%81%D9%86%D8%A7-%D8%B9%D9%86-%D8%AA%D8%B5%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84/">متي توقفنا عن تصور المستقبل<aside class="dates">Feb 24 2018</aside></a>
         </li>
     
-        <li>
-            <a href="/posts/getting-your-cpu-speed-in-ghz-on-linux/">Getting Your CPU Speed in GHz on Linux<aside class="dates">Feb 12 2018</aside></a>
-        </li>
-    
 </ul>
 
 
@@ -218,7 +206,7 @@ incorrect if you&rsquo;re searching for people</p>
     
     <p class="small">
     
-        © Copyright 2019 Emad Elsaid
+        © Copyright 2020 Emad Elsaid
     
     </p>
 </footer>

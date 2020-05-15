@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.58.3" />
+<meta name="generator" content="Hugo 0.68.3" />
 <title>Working With Legacy Code</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -35,8 +35,6 @@ Probably you already worked with one or more legacy project throughout your care
 <meta itemprop="name" content="Working With Legacy Code">
 <meta itemprop="description" content="Legacy code is everywhere, It doesn&rsquo;t matter if the project code is there for 20 years or 5 years, if it&rsquo;s not maintainable, or if it doesn&rsquo;t follow a clear architecture, if there are not tests for it, then it&rsquo;s legacy.
 Probably you already worked with one or more legacy project throughout your career, the following are the steps I take to deal with legacy code in my day-to-day work.">
-
-
 <meta itemprop="datePublished" content="2018-01-21T22:02:46&#43;01:00" />
 <meta itemprop="dateModified" content="2018-01-21T22:02:46&#43;01:00" />
 <meta itemprop="wordCount" content="645">
@@ -44,7 +42,6 @@ Probably you already worked with one or more legacy project throughout your care
 
 
 <meta itemprop="keywords" content="" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Working With Legacy Code"/>
 <meta name="twitter:description" content="Legacy code is everywhere, It doesn&rsquo;t matter if the project code is there for 20 years or 5 years, if it&rsquo;s not maintainable, or if it doesn&rsquo;t follow a clear architecture, if there are not tests for it, then it&rsquo;s legacy.
@@ -80,65 +77,47 @@ Probably you already worked with one or more legacy project throughout your care
         </h2>
     </header>
     <section id="post-body">
-        
-
-<p>Legacy code is everywhere, It doesn&rsquo;t matter if the project code is there for 20
+        <p>Legacy code is everywhere, It doesn&rsquo;t matter if the project code is there for 20
 years or 5 years, if it&rsquo;s not maintainable, or if it doesn&rsquo;t follow a clear
 architecture, if there are not tests for it, then it&rsquo;s legacy.</p>
-
 <p>Probably you already worked with one or more legacy project throughout your
 career, the following are the steps I take to deal with legacy code in my
 day-to-day work.</p>
-
 <h2 id="cleanup-the-project">Cleanup the project</h2>
-
 <p>Delete everything that you don&rsquo;t need in that project, any empty directories,
 any files that are not used anywhere, any method that is not called anywhere,
 search your whole project for forgotten pieces that was useful one day but it&rsquo;s
 not needed anymore.</p>
-
 <p>That include reviewing your dependencies and make sure all of them are used
 somewhere, if you&rsquo;re using some web framework that follows MVC make sure that all
 controllers are linked to a route, that it&rsquo;s not just sleeping there forgotten
 after removing a route.</p>
-
 <p>Review all your assets and make sure it&rsquo;s used, every image and CSS and
 JavaScript file in there must be executed when the project runs.</p>
-
 <h2 id="testing">Testing</h2>
-
 <p>I get the code coverage for the whole project and make a plan to cover the reset
 of it with tests, what&rsquo;s important for me is that the whole project runs in
 tests, that If I removed one part of these files a test should fail, it doesn&rsquo;t
 have to be unit test, but a test for the project features overall should exist,
 running everything under it.</p>
-
 <h2 id="small-refactoring">Small refactoring</h2>
-
 <p>Make sure all classes public interfaces are used outside of the class itself, if
 it&rsquo;s not used then hide it as a private method.</p>
-
 <p>Rename methods and classes to follow some naming convention.</p>
-
 <p>Move files around for better grouping, for example if you found a controller
 concern that should be a helper file then do it, if there is a model that should
 be a service then do it, small code movement without changing the business logic
 of your application.</p>
-
 <p>The list goes on with small refactors, the gist is move stuff around without
 changing the business logic or making any risky changes.</p>
-
 <h2 id="write-more-unit-tests">Write more unit tests</h2>
-
 <p>Now that project structure is in place, write more unit tests, make sure that
 the units you have now are doing what it should do, exhaust your units logic at
 this step, you&rsquo;re trying to test every unit, use the black box kind of tests,
 don&rsquo;t bother yourself with implementation details, just give it some input and
 tests outputs and side effects, basically what the units should do not how it
 does it.</p>
-
 <h2 id="make-big-refactoring">Make big refactoring</h2>
-
 <p>That include everything you love, from applying <a href="https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)">SOLID
 principles</a> to
 splitting your monolith into separate micro services, it&rsquo;s all yours, but I keep
@@ -147,16 +126,12 @@ apply it everywhere to the code, and if possible I write a test of a
 documentation page to make sure this rules is clean for other maintainers and it
 wouldn&rsquo;t be broken in the future, after I apply that principle I move on to the
 next one.</p>
-
 <h2 id="optimizations">Optimizations</h2>
-
 <p>After the previous step your project becomes maintainable -hopefully- :) then
 the optimizations step comes in place, in that step I employ some caching
 layers, rewriting some parts so that it becomes faster, micro benchmarking and
 tiny optimizations.</p>
-
 <h2 id="finally">Finally</h2>
-
 <p>It&rsquo;s always good to document whatever you applied to the project and make it
 easily accessible to other project maintainers, a wiki page is not enough, you
 have to give it the correct labels/tags, link it to the readme in the appropriate
@@ -198,6 +173,10 @@ rules governing that directory classes/modules.</p>
     
     
         <li>
+            <a href="/posts/window10-disconnects-reconnects-usb-bluetooth/">Window10 Disconnects Reconnects Usb Bluetooth<aside class="dates">May 15 2020</aside></a>
+        </li>
+    
+        <li>
             <a href="/posts/git-as-messages-queue/">Git as Messages Queue<aside class="dates">Nov 10 2019</aside></a>
         </li>
     
@@ -233,10 +212,6 @@ rules governing that directory classes/modules.</p>
             <a href="/posts/%D9%85%D8%AA%D9%8A-%D8%AA%D9%88%D9%82%D9%81%D9%86%D8%A7-%D8%B9%D9%86-%D8%AA%D8%B5%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84/">متي توقفنا عن تصور المستقبل<aside class="dates">Feb 24 2018</aside></a>
         </li>
     
-        <li>
-            <a href="/posts/getting-your-cpu-speed-in-ghz-on-linux/">Getting Your CPU Speed in GHz on Linux<aside class="dates">Feb 12 2018</aside></a>
-        </li>
-    
 </ul>
 
 
@@ -267,7 +242,7 @@ rules governing that directory classes/modules.</p>
     
     <p class="small">
     
-        © Copyright 2019 Emad Elsaid
+        © Copyright 2020 Emad Elsaid
     
     </p>
 </footer>

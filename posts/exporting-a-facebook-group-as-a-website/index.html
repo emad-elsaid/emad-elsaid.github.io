@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.58.3" />
+<meta name="generator" content="Hugo 0.68.3" />
 <title>Exporting a Facebook Group as a Website</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -35,8 +35,6 @@ Facebook for a long time turned its back on groups, the interface was buggy and 
 <meta itemprop="name" content="Exporting a Facebook Group as a Website">
 <meta itemprop="description" content="For couple of years I have been honored by administrating a large Facebook group, it has over 15K Egyptian developers, it&rsquo;s been there for a while, people are posting quality content, asking and answering questions all the time, writing articles specific to Egypt and other related topics, which is a great journey to have.
 Facebook for a long time turned its back on groups, the interface was buggy and slow, no new features were introduced regularly, that changed for the past year, they started addressing issues, adding minor features like filters for join requests, and major features like group analytics.">
-
-
 <meta itemprop="datePublished" content="2018-02-01T22:26:12&#43;01:00" />
 <meta itemprop="dateModified" content="2018-02-01T22:26:12&#43;01:00" />
 <meta itemprop="wordCount" content="645">
@@ -44,7 +42,6 @@ Facebook for a long time turned its back on groups, the interface was buggy and 
 
 
 <meta itemprop="keywords" content="" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Exporting a Facebook Group as a Website"/>
 <meta name="twitter:description" content="For couple of years I have been honored by administrating a large Facebook group, it has over 15K Egyptian developers, it&rsquo;s been there for a while, people are posting quality content, asking and answering questions all the time, writing articles specific to Egypt and other related topics, which is a great journey to have.
@@ -80,28 +77,21 @@ Facebook for a long time turned its back on groups, the interface was buggy and 
         </h2>
     </header>
     <section id="post-body">
-        
-
-<p>For couple of years I have been honored by administrating a large Facebook
+        <p>For couple of years I have been honored by administrating a large Facebook
 group, it has over 15K Egyptian developers, it&rsquo;s been there for a while, people
 are posting quality content, asking and answering questions all the time,
 writing articles specific to Egypt and other related topics, which is a great
 journey to have.</p>
-
 <p>Facebook for a long time turned its back on groups, the interface was buggy and
 slow, no new features were introduced regularly, that changed for the past
 year, they started addressing issues, adding minor features like filters for
 join requests, and major features like group analytics.</p>
-
 <p>That makes you think of another way to have some degree of freedom for your
 community when it comes to data analysis/search at least, so the following
 approach felt logical to my case:</p>
-
 <h2 id="exporting-data-periodically">Exporting Data Periodically</h2>
-
 <p>Facebook doesn&rsquo;t offer a feature to export your group posts so you have to use
 Facebook graph API to pull as much data as you can.</p>
-
 <p>For that I developed a small script with ruby to do it, it connects to Facebook
 and pulls all posts from the group (it&rsquo;s a public group so all you need is
 application access token), also pulls comments and reactions with every post,
@@ -109,51 +99,40 @@ and write a file for every post data encoded in some readable format, I choose
 YAML for my script, also JSON would be a suitable choice for that purpose, just
 avoid binary formats or formats that are bound by a specific programming
 language.</p>
-
 <p><a href="https://github.com/egyptian-geeks/posts">This GitHub repository</a> contains the
 <code>download</code> script along with all 15k posts pulled from Facebook, also I setup my
 private server to update the repository every day at midnight UTC+1, that keeps
 the grunt work out of the way and you have an up-to-date data-set.</p>
-
 <h2 id="a-web-application">A Web Application</h2>
-
 <p>That&rsquo;s the one of the ways you can use the exported data-set, the most straight
 forward approach, pull all data to a database (even SQLite would suffice) and
 display it in certain order or with certain criteria like number of comments,
 likes, certain day or for a specific user.</p>
-
 <p>Also aggregation over data would introduce another set of statistics that could
 be displayed, like most active users, most commenting users, quality of posts
 based on rules you prefer.</p>
-
 <p>For that purpose I developed <a href="https://github.com/egyptian-geeks/website">this GitHub
 repository</a> to do that, it&rsquo;s a Ruby
 on Rails project, that imports part of the data-set to an SQLite3 database, then
 display posts in order or creation, it uses bootstrap to provide an
 out-of-the-box experience, and to lower the bar to entry level developers to
 contribute to it.</p>
-
 <p>Also a Dockerfile was introduced in the repository, linking it with
 hub.docker.com, so that an image is build with every push/merge to master
 branch.</p>
-
 <p>The docker image will be production ready, it pulls posts, import it to a
 database, all assets are compiled and rails will run in production environment,
 so the image could be pulled to a server or any machine with docker on it and
 run it with one command, the usual docker experience right here.</p>
-
 <h2 id="next-steps">Next Steps</h2>
-
 <p>A lot could be done once you freed your data from the platform, the following are
 some of the possible ideas:</p>
-
 <ul>
 <li>Sentiment analysis for posts and comments can lead to deep categorization</li>
 <li>Similarity detection, can group posts with same questions are repeated topic</li>
 <li>Real time search, I&rsquo;m thinking of in memory store and can provide a blink of an
 eye response time experience</li>
 </ul>
-
 <p>I feel that this is a door that has been opened and there is alot behind it, it
 just needs some creativity and a willing to give back the community, and you can
 make a pretty interesting platform here, and the best part of it that it doesn&rsquo;t
@@ -194,6 +173,10 @@ whoever feels willing to see the community from a different angle.</p>
     
     
         <li>
+            <a href="/posts/window10-disconnects-reconnects-usb-bluetooth/">Window10 Disconnects Reconnects Usb Bluetooth<aside class="dates">May 15 2020</aside></a>
+        </li>
+    
+        <li>
             <a href="/posts/git-as-messages-queue/">Git as Messages Queue<aside class="dates">Nov 10 2019</aside></a>
         </li>
     
@@ -229,10 +212,6 @@ whoever feels willing to see the community from a different angle.</p>
             <a href="/posts/%D9%85%D8%AA%D9%8A-%D8%AA%D9%88%D9%82%D9%81%D9%86%D8%A7-%D8%B9%D9%86-%D8%AA%D8%B5%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84/">متي توقفنا عن تصور المستقبل<aside class="dates">Feb 24 2018</aside></a>
         </li>
     
-        <li>
-            <a href="/posts/getting-your-cpu-speed-in-ghz-on-linux/">Getting Your CPU Speed in GHz on Linux<aside class="dates">Feb 12 2018</aside></a>
-        </li>
-    
 </ul>
 
 
@@ -263,7 +242,7 @@ whoever feels willing to see the community from a different angle.</p>
     
     <p class="small">
     
-        © Copyright 2019 Emad Elsaid
+        © Copyright 2020 Emad Elsaid
     
     </p>
 </footer>

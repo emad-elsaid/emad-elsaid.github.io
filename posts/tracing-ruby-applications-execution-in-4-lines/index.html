@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.58.3" />
+<meta name="generator" content="Hugo 0.68.3" />
 <title>Tracing Ruby Applications Execution in 4 Lines</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -35,8 +35,6 @@ Turns out the solution is very simple, as Ruby has TracePoint module, you can us
 <meta itemprop="name" content="Tracing Ruby Applications Execution in 4 Lines">
 <meta itemprop="description" content="I was researching a simple way to trace ruby code, so the problem I tried to solve (as usual) is to understand the code infront of me even more, so I need some monitor, when I open a rails server and I navigate around, I need to see the methods executed and where is it located, I need to see that in realtime.
 Turns out the solution is very simple, as Ruby has TracePoint module, you can use it to log any thing gets called in your application, so adding this snippet to your rails initializers or anywhere before your application starts.">
-
-
 <meta itemprop="datePublished" content="2019-05-23T17:46:35&#43;02:00" />
 <meta itemprop="dateModified" content="2019-05-23T17:46:35&#43;02:00" />
 <meta itemprop="wordCount" content="385">
@@ -44,7 +42,6 @@ Turns out the solution is very simple, as Ruby has TracePoint module, you can us
 
 
 <meta itemprop="keywords" content="" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tracing Ruby Applications Execution in 4 Lines"/>
 <meta name="twitter:description" content="I was researching a simple way to trace ruby code, so the problem I tried to solve (as usual) is to understand the code infront of me even more, so I need some monitor, when I open a rails server and I navigate around, I need to see the methods executed and where is it located, I need to see that in realtime.
@@ -84,57 +81,41 @@ Turns out the solution is very simple, as Ruby has TracePoint module, you can us
 solve (as usual) is to understand the code infront of me even more, so I need
 some monitor, when I open a rails server and I navigate around, I need to see
 the methods executed and where is it located, I need to see that in realtime.</p>
-
 <p>Turns out the solution is very simple, as Ruby has <code>TracePoint</code> module, you can
 use it to log any thing gets called in your application, so adding this snippet
 to your rails initializers or anywhere before your application starts.</p>
-
-<pre><code class="language-ruby">TracePoint.new(:call) do |tp|
-  puts &quot;#{ tp.path }:#{tp.lineno}\t#{ tp.defined_class }\t#{ tp.method_id }&quot;
-end.enable
-</code></pre>
-
-<p>That should print every method call to your standard output, but you&rsquo;ll discover
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">TracePoint</span><span style="color:#f92672">.</span>new(<span style="color:#e6db74">:call</span>) <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>tp<span style="color:#f92672">|</span>
+  puts <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#{</span> tp<span style="color:#f92672">.</span>path <span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">#{</span>tp<span style="color:#f92672">.</span>lineno<span style="color:#e6db74">}</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">#{</span> tp<span style="color:#f92672">.</span>defined_class <span style="color:#e6db74">}</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">#{</span> tp<span style="color:#f92672">.</span>method_id <span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">end</span><span style="color:#f92672">.</span>enable
+</code></pre></div><p>That should print every method call to your standard output, but you&rsquo;ll discover
 early that everything is too much, you need to ignore method calls that doesn&rsquo;t
 belong to your application code, like <code>puma</code> server method calls, or any
 external gem calls, so lets limit it to our application by adding a suffix <code>if</code>
 to the <code>puts</code> line.</p>
-
-<pre><code class="language-ruby">TracePoint.new(:call) do |tp|
-  puts &quot;#{ tp.path }:#{tp.lineno}\t#{ tp.defined_class }\t#{ tp.method_id }&quot; if tp.path.include?('/app/')
-end.enable
-</code></pre>
-
-<p>that should limit it to method calls located under <code>/app</code> directory, but as you
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">TracePoint</span><span style="color:#f92672">.</span>new(<span style="color:#e6db74">:call</span>) <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>tp<span style="color:#f92672">|</span>
+  puts <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#{</span> tp<span style="color:#f92672">.</span>path <span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">#{</span>tp<span style="color:#f92672">.</span>lineno<span style="color:#e6db74">}</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">#{</span> tp<span style="color:#f92672">.</span>defined_class <span style="color:#e6db74">}</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">#{</span> tp<span style="color:#f92672">.</span>method_id <span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">if</span> tp<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>include?(<span style="color:#e6db74">&#39;/app/&#39;</span>)
+<span style="color:#66d9ef">end</span><span style="color:#f92672">.</span>enable
+</code></pre></div><p>that should limit it to method calls located under <code>/app</code> directory, but as you
 know your application also logs stuff, so it doesn&rsquo;t make sense to log to
 STDOUT, lets separate that logs to a log file, and as my <code>/tmp</code> directory is a
 <code>tmpfs</code> mapped to memory not SSD, it&rsquo;ll be fast and volatile, so I don&rsquo;t care to
 clean it up afterwards.</p>
-
 <p>And for that I&rsquo;ll createa a logger to a file in <code>/tmp</code> and use it to print these
 executions</p>
-
-<pre><code class="language-ruby">logger = Logger.new('/tmp/trace.log', File::WRONLY | File::APPEND | File::CREAT)
-TracePoint.new(:call) do |tp|
-  logger.debug &quot;#{ tp.path }:#{tp.lineno}\t#{ tp.defined_class }\t#{ tp.method_id }&quot; if tp.path.include?('/app/')
-end.enable
-</code></pre>
-
-<p>So now you can <code>tail -f /tmp/trace.log</code> to see your application execution in
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">logger <span style="color:#f92672">=</span> <span style="color:#66d9ef">Logger</span><span style="color:#f92672">.</span>new(<span style="color:#e6db74">&#39;/tmp/trace.log&#39;</span>, <span style="color:#66d9ef">File</span><span style="color:#f92672">::</span><span style="color:#66d9ef">WRONLY</span> <span style="color:#f92672">|</span> <span style="color:#66d9ef">File</span><span style="color:#f92672">::</span><span style="color:#66d9ef">APPEND</span> <span style="color:#f92672">|</span> <span style="color:#66d9ef">File</span><span style="color:#f92672">::</span><span style="color:#66d9ef">CREAT</span>)
+<span style="color:#66d9ef">TracePoint</span><span style="color:#f92672">.</span>new(<span style="color:#e6db74">:call</span>) <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>tp<span style="color:#f92672">|</span>
+  logger<span style="color:#f92672">.</span>debug <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">#{</span> tp<span style="color:#f92672">.</span>path <span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">#{</span>tp<span style="color:#f92672">.</span>lineno<span style="color:#e6db74">}</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">#{</span> tp<span style="color:#f92672">.</span>defined_class <span style="color:#e6db74">}</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">#{</span> tp<span style="color:#f92672">.</span>method_id <span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">if</span> tp<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>include?(<span style="color:#e6db74">&#39;/app/&#39;</span>)
+<span style="color:#66d9ef">end</span><span style="color:#f92672">.</span>enable
+</code></pre></div><p>So now you can <code>tail -f /tmp/trace.log</code> to see your application execution in
 realtime, but you&rsquo;ll learn also that you need to filter the logs or search in
 them, so that can be done by piping your log file to <code>fzf</code> you can find it
 <a href="https://github.com/junegunn/fzf">here</a> so to see your logs and search through
 them now you can execute this in your shell</p>
-
-<pre><code class="language-bash">cat /tmp/trace.log | fzf
-</code></pre>
-
-<p>If you want to have your whole screen filled with fzf and the input prompt to
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat /tmp/trace.log | fzf
+</code></pre></div><p>If you want to have your whole screen filled with fzf and the input prompt to
 the top you can add <code>--layout=reverse</code></p>
-
-<pre><code class="language-bash">cat /tmp/trace.log | fzf --layout=reverse
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat /tmp/trace.log | fzf --layout<span style="color:#f92672">=</span>reverse
+</code></pre></div>
     </section>
 </article>
 
@@ -167,6 +148,10 @@ the top you can add <code>--layout=reverse</code></p>
 
     
     
+    
+        <li>
+            <a href="/posts/window10-disconnects-reconnects-usb-bluetooth/">Window10 Disconnects Reconnects Usb Bluetooth<aside class="dates">May 15 2020</aside></a>
+        </li>
     
         <li>
             <a href="/posts/git-as-messages-queue/">Git as Messages Queue<aside class="dates">Nov 10 2019</aside></a>
@@ -204,10 +189,6 @@ the top you can add <code>--layout=reverse</code></p>
             <a href="/posts/getting-your-cpu-speed-in-ghz-on-linux/">Getting Your CPU Speed in GHz on Linux<aside class="dates">Feb 12 2018</aside></a>
         </li>
     
-        <li>
-            <a href="/posts/dont-throw-your-question-over-the-fence/">Don&#39;t Throw Your Question Over the Fence<aside class="dates">Feb 10 2018</aside></a>
-        </li>
-    
 </ul>
 
 
@@ -238,7 +219,7 @@ the top you can add <code>--layout=reverse</code></p>
     
     <p class="small">
     
-        © Copyright 2019 Emad Elsaid
+        © Copyright 2020 Emad Elsaid
     
     </p>
 </footer>

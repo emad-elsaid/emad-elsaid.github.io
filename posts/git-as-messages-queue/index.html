@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.58.3" />
+<meta name="generator" content="Hugo 0.68.3" />
 <title>Git as Messages Queue</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -37,8 +37,6 @@ Alright, now lets introduce another idea: Git commits doesn&rsquo;t need to incl
 <meta itemprop="description" content="Hey, Good idea bad pitch, lets use Git as a messaging queue! lets use github to synchronize a cluster of them together.
 Lets get the obvious out of the way, You already know we use Git to keep track of our code changes, and we need a central point to pull and push these changes, this is why we use github/lab/bitbucket&hellip;etc.
 Alright, now lets introduce another idea: Git commits doesn&rsquo;t need to include changes, so you don&rsquo;t need to have to create files then commit these files to your git repo, you can create an empty commit with a command like this">
-
-
 <meta itemprop="datePublished" content="2019-11-10T20:33:52&#43;01:00" />
 <meta itemprop="dateModified" content="2019-11-10T20:33:52&#43;01:00" />
 <meta itemprop="wordCount" content="460">
@@ -46,7 +44,6 @@ Alright, now lets introduce another idea: Git commits doesn&rsquo;t need to incl
 
 
 <meta itemprop="keywords" content="" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Git as Messages Queue"/>
 <meta name="twitter:description" content="Hey, Good idea bad pitch, lets use Git as a messaging queue! lets use github to synchronize a cluster of them together.
@@ -85,23 +82,16 @@ Alright, now lets introduce another idea: Git commits doesn&rsquo;t need to incl
     <section id="post-body">
         <p>Hey, Good idea bad pitch, lets use Git as a messaging queue! lets use github to
 synchronize a cluster of them together.</p>
-
 <p>Lets get the obvious out of the way, You already know we use Git to keep track
 of our code changes, and we need a central point to pull and push these changes,
 this is why we use github/lab/bitbucket&hellip;etc.</p>
-
 <p>Alright, now lets introduce another idea: Git commits doesn&rsquo;t need to include
 changes, so you don&rsquo;t need to have to create files then commit these files to
 your git repo, you can create an empty commit with a command like this</p>
-
 <pre><code>git commit --allow-empty -m &quot;commit message&quot;
-</code></pre>
-
-<p>OK, so the commit message can be any text right? that means you can have JSON
+</code></pre><p>OK, so the commit message can be any text right? that means you can have JSON
 messages or YAML or any other machine readable format as a commit message.</p>
-
 <p>So now imagine this scenario:</p>
-
 <ol>
 <li>Create a repo on github</li>
 <li>Clone it to your server</li>
@@ -115,12 +105,9 @@ extracts the message and does the job</li>
 <li>Push that label to keep track of the last processed message (pull it when you
 deploy that consumer again)</li>
 </ol>
-
 <p>Now you have a queue of messages that can&rsquo;t be altered, communicated between
 servers and all data saved in a git repository.</p>
-
 <p>This idea is flexible and can be modified for several use cases:</p>
-
 <ol>
 <li>the central server doesn&rsquo;t have to be a github or a like, you can use your
 own server as a git server.</li>
@@ -136,7 +123,6 @@ repository</li>
 <li>In the future you can join 2 branches or split a branch and have your
 consumers adapt to that</li>
 </ol>
-
 <p>This idea can as simple as invoking git commands from your application with a
 system call, or use libgit to manipulate the repository for you, or even a small
 server application that communicate over a socket, or a repo service that
@@ -176,6 +162,10 @@ communicate over even HTTP, there are so many ways to implement that concept.</p
     
     
         <li>
+            <a href="/posts/window10-disconnects-reconnects-usb-bluetooth/">Window10 Disconnects Reconnects Usb Bluetooth<aside class="dates">May 15 2020</aside></a>
+        </li>
+    
+        <li>
             <a href="/posts/tracing-ruby-applications-execution-in-4-lines/">Tracing Ruby Applications Execution in 4 Lines<aside class="dates">May 23 2019</aside></a>
         </li>
     
@@ -211,10 +201,6 @@ communicate over even HTTP, there are so many ways to implement that concept.</p
             <a href="/posts/getting-your-cpu-speed-in-ghz-on-linux/">Getting Your CPU Speed in GHz on Linux<aside class="dates">Feb 12 2018</aside></a>
         </li>
     
-        <li>
-            <a href="/posts/dont-throw-your-question-over-the-fence/">Don&#39;t Throw Your Question Over the Fence<aside class="dates">Feb 10 2018</aside></a>
-        </li>
-    
 </ul>
 
 
@@ -245,7 +231,7 @@ communicate over even HTTP, there are so many ways to implement that concept.</p
     
     <p class="small">
     
-        © Copyright 2019 Emad Elsaid
+        © Copyright 2020 Emad Elsaid
     
     </p>
 </footer>

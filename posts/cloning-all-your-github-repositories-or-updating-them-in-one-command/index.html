@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Emad Elsaid">
 <meta name="description" content="Ruby/Go Web Developer">
-<meta name="generator" content="Hugo 0.58.3" />
+<meta name="generator" content="Hugo 0.68.3" />
 <title>Cloning All Your GitHub Repositories or Updating Them in One Command</title>
 <link rel="shortcut icon" href="http://www.emadelsaid.com/images/favicon.ico">
 <link rel="stylesheet" href="http://www.emadelsaid.com/css/style.css">
@@ -33,8 +33,6 @@
 
 <meta itemprop="name" content="Cloning All Your GitHub Repositories or Updating Them in One Command">
 <meta itemprop="description" content="I had a new laptop couple weeks ago at work, and I had to set it up with everything I need including the projects I have been working on from GitHub, I remembered how I usually git clone every project I start working on, it involves going to GitHub to the project page, copy the clone URL then I go to my terminal, cd to the projects directory and executes git clone http://github.">
-
-
 <meta itemprop="datePublished" content="2018-10-29T21:04:15&#43;01:00" />
 <meta itemprop="dateModified" content="2018-10-29T21:04:15&#43;01:00" />
 <meta itemprop="wordCount" content="214">
@@ -42,7 +40,6 @@
 
 
 <meta itemprop="keywords" content="" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Cloning All Your GitHub Repositories or Updating Them in One Command"/>
 <meta name="twitter:description" content="I had a new laptop couple weeks ago at work, and I had to set it up with everything I need including the projects I have been working on from GitHub, I remembered how I usually git clone every project I start working on, it involves going to GitHub to the project page, copy the clone URL then I go to my terminal, cd to the projects directory and executes git clone http://github."/>
@@ -81,24 +78,19 @@
 everything I need including the projects I have been working on from GitHub, I
 remembered how I usually <code>git clone</code> every project I start working on, it
 involves going to GitHub to the project page, copy the clone URL then I go to my
-terminal, <code>cd</code> to the projects directory and executes <code>git clone
-http://github.com/org/repo</code>.</p>
-
+terminal, <code>cd</code> to the projects directory and executes <code>git clone http://github.com/org/repo</code>.</p>
 <p>But what if I don&rsquo;t need to do that, What if I just cloned all the repositories
 at once and update them all with one command, that could save a lot of time when
 I have a new machine or I came back from a long vacation and I want to update
 all the machines.</p>
-
 <p>The implementation is pretty trivial, I should connect to GitHub API and get the
 list of repositories for me or the organization I want to clone, iterate over
 every repo and clone or update it, and because GitHub doesn&rsquo;t return all
 repositories in one page I have to repeat that process until I get an empty
 page.</p>
-
 <p>The following snippet does that, it needs some dependencies like <code>tty-prompt</code>
 and <code>colorize</code> both can be removed, but I like to have colored text and
 menus for that script.</p>
-
 <script type="application/javascript" src="https://gist.github.com/emad-elsaid/a2a1cd6cd81c8802defc19259d59525f.js"></script>
 
 
@@ -136,6 +128,10 @@ menus for that script.</p>
     
     
         <li>
+            <a href="/posts/window10-disconnects-reconnects-usb-bluetooth/">Window10 Disconnects Reconnects Usb Bluetooth<aside class="dates">May 15 2020</aside></a>
+        </li>
+    
+        <li>
             <a href="/posts/git-as-messages-queue/">Git as Messages Queue<aside class="dates">Nov 10 2019</aside></a>
         </li>
     
@@ -171,10 +167,6 @@ menus for that script.</p>
             <a href="/posts/getting-your-cpu-speed-in-ghz-on-linux/">Getting Your CPU Speed in GHz on Linux<aside class="dates">Feb 12 2018</aside></a>
         </li>
     
-        <li>
-            <a href="/posts/dont-throw-your-question-over-the-fence/">Don&#39;t Throw Your Question Over the Fence<aside class="dates">Feb 10 2018</aside></a>
-        </li>
-    
 </ul>
 
 
@@ -205,7 +197,7 @@ menus for that script.</p>
     
     <p class="small">
     
-        © Copyright 2019 Emad Elsaid
+        © Copyright 2020 Emad Elsaid
     
     </p>
 </footer>
