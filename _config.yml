@@ -1,0 +1,43 @@
+title: Emad Elsaid
+description: Ruby/Go Web Developer
+baseurl: ""
+url: "https://www.emadelsaid.com"
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+exclude:
+  - .git
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+name: Emad Elsaid
+meta_description: Ruby/Go Web Developer
+aboutPage: true
+
+paginate: 10000
+domain_name: 'https://www.emadelsaid.com'
+google_analytics: "UA-112396214-1"
+author:         'Emad Elsaid'
+authorTwitter:  'emad__elsaid'
+
+permalink:       /:title/
+defaults:
+    -
+        scope:
+            path: ""
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: ""
+            type: posts
+        values:
+            layout: post
