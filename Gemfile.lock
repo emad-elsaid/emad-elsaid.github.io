@@ -60,8 +60,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll-feed (~> 0.12)
   jekyll-paginate
-  kramdown
-  rouge
 
 BUNDLED WITH
    2.1.4
