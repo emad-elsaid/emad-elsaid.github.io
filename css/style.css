@@ -289,29 +289,22 @@ hr {
 	background: #eee;
 }
 
-span.code { font-family:Menlo, Monaco, Courier; background-color:#EEE; font-size:14px; }
+span.code { font-family:Menlo, Monaco, Courier; font-size:14px; }
 
 pre	{
-	font-family:Menlo, Monaco, Courier;
-	white-space:pre-wrap;
-	/*border: 1px solid #ddd;*/
-	padding:20px;
-	background-color:#fdfdfd;
-	/*font-size:14px;*/
-	overflow:auto;
-	border-radius: 3px;
-	background: #272b2d;
+	  font-family:Menlo, Monaco, Courier;
+	  white-space:pre-wrap;
+	  overflow:auto;
+	  border-radius: 3px;
 	  font-family: 'Source Code Pro',Menlo,monospace;
 	  font-size: 13px;
 	  line-height: 1.5em;
 	  font-weight: 500;
-	color: #d0d4d7;
-
+	  color: #d0d4d7;
 }
 
 table {
 	width: 100%;
-	margin: 40px 0;
 	border-collapse: collapse;
 	font-size: 13px;
 	line-height: 1.5em;
@@ -332,10 +325,6 @@ table td,td {
 
 tr>td {
 	border-top: 1px solid #eaeaea;
-}
-
-tr:nth-child(odd)>td {
-	background: #fcfcfc;
 }
 
 thead th,th {
@@ -639,10 +628,6 @@ h2.month {
 	.post h2.headline { font-size: 13px; }
 	.post h1 { font-size:24px; }
 	.post h2 { font-size:20px; }
-}
-
-code {
-    background-color: transparent;
 }
 
 li ol, li ul {

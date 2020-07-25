@@ -27,6 +27,12 @@ google_analytics: "UA-112396214-1"
 author:         'Emad Elsaid'
 authorTwitter:  'emad__elsaid'
 
+kramdown:
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
+
 permalink:       /:title/
 defaults:
     -
