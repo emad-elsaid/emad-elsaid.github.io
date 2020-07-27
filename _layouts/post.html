@@ -4,9 +4,10 @@ archive: true
 ---
 
 <section dir="auto">
-  <h1 class="title">
+  <h1 class="title" dir="auto">
     <time datetime="{{post.date}}" class="tag is-link is-light">{{ page.date | date:"%d %b %Y" }}</time>
     {{ page.title }}
+    <hr/>
   </h1>
   {{content}}
 </section>
