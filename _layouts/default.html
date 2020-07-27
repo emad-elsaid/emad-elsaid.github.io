@@ -7,7 +7,7 @@
 
   <title>{{ site.name }}{% if page.title %} - {{ page.title }}{% endif %}</title>
   <link rel="shortcut icon" href="{{ "/" | relative_url  }}images/favicon.ico">
-  <link rel="stylesheet" href="{{ "/" | relative_url  }}css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
   <link rel="alternate" type="application/rss+xml" title="My Blog" href="{{ "/" | relative_url  }}feed.xml">
   <link rel="stylesheet" href="{{ "/" | relative_url  }}css/highlight.css">
 </head>
@@ -16,12 +16,16 @@
   {% include navigation.html %}
 
   {% if page.profile %}
-      {% include profile.html %}
+  {% include profile.html %}
   {% endif %}
 
-  <section id="wrapper" class="{% if page.profile %}home{% endif %}">
+  <section class="section">
+    <div class="container content">
     {{ content }}
+    </div>
   </section>
+
+  {% include footer.html %}
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
