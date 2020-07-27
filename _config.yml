@@ -6,6 +6,7 @@ url: "https://www.emadelsaid.com"
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
 
 exclude:
   - .git
