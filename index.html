@@ -2,4 +2,38 @@
 profile: true
 ---
 
-{% include post-list.html %}
+{% for post in paginator.posts %}
+<div class="card">
+  <div class="card-content">
+    <div class="content">
+      <time datetime="{{post.date}}" class="tag is-link is-light">{{ post.date | date:"%d %b %Y" }}</time>
+      <a class="title is-6" href="{{ "/" | relative_url  }}{{ post.url | remove_first: '/' }}">{{ post.title }}</a>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+{% if paginator.previous_page or paginator.next_page %}
+<nav id="post-nav">
+  {% if paginator.previous_page %}
+  <span class="prev">
+    {% if paginator.previous_page == 1 %}
+    <a href="{{ "/" | relative_url  }}" title="Previous Page">
+      <span class="arrow">←</span> Newer Posts
+    </a>
+    {% else %}
+    <a href="{{ "/" | relative_url  }}page{{ paginator.previous_page }}/">
+      <span class="arrow">←</span> Newer Posts
+    </a>
+    {% endif %}
+  </span>
+  {% endif %}
+  {% if paginator.next_page %}
+  <span class="next">
+    <a href="{{ "/" | relative_url  }}page{{ paginator.next_page }}/">
+      Older Posts <span class="arrow">→</span>
+    </a>
+  </span>
+  {% endif %}
+</nav>
+{% endif %}
