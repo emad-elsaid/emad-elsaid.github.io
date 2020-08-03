@@ -14,10 +14,36 @@
 </head>
 <body>
 
-  {% include navigation.html %}
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          {% if page.url != "/" %}
+          <a href="{{ "/" | relative_url  }}" class="button"> ← Home </a>
+          {% endif %}
+
+          {% if page.url != "/about/" %}
+          <a href="{{ "/" | relative_url  }}about" class="button">About </a>
+          {% endif %}
+
+          <a class="button is-link is-light" href="{{ "/" | relative_url  }}feed.xml">RSS</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
   {% if page.profile %}
-  {% include profile.html %}
+  <div class="has-text-centered">
+    {% if site.aboutPage %}
+    <a href="{{ "/" | relative_url  }}about">
+      <img width="100" height="100" src="{{ "/" | relative_url  }}images/avatar.png" alt="logo" />
+    </a>
+    {% else %}
+    <img width="100" height="100" src="{{ "/" | relative_url  }}images/avatar.png" alt="logo" />
+    {% endif %}
+    <h1 class="title">{{ site.author }}</h1>
+    <h2 class="subtitle">{{ site.description }}</h2>
+  </div>
   {% endif %}
 
   <section class="section">
@@ -26,7 +52,11 @@
     </div>
   </section>
 
-  {% include footer.html %}
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p class="small">© Copyright {{ site.time | date: '%Y' }} {{ site.author }}</p>
+    </div>
+  </footer>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
