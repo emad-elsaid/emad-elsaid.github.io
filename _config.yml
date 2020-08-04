@@ -5,7 +5,6 @@ url: "https://www.emadelsaid.com"
 
 plugins:
   - jekyll-feed
-  - jekyll-paginate
   - jekyll-seo-tag
 
 exclude:
@@ -22,7 +21,6 @@ name: Emad Elsaid
 meta_description: Ruby/Go Web Developer
 aboutPage: true
 
-paginate: 10000
 domain_name: 'https://www.emadelsaid.com'
 google_analytics: "UA-112396214-1"
 author:         'Emad Elsaid'
