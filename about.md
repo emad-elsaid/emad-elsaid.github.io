@@ -1,13 +1,12 @@
----
-title: "About Me"
-date: Thu Jan 25 20:14:14 CET 2018
----
-
 An Egyptian software engineer, I do back-end most of the time, sometimes front-end
 for fun, I mainly work with Ruby and Go, you can find me on
-[GitHub](https://www.github.com/emad-elsaid),
-[Twitter](https://www.twitter.com/emad__elsaid) or
-[Facebook](https://www.facebook.com/emad.elsaid.hamed)
+
+* [GitHub](https://www.github.com/emad-elsaid)
+* [Twitter](https://www.twitter.com/emad__elsaid)
+* [Facebook](https://www.facebook.com/emad.elsaid.hamed)
+* [Youtube](http://youtube.com/EmadElsaid)
+* [Linkedin](https://www.linkedin.com/in/emadelsaid)
+* [Twitch](https://www.twitch.tv/internalerr)
 
 I post to this blog some notes and ideas that may or may not be practical but it
 interests me and I wish other people find it interesting.
