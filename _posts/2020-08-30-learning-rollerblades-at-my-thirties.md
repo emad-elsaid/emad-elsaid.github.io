@@ -35,7 +35,7 @@ put on the rollerblades and just keep our balance standing in them.
 
 It was a challenge I have to say, I tried to learn skateboarding/long-boarding
 before that helped me a bit, but still the feeling that there is wheels under
-your feet it weird, like growing a new organ. The good news here is the more I
+your feet is weird, like growing a new organ. The good news here is the more I
 wear them the more I felt comfortable at them, it took us couple hours to stand
 on the grass and make the V move we watched on YouTube, you make your feet in a
 V shape then move them in front of each other.
