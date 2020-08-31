@@ -62,7 +62,7 @@ the wrist, I can't imagine how will I write code if my wrist was hurt.
 For the next couple days we thought of progressing to asphalt ground, so we
 choose a closed street beside our place that usually people use it for skating
 and kids use it for cycling, we went there and tried the walk and gradually
-progressed to striding, slowing gaining confidence in moving our legs.
+progressed to striding, slowly gaining confidence in moving our legs.
 
 I have to say it's fun to learn, and painful sometimes :D, but the feeling that
 you're on wheels and moving on them is awesome.
