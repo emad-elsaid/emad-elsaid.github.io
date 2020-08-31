@@ -22,8 +22,8 @@ post will be an easier workflow.
 
 ## Minimal theme
 
-I searched Jekyll themes, I have to say I was disappointed to see most of them,
-so I picked the most minimal one and tried to clean it.
+I searched Jekyll themes, I have to say that I was disappointed to see most of
+them, so I picked the most minimal one and tried to clean it.
 
 ## No JavaScript
 
