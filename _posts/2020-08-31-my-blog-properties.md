@@ -5,7 +5,7 @@ Some of the things I learned is to [keep it
 simple](https://en.wikipedia.org/wiki/KISS_principle) that guided me to take a
 lot of decisions.
 
-Here I'll list the divisions I took for my blog website:
+Here I'll list the decisions I took to improve my blog website:
 
 ## Use Jekyll + GitHub pages
 
