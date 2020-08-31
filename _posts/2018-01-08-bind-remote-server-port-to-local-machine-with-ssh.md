@@ -1,7 +1,5 @@
 ---
 title: "Bind Remote Server Port to Local Machine With SSH"
-date: 2018-01-08T04:44:27+01:00
-draft: false
 ---
 
 I have a VPS server that serves an application and a set of customer facing services like images server, analytics server
@@ -14,6 +12,6 @@ that port from the outside world.
 I just want me to be the only one to see it, so I bind that server port to my local machine with SSH and I can open http://localhost:8003
 to see the service as if it was working on my local machine with that command
 
-#+BEGIN_SRC sh
+```bash
 ssh -L 8003:localhost:8003 user@serverip
-#+END_SRC
+```
