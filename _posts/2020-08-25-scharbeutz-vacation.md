@@ -20,6 +20,8 @@ We found a good place to the north of Germany called Scharbeutz, A small city on
 the sea, and has some other small lakes here and there, not so different from
 Port-Said, So we decided to go there.
 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2344.097929459261!2d10.74381711602659!3d54.01878563183017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2746d5428a159%3A0x961060540a64020c!2sScharbeutz!5e0!3m2!1sen!2sde!4v1598947226491!5m2!1sen!2sde" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
 ## Transportation
 
 Scharbeutz doesn't have public transportation that I know of, And I don't have a
