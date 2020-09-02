@@ -8,7 +8,7 @@ inboxes" or you can search for a word in all your emails from all inboxes. Over
 all of that I used [Mu4e](https://www.djcbsoftware.nl/code/mu/mu4e.html) which
 is an email client inside Emacs (my default editor). As I'm using
 [Spacemacs](https://www.spacemacs.org/) So I added a binding that opens Mu4e
-using `SPC M` and boom I'm I see all my emails, I can search with `s` and I have
+using `SPC M` and boom I can see all my emails, I can search with `s` and I have
 a bookmark that shows all unread emails using `bi`.
 
 Now I want the same for RSS.
