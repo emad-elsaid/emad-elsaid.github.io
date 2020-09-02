@@ -101,5 +101,5 @@ the file to another directory after it's read or the user want to move it to
 
 Another piece of the puzzle is indexer like what `Mu` does for the emails.
 
-I was surprised that it was easy to just sit down and right the thing for myself,
+I was surprised that it was easy to just sit down and write the thing for myself,
 than searching for days for a solution.
