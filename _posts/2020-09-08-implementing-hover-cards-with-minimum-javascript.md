@@ -1,15 +1,15 @@
 ## Boring Rails
 
 Couple days ago [Amr](https://twitter.com/amrabdelwahab) shared a nice website called [Boring
-Rails](https://boringrails.com/) That resonates with what I believe a simple way
+Rails](https://boringrails.com/) that resonates with what I believe a simple way
 to develop web applications that has less JavaScript fatigue.
 
 I tend to minimize JavaScript on my websites to the point that sometimes I
-remove all JavaScript all together like on this blog.
+remove JavaScript all together like on this blog.
 
 The first article [Building GitHub-style Hover cards with StimulusJS and
 HTML-over-the-wire](https://boringrails.com/articles/hovercards-stimulus/) talks
-in mode details what's wrong with the modern culture of developing web
+in details what's wrong with the modern culture of developing web
 applications and the SPA frenzy going on.
 
 Then the article went to implement hover cards with some tools, I believe that
