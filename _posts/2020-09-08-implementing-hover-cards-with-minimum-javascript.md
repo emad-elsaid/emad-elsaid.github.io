@@ -1,6 +1,6 @@
 ## Boring Rails
 
-Couple days ago Amr shared a nice website called [Boring
+Couple days ago [Amr](https://twitter.com/amrabdelwahab) shared a nice website called [Boring
 Rails](https://boringrails.com/) That resonates with what I believe a simple way
 to develop web applications that has less JavaScript fatigue.
 
