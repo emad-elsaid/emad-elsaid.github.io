@@ -17,7 +17,7 @@ the same feature can be delivered with less code, The following paragraphs will
 walk you through implementing the same feature without any JavaScript
 dependency.
 
-## Write a server
+## Write it in HTML
 
 You'll need a simple HTML that shows/hides hovercards like so
 
