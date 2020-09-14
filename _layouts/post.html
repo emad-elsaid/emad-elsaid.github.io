@@ -9,7 +9,29 @@ archive: true
     {{ page.title }}
     <hr/>
   </h1>
-  {{content}}
+
+
+  {% if page.video %}
+  <figure class="image">
+    <video width="100%" controls>
+      <source src="{{ page.video[page.current_resolution] }}"><source/>
+    </video>
+
+    <div class="field has-addons">
+      {% for resolution in page.video %}
+      <p class="control">
+        <a href="./{{resolution.first}}" class="button {% if page.current_resolution == resolution.first %} is-link {% endif %}">
+          {{ resolution.first }}
+        </a>
+      </p>
+      {% endfor %}
+    </div>
+  </figure>
+  {% endif %}
+
+  <div dir="auto">
+    {{content}}
+  </div>
 </section>
 
 <hr/>

@@ -3,6 +3,7 @@ profile: true
 ---
 
 {% for post in site.posts %}
+{% unless post.unlisted %}
 <div class="card">
   <div class="card-content">
     <div class="content">
@@ -11,4 +12,5 @@ profile: true
     </div>
   </div>
 </div>
+{% endunless %}
 {% endfor %}
