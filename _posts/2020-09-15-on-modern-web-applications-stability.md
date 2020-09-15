@@ -1,7 +1,7 @@
 I don't like how modern web applications are built. Many of the web applications
 are too unstable, That you can't imagine having the system running without a
 team supporting it. The fact that we try to automate manual processes then the
-automation needs manual intervention defy the purpose. Some companies has an
+automation needs manual intervention defies the purpose. Some companies has an
 army of developers if they were to do the business by hand they would make a
 better job than the programmed system. There are many reasons for this
 situation. One of the reasons is the excessive use of third party dependencies.
