@@ -70,7 +70,7 @@ other packages, these packages can use other packages and so on like a tree.
 
 With every package in this tree we depend on the code inside this package and
 the team that maintains it. A freshly generated rails project depends on 74
-packages for ruby and Yarn list that lists JavaScript dependencies lists 3102
+packages for ruby and `Yarn list` that lists JavaScript dependencies output 3102
 lines, that's 3176 packages with teams maintaining them and bugs and new
 versions all the time.
 
