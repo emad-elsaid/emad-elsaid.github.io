@@ -56,7 +56,7 @@ your application will get slower too. When their service is down your
 application will experience malfunction too, Your system and theirs is now
 connected. So add external services integration cautiously. By adding an
 external system you're putting your trust in this service team and their ability
-in delivering what the service is promising now and in the future. This is not
+in delivering what the service is promising now **and** in the future. This is not
 an easy decision and it should be treated as such.
 
 ![IMG_20200915_224907.jpg](/images/IMG_20200915_224907.jpg){: class="center"}
@@ -64,7 +64,7 @@ an easy decision and it should be treated as such.
 Now lets move to the direct dependencies of your application. If you're using
 any modern programming language it'll have a way to package code into reusable
 format that could be reused by other applications. one package can use code from
-other packages, these packages can other other packages and so on like a tree.
+other packages, these packages can use other packages and so on like a tree.
 
 ![IMG_20200915_231326.jpg](/images/IMG_20200915_231326.jpg){: class="center"}
 
