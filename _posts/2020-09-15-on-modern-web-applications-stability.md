@@ -85,7 +85,7 @@ clarity.
   steals your bitcoin wallets
   ](https://www.trendmicro.com/vinfo/dk/security/news/cybercrime-and-digital-threats/hacker-infects-node-js-package-to-steal-from-bitcoin-wallets).
 * You are not really using all of this code. When someone is writing an open
-  source package it will suffer sooner or later of [feature
+  source package it will suffer sooner or later from [feature
   creeping](https://en.wikipedia.org/wiki/Feature_creep) You are probably using
   couple features of this package and don't need the rest, but you wanted the
   banana and got the whole forest now.
@@ -98,7 +98,7 @@ clarity.
   changed you'll need to change your code. So suddenly someone somewhere is
   telling you to change your code. That's part of the control you have over your
   code handed over to someone you never talked to or knew.
-* When you programming language has a new release you can't update unless all of
+* When your programming language has a new release you can't update unless all of
   your dependencies are up to date. For ruby 2.7.0 for example some language syntax is
   now deprecated and shows warning when you run your project. So to fix that you
   either fix it in the package and open a PR with the change or wait for the
