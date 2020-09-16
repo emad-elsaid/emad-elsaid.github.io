@@ -38,7 +38,7 @@ maintaining it.
 Again, We missed other layers and people in this picture. Most of the
 applications are using external SAAS providers for logs or monitoring or bug
 reporting or provide parts of the system functionality that can take more time
-to build but the company team. lets add them to the picture along with their
+to build by the company team. lets add them to the picture along with their
 teams.
 
 ![IMG_20200915_221047.jpg](/images/IMG_20200915_221047.jpg){: class="center"}
