@@ -90,7 +90,7 @@ clarity.
   couple features of this package and don't need the rest, but you wanted the
   banana and got the whole forest now.
 * With every package update you're inventing unnecessary work for yourself. New
-  version of packages are released all the time. Updating your project to **get
+  versions of packages are released all the time. Updating your project to **get
   the latest bug fixes and features** is usually what people do. Most of the
   time because of feature creeping these versions changes are not relevant to
   you at all, but you won't know until you read the change log. If it's relevant
@@ -103,7 +103,7 @@ clarity.
   now deprecated and shows warning when you run your project. So to fix that you
   either fix it in the package and open a PR with the change or wait for the
   maintainer to update it.
-* When you encounter a bug in dependency you will have to understand this
+* When you encounter a bug in a dependency you will have to understand this
   package code, fork, branch, fix rinse and repeat. That requires a some
   cooperation from the library maintainer which is most of the time isn't
   possible because most of the open source projects are voluntarily maintained.
@@ -113,19 +113,19 @@ clarity.
   documentation at all for that part of the code. Otherwise you'll have to dig
   in to the library code.
 
-This is the second point I want to make: Using external library imply you trust
-the maintainer and you also inherit his decisions about using other libraries
-and so forth. This decision should be weighed based on the benefit of the
-library and how many of it's features you're going to use and other factors like
-the maturity and how responsive is the maintainer, please don't use GitHub stars
-as a factor in your decision it's misleading. And if the part you use from the
-library isn't too big I recommend using the library to save some time and effort
-upfront but make sure you get rid of it and implement the part you need. An
-example of that is a pagination library like rails "Kaminari" if you're using it
-to save you some time then sure. But keep on your todo list a task to remove it
-and implement the feature yourself. An example of libraries that's hard to get
-rid of it "OpenCV" This is something that reimplementing the part you need
-probably will be a huge task so that can stay. You'll need to use your best
+This is the second point I want to make: Using external library implies that you
+trust the maintainer and you also inherit his decisions about using other
+libraries and so forth. This decision should be weighed based on the benefit of
+the library and how many of it's features you're going to use and other factors
+like the maturity and how responsive is the maintainer, please don't use GitHub
+stars as a factor in your decision it's misleading. And if the part you use from
+the library isn't too big I recommend using the library to save some time and
+effort upfront but make sure you get rid of it and implement the part you need.
+An example of that is a pagination library like rails "Kaminari" if you're using
+it to save you some time then sure. But keep on your todo list a task to remove
+it and implement the feature yourself. An example of libraries that's hard to
+get rid of it "OpenCV" This is something that reimplementing the part you need
+probably will be a huge task so it can stay. You'll need to use your best
 judgment to decide between these 2 sides of the spectrum.
 
 I like to think of what I do as building an automated system, I would like this
