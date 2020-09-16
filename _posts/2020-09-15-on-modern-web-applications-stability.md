@@ -107,6 +107,11 @@ clarity.
   package code, fork, branch, fix rinse and repeat. That requires a some
   cooperation from the library maintainer which is most of the time isn't
   possible because most of the open source projects are voluntarily maintained.
+* Developing new features or modifying existing features are ordre of magnitude
+  harder. You'll need to dig into the documentation of the dependencies looking
+  for support for this little feature you want to add. That is if there is any
+  documentation at all for that part of the code. Otherwise you'll have to dig
+  in to the library code.
 
 This is the second point I want to make: Using external library imply you trust
 the maintainer and you also inherit his decisions about using other libraries
