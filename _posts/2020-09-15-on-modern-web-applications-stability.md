@@ -138,3 +138,6 @@ means more bugs that I probably can't solve. This is dangerous and shouldn't be
 taken lightly. Extending your code with external libraries or systems can cut
 down effort hence the cost of development. But when this is taken lightly it
 backfires badly.
+
+
+HN comments: https://news.ycombinator.com/item?id=24493865
