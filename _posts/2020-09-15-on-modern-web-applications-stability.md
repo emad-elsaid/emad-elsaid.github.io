@@ -140,4 +140,4 @@ down effort hence the cost of development. But when this is taken lightly it
 backfires badly.
 
 
-HN comments: https://news.ycombinator.com/item?id=24493865
+HN comments: [https://news.ycombinator.com/item?id=24493865](https://news.ycombinator.com/item?id=24493865)
