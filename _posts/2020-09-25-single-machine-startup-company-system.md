@@ -416,6 +416,7 @@ In the future if you want to add another service you'll need to duplicate the
 Lets enable and start haproxy
 
 ```
+ufw allow http
 systemctl enable haproxy
 systemctl start haproxy
 ```
