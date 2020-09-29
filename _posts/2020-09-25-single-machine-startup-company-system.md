@@ -416,9 +416,15 @@ In the future if you want to add another service you'll need to duplicate the
 Lets enable and start haproxy
 
 ```
-ufw allow http
 systemctl enable haproxy
 systemctl start haproxy
+```
+
+Now haproxy is listening on port 80, but the traffic is rejected by the
+firewall. lets allow HTTP traffic.
+
+```
+ufw allow http
 ```
 
 You can for sure automate these steps with some code and a CI pipeline.
