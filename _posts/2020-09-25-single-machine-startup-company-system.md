@@ -449,12 +449,15 @@ squeez in your tech stack.
 
 There is always problems to solve and improvements to the system like:
 
-- Limiting home directories sizes for team member as it doesn't need to be large
-  at all.
+- [Limiting home directories sizes for team member
+  ](https://www.digitalocean.com/community/tutorials/how-to-set-filesystem-quotas-on-ubuntu-18-04)
+  as it doesn't need to be large at all.
 - Get notifications when the system resources are exhausted like the disk free
-  space is too low or the CPU usage is too high for some time. memory usage is
+  space is too low or the CPU usage is too high for some time or memory usage is
   too high
-- Limiting services memory/cpu/filesystem usage which is supported by systemd
+- [Limiting services memory/cpu/filesystem usage
+  ](https://unix.stackexchange.com/questions/345595/how-to-set-ulimits-on-service-with-systemd)
+  which is supported by systemd
 - Archive old logs to remote system
 - Backup the system to external machine or create filesystem screenshots if you
   choose a filesystem that supports it like ZFS
