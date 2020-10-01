@@ -46,7 +46,7 @@ applications startups are using nowadays:
 * OpenProject instead of Jira/Asana/Trello
 * **Use it as git server**, on the server create a directory for the project then
   `git init --bare` then add it as a remote on your machine
-  `user@server.ip.address:/path/to/directory** then you can push/pull/branch
+  `user@server.ip.address:/path/to/directory` then you can push/pull/branch
   it'll act like github just without a UI
 
 
