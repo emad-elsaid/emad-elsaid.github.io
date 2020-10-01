@@ -466,3 +466,7 @@ requests and sharing files is the default.
 
 The only thing that will stop in your way is inefficient software, and for that
 you'll need to make abit of an extra effort to tame it.
+
+## Read More:
+
+* [Part 2](/2020-10-1-single-machine-startup-company-system-part-2)
