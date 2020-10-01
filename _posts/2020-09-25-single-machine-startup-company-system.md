@@ -447,7 +447,7 @@ squeez in your tech stack.
 
 ## It's never done
 
-There is always problems and improvements you can add to the system like:
+There is always problems to solve and improvements to the system like:
 
 - Limiting home directories sizes for team member as it doesn't need to be large
   at all.
