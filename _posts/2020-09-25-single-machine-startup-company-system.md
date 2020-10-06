@@ -469,4 +469,4 @@ you'll need to make abit of an extra effort to tame it.
 
 ## Read More:
 
-* [Part 2](/2020-10-1-single-machine-startup-company-system-part-2)
+* [Part 2](/single-machine-startup-company-system-part-2)
