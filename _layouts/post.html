@@ -4,12 +4,11 @@ archive: true
 ---
 
 <section dir="auto">
-  <h1 class="title" dir="auto">
+  <h1 class="title has-text-centered" dir="auto">
+    {{ page.title }} <br>
     <time datetime="{{post.date}}" class="tag is-link is-light">{{ page.date | date:"%d %b %Y" }}</time>
-    {{ page.title }}
     <hr/>
   </h1>
-
 
   {% if page.video %}
   <figure class="image">
