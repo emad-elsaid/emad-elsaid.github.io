@@ -27,7 +27,7 @@ Then I needed to configure it to sync the emails to `~/mail` directory,
 OfflineIMAP config file lives in `~/.offlineimaprc`, the content for me is as
 follows
 
-```
+```conf
 [general]
 accounts = account1, account2
 pythonfile = ~/path/to/mailpass.py
@@ -75,14 +75,14 @@ So I get an [application specific](https://myaccount.google.com/apppasswords)
 password for my email account from my gmail account then I encrypt it to a file
 like so:
 
-```
+```shell
 echo -n "<password>" | openssl rsautl -inkey ~/.ssh/id_rsa -encrypt > ~/path/to/email.password
 ```
 
 The `~/path/to/mailpass.py` is a python file that has one function it takes a
 file path and decrypt it with openssl
 
-```
+```python
 #! /usr/bin/env python2
 from subprocess import check_output
 
@@ -100,7 +100,7 @@ of emails you have in your mail.
 To make sure offlineimap runs everytime I login to my user account I enable and
 start the systemd service that comes with offlineimap package
 
-```
+```shell
 systemctl enable offlineimap --user
 systemctl start offlineimap --user
 ```
@@ -122,7 +122,7 @@ for mu.
 mu package is in archlinux AUR under the name `mu` so you can install it with
 the AUR helpe you have, I'm using `yay` so the command for me is:
 
-```
+```shell
 yay -S mu
 ```
 
@@ -132,7 +132,7 @@ invokes `mu index` to rebuild the database.
 You can use `mu` to ask for new emails now, for example I have a script that
 will display the number of unread emails in my `INBOX` directories
 
-```
+```shell
 mu find 'flag:unread AND (maildir:/account1/INBOX OR maildir:/account2/INBOX)' 2> /dev/null | wc -l
 ```
 
