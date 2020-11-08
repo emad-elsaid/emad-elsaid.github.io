@@ -180,7 +180,7 @@ The file will hold all of our Mu4e configuration
 
 (spacemacs/set-leader-keys "M" 'mu4e)
 
-(setq mu4e-inboxes-query "maildir:/account1/INBOX OR maildir:/account2/INBOX)
+(setq mu4e-inboxes-query "maildir:/account1/INBOX OR maildir:/account2/INBOX")
 (setq smtpmail-queue-dir "~/mail/queue/cur")
 (setq mail-user-agent 'mu4e-user-agent)
 (setq mu4e-html2text-command 'mu4e-shr2text)
