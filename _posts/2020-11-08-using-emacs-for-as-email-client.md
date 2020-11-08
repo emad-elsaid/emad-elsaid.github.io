@@ -113,10 +113,11 @@ postsynchook = mu index
 
 # Using Mu to index the emails
 
-which will run `mu index` command after every sync, `mu` is a program that uses
-Xapian to build a full text search database for the email directory, then you
-can use `mu` to search in your emails, `mu` comes with `Mu4e` which is the emacs
-interface for mu.
+which will run `mu index` command after every sync,
+[mu](https://www.djcbsoftware.nl/code/mu/) is a program that uses Xapian to
+build a full text search database for the email directory, then you can use `mu`
+to search in your emails, `mu` comes with `Mu4e` which is the emacs interface
+for mu.
 
 mu package is in archlinux AUR under the name `mu` so you can install it with
 the AUR helpe you have, I'm using `yay` so the command for me is:
