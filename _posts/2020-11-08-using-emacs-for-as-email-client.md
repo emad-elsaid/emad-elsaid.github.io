@@ -46,7 +46,7 @@ localfolders = ~/mail/account1
 [Repository account1-remote]
 type = Gmail
 remoteuser = account1@gmail.com
-remotepasseval = get_pass("~/dotfiles/.ssh/account1.gmail.password")
+remotepasseval = get_pass("~/.ssh/account1.gmail.password")
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 ssl_version = tls1_2
 
@@ -63,7 +63,7 @@ localfolders = ~/mail/account2
 [Repository account2-remote]
 type = Gmail
 remoteuser = account2@gmail.com
-remotepasseval = get_pass("~/dotfiles/.ssh/account2.password")
+remotepasseval = get_pass("~/.ssh/account2.password")
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 ssl_version = tls1_2
 ```
