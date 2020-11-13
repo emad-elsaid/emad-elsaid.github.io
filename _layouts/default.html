@@ -52,6 +52,10 @@
   </div>
   {% endif %}
 
+  {% if page.image %}
+  <img src="{{ page.image.src }}" alt="{{ page.image.alt }}" title="{{ page.image.alt }}" />
+  {% endif %}
+
   <section class="section">
     <div class="container content is-medium">
     {{ content }}

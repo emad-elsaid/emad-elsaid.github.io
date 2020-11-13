@@ -1,5 +1,8 @@
 ---
 title: Moving from Lastpass.com to KeePassXC on Linux/Android/Windows
+image:
+  src: /images/IMG_20200805_201728.jpg
+  alt: Berlin Spree
 ---
 
 As part of my effort to reduce my dependency on SaaS service today I moved from
