@@ -1,5 +1,8 @@
 ---
 title: Using Emacs as email client
+image:
+  src: /images/IMG_20200801_205147.jpg
+  alt: Engelbecken, Berlin
 ---
 
 Couple months ago I decided to reduce the number of online services I'm using
