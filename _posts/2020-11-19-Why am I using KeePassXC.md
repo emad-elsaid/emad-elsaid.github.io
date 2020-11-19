@@ -1,5 +1,7 @@
 ---
 title: Why Am I Using KeePassXC?
+image:
+  src: /images/1605788191749.jpg
 ---
 
 The following are the reasons for using KeePassXC as my Password Manager:
