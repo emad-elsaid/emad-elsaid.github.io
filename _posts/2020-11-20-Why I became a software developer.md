@@ -41,7 +41,7 @@ wanted more.
 
 I was saving my allowance every day for 3 days a week to get a weekly comics
 magazine called "Bolbol" a beautiful magazine with serialized comics stories
-mostly from French comic houses translated to Arabia. One day when I was getting
+mostly from French comic houses translated to Arabic. One day when I was getting
 an issue from the newspaper stand I found a magazine called "Language of the
 age" it was a computer magazine with a free CD. it was issued monthly and it
 costs 7EGP. I decided to get this magazine and I started saving my allowance for
