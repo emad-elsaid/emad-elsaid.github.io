@@ -8,7 +8,7 @@ image:
 In my teen years I mostly liked two things, Drawing and Computers. I used to get
 high grades in mostly everything, even the subjects I didn't like like English
 and math. But what I really liked to do was drawing. I was not the best in my
-class, maybe second or third best but I like the feeling of drawing and
+class, maybe second or third best but I liked the feeling of drawing and
 coloring.
 
 Like most boys in my age I also liked to take things apart and putting them
