@@ -66,7 +66,7 @@ this JavaScript and HTML thing I learned.
 
 I spent alot of money and time doing that in high school and when they had us
 choose between 2 subjects: Drawing/Sculpting or Computer programming I choose
-the programming. After school I wanted to do that for life. I want to invent
+programming. After school I wanted to do that for life. I want to invent
 these computer programs and websites that are very beautiful and useful for
 everyone.
 
