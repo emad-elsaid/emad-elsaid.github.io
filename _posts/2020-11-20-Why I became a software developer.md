@@ -83,7 +83,7 @@ included my topics: ASP classic, XML, XSLT, XPATH and ECommerce. I made a
 photocopy for myself and studied it and experimented in the computer lab.
 
 At home we got our first PC in my last year in high school. I loved this PC,
-played alot of games and spent alot of time in deam weaver and flash drawing and
+played alot of games and spent alot of time in dreamweaver and flash drawing and
 programming. all of that was offline until the home internet companies were
 introduced to the public and wasn't just for internet shops. back then it was
 very expensive so I had to connect to get something I need and disconnect right
