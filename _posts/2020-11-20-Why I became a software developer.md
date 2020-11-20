@@ -70,7 +70,7 @@ the programming. After school I wanted to do that for life. I want to invent
 these computer programs and websites that are very beautiful and useful for
 everyone.
 
-In high school they thought us Microsoft Visual Basic 6.0 this is where I was a
+At high school they taught us Microsoft Visual Basic 6.0 this is where I was a
 constant visitor to the computer lab, I learned also Macromedia Flash 5.0 there.
 built my first simple applications. learned mixing musing in Fruity loops and
 many other applications that a demo version of it was in the magazine CD I tried
