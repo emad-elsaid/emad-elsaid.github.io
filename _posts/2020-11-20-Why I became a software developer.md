@@ -111,7 +111,7 @@ Learned the theory and the main topics, I didn't think what I was studying was
 useful as it didn't translate to any practical experience. But every year after
 graduation I feel that was really useful for my career. I appreciate the effort
 my professors did to teach us the theories and the basics instead of the tools.
-I believe now that this is the right approach to but a solid foundation for a
+I believe now that this is the right approach to put a solid foundation for a
 software engineering career.
 
 During this journey I still had this idea in mind: I want to build stuff people use
