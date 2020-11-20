@@ -126,5 +126,5 @@ point of time I must be working on a side project.
 
 Working as a software engineer paid off pretty well financially, And I was one
 of these lucky engineers that's doing it because they love programming. What's
-keeping me a live is this hope that one day I'll build something that will
+keeping me alive is this hope that one day I'll build something that will
 improve the lives of millions of people.
