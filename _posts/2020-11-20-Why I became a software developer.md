@@ -34,8 +34,8 @@ windows 95. Both has many games that we enjoyed playing them 2 players at a time
 on the same keyboard. I loved computer games. I loved writing in Microsoft word.
 
 Then in 8th grade the ministry of education added a new subject to the 6th
-grade. It was "Computers" they learned using windows and writing HTML. My year
-didn't have this subject so I found a book thrown somewhere in the school
+grade. It was "Computers" they learned using windows and writing HTML. My class
+didn't have this subject so I found a book thrown somewhere in school
 back then and tried every HTML tag I found there. It felt really good and I
 wanted more.
 
