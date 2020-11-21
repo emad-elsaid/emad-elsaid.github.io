@@ -40,13 +40,15 @@
 
   {% if page.profile %}
   <div class="has-text-centered">
-    {% if site.aboutPage %}
-    <a href="{{ "/" | relative_url  }}about">
-      <img width="100" height="100" src="{{ "/" | relative_url  }}images/avatar.png" alt="logo" />
-    </a>
-    {% else %}
-    <img width="100" height="100" src="{{ "/" | relative_url  }}images/avatar.png" alt="logo" />
-    {% endif %}
+    <figure class="image container is-128x128">
+      {% if site.aboutPage %}
+      <a href="{{ "/" | relative_url  }}about">
+        <img class="is-rounded" src="{{ "/" | relative_url  }}images/avatar.jpg" alt="Avatar" />
+      </a>
+      {% else %}
+      <img class="is-rounded" src="{{ "/" | relative_url  }}images/avatar.jpg" alt="Avatar" />
+      {% endif %}
+    </figure>
     <h1 class="title">{{ site.author }}</h1>
     <h2 class="subtitle">{{ site.description }}</h2>
   </div>
