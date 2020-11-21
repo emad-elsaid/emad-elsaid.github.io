@@ -4,18 +4,18 @@ image:
   src: /images/IMG_20200913_195203.jpg
 ---
 
-I was born left handed. For a muslim family in Egypt that's not good news. The
+I was born left handed. For a Muslim family in Egypt that's not good news. The
 first time this came to my attention I was 5 years old. A little kid in Islamic
 Kindergarten my parents asked for help from the KG teacher about this issue and
 thankfully I had an understanding teacher. I still remember the gist of her
 answer until now. She told my parents that they shouldn't take any
 countermeasures, maybe just train him to eat with his right hand.
 
-Other kids were not so lucky. When I grew up friends told me thier experiences.
+Other kids were not so lucky. When I grew up friends told me their experiences.
 A common remedy was that parents tie the kid left arm behind his back for long
 periods of time to train him on using his right hand. Others were beaten badly
-to make sure the sphycological barrier was too strong and they wouldn't dare to
-use their left hand. Others lucky kids like me were just scolded everytime they
+to make sure the physiological barrier was too strong and they wouldn't dare to
+use their left hand. Others lucky kids like me were just scolded every time they
 use their left hand.
 
 Moving to primary school I showed good illustrating skills with my left hand and
@@ -27,10 +27,10 @@ in a classroom with over 60 kids. Each desk had 3 kids, The only place I can sit
 and be able to write is the left most side. any other place my arm would be
 obstructed by my colleagues right arm or the wall.
 
-There are the little inconviences where I grab something with my left arm while
+There are the little inconveniences where I grab something with my left arm while
 I'm not supposed to. Like handing the Quraan to one of my parents. Or getting on
 the whiteboard to write something infront of the whole class the to the teacher
-surprise I'm left handed. Not to mention the egyptian sense of humor and how we
+surprise I'm left handed. Not to mention the Egyptian sense of humor and how we
 can grab any punch line from a movie and apply it to the current situation to
 make a good laugh. I was always a target to this one joke "Write with your left
 you Ashwal (leftie)" from on of Adel Emam old movies. That was funny but not to
@@ -39,7 +39,7 @@ me.
 Growing up and discovering the internet I naturally found little articles
 talking about the design choices in alot of products the of course favor the
 majority of right handed public, like scissors hands (Helping my mother with
-sewing and cuting clothes was painful all the time but I didn't know until
+sewing and cutting clothes was painful all the time but I didn't know until
 then.). The faculty section chairs with right arm for writing I never knew how
 to use that without twisting my waist.
 
