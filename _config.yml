@@ -1,7 +1,11 @@
 title: Emad Elsaid
 description: Ruby/Go Web Developer
 baseurl: ""
-url: "https://www.emadelsaid.com"
+url: https://www.emadelsaid.com
+meta_description: Ruby/Go Web Developer
+domain_name: https://www.emadelsaid.com
+author: Emad Elsaid
+permalink: /:title/
 
 plugins:
   - jekyll-feed
@@ -19,15 +23,6 @@ exclude:
   - node_modules/
   - vendor/
 
-name: Emad Elsaid
-meta_description: Ruby/Go Web Developer
-aboutPage: true
-
-domain_name: 'https://www.emadelsaid.com'
-author:         'Emad Elsaid'
-authorTwitter:  'emad__elsaid'
-
-permalink:       /:title/
 defaults:
     - scope:
         type: pages
@@ -37,3 +32,18 @@ defaults:
         type: posts
       values:
         layout: post
+
+# Jekyll SEO tag
+twitter:
+  username: emad__elsaid
+logo: /images/avatar.jpg
+social:
+  name: Emad Elsaid
+  links:
+    - https://www.github.com/emad-elsaid
+    - https://www.twitter.com/emad__elsaid
+    - https://www.facebook.com/emad.elsaid.hamed
+    - https://www.youtube.com/EmadElsaid
+    - https://www.linkedin.com/in/emadelsaid
+    - https://www.twitch.tv/internalerr
+    - https://www.keybase.io/emadelsaid

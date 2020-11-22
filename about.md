@@ -11,6 +11,7 @@ for fun, I mainly work with Ruby and Go, you can find me on
 * [Youtube](http://youtube.com/EmadElsaid)
 * [Linkedin](https://www.linkedin.com/in/emadelsaid)
 * [Twitch](https://www.twitch.tv/internalerr)
+* [Keybase](https://keybase.io/emadelsaid)
 
 I post to this blog some notes and ideas that may or may not be practical but it
 interests me and I wish other people find it interesting.

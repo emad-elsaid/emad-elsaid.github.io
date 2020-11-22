@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% seo %}
-    {% if page.image %}<meta property="og:image" content="{{ site.url }}{{ page.image.src }}" />{% endif %}
 
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
@@ -42,13 +41,9 @@
   {% if page.profile %}
   <div class="has-text-centered">
     <figure class="image container is-128x128">
-      {% if site.aboutPage %}
       <a href="{{ "/" | relative_url  }}about">
         <img class="is-rounded" src="{{ "/" | relative_url  }}images/avatar.jpg" alt="Avatar" />
       </a>
-      {% else %}
-      <img class="is-rounded" src="{{ "/" | relative_url  }}images/avatar.jpg" alt="Avatar" />
-      {% endif %}
     </figure>
     <h1 class="title">{{ site.author }}</h1>
     <h2 class="subtitle">{{ site.description }}</h2>
@@ -56,7 +51,7 @@
   {% endif %}
 
   {% if page.image %}
-  <img src="{{ page.image.src }}" alt="{{ page.image.alt }}" title="{{ page.image.alt }}" />
+  <img src="{{ page.image }}" alt="{{ page.image_alt }}" title="{{ page.image_alt }}" />
   {% endif %}
 
   <section class="section">

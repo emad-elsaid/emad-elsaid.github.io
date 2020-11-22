@@ -1,7 +1,6 @@
 ---
 title: The Chronicles of a Left Handed in Egypt
-image:
-  src: /images/IMG_20200913_195203.jpg
+image: /images/IMG_20200913_195203.jpg
 ---
 
 I was born left handed. For a Muslim family in Egypt that's not good news. The
