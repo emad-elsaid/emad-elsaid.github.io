@@ -71,7 +71,7 @@ The end results can be found here [Ag(1)](https://man.emadelsaid.com/ag.1/) This
 is the man page of **Ag** silver searcher.
 
 The side bar needed a bit of work as I had to use a fuzzy search JavaScript
-library to filter the list of man pages. but as I ended up with more than 14000
+library to filter the list of man pages. but as I ended up with more than 55000
 manual pages I needed to ship all the man pages names and paths to the frontend
 so I just wrote them in a text file and loaded them with Ajax when the page
 loads.
