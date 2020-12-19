@@ -18,7 +18,7 @@ The tagger should create 2 relation records one for each person in this list:
 - خالد الصاوي
 - أبلة فاهيتا
 
-The This service works this way:
+The service works this way:
 
 - Gets all people names from the database 800,000 of them
 - Get new articles
