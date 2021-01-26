@@ -43,7 +43,7 @@ interface with the user and with other instances of itself.
 Now we're done with the basic identities management. that previous structure
 will allow:
 
-- Multiple user identities as he can create as many key pairs as key wants. so
+- Multiple user identities as he can create as many key pairs as he wants. so
   he can have a work identity and another separate identity for personal use.
   another anonymous one.
 - The structure allow segmenting keys to groups in subdirectories. so you can
