@@ -17,10 +17,10 @@ I'll build the idea as layers over each other so:
 
 # Second: Protecting my data
 
-- I will create a openPGP key pair for signing and a sub key for encryption
+- I will create an openPGP key pair for signing and a sub key for encryption
 - I will sign and encrypt my files with the keys so only me can read it and make
   sure no body else edits it.
-- File are now formatted in openPGP format on disk.
+- Files are now formatted in openPGP format on disk.
 
 # Third: Exchanging my data
 
@@ -62,7 +62,7 @@ I'll build the idea as layers over each other so:
 
 # Eightieth: Falling back to the web
 
-- website are using schema.org for SEO
+- websites are using schema.org for SEO
 - my client UI can read the webpage and extract schema.org parts and render them
   like any other post
 - I can subscribe to a website which will make the client crawl it regularily
