@@ -1,5 +1,6 @@
 ---
 title: Sound approach for a p2p social network which falls back to current web
+image: /images/e420d55f-a60c-4892-8d1f-1c7ec03a2d08.jpg
 ---
 
 
