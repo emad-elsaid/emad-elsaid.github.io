@@ -37,14 +37,14 @@ links.
 A system like IPFS went on to address the content with the hash of its bytes. if
 you change one byte it's different content.
 
-## In the content of a social media
+## In the context of a social media
 
-These are the concepts I assumed when I thought about a solution for this issue.
+These are the things I assumed when I thought about a solution for this issue.
 
 If I'm building a social media how can I address a piece of content?
 
 - I assumed that I shared the approximate content of the content
-- The content can change over time slightly is acceptable
+- changing the content slightly is acceptable
 
 So the solution I though that will be in the middle ground between both worlds
 (immutability and extreme alteration):
