@@ -1,5 +1,6 @@
 ---
 title: what are we sharing?
+image: /images/IMG_20201225_123145.jpg
 ---
 
 In the past weeks I had this continious thinking about how can we approach a
