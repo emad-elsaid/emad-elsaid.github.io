@@ -23,7 +23,7 @@ Think about this:
 This means we can do this:
 
 * Start IRC server inside this server that listen on **127.0.0.1:6667**
-* User can do open SOCKS5 proxy `ssh -D 8888 -q -C -N user@server`
+* User can open SOCKS5 proxy `ssh -D 8888 -q -C -N user@server`
 * Then use IRC client on their machine to connect to `companyname.tld:6667`
   proxying through `127.0.0.1:8888` port.
 
