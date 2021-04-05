@@ -34,23 +34,27 @@ layout: default
 
 <hr/>
 
-<div class="card is-shadowless">
-  <div class="card-content">
-    <div class="media">
-      <div class="media-left">
-        <figure class="image is-128x128">
-          <img class="is-rounded" src="{{ "/" | relative_url  }}images/avatar.jpg" alt="Avatar">
-        </figure>
+<div class="columns is-multiline">
+  <div class="column is-narrow">
+    <figure class="image is-128x128">
+      <img class="is-rounded" src="{{ "/" | relative_url  }}images/avatar.jpg" alt="Avatar">
+    </figure>
+  </div>
+  <div class="column is-narrow">
+    <p class="title is-4">{{ site.author }}</p>
+    <p class="subtitle is-6"><a href="http://twitter.com/{{ site.twitter.username }}">@{{ site.twitter.username }}</a></p>
+
+    <div class="columns">
+      <div class="column">
+        <a class="button is-success is-light" href="https://github.com/emad-elsaid/emad-elsaid.github.io/edit/master/{{ page.path }}">✏️ Suggest changes</a>
       </div>
-      <div class="media-content">
-        <p class="title is-4">{{ site.author }}</p>
-        <p class="subtitle is-6"><a href="http://twitter.com/{{ site.twitter.username }}">@{{ site.twitter.username }}</a></p>
-        <p>
-          <a class="button is-success is-light" href="https://github.com/emad-elsaid/emad-elsaid.github.io/edit/master/{{ page.path }}">Suggest changes</a>
-          <a class="button is-info is-light" target="_blank" href="https://twitter.com/intent/tweet?text={{ site.domain_name }}{{ page.url }} - {{page.title}} by @{{ site.twitter.username }}">Tweet</a>
-          <a class="button is-link is-light" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.domain_name }}{{ page.url }}">Share on Facebook </a>
-        </p>
+      <div class="column">
+        <a class="button is-info is-light" target="_blank" href="https://twitter.com/intent/tweet?text={{ site.domain_name }}{{ page.url }} - {{page.title}} by @{{ site.twitter.username }}">🐦 Tweet</a>
+      </div>
+      <div class="column">
+        <a class="button is-link is-light" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.domain_name }}{{ page.url }}">📢 Share on Facebook </a>
       </div>
     </div>
+
   </div>
 </div>
