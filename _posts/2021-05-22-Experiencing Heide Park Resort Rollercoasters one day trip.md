@@ -7,19 +7,19 @@ It's been more than a year since I went to any meaningful trip. Lately [Heide Pa
 
 # Corona test
 
-We need any certified corona virus test that's issues at most 24 hours before going through the park door. So on Thursday 20 May in the middle of the day we booked a test online through [coronatest.de](https://coronatest.de/pcr-registration/). the cheapest is Antigen Test for 24.99EUR and you get the result after 20 minutes of performing it. we performed the test 6:30PM to make sure next day until same time we're still able to get in to the park.
+We need Anigen or PCR certified corona virus test that's issues at most 24 hours before going through the park doors. So on Thursday 20 May in the middle of the day we booked a test online through [coronatest.de](https://coronatest.de/pcr-registration/). the cheapest is Antigen Test for 24.99EUR and you get the result after 20 minutes of performing it. we performed the test 6:30PM to make sure next day until same time we're still able to get in to the park.
 
-No we got the result and it's Negative. if it was positive then we didn't lose any bookings this is way it's the first step.
+Now we got the result by email and it's Negative. if it was positive then we didn't lose any bookings this is why it's the first step.
 
 # Booking the trains
 
-We need to get to the park exactly when it opens. this will allow us to take advantage of the whole day. The park opens at 10am and closes 6pm. So we booked ICE/ERX RB trains on [www.bahn.de](https://www.bahn.de/) from Berlin hbf to Soltau Nord. not Soltau han. Soltau Nord is the nearest train station to the park to we had to be careful with this one.
+We need to get to the park exactly when it opens. This will allow us to take advantage of the whole day. The park opens at 10am and closes 6pm (they start evac at 5:30pm). So we booked ICE/ERX RB trains on [www.bahn.de](https://www.bahn.de/) from Berlin hbf to Soltau Nord. not Soltau han. Soltau Nord is the nearest train station to the park so we had to be careful with this one.
 
-We took the train from Berlin hbf 5:32 to hannover hbf 7:28 then from there to Soltau nord 9:05. And for coming back from 8:52pm to hannover 22:31 (this is the first mistake we did). and from hannover to Berlin 20 minutes after midnight.
+We took the train from Berlin hbf 5:32 to hannover hbf 7:28 then from there to Soltau nord 9:05. And for coming back from Soltau nord 8:52pm to hannover 22:31 (this is the first mistake we did). and from hannover to Berlin 20 minutes after midnight.
 
 All previous tickets will cost 295.60EUR for two adults. and will secure our travel from Berlin to soltau nord and back.
 
-The mistake we did we that we assumed we'll leave the park at 6pm when it closes and see the "city" and at 9pm we'll take the train back. so we assumed where was a "city" and it's possible to explore it on foot. which wasn't :). Soltau is a small place with lots of forests so it's not a city you can walk around. so we ended up spending from 6 to 9 in the station and going in circles around it :).
+The mistake we did that we assumed we'll leave the park at 6pm when it closes and see the "city" and at 9pm we'll take the train back. so we assumed where was a "city" and it's possible to explore it on foot. which wasn't :). Soltau is a small place with lots of forests so it's not a city you can walk around. so we ended up spending from 6 to 9 in the station and going in circles around it :).
 
 # Booking the park ticket
 
@@ -49,10 +49,10 @@ Also there are wild gooses and ducks with no fences so kids can take pictures wi
 
 ![IMG_20210521_171154.jpg](/images/IMG_20210521_171154.jpg)
 
-One specific ride was very impressive. which is the one with a demon in the pictures above.
+One specific ride was very impressive. which is the one with a demon in the pictures above. Another ride named Kraken that moves so fast through water after dropping that it spray water on visitors walking beside it.
 
 # Impression
 
-The trip was very amusing. we had to drink alot of coffee and sleep so little to be able to pull this off. but it's worth the thrill and excitement to it.
+The trip was very amusing. We had to drink alot of coffee and sleep so little to be able to pull this off. We booked everything one day before the trip. but it's worth the thrill and excitement.
 
 The only thing is that you have to make sure you wear the mask at all times (aside from walking in the forest of course). so that's 4/5hours in train and inside the park. so make sure you wear a comfortable mask.
