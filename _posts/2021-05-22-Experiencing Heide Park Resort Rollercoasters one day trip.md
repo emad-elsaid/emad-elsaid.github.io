@@ -11,7 +11,7 @@ We need any certified corona virus test that's issues at most 24 hours before go
 
 No we got the result and it's Negative. if it was positive then we didn't lose any bookings this is way it's the first step.
 
-# Book the trains
+# Booking the trains
 
 We need to get to the park exactly when it opens. this will allow us to take advantage of the whole day. The park opens at 10am and closes 6pm. So we booked ICE/ERX RB trains on [www.bahn.de](https://www.bahn.de/) from Berlin hbf to Soltau Nord. not Soltau han. Soltau Nord is the nearest train station to the park to we had to be careful with this one.
 
