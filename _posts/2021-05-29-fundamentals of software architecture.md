@@ -29,6 +29,10 @@ The book is full of mentions to other books in the industry mainly O'Reilly publ
 
 The books is written by two authors and feels exactly like that. Some parts are humble and shows skepticism. like mentioning that it depends on the situation or the requirements. Other parts especially the ones the mentions team activities are very assertive and sounds like stating facts.
 
+# Black and white print wasn't considered
+
+In some cases the books was describing diagrams with different colors. But the book is printed in black and white. So it seems the authors didn't consider this fact while writing this part of the book?
+
 # Generally
 
 The book is good. It's one of these books that are documenting what the rest of the industry is doing and it's important to have such books to have a well-documented history of our industry. But I can't stress on this point enough.
