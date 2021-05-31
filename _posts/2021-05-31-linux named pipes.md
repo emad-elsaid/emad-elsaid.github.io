@@ -149,5 +149,5 @@ so all commands will run in parallel and the data will flow between them without
 ## Usage possibilities
 
 * If you have processes that reads or writes to files not to **stdin** and **stdout** you can create the pipe and pass it as a file parameter.
-* If you have a really large continious output that you don't want to persist on disk just to process it with a program.
+* If you have a really large continuous output that you don't want to persist on disk just to process it with a program.
 * You can give permissions to the pipe so you can have a program that runs as a user with write permissions to the pipe. And have the pipe permission allow a group of users read from it. so you can pass the data from one user to another on the same system.
