@@ -144,7 +144,7 @@ You'll notice that `lshw` terminal is waiting and the `grep` also is waiting unt
 * which means it can start reading from `lshw-output` file
 * then `lshw` can start writing its output to the `lshw-output` file
 
-so all commands will run in parallel and the data will flow between them without writing it to the disk. if you check the pipe files size it'll 0 bytes. You can delete the pipe file like any other file with `rm` or `unlink`.
+so all commands will run in parallel and the data will flow between them without writing it to the disk. if you check the pipe files size it'll be 0 bytes. You can delete the pipe file like any other file with `rm` or `unlink`.
 
 ## Usage possibilities
 
