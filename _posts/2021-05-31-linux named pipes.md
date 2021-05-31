@@ -63,7 +63,7 @@ Which prints only the lines that include "product" word.
           product: Microsoft PS/2-style Mouse
 ```
 
-You notice there is indentation in the first line and you want to remove it so you can pipe this output to a command that trim the spaces like `awk '{$1=$1};1'`
+You notice there is indentation in every line and you want to remove it so you can pipe this output to a command that trim the spaces like `awk '{$1=$1};1'`
 
 ```bash
 lshw | grep product | awk '{$1=$1};1'
