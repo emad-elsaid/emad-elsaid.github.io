@@ -36,7 +36,7 @@ defaults:
 # Jekyll SEO tag
 twitter:
   username: emad__elsaid
-logo: /images/avatar.jpg
+logo: /images/avatar.webp
 social:
   name: Emad Elsaid
   links:
