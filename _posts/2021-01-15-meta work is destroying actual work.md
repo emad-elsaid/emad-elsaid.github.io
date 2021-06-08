@@ -10,7 +10,7 @@ Work for me is creating the software itself. that's what the company sells. so
 everyone in the team should be contributing to this end artifact. That's what
 solely matters the freaking thing you're selling.
 
-I reality that's not the only thing people in the company are doing of course.
+In reality that's not the only thing people in the company are doing of course.
 You'll find also people doing work that facilitate work for the actual people
 doing work. Like creating/closing chat channels on Slack or Hipchat or whatever
 people are using to communicate what they're doing. Or inventing meetings to
