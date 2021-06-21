@@ -4,10 +4,10 @@ profile: true
 
 {% for post in site.posts %}
 {% unless post.unlisted %}
-<div class="card">
+<div class="card is-shadowless">
   <div class="card-content">
     <div class="content">
-      <time datetime="{{post.date}}" class="tag is-link is-light">{{ post.date | date:"%d %b %Y" }}</time>
+      <time datetime="{{post.date}}" class="tag is-link is-light is-rounded">{{ post.date | date:"%d %b %Y" }}</time>
       {% if post.video %}
       <span class="tag is-danger is-light">&#129170; video</span>
       {% endif %}

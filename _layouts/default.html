@@ -18,15 +18,17 @@
       <div class="navbar-item">
         <div class="buttons">
           {% if page.url != "/" %}
-          <a href="{{ "/" | relative_url  }}" class="button"> 🏠 Home </a>
+          <a href="{{ "/" | relative_url  }}" class="button is-rounded"> 🏠 Home </a>
           {% endif %}
 
           {% if page.url != "/about/" %}
-          <a href="{{ "/" | relative_url  }}about" class="button">👤 About</a>
+          <a href="{{ "/" | relative_url  }}about" class="button is-rounded">👤 About</a>
           {% endif %}
 
-          <a class="button is-link is-light" href="{{ "/" | relative_url  }}feed.xml">RSS</a>
-          <a class="button is-info is-light" rel="noopener" href="https://www.getrevue.co/profile/emad__elsaid">💌 Subscribe to newsletter</a>
+          <a href="https://library.emadelsaid.com/users/0c731704-073d-4433-b38b-1dc912f7046c" class="button is-rounded">📕 My Books</a>
+
+          <a class="button is-link is-light is-rounded" href="{{ "/" | relative_url  }}feed.xml">RSS</a>
+          <a class="button is-info is-light is-rounded" rel="noopener" href="https://www.getrevue.co/profile/emad__elsaid">💌 Subscribe to newsletter</a>
         </div>
       </div>
     </div>
