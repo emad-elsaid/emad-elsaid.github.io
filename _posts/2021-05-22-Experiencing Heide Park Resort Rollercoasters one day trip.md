@@ -37,7 +37,7 @@ on the way back we found the bus form in front of the park to soltau han (we dec
 
 # The park
 
-it turns our I love roller coasters. my previous trip to [Hansapark](https://www.hansapark.de/home?language=en) was very amusing and I rode all roller coasters. so I did the same with Heidepark.
+it turns out I love roller coasters. my previous trip to [Hansapark](https://www.hansapark.de/home?language=en) was very amusing and I rode all roller coasters. so I did the same with Heidepark.
 
 The weather forecast says it'll shower at 10am and will we mostly cloudy the rest of the day. BUT it turns out it was raining every 30 minutes to an hour. We took a plastic coat with us for this case which we bought from Hansapark for the same reason. and we ended up wearing it most of the day
 
