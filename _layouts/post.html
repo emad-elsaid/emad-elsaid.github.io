@@ -6,6 +6,11 @@ layout: default
   <h1 class="title has-text-centered" dir="auto">
     {{ page.title }} <br>
     <time datetime="{{post.date}}" class="tag is-link is-light is-rounded">{{ page.date | date:"%d %b %Y" }}</time>
+
+    {% for tag in page.tags %}
+    <span class="tag"> {{ tag }} </span>
+    {% endfor %}
+
     <hr/>
   </h1>
 
