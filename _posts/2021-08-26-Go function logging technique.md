@@ -59,3 +59,76 @@ so it nicley creates a wrapper around the function code that will write informat
 ```
 2021/08/26 12:41:46 main.go:181 main.writeItem (Duration: 4.507373ms)
 ```
+
+An improvement for this to reduce the logging is to print how many times the function was called and the average time.
+
+```go
+type logMark struct {
+	name  string
+	file  string
+	line  int
+	start time.Time
+	end   time.Time
+}
+
+var wd, _ = os.Getwd()
+var logMarks = map[string][]*logMark{}
+
+func LogMarks() {
+	for _, ms := range logMarks {
+		if len(ms) == 0 {
+			continue
+		}
+
+		var c int64 = 0
+		var avg time.Duration = 0
+
+		for _, m := range ms {
+			avg = (time.Duration(c)*avg + m.end.Sub(m.start)) / time.Duration(c+1)
+			c++
+		}
+
+		o := ms[0]
+		rel, _ := filepath.Rel(wd, o.file)
+		log.Printf("%s:%d %s %d Calls (Avg Duration: %s)", rel, o.line, o.name, c, avg.String())
+	}
+}
+
+func NewLogMark() *logMark {
+	pc, file, line, _ := runtime.Caller(1)
+
+	return &logMark{
+		name:  runtime.FuncForPC(pc).Name(),
+		file:  file,
+		line:  line,
+		start: time.Now(),
+	}
+}
+
+func (o *logMark) Log() {
+	rel, _ := filepath.Rel(wd, o.file)
+	log.Printf("%s:%d %s (Duration: %s)", rel, o.line, o.name, o.end.Sub(o.start).String())
+}
+
+func (o *logMark) Done() {
+	o.end = time.Now()
+	key := fmt.Sprintf("%s:%d", o.file, o.line)
+
+	ms, ok := logMarks[key]
+	if !ok {
+		logMarks[key] = []*logMark{}
+	}
+
+	logMarks[key] = append(ms, o)
+}
+```
+
+So instead of `defer NewLogMark().Log()` we'll call `defer NewLogMark().Done()` which adds the mark to a slice and we call `LogMarks()` at the end of our `main` function which will print statistics about the marks like so:
+
+```
+2021/08/27 11:30:58 main.go:183 main.writeItem 157 Calls (Avg Duration: 3.454063ms)
+```
+
+so instead of having 157 lines one for each execution we can group them together at the end.
+
+This could be improved even more by calculating average directly in `Done()` to avoid cluttering memory with many `logMark` structures
