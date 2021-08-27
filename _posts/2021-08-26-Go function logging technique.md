@@ -132,3 +132,65 @@ So instead of `defer NewLogMark().Log()` we'll call `defer NewLogMark().Done()` 
 so instead of having 157 lines one for each execution we can group them together at the end.
 
 This could be improved even more by calculating average directly in `Done()` to avoid cluttering memory with many `logMark` structures
+
+```go
+type logMark struct {
+	name  string
+	file  string
+	line  int
+	start time.Time
+	end   time.Time
+}
+
+type logStat struct {
+	name  string
+	file  string
+	line  int
+	count int64
+	avg   time.Duration
+}
+
+var wd, _ = os.Getwd()
+var logStats = map[string]*logStat{}
+
+func LogMarks() {
+	for _, m := range logStats {
+		rel, _ := filepath.Rel(wd, m.file)
+		log.Printf("%s:%d %s %d Calls (Avg Duration: %s)", rel, m.line, m.name, m.count, m.avg.String())
+	}
+}
+
+func NewLogMark() *logMark {
+	pc, file, line, _ := runtime.Caller(1)
+
+	return &logMark{
+		name:  runtime.FuncForPC(pc).Name(),
+		file:  file,
+		line:  line,
+		start: time.Now(),
+	}
+}
+
+func (o *logMark) Log() {
+	rel, _ := filepath.Rel(wd, o.file)
+	log.Printf("%s:%d %s (Duration: %s)", rel, o.line, o.name, o.end.Sub(o.start).String())
+}
+
+func (o *logMark) Done() {
+	o.end = time.Now()
+	key := fmt.Sprintf("%s:%d", o.file, o.line)
+
+	m, ok := logStats[key]
+	if !ok {
+		m = &logStat{
+			name: o.name,
+			file: o.file,
+			line: o.line,
+		}
+		logStats[key] = m
+	}
+
+	m.avg = (time.Duration(m.count)*m.avg + o.end.Sub(o.start)) / time.Duration(m.count+1)
+	m.count++
+}
+```
