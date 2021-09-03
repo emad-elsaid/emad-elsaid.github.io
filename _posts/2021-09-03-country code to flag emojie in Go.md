@@ -19,8 +19,13 @@ end
 After translating it to Go it looks like this:
 
 ```ruby
+import (
+	"golang.org/x/text/runes"
+	"golang.org/x/text/transform"
+)
+
 var FlagReplacer = runes.Map(func(r rune) rune {
-	return unicode.ToUpper(r) - 'A' + '\U0001F1E6'
+	return r - 'a' + '\U0001F1E6'
 })
 
 func Flag(code string) string {
