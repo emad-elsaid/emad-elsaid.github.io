@@ -47,11 +47,13 @@
   {% endif %}
 
   {% if page.image %}
-  <img src="{{ page.image }}" alt="{{ page.image_alt }}" title="{{ page.image_alt }}" width="100%" />
+  <div class="container is-max-desktop">
+    <img src="{{ page.image }}" alt="{{ page.image_alt }}" title="{{ page.image_alt }}" class="box p-0" />
+  </div>
   {% endif %}
 
   <section class="section">
-    <div class="container content is-medium is-max-desktop">
+    <div class="container content is-max-desktop">
     {{ content }}
     </div>
   </section>
