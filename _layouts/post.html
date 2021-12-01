@@ -3,16 +3,42 @@ layout: default
 ---
 
 <section dir="auto">
-  <h1 class="title has-text-centered" dir="auto">
-    {{ page.title }} <br>
-    <time datetime="{{post.date}}" class="tag is-link is-light is-rounded">{{ page.date | date:"%d %b %Y" }}</time>
-
-    {% for tag in page.tags %}
-    <span class="tag"> {{ tag }} </span>
-    {% endfor %}
-
-    <hr/>
+  <h1 class="title" dir="auto">
+    <div class="has-text-grey is-size-7">
+      <time datetime="{{post.date}}">{{ page.date | date:"%d %b %Y" }}</time>
+      {% for tag in page.tags %}
+      <span> - {{ tag }} </span>
+      {% endfor %}
+    </div>
+    {{ page.title }}
   </h1>
+
+  <div class="media">
+    <div class="media-left">
+      <figure class="image is-48x48">
+        <img class="is-rounded" src="{{ "/" | relative_url  }}images/avatar.webp" alt="Avatar">
+      </figure>
+    </div>
+    <div class="media-content">
+      <p class="title is-5">{{ site.author }}</p>
+      <p class="subtitle is-7">
+        <a href="http://twitter.com/{{ site.twitter.username }}">@{{ site.twitter.username }}</a>
+    </div>
+  </div>
+
+  <div class="columns is-multiline">
+    <div class="column is-narrow">
+      <figure class="image is-32x32">
+      </figure>
+    </div>
+    <div class="column is-narrow">
+      <p class="is-size-6">
+
+        <br/>
+      </p>
+    </div>
+  </div>
+
 
   {% if page.video %}
   <figure class="image">
@@ -51,17 +77,5 @@ layout: default
   </div>
   <div class="column">
     <a class="button is-fullwidth is-info is-light is-rounded" rel="noopener" href="https://www.getrevue.co/profile/emad__elsaid">💌 Subscribe to newsletter</a>
-  </div>
-</div>
-
-<div class="columns is-multiline">
-  <div class="column is-narrow">
-    <figure class="image is-128x128">
-      <img class="is-rounded" src="{{ "/" | relative_url  }}images/avatar.webp" alt="Avatar">
-    </figure>
-  </div>
-  <div class="column is-narrow">
-    <p class="title is-4">{{ site.author }}</p>
-    <p class="subtitle is-6"><a href="http://twitter.com/{{ site.twitter.username }}">@{{ site.twitter.username }}</a></p>
   </div>
 </div>
