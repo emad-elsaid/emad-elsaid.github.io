@@ -9,6 +9,9 @@ cat << EOT > bulma.scss
 @import "bulma/bulma.sass";
 @import "./_includes/highlight.scss";
 
+.content ul, .content ol {
+   list-style-position: inside;
+}
 .content img.center{
   display: block;
   margin: 0 auto;
