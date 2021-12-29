@@ -27,7 +27,7 @@ Instead these features can be design in a way similar to the open source applica
 
 Lets take one example:
 - You're designing a rating system so your application will allow rating a product and display the rating
-- So these is an API your application will use to do these two operations
+- So there is an API your application will use to do these two operations
 - Your application will use a hard coded URL for this API
 
 Instead your feature can be more open as follows:
