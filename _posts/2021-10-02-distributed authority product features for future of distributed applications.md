@@ -3,7 +3,7 @@ title: Distributed authority product features for future of distributed applicat
 image: /images/IMG_20210918_153552.webp
 ---
 
-It's common knowledge that most startup fail. With every startup that fails there an application that's now obsolete. you can't open it or use it. The company behind it doesn't exist anymore.
+It's common knowledge that most startups fail. With every startup that fails there an application that's now obsolete. you can't open it or use it. The company behind it doesn't exist anymore.
 
 All the effort of the teams behind it from research, design, development and maintenance that got this application to this point is now a wasted effort. It's a very hard moment when you know that years of your life that you spent working on a product didn't result in something useful to other people.
 
@@ -23,7 +23,7 @@ The problem with the previous features design is that the choice is made for the
 
 Instead these features can be design in a way similar to the open source applications I mentioned.
 
-## Let the other add more solutions
+## Let others add more solutions
 
 Lets take one example:
 - You're designing a rating system so your application will allow rating a product and display the rating
