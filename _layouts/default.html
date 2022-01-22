@@ -13,42 +13,37 @@
 </head>
 <body>
 
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          {% if page.url != "/" %}
-          <a href="{{ "/" | relative_url  }}" class="button is-rounded"> 🏠 Home </a>
-          {% endif %}
+  <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+    <div class="container is-max-desktop">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-4 has-text-weight-bold" href="/">
+          {{ site.author }}
+        </a>
 
+        <label for="menu-switch" class="navbar-burger" role="button" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </label>
+      </div>
+      <input id="menu-switch" name="menu-switch" type="checkbox"/>
+      <div class="navbar-menu">
+        <div class="navbar-end">
           {% if page.url != "/about/" %}
-          <a href="{{ "/" | relative_url  }}about" class="button is-rounded">👤 About</a>
+          <a href="{{ "/" | relative_url  }}about" class="navbar-item">👤 About</a>
           {% endif %}
 
-          <a href="https://library.emadelsaid.com/users/0c731704-073d-4433-b38b-1dc912f7046c" class="button is-rounded">📕 My Books</a>
-
-          <a class="button is-link is-light is-rounded" href="{{ "/" | relative_url  }}feed.xml">RSS</a>
-          <a class="button is-info is-light is-rounded" rel="noopener" href="https://www.getrevue.co/profile/emad__elsaid">💌 Subscribe to newsletter</a>
+          <a href="https://library.emadelsaid.com/users/0c731704-073d-4433-b38b-1dc912f7046c" class="navbar-item">📕 My Books</a>
+          <a class="navbar-item" href="{{ "/" | relative_url  }}feed.xml">RSS</a>
+          <a class="navbar-item" rel="noopener" href="https://www.getrevue.co/profile/emad__elsaid">💌 Subscribe to newsletter</a>
         </div>
       </div>
     </div>
   </nav>
 
-  {% if page.profile %}
-  <div class="has-text-centered">
-    <figure class="image container is-128x128 my-5">
-      <a href="{{ "/" | relative_url  }}about">
-        <img class="is-rounded" src="{{ "/" | relative_url  }}images/avatar.webp" alt="Avatar" />
-      </a>
-    </figure>
-    <h1 class="title">{{ site.author }}</h1>
-    <h2 class="subtitle">{{ site.description }}</h2>
-  </div>
-  {% endif %}
-
   {% if page.image %}
   <div class="container is-max-desktop">
-    <img src="{{ page.image }}" alt="{{ page.image_alt }}" title="{{ page.image_alt }}" class="box p-0" />
+    <img src="{{ page.image }}" alt="{{ page.image_alt }}" title="{{ page.image_alt }}" class="p-0" />
   </div>
   {% endif %}
 

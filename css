@@ -6,8 +6,12 @@ unzip -u bulma.zip
 
 cat << EOT > bulma.scss
 @charset "utf-8";
+
+\$warning: #ff6c0e;
+
 @import "bulma/bulma.sass";
 @import "./_includes/highlight.scss";
+
 
 .content ul, .content ol {
    list-style-position: inside;
@@ -15,6 +19,13 @@ cat << EOT > bulma.scss
 .content img.center{
   display: block;
   margin: 0 auto;
+}
+
+#menu-switch {
+ display: none;
+}
+#menu-switch:checked + .navbar-menu{
+ display: block;
 }
 EOT
 
