@@ -6,9 +6,9 @@ tags: CSS
 
 Today I liked the Navigation bar design for [Linux.com](https://www.linux.com/) and I wanted to implement it for my blog. While doing so I remembered that bulma navigation bar will collapse the menu and show burger menu on mobile when clicked it shows the menu. The proposed solution on [bulma website](https://bulma.io/documentation/components/navbar/) uses javascript. I had a principle on this blog not to introduce a single line of Javascript and I want to keep it this way. So here is how I did it with only CSS.
 
-1- I added a checkbox called `menu-switch` between `navbar-brand` and `navbar-menu`
-1- In `navbar-brand` I replaced the burger menu `a` tag with `label` tag that toggles the checkbox.
-1- CSS is added to select any `navbar-menu` that comes after a checked checkbox called `menu-swtich`. and hide the checkbox itself
+1. I added a checkbox called `menu-switch` between `navbar-brand` and `navbar-menu`
+1. In `navbar-brand` I replaced the burger menu `a` tag with `label` tag that toggles the checkbox.
+1. CSS is added to select any `navbar-menu` that comes after a checked checkbox called `menu-swtich`. and hide the checkbox itself
 
 Now clicking the burger menu will toggle the checkbox and the menu will be shown if the checkbox is checked.
 
