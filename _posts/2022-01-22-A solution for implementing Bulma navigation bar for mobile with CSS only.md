@@ -1,6 +1,7 @@
 ---
 title: A solution for implementing Bulma navigation bar for mobile with CSS only
 image: /images/IMG_20211114_122104.webp
+tags: CSS
 ---
 
 Today I liked the Navigation bar design for [Linux.com](https://www.linux.com/) and I wanted to implement it for my blog. While doing so I remembered that bulma navigation bar will collapse the menu and show burger menu on mobile when clicked it shows the menu. The proposed solution on [bulma website](https://bulma.io/documentation/components/navbar/) uses javascript. I had a principle on this blog not to introduce a single line of Javascript and I want to keep it this way. So here is how I did it with only CSS.
