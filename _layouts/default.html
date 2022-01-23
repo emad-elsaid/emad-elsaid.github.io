@@ -29,9 +29,7 @@
       <input id="menu-switch" name="menu-switch" type="checkbox"/>
       <div class="navbar-menu">
         <div class="navbar-end">
-          {% if page.url != "/about/" %}
-          <a href="{{ "/" | relative_url  }}about" class="navbar-item">👤 About</a>
-          {% endif %}
+          <a href="{{ "/" | relative_url  }}about" class="navbar-item {% if page.url == "/about/" %}is-active{% endif %}">👤 About</a>
 
           <a href="https://library.emadelsaid.com/users/0c731704-073d-4433-b38b-1dc912f7046c" class="navbar-item">📕 My Books</a>
           <a class="navbar-item" rel="noopener" href="https://www.getrevue.co/profile/emad__elsaid">💌 Subscribe to newsletter</a>
