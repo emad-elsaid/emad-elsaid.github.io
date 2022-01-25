@@ -50,3 +50,56 @@ So this solution is good enough. and you can find it in action if you're on a sm
 
 ![Screenshot-2022-01-22_14-05-24.webp](/images/Screenshot-2022-01-22_14-05-24.webp)
 ![Screenshot-2022-01-22_14-05-30.webp](/images/Screenshot-2022-01-22_14-05-30.webp)
+
+### Edit
+
+After showing [Jeremy Thomas](https://twitter.com/jgthms) the creator of Bulma this solution he suggested changes that solves the burger menu transformation to X
+
+Move the menu switch before the brand tag
+
+```html
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+      <input id="menu-switch" name="menu-switch" type="checkbox"/>
+
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">Site name</a>
+        <label for="menu-switch" class="navbar-burger" role="button" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </label>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a href="/" class="navbar-item">Link1</a>
+          <a href="/" class="navbar-item">Link2</a>
+          <a href="/" class="navbar-item">Link3</a>
+        </div>
+      </div>
+  </nav>
+```
+
+And select the menu with `~` instead of `+` and apply the transformation to the burger button lines
+
+```css
+#menu-switch {
+ display: none;
+}
+#menu-switch:checked + .navbar-brand .navbar-burger span:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+#menu-switch:checked + .navbar-brand .navbar-burger span:nth-child(2) {
+  opacity: 0;
+}
+#menu-switch:checked + .navbar-brand .navbar-burger span:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+#menu-switch:checked ~ .navbar-menu{
+ display: block;
+}
+```
+
+This solves the button transformation as you see in this screenshot
+
+![Screenshot-2022-01-25_19-06-23.webp](/images/Screenshot-2022-01-25_19-06-23.webp)

@@ -15,6 +15,7 @@
 
   <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
     <div class="container is-max-desktop">
+      <input id="menu-switch" name="menu-switch" type="checkbox"/>
       <div class="navbar-brand">
         <a class="navbar-item is-size-4 has-text-weight-bold" href="/">
           {{ site.author }}
@@ -26,7 +27,6 @@
           <span aria-hidden="true"></span>
         </label>
       </div>
-      <input id="menu-switch" name="menu-switch" type="checkbox"/>
       <div class="navbar-menu">
         <div class="navbar-end">
           <a href="{{ "/" | relative_url  }}about" class="navbar-item {% if page.url == "/about/" %}is-active{% endif %}">👤 About</a>
