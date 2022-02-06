@@ -101,19 +101,18 @@ It looked something like this
 ```go
 GET("/path/to/handle", func(w Response, r Request) {
   actor := current_user(r)
-		vars := mux.Vars(r)
+  vars := mux.Vars(r)
 
-		user, err := queryForUser(vars["user"])
-		if err != nil {
-            http.Error(w, err.String(), http.StatusInternalServerError)
-			return
-		}
+  user, err := queryForUser(vars["user"])
+  if err != nil {
+      http.Error(w, err.String(), http.StatusInternalServerError)
+      return
+  }
 
-		if checkPermission() {
-            http.Error(w, err.String(), http.StatusUnauthorized)
-			return
-		}
-
+  if checkPermission() {
+      http.Error(w, err.String(), http.StatusUnauthorized)
+      return
+  }
 })
 ```
 
@@ -122,19 +121,18 @@ Wouldn't it be better to just return the error directly? like so.
 ```go
 GET("/path/to/handle", func(w Response, r Request) ???? {
   actor := current_user(r)
-		vars := mux.Vars(r)
+  vars := mux.Vars(r)
 
-		user, err := queryForUser(vars["user"])
-		if err != nil {
-            return InternalServerError(err)
-		}
+  user, err := queryForUser(vars["user"])
+  if err != nil {
+    return InternalServerError(err)
+  }
 
-		if checkPermission() {
-			return Unauthorized(err)
-		}
+  if checkPermission() {
+    return Unauthorized(err)
+  }
 
-        return render("something here")
-
+  return render("something here")
 })
 ```
 
@@ -150,19 +148,18 @@ Which is exactly the `http.HandlerFunc` signature. so our handler should look li
 ```go
 GET("/path/to/handle", func(w Response, r Request) http.HandlerFunc {
   actor := current_user(r)
-		vars := mux.Vars(r)
+  vars := mux.Vars(r)
 
-		user, err := queryForUser(vars["user"])
-		if err != nil {
-            return InternalServerError(err)
-		}
+  user, err := queryForUser(vars["user"])
+  if err != nil {
+      return InternalServerError(err)
+  }
 
-		if checkPermission() {
-			return Unauthorized(err)
-		}
+  if checkPermission() {
+      return Unauthorized(err)
+  }
 
-        return render("something here")
-
+  return render("something here")
 })
 ```
 
@@ -174,19 +171,18 @@ type Output = http.HandlerFunc // in common.go
 // in main func
 GET("/path/to/handle", func(w Response, r Request) Output {
   actor := current_user(r)
-		vars := mux.Vars(r)
+  vars := mux.Vars(r)
 
-		user, err := queryForUser(vars["user"])
-		if err != nil {
-            return InternalServerError(err)
-		}
+  user, err := queryForUser(vars["user"])
+  if err != nil {
+      return InternalServerError(err)
+  }
 
-		if checkPermission() {
-			return Unauthorized(err)
-		}
+  if checkPermission() {
+      return Unauthorized(err)
+  }
 
-        return render("something here")
-
+  return render("something here")
 })
 ```
 
