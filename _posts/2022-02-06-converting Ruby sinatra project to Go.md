@@ -326,7 +326,7 @@ defining views helpers for `html/template` has a problem to it. You can't parse 
 
 So I have to :
 
-- define global variables `helpers = var helpers = template.FuncMap{}` in `common.go`
+- define global variable `helpers = var helpers = template.FuncMap{}` in `common.go`
 - in my main I can add any function I want to `helpers` map
 - then call `Start()` which will compile and templates with `helpers` map.
 
