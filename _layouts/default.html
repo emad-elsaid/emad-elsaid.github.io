@@ -29,10 +29,22 @@
       </div>
       <div class="navbar-menu">
         <div class="navbar-end">
-          <a href="{{ "/" | relative_url  }}about" class="navbar-item {% if page.url == "/about/" %}is-active{% endif %}">👤 About</a>
-          <a href="https://library.emadelsaid.com/users/0c731704-073d-4433-b38b-1dc912f7046c" class="navbar-item">📕 My Books</a>
-          <a class="navbar-item" rel="noopener" href="https://www.getrevue.co/profile/emad__elsaid">💌 Subscribe to newsletter</a>
-          <a class="navbar-item" href="{{ "/" | relative_url  }}feed.xml">RSS</a>
+          <a href="{{ "/" | relative_url  }}about" class="navbar-item {% if page.url == "/about/" %}is-active{% endif %}">
+            <span class="icon"><i class="fa-solid fa-address-card"></i></span>
+            <span> About </span>
+          </a>
+          <a href="https://library.emadelsaid.com/users/0c731704-073d-4433-b38b-1dc912f7046c" class="navbar-item">
+            <span class="icon"><i class="fa-solid fa-book"></i></span>
+            <span>My Books</span>
+          </a>
+          <a class="navbar-item" rel="noopener" href="https://www.getrevue.co/profile/emad__elsaid">
+            <span class="icon"><i class="fa-solid fa-envelope-open-text"></i></span>
+            <span> Subscribe to newsletter </span>
+          </a>
+          <a class="navbar-item" href="{{ "/" | relative_url  }}feed.xml">
+            <span class="icon"><i class="fa-solid fa-rss"></i></span>
+            <span> RSS </span>
+          </a>
         </div>
       </div>
     </div>

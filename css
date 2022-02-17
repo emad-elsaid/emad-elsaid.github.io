@@ -4,14 +4,21 @@ gem install --conservative sass
 wget --no-clobber --output-document=bulma.zip https://github.com/jgthms/bulma/releases/download/0.9.3/bulma-0.9.3.zip
 unzip -u bulma.zip
 
+wget --no-clobber --output-document=fontawesome.zip https://use.fontawesome.com/releases/v6.0.0/fontawesome-free-6.0.0-web.zip
+unzip -u fontawesome.zip
+mv fontawesome-free* fontawesome
+
 cat << EOT > bulma.scss
 @charset "utf-8";
 
 \$warning: #ff6c0e;
+\$fa-font-path: "fonts";
 
 @import "bulma/bulma.sass";
 @import "./_includes/highlight.scss";
-
+@import "./fontawesome/scss/fontawesome.scss";
+@import "./fontawesome/scss/solid.scss";
+@import "./fontawesome/scss/brands.scss";
 
 .content ul, .content ol {
    list-style-position: inside;
@@ -42,4 +49,6 @@ sass --sourcemap=none \
      --style compressed \
      bulma.scss:style.css
 
-rm -rf bulma* .sass-cache
+rm -rf fonts
+mv fontawesome/webfonts fonts
+rm -rf bulma* .sass-cache fontawesome*
