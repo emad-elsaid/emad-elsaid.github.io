@@ -1,7 +1,7 @@
 ---
 title: Why I became a software developer
 image: /images/IMG_20200217_161802.jpg
-image_alt: Pyramids of Giza, Cairo, Egypt
+alt: Pyramids of Giza, Cairo, Egypt
 ---
 
 In my teen years I mostly liked two things, Drawing and Computers. I used to get

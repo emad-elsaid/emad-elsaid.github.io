@@ -13,7 +13,7 @@
 </head>
 <body>
 
-  <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="container is-max-desktop">
       <input id="menu-switch" name="menu-switch" type="checkbox"/>
       <div class="navbar-brand">
@@ -41,7 +41,7 @@
             <span class="icon"><i class="fa-solid fa-envelope-open-text"></i></span>
             <span> Subscribe to newsletter </span>
           </a>
-          <a class="navbar-item" href="{{ "/" | relative_url  }}feed.xml">
+          <a class="navbar-item has-text-warning" href="{{ "/" | relative_url  }}feed.xml">
             <span class="icon"><i class="fa-solid fa-rss"></i></span>
             <span> RSS </span>
           </a>
@@ -51,9 +51,14 @@
   </nav>
 
   {% if page.image %}
-  <div class="container is-max-desktop">
-    <img src="{{ page.image }}" alt="{{ page.image_alt }}" title="{{ page.image_alt }}" class="p-0" />
-  </div>
+  <figure class="container is-max-desktop">
+    <img src="{{ page.image }}" alt="{{ page.alt }}" title="{{ page.alt }}" class="p-0" />
+    {% if page.alt %}
+    <figcaption class="is-size-7 has-text-grey">
+      ● {{ page.alt }}
+    </figcaption>
+    {% endif %}
+  </figure>
   {% endif %}
 
   <section class="section">

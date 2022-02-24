@@ -1,7 +1,7 @@
 ---
 title: Replacing Golang Regexp matching with a premitive faster solution
 image: /images/IMG_20201220_112919.jpg
-image_alt: Grunwald forest, Berlin, Germany
+alt: Grunwald forest, Berlin, Germany
 ---
 
 On [who is popular today.com](https://www.whoispopulartoday.com) I have a
