@@ -3,13 +3,13 @@ title: a week with remarkable 2
 image: /images/IMG_20220225_175133.webp
 ---
 
-I have been using remarkable 2 tablet over the past week. It's a beautiful device. a thin tablet with E-ink screen and a pen. with Linux OS on it. and custom interface that is totally distraction free. It tries to imitate the feeling of writing on real paper and it succeeded.
+I have been using [remarkable 2 tablet](https://remarkable.com/) over the past week. It's a beautiful device. a thin tablet with E-ink screen and a pen. with Linux OS on it. and custom interface that is totally distraction free. It tries to imitate the feeling of writing on real paper and it succeeded.
 
 Here is what happened since I order it until today. my remarks. pros and cons and some suggestions for improvements.
 
 # The order
 
-* Remarkable is sold only on remarkable.com. you can't buy it from amazon or eBay from them.
+* Remarkable is sold only on [remarkable.com](https://remarkable.com/). you can't buy it from amazon or eBay from them.
 * I ordered Remarkable2 tablet, the basic pen (not the premium). and with no folio
 * My order aimed at getting the basic experience before I pay extra for an improved pen or a folio.
 * The order comes with 100 days of remarkable connect for free.
@@ -63,7 +63,7 @@ It's Important to say I'm left handed and I write in Arabic. which I believe a v
 * Palm rejection overall is good. but I got some false positives. where I'm trying to open the toolbar while resting my palm on the screen.
 * When creating a notebook you can choose the page template. Remarkable has many template, lined, squared, dotted, day planner, week planner, music sheet, Cornell. I loved this part. I usually use the small lined page with a margin.
 * to draw a notebook cover I used 3 layers, one for fill, another for stroke and a third for highlight marks. when I merged the highlight to the stroke it worked perfectly. but then when I merged the result to the fill it didn't really work correctly.
-* I was surprised to find that the operating system is Linux. and the kernel version/configuration is on their GitHub page. and there are discussions in the issues related to how to improve it and other stuff. I was very happy to see that.
+* I was surprised to find that the operating system is Linux. and the kernel version/configuration is on their [GitHub page](https://github.com/reMarkable/linux). and there are discussions in the issues related to how to improve it and other stuff. I was very happy to see that.
 * Also found that they have a lot of other repositories related to PDF rendering. pixels processing...etc
 * And I found that they provide SSH username and password in the Help section of the device. which I can use to SSH to the device.
 * When SSHing I found they included VIM configuration, bashrc file and changed the prompt and the login welcome text to be colorful. they didn't just throw in the SSH server and call it a day. That was great experience.
