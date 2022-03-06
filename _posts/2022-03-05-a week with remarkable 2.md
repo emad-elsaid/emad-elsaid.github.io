@@ -60,7 +60,7 @@ It's Important to say I'm left handed and I write in Arabic. which I believe a v
 * I also had other concerns writing in Arabic script. I found that writing in Arabic is no different than English with some caveats. the keyboard doesn't have Arabic layout. And you can't convert Arabic writing to text.
 * My experience when I opened the system was amazing. they had an onboarding tutorials and screens that was very helpful learning how the interface works. gestures and everything.
 * I loved the writing experience. it felt like writing on paper. similar friction between pen nip and the screen. and there is no noticeable latency.
-* Palm rejection overall is good. but I got some false positives. where I'm trying to open the toolbar while resting my palm on the screen.
+* Palm rejection overall is good. but I got some false positives. were I'm trying to open the toolbar while resting my palm on the screen.
 * When creating a notebook you can choose the page template. Remarkable has many template, lined, squared, dotted, day planner, week planner, music sheet, Cornell. I loved this part. I usually use the small lined page with a margin.
 * to draw a notebook cover I used 3 layers, one for fill, another for stroke and a third for highlight marks. when I merged the highlight to the stroke it worked perfectly. but then when I merged the result to the fill it didn't really work correctly.
 * I was surprised to find that the operating system is Linux. and the kernel version/configuration is on their [GitHub page](https://github.com/reMarkable/linux). and there are discussions in the issues related to how to improve it and other stuff. I was very happy to see that.
