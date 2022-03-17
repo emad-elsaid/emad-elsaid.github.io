@@ -19,3 +19,4 @@ The list of developers:
 - Bryan Cantrill ([Twitter](https://twitter.com/bcantrill))
 - Sean Barrett ([Twitter](https://twitter.com/nothings), [Youtube](https://www.youtube.com/c/SeanTBarrett))
 - javidx9 ([Twitter](https://twitter.com/javidx9), [Youtube](https://www.youtube.com/javidx9))
+- Salvatore Sanfilippo ([Twitter](https://twitter.com/antirez), [Youtube](https://www.youtube.com/user/antirez))
