@@ -8,6 +8,7 @@ The following is a list of developers that deserve to be followed and supported.
 - The projects they worked on are visible and prooved their success
 - They are not following hypes and have a personal perspective to how to do things
 - I personally like their line of thinking and what they stand for
+- They have deep low level knowledge of how software works
 
 
 The list of developers:
@@ -17,3 +18,4 @@ The list of developers:
 - Jadi ([Youtube](https://www.youtube.com/c/geekingjadi/featured))
 - Bryan Cantrill ([Twitter](https://twitter.com/bcantrill))
 - Sean Barrett ([Twitter](https://twitter.com/nothings), [Youtube](https://www.youtube.com/c/SeanTBarrett))
+- javidx9 ([Twitter](https://twitter.com/javidx9), [Youtube](https://www.youtube.com/javidx9))
