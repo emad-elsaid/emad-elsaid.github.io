@@ -5,12 +5,12 @@ layout: default
 <section dir="auto">
   <h1 class="title has-text-weight-bold" dir="auto">
     <div class="has-text-grey is-size-7">
-      <time datetime="{{post.date}}">{{ page.date | date:"%d %b %Y" }}</time>
+      <time datetime="{{post.date}}">{{ page.date | date:"%d %b %Y" | upcase }}</time>
       {% for tag in page.tags %}
       <span> - {{ tag }} </span>
       {% endfor %}
     </div>
-    {{ page.title }}
+    {{ page.title | upcase }}
   </h1>
 
   <div class="media my-5">
