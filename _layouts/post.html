@@ -22,7 +22,7 @@ layout: default
     <div class="media-content">
       <div class="is-size-6">{{ site.author }}</div>
       <div class="is-size-7">
-        <a href="https://twitter.com/intent/user?screen_name={{ site.twitter.username }}">@{{ site.twitter.username }}</a>
+        <a href="https://twitter.com/intent/user?screen_name={{ site.twitter.username }}">{{ site.twitter.username }}</a>
       </div>
     </div>
   </div>
@@ -60,7 +60,7 @@ layout: default
     </a>
   </div>
   <div class="column">
-    <a class="button is-fullwidth is-info is-light" rel="noopener" target="_blank" href="https://twitter.com/intent/tweet?text={{ site.domain_name }}{{ page.url }} - {{page.title}} by @{{ site.twitter.username }}">
+    <a class="button is-fullwidth is-info is-light" rel="noopener" target="_blank" href="https://twitter.com/intent/tweet?text={{ site.domain_name }}{{ page.url }} - {{page.title}} by {{ site.twitter.username }}">
       <span class="icon"><i class="fa-brands fa-twitter"></i></span>
       <span>Tweet</span>
     </a>
