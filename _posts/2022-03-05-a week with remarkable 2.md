@@ -90,7 +90,7 @@ It's Important to say I'm left handed and I write in Arabic. which I believe a v
 
 # Update
 
-* After using the tablet for couple weeks I tried to draw lines. simple ruler and pencil stright line. I decided that because I found that sometimes I write and the line is far away from the tip of the pencil. so I wanted to make sure I'm not crazy. and the [result looked bizaar](https://twitter.com/emad__elsaid/status/1501563386974322688/photo/1)
+* After using the tablet for couple weeks I tried to draw lines. simple ruler and pencil stright line. I decided that because I found that sometimes I write and the line is far away from the tip of the pencil. so I wanted to make sure I'm not crazy. and the [result looked bizarre](https://twitter.com/emad__elsaid/status/1501563386974322688/photo/1)
 * So I contacted the support and they asked for the same result but with a recorded video. so I did. 
 * They asked to send the tablet back for repair. and after couple weeks I got a replacement tablet.
 * When I tried the same experiment on it. it worked perfectly. but still I feel that my writing is somehow odd. I can't articulate it but it feels that the first tablet got writing and not stright lines. the second got straight lines but slightly worse writing.
