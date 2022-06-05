@@ -13,7 +13,7 @@ Copy pasta from Bulma Modal documentation got me something running that looks li
 
 The code that powers it is a piece of HTML styles with Bulma classes
 
-```HTML
+```html
 <button class="button js-modal-trigger" data-target="modal-js">
   Tools: Ctrl+K
 </button>
