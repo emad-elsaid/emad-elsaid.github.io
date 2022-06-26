@@ -46,7 +46,7 @@ The faculty offers a 4 year program for a bachelor degree.
 ### First Semester
 
 1. Algorithms Analysis - [Wikipedia](https://en.wikipedia.org/wiki/Analysis_of_algorithms)
-1. Programming languages (?) مفاهيم لغات الحاسب
+1. Programming languages concepts 
 1. Computer Graphics - [Wikipedia](https://en.wikipedia.org/wiki/Computer_graphics_(computer_science))
 1. Introduction to Networking - [Wikipedia](https://en.wikipedia.org/wiki/Computer_network)
 1. Assembly language - [Wikipedia](https://en.wikipedia.org/wiki/Assembly_language)
@@ -66,17 +66,17 @@ The faculty offers a 4 year program for a bachelor degree.
 1. One of the following (student choice):
     1. Digital signal processing
     1. Neural networks
-    1. Object oriented databases (?) قواعد البيانات الشيئية
-
+    1. Object oriented databases
+    
 ## Information systems
 
 ### First Semester
 
 1. Computer Networking management
 1. Information retrieval systems - [Wikipedia](https://en.wikipedia.org/wiki/Information_retrieval)
-1. Digital business (?) الأعمال الالكترونية
+1. E-business
 1. Decision making systems
-1. Object oriented databases (?) قواعد البيانات الشيئية
+1. Object oriented databases
 1. One of the following (student choice):
     1. Libraries information systems
     1. information visualization (?) رؤية المعلومات
