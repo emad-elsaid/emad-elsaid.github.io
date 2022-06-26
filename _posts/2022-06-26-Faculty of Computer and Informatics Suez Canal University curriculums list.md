@@ -140,7 +140,7 @@ The faculty offers a 4 year program for a bachelor degree.
 ### Second Semester
 
 1. Geographical information systems
-1. Data lakes
+1. Data warehouse
 1. Distributed databases
 1. Expert systems
 1. One of the following (student choice):
