@@ -25,7 +25,7 @@ The faculty offers a 4 year program for a bachelor degree.
 
 1. Ordinary differential equations (ODE) - [Wikipedia](https://en.wikipedia.org/wiki/Ordinary_differential_equation)
 1. Data structures - [Wikipedia](https://en.wikipedia.org/wiki/Data_structure)
-1. Advanced mathematics (?) رياضيات متقدمة
+1. Advanced mathematics
 1. English language
 1. Multimedia fundamentals
 1. System analysis - [Wikipedia](https://en.wikipedia.org/wiki/Systems_analysis)
@@ -35,7 +35,7 @@ The faculty offers a 4 year program for a bachelor degree.
 1. Operations research - [Wikipedia](https://en.wikipedia.org/wiki/Operations_research)
 1. Files processing
 1. Physics
-1. Stochastic process (Statistics) (?) العمليات التصادفية
+1. Stochastic process (Statistics)
 1. Information Theory - [Wikipedia](https://en.wikipedia.org/wiki/Information_theory)
 1. Technical Writing - [Wikipedia](https://en.wikipedia.org/wiki/Technical_writing)
 
@@ -156,8 +156,9 @@ The faculty offers a 4 year program for a bachelor degree.
 
 # Courses Missing from the list
 
-The faculty used to have some courses that were removed in favor of other apparently. the following are courses that I studied but I can't find them on the list of this years curriculum
+The faculty used to have some courses that were removed in favor of others apparently. the following are courses that I studied but I can't find them on the list of this years curriculum
 1. Partial Differential Equations (PDE)
+1. Design patterns
 
 # TODO
 
