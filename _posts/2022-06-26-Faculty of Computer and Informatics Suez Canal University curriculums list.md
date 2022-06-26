@@ -9,7 +9,7 @@ The faculty offers a 4 year program for a bachelor degree.
 1. Introduction to Ecology - [Wikipedia](https://en.wikipedia.org/wiki/Ecology)
 1. Introduction to Computer Science - [Wikipedia](https://en.wikipedia.org/wiki/Computer_science)
 1. Computer Programming - [Wikipedia](https://en.wikipedia.org/wiki/Computer_programming) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFXI8wByY0umF_DQON2S9uws)
-1. Discreet math - [Wikipedia](https://en.wikipedia.org/wiki/Discrete_mathematics) - [Youtube](https://www.youtube.com/watch?v=QWDXTJCe3yo&list=PLoK2Lr1miEm_WKBBBHUQJRXaumduqkM4S)
+1. Discrete math - [Wikipedia](https://en.wikipedia.org/wiki/Discrete_mathematics) - [Youtube](https://www.youtube.com/watch?v=QWDXTJCe3yo&list=PLoK2Lr1miEm_WKBBBHUQJRXaumduqkM4S)
 
 ## Second Semester
 
