@@ -1,4 +1,4 @@
-I'm one of the Faculty of computer and informatics Suez Canal University 2011 Alumni. And thought maybe what the faculty offers can be documented digitally for self-studying. or even for reviewing what we studied after years of graduation. The list is based off of the [official website](http://ci.suez.edu.eg/edulife.html) curriculum list I believe this list is different slightly from what I studied back in my time.
+I'm one of the Faculty of computer and informatics Suez Canal University 2011 Alumni. I thought maybe what the faculty offers can be documented digitally for self-studying. or even for reviewing what we studied after years of graduation. The list is based off of the [official website](http://ci.suez.edu.eg/edulife.html) curriculum list I believe this list is different slightly from what I studied back in my time.
 
 The faculty offers a 4 year program for a bachelor degree.
 
