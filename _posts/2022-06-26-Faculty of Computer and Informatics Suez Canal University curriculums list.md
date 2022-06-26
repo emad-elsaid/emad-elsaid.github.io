@@ -8,7 +8,7 @@ The faculty offers a 4 year program for a bachelor degree.
 1. Calculus - [Wikipedia](https://en.wikipedia.org/wiki/Calculus)
 1. Introduction to Ecology - [Wikipedia](https://en.wikipedia.org/wiki/Ecology)
 1. Introduction to Computer Science - [Wikipedia](https://en.wikipedia.org/wiki/Computer_science)
-1. Computer Programming - [Wikipedia](https://en.wikipedia.org/wiki/Computer_programming)
+1. Computer Programming - [Wikipedia](https://en.wikipedia.org/wiki/Computer_programming) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFXI8wByY0umF_DQON2S9uws)
 1. Discreet math - [Wikipedia](https://en.wikipedia.org/wiki/Discrete_mathematics)
 
 ## Second Semester
@@ -49,7 +49,7 @@ The faculty offers a 4 year program for a bachelor degree.
 1. Programming languages concepts 
 1. Computer Graphics - [Wikipedia](https://en.wikipedia.org/wiki/Computer_graphics_(computer_science))
 1. Introduction to Networking - [Wikipedia](https://en.wikipedia.org/wiki/Computer_network)
-1. Assembly language - [Wikipedia](https://en.wikipedia.org/wiki/Assembly_language)
+1. Assembly language - [Wikipedia](https://en.wikipedia.org/wiki/Assembly_language) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFVodghdDWaAuHkHqj-nJ0bN)
 1. One of the following (student choice):
     1. Human computer interaction
     1. Advanced computer programming
@@ -59,8 +59,8 @@ The faculty offers a 4 year program for a bachelor degree.
 ### Second Semester
 
 1. Compilers theory and design - [Wikipedia](https://en.wikipedia.org/wiki/Compiler)
-1. Logical programming - [Wikipedia](https://en.wikipedia.org/wiki/Logic_programming)
-1. Computer organization - [Wikipedia](https://en.wikipedia.org/wiki/Computer_architecture)
+1. Logical programming - [Wikipedia](https://en.wikipedia.org/wiki/Logic_programming) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFW9Faldu6D6Uh2j1EWWaTYe)
+1. Computer architecture - [Wikipedia](https://en.wikipedia.org/wiki/Computer_architecture) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFVEVWSiBdCoBEJHffjHUScZ)
 1. Computer Engineering - [Wikipedia](https://en.wikipedia.org/wiki/Computer_engineering)
 1. Modeling and simulations - [Wikipedia](https://en.wikipedia.org/wiki/Modeling_and_simulation)
 1. One of the following (student choice):
@@ -103,7 +103,7 @@ The faculty offers a 4 year program for a bachelor degree.
 
 1. Data relations (?) اتصالات البيانات
 1. Image processing - [Wikipedia](https://en.wikipedia.org/wiki/Digital_image_processing)
-1. Operating systems theory - [Wikipedia](https://en.wikipedia.org/wiki/Operating_system)
+1. Operating systems theory - [Wikipedia](https://en.wikipedia.org/wiki/Operating_system) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFV-jECqtMxeVMDoVkV_kJDY)
 1. Dynamic programming languages
 1. One of the following (student choice):
     1. Virtual Reality
@@ -114,13 +114,13 @@ The faculty offers a 4 year program for a bachelor degree.
 ### Second Semester
 
 1. Computer Arabization
-1. Artificial Intelligence
+1. Artificial Intelligence (AI) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFVR5O5wZCAy9x9mautNuxI6)
 1. Computer vision systems
 1. Distributed systems - [Wikipedia](https://en.wikipedia.org/wiki/Distributed_computing)
 1. One of the following (student choice):
     1. Wireless networking
     1. Expert systems
-    1. Parallel processing
+    1. Parallel processing - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFWVUt0FVVWM3_qEpa8MX4ZY)
 1. Graduation Project
 
 ## Information systems
@@ -153,6 +153,7 @@ The faculty offers a 4 year program for a bachelor degree.
 
 - The list is a direct translation from [FCI SCU website](http://ci.suez.edu.eg/edulife.html) [Screenshot from 26 June 2022](/public/8fc5d0b9e8917e6b0349c2849b1e91925986a503671c143e558c6203ee5bb901.png)
 - First year curriculum [PDF form FCI SCU website](http://ci.suez.edu.eg/fc1.pdf) -  [A copy from 26 June 2022](/public/f91b37991f4c37284e3505b15a65451ab86bea2843b76e3e4ceea537129bfdce.pdf)
+- Prof. [Ahmed Sallam](https://sallamah.weebly.com/courses.html) website lists his courses and most of them on youtube + textbook names for each and assignments. really impressive effort.
 
 # Courses Missing from the list
 
