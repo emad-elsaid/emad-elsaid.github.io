@@ -27,7 +27,7 @@ The faculty offers a 4 year program for a bachelor degree.
 1. Data structures - [Wikipedia](https://en.wikipedia.org/wiki/Data_structure) - [Youtube](https://www.youtube.com/watch?v=cGgzFPRLl4o&list=PLoK2Lr1miEm-5zCzKE8siQezj9rvQlnca)
 1. Advanced mathematics
 1. English language
-1. Multimedia fundamentals
+1. Multimedia fundamentals - [Wikipedia](https://en.wikipedia.org/wiki/Multimedia)
 1. System analysis - [Wikipedia](https://en.wikipedia.org/wiki/Systems_analysis)
 
 ## Second Semester
@@ -35,7 +35,7 @@ The faculty offers a 4 year program for a bachelor degree.
 1. Operations research - [Wikipedia](https://en.wikipedia.org/wiki/Operations_research)
 1. Files processing
 1. Physics
-1. Stochastic process (Statistics)
+1. Stochastic process (Statistics) - [Wikipedia](https://en.wikipedia.org/wiki/Stochastic_process)
 1. Information Theory - [Wikipedia](https://en.wikipedia.org/wiki/Information_theory)
 1. Technical Writing - [Wikipedia](https://en.wikipedia.org/wiki/Technical_writing)
 
@@ -51,7 +51,7 @@ The faculty offers a 4 year program for a bachelor degree.
 1. Introduction to Networking - [Wikipedia](https://en.wikipedia.org/wiki/Computer_network) - [Textbook](https://www.amazon.com/Computer-Networking-Top-Down-Approach-6th/dp/0132856204)
 1. Assembly language - [Wikipedia](https://en.wikipedia.org/wiki/Assembly_language) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFVodghdDWaAuHkHqj-nJ0bN) - [Textbook](https://www.amazon.de/Assembly-Language-Processors-sixth-Irvine/dp/B00DS8ZII0)
 1. One of the following (student choice):
-    1. Human computer interaction
+    1. Human computer interaction - [Wikipedia](https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction)
     1. Advanced computer programming
     1. Web programming
     1. Computer Networking management
