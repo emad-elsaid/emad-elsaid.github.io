@@ -8,7 +8,7 @@ The faculty offers a 4 year program for a bachelor degree.
 1. Calculus - [Wikipedia](https://en.wikipedia.org/wiki/Calculus)
 1. Introduction to Ecology - [Wikipedia](https://en.wikipedia.org/wiki/Ecology)
 1. Introduction to Computer Science - [Wikipedia](https://en.wikipedia.org/wiki/Computer_science)
-1. Computer Programming - [Wikipedia](https://en.wikipedia.org/wiki/Computer_programming) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFXI8wByY0umF_DQON2S9uws)
+1. Introduction to Programming - [Wikipedia](https://en.wikipedia.org/wiki/Computer_programming) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFXI8wByY0umF_DQON2S9uws)
 1. Discrete math - [Wikipedia](https://en.wikipedia.org/wiki/Discrete_mathematics) - [Youtube](https://www.youtube.com/watch?v=QWDXTJCe3yo&list=PLoK2Lr1miEm_WKBBBHUQJRXaumduqkM4S)
 
 ## Second Semester
@@ -48,8 +48,8 @@ The faculty offers a 4 year program for a bachelor degree.
 1. Algorithms Analysis - [Wikipedia](https://en.wikipedia.org/wiki/Analysis_of_algorithms)
 1. Programming languages concepts 
 1. Computer Graphics - [Wikipedia](https://en.wikipedia.org/wiki/Computer_graphics_(computer_science))
-1. Introduction to Networking - [Wikipedia](https://en.wikipedia.org/wiki/Computer_network)
-1. Assembly language - [Wikipedia](https://en.wikipedia.org/wiki/Assembly_language) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFVodghdDWaAuHkHqj-nJ0bN)
+1. Introduction to Networking - [Wikipedia](https://en.wikipedia.org/wiki/Computer_network) - [Textbook](https://www.amazon.com/Computer-Networking-Top-Down-Approach-6th/dp/0132856204)
+1. Assembly language - [Wikipedia](https://en.wikipedia.org/wiki/Assembly_language) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFVodghdDWaAuHkHqj-nJ0bN) - [Textbook](https://www.amazon.de/Assembly-Language-Processors-sixth-Irvine/dp/B00DS8ZII0)
 1. One of the following (student choice):
     1. Human computer interaction
     1. Advanced computer programming
@@ -59,8 +59,8 @@ The faculty offers a 4 year program for a bachelor degree.
 ### Second Semester
 
 1. Compilers theory and design - [Wikipedia](https://en.wikipedia.org/wiki/Compiler)
-1. Logical programming - [Wikipedia](https://en.wikipedia.org/wiki/Logic_programming) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFW9Faldu6D6Uh2j1EWWaTYe)
-1. Computer architecture - [Wikipedia](https://en.wikipedia.org/wiki/Computer_architecture) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFVEVWSiBdCoBEJHffjHUScZ)
+1. Logical programming - [Wikipedia](https://en.wikipedia.org/wiki/Logic_programming) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFW9Faldu6D6Uh2j1EWWaTYe) - [Textbook](https://www.amazon.de/-/en/William-F-Clocksin-Christopher-Mellish/dp/B003UUCQLS)
+1. Computer architecture - [Wikipedia](https://en.wikipedia.org/wiki/Computer_architecture) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFVEVWSiBdCoBEJHffjHUScZ) - [Textbook](https://www.amazon.com/Computer-Organization-Architecture-Designing-Performance/dp/0136073735) - [Textbook](https://www.amazon.com/Introduction-Computing-Systems-Gates-Beyond/dp/0072467509) - [Textbook](https://www.amazon.de/-/en/David-Patterson/dp/0124077269)
 1. Computer Engineering - [Wikipedia](https://en.wikipedia.org/wiki/Computer_engineering)
 1. Modeling and simulations - [Wikipedia](https://en.wikipedia.org/wiki/Modeling_and_simulation)
 1. One of the following (student choice):
@@ -73,7 +73,7 @@ The faculty offers a 4 year program for a bachelor degree.
 ### First Semester
 
 1. Computer Networking management
-1. Information retrieval systems - [Wikipedia](https://en.wikipedia.org/wiki/Information_retrieval)
+1. Information retrieval systems - [Wikipedia](https://en.wikipedia.org/wiki/Information_retrieval) - [Textbook](https://www.amazon.de/Introduction-Information-Retrieval-Christopher-2008-07-07/dp/B007YZYOXI)
 1. E-business
 1. Decision making systems
 1. Object oriented databases
@@ -103,7 +103,7 @@ The faculty offers a 4 year program for a bachelor degree.
 
 1. Data relations (?) اتصالات البيانات
 1. Image processing - [Wikipedia](https://en.wikipedia.org/wiki/Digital_image_processing)
-1. Operating systems theory - [Wikipedia](https://en.wikipedia.org/wiki/Operating_system) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFV-jECqtMxeVMDoVkV_kJDY)
+1. Operating systems theory - [Wikipedia](https://en.wikipedia.org/wiki/Operating_system) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFV-jECqtMxeVMDoVkV_kJDY) - [Textbook](https://www.amazon.com/Operating-System-Concepts-Binder-Version/dp/1118129385)
 1. Dynamic programming languages
 1. One of the following (student choice):
     1. Virtual Reality
@@ -114,13 +114,13 @@ The faculty offers a 4 year program for a bachelor degree.
 ### Second Semester
 
 1. Computer Arabization
-1. Artificial Intelligence (AI) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFVR5O5wZCAy9x9mautNuxI6)
+1. Artificial Intelligence (AI) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFVR5O5wZCAy9x9mautNuxI6) - [Textbook](https://www.amazon.com/Artificial-Intelligence-Modern-Approach-3rd/dp/0136042597)
 1. Computer vision systems
 1. Distributed systems - [Wikipedia](https://en.wikipedia.org/wiki/Distributed_computing)
 1. One of the following (student choice):
     1. Wireless networking
     1. Expert systems
-    1. Parallel processing - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFWVUt0FVVWM3_qEpa8MX4ZY)
+    1. Parallel processing - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFWVUt0FVVWM3_qEpa8MX4ZY) - [Textbook](https://www.amazon.de/Programming-Massively-Parallel-Processors-Hands/dp/0128119861) - [Textbook](https://www.amazon.com/CUDA-Example-Introduction-General-Purpose-Programming/dp/0131387685)
 1. Graduation Project
 
 ## Information systems
@@ -151,12 +151,12 @@ The faculty offers a 4 year program for a bachelor degree.
 
 # References
 
-- The list is a direct translation from [FCI SCU website](http://ci.suez.edu.eg/edulife.html) [Screenshot from 26 June 2022](/public/8fc5d0b9e8917e6b0349c2849b1e91925986a503671c143e558c6203ee5bb901.png)
+- The list is a direct translation from [FCI SCU website](http://ci.suez.edu.eg/edulife.html) - [Screenshot from 26 June 2022](/public/8fc5d0b9e8917e6b0349c2849b1e91925986a503671c143e558c6203ee5bb901.png)
 - First year curriculum [PDF form FCI SCU website](http://ci.suez.edu.eg/fc1.pdf) -  [A copy from 26 June 2022](/public/f91b37991f4c37284e3505b15a65451ab86bea2843b76e3e4ceea537129bfdce.pdf)
 - Prof. [Ahmed Sallam](https://sallamah.weebly.com/courses.html) website lists his courses and most of them on youtube + textbook names for each and assignments. really impressive effort.
 - FCI Hilwan University has an Open CourseWare (OCW) [youtube channel](https://www.youtube.com/user/FCIHOCW) and their courses is pretty similar to FCI SCU - [recommendation](https://www.facebook.com/emad.elsaid.hamed/posts/pfbid02ZwARPaGa38Qch7KVGZD6m3Tzto5toGGNTc2VUoQf1Wi9rqc4ZPxGfJAjiRmCUFVel?comment_id=752316879551881&reply_comment_id=547724976830771)
 
-# Courses Missing from the list
+# Retired courses
 
 The faculty used to have some courses that were removed in favor of others apparently. the following are courses that I studied but I can't find them on the list of this years curriculum
 1. Partial Differential Equations (PDE)
