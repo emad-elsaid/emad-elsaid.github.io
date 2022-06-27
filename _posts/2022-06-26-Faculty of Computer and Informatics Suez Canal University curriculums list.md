@@ -9,11 +9,11 @@ The faculty offers a 4 year program for a bachelor degree.
 1. Introduction to Ecology - [Wikipedia](https://en.wikipedia.org/wiki/Ecology)
 1. Introduction to Computer Science - [Wikipedia](https://en.wikipedia.org/wiki/Computer_science)
 1. Introduction to Programming - [Wikipedia](https://en.wikipedia.org/wiki/Computer_programming) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFXI8wByY0umF_DQON2S9uws)
-1. Discrete math - [Wikipedia](https://en.wikipedia.org/wiki/Discrete_mathematics) - [Youtube](https://www.youtube.com/watch?v=QWDXTJCe3yo&list=PLoK2Lr1miEm_WKBBBHUQJRXaumduqkM4S)
+1. Discrete math - [Wikipedia](https://en.wikipedia.org/wiki/Discrete_mathematics) - [Youtube](https://www.youtube.com/watch?v=QWDXTJCe3yo&list=PLoK2Lr1miEm_WKBBBHUQJRXaumduqkM4S) - [Textbook](https://www.amazon.de/-/en/Discrete-Mathematics-Applications-Kenneth-Hardback/dp/0073312711)
 
 ## Second Semester
 
-1. Introduction to Databases - [Wikipedia](https://en.wikipedia.org/wiki/Database)
+1. Introduction to Databases - [Wikipedia](https://en.wikipedia.org/wiki/Database) - [Textbook](https://www.amazon.de/-/en/Ramez-Elmasri/dp/0321122267)
 1. Linear Algebra - [Wikipedia](https://en.wikipedia.org/wiki/Linear_algebra) - [Youtube](https://www.youtube.com/watch?v=chbEYssggDE&list=PLoK2Lr1miEm9kxNtClv6c-hsW0QEmskut)
 1. English language
 1. Statistics and Probabilities - [Wikipedia](https://en.wikipedia.org/wiki/Statistics) - [Youtube](https://www.youtube.com/watch?v=l3DCBn2gkZs&list=PL158D091D26F47358)
