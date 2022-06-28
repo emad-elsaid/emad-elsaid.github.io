@@ -5,10 +5,11 @@ The faculty offers a 4 year program for a bachelor degree.
 # First Year
 ## First Semester
 
-1. Calculus - [Wikipedia](https://en.wikipedia.org/wiki/Calculus)
+1. Calculus - [Wikipedia](https://en.wikipedia.org/wiki/Calculus) - [Youtube](https://www.youtube.com/playlist?list=PLBE9407EA64E2C318)
 1. Introduction to Ecology - [Wikipedia](https://en.wikipedia.org/wiki/Ecology)
-1. Introduction to Computer Science - [Wikipedia](https://en.wikipedia.org/wiki/Computer_science)
-1. Introduction to Programming - [Wikipedia](https://en.wikipedia.org/wiki/Computer_programming) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFXI8wByY0umF_DQON2S9uws)
+1. Introduction to Computer Science - [Wikipedia](https://en.wikipedia.org/wiki/Computer_science) - [Textbook](https://www.amazon.de/-/en/Behrouz-Forouzan/dp/1473751047)
+1. Introduction to Programming - [Wikipedia](https://en.wikipedia.org/wiki/Computer_programming) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFXI8wByY0umF_DQON2S9uws) - [Textbook](/public/609083ccfaa3a09aa1a342acedc023bd63289fad00ec05b00d7af0415d1496a5.pdf)
+1. Introduction to Information system - [Textbook](https://www.amazon.com/Fundamentals-Information-Systems-Ralph-Stair/dp/1133629628) - [Textbook](https://www.amazon.com/Principles-Information-Systems-Available-Assessment/dp/0324665288)
 1. Discrete math - [Wikipedia](https://en.wikipedia.org/wiki/Discrete_mathematics) - [Youtube](https://www.youtube.com/watch?v=QWDXTJCe3yo&list=PLoK2Lr1miEm_WKBBBHUQJRXaumduqkM4S) - [Textbook](https://www.amazon.de/-/en/Discrete-Mathematics-Applications-Kenneth-Hardback/dp/0073312711)
 
 ## Second Semester
@@ -17,7 +18,7 @@ The faculty offers a 4 year program for a bachelor degree.
 1. Linear Algebra - [Wikipedia](https://en.wikipedia.org/wiki/Linear_algebra) - [Youtube](https://www.youtube.com/watch?v=chbEYssggDE&list=PLoK2Lr1miEm9kxNtClv6c-hsW0QEmskut)
 1. English language
 1. Statistics and Probabilities - [Wikipedia](https://en.wikipedia.org/wiki/Statistics) - [Youtube](https://www.youtube.com/watch?v=l3DCBn2gkZs&list=PL158D091D26F47358)
-1. Object oriented programming - [Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming)
+1. Object oriented programming - [Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming) - [Textbook](https://www.amazon.de/-/en/Sourav-Sahay/dp/0195681525) - [Textbook](https://www.amazon.de/-/en/Yashavant-P-Kanetkar/dp/8176568570) - [Textbook](https://www.amazon.de/-/en/Nicolai-M-Josuttis/dp/0470843993) - [Textbook](https://www.amazon.de/-/en/Herbert-Schildt/dp/0078824052)
 1. Arabic language
 
 # Second Year
@@ -155,6 +156,8 @@ The faculty offers a 4 year program for a bachelor degree.
 - First year curriculum [PDF form FCI SCU website](http://ci.suez.edu.eg/fc1.pdf) -  [A copy from 26 June 2022](/public/f91b37991f4c37284e3505b15a65451ab86bea2843b76e3e4ceea537129bfdce.pdf)
 - Prof. [Ahmed Sallam](https://sallamah.weebly.com/courses.html) website lists his courses and most of them on youtube + textbook names for each and assignments. really impressive effort.
 - FCI Hilwan University has an Open CourseWare (OCW) [youtube channel](https://www.youtube.com/user/FCIHOCW) and their courses is pretty similar to FCI SCU - [recommendation](https://www.facebook.com/emad.elsaid.hamed/posts/pfbid02ZwARPaGa38Qch7KVGZD6m3Tzto5toGGNTc2VUoQf1Wi9rqc4ZPxGfJAjiRmCUFVel?comment_id=752316879551881&reply_comment_id=547724976830771)
+- [FCI SCU website on google sites](https://sites.google.com/view/fci-scu/home?authuser=0) that include links to most material and google classrooms with lectures, exams and other material from 2020 I believe
+- Some youtube channels are from MIT OCW channel. That's because it's mentioned in the course specification [PDF file](/public/f91b37991f4c37284e3505b15a65451ab86bea2843b76e3e4ceea537129bfdce.pdf) 
 
 # Retired courses
 
