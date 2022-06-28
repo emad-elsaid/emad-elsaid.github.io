@@ -25,7 +25,7 @@ The faculty offers a 4 year program for a bachelor degree.
 ## First Semester
 
 1. Ordinary differential equations (ODE) - [Wikipedia](https://en.wikipedia.org/wiki/Ordinary_differential_equation)
-1. Data structures - [Wikipedia](https://en.wikipedia.org/wiki/Data_structure) - [Youtube](https://www.youtube.com/watch?v=cGgzFPRLl4o&list=PLoK2Lr1miEm-5zCzKE8siQezj9rvQlnca)
+1. Data structures - [Wikipedia](https://en.wikipedia.org/wiki/Data_structure) - [Youtube](https://www.youtube.com/watch?v=cGgzFPRLl4o&list=PLoK2Lr1miEm-5zCzKE8siQezj9rvQlnca) - [Textbook](https://www.amazon.de/-/en/dp/B00E6TPUI8)
 1. Advanced mathematics
 1. English language
 1. Multimedia fundamentals - [Wikipedia](https://en.wikipedia.org/wiki/Multimedia)
@@ -36,7 +36,7 @@ The faculty offers a 4 year program for a bachelor degree.
 1. Operations research - [Wikipedia](https://en.wikipedia.org/wiki/Operations_research)
 1. Files processing
 1. Physics
-1. Stochastic process (Statistics) - [Wikipedia](https://en.wikipedia.org/wiki/Stochastic_process)
+1. Stochastic process - [Wikipedia](https://en.wikipedia.org/wiki/Stochastic_process)
 1. Information Theory - [Wikipedia](https://en.wikipedia.org/wiki/Information_theory)
 1. Technical Writing - [Wikipedia](https://en.wikipedia.org/wiki/Technical_writing)
 
@@ -46,8 +46,8 @@ The faculty offers a 4 year program for a bachelor degree.
 
 ### First Semester
 
-1. Algorithms Analysis - [Wikipedia](https://en.wikipedia.org/wiki/Analysis_of_algorithms)
-1. Programming languages concepts 
+1. Algorithms Analysis - [Wikipedia](https://en.wikipedia.org/wiki/Analysis_of_algorithms) - [Textbook](https://www.amazon.com/Introduction-Design-Analysis-Algorithms-3rd/dp/0132316811)
+1. Concepts of programming languages 
 1. Computer Graphics - [Wikipedia](https://en.wikipedia.org/wiki/Computer_graphics_(computer_science))
 1. Introduction to Networking - [Wikipedia](https://en.wikipedia.org/wiki/Computer_network) - [Textbook](https://www.amazon.com/Computer-Networking-Top-Down-Approach-6th/dp/0132856204)
 1. Assembly language - [Wikipedia](https://en.wikipedia.org/wiki/Assembly_language) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFVodghdDWaAuHkHqj-nJ0bN) - [Textbook](https://www.amazon.de/Assembly-Language-Processors-sixth-Irvine/dp/B00DS8ZII0)
@@ -62,7 +62,7 @@ The faculty offers a 4 year program for a bachelor degree.
 1. Compilers theory and design - [Wikipedia](https://en.wikipedia.org/wiki/Compiler)
 1. Logical programming - [Wikipedia](https://en.wikipedia.org/wiki/Logic_programming) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFW9Faldu6D6Uh2j1EWWaTYe) - [Textbook](https://www.amazon.de/-/en/William-F-Clocksin-Christopher-Mellish/dp/B003UUCQLS)
 1. Computer architecture - [Wikipedia](https://en.wikipedia.org/wiki/Computer_architecture) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFVEVWSiBdCoBEJHffjHUScZ) - [Textbook](https://www.amazon.com/Computer-Organization-Architecture-Designing-Performance/dp/0136073735) - [Textbook](https://www.amazon.com/Introduction-Computing-Systems-Gates-Beyond/dp/0072467509) - [Textbook](https://www.amazon.de/-/en/David-Patterson/dp/0124077269)
-1. Computer Engineering - [Wikipedia](https://en.wikipedia.org/wiki/Computer_engineering)
+1. Design patterns - [Wikipedia](https://en.wikipedia.org/wiki/Design_Patterns) - [Textbook](https://www.amazon.de/Software-Architecture-Design-Patterns-Java/dp/B017KVGH2G)
 1. Modeling and simulations - [Wikipedia](https://en.wikipedia.org/wiki/Modeling_and_simulation)
 1. One of the following (student choice):
     1. Digital signal processing
@@ -76,7 +76,7 @@ The faculty offers a 4 year program for a bachelor degree.
 1. Computer Networking management
 1. Information retrieval systems - [Wikipedia](https://en.wikipedia.org/wiki/Information_retrieval) - [Textbook](https://www.amazon.de/Introduction-Information-Retrieval-Christopher-2008-07-07/dp/B007YZYOXI)
 1. E-business
-1. Decision making systems
+1. Decision support and business intelligence  systems - [Textbook](https://www.amazon.com/Decision-Support-Business-Intelligence-Systems/dp/B006WGOH2S)
 1. Object oriented databases
 1. One of the following (student choice):
     1. Libraries information systems
@@ -86,7 +86,7 @@ The faculty offers a 4 year program for a bachelor degree.
 
 ### Second Semester
 
-1. Electronic governance
+1. Electronic governance - [Textbook](https://www.amazon.de/Unlocking-Government-Potential-Concepts-Practical/dp/8178299283) - [Textbook](https://books.google.de/books/about/Implementing_and_Managing_EGovernment.html?id=hRzAnMulatUC)
 1. Multimedia databases
 1. Timeseriese databases
 1. Information Security
@@ -102,7 +102,7 @@ The faculty offers a 4 year program for a bachelor degree.
 
 ### First Semester
 
-1. Data relations (?) اتصالات البيانات
+1. Data communication
 1. Image processing - [Wikipedia](https://en.wikipedia.org/wiki/Digital_image_processing)
 1. Operating systems theory - [Wikipedia](https://en.wikipedia.org/wiki/Operating_system) - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFV-jECqtMxeVMDoVkV_kJDY) - [Textbook](https://www.amazon.com/Operating-System-Concepts-Binder-Version/dp/1118129385)
 1. Dynamic programming languages
@@ -119,7 +119,7 @@ The faculty offers a 4 year program for a bachelor degree.
 1. Computer vision systems
 1. Distributed systems - [Wikipedia](https://en.wikipedia.org/wiki/Distributed_computing)
 1. One of the following (student choice):
-    1. Wireless networking
+    1. Wireless communication
     1. Expert systems
     1. Parallel processing - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFWVUt0FVVWM3_qEpa8MX4ZY) - [Textbook](https://www.amazon.de/Programming-Massively-Parallel-Processors-Hands/dp/0128119861) - [Textbook](https://www.amazon.com/CUDA-Example-Introduction-General-Purpose-Programming/dp/0131387685)
 1. Graduation Project
@@ -163,7 +163,6 @@ The faculty offers a 4 year program for a bachelor degree.
 
 The faculty used to have some courses that were removed in favor of others apparently. the following are courses that I studied but I can't find them on the list of this years curriculum
 1. Partial Differential Equations (PDE)
-1. Design patterns
 
 # TODO
 
