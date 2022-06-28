@@ -53,7 +53,7 @@ The faculty offers a 4 year program for a bachelor degree.
 1. One of the following (student choice):
     1. Human computer interaction - [Wikipedia](https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction)
     1. Advanced computer programming
-    1. Web programming
+    1. Web programming - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFWgsU3uKf-DWo9MjT4o1QWn)
     1. Computer Networking management
 
 ### Second Semester
@@ -81,7 +81,7 @@ The faculty offers a 4 year program for a bachelor degree.
     1. Libraries information systems
     1. information visualization (?) رؤية المعلومات
     1. Information Modeling and deduction (?) تمثيل المعلومات والاستدلال
-    1. Web programming
+    1. Web programming  - [Youtube](https://www.youtube.com/playlist?list=PLMm8EjqH1EFWgsU3uKf-DWo9MjT4o1QWn)
 
 ### Second Semester
 
