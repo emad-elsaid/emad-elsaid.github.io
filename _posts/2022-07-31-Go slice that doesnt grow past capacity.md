@@ -1,6 +1,7 @@
 ---
 title: Go slice that doesn't grow past capacity
 image: /images/IMG_20220730_175116.webp
+alt: Stevie Guarding as usual. Grunewald, Berlin.
 ---
 
 A while ago I needed a Go slice that keeps growing until hitting capacity. after that I need it to discard the first item and add the new one to the end, without growing it's capacity.
