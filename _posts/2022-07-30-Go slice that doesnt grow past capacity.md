@@ -33,4 +33,4 @@ for i := 0; i < 100; i++ {
 fmt.Println(s) // prints [90 91 92 93 94 95 96 97 98 99]
 ```
 
-Go playground: https://go.dev/play/p/0MpcHN7OSTF
+Go playground: [https://go.dev/play/p/0MpcHN7OSTF](https://go.dev/play/p/0MpcHN7OSTF)
