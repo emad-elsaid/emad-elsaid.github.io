@@ -4,11 +4,11 @@ image: /images/IMG_20220730_175116.webp
 alt: Stevie Guarding as usual. Grunewald, Berlin.
 ---
 
-A while ago I needed a Go slice that keeps growing until hitting capacity. after that I need it to discard the first item and add the new one to the end, without growing it's capacity.
+A while ago I needed a Go slice that keeps growing until hitting capacity. after that I need it to discard the first item and add the new one to the end, without growing its capacity.
 
-`append` will grow Go slice if you tried to append an item when the slice used all of its capacity.
+`append` will grow Go slice if you tried to append an item when the slice is at full capacity.
 
-So what I did is a function that checks for the length of the slice and its capacity and if it's already full it'll copy all items past the first item back to index 0 which overwrite the first item leaving the last item empty. then append the new item to the end as normal.
+So what I write is a function that checks if the slice is full. If so it'll copy all items past the first item back to index 0 which overwrite the first item leaving the last item empty. then append the new item to the end as normal.
 
 And as Go introduced generics we can use the function with a slice of `any` type.
 
