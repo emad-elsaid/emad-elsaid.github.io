@@ -14,11 +14,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install Xlog
+      - name: Build
         run: |
-          sudo apt install golang-go
-          go install github.com/emad-elsaid/xlog@latest
-          xlog --build . --sitename "Emad Elsaid"
+          ./xlog \
+          --build . \
+          --sitename "Emad Elsaid"
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v1.0.4
