@@ -16,6 +16,7 @@ jobs:
 
       - name: Build
         run: |
+          sudo apt install -y libc6 libc-bin
           ./xlog \
           --build . \
           --sitename "Emad Elsaid"
