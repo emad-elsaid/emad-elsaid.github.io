@@ -16,7 +16,7 @@ jobs:
 
       - name: Install Xlog
         run: |
-          sudo apt install go
+          sudo apt install golang-go
           go install github.com/emad-elsaid/xlog@latest
           xlog --build . --sitename "Emad Elsaid"
 
