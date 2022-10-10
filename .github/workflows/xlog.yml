@@ -32,16 +32,14 @@ jobs:
       - name: Build
         run: |
           go install github.com/emad-elsaid/xlog@latest
-          mkdir output
-          mv public output/public
           xlog \
-          --build output \
+          --build . \
           --sitename "Emad Elsaid"
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v1.0.4
         with:
-          path: output
+          path: .
 
   deploy:
     environment:
