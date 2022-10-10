@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+
+require 'yaml'
+require 'set'
+require 'time'
+require 'date'
+
+posts = Dir['*.md']
+
+keys = Set.new
+
+posts.each do |post|
+  puts "Processing: #{post}"
+
+  content = File.read(post)
+  frontmatter = YAML.safe_load(content, permitted_classes: [Date, Time])
+
+  if frontmatter.is_a? Hash
+    keys += frontmatter.keys
+
+    lines = content.lines
+    end_of_matter = lines[1..].index { |l| /^\-{3,}\n/ =~ l }
+
+    after_matter = lines[(end_of_matter + 2)..]
+    new_content = []
+
+    if frontmatter.key?("image")
+      image = frontmatter['image'].gsub('/images', '/public')
+      new_content = ["![#{frontmatter['alt']}](#{image})\n"]
+    end
+
+    new_content += after_matter
+    File.write(post, new_content.join)
+  end
+
+rescue Psych::SyntaxError
+  puts "doesn't have a frontmatter"
+end
+
+puts 'Keys: ', keys
