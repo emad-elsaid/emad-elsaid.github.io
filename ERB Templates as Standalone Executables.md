@@ -1,3 +1,4 @@
+#ruby 
 
 The following is a technique that can convert ERB files (Embeded Ruby) to
 executable files like any other ruby/python/shell scripts, the difference is

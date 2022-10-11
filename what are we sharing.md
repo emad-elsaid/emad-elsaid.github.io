@@ -1,5 +1,7 @@
 ![](/public/IMG_20201225_123145.jpg)
 
+#p2p 
+
 In the past weeks I had this continious thinking about how can we approach a
 distributed peer to peer social media network. I faced this problem where I
 don't know the best way to identify a piece of content and here is why.

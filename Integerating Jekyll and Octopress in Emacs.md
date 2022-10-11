@@ -1,3 +1,4 @@
+#ruby 
 
 I started using emacs couple weeks ago and i have to say that i'm amazed by how
 this editor is working, Emacs VS VIM war isn't coming from nowhere after all.

@@ -1,3 +1,5 @@
+#ruby 
+
 yesterday i faced a problem with my rails application, my models was as follows
 
 ```ruby

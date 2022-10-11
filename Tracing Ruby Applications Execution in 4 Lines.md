@@ -1,3 +1,4 @@
+#ruby 
 
 I was researching a simple way to trace ruby code, so the problem I tried to
 solve (as usual) is to understand the code infront of me even more, so I need

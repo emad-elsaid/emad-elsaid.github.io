@@ -1,5 +1,7 @@
 ![](/public/IMG_20210521_095201.jpg)
 
+#shell 
+
 This is a post where I document one of my recent learnings. which is the linux [named pipes](https://en.wikipedia.org/wiki/Named_pipe).
 
 Assuming you are looking for all descriptions of the hardware on your machine. you can use a command that print out the list of hardware like `lshw` which prints something like:

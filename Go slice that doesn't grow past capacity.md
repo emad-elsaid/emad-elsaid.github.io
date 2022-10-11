@@ -1,6 +1,6 @@
 ![Stevie Guarding as usual. Grunewald, Berlin.](/public/IMG_20220730_175116.webp)
 
-A while ago I needed a Go slice that keeps growing until hitting capacity. after that I need it to discard the first item and add the new one to the end, without growing its capacity.
+A while ago I needed a #go slice that keeps growing until hitting capacity. after that I need it to discard the first item and add the new one to the end, without growing its capacity.
 
 `append` will grow Go slice if you tried to append an item when the slice is at full capacity.
 

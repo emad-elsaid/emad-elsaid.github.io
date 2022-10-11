@@ -1,4 +1,6 @@
-## Boring Rails
+#ruby 
+
+# Boring Rails
 
 Couple days ago [Amr](https://twitter.com/amrabdelwahab) shared a nice website called [Boring
 Rails](https://boringrails.com/) that resonates with what I believe a simple way
@@ -17,7 +19,7 @@ the same feature can be delivered with less code, The following paragraphs will
 walk you through implementing the same feature without any JavaScript
 dependency.
 
-## Write it in HTML
+# Write it in HTML
 
 You'll need a simple HTML that shows/hides hovercards like so
 
@@ -66,7 +68,7 @@ over my name will show the card, and moving away will hide it, what make this
 behavior possible is the `display` CSS property change when we hover on the
 name, checkout the `Style` tag.
 
-## Create a server
+# Create a server
 
 I'll use Ruby and Sinatra here so install Sinatra
 
@@ -105,7 +107,7 @@ But as your page grows inserting the card for every name on the page will hurt
 your performance, so to make this page faster we'll load only the card when the
 user move on the name.
 
-## Isolate the card to another page
+# Isolate the card to another page
 
 Remove your hover card from the body and add a reference in the parent to the
 URL that will return it from the server.
@@ -140,7 +142,7 @@ that:
 Now if you visit `localhost:3000/card/emad elsaid` it'll return the hover card
 content.
 
-## Load the card with JavaScript
+# Load the card with JavaScript
 
 We now need to load the card when hovering on any element with `data-hover-card`
 attribute, we'll load it once in the page lifetime then append it to this
@@ -173,7 +175,7 @@ the card twice.
 
 Then we'll get the card from the server and append it to this element.
 
-## Conclusion
+# Conclusion
 
 This approach doesn't need Sinatra/ruby at all, any web server will work, it
 doesn't depend on any JavaScript package, or other dependencies other than the

@@ -1,5 +1,4 @@
-
-For the past couple weeks I have been reviewing C++, and while doing so I'm creating a [small Snake game](https://github.com/emad-elsaid/snake)
+For the past couple weeks I have been reviewing #CPP, and while doing so I'm creating a [small Snake game](https://github.com/emad-elsaid/snake)
 
 I started the game without any images at all. everything is a rectangle and then when the game was working I wanted to replace the food rectangle with an image that moves. and found an asset of itch.io with a spinning coin sprite.
 

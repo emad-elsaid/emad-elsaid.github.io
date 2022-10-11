@@ -1,3 +1,4 @@
+#ruby 
 
 Flame graphs are graphs of stack of steps over each other they define a call
 stack for an application over time, so an application probes your running

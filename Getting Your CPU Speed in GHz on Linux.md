@@ -1,3 +1,4 @@
+#shell 
 
 I'm using I3 and I3blocks on my machine, and I wanted to show my current
 processor speed as one of the I3blocks sections just because!

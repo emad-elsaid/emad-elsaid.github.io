@@ -1,6 +1,7 @@
+#sql #ruby 
 
-For the past 3 years I have been working on a side project called
-www.whoispopulartoday.com, it's specialized in collecting news and analyzing it
+For the past 3 years I have been working on a side project called Who is popular today, 
+it's specialized in collecting news and analyzing it
 to find public figures mentions and build analytics on it, in that article I'll
 walk through the evolution of representing the relation between the entities
 (people figures) and the news (tweets, fb posts, YouTube videos and rss

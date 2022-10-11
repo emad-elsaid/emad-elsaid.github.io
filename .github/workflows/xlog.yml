@@ -34,7 +34,8 @@ jobs:
           go install github.com/emad-elsaid/xlog@latest
           xlog \
           --build . \
-          --sitename "Emad Elsaid"
+          --sitename "Emad Elsaid" \
+          --sidebar=false
           rm *.md
           chmod -R 0777 .
 

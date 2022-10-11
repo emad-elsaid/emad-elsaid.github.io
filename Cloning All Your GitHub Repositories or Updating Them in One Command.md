@@ -1,3 +1,4 @@
+#ruby 
 
 I had a new laptop couple weeks ago at work, and I had to set it up with
 everything I need including the projects I have been working on from GitHub, I

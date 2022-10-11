@@ -1,3 +1,4 @@
+#ruby 
 
 I faced a situation where I'm working on a legacy project, that project was a
 normal ruby on rails project, with controllers, models, decorators, concerns,

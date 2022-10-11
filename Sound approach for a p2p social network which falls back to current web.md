@@ -1,7 +1,8 @@
 ![Spree near jannowitzbrücke, Berlin](/public/e420d55f-a60c-4892-8d1f-1c7ec03a2d08.jpg)
 
+#p2p 
 
-Following the last 2 posts and other videos in the past weeks. The following
+Following the last 2 posts (A general idea of a peer to peer social network , Follow up on peer to peer social media network solution ) and other videos in the past weeks. The following
 will continue on the same track of a peer to peer social network.
 
 I'll build the idea as layers over each other so:

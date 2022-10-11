@@ -1,6 +1,6 @@
 ![](/public/IMG_20210720_211108.webp)
 
-Sometimes I just want to time a function execution. the following does so in one line added to the beginning of the function.
+Sometimes I just want to time a function execution in #go. the following does so in one line added to the beginning of the function.
 
 ```go
 type logMark struct {

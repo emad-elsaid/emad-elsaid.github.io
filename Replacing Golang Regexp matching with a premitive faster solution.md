@@ -1,5 +1,7 @@
 ![Grunwald forest, Berlin, Germany](/public/IMG_20201220_112919.jpg)
 
+#go 
+
 On [who is popular today.com](https://www.whoispopulartoday.com) I have a
 service called *tagger* it's job is to get new news records and find people
 names in it, then creates a record that makes the relation between this news

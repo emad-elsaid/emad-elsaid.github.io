@@ -1,5 +1,7 @@
 ![](/public/IMG_20201227_115636.jpg)
 
+#p2p
+
 The following are some ideas that I have developed as a result of the discrete
 discussions of abandoning centralized social media and privacy concerns related
 to them.
@@ -10,7 +12,7 @@ What I'm aiming for is to have all the user data on his machines (phone,
 desktop, laptop) and exchange his social feed with other people machines on the
 same network or across the internet.
 
-## Format
+# Format
 
 My social feed on my phone can be stored as text files in a machine readable
 format like JSON, YAML, BSON or any other format. This is not a new idea, text
@@ -25,7 +27,7 @@ Local files are easy to backup and move around with simple files operations.
 Whatever application will manage them can build his own indexes over the data
 inside these files and keep his indexes in sync with the files.
 
-## Data Structure
+# Data Structure
 
 - Every file in my social feed will contain what I'll call a post, like a text
   status or text with image, or text with link or text with any other attachment
@@ -37,7 +39,7 @@ inside these files and keep his indexes in sync with the files.
   walled gardens we already have with proprietary file formats and current
   social media
 
-## Exchanging social feeds
+# Exchanging social feeds
 
 - Every user identity will be represented with an asymmetric encryption key. For
   a user to create a new account/identity he need to generate a key pair.
@@ -78,14 +80,14 @@ inside these files and keep his indexes in sync with the files.
   filtering then can be done on the client itself afterwards.
 
 
-## Discovery
+# Discovery
 
 - Standard service discovery techniques can be used like mDNS to discover
   services in a local network
 - Across the internet proxy servers can be used or a Kademlia p2p network to
   reach each other
 
-## Final Notes
+# Final Notes
 
 
 - what I'm trying to achieve is to simply exchange social feeds as simple as

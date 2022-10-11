@@ -1,6 +1,6 @@
 ![](/public/IMG_20201225_134447.jpg)
 
-In [the last post](/a-general-idea-of-a-peer-to-peer-social-network) I presented
+In A general idea of a peer to peer social network I presented
 some simple ideas that can work together to create a peer to peer social
 network.
 

@@ -1,5 +1,4 @@
-
-I'm in the process of rewriting [my news website web interface](https://www.whoispopulartoday.com) in Go.
+I'm in the process of rewriting [my news website web interface](https://www.whoispopulartoday.com) in #go.
 
 The interface is written in Ruby/Rails right now and I'm looking for improving my Go writing skills so I decided to rewrite this part in Go.
 
