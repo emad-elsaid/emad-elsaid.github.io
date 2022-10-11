@@ -31,7 +31,7 @@ jobs:
 
       - name: Build
         run: |
-          go install github.com/emad-elsaid/xlog@v0.1.0
+          go install github.com/emad-elsaid/xlog@latest
           xlog \
           --build . \
           --sitename "Emad Elsaid" \
