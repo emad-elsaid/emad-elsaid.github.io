@@ -21,3 +21,92 @@ I post here some notes and ideas that may or may not be practical but it interes
 * Reading science fiction mostly
 * Inline Skating
 * Cycling
+
+# Programming Articles
+
+I write my pieces in two languages (Arabic, English)
+
+## In English
+
+- A general idea of a peer to peer social network
+- A solution for implementing Bulma navigation bar for mobile with CSS only
+- Async Rendering a Page With Sinatra
+- Bind Remote Server Port to Local Machine With SSH
+- Bulma HTML5 Dialog
+- CPP Limit int type by max value
+- Cloning All Your GitHub Repositories or Updating Them in One Command
+- Consistency Over Creativity
+- Converting Ruby sinatra project to Go
+- Copy file
+- Country code to flag emojie in Go
+- Deploy rails application with docker compose and capistrano
+- Distributed authority product features for future of distributed applications
+- Don't Throw Your Question Over the Fence
+- Download RSS Offline
+- ERB Templates as Standalone Executables
+- Enforcing Project Structure With Rspec
+- Experiencing Heide Park Resort Rollercoasters One Day Trip
+- Explain all SQL statements in rails
+- Exporting a Facebook Group as a Website
+- Faculty of Computer and Informatics Suez Canal University curriculums list
+- Favorite Developers
+- Follow up on peer to peer social media network solution
+- Fundamentals of Software Architecture
+- Getting Your CPU Speed in GHz on Linux
+- Git as Messages Queue
+- Go function logging technique
+- Go slice that doesn't grow past capacity
+- Golang Bleve Experience
+- How I keep zero inbox for all my emails
+- How do I prototype my ideas
+- How to Find a Solution for Your Problem
+- Implementing Hover Cards With Minimum Javascript
+- Integerating Jekyll and Octopress in Emacs
+- Interesting GNU Projects
+- Language Compression
+- Learning Rollerblades at My Thirties
+- Linux named pipes
+- Meta work is destroying actual work
+- Monitor Window10 Foreground Window
+- Moving from Lastpass.com to KeePassXC on Linux-Android-Windows
+- My Blog Properties
+- On Modern Web Applications Stability
+- Posting to Hugo Static Site From a Facebook Profile
+- Projects Files Flame Graph
+- Rails Accepts_nested_attributes for polymorphic relation solution
+- Replacing Golang Regexp matching with a premitive faster solution
+- Representing Named Entity Mention in Postgres for Fast Queries
+- Scharbeutz Vacation
+- Single Machine Startup Company System (Part 2)
+- Single Machine Startup Company System
+- Sound approach for a p2p social network which falls back to current web
+- The Chronicles of a Left Handed in Egypt
+- The benefits of microservices over monolithic application
+- The quest to collect all software man pages
+- Tracing Ruby Applications Execution in 4 Lines
+- Using Emacs as email client
+- Why Am I Using KeePassXC
+- Why I became a software developer
+- Window10 Disconnects Reconnects Usb Bluetooth
+- Working With Legacy Code
+- a week with remarkable 2
+- what are we sharing
+
+## In Arabic
+
+- أسف مقدما
+- اذكروا موتاكم
+- استحواذ
+- العصبية القبلية فى مجتمع مطورى البرمجيات
+- توازن جيني
+- ريتروسبكتيف
+- صراع الإنسان المعاصر لإستعادة حريته فى عصر وسائل التواصل الإجتماعي
+- صناعة السوفتوير للسوفتوير انجينيرز
+- عن القبلية ودور الدين
+- قاهرة الطاقة النووية
+- قهوة سريعة
+- متي توقفنا عن تصور المستقبل
+- مراجعة رواية The Gods Themselves
+- نصايح أستاذي للتحضير لإمتحان الثانوية العامة
+- هل من حقي الحكم على الأشخاص او الأشياء
+- هل هو الماضي ام المستقبل
