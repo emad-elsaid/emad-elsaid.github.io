@@ -1,10 +1,8 @@
-#shell 
+#shell
 
-I'm using I3 and I3blocks on my machine, and I wanted to show my current
-processor speed as one of the I3blocks sections just because!
+I'm using I3 and I3blocks on my machine, and I wanted to show my current processor speed as one of the I3blocks sections just because!
 
-so the first problem I faced is how to get my current processor speed, `lscpu`
-returns the full CPU details as follows:
+so the first problem I faced is how to get my current processor speed, `lscpu` returns the full CPU details as follows:
 
 ```
 Architecture:        x86_64
@@ -47,17 +45,13 @@ But that will give you this output
 CPU MHz:             1484.185
 ```
 
-so you need to get the number without the text, here we can use `awk` to extract
-the number, and as awk will consider it the 3rd column we can do the following
-to show only the number
+so you need to get the number without the text, here we can use `awk` to extract the number, and as awk will consider it the 3rd column we can do the following to show only the number
 
 ```bash
 lscpu | grep "CPU MHz" | awk '{print $3}'
 ```
 
-that will output the number without any text, and as `awk` can be used to print
-in case a condition is true we can print the number if "CPU MHz" is found,
-getting rid of `grep`
+that will output the number without any text, and as `awk` can be used to print in case a condition is true we can print the number if "CPU MHz" is found, getting rid of `grep`
 
 ```bash
 lscpu | awk '/CPU MHz/ {print $3}'
@@ -70,17 +64,13 @@ the number is in MHz, so if we want to display it in GHz we need to divide by
 lscpu | awk '/CPU MHz/ {print $3/1000}'
 ```
 
-that will print the number with all digits after floating point `2.08582`, if we
-need to print it with a certain precision we can use `printf` function to limit
-the digits to one or two digits, the following will limit the digits to 2 digits
-after floating point
+that will print the number with all digits after floating point `2.08582`, if we need to print it with a certain precision we can use `printf` function to limit the digits to one or two digits, the following will limit the digits to 2 digits after floating point
 
 ```bash
 lscpu | awk '/CPU MHz/ {printf("%0.2f", $3/1000)}'
 ```
 
-that will print something like `3.07` depending on your processor speed, my
-script at the end looked like that
+that will print something like `3.07` depending on your processor speed, my script at the end looked like that
 
 ```bash
 #!/usr/bin/env bash

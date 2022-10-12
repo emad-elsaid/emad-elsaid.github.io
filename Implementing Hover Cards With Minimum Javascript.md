@@ -1,23 +1,14 @@
-#ruby 
+#ruby
 
 # Boring Rails
 
-Couple days ago [Amr](https://twitter.com/amrabdelwahab) shared a nice website called [Boring
-Rails](https://boringrails.com/) that resonates with what I believe a simple way
-to develop web applications that has less JavaScript fatigue.
+Couple days ago [Amr](https://twitter.com/amrabdelwahab) shared a nice website called [Boring Rails](https://boringrails.com/) that resonates with what I believe a simple way to develop web applications that has less JavaScript fatigue.
 
-I tend to minimize JavaScript on my websites to the point that sometimes I
-remove JavaScript all together like on this blog.
+I tend to minimize JavaScript on my websites to the point that sometimes I remove JavaScript all together like on this blog.
 
-The first article [Building GitHub-style Hover cards with StimulusJS and
-HTML-over-the-wire](https://boringrails.com/articles/hovercards-stimulus/) talks
-in details what's wrong with the modern culture of developing web
-applications and the SPA frenzy going on.
+The first article [Building GitHub-style Hover cards with StimulusJS and HTML-over-the-wire](https://boringrails.com/articles/hovercards-stimulus/) talks in details what's wrong with the modern culture of developing web applications and the SPA frenzy going on.
 
-Then the article went to implement hover cards with some tools, I believe that
-the same feature can be delivered with less code, The following paragraphs will
-walk you through implementing the same feature without any JavaScript
-dependency.
+Then the article went to implement hover cards with some tools, I believe that the same feature can be delivered with less code, The following paragraphs will walk you through implementing the same feature without any JavaScript dependency.
 
 # Write it in HTML
 
@@ -63,10 +54,7 @@ You'll need a simple HTML that shows/hides hovercards like so
 </html>
 ```
 
-You can save this on your disk and open it in the browser, putting your mouse
-over my name will show the card, and moving away will hide it, what make this
-behavior possible is the `display` CSS property change when we hover on the
-name, checkout the `Style` tag.
+You can save this on your disk and open it in the browser, putting your mouse over my name will show the card, and moving away will hide it, what make this behavior possible is the `display` CSS property change when we hover on the name, checkout the `Style` tag.
 
 # Create a server
 
@@ -103,14 +91,11 @@ $ ./server
 
 It should listen on port 3000 so opening `localhost:3000` will show your page.
 
-But as your page grows inserting the card for every name on the page will hurt
-your performance, so to make this page faster we'll load only the card when the
-user move on the name.
+But as your page grows inserting the card for every name on the page will hurt your performance, so to make this page faster we'll load only the card when the user move on the name.
 
 # Isolate the card to another page
 
-Remove your hover card from the body and add a reference in the parent to the
-URL that will return it from the server.
+Remove your hover card from the body and add a reference in the parent to the URL that will return it from the server.
 
 ```html
 User:
@@ -128,8 +113,7 @@ get '/card/:name' do
 end
 ```
 
-And the card `views/card.erb` can print anything the server pass to it like
-that:
+And the card `views/card.erb` can print anything the server pass to it like that:
 
 ```html
 <span class="hover-card">
@@ -139,14 +123,11 @@ that:
 </span>
 ```
 
-Now if you visit `localhost:3000/card/emad elsaid` it'll return the hover card
-content.
+Now if you visit `localhost:3000/card/emad elsaid` it'll return the hover card content.
 
 # Load the card with JavaScript
 
-We now need to load the card when hovering on any element with `data-hover-card`
-attribute, we'll load it once in the page lifetime then append it to this
-element.
+We now need to load the card when hovering on any element with `data-hover-card` attribute, we'll load it once in the page lifetime then append it to this element.
 
 your `hovercard.js` will look like that
 
@@ -169,17 +150,12 @@ hasHoverCards.forEach(function(element) {
 });
 ```
 
-It'll attach a function to the `mouseover` of every element that has
-`data-hover-card` attribute, the function will remove itself to avoid loading
-the card twice.
+It'll attach a function to the `mouseover` of every element that has `data-hover-card` attribute, the function will remove itself to avoid loading the card twice.
 
 Then we'll get the card from the server and append it to this element.
 
 # Conclusion
 
-This approach doesn't need Sinatra/ruby at all, any web server will work, it
-doesn't depend on any JavaScript package, or other dependencies other than the
-browser itself and CSS to show/hide the card.
+This approach doesn't need Sinatra/ruby at all, any web server will work, it doesn't depend on any JavaScript package, or other dependencies other than the browser itself and CSS to show/hide the card.
 
-You can generalize this technique to other things you want to fetch from the
-server on click or any other event.
+You can generalize this technique to other things you want to fetch from the server on click or any other event.

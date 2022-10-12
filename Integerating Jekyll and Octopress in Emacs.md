@@ -1,21 +1,14 @@
-#ruby 
+#ruby #elisp
 
-I started using emacs couple weeks ago and i have to say that i'm amazed by how
-this editor is working, Emacs VS VIM war isn't coming from nowhere after all.
+I started using emacs couple weeks ago and i have to say that i'm amazed by how this editor is working, Emacs VS VIM war isn't coming from nowhere after all.
 
-one thing that annoys me is that i stopped blogging for a long time, if you checked the last
-blog post, it's been a year since the last one.
+one thing that annoys me is that i stopped blogging for a long time, if you checked the last blog post, it's been a year since the last one.
 
-so I had an idea, what if i made blogging more comforting for me? maybe integerating my
-blogging platform (jekyll + octopress + git) to Emacs, aaaand there was a problem,
-the current jekyll (hyde.el) looks weired to me that i couldn't even try to use it.
+so I had an idea, what if i made blogging more comforting for me? maybe integerating my blogging platform (jekyll + octopress + git) to Emacs, aaaand there was a problem, the current jekyll (hyde.el) looks weired to me that i couldn't even try to use it.
 
-I started writing my own integeration, to create a post and publish it I can write simple
-functions to execute these command from Emacs into my blog directory, that's not so hard right?
+I started writing my own integeration, to create a post and publish it I can write simple functions to execute these command from Emacs into my blog directory, that's not so hard right?
 
-nooooo, for a ELisp noob like me it's like hell, i had to Google how to define a variable,
-see? it's hell, and i was stuck for a while untill i knew that `C-x X-e` doesn't evaulate
-the whole buffer, yeah, I'm a total noob.
+nooooo, for a ELisp noob like me it's like hell, i had to Google how to define a variable, see? it's hell, and i was stuck for a while untill i knew that `C-x X-e` doesn't evaulate the whole buffer, yeah, I'm a total noob.
 
 after a lot of sweat, blood and WTF moments i implemented 3 methods:
 
@@ -23,12 +16,12 @@ after a lot of sweat, blood and WTF moments i implemented 3 methods:
 2. `octopress-dir` to open `_posts` directory, for fast access to posts and so.
 3. `octopress-build-and-deploy` to build the blog with jekyll then deploy it with octopress to github pages
 
-the 3 functions are simple implementation, you should not expect much from my Elisp code, it's a simple
-straight forward implementation and there is a lot of room for enhancements.
+the 3 functions are simple implementation, you should not expect much from my Elisp code, it's a simple straight forward implementation and there is a lot of room for enhancements.
 
 This post is the my first post from Emacs, Hope it works, wish me luck,
 
-Oh I forgot, here is my code, I just pasted it to my `~/.emacs` and execute it with `M-x RET <function-name>`
+Oh I forgot, here is my code, I just pasted it to my `~/.emacs` and execute it
+with `M-x RET <function-name>`
 
 ```elisp
 

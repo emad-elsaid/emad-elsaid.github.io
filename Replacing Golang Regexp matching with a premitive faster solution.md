@@ -1,11 +1,8 @@
 ![Grunwald forest, Berlin, Germany](/public/IMG_20201220_112919.jpg)
 
-#go 
+#go
 
-On [who is popular today.com](https://www.whoispopulartoday.com) I have a
-service called *tagger* it's job is to get new news records and find people
-names in it, then creates a record that makes the relation between this news
-article and the person found in this article.
+On [who is popular today.com](https://www.whoispopulartoday.com) I have a service called *tagger* it's job is to get new news records and find people names in it, then creates a record that makes the relation between this news article and the person found in this article.
 
 An example is an RSS article titled:
 
@@ -45,18 +42,13 @@ articles similar to this:
 الأهلى يتعادل أمام الزمالك 1-1
 ```
 
-The problem here is the characters matches but it's not a name really. But if I
-tried to find the name only surrounded by spaces that will miss names with
-prefixes like:
+The problem here is the characters matches but it's not a name really. But if I tried to find the name only surrounded by spaces that will miss names with prefixes like:
 
 ```
 يتصدر الأعلى مشاهدة عبد الفتاح السيسي وعادل إمام فخالد الصاوي
 ```
 
-So names can be still refixed with a character so I have to match the name with
-and without prefixes prefixed with space or in the beginning of the text and
-followed by a space or at the end of the text, that seems like a regular
-expression right?
+So names can be still refixed with a character so I have to match the name with and without prefixes prefixed with space or in the beginning of the text and followed by a space or at the end of the text, that seems like a regular expression right?
 
 ```go
 name := "person name here"
@@ -65,26 +57,19 @@ reg = regexp.MustCompile(fmt.Sprintf("(\A|[[:space:]])(%s)?%s(\z|[[:space:]])",
 strings.join(prefixes, "|"), name))
 ```
 
-Then we can use the `reg.FindString()` and `reg.ReplaceAllString()` to find the
-matches and replace them when found.
+Then we can use the `reg.FindString()` and `reg.ReplaceAllString()` to find the matches and replace them when found.
 
-Given we have 800k names that means for each article we'll need to match with
-all of them, THAT WAS VERY SLOW compared to `string.Contains` and
-`string.ReplaceAll` so I had to find a faster solution.
+Given we have 800k names that means for each article we'll need to match with all of them, THAT WAS VERY SLOW compared to `string.Contains` and `string.ReplaceAll` so I had to find a faster solution.
 
 ## The solution
 
-First lets simplify this regex, with a little twist to the input we can get rid
-of `\A` and `\z` if our string always has a space in the beginning and at the
-end.
+First lets simplify this regex, with a little twist to the input we can get rid of `\A` and `\z` if our string always has a space in the beginning and at the end.
 
 ```go
 [[:space:]](%s)?%s[[:space:]]"
 ```
 
-also `[[:space:]]` matches spaces, new lines, carriage return, line feed
-characters, but we already cleaned and normalized all strings so we have only
-spaces, so I can simplify it to this
+also `[[:space:]]` matches spaces, new lines, carriage return, line feed characters, but we already cleaned and normalized all strings so we have only spaces, so I can simplify it to this
 
 ```
 \s(%s)?%s\s
@@ -105,9 +90,6 @@ we can so the following variations of the name:
 - وعادل إمام
 - لعادل إمام
 
-and that would be a slice of strings that we can deal with them with the usual
-method we had `strings.Contains` and `strings.ReplaceAll` which is way faster
-that the regexp methods.
+and that would be a slice of strings that we can deal with them with the usual method we had `strings.Contains` and `strings.ReplaceAll` which is way faster that the regexp methods.
 
-so this 800*4k strings find and replace is faster than 800k regexp find
-and replace.
+so this 800*4k strings find and replace is faster than 800k regexp find and replace.
