@@ -29,9 +29,16 @@ jobs:
           go-version: 1.19
           check-latest: true
 
+      - name: Install xlog
+        run: |
+          pushd $GOPATH
+          git clone https://github.com/emad-elsaid/xlog.git
+          cd xlog
+          go install .
+          popd
+
       - name: Build
         run: |
-          go install github.com/emad-elsaid/xlog@latest
           xlog \
           --build . \
           --sitename "Emad Elsaid" \
