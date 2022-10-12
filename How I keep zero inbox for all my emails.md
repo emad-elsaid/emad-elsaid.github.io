@@ -19,7 +19,7 @@ It helped me [integrating the email in my Emacs editor with Mu4e package](/using
 
 I know there is an email when I see the number in my [polybar](https://github.com/polybar/polybar) changes
 
-![Screenshot-2021-05-05_10-48-55.png](/images/Screenshot-2021-05-05_10-48-55.png)
+![Screenshot-2021-05-05_10-48-55.png](/public/Screenshot-2021-05-05_10-48-55.png)
 
 This number shows my unread emails in all of my inboxes. I don't get notifications just this little number. and If I want to focus on something without my eye hitting the bar like when writing this blog post for example. I put the window in Full-screen mode which hides the bar.
 

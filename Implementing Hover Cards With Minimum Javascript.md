@@ -23,7 +23,7 @@ dependency.
 
 You'll need a simple HTML that shows/hides hovercards like so
 
-![screenshot-hover-card.png](/images/screenshot-hover-card.png)
+![screenshot-hover-card.png](/public/screenshot-hover-card.png)
 
 ```html
 <html>

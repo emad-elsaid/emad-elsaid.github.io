@@ -28,7 +28,7 @@ When we checked the ticket on DB navigator for in city bus it was 28EUR for day 
 
 That was nice as google maps took us on a walk in a trail in the forest and we saw a deer running away. and took some nice pictures.
 
-![IMG_20210521_094009.jpg](/images/IMG_20210521_094009.jpg)
+![IMG_20210521_094009.jpg](/public/IMG_20210521_094009.jpg)
 
 on the way back we found the bus form in front of the park to soltau han (we decided to go to soltau han instead of soltau nord to see the non-existing city :) )
 
@@ -38,13 +38,13 @@ it turns out I love roller coasters. my previous trip to [Hansapark](https://www
 
 The weather forecast says it'll shower at 10am and will we mostly cloudy the rest of the day. BUT it turns out it was raining every 30 minutes to an hour. We took a plastic coat with us for this case which we bought from Hansapark for the same reason. and we ended up wearing it most of the day
 
-![IMG_20210521_114558.jpg](/images/IMG_20210521_114558.jpg)
+![IMG_20210521_114558.jpg](/public/IMG_20210521_114558.jpg)
 
 The park has many roller coasters and panorama trains and thematic areas like Peppa the pig or Dreamworks how to train your dragon themed rides. it's beautiful and colorful.
 
 Also there are wild gooses and ducks with no fences so kids can take pictures with them.
 
-![IMG_20210521_171154.jpg](/images/IMG_20210521_171154.jpg)
+![IMG_20210521_171154.jpg](/public/IMG_20210521_171154.jpg)
 
 One specific ride was very impressive. which is the one with a demon in the pictures above. Another ride named Kraken that moves so fast through water after dropping that it spray water on visitors walking beside it.
 

@@ -12,8 +12,8 @@ takes a set of lines in `this/unix/style/path/format/to/file.ext` and output
 interactive graph of these file paths, using this tool with `git ls-files` you
 can see the whole project structure in one HTML page as a tree, similar to that
 
-![Dirtree tree](/images/dirtree-tree.png)
-![Dirtree tree](/images/dirtree-circles.png)
+![Dirtree tree](/public/dirtree-tree.png)
+![Dirtree tree](/public/dirtree-circles.png)
 
 It's interactive graph that lets you dive into the whole project structure, it
 helped me find unused files and clean my projects.
@@ -25,7 +25,7 @@ its outputs.
 
 so I implemented the template for dirtree and it gave me output similar to this
 
-![Dirtree tree](/images/dirtree-flamegraph.png)
+![Dirtree tree](/public/dirtree-flamegraph.png)
 
 It's a flame graph showing you all files in you project, first time I used this
 graph on one of the projects I discovered a 5 years dead feature laying there

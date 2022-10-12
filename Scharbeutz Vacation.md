@@ -91,18 +91,18 @@ The view of this apartment is taken out of some romantic movie, it looked
 directly on a lake that has some ducks and a private swimming platform, when it
 rained in the third day it had 2 beautiful rainbows.
 
-![rainbows](/images/scharbeutz/rainbow.jpg)
+![rainbows](/public/scharbeutz/rainbow.jpg)
 
 
 We took a walk beside the lake then decided to get back and take the bikes
 around the lake in a full circle, it was a nice ride, and I learned that people
 greet each other there with "Moin" instead of "Hallo" :)
 
-![lake](/images/scharbeutz/lake1.jpg)
-![lake](/images/scharbeutz/lake2.jpg)
-![lake](/images/scharbeutz/lake3.jpg)
-![lake](/images/scharbeutz/lake4.jpg)
-![lake](/images/scharbeutz/lake5.jpg)
+![lake](/public/scharbeutz/lake1.jpg)
+![lake](/public/scharbeutz/lake2.jpg)
+![lake](/public/scharbeutz/lake3.jpg)
+![lake](/public/scharbeutz/lake4.jpg)
+![lake](/public/scharbeutz/lake5.jpg)
 
 ## Second day
 
@@ -122,21 +122,21 @@ crashed whenever I opened it.
 
 These are few pictures of the beach
 
-![Sea](/images/scharbeutz/sea1.jpg)
-![Sea](/images/scharbeutz/sea2.jpg)
-![Sea](/images/scharbeutz/sea3.jpg)
-![Sea](/images/scharbeutz/sea4.jpg)
-![Sea](/images/scharbeutz/sea5.jpg)
-![Sea](/images/scharbeutz/sea6.jpg)
-![Sea](/images/scharbeutz/sea7.jpg)
-![Sea](/images/scharbeutz/sea8.jpg)
+![Sea](/public/scharbeutz/sea1.jpg)
+![Sea](/public/scharbeutz/sea2.jpg)
+![Sea](/public/scharbeutz/sea3.jpg)
+![Sea](/public/scharbeutz/sea4.jpg)
+![Sea](/public/scharbeutz/sea5.jpg)
+![Sea](/public/scharbeutz/sea6.jpg)
+![Sea](/public/scharbeutz/sea7.jpg)
+![Sea](/public/scharbeutz/sea8.jpg)
 
 ## Third day
 
 That was a fun day, really thrilling, we took the bikes in a long ride to
 Hansa-park, then used the tickets we booked online to get in.
 
-![Hansa park map](/images/scharbeutz/hansa-park-map.jpg)
+![Hansa park map](/public/scharbeutz/hansa-park-map.jpg)
 
 The park ticket lets you access all rides inside it for no additional cost for
 any number of rides/times you want.

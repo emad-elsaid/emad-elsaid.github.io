@@ -22,8 +22,8 @@ Here is what happened since I order it until today. my remarks. pros and cons an
 
 # The packaging
 
-![IMG_20220305_162306.webp](/images/IMG_20220305_162306.webp)
-![IMG_20220305_162323.webp](/images/IMG_20220305_162323.webp)
+![IMG_20220305_162306.webp](/public/IMG_20220305_162306.webp)
+![IMG_20220305_162323.webp](/public/IMG_20220305_162323.webp)
 
 * It's package is styled with Grey paper material and a texture that matches the tablet screen color and the pen material
 * The package used only greys and black. no colors. it's a matching design to the device itself
@@ -31,7 +31,7 @@ Here is what happened since I order it until today. my remarks. pros and cons an
 
 # Material/Hardware
 
-![IMG_20220305_162402.webp](/images/IMG_20220305_162402.webp)
+![IMG_20220305_162402.webp](/public/IMG_20220305_162402.webp)
 
 * I loved the choice of a flat cable instead of the normal ones. it matches the flat design of the tablet itself.
 * Pen material is not slippery. it's a material that feels like compressed paper. it feels good in the hand. and the weight is perfect. and the weight is distributed along the pen. so it's not heavier on one side that the other.
@@ -44,8 +44,8 @@ Here is what happened since I order it until today. my remarks. pros and cons an
 
 * The screen has ghosting issue, flipping through pages of a notebook will cause ghosting. also opening and closing the toolbar will do. especially when using Grey colored brush on the page. I believe it's a general issue with E-Ink screens.
 
-![IMG_20220228_142607.webp](/images/IMG_20220228_142607.webp)
-![IMG_20220228_142501.webp](/images/IMG_20220228_142501.webp)
+![IMG_20220228_142607.webp](/public/IMG_20220228_142607.webp)
+![IMG_20220228_142501.webp](/public/IMG_20220228_142501.webp)
 
 * I found some issues with the screen. Writing in one place and the line appears far from the tip. maybe a millimeter. it's annoying. and it happens in an area or two. the rest of the screen is perfectly calibrated. and I found that other people are complaining from the same issue on Reddit and Github issues.
 

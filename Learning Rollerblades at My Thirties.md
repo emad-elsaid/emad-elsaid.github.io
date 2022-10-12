@@ -7,7 +7,7 @@ Anyway, For the past 2 weeks I started to grow some interest in skating with
 rollerblades, If you're like me spent most of your life in a third world country
 on a computer in your bedroom, Let me introduce you to the rollerblades.
 
-![IMG_20200830_190549.jpg](/images/IMG_20200830_190549.jpg)
+![IMG_20200830_190549.jpg](/public/IMG_20200830_190549.jpg)
 
 It all started with a suggestion from my wife that we can give it a try,
 probably we've seen it somewhere on the internet couple too many times that the
@@ -28,7 +28,7 @@ get too many bruises we got also protective gear, it's usually a set for elbow,
 knees and wrist, and off we go to start our adventure. (the following is the
 protective gear picture).
 
-![IMG_20200830_192033.jpg](/images/IMG_20200830_192033.jpg)
+![IMG_20200830_192033.jpg](/public/IMG_20200830_192033.jpg)
 
 So we went to the nearest park to start on the grass, we need a place where we
 put on the rollerblades and just keep our balance standing in them.
@@ -43,7 +43,7 @@ V shape then move them in front of each other.
 These rollerblades we got were for recreation, so they have a brake on the right
 blade, that's useful to stop yourself if you started rolling involuntarily.
 
-![IMG_20200830_193032.jpg](/images/IMG_20200830_193032.jpg)
+![IMG_20200830_193032.jpg](/public/IMG_20200830_193032.jpg)
 
 So the plan is to train for an hour everyday, to grow the skill fast and reach
 the same level of riding a bike.

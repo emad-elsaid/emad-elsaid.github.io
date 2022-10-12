@@ -178,7 +178,7 @@ rails-graph | dot -Tpng > graph.png
 
 You should see the following
 
-![basic graph](/images/erb-graph-1.png)
+![basic graph](/public/erb-graph-1.png)
 
 Now lets put more nodes and numbers to this graph
 
@@ -252,4 +252,4 @@ digraph graphname {
 ```
 
 The result will be as follows:
-![basic graph](/images/erb-graph-2.png)
+![basic graph](/public/erb-graph-2.png)

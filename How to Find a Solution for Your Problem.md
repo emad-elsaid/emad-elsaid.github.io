@@ -9,7 +9,7 @@
 
 For more clarification please refer to the following graph
 
-![googling graph](/images/googling_graph.png)
+![googling graph](/public/googling_graph.png)
 
 ## Exercise
 

@@ -10,7 +10,7 @@ Lets take a look on a basic modern web based system, There are several layers
 on software running on the machine, starting from firmware to your business
 logic.
 
-![IMG_20200915_212438.jpg](/images/IMG_20200915_212438.jpg){: class="center"}
+![IMG_20200915_212438.jpg](/public/IMG_20200915_212438.jpg){: class="center"}
 
 I don't think this is very helpful to understand the gravity of the situation.
 There are many actors that are not considered in this picture. Layers are also
@@ -18,7 +18,7 @@ missing because they are implicit in other layers. Lets expand these hidden
 layers and actors. It will help us understand better why that small Nodejs or
 RubyOnRails application we wrote isn't just one layer in this picture.
 
-![IMG_20200915_214548.jpg](/images/IMG_20200915_214548.jpg){: class="center"}
+![IMG_20200915_214548.jpg](/public/IMG_20200915_214548.jpg){: class="center"}
 
 Here are the layers we added this time:
 
@@ -41,7 +41,7 @@ reporting or provide parts of the system functionality that can take more time
 to build by the company team. lets add them to the picture along with their
 teams.
 
-![IMG_20200915_221047.jpg](/images/IMG_20200915_221047.jpg){: class="center"}
+![IMG_20200915_221047.jpg](/public/IMG_20200915_221047.jpg){: class="center"}
 
 This picture is for one application, I won't expand it to a whole system with
 different services and programs that is the reality of all companies.
@@ -59,14 +59,14 @@ external system you're putting your trust in this service team and their ability
 in delivering what the service is promising now **and** in the future. This is not
 an easy decision and it should be treated as such.
 
-![IMG_20200915_224907.jpg](/images/IMG_20200915_224907.jpg){: class="center"}
+![IMG_20200915_224907.jpg](/public/IMG_20200915_224907.jpg){: class="center"}
 
 Now lets move to the direct dependencies of your application. If you're using
 any modern programming language it'll have a way to package code into reusable
 format that could be reused by other applications. one package can use code from
 other packages, these packages can use other packages and so on like a tree.
 
-![IMG_20200915_231326.jpg](/images/IMG_20200915_231326.jpg){: class="center"}
+![IMG_20200915_231326.jpg](/public/IMG_20200915_231326.jpg){: class="center"}
 
 With every package in this tree we depend on the code inside this package and
 the team that maintains it. A freshly generated rails project depends on 74

@@ -44,8 +44,8 @@ This solution partially solved my problem. it's missing one piece. In the origin
 
 So this solution is good enough. and you can find it in action if you're on a small screen on this page.
 
-![Screenshot-2022-01-22_14-05-24.webp](/images/Screenshot-2022-01-22_14-05-24.webp)
-![Screenshot-2022-01-22_14-05-30.webp](/images/Screenshot-2022-01-22_14-05-30.webp)
+![Screenshot-2022-01-22_14-05-24.webp](/public/Screenshot-2022-01-22_14-05-24.webp)
+![Screenshot-2022-01-22_14-05-30.webp](/public/Screenshot-2022-01-22_14-05-30.webp)
 
 ### Update
 
@@ -98,4 +98,4 @@ And select the menu with `~` instead of `+` and apply the transformation to the 
 
 This solves the button transformation as you see in this screenshot
 
-![Screenshot-2022-01-25_19-06-23.webp](/images/Screenshot-2022-01-25_19-06-23.webp)
+![Screenshot-2022-01-25_19-06-23.webp](/public/Screenshot-2022-01-25_19-06-23.webp)
