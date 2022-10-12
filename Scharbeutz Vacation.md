@@ -22,7 +22,7 @@ Port-Said, So we decided to go there.
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2344.097929459261!2d10.74381711602659!3d54.01878563183017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2746d5428a159%3A0x961060540a64020c!2sScharbeutz!5e0!3m2!1sen!2sde!4v1598947226491!5m2!1sen!2sde" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-## Transportation
+# Transportation
 
 Scharbeutz doesn't have public transportation that I know of, And I don't have a
 driving license as I hate driving, so we thought we can take our bikes with us.
@@ -39,7 +39,7 @@ shops and we got a good recommendation for a place called "Tobisrad" in a
 walking distance of the station.
 
 
-## Accommodation
+# Accommodation
 
 Next was our stay, we tried Airbnb and booking.com, I wanted a place with water
 view in-front of it, and we found 2 places, one I contacted the first one he
@@ -47,13 +47,13 @@ changed his availability so that all the days I'm asking about is busy, for the
 second one we succeeded at booking it from booking.com it was a nice one room
 apartment with a nice view on a lake.
 
-## Food
+# Food
 
 We didn't overthink this one, so the first trivial thing is to drop to one of
 the large super markets and get some breakfast/dinner food, and for lunch we'll
 decide on daily basis.
 
-## Activities
+# Activities
 
 We wanted to stay for 3 nights, so we thought our highest priority is walking on
 the beach, get wet and just enjoy the sun and the water.
@@ -65,7 +65,7 @@ activities we'll enjoy.
 For the third day we can go for a tunnel that has a nice ceiling with Aquarium
 in it.
 
-## Arrival
+# Arrival
 
 Our travel from Berlin to Scharbeutz took us 3 trains to get there, there is no
 direct trains from Berlin to Scharbeutz so most options are 3 trains, found one
@@ -81,7 +81,7 @@ reach it, we underestimated the distance from the beach to the apartment, on
 google maps it's one street from there but in reality it took around 15 minutes
 by bike to get there.
 
-## First day
+# First day
 
 The check-in was straightforward and the apartment was as I expected, everything
 was in place and working perfectly, add to that the huge TV on the wall that
@@ -104,7 +104,7 @@ greet each other there with "Moin" instead of "Hallo" :)
 ![lake](/public/scharbeutz/lake4.jpg)
 ![lake](/public/scharbeutz/lake5.jpg)
 
-## Second day
+# Second day
 
 We took a ride to the beach, normally I have to pay to get in there, but with
 the check-in we were given 2 cards we can use during our stay to access the
@@ -146,7 +146,7 @@ kids :) , The most thrilling one for me was a roller coaster that was extremely
 fast and spins like crazy (Der schwub des karnan), The second one was a lighter
 version of it (Fluch von Novgorod) I liked it very much that I took the ride twice.
 
-## The fourth day
+# The fourth day
 
 It was time to checkout, also that was straight forward, the host was very
 friendly gentleman, We met him in the morning, checked-out and took off to
@@ -154,7 +154,7 @@ return our bikes, Then we walked to the station waiting for the first train
 back to Berlin.
 
 
-## Conclusion
+# Conclusion
 
 It was a relaxing couple of days (not mentioning all the screaming in Hansa-Park
 :)) and I think I would do it again, I even thought of getting there in the
