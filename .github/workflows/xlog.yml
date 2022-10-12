@@ -31,7 +31,7 @@ jobs:
 
       - name: Install xlog
         run: |
-          pushd $GOPATH
+          pushd ..
           git clone https://github.com/emad-elsaid/xlog.git
           cd xlog
           go install .
