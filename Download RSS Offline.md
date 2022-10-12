@@ -1,3 +1,4 @@
+#ruby 
 
 Couple weeks ago I changed my workflow regarding reading/sending emails. So to
 have more control over my emails I started using

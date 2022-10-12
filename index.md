@@ -1,8 +1,10 @@
+![](/public/4717c7d6d9e9f123c09ba082b1d7a72ee1b39509b6e2afcdbbc8fb91081caf1a.jpg)
+
 Hi, This is my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's my public space. It includes notes, ideas and experiments. Anything I'm involved in will be part of this garden.
 
-I'm a software engineer.
+I'm a [software engineer](<Why I became a software developer>).
 
-* Back-end focused. I mainly work with #Ruby and #Go.
+* Back-end focused. I mainly use #Ruby and #Go.
 * I like to work on side projects. you'll find a list of them on [GitHub](https://www.github.com/emad-elsaid)
 * Sometimes I'll tweet random ideas on [Twitter](https://www.twitter.com/emad__elsaid)
 * Or write stories or fun anecdotes on [Facebook](https://www.facebook.com/emad.elsaid.hamed)
@@ -14,9 +16,15 @@ I'm a software engineer.
 # My Hobbies includes
 
 * :keyboard: Programming  
+	- #Ruby : The main language I'm using daily for the past years
+    - #Go : Learned it around 2018 and it's been my favorite language. and gradually switching to it
+    - #Javascript : I used it since I learned how to code, I use it exclusively in the browser and when it's needed
+    - #CPP : I'm interested in keeping a moderate skill to use C++ it keeps me close to the low level techinicalities
+    - #Elisp: I have a pretty basic level of command for Emacs Lisp as I'm using Emacs on daily basis and extended it with some features for my needs
+    
 * :video_game:  Video Games
 * :sunny:  Reading science fiction mostly
-* :ice_skate:  Inline Skating
+* :ice_skate:  [Inline Skating](<Learning Rollerblades at My Thirties>)
 * :bike:  Cycling
 
 # Sideprojects
@@ -53,7 +61,7 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 
 ### Code Snippets
 
-- #go 
+- #Go 
 	- Converting Ruby sinatra project to Go
 	- Copy file
 	- Country code to flag emojie in Go
@@ -61,7 +69,7 @@ I developed interest in decentralization technologies and #p2p  solutions. these
     - Go slice that doesn't grow past capacity
 	- Golang Bleve Experience
 	- Replacing Golang Regexp matching with a premitive faster solution
-- #ruby 
+- #Ruby 
 	- Cloning All Your GitHub Repositories or Updating Them in One Command
 	- ERB Templates as Standalone Executables
 	- Git as Messages Queue
@@ -71,14 +79,15 @@ I developed interest in decentralization technologies and #p2p  solutions. these
     - Tracing Ruby Applications Execution in 4 Lines
     - Rails Accepts_nested_attributes for polymorphic relation solution
 	- Projects Files Flame Graph
-- #shell
+	- Download RSS Offline
+- #Shell
 	- Linux named pipes
 	- Getting Your CPU Speed in GHz on Linux
-- #sql
+- #SQL
 	- Representing Named Entity Mention in Postgres for Fast Queries
 - #javascript
 	- Implementing Hover Cards With Minimum Javascript
-- #cpp 
+- #CPP 
 	- CPP Limit int type by max value
 
 ### Opinions 
@@ -86,7 +95,6 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - Consistency Over Creativity
 - Meta work is destroying actual work
 - On Modern Web Applications Stability
-- Why I became a software developer
 - Don't Throw Your Question Over the Fence
 - Language Compression
 
@@ -96,7 +104,6 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 
 ### Misc
 
-- Download RSS Offline
 - Explain all SQL statements in rails
 - Exporting a Facebook Group as a Website
 - Faculty of Computer and Informatics Suez Canal University curriculums list
@@ -105,7 +112,6 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - How do I prototype my ideas
 - How to Find a Solution for Your Problem
 - Interesting GNU Projects
-- Learning Rollerblades at My Thirties
 - Monitor Window10 Foreground Window
 - Moving from Lastpass.com to KeePassXC on Linux-Android-Windows
 - My Blog Properties
@@ -155,3 +161,11 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 ### مراجعة كتب
 
 - مراجعة رواية The Gods Themselves
+
+# About this site
+
+It's built using Xlog from markdown [repository hosted on Github](https://github.com/emad-elsaid/emad-elsaid.github.io). And it uses no Javascript. except for 2 lines that allow Right-To-Left (RTL) pages to be displayed in the correct direction.
+
+If you find issues or typos I will be thankful if you went to the repository and edit the file and open a pull request with the changes.
+
+Images are optimized with mogrify and stripped from EXIF data to stay lite to your bandwidth
