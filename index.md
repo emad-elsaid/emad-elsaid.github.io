@@ -34,6 +34,7 @@ I write sideprojects in my spare time. my interest changes over time. The follow
 * Who is popular today ? : a project that collects news and people pages from wikipedia and cross link them together.
 * Xlog : Personal knowledgebase server and it's what generates this blog
 * Golang Debugger : a GUI interface for Delve #go debugger
+* [Library](https://github.com/emad-elsaid/library) : That's my physical library I built it to have a simpler solution than Goodreads. less bloated and where I can control it
 
 # :notebook:  Notes
 
