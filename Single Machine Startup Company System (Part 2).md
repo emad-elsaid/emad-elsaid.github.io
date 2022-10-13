@@ -1,5 +1,4 @@
-
-In the [last post](/single-machine-startup-company-system) I presented a simple way to build a single machine system for a small startup. The system will have many users and teams and services running for each team some of them are internet facing.
+In the [last post](<Single Machine Startup Company System>) I presented a simple way to build a single machine system for a small startup. The system will have many users and teams and services running for each team some of them are internet facing.
 
 I want to explore this idea further more. I want to make this system/company independent of any other company as much as possible. I want this single machine to have the software needed for internal use of this company.
 

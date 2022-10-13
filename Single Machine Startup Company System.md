@@ -6,11 +6,11 @@ This following will be my attempt to aggregate the knowledge I gained to build a
 
 At the end of this page we should have a Linux system that's ready to host several web applications with all it needs from HTTP servers, database servers, caching server, logs and monitoring..etc.
 
-## A New Linux server, Where should I start?
+# A New Linux server, Where should I start?
 
 You can get a good VPS server for cheap price from many providers, Digital ocean and Linode are famous choices, My favorite provider is Hetzner their prices are way better and they are very reliable I'm have been a customer for 5 years now with no issues.
 
-## Allow SSH key login and disable password login
+# Allow SSH key login and disable password login
 
 The default login to your VPS server uses a username and password so lets make that better.
 
@@ -44,7 +44,7 @@ If you want to show your server SSH service logs you can use another program fro
 journalctl --unit ssh
 ```
 
-### Make it easier to SSH
+## Make it easier to SSH
 
 On your local machine SSH command reads `~/.ssh/config` to know about the servers and their IP addresses and which keys to use and which user...etc so I do a simple configuration for my SSH server in this file as follows:
 
@@ -72,7 +72,7 @@ This simple configuration saved me a lot of time.
 
 Many guides on the web recommend having SSHd listening on another port than the default and disabling the root user login and using another user name. I fail to see the benefit for that so far but feel free to do it if you wish.
 
-## Update the system packages
+# Update the system packages
 
 Lets update the packages. The command will depend on your distribution.
 
@@ -81,7 +81,7 @@ Ubuntu: apt update && apt upgrade && apt autoremove
 Archlinux: pacman -Syu
 ```
 
-## Clean the system
+# Clean the system
 
 I also review the installed packages and uninstall the unnecessary ones, list your installed packages with
 
@@ -108,7 +108,7 @@ Also the enabled timers
 systemctl list-timers
 ```
 
-## Enable the firewall
+# Enable the firewall
 
 Lets allow SSH only for now and enable the firewall, make sure you can login with SSH after doing it
 
@@ -117,7 +117,7 @@ ufw allow ssh
 ufw enable
 ```
 
-## Setting up users groups
+# Setting up users groups
 
 First concept we'll map from our company is Teams. Each team in the company we'll correspond to a Linux group. Teams members will be Linux users in their teams group. Simple and straight forward.
 
@@ -138,11 +138,11 @@ chmod g+s /home/teamname
 
 Each team directory will be readable and writable for each member of the team.
 
-## Give access to each team member
+# Give access to each team member
 
 Each user should generate an SSH key and you should get their public key and add it to their `.ssh/authorized_keys`
 
-## Our first web service
+# Our first web service
 
 Now we have our teams setup and team members on our system, they can login and use the system existing software, they can download binaries and run it as they wish.
 
@@ -150,7 +150,7 @@ This means if there is a program one of our teams wrote they can run it by login
 
 Having this application run as the team user instead of the team member user is the first challenge we'll tackle.
 
-## Running web service as a systemd service
+# Running web service as a systemd service
 
 This is the next concept we'll map from our real world to the system. Each project we'll need to run on our system will be equivalent to a systemd service.
 
@@ -241,7 +241,7 @@ And add your domain name to `/etc/hosts` to allow local services to resolve it f
 
 So now you can curl your service with `curl http://companyname.tld:8080` instead.
 
-## Further securing your web service
+# Further securing your web service
 
 Systemd provides many features to isolate your service so in the case of misbehaving it'll do the least damage possible to the system.
 
@@ -249,11 +249,11 @@ Each of these features can be turned on by adding the property name in the servi
 
 Many of these features are listed in `man systemd.exec` especially "Sandboxing" section.
 
-## Special environment variables for the service
+# Special environment variables for the service
 
 Most of the time projects read their configuration from the system environment, with Systemd you can set `EnvironmentFile=/path/to/.envfile` to set the file content as environment for this service.
 
-## Checking your service logs
+# Checking your service logs
 
 Journalctl will keep the service standard output and standard error to log files you can check it with:
 
@@ -270,7 +270,7 @@ sudo -u teamname journalctl
 You can check logs for a service since or until a date with `--since` and `--until` which accepts several formats like "today" "yesterday" or "2020-09-28" then you can pipe it to `grep` to search for a specific log.
 
 
-## Making the service accessible on the internet
+# Making the service accessible on the internet
 
 Now we need this service to be accessible on the internet through `www.companyname.tld`. As our system will have many web services each one of them will listen on a port inside our system and we'll then route the traffic from port 80 to the service based on the hostname.
 
@@ -327,11 +327,11 @@ Now you can add DNS A record to your DNS provider to your server that route all 
 
 If you used Cloudflare you can turn on their CDN feature and it'll hide the server IP address behind their proxy network, so the DNS will resolve to their proxy and the proxy will communicate with your server. and in this case you can actually refuse any traffic coming to Haproxy except from cloudflare IPs.
 
-## A note on automation
+# A note on automation
 
 Mybe we did everything manually here but that doesn't mean it's the only way. You can still automate every step we did so far with a bash script and `scp` it and execute it on the host with `ssh vps /path/to/script`, it's as simple as that. If this is too easy for you there is always more automation software to squeez in your tech stack.
 
-## It's never done
+# It's never done
 
 There is always problems to solve and improvements to the system like:
 
@@ -345,6 +345,6 @@ The important thing is Linux systems can be multitenent and one system can hold 
 
 The only thing that will stop in your way is inefficient software, and for that you'll need to make abit of an extra effort to tame it.
 
-## Read More:
+# Read More:
 
-* [Part 2](/single-machine-startup-company-system-part-2)
+* [Part 2](<Single Machine Startup Company System (Part 2)>)
