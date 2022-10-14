@@ -31,11 +31,7 @@ jobs:
 
       - name: Install xlog
         run: |
-          pushd ..
-          git clone https://github.com/emad-elsaid/xlog.git
-          cd xlog
-          go install .
-          popd
+          go install github.com/emad-elsaid/xlog/cmd/xlog@latest
 
       - name: Build
         run: |
