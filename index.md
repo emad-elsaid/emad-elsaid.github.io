@@ -2,9 +2,10 @@
 
 Hi, This is my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's my public space. It includes notes, ideas and experiments. Anything I'm involved in will be part of this garden.
 
-I'm a [software engineer](<Why I became a software developer>).
+I'm a [software engineer](<Why I became a software developer>) backend focused. I mainly use #Ruby and #Go.
 
-* Back-end focused. I mainly use #Ruby and #Go.
+# Social profiles
+
 * I like to work on side projects. you'll find a list of them on [GitHub](https://www.github.com/emad-elsaid)
 * Sometimes I'll tweet random ideas on [Twitter](https://www.twitter.com/emad__elsaid)
 * Or write stories or fun anecdotes on [Facebook](https://www.facebook.com/emad.elsaid.hamed)
@@ -13,7 +14,7 @@ I'm a [software engineer](<Why I became a software developer>).
 * I used to stream on [Twitch](https://www.twitch.tv/internalerr) for a while. I may get back to it
 * And if you're on [Keybase](https://keybase.io/emadelsaid) you can send me encrypted messages if you're seeking confidentiality.
 
-# My Hobbies includes
+# My Hobbies
 
 * :keyboard: Programming  
 	- #Ruby : The main language I'm using daily for the past years
@@ -21,6 +22,7 @@ I'm a [software engineer](<Why I became a software developer>).
     - #Javascript : I used it since I learned how to code, I use it exclusively in the browser and when it's needed
     - #CPP : I'm interested in keeping a moderate skill to use C++ it keeps me close to the low level techinicalities
     - #Elisp: I have a pretty basic level of command for Emacs Lisp as I'm using Emacs on daily basis and extended it with some features for my needs
+    - List of my current hardware 
     
 * :video_game:  Video Games
 * :sunny:  Reading science fiction mostly
@@ -31,6 +33,7 @@ I'm a [software engineer](<Why I became a software developer>).
 
 I write sideprojects in my spare time. my interest changes over time. The following are projects I'm involved in right now or in operation without development: 
 
+* Mau : a convention for building P2P Web 2 applications 
 * Who is popular today ? : a project that collects news and people pages from wikipedia and cross link them together.
 * Xlog : Personal knowledgebase server and it's what generates this blog
 * Golang Debugger : a GUI interface for Delve #go debugger
@@ -38,7 +41,7 @@ I write sideprojects in my spare time. my interest changes over time. The follow
 
 # :notebook:  Notes
 
-I write in two languages (Arabic, English)
+I write in two languages (Arabic, English). In every note I try to add a personal touch with an image I captured in my everyday life
 
 ## :us:  In English
 
