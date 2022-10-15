@@ -1,3 +1,5 @@
+![](/public/6eb66cd18c75cdff05ddab3257aa42e4fef6736d8ffbd872cbeca313a0ca41f3.jpg)
+
 The following is my hardware and its specifications: 
 
 # Desktop PC
