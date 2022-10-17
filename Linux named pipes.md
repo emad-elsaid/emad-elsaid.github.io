@@ -99,7 +99,7 @@ When the process writes to the write file descriptor the kernel will block until
 
 # Shortcomings
 
-The pipe is a good tool to flow standard output of a command to the standard input of another command. But what if the command doesn't read from standard input? in this case we can use the **named pipe**
+The pipe is a good tool to flow standard output of a command to the standard input of another command. But what if the command reads from a file instead of standard input? in this case we can use the **named pipe**
 
 # Named pipe
 
