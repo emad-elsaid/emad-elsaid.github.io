@@ -15,7 +15,7 @@ The following is my hardware and its specifications:
 	- Case: NZXT H500i ATX Mid Tower Case
 	- PSU: Corsair RM650x (2018) 650 W 80+ Gold Certified Fully Modular ATX Power Supply
 	- Fans: 2 X NZXT AER RGB 2 52.44 CFM 120 mm Fan
-- Accessories: 
+- Peripherals: 
 	- Monitor: LG 27GL850-B 68,58 cm (27 inch) UltraGear QHD IPS Gaming Monitor (144 Hz, 1ms GTG, G-Sync, DAS Mode)
 	- Keyboard: Microsoft Sculpt Ergonomic Keyboard For Business Wireless Ergonomic Keyboard
 	- Webcam: Logitech C920 HD PRO Webcam, Full-HD 1080p
@@ -36,7 +36,6 @@ The following is my hardware and its specifications:
 	- Intel HD Graphics 620
 	- 512 GB Solid State Drive, PCIe-NVMe OPAL2.0
 	- 3cell Battery 57Wh
-	- 45-Watt-Netzteil (3 Pins) – EU (USB Typ C)
 	- Intel Dual Band Wireless AC(2x2) 8265, Bluetooth Version 4.1
 	- Qualcomm Snapdragon X7 LTE-A (Sierra Wireless EM7455)
 	- Micro-SIM-Karte Lenovo Connect
