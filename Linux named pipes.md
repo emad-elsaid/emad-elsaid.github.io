@@ -88,7 +88,7 @@ product: Microsoft PS/2-style Mouse
 
 You can extend this to remove the `product: ` prefix in every line.
 
-## The Pipe
+# The Pipe
 
 So this sign we used `|` is called a **pipe** and what happens when we use it between two commands is that the shell will execute both commands and pass the standard output **stdout** of the left command to the **stdin** of the right command. which makes the commands output flow without temperory storage from one process to the next.
 
@@ -97,11 +97,11 @@ The Pipe is created pragmatically using **unistd.h** `pipe` function. It creates
 When the process writes to the write file descriptor the kernel will block until the other process is reading from the other reading file descriptor. then it will flow the written data from the write file to the reading file.
 
 
-## Shortcomings
+# Shortcomings
 
 The pipe is a good tool to flow standard output of a command to the standard input of another command. But what if the command doesn't read from standard input? in this case we can use the **named pipe**
 
-## Named pipe
+# Named pipe
 
 Named pipe is just like the pipe but it is represented as a file on the filesystem. so you can pass it to any command that reads or writes to a file and the data will flow from the writing process to the reading process without actually writing it to the disk. the file size remains 0 bytes.
 
@@ -145,7 +145,7 @@ You'll notice that `lshw` terminal is waiting and the `grep` also is waiting unt
 
 so all commands will run in parallel and the data will flow between them without writing it to the disk. if you check the pipe files size it'll be 0 bytes. You can delete the pipe file like any other file with `rm` or `unlink`.
 
-## Usage possibilities
+# Usage possibilities
 
 * If you have processes that reads or writes to files not to **stdin** and **stdout** you can create the pipe and pass it as a file parameter.
 * If you have a really large continuous output that you don't want to persist on disk just to process it with a program.
