@@ -22,12 +22,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: dist
+          fetch-depth: 0
 
-      - name: Restore modification date
-        run: |
-          for f in $(git ls-tree -r -t --full-name --name-only "HEAD") ; do
-            touch -d $(git log --pretty=format:%cI -1 "HEAD" -- "$f") "$f";
-          done
+      - name: restore timestamps
+        uses: chetan/git-restore-mtime-action@v1
 
       - name: Set up Go
         uses: actions/setup-go@v3
