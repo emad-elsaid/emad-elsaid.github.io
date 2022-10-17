@@ -43,7 +43,8 @@ jobs:
           xlog \
           --build . \
           --sitename "Emad Elsaid" \
-          --sidebar=false
+          --sidebar=false \
+          --index=Home
           rm *.md
           chmod -R 0777 .
 
