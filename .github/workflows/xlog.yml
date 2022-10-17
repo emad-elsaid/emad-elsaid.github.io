@@ -23,6 +23,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Restore modification date
+        run: |
+          for f in $(git ls-tree -r -t --full-name --name-only "HEAD") ; do
+            touch -d $(git log --pretty=format:%cI -1 "HEAD" -- "$f") "$f";
+          done
+
       - name: Set up Go
         uses: actions/setup-go@v3
         with:
