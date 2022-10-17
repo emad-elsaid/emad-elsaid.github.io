@@ -1,4 +1,5 @@
-![](/public/4717c7d6d9e9f123c09ba082b1d7a72ee1b39509b6e2afcdbbc8fb91081caf1a.jpg)
+![](/public/bccd47d76bb0511b158fe635175ca58655bc685a39945d95053d8174133b5b11.jpg)
+
 
 Hi, This is my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's my public space. It includes notes, ideas and experiments. Anything I'm involved in will be part of this garden.
 
