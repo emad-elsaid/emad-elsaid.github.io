@@ -1,5 +1,7 @@
 ![](/public/IMG_20211214_154230.webp)
 
+#go 
+
 I have a small side project written in Ruby. It uses PostgreSQL database, Sinatra framework and ActiveRecord. The project is meant to replace my goodreads for my use case.
 
 I wanted to practice Go more. So it is a good opportunity to write this same project in Go. My goal is to get to translate my Ruby/Sinatra/ActiveRecord skills to Go tools. And as the project is small it shouldn't take forever to do it.
@@ -136,7 +138,7 @@ GET("/path/to/handle", func(w Response, r Request) ???? {
 But the `http.HandlerFunc` signature doesn't have a return type. so I need to define my own `HandlerFunc` that's slightly different.
 
 What the function returns should be able to take the request and response writer and do some logic. soooo it should return a function with this signature
-```
+```go
 func(http.ResponseWriter, r *http.Request)
 ```
 
