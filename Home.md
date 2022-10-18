@@ -3,7 +3,7 @@
 
 Hi, This is my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's my public space. It includes notes, ideas and experiments. Anything I'm involved in will be part of this garden.
 
-I'm a [software engineer](<Why I became a software developer>) backend focused. I mainly use #Ruby and #Go.
+I'm a [software engineer](</Why I became a software developer>) backend focused. I mainly use #Ruby and #Go.
 
 # Social profiles
 
