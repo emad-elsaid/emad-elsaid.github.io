@@ -1,19 +1,19 @@
 ![](/public/bccd47d76bb0511b158fe635175ca58655bc685a39945d95053d8174133b5b11.jpg)
 
 
-Hi, This is my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's my public space. It includes notes, ideas and experiments. Anything I'm involved in will be part of this garden.
+Hi, This is my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's a public space. It includes notes, ideas and experiments. Anything I'm involved in will be part of this garden.
 
 I'm a [software engineer](</Why I became a software developer>) backend focused. I mainly use #Ruby and #Go.
 
 # Social profiles
 
-* I like to work on side projects. you'll find a list of them on [GitHub](https://www.github.com/emad-elsaid)
-* Sometimes I'll tweet random ideas on [Twitter](https://www.twitter.com/emad__elsaid)
-* Or write stories or fun anecdotes on [Facebook](https://www.facebook.com/emad.elsaid.hamed)
-* Also sometimes I make youtube videos, book reviews or gameplays or even some thoughts about software engineering on [Youtube](http://youtube.com/EmadElsaid)
-* I'm not active on [Linkedin](https://www.linkedin.com/in/emadelsaid) but I keep my profile updated as much as possible
-* I used to stream on [Twitch](https://www.twitch.tv/internalerr) for a while. I may get back to it
-* And if you're on [Keybase](https://keybase.io/emadelsaid) you can send me encrypted messages if you're seeking confidentiality.
+*  [GitHub](https://www.github.com/emad-elsaid) have all my sideprojects. it's one of my hobbies.
+* [Twitter](https://www.twitter.com/emad__elsaid) will have my random ideas of photographs. 
+* [Facebook](https://www.facebook.com/emad.elsaid.hamed) for me is more about connecting to family and egyptian devs community
+* [Youtube](http://youtube.com/EmadElsaid) include videos about book reviews or gameplays or even some thoughts about software engineering. 
+* [Linkedin](https://www.linkedin.com/in/emadelsaid) I keep my professional profile updated as much as possible
+* [Twitch](https://www.twitch.tv/internalerr) streams used to be fun for a while. I may get back to it
+* [Keybase](https://keybase.io/emadelsaid) can be used to send me encrypted messages if you're seeking confidentiality.
 
 # My Hobbies
 
