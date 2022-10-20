@@ -37,8 +37,9 @@ I write sideprojects in my spare time. my interest changes over time. The follow
 * Mau : a convention for building P2P Web 2 applications 
 * Who is popular today ? : a project that collects news and people pages from wikipedia and cross link them together.
 * Xlog : Personal knowledgebase server and it's what generates this blog
-* Golang Debugger : a GUI interface for Delve #go debugger
-* [Library](https://github.com/emad-elsaid/library) : That's my physical library I built it to have a simpler solution than Goodreads. less bloated and where I can control it
+* [Golang Debugger](https://github.com/emad-elsaid/debugger) : a GUI interface for Delve #go debugger
+* [Library](https://github.com/emad-elsaid/library) : a simpler solution than Goodreads to manage [my books](https://library.emadelsaid.com/users/0c731704-073d-4433-b38b-1dc912f7046c)
+* [Live](https://github.com/emad-elsaid/live) : a program that gets live streams from youtube channels. 
 
 # :notebook:  Notes
 
