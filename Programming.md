@@ -8,7 +8,7 @@
 
 # Used it professionally in my early career
 
-- #PHP
+- #PHP : I landed my first couple jobs after learning PHP and used it for the 4 years in Uni while working as part time dev then for another 2 years full time dev after graduation.
 
 # Languages I use occasionally
 
