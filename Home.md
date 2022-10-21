@@ -17,15 +17,8 @@ I'm a [software engineer](</Why I became a software developer>) backend focused.
 
 # My Hobbies
 
-* :keyboard: Programming  
-	- #Ruby : The main language I'm using daily for the past years
-    - #Go : Learned it around 2018 and it's been my favorite language. and gradually switching to it
-    - #Javascript : I used it since I learned how to code, I use it exclusively in the browser and when it's needed
-    - #CPP : I'm interested in keeping a moderate skill to use C++ it keeps me close to the low level techinicalities
-    - #Elisp: I have a pretty basic level of command for Emacs Lisp as I'm using Emacs on daily basis and extended it with some features for my needs
-    - List of my current hardware 
-    
-* :video_game:  Video Games
+* :keyboard: Programming (Hardware) 
+* :video_game:  Video Games (Hardware)
 * :sunny:  Reading science fiction mostly
 * :ice_skate:  [Inline Skating](<Learning Rollerblades at My Thirties>)
 * :bike:  Cycling

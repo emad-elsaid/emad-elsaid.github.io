@@ -1,5 +1,7 @@
 ![Pyramids of Giza, Cairo, Egypt](/public/IMG_20200217_161802.jpg)
 
+#Personal
+
 In my teen years I mostly liked two things, Drawing and Computers. I used to get high grades in mostly everything, even the subjects I didn't like like English and math. But what I really liked to do was drawing. I was not the best in my class, maybe second or third best but I liked the feeling of drawing and coloring.
 
 Like most boys in my age I also liked to take things apart and putting them together again. Understanding what's inside our TV, Radio, my little toys was one of my interests. I liked the idea of building new shiny things. Solving problems and making other people lives better. I wanted to be a famous inventor when I grow up. Although drawing was a beautiful thing but becoming an inventor was the thing I wanted.

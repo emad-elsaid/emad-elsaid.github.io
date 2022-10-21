@@ -1,5 +1,7 @@
 #ruby #elisp
 
+/info Since I wrote this note my workflow changed drastically not I'm using Xlog a program I wrote myself
+
 I started using emacs couple weeks ago and i have to say that i'm amazed by how this editor is working, Emacs VS VIM war isn't coming from nowhere after all.
 
 one thing that annoys me is that i stopped blogging for a long time, if you checked the last blog post, it's been a year since the last one.
