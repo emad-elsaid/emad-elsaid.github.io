@@ -56,4 +56,6 @@ https://www.youtube.com/watch?v=9dxhDo2F06k
 
 # Github project 
 
-The program is open source on github: https://github.com/emad-elsaid/xlog
+The program is open source on github: 
+
+https://github.com/emad-elsaid/xlog
