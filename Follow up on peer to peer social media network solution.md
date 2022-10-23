@@ -1,5 +1,7 @@
 ![](/public/IMG_20201225_134447.jpg)
 
+#p2p 
+
 In A general idea of a peer to peer social network I presented some simple ideas that can work together to create a peer to peer social network.
 
 In this post I want to get into more details. Imagine a simple application and its interface with the user and with other instances of itself.
