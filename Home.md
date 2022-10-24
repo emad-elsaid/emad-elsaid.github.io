@@ -20,7 +20,7 @@ I'm a [software engineer](</Why I became a software developer>) backend focused.
 * :keyboard: Programming (Hardware) 
 * :video_game:  Video Games (Hardware)
 * :sunny:  Reading science fiction mostly
-* :ice_skate:  [Inline Skating](<Learning Rollerblades at My Thirties>)
+* :ice_skate:  [Inline Skating](</Learning Rollerblades at My Thirties>)
 * :bike:  Cycling
 
 # Sideprojects
