@@ -1,4 +1,4 @@
-#ruby
+#ruby #html #javascript #css
 
 # Boring Rails
 

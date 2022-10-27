@@ -23,9 +23,9 @@ I'm a [software engineer](</Why I became a software developer>) backend focused.
 * :ice_skate:  [Inline Skating](</Learning Rollerblades at My Thirties>)
 * :bike:  Cycling
 
-# Sideprojects
+# Projects
 
-I write sideprojects in my spare time. my interest changes over time. The following are projects I'm involved in right now or in operation without development: 
+The following are projects I'm involved in right now or in operation without development: 
 
 * Mau : a convention for building P2P Web 2 applications 
 * Who is popular today ? : a project that collects news and people pages from wikipedia and cross link them together.
@@ -60,34 +60,33 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 
 ### Code Snippets
 
-- #Go 
-	- Converting Ruby sinatra project to Go
-	- Copy file
-	- Country code to flag emojie in Go
-    - Go function logging technique
-    - Go slice that doesn't grow past capacity
-	- Golang Bleve Experience
-	- Replacing Golang Regexp matching with a premitive faster solution
-- #Ruby 
-	- Cloning All Your GitHub Repositories or Updating Them in One Command
-	- ERB Templates as Standalone Executables
-	- Git as Messages Queue
-	- Deploy rails application with docker compose and capistrano
-    - Integerating Jekyll and Octopress in Emacs
-    - Enforcing Project Structure With Rspec
-    - Tracing Ruby Applications Execution in 4 Lines
-    - Rails Accepts_nested_attributes for polymorphic relation solution
-	- Projects Files Flame Graph
-	- Download RSS Offline
-- #Shell
-	- Linux named pipes
-	- Getting Your CPU Speed in GHz on Linux
-- #SQL
-	- Representing Named Entity Mention in Postgres for Fast Queries
-- #javascript
-	- Implementing Hover Cards With Minimum Javascript
-- #CPP 
-	- CPP Limit int type by max value
+#### #Go 
+/hashtag-pages #go 
+
+####  #Ruby 
+- Cloning All Your GitHub Repositories or Updating Them in One Command
+- ERB Templates as Standalone Executables
+- Git as Messages Queue
+- Deploy rails application with docker compose and capistrano
+- Integerating Jekyll and Octopress in Emacs
+- Enforcing Project Structure With Rspec
+- Tracing Ruby Applications Execution in 4 Lines
+- Rails Accepts_nested_attributes for polymorphic relation solution
+- Projects Files Flame Graph
+- Download RSS Offline
+
+####  #Shell
+- Linux named pipes
+- Getting Your CPU Speed in GHz on Linux
+    
+####  #SQL
+- Representing Named Entity Mention in Postgres for Fast Queries
+    
+####  #javascript
+- Implementing Hover Cards With Minimum Javascript
+    
+####  #CPP 
+- CPP Limit int type by max value
 
 ### Opinions 
 
