@@ -33,6 +33,7 @@ The following are projects I'm involved in right now or in operation without dev
 * [Golang Debugger](https://github.com/emad-elsaid/debugger) : a GUI interface for Delve #go debugger
 * [Library](https://github.com/emad-elsaid/library) : a simpler solution than Goodreads to manage [my books](https://library.emadelsaid.com/users/0c731704-073d-4433-b38b-1dc912f7046c)
 * [Live](https://github.com/emad-elsaid/live) : a program that gets live streams from youtube channels. 
+* [Linux Man Pages](https://man.emadelsaid.com/): The quest to collect all software man pages 
 
 # :notebook:  Notes
 
