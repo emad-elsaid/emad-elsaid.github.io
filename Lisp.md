@@ -13,6 +13,10 @@
 > "Lisp isn't a language, it's a building material."
 > -- Alan Kay
 
+# Books 
+
+https://www.amazon.de/-/en/Daniel-P-Friedman/dp/0262560992
+
 # Videos
 
 https://www.youtube.com/watch?v=svmPz5oxMlI
