@@ -44,7 +44,8 @@ jobs:
           --build . \
           --sitename "Emad Elsaid" \
           --sidebar=false \
-          --index=Home
+          --index=Home \
+          --sitemap.domain=www.emadelsaid.com
           rm *.md
           chmod -R 0777 .
 
