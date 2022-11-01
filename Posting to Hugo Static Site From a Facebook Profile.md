@@ -1,3 +1,4 @@
+/warning This page is outdated. I moved to Xlog from Jekyll after trying Hugo
 
 [Hugo is a static site generator](https://gohugo.io/), it's very fast generator built on Go, it can convert markdown and org files into a beautiful blog, I use it for my blog.
 

@@ -114,7 +114,6 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - Interesting GNU Projects
 - Monitor Window10 Foreground Window
 - Moving from Lastpass.com to KeePassXC on Linux-Android-Windows
-- My Blog Properties
 - Posting to Hugo Static Site From a Facebook Profile
 - The Chronicles of a Left Handed in Egypt
 - The quest to collect all software man pages

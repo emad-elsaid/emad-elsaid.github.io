@@ -22,7 +22,7 @@ The problem with the previous features design is that the choice is made for the
 
 Instead these features can be design in a way similar to the open source applications I mentioned.
 
-## Let others add more solutions
+# Let others add more solutions
 
 Lets take one example:
 - You're designing a rating system so your application will allow rating a product and display the rating
@@ -43,7 +43,7 @@ Instead your feature can be more open as follows:
 
 This applies to other features too like Commenting, food restaurant catalogs. phone numbers sources. operating systems App stores...etc
 
-## Distributing Authority
+# Distributing Authority
 
 There are couple features that's always offered by the startup itself:
 - Content moderation
