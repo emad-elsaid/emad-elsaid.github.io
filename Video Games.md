@@ -1,6 +1,6 @@
 # Platforms 
 
-I play games on many platforms: 
+I play :video_game:  games on many platforms: 
 
 * Playstation
 * PC

@@ -1,6 +1,6 @@
 My birthday is this evening, I'll turn (wait a second I'll check https://www.myagecalculator.com/) 32 years old. After 30 years you feel old a bit, you're not a young person anymore but also not old, it's this middle ground that you can't quiet categorize it.
 
-Anyway, For the past 2 weeks I started to grow some interest in skating with rollerblades, If you're like me spent most of your life in a third world country on a computer in your bedroom, Let me introduce you to the rollerblades.
+Anyway, For the past 2 weeks I started to grow some interest in skating with :ice_skate: rollerblades, If you're like me spent most of your life in a third world country on a computer in your bedroom, Let me introduce you to the rollerblades.
 
 ![IMG_20200830_190549.jpg](/public/IMG_20200830_190549.jpg)
 
