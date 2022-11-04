@@ -14,7 +14,7 @@ end
 
 After translating it to Go it looks like this:
 
-```ruby
+```go
 import (
 	"golang.org/x/text/runes"
 	"golang.org/x/text/transform"
