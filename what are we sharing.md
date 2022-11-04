@@ -10,7 +10,7 @@ But If after you shared it I changed the content completely to something else no
 
 But "changing the content completely" is the extreme. there is a scale between not changing the not changing the content at all and replacing the whole post with another post like fixing a typo or adding referenced at the end or thanks and aknowledgment section or adding a paragraph or a notice that the content is outdated.
 
-## So where exactly is the identity of the content?
+# So where exactly is the identity of the content?
 
 Twitter for example is on the side of immutable content. you write the tweet once and fire it. you can't even fix a typo. and that is annoying.
 
@@ -20,7 +20,7 @@ So If I'm sharing this article. what am I exactly sharing? it's not the literal 
 
 A system like IPFS went on to address the content with the hash of its bytes. if you change one byte it's different content.
 
-## In the context of a social media
+# In the context of a social media
 
 These are the things I assumed when I thought about a solution for this issue.
 
