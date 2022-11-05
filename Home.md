@@ -35,6 +35,7 @@ The following are projects I'm involved in right now or in operation without dev
 * [Live](https://github.com/emad-elsaid/live) : a program that gets live streams from youtube channels. 
 * [Linux Man Pages](https://man.emadelsaid.com/): The quest to collect all software man pages 
 * [Rubik's Cube timer](/timer) : A timer to generate permutations of rubik's cube and timer.
+* [Ruby Functions](https://www.rubyfunctions.com/) : Open source community for posting Ruby functions snippets
 
 # :notebook:  Notes
 
