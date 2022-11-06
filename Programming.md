@@ -19,6 +19,7 @@
 
 - #Rust
 - #Vala
+- #Scala
 
 # learned it and haven't used it for years or professionally
 
