@@ -1,4 +1,4 @@
-![](/public/84c77bc3ef2cfb5eaa20e77479b981717e889c7a9dde42a66beccbca5eba6603.jpg)
+![Islamic Art Museum, Berlin](/public/84c77bc3ef2cfb5eaa20e77479b981717e889c7a9dde42a66beccbca5eba6603.jpg)
 
 Hi, This is my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's a public space. It includes notes, ideas and experiments. Anything I'm involved in will be part of this garden.
 
@@ -7,7 +7,7 @@ I'm a [software engineer](</Why I became a software developer>) backend focused.
 # Social profiles
 
 *  [GitHub](https://www.github.com/emad-elsaid) have all my sideprojects. it's one of my hobbies.
-* [Twitter](https://www.twitter.com/emad__elsaid) will have my random ideas of photographs. 
+* [Twitter](https://www.twitter.com/emad__elsaid) will have my random ideas or photographs. 
 * [Facebook](https://www.facebook.com/emad.elsaid.hamed) for me is more about connecting to family and egyptian devs community
 * [Youtube](http://youtube.com/EmadElsaid) include videos about book reviews or gameplays or even some thoughts about software engineering. 
 * [Linkedin](https://www.linkedin.com/in/emadelsaid) I keep my professional profile updated as much as possible
