@@ -1,6 +1,6 @@
 ![Islamic Art Museum, Berlin](/public/84c77bc3ef2cfb5eaa20e77479b981717e889c7a9dde42a66beccbca5eba6603.jpg)
 
-Hi, This is my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's a public space. It includes notes, ideas and experiments. Anything I'm involved in will be part of this garden.
+Hi, This is my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's a public space. It includes notes, ideas and experiments decorated usually with a photo I captured in my everyday life. Anything I'm involved in will be part of this garden.
 
 I'm a [software engineer](</Why I became a software developer>) backend focused. I mainly use #Ruby and #Go.
 
@@ -36,13 +36,9 @@ The following are projects I'm involved in right now or in operation without dev
 * [Rubik's Cube timer](/timer) : A timer to generate permutations of rubik's cube and timer.
 * [Ruby Functions](https://www.rubyfunctions.com/) : Open source community for posting Ruby functions snippets
 
-# :notebook:  Notes
+# :us:  English Notes
 
-I write in two languages (Arabic, English). In every note I try to add a personal touch with an image I captured in my everyday life
-
-## :us:  In English
-
-### Peer To Peer
+## Peer To Peer
 
 I developed interest in decentralization technologies and #p2p  solutions. these are some ideas that occupied my mind for a while: 
 
@@ -52,7 +48,7 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - Sound approach for a p2p social network which falls back to current web
 - what are we sharing
 
-### Web development
+## Web development
 
 - A solution for implementing Bulma navigation bar for mobile with CSS only
 - Async Rendering a Page With Sinatra
@@ -60,12 +56,12 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - Bulma HTML5 Dialog
 - The benefits of microservices over monolithic application
 
-### Code Snippets
+## Code Snippets
 
-#### #Go 
+### #Go 
 /hashtag-pages #go 
 
-####  #Ruby 
+###  #Ruby 
 - Cloning All Your GitHub Repositories or Updating Them in One Command
 - ERB Templates as Standalone Executables
 - Git as Messages Queue
@@ -77,20 +73,20 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - Projects Files Flame Graph
 - Download RSS Offline
 
-####  #Shell
+###  #Shell
 - Linux named pipes
 - Getting Your CPU Speed in GHz on Linux
     
-####  #SQL
+###  #SQL
 - Representing Named Entity Mention in Postgres for Fast Queries
     
-####  #javascript
+###  #javascript
 - Implementing Hover Cards With Minimum Javascript
     
-####  #CPP 
+###  #CPP 
 - CPP Limit int type by max value
 
-### Opinions 
+## Opinions 
 
 - Consistency Over Creativity
 - Meta work is destroying actual work
@@ -98,11 +94,11 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - Don't Throw Your Question Over the Fence
 - Language Compression
 
-### Books Reviews
+## Books Reviews
 
 - Fundamentals of Software Architecture
 
-### Misc
+## Misc
 
 - Explain all SQL statements in rails
 - Exporting a Facebook Group as a Website
@@ -123,20 +119,20 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - Working With Legacy Code
 - a week with remarkable 2
 
-### Structuring a startup system
+## Structuring a startup system
 
 - Single Machine Startup Company System
 - Single Machine Startup Company System (Part 2)
 
 
-### Adventures
+## Adventures
 
 - Scharbeutz Vacation
 - Experiencing Heide Park Resort Rollercoasters One Day Trip
 
-## بالعربي  :egypt: 
+# ملاحظات بالعربي  :egypt: 
 
-### قصص قصيرة
+## قصص قصيرة
 
 - أسف مقدما
 - اذكروا موتاكم
@@ -146,7 +142,7 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - قاهرة الطاقة النووية
 - قهوة سريعة
 
-### رأي
+## رأي
 
 - العصبية القبلية فى مجتمع مطورى البرمجيات
 - صراع الإنسان المعاصر لإستعادة حريته فى عصر وسائل التواصل الإجتماعي
@@ -157,7 +153,7 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - هل من حقي الحكم على الأشخاص او الأشياء
 - هل هو الماضي ام المستقبل
 
-### مراجعة كتب
+## مراجعة كتب
 
 - مراجعة رواية The Gods Themselves
 
