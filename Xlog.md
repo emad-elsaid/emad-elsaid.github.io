@@ -54,6 +54,10 @@ https://www.youtube.com/watch?v=9dxhDo2F06k
 - and then used that develop a way to build the whole directory as HTML + extension pages.
 - That allowed me to migrate my personal website (the one you're reading now) to more simple and flat structure. I was using github page default jekyll structure before.
 
+# Main website
+
+https://xlog.emadelsaid.com
+
 # Github project 
 
 The program is open source on github: 

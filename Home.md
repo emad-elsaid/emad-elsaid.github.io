@@ -56,12 +56,10 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - Bulma HTML5 Dialog
 - The benefits of microservices over monolithic application
 
-## Code Snippets
-
-### #Go 
+## Go
 /hashtag-pages #go 
 
-###  #Ruby 
+##  Ruby
 - Cloning All Your GitHub Repositories or Updating Them in One Command
 - ERB Templates as Standalone Executables
 - Git as Messages Queue
@@ -73,17 +71,17 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - Projects Files Flame Graph
 - Download RSS Offline
 
-###  #Shell
+##  Shell
 - Linux named pipes
 - Getting Your CPU Speed in GHz on Linux
     
-###  #SQL
+##  SQL
 - Representing Named Entity Mention in Postgres for Fast Queries
     
-###  #javascript
+##  Javascript
 - Implementing Hover Cards With Minimum Javascript
     
-###  #CPP 
+##  C++ 
 - CPP Limit int type by max value
 
 ## Opinions 
@@ -164,3 +162,8 @@ It's built using Xlog from markdown [repository hosted on Github](https://github
 If you find issues or typos I will be thankful if you went to the repository and edit the file and open a pull request with the changes.
 
 Images are optimized with mogrify and stripped from EXIF data to stay lite to your bandwidth
+
+# Other pages
+
+* [All pages](/+/recent)
+* [All hashtags](/+/tags)
