@@ -30,7 +30,7 @@ pkgver() {
 build() {
     export GOPATH="$srcdir"/gopath
     cd "$srcdir/$_pkgname"
-    go build -o xlog ./cmd/xlog
+    go build -modcacherw -o xlog ./cmd/xlog
 }
 
 package() {
