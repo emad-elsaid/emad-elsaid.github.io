@@ -1,9 +1,24 @@
 The following list are tools/programs I should/have read its documentation end to end
 
+# Backend 
+
 * [ ] Redis
 * [ ] Kafka
 * [ ] GraphQL
 * [ ] ElasticSearch
 * [ ] Prometheus
 * [ ] Grafana
+* [ ] MongoDB
+
+# Frontend 
+
+* [ ] TypeScript
+* [ ] React
+* [ ] Redux
+* [ ] RxJS
+* [ ] Jest
+* [ ] Webpack
+* [ ] Jinja
+
+
 
