@@ -1,4 +1,3 @@
-
 The following is a list of developers that deserve to be followed and supported. I believe so because they have one of more of the following traits:
 
 - They are writing code, have hands on experience in coding projects
@@ -17,3 +16,4 @@ The list of developers:
 - Sean Barrett ([Twitter](https://twitter.com/nothings), [Youtube](https://www.youtube.com/c/SeanTBarrett))
 - javidx9 ([Twitter](https://twitter.com/javidx9), [Youtube](https://www.youtube.com/javidx9))
 - Salvatore Sanfilippo ([Twitter](https://twitter.com/antirez), [Youtube](https://www.youtube.com/user/antirez))
+- phk

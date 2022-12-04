@@ -2,7 +2,7 @@ The following list are tools/programs I should/have read its documentation end t
 
 # Backend 
 
-* [ ] Redis
+* [x] Redis
 * [ ] Kafka
 * [ ] GraphQL
 * [ ] ElasticSearch
