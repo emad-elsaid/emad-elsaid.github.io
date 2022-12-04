@@ -25,3 +25,20 @@ cat data.txt | redis-cli --pipe
 
 > However since Redis is a data structures server, its capabilities can be used for indexing
 > https://redis.io/docs/manual/patterns/indexes/
+
+# Setup seems to need some tweaking from the kernel
+
+as provided here: https://redis.io/docs/management/admin/
+
+1. Set the Linux kernel overcommit memory setting to 1. Add vm.overcommit_memory = 1 to /etc/sysctl.conf. Then, reboot or run the command sysctl vm.overcommit_memory=1 to activate the setting.
+2. To ensure the Linux kernel feature Transparent Huge Pages does not impact Redis memory usage and latency, use this command: `echo never > /sys/kernel/mm/transparent_hugepage/enabled`
+3. Same page has many other good tips about deployment on AWS EC2 and what kind of machines to use
+
+
+# Marketing speak
+
+in the [Sentinel page](https://redis.io/docs/management/sentinel/) I started to smell marketing speak bullshit: 
+
+> You need at least three Sentinel instances for a robust deployment
+
+What does **robust deployment** even mean? 
