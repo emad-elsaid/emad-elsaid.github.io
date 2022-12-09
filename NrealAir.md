@@ -442,3 +442,115 @@ When looking at the displayed picture it feels really large looking at the ceili
 - Worked out of the box with Valve Steam deck
 - Worked with my laptop
 - Didn't work with my PC (same OS setup). as I connected it to the front USB-C of a lenovo usb dock. I guess I'll need HDMI to usbc adapter.
+
+# Software
+
+- Nebula is available for mac os https://www.nreal.ai/nebula
+- I tried it on a Macbook pro M1 machine. it's a simple application where you can select if it's:
+  -  1, 2, 3 screens.
+  -  how far are they close, medium, far
+  -  reset their position to face you in case your orientation changed
+ 
+- I wanted to know what's inside it. downloaded it and extracted the dmg
+```
+pacman -S p7zip
+7z x nebula.dmg
+```
+- the file structure
+```
+.
+├── Applications
+├── [HFS+ Private Data]
+└── Nebula for Mac.app
+    └── Contents
+        ├── CodeResources
+        ├── _CodeSignature
+        │   └── CodeResources
+        ├── Frameworks
+        │   ├── GameAssembly.dylib
+        │   └── UnityPlayer.dylib
+        ├── Info.plist
+        ├── MacOS
+        │   └── Nebula
+        ├── PlugIns
+        │   ├── lib_burst_generated.bundle
+        │   ├── libew.bundle
+        │   │   └── Contents
+        │   │       ├── _CodeSignature
+        │   │       │   └── CodeResources
+        │   │       ├── Info.plist
+        │   │       ├── MacOS
+        │   │       │   └── libew
+        │   │       └── Resources
+        │   │           ├── default.metallib
+        │   │           ├── SettingViewController.nib
+        │   │           └── TmpWindow.nib
+        │   ├── libnr_api.dylib
+        │   ├── libota.dylib
+        │   ├── libth.bundle
+        │   │   └── Contents
+        │   │       ├── _CodeSignature
+        │   │       │   └── CodeResources
+        │   │       ├── Info.plist
+        │   │       ├── MacOS
+        │   │       │   └── libth
+        │   │       └── Resources
+        │   │           └── SensorsAnalyticsSDK.bundle
+        │   │               ├── sa_autotrack_gestureview_blacklist.json
+        │   │               ├── sa_autotrack_viewcontroller_blacklist.json
+        │   │               ├── sa_mcc_mnc_mini.json
+        │   │               ├── sa_visualized_path.json
+        │   │               ├── sensors_analytics_flow.json
+        │   │               ├── sensors_analytics_node.json
+        │   │               ├── sensors_analytics_task.json
+        │   │               └── zh-Hans.lproj
+        │   │                   └── Localizable.strings
+        │   └── libvdh.bundle
+        │       └── Contents
+        │           ├── _CodeSignature
+        │           │   └── CodeResources
+        │           ├── Info.plist
+        │           ├── MacOS
+        │           │   └── libvdh
+        │           └── Resources
+        │               ├── Assets.car
+        │               └── MenuBarViewController.nib
+        └── Resources
+            ├── Data
+            │   ├── app.info
+            │   ├── boot.config
+            │   ├── globalgamemanagers
+            │   ├── globalgamemanagers.assets
+            │   ├── globalgamemanagers.assets.resS
+            │   ├── il2cpp_data
+            │   │   ├── Metadata
+            │   │   │   └── global-metadata.dat
+            │   │   └── Resources
+            │   │       ├── mscorlib.dll-resources.dat
+            │   │       ├── Newtonsoft.Json.dll-resources.dat
+            │   │       └── System.Data.dll-resources.dat
+            │   ├── level0
+            │   ├── level0.resS
+            │   ├── Resources
+            │   │   └── unity_builtin_extra
+            │   ├── resources.assets
+            │   ├── resources.assets.resS
+            │   ├── RuntimeInitializeOnLoads.json
+            │   ├── ScriptingAssemblies.json
+            │   ├── sharedassets0.assets
+            │   ├── sharedassets0.assets.resS
+            │   └── StreamingAssets
+            │       └── UnityServicesProjectConfiguration.json
+            ├── DefaultPreferences.plist
+            ├── MainMenu.nib
+            │   ├── designable.nib
+            │   └── keyedobjects.nib
+            ├── PlayerIcon.icns
+            └── unity default resources
+
+32 directories, 56 files
+```
+
+Some notes:
+
+- I see Unity library in the frameworks directory 
