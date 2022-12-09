@@ -1,4 +1,4 @@
-The following is a research for the minimum requirement to have Xlog alow following the user from mastodon
+The following is a research for the minimum requirement to have Xlog allow following the user from mastodon
 
 * From any account on a mastodon instance tried to search for `@emad@whoispopulartoday.com` the logs were the following
 
