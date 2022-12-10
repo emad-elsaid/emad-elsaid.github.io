@@ -52,6 +52,11 @@ Check list for code review
 - [ ] Inform any technical stakeholder
 - [ ] Technical documentation updated
 
+# Tests
+
+- [ ] Unit tests
+- [ ] Integration tests
+
 # References
 
 - [Gitlab Code review](https://about.gitlab.com/handbook/engineering/workflow/code-review/)
