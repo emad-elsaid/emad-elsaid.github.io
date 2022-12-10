@@ -553,4 +553,40 @@ pacman -S p7zip
 
 Some notes:
 
-- I see Unity library in the frameworks directory 
+- I see Unity library in the frameworks directory
+
+# Using it
+
+## For gaming with Steam deck
+
+- It worked without any manual steps. when connected it will turn on the audio will come out of it's speakers
+- Played "Skull - the hero slayer" couple times
+  - The longest and last session (30 minutes) caused pain in the back of my eyes and dizziness
+  - The screen is too near the eye that I can't see all of it. adjusting it to see the top will push the bottom out of the view
+  - Corners were too out of focus that I can't see the bottom left corner clear enough (the health bar)
+- Watched youtube video on chrome it was nice I liked this use case
+- Tried to watch anime from crunchy roll on google chrome. worked nicely too. but subtitle was glowing too much like a case of astigmatism.
+ 
+## With Nebula + Macbook pro M1
+
+- The software is beta
+- It's impressive to see multiple screens suspended in the air
+- screens are vibrating (pulsating) I think it correlates with my blood pulse. (same happened with me and my wife experiment)
+
+## With Lenovo thinkpad X1 carbon laptop
+
+- Speaker didn't work, wansn't detected
+- No software to switch mode to multiple screens so I was stuck with one screen near my face like steam deck.
+- The screen is too out of focus in the corners so I can't see the window title, the command prompt when I have full screen terminal.
+- Text is glowing. like having an extreme case of astigmatism. can't use it for coding
+
+## With my phone
+
+- One plus nord phone is not supported. so I can't install the app.
+- I think it's a hardware problem my phone lakes a feature needed for external screens
+
+## Returning it
+
+- I decided to return it
+- From all the use cases the only one that works for me is watching videos on steam deck. all other usecases are too problematic
+- After having that headache and dizziness I'm afraid of using it again.
