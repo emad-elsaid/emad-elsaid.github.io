@@ -15,6 +15,11 @@ I played several games on it and I noticed that it's easier decision to buy a ga
 * Hades
 * Cup head
 * TMNT
+* Skul
+* Vampire surivors
+* Brotato
+* Celeste
+* Yakuza 0
 
 # Build
 
