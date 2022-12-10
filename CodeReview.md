@@ -30,6 +30,7 @@ Check list for code review
   - [ ] is it really needed/how much of it is needed?
   - [ ] is it reviewed for license?
   - [ ] is it reviewed for security?
+- [ ] New environment variables added to all environments
 
 # Database
 
