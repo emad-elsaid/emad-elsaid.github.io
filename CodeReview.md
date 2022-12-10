@@ -59,6 +59,7 @@ Check list for code review
 
 - [ ] Unit tests
 - [ ] Integration tests
+- [ ] CI and checks are passing
 
 # References
 
