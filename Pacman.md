@@ -1,3 +1,5 @@
+![](/public/4020dbfc96c350beaa20ce793a293abe82f81556c65fce956b4f36f331dbd761.jpg)
+
 List packages installed from AUR
 ```shell
 pacman -Qm
