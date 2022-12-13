@@ -7,5 +7,5 @@ pacman -Qm
 
 Delete any AUR (foreign) packages that includes `python2` in the name
 ```shell
-sudo pacman -Rs `pacman -Qm | grep python2 | awk '{ print $1 }'`
+sudo pacman -Rs `pacman -Qm | awk '/python2/{ print $1 }'`
 ```
