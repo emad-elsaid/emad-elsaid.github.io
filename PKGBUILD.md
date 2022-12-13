@@ -1,3 +1,5 @@
+#archlinux
+
 * This page was very useful https://madskjeldgaard.dk/posts/aur-package-workflow/
 * Example from Xlog PKGBUILD, published to AUR: https://aur.archlinux.org/packages/xlog-git
 * To build package locally `makepkg -s`
