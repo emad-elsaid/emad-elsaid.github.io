@@ -17,3 +17,8 @@ Find all jpg files larger than 1M and resize them.
 ```shell
 find public -type f -size +1M -iname *.jpg -exec mogrify -resize "1000x1000>" -quality 80 -auto-orient -strip {} \;
 ```
+
+Find all jpg OR png files larger than 1M and resize them
+```shell
+find public -type f -size +1M \( -iname *.jpg -o -iname *.png \) -exec mogrify -resize "1000x1000>" -quality 80 -auto-orient -strip {} \;
+```
