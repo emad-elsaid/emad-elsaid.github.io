@@ -1,5 +1,7 @@
 ![](/public/8ef86af5f07f7429a4e48afea2bb6830eba5afd5ddb203e1538bd8a2fd4449a2.jpg)
 
+#VR #Devices
+
 I recieved my [Nreal Air](https://www.nreal.ai/air) Thursday 08 2022. Imported from US as it's not sold yet in Germany. Bought from Amazon US ([amazon.com](https://www.amazon.com/dp/B0BF5LKP5Q)).
 
 # Tech inspection
