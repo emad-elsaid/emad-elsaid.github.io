@@ -9,6 +9,7 @@
 # Specs
 
 - 256GB of storage
+- 3 Positions for Interpupillary Distance (IPD)
 
 ![](/public/6de7720b7dbf948e0dd77f0d33f781224e0590f8c2128daa0d871d7e3ddd5020.jpg)
 ![](/public/eee6a3b3c1aec01a09c25bdd89dbea21f5b747e3c4a5d815380de6e731dcaaae.jpg)
