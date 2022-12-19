@@ -36,6 +36,10 @@ The following are projects I'm involved in right now or in operation without dev
 * [Rubik's Cube timer](/timer) : A timer to generate permutations of rubik's cube and timer.
 * [Ruby Functions](https://www.rubyfunctions.com/) : Open source community for posting Ruby functions snippets
 
+# :white_check_mark: Workflows and Checklists
+- CodeReview
+- Product Change Workflow
+
 # :us:  English Notes
 
 ## Peer To Peer
