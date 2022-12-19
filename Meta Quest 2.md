@@ -27,6 +27,7 @@
 - Didn't experience heating, even when it heats up I notice only when I take it off my face in my palms not on the face
 - It's heavy on the front side, I guess that was solved for the Pro version making it a more balanced
 - Without my glasses I noticed some text glowing the further it is from the center of the screen
+- I added the raiser that comes with it to help keep my glasses while using it
 - With my glasses the glowing is reduced but still not very sharp
 
 # Standalone 
