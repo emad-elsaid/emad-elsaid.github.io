@@ -4,6 +4,7 @@
 
 - Also known as Oculus Quest 2
 - First device to rent from [Grover](https://www.grover.com/)
+- Second VR I try after PS4 VR
 
 # Specs
 
