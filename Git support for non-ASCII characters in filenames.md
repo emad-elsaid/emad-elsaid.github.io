@@ -1,3 +1,5 @@
+#git
+
 # Non-ASCII characters
 
 Git escapes non-ASCII character by default, for example this garden has files in Arabic. `git ls-files` show them as follows:

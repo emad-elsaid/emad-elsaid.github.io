@@ -1,3 +1,5 @@
+#git #ssh 
+
 I needed to push my local repository to a remote server.
 
 # On the remote server
