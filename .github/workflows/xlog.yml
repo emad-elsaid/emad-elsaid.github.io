@@ -25,6 +25,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Allow non-ASCII character
+        run: git config core.quotepath false
+
       - name: restore timestamps
         uses: chetan/git-restore-mtime-action@v1
 
