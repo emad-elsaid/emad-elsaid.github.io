@@ -47,6 +47,14 @@
 - Tried VR Chat. very weird place.
 - You can turn on hand guestures so you get to use fingers to click on buttons or scroll in menus
 
+# Screenshots
+
+![](/public/daa29ba9b10220d20eba5a3e80ea35dbc90e6ff07d51a321dffe30bebe38c24f.jpg)
+![](/public/40498ec915e72b4206c6e73cf71fa9a7c11ca150b37ff6bb3039dbe38e234d19.jpg)
+![](/public/e45c02e077f47e5949c93b717853406cdc6dbc9cbfb627ee25a11cf82722776e.jpg)
+![](/public/d7adb78879594848a303b8449bafa6bf6e0104fa28c0281fdc970c7ab52471cd.jpg)
+![](/public/50b46ffb81df2d435aa94bda36c4bd1b802835ea2f2d6a2dd08a0822514d34b1.jpg)
+
 # With PC
 
 - I was able to install Quest app on PC (windows version only)
