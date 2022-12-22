@@ -54,7 +54,9 @@ jobs:
           --activitypub.summary="A Software Engineer. Ruby Golang. 🇪🇬 Egyptian 📷 Youtuber 🎮 Casual gamer and 🚀 Sci-Fi addict. My opinions are my own" \
           --og.domain=www.emadelsaid.com \
           --twitter.username=@emad__elsaid \
-          --github.repo=https://github.com/emad-elsaid/emad-elsaid.github.io
+          --github.repo=https://github.com/emad-elsaid/emad-elsaid.github.io \
+          --rss.domain=www.emadelsaid.com \
+          --rss.description="A Software Engineer. Ruby Golang. 🇪🇬 Egyptian 📷 Youtuber 🎮 Casual gamer and 🚀 Sci-Fi addict. My opinions are my own"
           rm *.md
           chmod -R 0777 .
 
