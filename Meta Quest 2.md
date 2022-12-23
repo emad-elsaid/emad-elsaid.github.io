@@ -87,7 +87,7 @@ I had a good experience with many applications and games:
  * PC
    * Quest app: a must have to get your device recognized, and IT'S WINDOWS ONLY :disappointed:
    * SteamVR: it includes many rooms to set as home (way more than what meta offers) and higher definitions and that's understandable as the PC renders them not the headset.
-     * Tip: look for Star Trek environment. there are 2 of them and another 2 Holodeck rooms :smile:
+     * Tip: look for Star Trek environment. there are 2 of them and another 2 Holodeck rooms :smiley:
 
 # Take aways
 
