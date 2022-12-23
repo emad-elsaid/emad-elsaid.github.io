@@ -73,6 +73,22 @@
 - After activating the device I received an email from Meta to claim a free version of Beat saber
 - Played couple levels I loved it. although I wasn't interested in trying it out but after I did, I guess that's my favorite app so far
 
+# Applications
+
+I had a good experience with many applications and games:
+
+ * Standalone
+   1. Beat Saber: well-known game, I wasn't interested in it but after trying it I really liked it.
+   2. Meta Quest TV: inlcudes many good videos. I enjoyed some videos about the Petra in Jordan, and other sky diving videos
+   3. Meta Animation player: includes some nice scenes.
+   4. First Steps for Quest 2: that's like a tutorial for using the device but it's really enojyable
+   5. the world beyond: That's available only when you turn on the experimental feature in setting to map your room walls/windows/doors/couch
+   6. Immersed: it's nice to drop by the "immersed Coffee" sometimes there are people there chatting.
+ * PC
+   * Quest app: a must have to get your device recognized, and IT'S WINDOWS ONLY :disappointed:
+   * SteamVR: it includes many rooms to set as home (way more than what meta offers) and higher definitions and that's understandable as the PC renders them not the headset.
+     * Tip: look for Star Trek environment. there are 2 of them and another 2 Holodeck rooms :smile:
+
 # Take aways
 
 - It feels good to be in a 3D space looking around
