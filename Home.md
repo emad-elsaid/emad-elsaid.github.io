@@ -166,6 +166,7 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 * If you find issues or typos I will be thankful if you went to the repository and edit the file and open a pull request with the changes.
 * Images are optimized with mogrify and stripped from EXIF data to stay lite to your bandwidth
 * It has an ActivityPub interface that exposes all pages to  [**@Emad@www.emadelsaid.com**](/.well-known/webfinger) outbox.
+* [RSS feed](/+/feed.rss) exposes a limited set of the recently updated pages
 
 # Other pages
 
