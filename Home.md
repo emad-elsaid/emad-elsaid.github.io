@@ -167,8 +167,3 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 * Images are optimized with mogrify and stripped from EXIF data to stay lite to your bandwidth
 * It has an ActivityPub interface that exposes all pages to  [**@Emad@www.emadelsaid.com**](/.well-known/webfinger) outbox.
 * [RSS feed](/+/feed.rss) exposes a limited set of the recently updated pages
-
-# Other pages
-
-* [All pages](/+/recent)
-* [All hashtags](/+/tags)
