@@ -2,11 +2,11 @@ I don't like how modern web applications are built. Many of the web applications
 
 Lets take a look on a basic modern web based system, There are several layers on software running on the machine, starting from firmware to your business logic.
 
-![IMG_20200915_212438.jpg](/public/IMG_20200915_212438.jpg){: class="center"}
+![IMG_20200915_212438.jpg](/public/IMG_20200915_212438.jpg)
 
 I don't think this is very helpful to understand the gravity of the situation. There are many actors that are not considered in this picture. Layers are also missing because they are implicit in other layers. Lets expand these hidden layers and actors. It will help us understand better why that small Nodejs or RubyOnRails application we wrote isn't just one layer in this picture.
 
-![IMG_20200915_214548.jpg](/public/IMG_20200915_214548.jpg){: class="center"}
+![IMG_20200915_214548.jpg](/public/IMG_20200915_214548.jpg)
 
 Here are the layers we added this time:
 
@@ -19,17 +19,17 @@ For each of these layers there is **at least** one team responsible for maintain
 
 Again, We missed other layers and people in this picture. Most of the applications are using external SAAS providers for logs or monitoring or bug reporting or provide parts of the system functionality that can take more time to build by the company team. lets add them to the picture along with their teams.
 
-![IMG_20200915_221047.jpg](/public/IMG_20200915_221047.jpg){: class="center"}
+![IMG_20200915_221047.jpg](/public/IMG_20200915_221047.jpg)
 
 This picture is for one application, I won't expand it to a whole system with different services and programs that is the reality of all companies. Lets stick to one application for the sake of simplicity.
 
 So here is the first point I want to make: With every service you use you're not just a user, This service is now part of your application, You are held responsible for it's behavior and misbehaving. You will inherit bugs in their system. When this service team is affected by COVID-19 and get reduced to the point where they can't fix issues you will be affected too. When They get slower your application will get slower too. When their service is down your application will experience malfunction too, Your system and theirs is now connected. So add external services integration cautiously. By adding an external system you're putting your trust in this service team and their ability in delivering what the service is promising now **and** in the future. This is not an easy decision and it should be treated as such.
 
-![IMG_20200915_224907.jpg](/public/IMG_20200915_224907.jpg){: class="center"}
+![IMG_20200915_224907.jpg](/public/IMG_20200915_224907.jpg)
 
 Now lets move to the direct dependencies of your application. If you're using any modern programming language it'll have a way to package code into reusable format that could be reused by other applications. one package can use code from other packages, these packages can use other packages and so on like a tree.
 
-![IMG_20200915_231326.jpg](/public/IMG_20200915_231326.jpg){: class="center"}
+![IMG_20200915_231326.jpg](/public/IMG_20200915_231326.jpg)
 
 With every package in this tree we depend on the code inside this package and the team that maintains it. A freshly generated rails project depends on 74 packages for ruby and `Yarn list` that lists JavaScript dependencies output 3102 lines, that's 3176 packages with teams maintaining them and bugs and new versions all the time.
 
