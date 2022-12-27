@@ -6,7 +6,7 @@ I'm a [software engineer](</Why I became a software developer>) backend focused.
 
 # Social profiles
 
-*  [GitHub](https://www.github.com/emad-elsaid) have all my sideprojects. it's one of my hobbies.
+* [GitHub](https://www.github.com/emad-elsaid) have all my sideprojects. it's one of my hobbies.
 * [Twitter](https://www.twitter.com/emad__elsaid) will have my random ideas or photographs. 
 * [Facebook](https://www.facebook.com/emad.elsaid.hamed) for me is more about connecting to family and egyptian devs community
 * [Youtube](http://youtube.com/EmadElsaid) include videos about book reviews or gameplays or even some thoughts about software engineering. 
