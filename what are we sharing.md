@@ -26,15 +26,15 @@ These are the things I assumed when I thought about a solution for this issue.
 
 If I'm building a social media how can I address a piece of content?
 
-- I assumed that I shared the approximate content of the content
+- I assumed that I shared the approximate substance of the content
 - changing the content slightly is acceptable
 
-So the solution I though that will be in the middle ground between both worlds (immutability and extreme alteration):
+So the solution I though of will be in the middle ground between both worlds (immutability and extreme alteration):
 
 - Keep all versions of the content.
-- The content identifier is a generated UUID by the user
+- The content identifier is a generated UUID by the user or any unique address (scoped for this user)
 - When sharing a piece of content you are pointing at this content UUID and the version hash
-- When you retreive a piece of content you should get all the versions
+- When you retreive a piece of content you should be able to get all the versions
 
 The previous solution means:
 
