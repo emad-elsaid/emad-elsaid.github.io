@@ -1,5 +1,7 @@
 :framed_picture: #archlinux #AI #stable_diffusion
 
+# Stability AI Stable Diffusion
+
 * Repo on Github: https://github.com/Stability-AI/stablediffusion
 * Clone repo then cd into it
 * Installed Anaconda first `yay -S anaconda`
@@ -66,9 +68,22 @@ python scripts/txt2img.py --prompt "a professional photograph of an astronaut ri
 
 /info I guess at this point I should give up on this approach and try another setup like this one https://github.com/basujindal/stable-diffusion
 
+# Docker compose fork for CompVis Stabke Diffusion
+
 - cloned this repo and cd into it `gh repo clone basujindal/stable-diffusion`
 - moved the model to another directory `mv ../stablediffusion/v2-1_768-ema-pruned.ckpt ../sd-data/model.ckpt`
 - Install nvidia-container-toolking `yay -S nvidia-container-toolkit`
+- uncommend `no-cgroups = false` in `/etc/nvidia-container-runtime/config.toml`
+- and restart docker `sudo systemctl restart docker`
 - I had to update my machine at this point as it couldn't install `bmake` so that's another 4gb or downloads and 14gb installation side. :smiling_face_with_tear:
 - build the containers `docker-compose build`
-- 
+- and run the containers `docker-composer run`
+- I got an error, it seems the model for Stable Diffusion from Stability won't work on the CompVis version. so I downloaded the latest version from their model https://huggingface.co/CompVis
+- then run `docker-composer run` again.
+- I got this interface
+
+![Gradio](/public/6720597cbea41ccc5a61989b06a3c54b878f9e46de7333b252481c8b8b4fdbe4.png)
+
+# Well it works finally
+
+![](/public/eed5b36fee1d3cbac505a18afe2c18ae5af5c6595d8aa1de68d406d267991606.png)
