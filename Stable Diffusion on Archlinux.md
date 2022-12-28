@@ -87,3 +87,17 @@ python scripts/txt2img.py --prompt "a professional photograph of an astronaut ri
 # Well it works finally
 
 ![](/public/eed5b36fee1d3cbac505a18afe2c18ae5af5c6595d8aa1de68d406d267991606.png)
+
+# Some Generated Art
+
+* Water colored picture of a monkey children book like soft colors
+
+![](/public/3ebb2d6337d54675b56717a0134cbba359f0afe7fe03923732bcdd2df309ee7d.png)
+
+* A duck playing piano in theater cartoon like
+
+![](/public/7736b3f6e5cda1073cb1659100e1991fe2f87fdf25e08da0588da51503c9fd6d.png)
+
+* painting of chuck norris futuristic and metalic
+
+![](/public/4597bd1e5ee4a3ef9ad3a7f0450c07df4c6a23b38a68c5823ecb261f102cb517.png)
