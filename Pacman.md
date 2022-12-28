@@ -11,3 +11,8 @@ Delete any AUR (foreign) packages that includes `python2` in the name
 ```shell
 sudo pacman -Rs `pacman -Qm | awk '/python2/{ print $1 }'`
 ```
+
+Update keyring 
+```shell
+sudo pacman -Sy archlinux-keyring
+```

@@ -65,3 +65,10 @@ python scripts/txt2img.py --prompt "a professional photograph of an astronaut ri
 ```
 
 /info I guess at this point I should give up on this approach and try another setup like this one https://github.com/basujindal/stable-diffusion
+
+- cloned this repo and cd into it `gh repo clone basujindal/stable-diffusion`
+- moved the model to another directory `mv ../stablediffusion/v2-1_768-ema-pruned.ckpt ../sd-data/model.ckpt`
+- Install nvidia-container-toolking `yay -S nvidia-container-toolkit`
+- I had to update my machine at this point as it couldn't install `bmake` so that's another 4gb or downloads and 14gb installation side. :smiling_face_with_tear:
+- build the containers `docker-compose build`
+- 
