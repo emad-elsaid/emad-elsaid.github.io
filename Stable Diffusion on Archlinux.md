@@ -32,7 +32,7 @@ EnvironmentNotWritableError: The current user does not have write permissions to
   uid: 1000
   gid: 1000
 ```
-* Previous commands took too long to finish (couple hours). I'm now sure where the slowness is coming from. I noticed it's maxing out 1 logical CPU out of 16 :frowning_face:
+* Previous commands took too long to finish (couple hours). I'm not sure where the slowness is coming from. I noticed it's maxing out 1 logical CPU out of 16 :frowning_face:
 * Clone xformers https://github.com/facebookresearch/xformers and cd into it
 * Setup the rest of requirements
 ```
