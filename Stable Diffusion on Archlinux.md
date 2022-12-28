@@ -31,11 +31,37 @@ EnvironmentNotWritableError: The current user does not have write permissions to
   gid: 1000
 ```
 * Previous commands took too long to finish (couple hours). I'm now sure where the slowness is coming from. I noticed it's maxing out 1 logical CPU out of 16 :frowning_face:
-* Clone xformers `git clone https://github.com/facebookresearch/xformers.git` and cd into it
+* Clone xformers https://github.com/facebookresearch/xformers and cd into it
 * Setup the rest of requirements
 ```
 git submodule update --init --recursive
 pip install -r requirements.txt
-pip install -e .
+sudo pip install -e .
 ```
-* this last line shows an error: `ModuleNotFoundError: No module named 'torch'`
+* this last line shows an error: `ModuleNotFoundError: No module named 'torch'` so I ran `sudo conda install pytorch` then `sudo pip install -e .`
+* I got some errors of missing packages so
+```
+pip install omegaconf
+pip install torchvision
+pip install pytorch_lightning
+pip install pytorch-lightning
+pip install open_clip_torch
+```
+* I got another error that prompted me to run this `sudo python setup.py build develop`
+* also found error about missing triton so `pip install triton==2.0.0.dev20221120`
+* created a dir `output` and ran
+```
+python scripts/txt2img.py --prompt "a professional photograph of an astronaut riding a horse" --ckpt v2-1_768-ema-pruned.ckpt --config configs/stable-diffusion/v2-inference-v.yaml --H 768 --W 768  --outdir output
+```
+* I got an error
+```
+making attention of type 'vanilla-xformers' with 512 in_channels
+building MemoryEfficientAttnBlock with 512 in_channels...
+Killed
+```
+* tried reducing number of steps and other params but I got the same error
+```
+python scripts/txt2img.py --prompt "a professional photograph of an astronaut riding a horse" --ckpt v2-1_768-ema-pruned.ckpt --config configs/stable-diffusion/v2-inference-v.yaml --ddim_eta 0.0 --n_samples 3 --n_iter 3 --scale 5.0  --steps 100 --H 192 --W 192 --outdir output
+```
+
+/info I guess at this point I should give up on this approach and try another setup like this one https://github.com/basujindal/stable-diffusion
