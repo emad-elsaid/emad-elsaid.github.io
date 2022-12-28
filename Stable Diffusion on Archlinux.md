@@ -68,7 +68,7 @@ python scripts/txt2img.py --prompt "a professional photograph of an astronaut ri
 
 /info I guess at this point I should give up on this approach and try another setup like this one https://github.com/basujindal/stable-diffusion
 
-# Docker compose fork for CompVis Stabke Diffusion
+# Docker compose fork for CompVis Stable Diffusion
 
 - cloned this repo and cd into it `gh repo clone basujindal/stable-diffusion`
 - moved the model to another directory `mv ../stablediffusion/v2-1_768-ema-pruned.ckpt ../sd-data/model.ckpt`
