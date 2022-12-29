@@ -38,7 +38,7 @@ The following is my hardware and its specifications:
 	- 3cell Battery 57Wh
 	- Intel Dual Band Wireless AC(2x2) 8265, Bluetooth Version 4.1
 	- Qualcomm Snapdragon X7 LTE-A (Sierra Wireless EM7455)
-	- Micro-SIM-Karte Lenovo Connect
+	- Micro-SIM-Card Lenovo Connect
 
 # Office 
 
