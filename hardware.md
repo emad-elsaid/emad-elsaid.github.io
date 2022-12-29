@@ -47,3 +47,7 @@ The following is my hardware and its specifications:
 # Phone
 
 - [One Plus Nord](https://www.gsmarena.com/oneplus_nord-10289.php)
+
+# Previous Harware
+
+- Xiaomi Mi 9T Pro

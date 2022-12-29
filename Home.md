@@ -95,6 +95,8 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - On Modern Web Applications Stability
 - Don't Throw Your Question Over the Fence
 - Language Compression
+- Single Machine Startup Company System
+
 
 ## Books Reviews
 
@@ -120,12 +122,6 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - Window10 Disconnects Reconnects Usb Bluetooth
 - Working With Legacy Code
 - a week with remarkable 2
-
-## Structuring a startup system
-
-- Single Machine Startup Company System
-- Single Machine Startup Company System (Part 2)
-
 
 ## Adventures
 
