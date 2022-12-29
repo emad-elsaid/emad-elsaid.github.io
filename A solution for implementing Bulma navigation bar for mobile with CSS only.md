@@ -47,7 +47,7 @@ So this solution is good enough. and you can find it in action if you're on a sm
 ![Screenshot-2022-01-22_14-05-24.webp](/public/Screenshot-2022-01-22_14-05-24.webp)
 ![Screenshot-2022-01-22_14-05-30.webp](/public/Screenshot-2022-01-22_14-05-30.webp)
 
-### Update
+# Update
 
 After showing [Jeremy Thomas](https://twitter.com/jgthms) the creator of Bulma this solution he suggested changes that solves the burger menu transformation to X
 

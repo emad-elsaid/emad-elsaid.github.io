@@ -18,7 +18,7 @@ I'm a [software engineer](</Why I became a software developer>) backend focused.
 
 * :keyboard: Programming (Hardware) 
 * :video_game:  Video Games (Hardware)
-* :sunny:  Reading science fiction mostly
+* :book:  Reading science fiction
 * :ice_skate:  [Inline Skating](</Learning Rollerblades at My Thirties>)
 * :bike:  Cycling
 
@@ -98,7 +98,7 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - Single Machine Startup Company System
 
 
-## Books Reviews
+## Book Reviews
 
 - Fundamentals of Software Architecture
 
