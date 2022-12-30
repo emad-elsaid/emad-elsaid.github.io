@@ -154,7 +154,7 @@ JPG: 0 Files, 0 KB
 
 Numbers will be different for your project.
 
-## Generating Graphs
+# Generating Graphs
 
 The following is my approach
 

@@ -33,7 +33,7 @@ And There are some preparations for all text that get into this process
   with the son not the father name we need the longest to be found first and
   removed then the son name.
 
-## The problem
+# The problem
 
 If you have a nem like **عادل إمام** the previous process will find the name in
 articles similar to this:
@@ -61,7 +61,7 @@ Then we can use the `reg.FindString()` and `reg.ReplaceAllString()` to find the 
 
 Given we have 800k names that means for each article we'll need to match with all of them, THAT WAS VERY SLOW compared to `string.Contains` and `string.ReplaceAll` so I had to find a faster solution.
 
-## The solution
+# The solution
 
 First lets simplify this regex, with a little twist to the input we can get rid of `\A` and `\z` if our string always has a space in the beginning and at the end.
 
