@@ -25,3 +25,4 @@ I play :video_game:  games on many platforms:
 * Destiny 2
 * The Elder scrolls online
 * Elite Dangerous
+* Rogue Legacy 2
