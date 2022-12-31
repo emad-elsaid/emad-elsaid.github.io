@@ -1,6 +1,8 @@
 ![](/public/26cd8e83375c0a4eddfc16a9a89dd5e9d10a1d42b02499a64c16810c2a5441df.jpg)
 
-I got my steam deck 21 September 2022 as my 34th birthday gift. 
+#devices
+
+I got my steam deck 21-September-2022 as my 34th birthday gift. 
 
 * The steam deck I got was the 512GB version. 
 * It came with a hard case, microfiber cloth, a charger and a pouch bag for the charger.
