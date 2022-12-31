@@ -88,7 +88,7 @@ Now lets think of some elaborate queries and how we can do that with our mention
 
 # Top newspapers publishing about a person in the last month scoped by a country
 
-Here is the problem, with the `mentions` table now you can't even filter down mentions by country, you have to join on the sources tables the join that with sources accounts tables (Facebook pages, twitter accounts ..etc) that join them with newspapers table and finally you get the country id from the newspapers table, that's a lot of work, sooooo what if we just added the `newspaper_id` and the `country_id` to the `mentions` table? wouldn't that make it easier? now we can filter down mentions by country or by newspaper of both.
+Here is the problem, with the `mentions` table now you can't even filter down mentions by country, you have to join on the sources tables then join that with sources accounts tables (Facebook pages, twitter accounts ..etc) then join them with newspapers table and finally you get the country id from the newspapers table, that's a lot of work, sooooo what if we just added the `newspaper_id` and the `country_id` to the `mentions` table? wouldn't that make it easier? now we can filter down mentions by country or by newspaper or both.
 
 For our query we can filter down by country ID and a person ID + type and by a creation time the group it by the newspapers and count the records
 
@@ -140,7 +140,7 @@ That can be done partially by the database engine then augmented with a ruby cod
 Also a side note here that I found using 2 where clauses for limiting the `created_at` value is faster that the `BETWEEN` statement, no idea why it's just how it is.
 
 
-# Caching every where
+# Caching everywhere
 
 Ruby is known to be slow, so caching has to go everywhere, in some cases I case a hash of `newspapers_id -> newspaper_name` that's useful when I have to render a news article and I have the newspaper ID but I don't want every time to get the newspaper record from the database, so I had to pull all the records from the database and cache them in memory, that allowed me to resolve newspapers ID to names in constant time without and IO blocking.
 
