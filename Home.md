@@ -1,6 +1,6 @@
 ![Islamic Art Museum, Berlin](/public/84c77bc3ef2cfb5eaa20e77479b981717e889c7a9dde42a66beccbca5eba6603.jpg)
 
-Hi, This is my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's a public space. It includes notes, ideas and experiments decorated usually with a photo I captured in my everyday life. Anything I'm involved in will be part of this garden.
+Hi, This is my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's a public space. It includes notes, ideas, and experiments usually decorated with a photo I captured in my everyday life. Anything I'm involved in will be part of this garden.
 
 I'm a [software engineer](</Why I became a software developer>) backend focused. I mainly use #Ruby and #Go.
 
@@ -8,8 +8,8 @@ I'm a [software engineer](</Why I became a software developer>) backend focused.
 
 * [GitHub](https://www.github.com/emad-elsaid) have all my sideprojects. it's one of my hobbies.
 * [Twitter](https://www.twitter.com/emad__elsaid) will have my random ideas or photographs. 
-* [Facebook](https://www.facebook.com/emad.elsaid.hamed) for me is more about connecting to family and egyptian devs community
-* [Youtube](http://youtube.com/EmadElsaid) include videos about book reviews or gameplays or even some thoughts about software engineering. 
+* [Facebook](https://www.facebook.com/emad.elsaid.hamed) for me is more about connecting to family and the Egyptian devs community
+* [Youtube](http://youtube.com/EmadElsaid) includes videos about book reviews, gameplays, or even some thoughts about software engineering. 
 * [Linkedin](https://www.linkedin.com/in/emadelsaid) I keep my professional profile updated as much as possible
 * [Twitch](https://www.twitch.tv/internalerr) streams used to be fun for a while. I may get back to it
 * [Keybase](https://keybase.io/emadelsaid) can be used to send me encrypted messages if you're seeking confidentiality.
@@ -26,15 +26,15 @@ I'm a [software engineer](</Why I became a software developer>) backend focused.
 
 The following are projects I'm involved in right now or in operation without development: 
 
-* Mau : a convention for building P2P Web 2 applications 
-* Who is popular today ? : a project that collects news and people pages from wikipedia and cross link them together.
-* Xlog : Personal knowledgebase server and it's what generates this blog
+* Mau: a convention for building P2P Web 2 applications 
+* Who is popular today? : a project that collects news and people pages from Wikipedia and cross-links them together.
+* Xlog: Personal knowledgebase server and it's what generates this blog
 * [Golang Debugger](https://github.com/emad-elsaid/debugger) : a GUI interface for Delve #go debugger
-* [Library](https://github.com/emad-elsaid/library) : a simpler solution than Goodreads to manage [my books](https://library.emadelsaid.com/users/0c731704-073d-4433-b38b-1dc912f7046c)
-* [Live](https://github.com/emad-elsaid/live) : a program that gets live streams from youtube channels. 
+* [Library](https://github.com/emad-elsaid/library): a simpler solution than Goodreads to manage [my books](https://library.emadelsaid.com/users/0c731704-073d-4433-b38b-1dc912f7046c)
+* [Live](https://github.com/emad-elsaid/live): a program that gets live streams from youtube channels. 
 * [Linux Man Pages](https://man.emadelsaid.com/): The quest to collect all software man pages 
-* [Rubik's Cube timer](/timer) : A timer to generate permutations of rubik's cube and timer.
-* [Ruby Functions](https://www.rubyfunctions.com/) : Open source community for posting Ruby functions snippets
+* [Rubik's Cube timer](/timer): A timer to generate permutations of Rubik's cube and timer.
+* [Ruby Functions](https://www.rubyfunctions.com/): Open source community for posting Ruby functions snippets
 
 # :white_check_mark: Workflows and Checklists
 - CodeReview
@@ -44,7 +44,7 @@ The following are projects I'm involved in right now or in operation without dev
 
 ## Peer To Peer
 
-I developed interest in decentralization technologies and #p2p  solutions. these are some ideas that occupied my mind for a while: 
+I developed an interest in decentralization technologies and #p2p  solutions. these are some ideas that occupied my mind for a while: 
 
 - Distributed authority product features for future of distributed applications
 - A general idea of a peer to peer social network
@@ -67,7 +67,7 @@ I developed interest in decentralization technologies and #p2p  solutions. these
 - Cloning All Your GitHub Repositories or Updating Them in One Command
 - ERB Templates as Standalone Executables
 - Git as Messages Queue
-- Deploy rails application with docker compose and capistrano
+- Deploy rails application with docker compose and Capistrano
 - Integerating Jekyll and Octopress in Emacs
 - Enforcing Project Structure With Rspec
 - Tracing Ruby Applications Execution in 4 Lines
