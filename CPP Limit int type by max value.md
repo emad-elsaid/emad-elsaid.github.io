@@ -27,7 +27,6 @@ public:
 private:
   int v;
 };
-
 ```
 
 this can be used as follows:

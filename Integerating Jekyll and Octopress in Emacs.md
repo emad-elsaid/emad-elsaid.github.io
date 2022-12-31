@@ -1,6 +1,6 @@
 #ruby #elisp
 
-/info Since I wrote this note my workflow changed drastically not I'm using Xlog a program I wrote myself
+/info Since I wrote this note my workflow changed drastically now I'm using Xlog a program I wrote myself
 
 I started using emacs couple weeks ago and i have to say that i'm amazed by how this editor is working, Emacs VS VIM war isn't coming from nowhere after all.
 
@@ -26,35 +26,28 @@ Oh I forgot, here is my code, I just pasted it to my `~/.emacs` and execute it
 with `M-x RET <function-name>`
 
 ```elisp
-
 (defvar octopress-path "/Users/emad/bitbucket/blazeeboy")
 (defun octopress-post (post-name)
   (interactive "sNew post name: ")
   (message "Creating new post: %s" post-name)
   (defvar post-path
     (shell-command-to-string
-     (concat "cd " octopress-path "; octopress new post " post-name)
-     )
-    )
-  (find-file-existing (trim-string post-path))
-  )
+     (concat "cd " octopress-path "; octopress new post " post-name)))
+  (find-file-existing (trim-string post-path)))
 
 (defun octopress-dir ()
   (interactive)
   (find-file-existing
-   (concat octopress-path "/_posts"))
-  )
+   (concat octopress-path "/_posts")))
 
 (defun octopress-build-and-deploy ()
   (interactive)
-  (async-shell-command (concat "cd " octopress-path "; jekyll build; octopress deploy"))
-  )
+  (async-shell-command (concat "cd " octopress-path "; jekyll build; octopress deploy")))
 
 ;;; third party code
 ;;; http://ergoemacs.org/emacs/modernization_elisp_lib_problem.html
 (defun trim-string (string)
   "Remove white spaces in beginning and ending of STRING.
 White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
-  (replace-regexp-in-string "\\`[ \t\n]*" "" (replace-regexp-in-string "[ \t\n]*\\'" "" string))
-  )
+  (replace-regexp-in-string "\\`[ \t\n]*" "" (replace-regexp-in-string "[ \t\n]*\\'" "" string)))
 ```
