@@ -1,6 +1,6 @@
 ![Grunewald, Berlin](/public/IMG_20220411_124305.webp)
 
-I'm using [Bulma.io](https://bulma.io) for a while now. it's a beautiful CSS framework. My latest project Xlog uses bulma. This project includes a **tools dialog**, using [Bulma Modal](https://bulma.io/documentation/components/modal/). That solution needed a lot of javascript behavior that should be possible with HTML5 dialog tag. The follow post describes how I simplified the solution and reduced the Javascript involved.
+I'm using [Bulma.io](https://bulma.io) for a while now. it's a beautiful CSS framework. My latest project Xlog uses Bulma. This project includes a **tools dialog**, using [Bulma Modal](https://bulma.io/documentation/components/modal/). That solution needed a lot of javascript behavior that should be possible with an HTML5 dialog tag. The following post describes how I simplified the solution and reduced the Javascript involved.
 
 # Current solution
 
@@ -89,7 +89,7 @@ And some javascript that show/hides the dialog
  })();
 ```
 
-I don't know about you but this solution looks too complicated. there are lots of Javascript at play here that we probably don't need it.
+I don't know about you but this solution looks too complicated. there are lot of Javascript at play here that we probably don't need it.
 
 I tried to have an input to filter the tools at the top of the dialog and have it focused when the dialog appears. but that required more javascript. I know HTML5 has `autofocus` attribute that works with `dialog`. When the dialog is shown it will autofocus the input by default. so apparently I should turn around and use `dialog` tag and `autofocus` attribute.
 
@@ -99,7 +99,7 @@ HTML5 has a [dialog](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/d
 
 That means I can show and hide the dialog with `.showModal` and `.close` methods instead adding/removing `is-active` class.
 
-When I did that the dialog didn't appear. so turns out Bulma `modal` class hides the dialog. The browser already does that. so no need to use bulma `modal` class.
+When I did that the dialog didn't appear. so turns out Bulma `modal` class hides the dialog. The browser already does that. so no need to use Bulma `modal` class.
 
 # Use form to hide dialog
 
@@ -145,7 +145,7 @@ Showing the dialog focuses the input instead of the link:
 
 # Cleaning up JS
 
-There is so many in the original JS code to allow for multiple dialogs and hiding the dialog when clicking different parts of the page when the dialog is open. I have one dialog here so lets clean tihs up.
+There is so many in the original JS code to allow for multiple dialogs and hide the dialog when clicking different parts of the page when the dialog is open. I have one dialog here so lets clean it up.
 
 ```js
  const tools = document.getElementById('tools-modal');
@@ -207,4 +207,4 @@ And to save myself some code I passed the input value directly as I don't need t
 
 # Full code
 
-The full implementation can be found on [xlog repository on github](https://github.com/emad-elsaid/xlog/blob/8a2ccdad730d1677016b50f513b4c8114e5d1e89/views/view.html). I tried to remove irrelevant html attributes and surrounding code in this post for simplification.
+The full implementation can be found on [xlog repository on github](https://github.com/emad-elsaid/xlog/blob/8a2ccdad730d1677016b50f513b4c8114e5d1e89/views/view.html). I tried to remove irrelevant HTML attributes and surrounding code in this post for simplification.

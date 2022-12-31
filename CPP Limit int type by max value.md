@@ -1,17 +1,17 @@
-For the past couple weeks I have been reviewing #CPP, and while doing so I'm creating a [small Snake game](https://github.com/emad-elsaid/snake)
+For the past couple of weeks I have been reviewing #CPP, and while doing so I'm creating a [small Snake game](https://github.com/emad-elsaid/snake)
 
 I started the game without any images at all. everything is a rectangle and then when the game was working I wanted to replace the food rectangle with an image that moves. and found an asset of itch.io with a spinning coin sprite.
 
-The sprite is 5 frames each is 16 pixels. so to draw one of these frames each drawing operation I had to store current frame number and every iteration I increase it and when it goes out of bound I reset it to zero;
+The sprite is 5 frames each 16 pixels. so to draw one of these frames each drawing operation I had to store the current frame number and for every iteration I increase it and when it goes out of bound I reset it to zero;
 
 ```cpp
 int frame = 0;
 frame = (frame+1) % 5;
 ```
 
-That makes frame include only the values (0,1,2,3,4). So I wanted to flex a bit and make a type that's an Int that I can increment it and it bounds itself to a max value.
+That makes the frame include only the values (0,1,2,3,4). So I wanted to flex a bit and make a type that's an Int that I can increment it and it bounds itself to a max value.
 
-My first attempt was using template.
+My first attempt was using a template.
 
 ```cpp
 template<int max>

@@ -21,7 +21,7 @@ Archlinux repositories are HTTP servers that we use to download packages, each s
 - community
 - extra
 
-Each directory will have a **.db** file with the same name that has a list of all software in the directory, their names, and other metainformation for example **core/** directory has **core.db** file. it's a tar directory that you need to extract and inside it, there is a **desc** file with meta information for each package.
+Each directory will have a **.db** file with the same name that has a list of all software in the directory, their names, and other meta information for example **core/** directory has **core.db** file. it's a tar directory that you need to extract and inside it, there is a **desc** file with meta information for each package.
 
 The format of the **desc** file is nothing I have seen before, it's a text file that starts with a line of a label followed by a line for the value like
 
