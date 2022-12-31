@@ -1,6 +1,6 @@
 ![Grunewald, Berlin](/public/IMG_20220411_124305.webp)
 
-I'm using [Bulma.io](https://bulma.io) for a while now. it's a beautiful CSS framework. My latest project [Xlog](https://github.com/emad-elsaid/xlog) uses bulma. This project includes a **tools dialog**, using [Bulma Modal](https://bulma.io/documentation/components/modal/). That solution needed a lot of javascript behavior that should be possible with HTML5 dialog tag. The follow post describes how I simplified the solution and reduced the Javascript involved.
+I'm using [Bulma.io](https://bulma.io) for a while now. it's a beautiful CSS framework. My latest project Xlog uses bulma. This project includes a **tools dialog**, using [Bulma Modal](https://bulma.io/documentation/components/modal/). That solution needed a lot of javascript behavior that should be possible with HTML5 dialog tag. The follow post describes how I simplified the solution and reduced the Javascript involved.
 
 # Current solution
 

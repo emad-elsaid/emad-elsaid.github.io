@@ -1,6 +1,6 @@
 #ruby 
 
-yesterday i faced a problem with my rails application, my models was as follows
+yesterday i faced a problem with my rails application, my models are as follows
 
 ```ruby
 class Vehicle < ActiveRecord::Base
@@ -28,15 +28,14 @@ class Plane < ActiveRecord::Base
 end
 ```
 
-so, when i try to create a Veihcle with nested attributes for the `movable` it complain
-with error "are you trying to build a polymorphic relation?" and i thought it will continue
-my code was as follows
+so, when I try to create a vehicle with nested attributes for the `movable` it complains
+with error "are you trying to build a polymorphic relation?" 
 
 ```ruby
-Veihcle.create! name: 'my car', movable_type: 'Car', movable_attributes: { color: red }
+Vehicle.create! name: 'my car', movable_type: 'Car', movable_attributes: { color: red }
 ```
 
-the previous code should create a Veihcle with extended attributes of a car with color = red,
+the previous code should create a vehicle with extended attributes of a car with color = red,
 so i had to google first and guess what is the first thing to find?, Yup it is [Stackoverflow](http://http://stackoverflow.com/questions/3969025/accepts-nested-attributes-for-with-belongs-to-polymorphic)
 
 the highly rated solution didn't work for me :
