@@ -7,8 +7,8 @@
 
 [![](/public/1a8744393f03b16008eccd1d719453c06cc9a06ad963ca5b12623a5e08e0f5d6.png)](https://mcit.gov.eg/Upcont/Documents/Publications_2952022000_ar_MCIT%20Yearbook%202021.pdf)
 
-- Digital transformation web: http://digital.gov.eg/
-- AI national strategy web: http://ai.egypt.gov/
+- Digital transformation web: http://digital.gov.eg/ (down at this time from Germany)
+- AI national strategy web: http://ai.egypt.gov/ (down at this time from Germany)
 
 
 
