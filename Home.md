@@ -157,9 +157,9 @@ I developed an interest in decentralization technologies and #p2p  solutions. th
 
 # About this site
 
-* It's built using Xlog from markdown [repository hosted on Github](https://github.com/emad-elsaid/emad-elsaid.github.io).
-* it uses no Javascript. except for 2 lines that allow Right-To-Left (RTL) pages to be displayed in the correct direction.
-* If you find issues or typos I will be thankful if you went to the repository and edit the file and open a pull request with the changes.
+* Built using Xlog from a [repository hosted on Github](https://github.com/emad-elsaid/emad-elsaid.github.io).
+* No Javascript. except for 2 lines that fix Right-To-Left (RTL) pages.
+* If you found any typos or mistakes please click on "Edit on Github" button at the top right and open a pull request with the changes :pray: .
 * Images are optimized with mogrify and stripped from EXIF data to stay lite to your bandwidth
-* It has an ActivityPub interface that exposes all pages to  [**@Emad@www.emadelsaid.com**](/.well-known/webfinger) outbox.
+* ActivityPub interface that exposes all pages to  [**@Emad@www.emadelsaid.com**](/.well-known/webfinger) outbox.
 * [RSS feed](/+/feed.rss) exposes a limited set of the recently updated pages
