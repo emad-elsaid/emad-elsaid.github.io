@@ -1,5 +1,4 @@
-Technical writing checklist for developers
-
+A Checklist for developers. addressing technical writing on social media and personal blogs.
 
 # Introduction 
 
@@ -8,21 +7,11 @@ Technical writing checklist for developers
 - This is a checklist for developers when writing technical articles
 - This represents the preference of the document authors and shouldn't be taken as a fact
 
-# The context
-
-This document is intended for:
-
-- Developers and software engineers
-- Technical writing
-- Writing on social media and personal blogs
-
-
 # Style preferences
 
 - We prefer a **today I learned** (TIL) format over **advice from a professional** format
 - We try to keep a **looking for feedback** attitude
 - We exercise caution when giving a generalized advice
-
 
 # Before Writing
 
@@ -32,7 +21,7 @@ This document is intended for:
 # Writing
 
 - We clarify opinions from facts
-- We clarify the context
+- We clarify the context, audience, and scope
 
 # After Writing
 
@@ -46,6 +35,7 @@ This document is intended for:
 # References
 
   - Google Technical Writing https://developers.google.com/tech-writing
+  - Google Developers Style Guide https://developers.google.com/style
 
 # Contributing to this guide
 
