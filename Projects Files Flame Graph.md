@@ -6,7 +6,8 @@ Flame graphs are graphs of stack of steps over each other they define a call sta
 
 I have a project called [Dirtree](https://github.com/emad-elsaid/dirtree) it takes a set of lines in `this/unix/style/path/format/to/file.ext` and output interactive graph of these file paths, using this tool with `git ls-files` you can see the whole project structure in one HTML page as a tree, similar to that
 
-![Dirtree tree](/public/dirtree-tree.png) ![Dirtree tree](/public/dirtree-circles.png)
+![Dirtree tree](/public/dirtree-tree.png)
+![Dirtree tree](/public/dirtree-circles.png)
 
 It's interactive graph that lets you dive into the whole project structure, it helped me find unused files and clean my projects.
 
