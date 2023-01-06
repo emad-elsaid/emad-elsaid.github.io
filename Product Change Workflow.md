@@ -1,6 +1,8 @@
 ![](/public/8d3f1569c0ca00a3f1c45986f588cbb30a3b47bf627fbf69759ad07905075232.jpg)
 
-The following is a dump of the steps I should take and knowledge I should have when I'm asked for a product change:
+#checklist
+
+The following is a dump of the steps I should take and the knowledge I should have when I'm asked for a product change:
 
 # General understanding
 
