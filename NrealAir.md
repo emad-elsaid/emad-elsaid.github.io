@@ -417,6 +417,7 @@ I'm a bit surprised as pulseaudio doesn't see the device! and can't find it in [
 ![](/public/830cbead5788413f4396639d2a4fe16930df0f8b1c8f7d713834b64afffa2085.jpg)
 ![](/public/2f42bbb75702ecc6afa2f172996d3ebedecc83cdf20a416a07d475684f3915df.jpg)
 ![](/public/3d51026fbd92de79bd6d95817763aac4a82b85cb75a3af1faa14e4c5a2243fa3.jpg)
+
 ![](/public/8d7fce64fd67eeee3a17f166f221ad0622ad76a46aa6e810137476ebeee67d5f.jpg)
 ![](/public/7b15b2e3b85face801ec0c407b042728e4ebb7a5ef2501590bbf7b466d4d184f.jpg)
 ![](/public/1a1ff122d32af48707e08879d9fb616eae24f5ff4d1f02bbd29b0e60f980da95.jpg)
