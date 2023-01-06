@@ -8,6 +8,7 @@
 
 # Programming Problems
 - :star: https://projecteuler.net/
+  - ![](https://projecteuler.net/profile/emad_elsaid.png)
 - https://www.hackerrank.com/
 - https://codewars.com/
 - https://leetcode.com/
