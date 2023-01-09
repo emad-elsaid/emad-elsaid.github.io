@@ -14,7 +14,7 @@ I'm a [software engineer](</Why I became a software developer>) backend focused.
 * [Twitch](https://www.twitch.tv/internalerr) streams used to be fun for a while. I may get back to it
 * [Keybase](https://keybase.io/emadelsaid) can be used to send me encrypted messages if you're seeking confidentiality.
 
-# My Hobbies
+# Hobbies
 
 * :keyboard: Programming (Hardware) 
 * :video_game:  Video Games (Hardware)
@@ -36,7 +36,7 @@ The following are projects I'm involved in right now or in operation without dev
 * [Rubik's Cube timer](/timer): A timer to generate permutations of Rubik's cube and timer.
 * [Ruby Functions](https://www.rubyfunctions.com/): Open source community for posting Ruby functions snippets
 
-# :white_check_mark: Workflows and Checklists
+# :white_check_mark: Checklists
 - CodeReview
 - Product Change Workflow
 - Writing For Developers
