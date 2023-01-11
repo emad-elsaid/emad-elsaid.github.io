@@ -1,0 +1,1 @@
++ The Stuffed toy crochet is called: [Amigurumi](https://en.wikipedia.org/wiki/Amigurumi) 
