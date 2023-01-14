@@ -53,6 +53,7 @@ We took a walk beside the lake then decided to get back and take the bikes aroun
 ![lake](/public/scharbeutz/lake1.jpg)
 ![lake](/public/scharbeutz/lake2.jpg)
 ![lake](/public/scharbeutz/lake3.jpg)
+
 ![lake](/public/scharbeutz/lake4.jpg)
 ![lake](/public/scharbeutz/lake5.jpg)
 
@@ -70,9 +71,11 @@ These are few pictures of the beach
 ![Sea](/public/scharbeutz/sea1.jpg)
 ![Sea](/public/scharbeutz/sea2.jpg)
 ![Sea](/public/scharbeutz/sea3.jpg)
+
 ![Sea](/public/scharbeutz/sea4.jpg)
 ![Sea](/public/scharbeutz/sea5.jpg)
 ![Sea](/public/scharbeutz/sea6.jpg)
+
 ![Sea](/public/scharbeutz/sea7.jpg)
 ![Sea](/public/scharbeutz/sea8.jpg)
 
