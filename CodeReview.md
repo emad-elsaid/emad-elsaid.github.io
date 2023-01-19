@@ -56,6 +56,7 @@ Check list for code review
 - Inform any downstream team
 - Inform any technical stakeholder
 - Technical documentation updated
+- Runbook updated
 
 # Tests
 
