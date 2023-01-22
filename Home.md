@@ -11,7 +11,6 @@ I'm a [software engineer](</Why I became a software developer>) backend focused.
 * [Facebook](https://www.facebook.com/emad.elsaid.hamed) for me is more about connecting to family and the Egyptian devs community
 * [Youtube](http://youtube.com/EmadElsaid) includes videos about book reviews, gameplays, or even some thoughts about software engineering. 
 * [Linkedin](https://www.linkedin.com/in/emadelsaid) I keep my professional profile updated as much as possible
-* [Twitch](https://www.twitch.tv/internalerr) streams used to be fun for a while. I may get back to it
 * [Keybase](https://keybase.io/emadelsaid) can be used to send me encrypted messages if you're seeking confidentiality.
 
 # Hobbies
