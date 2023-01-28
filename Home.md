@@ -20,6 +20,7 @@ I'm a [software engineer](</Why I became a software developer>) backend focused.
 * :book:  Reading science fiction
 * :ice_skate:  [Inline Skating](</Learning Rollerblades at My Thirties>)
 * :bike:  Cycling
+* :scarf: Crochet
 
 # Projects
 
