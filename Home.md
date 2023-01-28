@@ -141,6 +141,7 @@ I developed an interest in decentralization technologies and #p2p  solutions. th
 - ريتروسبكتيف
 - قاهرة الطاقة النووية
 - قهوة سريعة
+- إختراق
 
 ## رأي
 
