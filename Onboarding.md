@@ -1,6 +1,6 @@
 Checklist for onboarding in a new position
 
-+ Company
++ Business
   + Familiarize yourself with departments
   + Business model
   + Different brands

@@ -31,9 +31,13 @@ Material and build quality feels very good. it also feels good in the hand more 
 
 * Some games really get on it's nerves, the witcher 3 for example. the fan kicks in after couple minutes of gameplay
 * Some games plays really smooth and doesn't make it sweat. Dead cells for example.
-* I tried to install an epic game from the desktop mode "Nioh" and it struggled with it and the experience awful it didn't regognize the correct controller layout even. so I sticked to steam games.
-* I got to install google chrome and play youtube videos that was cool.
+* I tried to install an epic game from the desktop mode "Nioh" and it struggled with it and the experience awful it didn't regognize the correct controller layout even. so I stuck to steam games.
+* I got to install google chrome and play youtube videos which were cool.
 
 # Game library
 
-It felt good that I got a game on steam deck then I played it also on my PC. I got TMNT and then found that it can be played split screen so it felt good that I can just run same game with same save history to let my wife join on a bigger screen.
+It felt good that I got a game on steam deck and also played it on my PC. I got TMNT and then found that it can be played split screen so it felt good that I could just run the same game with the same save history to let my wife join on a bigger screen.
+
+# Issues
+
++ On 4-Feb-2023 the device audio sounded weird after exiting Skyrim. I restarted it and it got stuck on the logo after booting. the recovery system can't start too. 
