@@ -10,6 +10,8 @@ The following list are tools/programs I should/have read its documentation end t
 * [ ] Grafana
 * [ ] MongoDB
 * [ ] Hadoop
+* [ ] Kubernetes
+* [ ] Itsio
 
 # Frontend 
 
