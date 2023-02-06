@@ -40,4 +40,7 @@ It felt good that I got a game on steam deck and also played it on my PC. I got 
 
 # Issues
 
-+ On 4-Feb-2023 the device audio sounded weird after exiting Skyrim. I restarted it and it got stuck on the logo after booting. the recovery system can't start too. 
++ On 4-Feb-2023 the device audio sounded weird after exiting Skyrim. I restarted it and it got stuck on the logo after booting. the recovery system can't start too.
++ I contacted Steam support, the helped with troubleshooting
+  + The first troubleshooting was to try to get into BIOS by powering on + pressing the volume up (+) and that works but still didn't solve the problem
+  + The second step was to put it in "Battery shipping mode" from the BIOS power menu and leave it a couple of minutes  and then connect it to power. that solved the issue.
