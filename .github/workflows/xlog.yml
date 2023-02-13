@@ -46,7 +46,6 @@ jobs:
           xlog \
           --build . \
           --sitename "Emad Elsaid" \
-          --sidebar=false \
           --index=Home \
           --sitemap.domain=www.emadelsaid.com \
           --activitypub.domain=www.emadelsaid.com \
