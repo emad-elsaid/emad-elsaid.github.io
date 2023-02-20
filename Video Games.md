@@ -12,7 +12,7 @@ I play :video_game:  games on many platforms:
 * Rouge Likes
 * Space Sims
 
-# Some games I liked
+# Some of games I liked
 
 * The Witcher 3 
 * Portal 2
@@ -26,3 +26,4 @@ I play :video_game:  games on many platforms:
 * The Elder scrolls online
 * Elite Dangerous
 * Rogue Legacy 2
+* Skyrim
