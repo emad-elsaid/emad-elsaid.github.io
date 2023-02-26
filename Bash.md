@@ -22,3 +22,14 @@ then
    echo proceed
 fi
 ```
+
+# Remove empty lines
+
+```bash
+command-here | tr -d '\n'
+```
+# String checks
+```bash
+if [ -n "$var" ]; then # if string not empty
+if [ -z "$var" ]; then # if string is empty
+```
