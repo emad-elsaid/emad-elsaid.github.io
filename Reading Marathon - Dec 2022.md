@@ -3,10 +3,10 @@ The following list are tools/programs I should/have read its documentation end t
 # Backend 
 
 * [x] Redis
-* [ ] Kafka
+* [x] Kafka
 * [ ] GraphQL
 * [ ] ElasticSearch
-* [ ] Prometheus
+* [x] Prometheus
 * [ ] Grafana
 * [ ] MongoDB
 * [ ] Hadoop
