@@ -2,6 +2,8 @@
 * The features is called "DPMS (Display Power Management Signaling)" 
 * it can be turned off using `xset -dpms` 
 * and can query its status using `xset q`
+* set screen saver off `xset s off`
+* set blanking off `xset s noblank`
 
 
 # References
