@@ -2,9 +2,9 @@
 
 Lets say you're a company that makes a photo editing application. Imagine it as a startup that tries to create an alternative for Adobe Photoshop.
 
-Work for me is creating the software itself. that's what the company sells. so everyone in the team should be contributing to this end artifact. That's what solely matters the freaking thing you're selling.
+"Work" for me is creating the software itself. that's what the company sells. so everyone in the team should be contributing to this end artifact. That's what solely matters the freaking thing you're selling.
 
-In reality that's not the only thing people in the company are doing of course. You'll find also people doing work that facilitate work for the actual people doing work. Like creating/closing chat channels on Slack or Hipchat or whatever people are using to communicate what they're doing. Or inventing meetings to "coordinate" between people doing work to make sure they're "aligned" and people monitoring other people doing work and measuring their performance and reviewing their work for quality. That's what I will call from now on "Meta Work" it's not an actual work that contributes to the end product. it's work that adjust the actual work that produce the end product.
+In reality that's not the only thing people in the company are doing of course. You'll find also people doing work that facilitate work for the actual people doing work. Like creating/closing chat channels on Slack or Hipchat or whatever people are using to communicate. Or inventing meetings to "coordinate" between people doing work to make sure they're "aligned" and people monitoring other people doing work and measuring their performance and reviewing their work for quality. That's what I will call from now on "Meta Work" it's not an actual work that contributes to the end product. it's work that adjust the actual work that produce the end product.
 
 Then there is other work like training people to give proper feedback. or making talks and events to make sure people know the policies for creating documentation pages that include policies about the organization. or Making meetings with people doing meta work to make sure they're doing their meta work correctly and properly. That as you expect can be named "Meta Meta work".
 
