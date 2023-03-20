@@ -60,7 +60,7 @@ You can save this on your disk and open it in the browser, putting your mouse ov
 
 I'll use Ruby and Sinatra here so install Sinatra
 
-```
+```shell
 $ gem install sinatra
 ```
 
@@ -79,13 +79,13 @@ end
 
 Make it executable
 
-```
+```shell
 $ chmod +x server
 ```
 
 And run it
 
-```
+```shell
 $ ./server
 ```
 
