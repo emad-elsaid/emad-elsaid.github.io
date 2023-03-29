@@ -1,3 +1,5 @@
+![Blackmatter Modern Museum Berlin](/public/511db9be24235fa3babd7b73222b6959940ce2ece7c47a90de4e751f837b7ffe.jpg)
+
 * A list of choices that can simplify my life as a developer
 * It also makes other developers' life easier when interacting with my software
 
