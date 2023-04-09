@@ -7,7 +7,7 @@ The following is my hardware and its specifications:
 - Tower:
 	- Processor: AMD Ryzen 7 2700X 3.7 GHz 8-Core Processor
 	- AIO cooler: NZXT Kraken X63 98.17 CFM Liquid CPU Cooler
-	- Motherboard: Asus Prime X470-Pro ATX AM4 Motherboard
+	- Motherboard: Asus Prime X470-Pro ATX AM4 Motherboard ([Manual](https://dlcdnets.asus.com/pub/ASUS/mb/SocketAM4/PRIME_X470-PRO/E13883_PRIME__X470-PRO_UM_WEB.pdf)) ([supported CPUs](https://www.asus.com/supportonly/prime%20x470-pro/helpdesk_cpu/))
 	- RAM: Corsair Vengeance LPX 64 GB (4 x 16 GB) DDR4 3200 (PC4-25600) C16 Memory
 	- SSD: SanDisk Ultra 3D 1 TB 2.5" Solid State Drive
 	- SSD NVME: 2 X Corsair MP600 Force Series Gen4 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive
