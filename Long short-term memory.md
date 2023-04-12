@@ -1,0 +1,3 @@
+a type of Recurrent Neural Network (RNN) 
+
+> "Long short-term memory" (LSTM) is a type of recurrent neural network (RNN) that is designed to handle the vanishing gradient problem that can occur when training traditional RNNs. The vanishing gradient problem refers to the issue of the gradients becoming very small as they propagate back through time in a network with many layers, making it difficult to update the weights in the lower layers.
