@@ -33,3 +33,12 @@ command-here | tr -d '\n'
 if [ -n "$var" ]; then # if string not empty
 if [ -z "$var" ]; then # if string is empty
 ```
+
+# For loop
+```bash
+authors=("author1" "author2" "author3")
+for i in ${authors[@]}
+do
+    echo $i
+done
+```
