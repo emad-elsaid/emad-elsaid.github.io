@@ -1,4 +1,4 @@
-* Basic webserver in C using libmicrohttpd
+* Basic webserver in C using [libmicrohttpd](https://www.gnu.org/software/libmicrohttpd/tutorial.html)
 
 ```c
 #include <microhttpd.h>
