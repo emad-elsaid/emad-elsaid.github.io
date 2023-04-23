@@ -29,16 +29,16 @@ void elapsed_format(clock_t start, clock_t end) {
 }
 
 enum MHD_Result router(
-                        void *cls,
-                        struct MHD_Connection *conn,
-                        const char *url, const char *method,
-                        const char *version,
-                        const char *upload_data,
-                        size_t *upload_data_size,
-                        void **con_cls
-                        ) {
-  clock_t start, end;
-  start = clock();
+                       void *cls,
+                       struct MHD_Connection *conn,
+                       const char *url,
+                       const char *method,
+                       const char *version,
+                       const char *upload_data,
+                       size_t *upload_data_size,
+                       void **con_cls
+                       ) {
+  clock_t start = clock();
 
 
   const char *page = "<html><body>Hello, browser!</body></html>";
@@ -47,7 +47,7 @@ enum MHD_Result router(
 
   MHD_destroy_response(response);
 
-  end = clock();
+  clock_t end = clock();
 
   printf("%s [", method);
   elapsed_format(start, end);
@@ -58,10 +58,10 @@ enum MHD_Result router(
 
 
 int main() {
-  struct MHD_Daemon *daemon = MHD_start_daemon(MHD_USE_INTERNAL_POLLING_THREAD, PORT, NULL, NULL,
-                            &router, NULL, MHD_OPTION_END);
-  if (NULL == daemon)
-    return 1;
+  struct MHD_Daemon *daemon = MHD_start_daemon(MHD_USE_INTERNAL_POLLING_THREAD, PORT, NULL, NULL, &router, NULL, MHD_OPTION_END);
+  if (NULL == daemon) return 1;
+
+  printf("Server started at: http://localhost:%d\nPress any key to exit...\n", PORT);
   getchar();
 
   MHD_stop_daemon(daemon);
