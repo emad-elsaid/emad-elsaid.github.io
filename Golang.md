@@ -14,3 +14,15 @@ import "C"
 # Other lists
 
 * [Awesome-Go](https://github.com/avelino/awesome-go)
+
+# Modules 
+
+List upgradable modules
+```bash
+go list -u -m all
+```
+
+Upgrade all modules
+```bash
+go get -u ./...
+```
