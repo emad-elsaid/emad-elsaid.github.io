@@ -5,27 +5,32 @@
 #include <time.h>
 #include <string.h>
 #include <stdio.h>
+#include <err.h>
 
 #define PORT 8888
 
-void elapsed_format(clock_t start, clock_t end) {
+char *second = "s";
+char *millisecond = "ms";
+char *microsecond = "μs";
+
+double elapsed_format(clock_t start, clock_t end, char **o_unit) {
   double s = ((double)(end - start)) / CLOCKS_PER_SEC;
 
   if (s >= 1) {
-    printf("%.2fs", s);
-    return;
+    *o_unit = second;
+    return s;
   }
 
   s *= 1000;
 
   if (s >= 1) {
-    printf("%.2fms", s);
-    return;
+    *o_unit = millisecond;
+    return s;
   }
 
   s *= 1000;
-  printf("%.2fμs", s);
-  return;
+  *o_unit = microsecond;
+  return s;
 }
 
 enum MHD_Result router(
@@ -49,9 +54,9 @@ enum MHD_Result router(
 
   clock_t end = clock();
 
-  printf("%s [", method);
-  elapsed_format(start, end);
-  printf("] %s\n", url);
+  char *unit;
+  double period = elapsed_format(start, end, &unit);
+  printf("%s [%.2f%s] %s\n", method, period, unit, url);
 
   return ret;
 }
