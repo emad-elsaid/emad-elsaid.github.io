@@ -1,0 +1,18 @@
+To install wayland and associated tools I did the following
+
+# Tools exchange
+- Wayland
+- Xserver + i3 -> Hyprland
+- Polybar -> Waybar
+- Feh -> Hyprpaper
+
+# Commands
+```bash
+sudo pacman -S wayland
+sudo pacman -S hyprland
+sudo pacman -S waypaper
+yay -S qt5-wayland qt5ct libva nvidia-vaapi-driver-git
+sudo systemctl start seatd
+sudo usermod -a -G seat <user>
+yay -S waybar-hyprland-git
+```
