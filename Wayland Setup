@@ -15,4 +15,5 @@ yay -S qt5-wayland qt5ct libva nvidia-vaapi-driver-git
 sudo systemctl start seatd
 sudo usermod -a -G seat <user>
 yay -S waybar-hyprland-git
+pacman -S xdg-desktop-portal-hyprland pipewire wireplumber qt6-wayland xdg-desktop-portal-wlr
 ```
