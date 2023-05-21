@@ -5,6 +5,7 @@ To install wayland and associated tools I did the following
 - Xserver + i3 -> Hyprland
 - Polybar -> Waybar
 - Feh -> Hyprpaper
+- scrot -> grim, slurp
 
 # Commands
 ```bash
