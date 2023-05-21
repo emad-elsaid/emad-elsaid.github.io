@@ -13,3 +13,8 @@ sudo yay -S wayland hyprland waypaper qt5-wayland qt5ct libva nvidia-vaapi-drive
 sudo systemctl start seatd
 sudo usermod -a -G seat <user>
 ```
+
+# Problems
+Although it worked mostly there were problems
+
+- screensharing didn't work with both desktop-portal implementations -wlr and -hyprland
