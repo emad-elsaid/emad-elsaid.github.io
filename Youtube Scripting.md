@@ -3,13 +3,19 @@ A signature sentence. repeat it every video.
 
 > Hey what's up, I'm MKBHD here
 
+> بسم الله الرحمن الرحيم، اهلا وسهلا بحضراتكم فى لقاء جديد
+
+> صديقى الإنسان...
+
 # Intro
 Promise, Shocking statement, Controversial sentence. 
 
 > So this little machine, this one right here, that I can hold in my hands, has more power than a base Mac Pro right now, more CPU power anyway....
 
-# Elaboration
-Reasoning behind the Introduction statement. 
+> Welcome to this first impression video...
+
+# Elaborate
+Reasoning behind the intro statement. 
 
 # Detailed reasoning 
 Body of the essay. detailed reasoning that led to the intro. showing proofs and inference of every step that led to the intro statement
