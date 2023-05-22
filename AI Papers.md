@@ -12,3 +12,7 @@ Sorted by learning order
 
 * [Practical deep learning](https://course.fast.ai/)
 * [Hugging face course](https://huggingface.co/course/chapter1/1)
+
+# Tools
+
+* Facebook AI Text to speech https://github.com/facebookresearch/fairseq/tree/main/examples/mms
