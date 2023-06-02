@@ -26,5 +26,10 @@ https://www.youtube.com/watch?v=vtIzMaLkCaM
   * You're not here to create new knowledge. but valuable knowledge.
 * Every community has code. set of words that communicate value
   * Know the code to make your text persuasive
+* Have an argument not an explanation 
+* If you're challenging the community you need to do it under the code
+ * There are insulting ways to do it. avoid it
+* Your writing function is to help your readers understanding better something they want to understand well 
+ * Reasons for writing is different than reasons for reading
 
 #writing #lectures #coms
