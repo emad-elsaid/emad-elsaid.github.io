@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=vtIzMaLkCaM
 
+The lecture is about academic writing. However it is also useful in technical writing for developers
+
 * Stop thinking about rules and start thinking about readers
 * Writing is a tool for thinking
   * Thinking and writing are not separate processes
@@ -31,5 +33,7 @@ https://www.youtube.com/watch?v=vtIzMaLkCaM
  * There are insulting ways to do it. avoid it
 * Your writing function is to help your readers understanding better something they want to understand well 
  * Reasons for writing is different than reasons for reading
+ * The function is to move the conversation forward
+ * The function is not to be preserved indefinitely
 
 #writing #lectures #coms
