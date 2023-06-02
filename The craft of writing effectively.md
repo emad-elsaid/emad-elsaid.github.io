@@ -35,5 +35,14 @@ The lecture is about academic writing. However it is also useful in technical wr
  * Reasons for writing is different than reasons for reading
  * The function is to move the conversation forward
  * The function is not to be preserved indefinitely
+ * It's not to reveal what's in your head but to change the space of what's going on between your heads
+* Words that create tension: however, challenge, contradiction, despite, instability, red flag, instability.
+* Avoid talking about yourself, it's not about YOUR problem. 
+ * the problem needs to reside on the reader side not the writer side
+ * you locate a problem in a specific reading communities
+ * Show that the situation is **unstable**
+* Readers look for models of inconsistency to identify value
+* "We have a gap in our knowledge" a polite way to say: "We're wrong" about something
+ * It's huge problem for some communities to use a category that they don't understand
 
 #writing #lectures #coms
