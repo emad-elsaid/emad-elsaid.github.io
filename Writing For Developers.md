@@ -38,6 +38,7 @@ A Checklist for developers. addressing technical writing on social media and per
 
   - Google Technical Writing https://developers.google.com/tech-writing
   - Google Developers Style Guide https://developers.google.com/style
+  - Canadian Gov "Making documents more accessible" https://www.canada.ca/en/employment-social-development/programs/accessible-canada-regulations-guidance/alternate-formats/making-documents-more-accessible.html
 
 # Contributing to this guide
 
