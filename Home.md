@@ -9,7 +9,7 @@ I'm a [software engineer](</Why I became a software developer>) backend focused.
 * [GitHub](https://www.github.com/emad-elsaid) have all my sideprojects. it's one of my hobbies.
 * [Twitter](https://www.twitter.com/emad__elsaid) will have my random ideas or photographs. 
 * [Facebook](https://www.facebook.com/emad.elsaid.hamed) for me is more about connecting to family and the Egyptian devs community
-* [Youtube](http://youtube.com/EmadElsaid) includes videos about book reviews, gameplays, or even some thoughts about software engineering. 
+* Youtube : includes videos about book reviews, gameplays, or even some thoughts about software engineering. 
 * [Linkedin](https://www.linkedin.com/in/emadelsaid) I keep my professional profile updated as much as possible
 * [Keybase](https://keybase.io/emadelsaid) can be used to send me encrypted messages if you're seeking confidentiality.
 
