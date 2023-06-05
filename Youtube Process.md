@@ -16,6 +16,8 @@
 # Scripting
 
 - Follow Youtube Scripting
+- How to speak
+- The craft of writing effectively
 
 # Shooting
 
