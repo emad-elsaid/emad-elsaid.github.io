@@ -16,3 +16,13 @@ Update keyring
 ```shell
 sudo pacman -Sy archlinux-keyring
 ```
+
+Show package information
+```shell
+pacman -Qi movit
+```
+
+List package files
+```shell
+pacman -Ql movit
+```
