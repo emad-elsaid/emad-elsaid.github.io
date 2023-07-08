@@ -12,9 +12,10 @@ This machine should support the following use cases
   + Monitoring and alerting
  
 # Constraints
-+ Silent.
++ Silent. spinning fans is not an option
 + Lowest power usage possible
 + Lowest temperature possible
++ Smallest size possible
 
 # Consequences
 + Reduce the VPS server instance, reducing the cost per month. offloading this cost to the hardware cost, maintenance, power consumption.
