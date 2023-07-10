@@ -13,6 +13,8 @@ This machine should support the following use cases
  
 # Not a use case
 + Streaming media
++ Working with Kubernetes
++ Gaming
  
 # Constraints
 + Silent. spinning fans is not an option
@@ -27,7 +29,9 @@ This machine should support the following use cases
   + RAID 5 (tolerates 1 device failure) or 6 (tolerates 2 devices failure) will cover this case
     + LVM has built-in raid
       + [Recovery process](https://serverfault.com/questions/959930/how-to-recover-from-drive-failure-on-lvm-software-raid-10-in-linux)
-      + [LVM RAID command documentation](https://manpages.ubuntu.com/manpages/lunar/en/man7/lvmraid.7.html) - includes recovery process 
+      + [LVM RAID command documentation](https://manpages.ubuntu.com/manpages/lunar/en/man7/lvmraid.7.html) - includes recovery process
+    + ZFS also can do both LVM and RAID job + it's a filesystem. doesn't need a filesystem over it like LVM does
+      + It's a bit technical to get it to work with Linux
 + Whole system failure
   + Off-site backup to cover for whole system failure
 
