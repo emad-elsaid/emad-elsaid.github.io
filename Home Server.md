@@ -10,6 +10,7 @@ This machine should support the following use cases
 + Support VPS in administrative tasks
   + Works as a logging server
   + Monitoring and alerting
+  + Control Hue lights
  
 # Not a use case
 + Streaming media
