@@ -31,7 +31,6 @@ The following are projects I'm involved in right now or in operation without dev
 * Xlog: Personal knowledgebase server and it's what generates this blog
 * [Golang Debugger](https://github.com/emad-elsaid/debugger) : a GUI interface for Delve #go debugger
 * [Library](https://github.com/emad-elsaid/library): a simpler solution than Goodreads to manage [my books](https://library.emadelsaid.com/users/0c731704-073d-4433-b38b-1dc912f7046c)
-* [Linux Man Pages](https://man.emadelsaid.com/): The quest to collect all software man pages 
 * [Rubik's Cube timer](/timer): A timer to generate permutations of Rubik's cube and timer.
 * [Ruby Functions](https://www.rubyfunctions.com/): Open source community for posting Ruby functions snippets
 
