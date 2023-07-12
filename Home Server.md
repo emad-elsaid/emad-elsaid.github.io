@@ -23,7 +23,6 @@ This machine should support the following use cases
 + Lowest temperature possible
 + Smallest size possible
 
-
 # Storage reliability 
 + 1 Disk failure
   + Data redundancy to cover for 1 disk failure
@@ -31,7 +30,7 @@ This machine should support the following use cases
     + LVM has built-in raid
       + [Recovery process](https://serverfault.com/questions/959930/how-to-recover-from-drive-failure-on-lvm-software-raid-10-in-linux)
       + [LVM RAID command documentation](https://manpages.ubuntu.com/manpages/lunar/en/man7/lvmraid.7.html) - includes recovery process
-    + ZFS also can do both LVM and RAID job + it's a filesystem. doesn't need a filesystem over it like LVM does
+    + ZFS also can do both LVM and RAID and LUKS job + it's a filesystem. doesn't need a filesystem over it like LVM does
       + It's a bit technical to get it to work with Linux
 + Whole system failure
   + Off-site backup to cover for whole system failure
@@ -41,6 +40,7 @@ I have some hardware at home that can potentially be used
 + Lenovo ThinkPad X1 Carbon laptop 9th Gen
 + Samsung 640GB USB hard desk
   + Shows signs of age. some bad sectors are reported in its SMART report
++ 8 TB HDD Seagate Barracuda compute
 
 # Consequences
 + Reduce the VPS server instance, reducing the cost per month. offloading this cost to the hardware cost, maintenance, and power consumption.
@@ -63,7 +63,27 @@ I have some hardware at home that can potentially be used
 + cost saving per month = 65-29.39 = 35.61
 + cost saving per year = 35.61 * 12 = 427.32 EUR
 
+# Minimum Hardware
+Half of the VPS and all the data we have now is the minimum
+
++ 3 disks for RAIDZ1 (ZFS), or RAID5
++ Total disk capacity: 184 GB (exactly the current data size)
++ CPU: 8 CPU at 2.4 GHz (half of current VPS CPU)
++ Memory: 16GB
+
+# Reasonable Hardware
+More reasonable hardware based on the minimum and future usage
+
++ 3 disks are fine. 4 disks to implement RAIDZ2/RAID6 can allow more resiliency
++ Total capacity should be over the combined storage of personal systems: 5 TB
++ CPU and Memory are fine at minimum
+
+# Hardware prices
++ Disks
+  + https://diskprices.com/
+
 # References 
 + [Level1Linux video about LVM and LUKS](https://www.youtube.com/watch?v=kML6JWnLgHk)
 + [Level1 forum for setting up Archlinux with LVM, LUKS, RAID](https://forum.level1techs.com/t/gkh-threadripper-3970x-setup-notes/156330)
 + [Archlinux Root on ZFS](https://openzfs.github.io/openzfs-docs/Getting%20Started/Arch%20Linux/Root%20on%20ZFS.html)
++ [ZFS storage calculator](https://wintelguy.com/zfs-calc.pl)
