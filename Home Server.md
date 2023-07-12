@@ -95,6 +95,7 @@ More reasonable hardware based on the minimum in the previous section and taking
 # Offsite backup
 
 #to_be_decided
++ Max total storage 15TB
 
 # Power consumption
 
