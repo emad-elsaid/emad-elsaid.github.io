@@ -1,4 +1,4 @@
-The following document describes the reasoning for building a home server machine. It is sometimes called "Home Lab". However, I won't use this term as it has been loaded with more concepts and expanded in scope. so I'll refer to what I want as a "Home Server". a machine that works 24/7 and support some use cases.
+This document describes the reasoning for building a home server machine. It is sometimes called "Home Lab". However, I won't use this term as it has been loaded with more concepts and expanded in scope. so I'll refer to what I want as a "Home Server". a machine that works 24/7 and support some use cases.
 
 # Use Cases
 This machine should support the following use cases
@@ -18,7 +18,7 @@ This machine should support the following use cases
 + Gaming
  
 # Constraints
-+ Silent. spinning fans is not an option
++ Silent
 + Lowest power usage possible
 + Lowest temperature possible
 + Smallest size possible
@@ -63,7 +63,7 @@ I have some hardware at home that can potentially be used
 + cost saving per month = 65-29.39 = 35.61
 + cost saving per year = 35.61 * 12 = 427.32 EUR
 
-# Minimum Hardware
+# Minimum Specifications
 Half of the VPS and all the data we have now is the minimum
 
 + 3 disks for RAIDZ1 (ZFS), or RAID5
@@ -71,16 +71,47 @@ Half of the VPS and all the data we have now is the minimum
 + CPU: 8 CPU at 2.4 GHz (half of current VPS CPU)
 + Memory: 16GB
 
-# Reasonable Hardware
-More reasonable hardware based on the minimum and future usage
+# Reasonable Specifications
+More reasonable hardware based on the minimum in the previous section and taking into account the future need
 
 + 3 disks are fine. 4 disks to implement RAIDZ2/RAID6 can allow more resiliency
 + Total capacity should be over the combined storage of personal systems: 5 TB
 + CPU and Memory are fine at minimum
 
+# Hardware
+
++ 4 disks
+  + 1x8TB old disk
+  + 2x8TB new disks
+  + 1x1TB SSD: boot disk
++ Direct Attached Storage (DAS) box with at least 5 bays (4 for disks and 1 for replacement for disaster recovery)
++ Use the Lenovo laptop as a CPU for the DAS
+
+# Benefits of the system form
++ Replacing the laptop with a more powerful system at any time without losing the data or installing the system
++ avoided booting from the ZFS pool by adding the SSD
++ Can connect to the network over wifi or ethernet cable
+
+# Offsite backup
+
+#to_be_decided
+
+# Power consumption
+
+#to_be_decided
+
+# Noise level
+
+#to_be_decided
+
 # Hardware prices
 + Disks
   + https://diskprices.com/
+ 
+# Software
++ Basics
+  + SSH
+  + Docker compose
 
 # References 
 + [Level1Linux video about LVM and LUKS](https://www.youtube.com/watch?v=kML6JWnLgHk)
