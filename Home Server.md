@@ -118,3 +118,4 @@ More reasonable hardware based on the minimum in the previous section and taking
 + [Level1 forum for setting up Archlinux with LVM, LUKS, RAID](https://forum.level1techs.com/t/gkh-threadripper-3970x-setup-notes/156330)
 + [Archlinux Root on ZFS](https://openzfs.github.io/openzfs-docs/Getting%20Started/Arch%20Linux/Root%20on%20ZFS.html)
 + [ZFS storage calculator](https://wintelguy.com/zfs-calc.pl)
++ [ZFS on /home](https://theorangeone.net/posts/zfs-on-home/)
