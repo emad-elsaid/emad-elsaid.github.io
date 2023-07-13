@@ -23,6 +23,10 @@ This machine should support the following use cases
 + Lowest temperature possible
 + Smallest size possible
 
+# Guidelines
++ Learn something new
++ Minimal. no bloat
+
 # Security
 + Data at rest encryption
 
