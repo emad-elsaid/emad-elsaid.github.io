@@ -89,6 +89,7 @@ More reasonable hardware based on the minimum in the previous section and taking
   + 1x1TB SSD: boot disk
 + Direct Attached Storage (DAS) box with at least 5 bays (4 for disks and 1 for replacement for disaster recovery)
 + Use the Lenovo laptop as a CPU for the DAS
++ Zigbee Dongle to control Zigbee devices (Philips Hue lights)
 
 # Benefits of the system form
 + Replacing the laptop with a more powerful system at any time without losing the data or installing the system
