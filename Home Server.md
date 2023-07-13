@@ -23,6 +23,9 @@ This machine should support the following use cases
 + Lowest temperature possible
 + Smallest size possible
 
+# Security
++ Data at rest encryption
+
 # Storage reliability 
 + 1 Disk failure
   + Data redundancy to cover for 1 disk failure
