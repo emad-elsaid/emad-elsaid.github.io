@@ -107,15 +107,13 @@ More reasonable hardware based on the minimum in the previous section and taking
 # Noise level
 
 #to_be_decided
-
-# Hardware prices
-+ Disks
-  + https://diskprices.com/
  
 # Software
 + Basics
   + SSH
   + Docker compose
+  + python
+  + rsync
 
 # References 
 + [Level1Linux video about LVM and LUKS](https://www.youtube.com/watch?v=kML6JWnLgHk)
@@ -123,3 +121,4 @@ More reasonable hardware based on the minimum in the previous section and taking
 + [Archlinux Root on ZFS](https://openzfs.github.io/openzfs-docs/Getting%20Started/Arch%20Linux/Root%20on%20ZFS.html)
 + [ZFS storage calculator](https://wintelguy.com/zfs-calc.pl)
 + [ZFS on /home](https://theorangeone.net/posts/zfs-on-home/)
++ [Disk prices](https://diskprices.com/)
