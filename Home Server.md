@@ -100,6 +100,11 @@ More reasonable hardware based on the minimum in the previous section and taking
 + Disks
 + DAS
   + SABRENT https://www.amazon.de/dp/B07Y4F5SCK
++ Zigbee gateway
+  + ConBee II The Universal Zigbee USB Gateway https://www.amazon.de/-/en/ConBee-Universal-Zigbee-USB-Gateway-black/dp/B07PZ7ZHG5
+  + ORICO
+    + https://www.amazon.de/-/en/dp/B07WCM6F7Z/
+    + https://www.amazon.de/-/en/dp/B07W6MF1TG/
 
 # Benefits of the system form
 + Replacing the laptop with a more powerful system at any time without losing the data or installing the system
@@ -133,3 +138,7 @@ More reasonable hardware based on the minimum in the previous section and taking
 + [ZFS storage calculator](https://wintelguy.com/zfs-calc.pl)
 + [ZFS on /home](https://theorangeone.net/posts/zfs-on-home/)
 + [Disk prices](https://diskprices.com/)
++ Sourcing hardware
+  + [Alternate.de](https://www.alternate.de/)
+  + [Ali Express](https://de.aliexpress.com/)
+  + [Kleinanzeigen](https://www.kleinanzeigen.de/stadt/berlin/)
