@@ -100,11 +100,12 @@ More reasonable hardware based on the minimum in the previous section and taking
 + Disks
 + DAS
   + SABRENT https://www.amazon.de/dp/B07Y4F5SCK
-+ Zigbee gateway
-  + ConBee II The Universal Zigbee USB Gateway https://www.amazon.de/-/en/ConBee-Universal-Zigbee-USB-Gateway-black/dp/B07PZ7ZHG5
   + ORICO
     + https://www.amazon.de/-/en/dp/B07WCM6F7Z/
     + https://www.amazon.de/-/en/dp/B07W6MF1TG/
++ Zigbee gateway
+  + ConBee II The Universal Zigbee USB Gateway https://www.amazon.de/-/en/ConBee-Universal-Zigbee-USB-Gateway-black/dp/B07PZ7ZHG5
+
 
 # Benefits of the system form
 + Replacing the laptop with a more powerful system at any time without losing the data or installing the system
