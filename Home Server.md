@@ -95,6 +95,12 @@ More reasonable hardware based on the minimum in the previous section and taking
 + Use the Lenovo laptop as a CPU for the DAS
 + Zigbee Dongle to control Zigbee devices (Philips Hue lights)
 
+# Hardware Options
+
++ Disks
++ DAS
+  + SABRENT https://www.amazon.de/dp/B07Y4F5SCK
+
 # Benefits of the system form
 + Replacing the laptop with a more powerful system at any time without losing the data or installing the system
 + avoided booting from the ZFS pool by adding the SSD
