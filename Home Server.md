@@ -114,7 +114,7 @@ More reasonable hardware based on the minimum in the previous section and taking
     + [SAMA IM01 MicroATX Mini Tower Case](https://pcpartpicker.com/product/pfvdnQ/sama-im01-microatx-mini-tower-case-im01)
       + Haven't found a build that put HDDs in this case. so I'm gonna discard it
     + [Silverstone CS351 MicroATX Desktop Case](https://pcpartpicker.com/product/VcD7YJ/silverstone-cs351-microatx-desktop-case-sst-cs351)
-      + 
+      + 5 hot swappable HDD
 
 # Hardware Options
 
