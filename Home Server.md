@@ -22,6 +22,7 @@ This machine should support the following use cases
 + Lowest power usage possible
 + Lowest temperature possible
 + Smallest size possible
++ Priority is to reuse parts I have
 
 # Guidelines
 + Learn something new
@@ -109,6 +110,11 @@ More reasonable hardware based on the minimum in the previous section and taking
 + Zigbee Dongle to control Zigbee devices (Philips Hue lights)
 + Notes
   + NZXT caseH510i allows only for a maximum of 3 HDD
+  + I can replace the case with a more suitable choice
+    + [SAMA IM01 MicroATX Mini Tower Case](https://pcpartpicker.com/product/pfvdnQ/sama-im01-microatx-mini-tower-case-im01)
+      + Haven't found a build that put HDDs in this case. so I'm gonna discard it
+    + [Silverstone CS351 MicroATX Desktop Case](https://pcpartpicker.com/product/VcD7YJ/silverstone-cs351-microatx-desktop-case-sst-cs351)
+      + 
 
 # Hardware Options
 
