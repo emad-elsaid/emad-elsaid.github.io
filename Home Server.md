@@ -52,7 +52,8 @@ I have some hardware at home that can potentially be used
   + 1 TB NVME
   + 32 GB RAM
   + Nvidia RTX 2060
-  + Ryzen5 
+  + Ryzen5 3600 3.6GHz 6 cores
+  + NZXT H510i case
 
 # Consequences
 + Reduce the VPS server instance, reducing the cost per month. offloading this cost to the hardware cost, maintenance, and power consumption.
@@ -105,6 +106,8 @@ More reasonable hardware based on the minimum in the previous section and taking
 + Reuse the PC case
 + 2x8TB new disks
 + Zigbee Dongle to control Zigbee devices (Philips Hue lights)
++ Notes
+  + NZXT caseH510i allows only for a maximum of 3 HDD
 
 # Hardware Options
 
