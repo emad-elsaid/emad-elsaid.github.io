@@ -54,6 +54,7 @@ I have some hardware at home that can potentially be used
   + Nvidia RTX 2060
   + Ryzen5 3600 3.6GHz 6 cores
   + NZXT H510i case
+  + Mobo: ASRock B550M pro4 micro ATX
 
 # Consequences
 + Reduce the VPS server instance, reducing the cost per month. offloading this cost to the hardware cost, maintenance, and power consumption.
