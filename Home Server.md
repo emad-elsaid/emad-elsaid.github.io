@@ -114,16 +114,17 @@ More reasonable hardware based on the minimum in the previous section and taking
     + [SAMA IM01 MicroATX Mini Tower Case](https://pcpartpicker.com/product/pfvdnQ/sama-im01-microatx-mini-tower-case-im01)
       + Haven't found a build that put HDDs in this case. so I'm gonna discard it
     + [Silverstone CS351 MicroATX Desktop Case](https://pcpartpicker.com/product/VcD7YJ/silverstone-cs351-microatx-desktop-case-sst-cs351)
-      + 5 hot swappable HDD
+      + 5 hot-swappable HDD
 
 # Hardware Options
-
 + Disks
 + DAS
   + SABRENT https://www.amazon.de/dp/B07Y4F5SCK
   + ORICO
-    + https://www.amazon.de/-/en/dp/B07WCM6F7Z/
+    + 5 bay https://amzn.eu/d/bmBbdtK
+      + it has two variants USB 3.0 and USB 3.1 USB-C
     + https://www.amazon.de/-/en/dp/B07W6MF1TG/
+  + we'll need a 3.5" to 2.5" converter for the SSD 
 + Zigbee gateway
   + ConBee II The Universal Zigbee USB Gateway https://www.amazon.de/-/en/ConBee-Universal-Zigbee-USB-Gateway-black/dp/B07PZ7ZHG5
 
