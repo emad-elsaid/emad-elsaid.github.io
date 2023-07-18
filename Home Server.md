@@ -116,6 +116,9 @@ More reasonable hardware based on the minimum in the previous section and taking
     + [Silverstone CS351 MicroATX Desktop Case](https://pcpartpicker.com/product/VcD7YJ/silverstone-cs351-microatx-desktop-case-sst-cs351)
       + 5 hot-swappable HDD
 
+### Solution1 2 issues
++ will need a monitor/keyboard/mouse to unlock the encrypted disk on boot
+
 # Hardware Options
 + Disks
 + DAS
