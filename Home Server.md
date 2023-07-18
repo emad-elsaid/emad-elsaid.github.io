@@ -47,7 +47,12 @@ I have some hardware at home that can potentially be used
 + Lenovo ThinkPad X1 Carbon laptop 9th Gen
 + Samsung 640GB USB hard desk
   + Shows signs of age. some bad sectors are reported in its SMART report
-+ 8 TB HDD Seagate Barracuda compute
++ PC case of:
+  + 8 TB HDD Seagate Barracuda compute
+  + 1 TB NVME
+  + 32 GB RAM
+  + Nvidia RTX 2060
+  + Ryzen5 
 
 # Consequences
 + Reduce the VPS server instance, reducing the cost per month. offloading this cost to the hardware cost, maintenance, and power consumption.
@@ -87,12 +92,18 @@ More reasonable hardware based on the minimum in the previous section and taking
 
 # Hardware
 
+## Solution 1
 + 4 disks
   + 1x8TB old disk
   + 2x8TB new disks
   + 1x1TB SSD: boot disk
 + Direct Attached Storage (DAS) box with at least 5 bays (4 for disks and 1 for replacement for disaster recovery)
 + Use the Lenovo laptop as a CPU for the DAS
++ Zigbee Dongle to control Zigbee devices (Philips Hue lights)
+
+## Solution 2
++ Reuse the PC case
++ 2x8TB new disks
 + Zigbee Dongle to control Zigbee devices (Philips Hue lights)
 
 # Hardware Options
