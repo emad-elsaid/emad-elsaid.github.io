@@ -118,6 +118,9 @@ More reasonable hardware based on the minimum in the previous section and taking
 
 ### Solution1 2 issues
 + will need a monitor/keyboard/mouse to unlock the encrypted disk on boot
+  + [a post on level1tech](https://forum.level1techs.com/t/whats-the-common-setup-for-zfs-encrypted-home-server/199390/6) led me to the method of adding ssh to initramfs and boot from ssh
+  + [PiKVM](https://pikvm.org/) can also allow for remote booting
+  + [ZFSbootmenu](https://docs.zfsbootmenu.org/en/v2.2.x/)
 
 # Hardware Options
 + Disks
