@@ -29,7 +29,8 @@
 ## Tone of Voice
 + Use singular form to refer to the viewer
 + Calm
-+ Data driven 
++ Data driven
++ [Educational narrative voice ](https://youtu.be/wfUT6eY0Krw?t=910)
 
 # Shooting
 
