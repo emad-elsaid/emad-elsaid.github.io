@@ -104,6 +104,11 @@ More reasonable hardware based on the minimum in the previous section and taking
 + Use the Lenovo laptop as a CPU for the DAS
 + Zigbee Dongle to control Zigbee devices (Philips Hue lights)
 
+# Benefits of solution 1
++ Replacing the laptop with a more powerful system at any time without losing the data or installing the system
++ avoided booting from the ZFS pool by adding the SSD
++ Can connect to the network over wifi or ethernet cable
+
 ## Solution 2
 + Reuse the PC case
 + 2x8TB new disks
@@ -116,11 +121,15 @@ More reasonable hardware based on the minimum in the previous section and taking
     + [Silverstone CS351 MicroATX Desktop Case](https://pcpartpicker.com/product/VcD7YJ/silverstone-cs351-microatx-desktop-case-sst-cs351)
       + 5 hot-swappable HDD
 
-### Solution1 2 issues
+### Solution 2 issues
 + will need a monitor/keyboard/mouse to unlock the encrypted disk on boot
   + [a post on level1tech](https://forum.level1techs.com/t/whats-the-common-setup-for-zfs-encrypted-home-server/199390/6) led me to the method of adding ssh to initramfs and boot from ssh
   + [PiKVM](https://pikvm.org/) can also allow for remote booting
   + [ZFSbootmenu](https://docs.zfsbootmenu.org/en/v2.2.x/)
+
+### Solution 2 benefits
++ each component is replacable
++ PCIe slot and 2 NVME M.2 slots on board
 
 # Hardware Options
 + Disks
@@ -134,11 +143,14 @@ More reasonable hardware based on the minimum in the previous section and taking
 + Zigbee gateway
   + ConBee II The Universal Zigbee USB Gateway https://www.amazon.de/-/en/ConBee-Universal-Zigbee-USB-Gateway-black/dp/B07PZ7ZHG5
 
+# Hardware bought 
 
-# Benefits of the system form
-+ Replacing the laptop with a more powerful system at any time without losing the data or installing the system
-+ avoided booting from the ZFS pool by adding the SSD
-+ Can connect to the network over wifi or ethernet cable
++ 2 Baracuda computer 8TB x 131.89EUR [(Amazon)](https://amzn.eu/d/g9KHiV9)
++ ConBee II The Universal Zigbee USB Gateway 39.95EUR [(Amazon)](https://amzn.eu/d/dNhDHIi)
++ 3 SATA cables 5.79EUR [(Amazon)](https://amzn.eu/d/aAMRBdK)
+
++ Total: 309.52 EUR
++ Budget remains from cost saving: 427.32 - 309.52 = 117.8 EUR
 
 # Offsite backup
 
