@@ -161,5 +161,4 @@ I developed an interest in decentralization technologies and #p2p  solutions. th
 
 * Built using Xlog from a [repository hosted on Github](https://github.com/emad-elsaid/emad-elsaid.github.io).
 * If you found any typos or mistakes please click on "Edit on Github" button at the top right and open a pull request with the changes :pray: 
-* Images are optimized with mogrify and stripped from EXIF data to stay lite to your bandwidth
 * ActivityPub interface that exposes all pages to  [**@Emad@www.emadelsaid.com**](/.well-known/webfinger) outbox.
