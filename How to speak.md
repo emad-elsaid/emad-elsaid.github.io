@@ -37,3 +37,5 @@ https://www.youtube.com/watch?v=Unzc731iCUY
   * Don't say thank you. too lazy
   * Appreciate the audience's time and place.
     * It's been a great fun being here
+   
+#lectures #writing
