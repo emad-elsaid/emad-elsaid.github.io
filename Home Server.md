@@ -164,7 +164,16 @@ More reasonable hardware based on the minimum in the previous section and taking
 # Noise level
 
 #to_be_decided
- 
+
+
+# System 
++ Boot into ArchIso and load ZFS
+  + https://wiki.archlinux.org/title/Install_Arch_Linux_on_ZFS
+  + https://github.com/eoli3n/archiso-zfs
+  + https://openzfs.github.io/openzfs-docs/Getting%20Started/Arch%20Linux/Root%20on%20ZFS.html
+  + `curl -s https://raw.githubusercontent.com/eoli3n/archiso-zfs/master/init | bash`
+
+
 # Software
 + Basics
   + SSH
