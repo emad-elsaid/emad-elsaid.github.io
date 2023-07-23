@@ -168,11 +168,33 @@ More reasonable hardware based on the minimum in the previous section and taking
 
 # System 
 + Boot into ArchIso and load ZFS
+  + Booting error: "failed to parse event in TPM final events log"
+    + Disable TPM from UEFI setup: Security Device Support
+    + Rewrote the ISO to the USB stick
+  + Black screen after booting
+    + added `nomodeset` to kernel options
+  + `curl -s https://raw.githubusercontent.com/eoli3n/archiso-zfs/master/init | bash`
+    + no networking `networkctl` shows `configuring`
+    + removed the cable from the USB dock and connected it directly to the machine
   + https://wiki.archlinux.org/title/Install_Arch_Linux_on_ZFS
   + https://github.com/eoli3n/archiso-zfs
   + https://openzfs.github.io/openzfs-docs/Getting%20Started/Arch%20Linux/Root%20on%20ZFS.html
-  + `curl -s https://raw.githubusercontent.com/eoli3n/archiso-zfs/master/init | bash`
+  + `zpool create -o ashift=12 -o autotrim=on -R /mnt -O acltype=posixacl -O relatime=one -O xattr=sa -O canmount=off -O compression=lz4 -O dnodesize=legacy -O normalization=formD -O mountpoint=none -O encryption=aes-256-gcm -O keyformat=passphrase -O keylocation=prompt -O dedup=on zroot raidz1 /dev/disk/by-id/ata-<id>`
+  + compressed, encrypted, deduplication, raidz1
+  + archlinux AUR script is marked as out of date, can't find kernel version
++ `mkinitcpio` fails as `libcrypto` doesn't exist https://github.com/archzfs/archzfs/issues/464
+  + install `openssl-1.1` package
++ after reboot with zfsbootmenu it loads the kernel and asks for the password then stops
+  +  loaded the live USB again and changed `zfs set canmount=on zroot/ROOT/default`
+  +  wrote `/etc/fstab`
+  +  set `zfs set org.zfsbootmenu:commandline="nomodeset rw loglevel=4" zroot/ROOT/default`
++  Finally booted to the new system and logged in to my user
++  Network is not working
+  +  configure systemd-networkd
++  installed Openssh, allow my user and copy ssh key then disable password login
++  installed docker, docker-compose, rsync, python3
 
+# Problems booting Archlinux live system
 
 # Software
 + Basics
