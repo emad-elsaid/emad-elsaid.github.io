@@ -201,7 +201,7 @@ More reasonable hardware based on the minimum in the previous section and taking
 * `dracut-network.conf` should include something like `ip=<IP>::<gateway>:255.255.255.0:homeserver:[<mac>]:none rd.neednet=1`
 * ssh permission denied
   * `authorized_keys` had wrong owner `chown root:root dropbear/authorized_keys`
-* 
+* setup system initramfs to include the passphrase to stop second passphrase prompt
 
 
 # Software
@@ -210,6 +210,7 @@ More reasonable hardware based on the minimum in the previous section and taking
   + Docker compose
   + python
   + rsync
+  + powertop
 
 # References 
 + [Level1Linux video about LVM and LUKS](https://www.youtube.com/watch?v=kML6JWnLgHk)
