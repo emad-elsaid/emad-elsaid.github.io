@@ -163,7 +163,8 @@ More reasonable hardware based on the minimum in the previous section and taking
 
 # Noise level
 
-#to_be_decided
+* I found the setup is noisy a bit at night
+  * 2xNoctua NF-A12x25 to replace the NZXT fans
 
 
 # System 
