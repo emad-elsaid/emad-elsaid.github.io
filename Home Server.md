@@ -225,6 +225,10 @@ More reasonable hardware based on the minimum in the previous section and taking
   + powertop
   + lm-sensors
 
+# Containers
+* [Photoprism](https://www.photoprism.app/): alternative to google photos
+* [Syncthing](https://syncthing.net/): alternative to dropbox, google drive...etc
+
 # References 
 + [Level1Linux video about LVM and LUKS](https://www.youtube.com/watch?v=kML6JWnLgHk)
 + [Level1 forum for setting up Archlinux with LVM, LUKS, RAID](https://forum.level1techs.com/t/gkh-threadripper-3970x-setup-notes/156330)
