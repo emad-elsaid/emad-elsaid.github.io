@@ -228,6 +228,7 @@ More reasonable hardware based on the minimum in the previous section and taking
 # Containers
 * [Photoprism](https://www.photoprism.app/): alternative to google photos
 * [Syncthing](https://syncthing.net/): alternative to dropbox, google drive...etc
+* [Traefik](https://traefik.io/): as HTTP router
 
 # References 
 + [Level1Linux video about LVM and LUKS](https://www.youtube.com/watch?v=kML6JWnLgHk)
