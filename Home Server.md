@@ -104,7 +104,7 @@ More reasonable hardware based on the minimum in the previous section and taking
 + Use the Lenovo laptop as a CPU for the DAS
 + Zigbee Dongle to control Zigbee devices (Philips Hue lights)
 
-# Benefits of solution 1
+### Benefits
 + Replacing the laptop with a more powerful system at any time without losing the data or installing the system
 + avoided booting from the ZFS pool by adding the SSD
 + Can connect to the network over wifi or ethernet cable
@@ -121,14 +121,14 @@ More reasonable hardware based on the minimum in the previous section and taking
     + [Silverstone CS351 MicroATX Desktop Case](https://pcpartpicker.com/product/VcD7YJ/silverstone-cs351-microatx-desktop-case-sst-cs351)
       + 5 hot-swappable HDD
 
-### Solution 2 issues
+### Issues
 + will need a monitor/keyboard/mouse to unlock the encrypted disk on boot
   + [a post on level1tech](https://forum.level1techs.com/t/whats-the-common-setup-for-zfs-encrypted-home-server/199390/6) led me to the method of adding ssh to initramfs and boot from ssh
   + [PiKVM](https://pikvm.org/) can also allow for remote booting
   + [ZFSbootmenu](https://docs.zfsbootmenu.org/en/v2.2.x/)
 
-### Solution 2 benefits
-+ each component is replacable
+### Benefits
++ Each component is replaceable
 + PCIe slot and 2 NVME M.2 slots on board
 
 # Hardware Options
@@ -164,44 +164,55 @@ More reasonable hardware based on the minimum in the previous section and taking
 # Noise level
 
 * I found the setup is noisy a bit at night
-  * 2xNoctua NF-A12x25 to replace the NZXT fans
+  * 2xNoctua NF-A12x25 to replace the NZXT fans = 32.90EUR
 
 
 # System 
+
 + Boot into ArchIso and load ZFS
   + Booting error: "failed to parse event in TPM final events log"
     + Disable TPM from UEFI setup: Security Device Support
     + Rewrote the ISO to the USB stick
-  + Black screen after booting
-    + added `nomodeset` to kernel options
-  + `curl -s https://raw.githubusercontent.com/eoli3n/archiso-zfs/master/init | bash`
-    + no networking `networkctl` shows `configuring`
-    + removed the cable from the USB dock and connected it directly to the machine
-  + https://wiki.archlinux.org/title/Install_Arch_Linux_on_ZFS
-  + https://github.com/eoli3n/archiso-zfs
-  + https://openzfs.github.io/openzfs-docs/Getting%20Started/Arch%20Linux/Root%20on%20ZFS.html
-  + `zpool create -o ashift=12 -o autotrim=on -R /mnt -O acltype=posixacl -O relatime=one -O xattr=sa -O canmount=off -O compression=lz4 -O dnodesize=legacy -O normalization=formD -O mountpoint=none -O encryption=aes-256-gcm -O keyformat=passphrase -O keylocation=prompt -O dedup=on zroot raidz1 /dev/disk/by-id/ata-<id>`
+      
++ Black screen after booting
+  + Nvidia issue: added `nomodeset` to kernel options
+    
++ `curl -s https://raw.githubusercontent.com/eoli3n/archiso-zfs/master/init | bash`
+  + no networking `networkctl` shows `configuring`
+  + removed the cable from the USB dock and connected it directly to the machine
+
++ `zpool create -o ashift=12 -o autotrim=on -R /mnt -O acltype=posixacl -O relatime=one -O xattr=sa -O canmount=off -O compression=lz4 -O dnodesize=legacy -O normalization=formD -O mountpoint=none -O encryption=aes-256-gcm -O keyformat=passphrase -O keylocation=prompt -O dedup=on zroot raidz1 /dev/disk/by-id/ata-<id>`
   + compressed, encrypted, deduplication, raidz1
   + archlinux AUR script is marked as out of date, can't find kernel version
+
 + `mkinitcpio` fails as `libcrypto` doesn't exist https://github.com/archzfs/archzfs/issues/464
   + install `openssl-1.1` package
+
 + after reboot with zfsbootmenu it loads the kernel and asks for the password then stops
   +  loaded the live USB again and changed `zfs set canmount=on zroot/ROOT/default`
-  +  wrote `/etc/fstab`
+  +  Generate fstab `/etc/fstab`
   +  set `zfs set org.zfsbootmenu:commandline="nomodeset rw loglevel=4" zroot/ROOT/default`
-+  Finally booted to the new system and logged in to my user
+
++ :confetti_ball: Finally booted to the new system and logged in to my user
+
 +  Network is not working
   +  configure systemd-networkd
++  DNS is not working
+  +  enable systemd-resolved
+    
 +  installed Openssh, allow my user and copy ssh key then disable password login
 +  installed docker, docker-compose, rsync, python3
+
 
 # Booting using SSH
 * Clone zfsbootmenu
 * Run `./contrib/remote-ssh-build.sh`
 * `sudo cp build/vmlinuz.EFI <disk>/EFI/BOOT/BOOTX64.EFI`
 * `dracut-network.conf` should include something like `ip=<IP>::<gateway>:255.255.255.0:homeserver:[<mac>]:none rd.neednet=1`
+
 * ssh permission denied
   * `authorized_keys` had wrong owner `chown root:root dropbear/authorized_keys`
+
 * setup system initramfs to include the passphrase to stop second passphrase prompt
 
 
@@ -212,6 +223,7 @@ More reasonable hardware based on the minimum in the previous section and taking
   + python
   + rsync
   + powertop
+  + lm-sensors
 
 # References 
 + [Level1Linux video about LVM and LUKS](https://www.youtube.com/watch?v=kML6JWnLgHk)
@@ -224,3 +236,7 @@ More reasonable hardware based on the minimum in the previous section and taking
   + [Alternate.de](https://www.alternate.de/)
   + [Ali Express](https://de.aliexpress.com/)
   + [Kleinanzeigen](https://www.kleinanzeigen.de/stadt/berlin/)
++ Installing ArchZFS
+  + https://wiki.archlinux.org/title/Install_Arch_Linux_on_ZFS
+  + https://github.com/eoli3n/archiso-zfs
+  + https://openzfs.github.io/openzfs-docs/Getting%20Started/Arch%20Linux/Root%20on%20ZFS.html
