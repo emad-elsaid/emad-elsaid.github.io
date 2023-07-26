@@ -53,9 +53,9 @@ I have some hardware at home that can potentially be used
   + 1 TB NVME
   + 32 GB RAM
   + Nvidia RTX 2060
-  + Ryzen5 3600 3.6GHz 6 cores
+  + Ryzen5 3600 3.6GHz 6 cores (6 core x 2 threads)
   + NZXT H510i case
-  + Mobo: ASRock B550M pro4 micro ATX
+  + Mobo: [ASRock B550M pro4 micro ATX](https://www.asrock.com/mb/AMD/B550M%20Pro4/index.asp#Specification)
 
 # Consequences
 + Reduce the VPS server instance, reducing the cost per month. offloading this cost to the hardware cost, maintenance, and power consumption.
@@ -130,6 +130,7 @@ More reasonable hardware based on the minimum in the previous section and taking
 ### Benefits
 + Each component is replaceable
 + PCIe slot and 2 NVME M.2 slots on board
++ M.2 Wifi slot on board
 
 # Hardware Options
 + Disks
@@ -169,38 +170,37 @@ More reasonable hardware based on the minimum in the previous section and taking
 
 # System 
 
-+ Boot into ArchIso and load ZFS
++ **Boot into ArchIso and load ZFS**
   + Booting error: "failed to parse event in TPM final events log"
     + Disable TPM from UEFI setup: Security Device Support
-    + Rewrote the ISO to the USB stick
       
-+ Black screen after booting
++ **Black screen after booting**
   + Nvidia issue: added `nomodeset` to kernel options
     
-+ `curl -s https://raw.githubusercontent.com/eoli3n/archiso-zfs/master/init | bash`
++ **`curl -s https://raw.githubusercontent.com/eoli3n/archiso-zfs/master/init | bash`**
   + no networking `networkctl` shows `configuring`
   + removed the cable from the USB dock and connected it directly to the machine
 
-+ `zpool create -o ashift=12 -o autotrim=on -R /mnt -O acltype=posixacl -O relatime=one -O xattr=sa -O canmount=off -O compression=lz4 -O dnodesize=legacy -O normalization=formD -O mountpoint=none -O encryption=aes-256-gcm -O keyformat=passphrase -O keylocation=prompt -O dedup=on zroot raidz1 /dev/disk/by-id/ata-<id>`
++ **Create ZFS pool**
+  + `zpool create -o ashift=12 -o autotrim=on -R /mnt -O acltype=posixacl -O relatime=one -O xattr=sa -O canmount=off -O compression=lz4 -O dnodesize=legacy -O normalization=formD -O mountpoint=none -O encryption=aes-256-gcm -O keyformat=passphrase -O keylocation=prompt -O dedup=on zroot raidz1 /dev/disk/by-id/ata-<id>`
   + compressed, encrypted, deduplication, raidz1
-  + archlinux AUR script is marked as out of date, can't find kernel version
+  + Archlinux AUR script is marked as out of date, can't find kernel version
 
-+ `mkinitcpio` fails as `libcrypto` doesn't exist https://github.com/archzfs/archzfs/issues/464
++ **`mkinitcpio` fails as `libcrypto` doesn't exist https://github.com/archzfs/archzfs/issues/464**
   + install `openssl-1.1` package
 
-+ after reboot with zfsbootmenu it loads the kernel and asks for the password then stops
++ **after reboot with zfsbootmenu it loads the kernel and asks for the password then stops**
   +  loaded the live USB again and changed `zfs set canmount=on zroot/ROOT/default`
   +  Generate fstab `/etc/fstab`
   +  set `zfs set org.zfsbootmenu:commandline="nomodeset rw loglevel=4" zroot/ROOT/default`
 
 + :confetti_ball: Finally booted to the new system and logged in to my user
 
-+  Network is not working
-  +  configure systemd-networkd
-+  DNS is not working
-  +  enable systemd-resolved
-    
-+  installed Openssh, allow my user and copy ssh key then disable password login
++ **Network is not working**
+  +  configure systemd-networkd for static IP
++ **DNS is not working**
+  + enable systemd-resolved
++  installed Openssh, allow my user and copy SSH key then disabled password login
 +  installed docker, docker-compose, rsync, python3
 
 
@@ -210,10 +210,11 @@ More reasonable hardware based on the minimum in the previous section and taking
 * `sudo cp build/vmlinuz.EFI <disk>/EFI/BOOT/BOOTX64.EFI`
 * `dracut-network.conf` should include something like `ip=<IP>::<gateway>:255.255.255.0:homeserver:[<mac>]:none rd.neednet=1`
 
-* ssh permission denied
+* **ssh permission denied**
   * `authorized_keys` had wrong owner `chown root:root dropbear/authorized_keys`
 
-* setup system initramfs to include the passphrase to stop second passphrase prompt
+* **system asks for password again**
+  * Setup system initramfs to include the passphrase file to stop second passphrase prompt
 
 
 # Software
