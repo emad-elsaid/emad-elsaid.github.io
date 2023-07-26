@@ -7,3 +7,5 @@
 I'm following two guides:
 * https://gist.github.com/urwx/738e40217c4c7fd4ac896c7a4b71ba9e
 * https://wiki.archlinux.org/title/dm-crypt/Encrypting_an_entire_system#LUKS_on_LVM
+
+* I went with ZFS instead of this solution, the full details are part of : Home Server

@@ -1,3 +1,5 @@
+#hardware #server #sideproject #ZFS #archlinux
+
 This document describes the reasoning for building a home server machine. It is sometimes called "Home Lab". However, I won't use this term as it has been loaded with more concepts and expanded in scope. so I'll refer to what I want as a "Home Server". a machine that works 24/7 and support some use cases.
 
 # Use Cases

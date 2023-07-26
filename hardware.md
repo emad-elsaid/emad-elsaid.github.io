@@ -40,6 +40,10 @@ The following is my hardware and its specifications:
 	- Qualcomm Snapdragon X7 LTE-A (Sierra Wireless EM7455)
 	- Micro-SIM-Card Lenovo Connect
 
+# Home Server
+
+- can be found in: Home Server
+
 # Office
 
 - Embody Herman Miller Office Chair
