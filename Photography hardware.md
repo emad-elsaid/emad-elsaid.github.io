@@ -8,6 +8,10 @@ Sony Alpha a6400 https://a.co/d/8ZYtcO8
 
 ![](/public/07a404a411131a71abab136ffd8952c4e46c05272f9caf042af15a53891ba095.jpg)
 
+An alternative: Sony ZV-E10 https://amzn.eu/d/he8AhCu
+
+![](/public/adee8b372e40ebe87da17adfa7469cdb5ccd6956565273ba07c7fde802160b51.jpg)
+
  Lens: Sigma 16mm f/1.4 DC DN Contemporary Lens for Sony E https://a.co/d/1Szjj8c
  
  ![](/public/9e90427a1241ee9f04e22febdc532074317ef610d5716c19ec9b456f2553c764.jpg)
