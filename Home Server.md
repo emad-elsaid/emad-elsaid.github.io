@@ -337,6 +337,9 @@ System Call Overhead                          15000.0   13947317.3   9298.2
 System Benchmarks Index Score                                        7436.9
 ```
 
+# Optimizations
++ Add a read cache disk `sudo zpool add zroot cache /dev/disk/by-id/<disk-id>`
+
 # References 
 + [Level1Linux video about LVM and LUKS](https://www.youtube.com/watch?v=kML6JWnLgHk)
 + [Level1 forum for setting up Archlinux with LVM, LUKS, RAID](https://forum.level1techs.com/t/gkh-threadripper-3970x-setup-notes/156330)
