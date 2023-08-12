@@ -40,8 +40,8 @@
 + Sit on a chair without a back to force an upright pose
 
 # Design 
-
-+ Font: `to be decided`
++ Font [Dubai font](https://dubaifont.com/)
+  + [ ] Choose a better font or decide on settling on this one
 
 ## Editing
 
@@ -54,6 +54,3 @@
 + Facebook
 + Twitter
 + Linkedin
-
-# Reference
-+ Font store https://fonttat.com/arabic-fonts/

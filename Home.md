@@ -39,6 +39,7 @@ The following are projects I'm involved in right now or in operation without dev
 - Writing For Developers
 - Open Source Project
 - Onboarding
+- Youtube Process
 
 # :us:  English Notes
 
