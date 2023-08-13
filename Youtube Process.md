@@ -38,6 +38,11 @@
 + Delivery is calm and clear like a normal conversation
 + Clothes should be the same every time (White T-Shirt)
 + Sit on a chair without a back to force an upright pose
++ Lighting
+  + Keylight: bright to the side on left
+  + Fill light: less bright to the right, higher than keylight
+  + Rim light: less bright than Fill light, back right, hits the top of the head
+  + Practicles: back of the scene, colorful.
 
 # Design 
 + Font [Dubai font](https://dubaifont.com/)

@@ -345,12 +345,17 @@ System Benchmarks Index Score                                        7436.9
 
 
 # Youtube
+
+https://www.youtube.com/watch?v=j7VMpcGGyhU
+
 Title
 > [Arabic] 14TB Archlinux Linux ZFS Home server Build |  ارتش لينكس 14 تيرابايت سيرفر للبيت
 
 Description
 > شرح تفصيلي لمشروع ارتش لينكس سيرفر للبيت واختيارات الهاردوير والسوفتوير والمميزات التي تم اختيارها مثل ZFS, Zigbee gateway, Docker containers, Self hosted services
-> #ZFS #archlinux #arabic #home_automation #RAID
+معلومات تفصيلية عن المشروع: https://www.emadelsaid.com/Home%20Server/
+المشروع على جيت هب: https://github.com/emad-elsaid/home
+#ZFS #archlinux #arabic #home_automation #RAID
 
 # References 
 + [Level1Linux video about LVM and LUKS](https://www.youtube.com/watch?v=kML6JWnLgHk)
