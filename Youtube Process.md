@@ -46,6 +46,7 @@
 ## Editing
 
 ## Thumbnail
++ 1280 x 720 [ref](https://support.google.com/youtube/answer/72431)
 
 # Upload
 

@@ -341,6 +341,16 @@ System Benchmarks Index Score                                        7436.9
 
 # Optimizations
 + Add a read cache disk `sudo zpool add zroot cache /dev/disk/by-id/<disk-id>`
++ Disable sync writes for faster writes `sudo zfs set sync=disabled zroot`
+
+
+# Youtube
+Title
+> [Arabic] 14TB Archlinux Linux ZFS Home server Build |  ارتش لينكس 14 تيرابايت سيرفر للبيت
+
+Description
+> شرح تفصيلي لمشروع ارتش لينكس سيرفر للبيت واختيارات الهاردوير والسوفتوير والمميزات التي تم اختيارها مثل ZFS, Zigbee gateway, Docker containers, Self hosted services
+> #ZFS #archlinux #arabic #home_automation #RAID
 
 # References 
 + [Level1Linux video about LVM and LUKS](https://www.youtube.com/watch?v=kML6JWnLgHk)
