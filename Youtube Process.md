@@ -46,9 +46,11 @@
 
 # Design 
 + Font [Dubai font](https://dubaifont.com/)
-  + [ ] Choose a better font or decide on settling on this one
-
+  
 ## Editing
+
+## Coloring
++ Pastel calm colors
 
 ## Thumbnail
 + 1280 x 720 [ref](https://support.google.com/youtube/answer/72431)
