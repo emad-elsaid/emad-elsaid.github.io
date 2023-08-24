@@ -2,8 +2,8 @@
 
 # Languages I use everyday
 
-- #Ruby : The main language I'm using daily for the past years
-- #Go : Learned it around 2018 and it's been my favorite language. and gradually switching to it
+- #Go : The main language I'm using daily for the past year. Learned it around 2018 and it's been my favorite language
+- #Ruby : Was the main language for me for ~7 years then switched to Go
 - #Javascript : I used it since I learned how to code, I use it exclusively in the browser and when it's needed
 
 # Used it professionally in my early career
