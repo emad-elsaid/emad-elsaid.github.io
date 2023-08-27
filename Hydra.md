@@ -8,11 +8,11 @@
 
 # Finding 
 + Bash has a `bind` [command](https://www.man7.org/linux/man-pages/man1/bash.1.html#:~:text=bind%20%5B%2Dm%20keymap%5D%20%5B%2DlpsvPSVX%5D) which utilizes readline library key bindings
-+ So I can bind a program to space key just like spacemacs
-+ Unfortunately, this means pressing space at any time it'll trigger the program/function
++ So I can bind a program to `space` key just like spacemacs
++ Unfortunately, this means pressing `space` at any time it'll trigger the program/function
   + To solve this I need it to run only if the line is empty.
-  + Pressing space when the terminal is empty doesn't have any use case for me
-  + Then I can bind the space key to shell function that trigger the program only if the line is empty
+  + Pressing `space` when the terminal is empty doesn't have any use case for me
+  + Then I can bind the `space` key to shell function that trigger the program only if the line is empty
   + Stackoverflow [helped with this](https://stackoverflow.com/questions/76916813/bash-completion-with-space-key-only-if-the-line-is-empty)
 
 
@@ -20,7 +20,7 @@
 + A small program that displays the tree of command similar to Hydra
 + The configuration can be read from a file or more
 + If the user chooses a command the program can execute it
-+ Bind space key in the shell to shell function
++ Bind `space` key in the shell to shell function
 + The function checks if the line is empty and runs the command
 
 # Issues
@@ -40,7 +40,7 @@
 
 # Conclusion
 + It was very useful to develop this program for me to get back to C
-+ binding `ls` to space in Hydra means that I can press space twice in any directory and I'll get the current directory contents.
++ binding `ls` to `space` in Hydra means that I can press `space` twice in any directory and I'll get the current directory contents.
 
 # References
 + Program website https://hydra.emadelsaid.com/
