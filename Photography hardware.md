@@ -1,3 +1,10 @@
+# My hardware
+Sony Alpha a6400 https://a.co/d/8ZYtcO8
+
+![](/public/07a404a411131a71abab136ffd8952c4e46c05272f9caf042af15a53891ba095.jpg)
+
+
+# Other Possible hardware
 # Tech Altar
 Panasonic LUMIX G85 21-Jul-2023
 
