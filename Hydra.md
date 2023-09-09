@@ -1,4 +1,6 @@
-#sideproject  
+#sideproject  #youtube
+
+https://www.youtube.com/watch?v=g25cW4_XW6I
 
 # Problem
 + I use spacemacs, which is centered around Hydra
