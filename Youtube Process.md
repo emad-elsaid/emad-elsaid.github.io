@@ -41,6 +41,9 @@
 ## Coloring
 + Pastel calm colors
 
+## Rendering
+![](/public/655c8d7818d19f0d577f5a340b7bdc3cbe62069ff651cf0d807309c457f65941.png)
+
 ## Thumbnail
 + 1280 x 720 [ref](https://support.google.com/youtube/answer/72431)
 
