@@ -36,6 +36,7 @@
 + Font [Dubai font](https://dubaifont.com/)
   
 ## Editing
++ 6 frame cross dissolve (calm short transition)
 
 ## Coloring
 + Pastel calm colors
