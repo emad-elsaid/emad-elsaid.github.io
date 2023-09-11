@@ -47,6 +47,7 @@
 
 ## Rendering
 - We need to upload 4K as 1080p resulted is very low quality
+
 ![](/public/655c8d7818d19f0d577f5a340b7bdc3cbe62069ff651cf0d807309c457f65941.png)
 
 ## Thumbnail
