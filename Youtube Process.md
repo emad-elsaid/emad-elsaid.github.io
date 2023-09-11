@@ -22,6 +22,10 @@
 
 # Shooting
 
++ Settings
+  + Focus: Auto Cont.
+  + Face/Eye focus priority
+  + Focus area: Wide
 + Camera is as high as another person eyes in a conversation
 + Delivery is calm and clear like a normal conversation
 + Clothes should be the same every time (White T-Shirt)
@@ -42,6 +46,7 @@
 + Pastel calm colors
 
 ## Rendering
+- We need to upload 4K as 1080p resulted is very low quality
 ![](/public/655c8d7818d19f0d577f5a340b7bdc3cbe62069ff651cf0d807309c457f65941.png)
 
 ## Thumbnail
