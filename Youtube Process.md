@@ -58,5 +58,5 @@
 # Share
 
 + Facebook - 4k
-+ Twitter - 720
++ Twitter - 720p
 + Linkedin
