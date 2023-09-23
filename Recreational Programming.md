@@ -1,11 +1,13 @@
+https://www.youtube.com/watch?v=Sj_vjHTkLgw
+
 # Problem
 * Programming is perceived as just a productivity tool
 * Programming is an accelerator for the Information Age
-* Programming is percieved as a source for the living
+* Programming is perceived as a source for the living
 
 # Counter Point
 * Programming has a relaxing effect
-* A loop similar to Video games loop, with challenge anticipation reward loop. like skinner box
+* A loop similar to a Video games loop, with a challenge anticipation reward loop. like skinner box
 
 # Video
 
@@ -16,3 +18,7 @@
 ## Twitter
 
 https://twitter.com/emad__elsaid/status/1705531223198613515
+
+## Linkedin
+
+- https://www.linkedin.com/feed/update/urn:li:activity:7111326709710221312/
