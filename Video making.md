@@ -49,6 +49,6 @@ Movies = Sequences -> Scenes -> Shots
 
 ## Camera Focus 
 
-## Camera Grear
+## Camera Gear
 
 ## Camera lenses
