@@ -4,4 +4,5 @@
 
 * Youtube Process
 * Youtube Scripting
-* Video making
+* Video making concepts
+* Video Making Process
