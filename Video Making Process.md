@@ -44,6 +44,7 @@
 
 ## Score
 + Generate music using [Stable Audio](https://stableaudio.com/)
++ Common keywords: lofi, calm
 
 ## Coloring
 + Pastel calm colors
