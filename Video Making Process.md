@@ -42,6 +42,9 @@
 ## Editing
 + 6 frame cross dissolve (calm short transition)
 
+## Score
++ Generate music using [Stable Audio](https://stableaudio.com/)
+
 ## Coloring
 + Pastel calm colors
 
