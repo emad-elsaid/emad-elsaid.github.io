@@ -1,10 +1,13 @@
-+ DACI decision making framework
-+ DACIN is an interation on the framework
++ DACI decision-making framework
++ DACIN is an improvement on DACI
 + D: Driver
 + A: Approver
 + C: Consulted or Contributor
 + I: Informed
 + N: Next steps
+
+# History
++ RACI is another acronym (Responsible, Accountable, Contributor, Informed)
 
 # Templates
 + [Confluence](https://www.atlassian.com/software/confluence/templates/decision)
