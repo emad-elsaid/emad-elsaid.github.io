@@ -1,6 +1,6 @@
 ![Islamic Art Museum, Berlin](/public/84c77bc3ef2cfb5eaa20e77479b981717e889c7a9dde42a66beccbca5eba6603.jpg)
 
-Hi, I'm **Emad Elsaid** (Arabic: **عماد السعيد**, IPA: **[ʕaˈmaːd ɪlˈsaʕiːd]**) . This is my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's a public space. It includes notes, ideas, and experiments usually decorated with a photo I captured in my everyday life. Anything I'm involved in will be part of this garden.
+Hi, I'm **Emad Elsaid** (Arabic: **عماد السعيد**, IPA: **[ʕaˈmaːd ɪlˈsaʕiːd]**) . Welcome to my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's a public space. It includes notes, ideas, and experiments usually decorated with a photo I captured in my everyday life. Anything I'm involved in will be part of this garden.
 
 I'm a [software engineer](</Why I became a software developer>) backend focused. I mainly use #Ruby and #Go.
 
@@ -159,6 +159,6 @@ I developed an interest in decentralization technologies and #p2p  solutions. th
 
 # About this site
 
-* Built using Xlog from a [repository hosted on Github](https://github.com/emad-elsaid/emad-elsaid.github.io).
-* If you found any typos or mistakes please click on "Edit on Github" button at the top right and open a pull request with the changes :pray: 
+* Xlog built this website from [github.com/emad-elsaid/emad-elsaid.github.io](https://github.com/emad-elsaid/emad-elsaid.github.io).
+* If you found any typos or mistakes please click on "Edit on Github" button at the top right then open a pull request with the changes :pray: 
 * ActivityPub interface that exposes all pages to  [**@Emad@www.emadelsaid.com**](/.well-known/webfinger) outbox.
