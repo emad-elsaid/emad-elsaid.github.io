@@ -64,5 +64,5 @@ Uploading video to each platform gets more views than uploading to Youtube and s
 
 + Facebook - 4k
 + Twitter - 720p
-+ Linkedin - 4k
++ Linkedin - 4k - Max: 5GB
 + Youtube - 4k
