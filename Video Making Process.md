@@ -44,9 +44,12 @@
 ## Editing
 + 6 frame cross dissolve (calm short transition)
 
-## Score
+## Audio
 + Generate music using [Stable Audio](https://stableaudio.com/)
 + Common keywords: Low-Fi, calm
++ Analyze the audio track
++  Enable the 2 filters for Audio Isolation and Improvement
++  Change the audio track to mono
 
 ## Coloring
 + Pastel calm colors no.7 (0.4)
