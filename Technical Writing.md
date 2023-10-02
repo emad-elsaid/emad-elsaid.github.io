@@ -25,7 +25,7 @@
   
  + Guidelines
    + If you can't read it, nobody can read it
-   + 
+   + People attention is too short
 
  # References
 
