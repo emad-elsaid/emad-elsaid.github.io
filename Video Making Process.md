@@ -1,6 +1,6 @@
 # General
 
-+ No stock photos, videos or music. every elements is either original or bought from the creator
++ No stock photos, videos or music. every element is either original or bought from the creator
 
 
 # Topic Sourcing
@@ -15,9 +15,9 @@
 - The craft of writing effectively
 
 ## Tone of Voice
-+ Use singular form to refer to the viewer
++ Use the singular form to refer to the viewer
 + Calm
-+ Data driven
++ Data-driven
 + [Educational narrative voice ](https://youtu.be/wfUT6eY0Krw?t=910)
 
 # Shooting
@@ -26,13 +26,15 @@
   + Focus: Auto Cont.
   + Face/Eye focus priority
   + Focus area: Wide
-+ Camera is as high as another person eyes in a conversation
+  + Slog2 and slog-gamut
+  + Details -7
++ eye-level shot
 + Delivery is calm and clear like a normal conversation
-+ Clothes should be the same every time (White T-Shirt)
-+ Sit on a chair without a back to force an upright pose
++ Clothes should be the same every time (White T-shirt)
++ Talk while standing
 + Lighting
-  + Keylight: bright to the side on left
-  + Fill light: less bright to the right, higher than keylight
+  + Keylight: bright to the side on the left
+  + Fill light: less bright to the right, higher than key light
   + Rim light: less bright than Fill light, back right, hits the top of the head
   + Practicles: back of the scene, colorful.
 
@@ -44,23 +46,22 @@
 
 ## Score
 + Generate music using [Stable Audio](https://stableaudio.com/)
-+ Common keywords: lofi, calm
++ Common keywords: Low-Fi, calm
 
 ## Coloring
-+ Pastel calm colors
++ Pastel calm colors no.7 (0.4)
 
 ## Rendering
-- We need to upload 4K as 1080p resulted is very low quality
+- We need to upload 4K as the 1080p result is very low-quality
+- Normalize audio for Youtube
 
 ![](/public/655c8d7818d19f0d577f5a340b7bdc3cbe62069ff651cf0d807309c457f65941.png)
 
 ## Thumbnail
 + 1280 x 720 [ref](https://support.google.com/youtube/answer/72431)
 
-# Upload
-
 # Share
-Uploading video to each platform gets more views than uploading to Youtube and sharing the link
+Uploading the video to each platform gets more views than uploading to YouTube and sharing the link
 
 + Facebook - 4k
 + Twitter - 720p
