@@ -1,6 +1,6 @@
 ![](/public/4cde64caa0279c1d3343d36cd755a2aa1539faebcc68cb18f62e057f075a9b61.jpg)
 
-#hardware #server #sideproject #ZFS #archlinux
+#hardware #server #sideproject #ZFS #archlinux #youtube_video
 
 This document describes the reasoning for building a home server machine. It is sometimes called "Home Lab". However, I won't use this term as it has been loaded with more concepts and expanded in scope. so I'll refer to what I want as a "Home Server". a machine that works 24/7 and support some use cases.
 
