@@ -22,7 +22,7 @@ The following is my hardware and its specifications:
 	- Headphones: Bose QC35  Headset
 	- Lights: Logitech Litra Glow Premium LED Streaming-Licht mit TrueSoft
 	- Mouse: Logitech MX Master 3 Wireless Laser Mouse
-	- Speakers: Logitech Z207 Kabellose PC-Lautsprecher, Bluetooth
+	- Speakers: Ultimate Ears WONDERBOOM 3, Bluetooth
 	- Dockstation: Lenovo ThinkPad Universal USB-C Dockingstation 40AY0090EU, schwarz
 	- Microphone: Blue Microphones Yeti USB-Mikrofon
 	- Controller: Xbox gamepad controller
