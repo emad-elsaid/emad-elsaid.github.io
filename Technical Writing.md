@@ -1,5 +1,7 @@
 #youtube_video
 
+https://www.youtube.com/watch?v=adf5C7zsHac
+
 + Simplicity
   + Short Sentences
   + Reduce Jargons
@@ -32,3 +34,8 @@
  # References
 
  + [Google Technical Writing](https://developers.google.com/tech-writing)
+
+# Videos
++ [Facebook](https://www.facebook.com/emad.elsaid.hamed/posts/pfbid02EnegMK7FDCfXD1WP5JSz4GzZAnMUhPcdPfQ7zeKMUfaQYFdPTzT7B4mpQV5hQPhYl)
++ [Twitter](https://twitter.com/emad__elsaid/status/1710758394653446443)
+

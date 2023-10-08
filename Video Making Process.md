@@ -28,6 +28,9 @@
   + Focus area: Wide
   + Slog2 and slog-gamut
   + Details -7
+  + Saturation: +18
+  + Zibras: 105+
+  + Exposure Compensation: +2.0
 + eye-level shot
 + Delivery is calm and clear like a normal conversation
 + Clothes should be the same every time (White T-shirt)
