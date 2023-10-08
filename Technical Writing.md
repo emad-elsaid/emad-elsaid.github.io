@@ -38,4 +38,5 @@ https://www.youtube.com/watch?v=adf5C7zsHac
 # Videos
 + [Facebook](https://www.facebook.com/emad.elsaid.hamed/posts/pfbid02EnegMK7FDCfXD1WP5JSz4GzZAnMUhPcdPfQ7zeKMUfaQYFdPTzT7B4mpQV5hQPhYl)
 + [Twitter](https://twitter.com/emad__elsaid/status/1710758394653446443)
++ [Linkedin](https://www.linkedin.com/feed/update/urn:li:activity:7116763075797471232/)
 
