@@ -42,3 +42,9 @@ do
     echo $i
 done
 ```
+
+# String start with character
+```bash
+if [[ $var == c* ]]; then
+  echo "var starts with 'c'";
+fi
