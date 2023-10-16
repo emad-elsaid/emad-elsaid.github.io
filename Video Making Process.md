@@ -45,7 +45,11 @@
 + Font [Dubai font](https://dubaifont.com/)
   
 ## Editing
-+ 6 frame cross dissolve (calm short transition)
++ Cut A-roll
++ Add transitions
+  + 6 frame cross dissolve (calm short transition)
++ Add B-Roll
++ Add mems
 
 ## Audio
 + Generate music using [Stable Audio](https://stableaudio.com/)
