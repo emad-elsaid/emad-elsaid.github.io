@@ -49,13 +49,11 @@
 + Add transitions
   + 6 frame cross dissolve (calm short transition)
 + Add B-Roll
-+ Add mems
++ Add memes
 
 ## Audio
-+ Generate music using [Stable Audio](https://stableaudio.com/)
-+ Common keywords: Low-Fi, calm
 + Analyze the audio track
-+  Enable the 2 filters for Audio Isolation and Improvement
++  Enable Audio Isolation
 +  Change the audio track to mono
 
 ## Coloring
