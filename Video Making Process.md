@@ -63,7 +63,7 @@
 - We need to upload 4K as the 1080p result is very low-quality
 - Normalize audio for Youtube
 
-![](/public/655c8d7818d19f0d577f5a340b7bdc3cbe62069ff651cf0d807309c457f65941.png)
+![](/public/701f2fe428c184e7332547ad6fc1de39c682ca7cf290bd119432c4c3c280603e.png)
 
 ## Thumbnail
 + 1280 x 720 [ref](https://support.google.com/youtube/answer/72431)
