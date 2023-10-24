@@ -11,9 +11,9 @@ Camera Microphone,Comica CVM-VM10II https://a.co/d/9KbDtPo
  
  ![51U1CFyhB5L _AC_SX679_](https://github.com/emad-elsaid/emad-elsaid.github.io/assets/54403/fbdb78b8-7e60-4ed6-813f-021f034e1ee7)
 
-Aputure Amaran COB 60x S Bi-Colour LED Video Light
+Aputure Amaran COB 60x S Bi-Colour LED Video Light https://amzn.eu/d/8GFSslD
 
-https://amzn.eu/d/8GFSslD
+![](/public/8fff09147872cef0d4b66771289942a4395e0517062e25d5617d1a1d5b0dce7d.jpg)
 
 # Other Possible hardware
 # Tech Altar
