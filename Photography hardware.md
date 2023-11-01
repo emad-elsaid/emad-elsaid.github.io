@@ -1,7 +1,14 @@
-# My hardware
 Sony Alpha a6400 https://a.co/d/8ZYtcO8
 
 ![](/public/07a404a411131a71abab136ffd8952c4e46c05272f9caf042af15a53891ba095.jpg)
+
+ Lens: Sigma 16mm f/1.4 DC DN Contemporary Lens for Sony E https://a.co/d/1Szjj8c
+ 
+ ![](/public/9e90427a1241ee9f04e22febdc532074317ef610d5716c19ec9b456f2553c764.jpg)
+
+ Tiffen Pro-Mist 1/4 Filter, Black https://amzn.eu/d/fxf4a9Q
+
+![](/public/6761232c788f5bb702b913f266f28cc39efdd25949c6c11d4da44a4c3faeb56c.jpg)
 
 Camera Microphone,Comica CVM-VM10II https://a.co/d/9KbDtPo
 
@@ -15,36 +22,9 @@ Aputure Amaran COB 60x S Bi-Colour LED Video Light https://amzn.eu/d/8GFSslD
 
 ![](/public/8fff09147872cef0d4b66771289942a4395e0517062e25d5617d1a1d5b0dce7d.jpg)
 
-# Other Possible hardware
-# Tech Altar
-Panasonic LUMIX G85 21-Jul-2023
+Tarion Q550 Camera Tripod  https://amzn.eu/d/33SeDvj
 
-![](/public/62cbdcfcf3aa81b117d9f3bee6166a0fe819bf296e8bc4a8f5fde99647c65f7e.jpg) 
+![](/public/8af91fc12606dfb80d64300cb9699a5312bbf2597369ff3d26898a5e88ef89a6.jpg)
 
-# Wolfgang channel
-Sony Alpha a6400 https://a.co/d/8ZYtcO8
-
-![](/public/07a404a411131a71abab136ffd8952c4e46c05272f9caf042af15a53891ba095.jpg)
-
-An alternative: Sony ZV-E10 https://amzn.eu/d/he8AhCu
-
-![](/public/adee8b372e40ebe87da17adfa7469cdb5ccd6956565273ba07c7fde802160b51.jpg)
-
- Lens: Sigma 16mm f/1.4 DC DN Contemporary Lens for Sony E https://a.co/d/1Szjj8c
- 
- ![](/public/9e90427a1241ee9f04e22febdc532074317ef610d5716c19ec9b456f2553c764.jpg)
-
- Light: Godox SL-60W 60W https://a.co/d/iOSx3Az
-
- ![](/public/6cde01b72b382dd38531d236a6c1d114cd4698e3d9bcab12d1576b77dbe30c21.jpg)
-
-Neewer® 30"x30" / 80cmX80cm Octagon Umbrella Speedlite Softbox https://a.co/d/9eR2MfX 
-
-![](/public/e88c8fee4d2fe46c37d97433cdf5cbf493ff51e44719713d69a91104fc60452e.jpg)
-
-FalconEyes F7 12W RGB LED https://a.co/d/6ydAZaq
-
-![](/public/da93f232c58ce99fc652b7abfd7525c03329a18044dbfa77c2ef421404da2181.jpg)
- 
 
 #youtube #hardware #photography

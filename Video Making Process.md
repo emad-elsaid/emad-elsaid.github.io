@@ -31,6 +31,7 @@
   + Saturation: +18
   + Zibras: 105+
   + Exposure Compensation: +2.0
+  + Audio gain: 17
 + eye-level shot
 + Delivery is calm and clear like a normal conversation
 + Clothes should be the same every time (White T-shirt)
@@ -53,11 +54,11 @@
 
 ## Audio
 + Analyze the audio track
-+  Enable Audio Isolation
-+  Change the audio track to mono
++ Enable Audio Isolation (Amount: 30)
++ Change the audio track to mono
 
 ## Coloring
-+ Pastel calm colors no.7 (0.4)
++ Pastel calm colors no.7 (Gain: 0.4)
 
 ## Rendering
 - We need to upload 4K as the 1080p result is very low-quality
