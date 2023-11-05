@@ -1,5 +1,9 @@
 * [Youtube Channel](http://youtube.com/EmadElsaid)
 
+# Ideas
+
+/hashtag-pages #youtube_video_idea
+
 # Videos
 
 /hashtag-pages #youtube_video
