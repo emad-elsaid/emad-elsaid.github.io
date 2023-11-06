@@ -22,6 +22,8 @@
 
 # Shooting
 
++ 25fps
++ Shutter 1/50s
 + Settings
   + Focus: Auto Cont.
   + Face/Eye focus priority

@@ -1,5 +1,7 @@
 #youtube_video
 
+https://www.youtube.com/watch?v=G131MUFNpY8
+
 + [Estimate Repo](https://github.com/emad-elsaid/estimate)
 
 # Current implementation
@@ -183,3 +185,8 @@ int main() {
   processDir("views");
 }
 ```
+
+# Social media
++ [Facebook](https://www.facebook.com/emad.elsaid.hamed/posts/pfbid0kPznPfALzmYukEc6BE41iZf4FCd3WeFxEzUetB4RTpCGntx54yCtiz6ariKGNQ5Bl)
++ [Twitter](https://twitter.com/emad__elsaid/status/1716135422047170726)
++ [Linkedin](https://www.linkedin.com/feed/update/urn:li:activity:7119763058284974080)
