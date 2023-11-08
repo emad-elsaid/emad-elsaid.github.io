@@ -2,7 +2,7 @@
 
 Ahlan, I'm **Emad Elsaid** (Arabic: **عماد السعيد**, IPA: **[ʕaˈmaːd ɪlˈsaʕiːd]**) . Welcome to my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's a public space. It includes notes, ideas, and experiments usually decorated with a photo I captured in my everyday life. Anything I'm involved in will be part of this garden.
 
-I'm a [software engineer](</Why I became a software developer>) backend focused. I mainly use #Ruby and #Go.
+I'm a [software engineer](</Why I became a software developer>) backend focused. I mainly use #Ruby #Go and #C.
 
 # Social profiles
 
