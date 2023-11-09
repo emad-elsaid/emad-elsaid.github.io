@@ -68,7 +68,7 @@
 + Change the audio track to mono
 
 # Coloring
-+ Pastel calm colors no.7 (Gain: 0.4)
++ [07_PastelTones.cube](/public/7af475ea75433d86a859afea3ac6ce0371ee54407e2ed68158c7ba2fcead9603.cube)  (Gain: 0.4)
 
 # Rendering
 - We need to upload 4K as the 1080p result is very low-quality
