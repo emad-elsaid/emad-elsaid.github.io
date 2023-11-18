@@ -26,5 +26,8 @@ Tarion Q550 Camera Tripod  https://amzn.eu/d/33SeDvj
 
 ![](/public/8af91fc12606dfb80d64300cb9699a5312bbf2597369ff3d26898a5e88ef89a6.jpg)
 
+# Possible upgrades
+
++ Shotgun mic https://en-de.sennheiser.com/camera-microphone-dslr-shotgun-video-mke-600
 
 #youtube #hardware #photography
