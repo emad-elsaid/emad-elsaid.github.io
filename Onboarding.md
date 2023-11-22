@@ -1,3 +1,8 @@
+#youtube_video
+
+https://www.youtube.com/watch?v=4ienOaWNYvA
+
+
 Checklist for onboarding in a new position
 
 + Business
