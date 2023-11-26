@@ -23,3 +23,9 @@ Checklist for onboarding in a new position
   + Ensure connectivity to networks
   + Connect provided hardware
   + Gain access  to teams relevant systems
+ 
+
+# Videos
++ [Facebook](https://www.facebook.com/627907956/videos/1457452808367957/)
++ [Twitter](https://twitter.com/emad__elsaid/status/1726388670964355540)
++ [Linkedin](https://www.linkedin.com/feed/update/urn:li:activity:7132154929091096576/)

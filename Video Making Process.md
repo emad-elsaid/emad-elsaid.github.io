@@ -56,6 +56,8 @@
 + Font [Dubai font](https://dubaifont.com/)
   
 # Editing
++ 4K UHD aspect ratio: 2:1 -> 3840 x 1920
++ Image scaling: setting -> image scaling: ![](/public/87065021e32871d10783a13bfa33114e80c7c56b42aedb829fc81aff12c86465.png)
 + Cut A-roll
 + Add transitions
   + 6 frame cross dissolve (calm short transition)
@@ -83,6 +85,6 @@
 Uploading the video to each platform gets more views than uploading to YouTube and sharing the link
 
 + Facebook - 4k
-+ Twitter - 720p
++ Twitter - max width: 1920
 + Linkedin - 4k - Max: 5GB
 + Youtube - 4k
