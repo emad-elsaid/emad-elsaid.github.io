@@ -1,3 +1,5 @@
+#youtube_video_idea
+
 # Hardware
 + Mobile camera
 + Digital Camera
