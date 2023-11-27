@@ -73,6 +73,11 @@
 + [07_PastelTones.cube](/public/7af475ea75433d86a859afea3ac6ce0371ee54407e2ed68158c7ba2fcead9603.cube)  (Gain: 0.4)
 
 # Rendering
+- Resolutions:
+  - 4K 2:1 -> 3840 x 1920
+  - 3K 2:1 -> 2880 x 1440
+  - HD 2:1 -> 1920 x 960
+  - SD 2:1 -> 1280 x 640
 - We need to upload 4K as the 1080p result is very low-quality
 - Normalize audio for Youtube
 
@@ -86,5 +91,8 @@ Uploading the video to each platform gets more views than uploading to YouTube a
 
 + Facebook - 4k
 + Twitter - max width: 1920
-+ Linkedin - 4k - Max: 5GB
++ Linkedin - 4k - Max: 5GB 15min 
 + Youtube - 4k
+
+# References
++ Aspect ratio tables https://www.wearethefirehouse.com/aspect-ratio-cheat-sheet
