@@ -90,8 +90,8 @@
 # Share
 Uploading the video to each platform gets more views than uploading to YouTube and sharing the link
 
-+ Facebook - 4k
-+ Twitter - max width: 1920
++ Facebook - 4k (ignored by FB), HD worked
++ Twitter - max width: 1920 - Max: 1GB 
 + Linkedin - 4k - Max: 5GB 15min 
 + Youtube - 4k
 
