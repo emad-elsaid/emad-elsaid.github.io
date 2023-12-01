@@ -1,4 +1,6 @@
-#youtube_video_idea
+#youtube_video
+
+https://youtu.be/l86jZ4mx2GA
 
 # Hardware
 + Mobile camera
@@ -76,3 +78,6 @@
 + Transitions
 + Storytelling
 + Editing
+
+# Videos
++ [Facebook](https://www.facebook.com/627907956/videos/3483517861978476/)
