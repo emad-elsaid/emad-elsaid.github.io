@@ -343,6 +343,19 @@ System Benchmarks Index Score                                        7436.9
 + Add a read cache disk `sudo zpool add zroot cache /dev/disk/by-id/<disk-id>`
 + Disable sync writes for faster writes `sudo zfs set sync=disabled zroot`
 
+# After upgrading CPU
++ Nvidia graphics didn't work with archlinux+zfs so I had to remove it instead of risking an upgrade of the kernel that may break ZFS module
++ The CPU doesn't have integrated graphics to I upgraded to Ryzen5 5600G
++ The motherboard needed a firmware update to support it
++ I made a mistake and didn't install the fan on the CPU to save time
++ The CPU overheated during the firmware upgrade and the motherboard didn't start anymore'
++ I had to replace the motherboard with another of the same model
++ The motherboard worked
++ starting up fails with dracut because it didn't find the same network mac address!!!
++ I had to compile the EFI image again of zbm and start again
++ the network on the new system is not enabled so I had to enable and add static IP
++ I had the config in `/etc/systemd/network/20-wired.network` and the interface was `enp6s0` the new motherboard device name is `enp3s0` why is it different? I have no idea 
+
 
 # Youtube
 
