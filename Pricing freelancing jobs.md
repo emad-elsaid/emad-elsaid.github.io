@@ -1,4 +1,6 @@
-  #youtube_video_idea
+#youtube_video
+
+https://youtu.be/jbgesBB2rYY
 
   # Disclaimer
   + Haven't done freelancing for around 5 years
@@ -35,3 +37,8 @@
 + People extending requirements after delivery
 + Extreme pricing negotiation
 + Assuming contract terms like support
+
+# Social media
++ [Twitter](https://twitter.com/emad__elsaid/status/1731370331619688790)
++ [Facebook](https://www.facebook.com/emad.elsaid.hamed/posts/pfbid037n6MCfau76AeYZ4DzyUYACBnSxxo6v4PEHL2FYZcpHaUKPMVjzxrgfrYEMJJfTjSl)
++ [Linkedin](https://www.linkedin.com/feed/update/urn:li:activity:7137139400374640640/)
