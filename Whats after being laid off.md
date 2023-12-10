@@ -18,6 +18,7 @@
   + Update your Resume
   + Make yourself available to hire on (Linkedin, Github, Stackoverflow...)
   + Post to social media that you're open for positions
+  + Recruiters are your friends now
 + Get prepared
   + Review technical books, algorithm/data structure courses...etc
   + Youtube is your friend
