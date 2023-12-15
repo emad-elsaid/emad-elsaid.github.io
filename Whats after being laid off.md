@@ -1,4 +1,6 @@
-#youtube_video_idea
+#youtube_video
+
+https://youtu.be/1Uznr3epHXg
 
 # Before
 + Start interviewing
@@ -29,3 +31,8 @@
 # General rules
 + Control your emotions
 + Reduce your reactions
+
+# Social media
++ [Facebook](https://www.facebook.com/emad.elsaid.hamed/posts/pfbid02razUpqLcmqC5LnbEnDV3PE9U2eMNWjedJfWEJ8Xf7DFWv6ETf2DJyZ4CGjV5p7ngl)
++ [Twitter](https://twitter.com/emad__elsaid/status/1733977103610134599)
++ [Linkedin](https://www.linkedin.com/feed/update/urn:li:activity:7139749049544388608/)

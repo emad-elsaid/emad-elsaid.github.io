@@ -5,6 +5,7 @@ This page contains Resources I used to learn Go.
 + [Go by example](https://gobyexample.com/)
 + [Introducing Go](https://www.oreilly.com/library/view/introducing-go/9781491941997/)
 + [Building web applications](https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/)
++ [100 Go Mistakes](https://100go.co/)
 
 # Rob Pike talks
 + [The design of the go assembler](https://www.youtube.com/watch?v=KINIAgRpkDA)
