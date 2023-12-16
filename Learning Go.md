@@ -1,4 +1,9 @@
-This page contains Resources I used to learn Go.
+This page contains Resources I used to learn Go. and recommended by other people to me
+
+# Books
+- [Concurrency in Go](https://www.oreilly.com/library/view/concurrency-in-go/9781491941294/) (Cox-Buday, K.)
+- [Writing a Compiler In Go](https://www.amazon.de/-/en/Thorsten-Ball/dp/398201610X) (Ball, T.)
+- [Writing an Interpreter In Go](https://interpreterbook.com/) (Ball, T.)
 
 # Basics
 + [go.dev/doc](https://go.dev/doc/)
