@@ -58,8 +58,8 @@
 # Editing
 + Timeline
   + : 2:1 -> 3840 x 1920
-  + Setting -> image scaling: ![](/public/87065021e32871d10783a13bfa33114e80c7c56b42aedb829fc81aff12c86465.png)
-  + Color management settings![](/public/18b21e2ab814c52f467c99551654daa8e9d2faab344385683ac68ec59e5ef547.png)
+  + Setting -> image scaling: ![](/public/428d2a3654e60d521ce41452a2bf6c85d042363803efd6dcee9ffe391d3fcdcf.png)
+  + Color management settings ![](/public/eb33c0249a71efc1b6a2c4aa62a6291c6246658b61da15b838f6e681cc3ea0f5.png)
 + Cut A-roll
 + Add transitions
   + 6 frame cross dissolve (calm short transition)
