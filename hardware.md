@@ -11,7 +11,9 @@ The following is my hardware and its specifications:
 	- RAM: Corsair Vengeance LPX 64 GB (4 x 16 GB) DDR4 3200 (PC4-25600) C16 Memory
 	- SSD: SanDisk Ultra 3D 1 TB 2.5" Solid State Drive
 	- SSD NVME: 2 X Corsair MP600 Force Series Gen4 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive
-	- Graphics card: Gigabyte GAMING OC GeForce RTX 2060 6 GB Video Card
+	- Graphics cards:
+      - Gigabyte GAMING OC GeForce RTX 2060 6 GB Video Card
+      - KFA2 26NRL7HPX7OK GeForce RTX 2060 6 GB Video Card
 	- Case: NZXT H500i ATX Mid Tower Case
 	- PSU: Corsair RM650x (2018) 650 W 80+ Gold Certified Fully Modular ATX Power Supply
 	- Fans: 2 X NZXT AER RGB 2 52.44 CFM 120 mm Fan
