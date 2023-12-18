@@ -10,7 +10,6 @@
 
 # Process
 
-* Youtube Process
 * Youtube Scripting
 * Video making concepts
 * Video Making Process
