@@ -6,3 +6,7 @@
 + Then on the "Deliver" tab I noticed it can't export youtube video with audio, the exported file is video only
   + The issue is reported on Blackmagic Forum https://forum.blackmagicdesign.com/viewtopic.php?f=36&t=159619
   + The response is to use MOV file format
+ 
+# Training
+
++ [Davinci resolve 12 reference](https://documents.blackmagicdesign.com/UserManuals/DaVinci_Resolve_12_Reference_Manual.pdf)

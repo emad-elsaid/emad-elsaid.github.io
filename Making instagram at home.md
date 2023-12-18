@@ -1,4 +1,6 @@
-#youtube_video_idea
+#youtube_video
+
+https://youtu.be/4Lf19HrOfzA
 
 # Problem
 + Social media profiles are not owned spaces
@@ -41,3 +43,8 @@ find photos \
 
 # Caveats
 + All images are in one page, resized and lazy loaded
+
+# Social media
++ [Twitter](https://youtu.be/4Lf19HrOfzA)
++ [Facebook](https://www.facebook.com/emad.elsaid.hamed/posts/pfbid02whiYDBsafwDBcYAYq2bGGCayhtkifhWpr4jN9RSKoX592VKdiQFKVJm3bBUgRWRel)
++ [Linkedin](https://www.linkedin.com/feed/update/urn:li:activity:7142236097316622337/)

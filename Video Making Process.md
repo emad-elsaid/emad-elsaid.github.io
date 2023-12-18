@@ -47,10 +47,11 @@
 + Talk while standing
 
 # Lighting
-  + Keylight: bright to the side on the left
-  + Fill light: less bright to the right, higher than key light
-  + Rim light: less bright than Fill light, back right, hits the top of the head
-  + Practicles: back of the scene, colorful.
++ Day light
++ Keylight: bright to the side on the left - motivate the window light
++ Fill light: less bright to the right, higher than key light
++ Rim light: less bright than Fill light, back right, hits the top of the head
++ Practicles: back of the scene, colorful.
 
 # Text 
 + Font [Dubai font](https://dubaifont.com/)
@@ -64,6 +65,7 @@
 + Cut A-roll
 + Add transitions
   + 6 frame cross dissolve (calm short transition)
+  + 6 frame smooth cut where applicable
 + Add B-Roll
 + Add memes
 
@@ -72,7 +74,7 @@
 + Enable Audio Isolation (Amount: 30)
 + Change the audio track to mono
 
-# Coloring
+# Color grading
 + [07_PastelTones.cube](/public/7af475ea75433d86a859afea3ac6ce0371ee54407e2ed68158c7ba2fcead9603.cube)  (Gain: 0.4)
 
 # Rendering
@@ -81,7 +83,6 @@
   - 3K 2:1 -> 2880 x 1440
   - HD 2:1 -> 1920 x 960
   - SD 2:1 -> 1280 x 640
-- We need to upload 4K as the 1080p result is very low-quality
 - Normalize audio for Youtube
 
 ![](/public/701f2fe428c184e7332547ad6fc1de39c682ca7cf290bd119432c4c3c280603e.png)
