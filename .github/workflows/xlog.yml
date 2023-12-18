@@ -32,10 +32,10 @@ jobs:
         uses: chetan/git-restore-mtime-action@v1
 
       - name: Install xlog
-        with:
-          version: v0.100.0
+        env:
+          XLOG_VERSION: v0.100.0
         run: |
-          curl -vvv --location -o ../xlog.tar.gz https://github.com/emad-elsaid/xlog/releases/download/${INPUT_VERSION}/xlog-${INPUT_VERSION}-linux-amd64.tar.gz
+          curl -vvv --location -o ../xlog.tar.gz https://github.com/emad-elsaid/xlog/releases/download/${XLOG_VERSION}/xlog-${XLOG_VERSION}-linux-amd64.tar.gz
           tar -xvf ../xlog.tar.gz -C ..
 
       - name: Build
