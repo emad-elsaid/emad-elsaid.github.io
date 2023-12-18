@@ -52,8 +52,9 @@
   + Rim light: less bright than Fill light, back right, hits the top of the head
   + Practicles: back of the scene, colorful.
 
-# Design 
+# Text 
 + Font [Dubai font](https://dubaifont.com/)
++ Size 50
   
 # Editing
 + Timeline
