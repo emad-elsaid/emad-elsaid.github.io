@@ -40,3 +40,11 @@
 + Control
 + Data travels over the internet although there is no need for that
 + Data leak
+
+# What it is not
++ Not for profit
+
+# Challenges
++ Self-hosting is still expensive, especially for videos
++ P2P protocols are an implementation hassle and not reliable in some networks
++ Machines are not 100% connected to the internet yet
