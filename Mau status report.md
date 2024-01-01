@@ -1,4 +1,6 @@
-#youtube_video_idea #sideproject
+#youtube_video #sideproject
+
+https://youtu.be/2r5E-KbpPmw
 
 # History
 + Started thinking about the idea on Jan 2021
@@ -48,3 +50,8 @@
 + Self-hosting is still expensive, especially for videos
 + P2P protocols are an implementation hassle and not reliable in some networks
 + Machines are not 100% connected to the internet yet
+
+# Video on social media
++ [Facebook](https://www.facebook.com/emad.elsaid.hamed/posts/pfbid0ujiBJHywqTY2N1xXPmYdHEvk31ujFy3VBTK6pVLtWem6HQauVusnVVWZdiiYeaGSl)
++ [Twitter](https://twitter.com/emad__elsaid/status/1739250347418222740)
++ [Linkedin](https://www.linkedin.com/feed/update/urn:li:activity:7145018853775876096/)

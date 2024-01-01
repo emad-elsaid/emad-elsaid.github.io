@@ -34,7 +34,8 @@
   + Saturation: +18
   + Zibras: 105+
 + Exposure Compensation: +2.0
-+ Audio gain: 17
++ Audio gain:
+  + Shotgun mic: 14
 + eye-level shot
 
 # Gear 
