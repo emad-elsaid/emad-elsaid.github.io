@@ -3,6 +3,20 @@
 # Definition
 + in Arabic: إستقامة أو نزاهة، وعكسها النفاق
 + Acting in adherence to your principles and values (value system)
++ Contributes to your reputation as an engineer
+
+# Example
++ While choosing a tool/framework
+  + if the principle is: "Best tool for the job"
+    + Does that mean a tool is better if you know it?
+    + What about hearing about one tech and not the other?
+    + What about you liking one and not the other?
+    + Liking can poison your decision making process and reduce your integrity
+
+# Conflict of principles
++ Principle1: "Best tool for the job"
++ Principle2: "Tools and tech must ...TODO"
++ a conflict is:
 
 # Relations
 + Assumes free-will
