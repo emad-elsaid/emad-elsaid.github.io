@@ -13,10 +13,14 @@
     + What about you liking one and not the other?
     + Liking can poison your decision making process and reduce your integrity
 
+# Affects
+- Honesty and transparency
+- Code quality
+- Accountability
+- Overall Reputation
+
 # Conflict of principles
-+ Principle1: "Best tool for the job"
-+ Principle2: "Tools and tech must ...TODO"
-+ a conflict is:
++ Speed vs Quality
 
 # Relations
 + Assumes free-will
