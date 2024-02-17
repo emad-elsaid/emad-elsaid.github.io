@@ -125,7 +125,7 @@ W-Fragen:
   - die Mutter / Mama
 - Die Grosseltern
   - die Grossmutter / die Oma
-  - die Grossvater / der Opa
+  - der Grossvater / der Opa
 - Die Geshcwister:
   - der Bruder
   - die Schwester
