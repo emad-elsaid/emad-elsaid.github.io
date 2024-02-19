@@ -146,6 +146,7 @@ Grammar
 - du: dein, deine
 - Sie: Ihr, Ihre
 
+Konjugationen 
 
 kommen:
 - ich komme
@@ -180,6 +181,9 @@ sein:
 - sie/Sie sind
 
 - geschieden
+- verheiratet
+- verwitwet
+- ledig
 
 
 - Wie geht es dir? (Wie geht's) ?
@@ -193,3 +197,57 @@ sein:
   - Mir geht es nicht so gut
   - Mir geht es schlecht
   - Es geht mir gut.
+ 
+Possessivpronomen:
+
+- mein/meine/meine
+- dein/deine/deine
+- ihr/ihre/ihre
+
+Nominative, ginative, dativ, acusativ
+Nominative
+Wer/was macht etwas
+Meine Bruder lebt in Wien
+
+# Lesson 3
+
+- einundzwanzig
+- zweiundzwanzig
+- dreiunzwanzig
+
+- einkaufen
+- verkaufen
+
+- die Pfanne
+- der Kuchen
+
+- vielleicht (maybe)
+- wahrscheinlich (probably)
+
+- Ich habe Hunger (Ich bin hungrig)
+- Ich habe Durst (Ich bin durstig)
+
+
+- die Hilfe
+- Ich HIlfe
+- du hilfst
+- er/sie/es hilft
+- wir helfen
+- ihr helft
+- sie helfen
+
+- Haben wir Zucker? (Ja, Nein)
+- gebt es Zucker?
+
+bestimmter Artikel
+- die Milch
+- der Zucker
+- das Brot
+- die (plural)
+
+unbestimmten Artikel
+- eine Milch
+- ein Zucker
+- ein Brot
+- Plural: -
+
