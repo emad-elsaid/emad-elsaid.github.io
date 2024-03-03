@@ -126,7 +126,7 @@ W-Fragen:
 - Die Grosseltern
   - die Grossmutter / die Oma
   - der Grossvater / der Opa
-- Die Geshcwister:
+- Die Geschwister:
   - der Bruder
   - die Schwester
 - Schwester von Mama/Papa: die Tante
@@ -250,4 +250,125 @@ unbestimmten Artikel
 - ein Zucker
 - ein Brot
 - Plural: -
+
+# Lesson 4
+
+- heisen
+- kommen
+- wohnen
+- sprechen
+- studieren
+- arbeiten
+- lernen
+- sein
+- haben
+- spielen
+- essen
+- trinken
+- horen
+- lesen
+- schreiben
+- fahren
+- sagen
+- buchstabieren
+- machen
+- gehen
+- kochen
+
+Die Negetation / Die Verneinung:
+
+nicht:
+- verben
+  - Ich schlafe nicht
+  - Ich esse nicht
+  - Ich will nicht essen
+- Adjektiven:
+  - Die Banane ist nicht reif
+  - Der Apfl ist nicht rot
+  - Des Kind ist nicht gross.
+ 
+kein:
+- Nomen (worter mit Artikel)
+  - Ich habe keine Bananen
+  - Ich habe keinen Hunger
+  - Das sign keine Orangen
+ 
+Bestimmte Artikel / unbestimmte Artikel
+
+feminin: die / eine
+mask: der / ein
+neutr. : das / ein
+Plural: die / -
+
+- Teuer x billig/gunstig
+
+- Was kostet/kosten
+- Wie viel kostet/kosten
+
+mochte
+- ich - mochte
+- du mochtest
+- er/sie mochte
+- wir mochten
+- ihr mochtet
+- sie/Sie mochten
+
+# Lesson 5
+- bunt
+- modern
+- das Lager
+- etwas lagern
+- schon x hasslich
+- alt x neu
+- hell x dunkel
+- gross x klein
+- teuer x billig
+- das Schlafzimmer
+- das Bad
+- der Flur
+- das Arbeitszimmer
+- die Kuche
+- das Kinderzimmer
+- die Toilette
+- der Balkon
+- das Wohnzimmer
+
+- Hier x Dort
+
+- Meine Wohnung -> Sie
+- Das Badezimmer -> Es
+- Der Flur -> Er
+- der Mitbewohner, die Mitbewohnerin
+- Zahlst = kostet
+- Quadratmeter
+- alleine x jemandem (zusammen)
+- breit x schmal
+
+# Lesson 6
+
+Konjunktion (Nebensatz)
+- weil -> Because
+Konjunktion (Haupsatze)
+- aber
+- und
+- bleibe
+
+
+Der
+- ismus
+- ling
+- ich
+
+Die
+- in, frau, heit, keit, schaft, ion, ung
+
+Das
+- chen, lein, ment, ing
+
+-Wie gefallt/gefallen dir die/der/das/die...?
+- Sie/er/es/sie gefallt/gefallen mir:
+  - ++: sehr gut
+  - +: gut
+  - - nicht so gut
+  - -- gar nicht (gut)
 
