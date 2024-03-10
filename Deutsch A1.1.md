@@ -371,4 +371,23 @@ Das
   - +: gut
   - - nicht so gut
   - -- gar nicht (gut)
+ 
+# Lesson 7
+Trennbare Verben
+- anfangen
+- einschlafen
+- ausschlafen
+- durchschlafen
+- einsteigen
+- aussteigen
+- einkaufen
+- Ich schlafe am Wochenende aus
+- Ich kaufe Milch und Brot im Supermarkt ein
+- Ich verkaufe Milch.
+
+- fruh x spat
+
+# Lesson 8
++ trennbar verb: https://learngerman.dw.com/de/trennbare-verben-1/l-40406333/gr-40406521
++ Uhr
 
