@@ -391,3 +391,7 @@ Trennbare Verben
 + trennbar verb: https://learngerman.dw.com/de/trennbare-verben-1/l-40406333/gr-40406521
 + Uhr
 
+# Lesson 9
+
++ https://www.deutschkurse-passau.de/JM/images/stories/SKRIPTEN/a1_skript_gr.pdf
++ https://www.klett-sprachen.de/download/11811/676440_DaF_im_Unternehmen_A1_Lektionstest.pdf
