@@ -395,3 +395,48 @@ Trennbare Verben
 
 + https://www.deutschkurse-passau.de/JM/images/stories/SKRIPTEN/a1_skript_gr.pdf
 + https://www.klett-sprachen.de/download/11811/676440_DaF_im_Unternehmen_A1_Lektionstest.pdf
+
+
+# Lesson 10
+
++ Wetter
++ Es regnet -> raining
++ Warm
++ Sonne scheint
++ Windig -> windy
++ Kalt
++ schneit -> snowy
++ bewolkt -> cloudy
+
+Verbs
++ schneien
++ regnen
++ scheinen
+
+Adjektiv:
++ windig
++ bewolkt
++ warm
++ kalt
+
+Directions
++ im Norden
++ im Suden
++ im Westen
++ im Osten
+
+Seasons
++ der Fruhling
++ der Sommer
++ der Herbst
++ der Winter
+
+Der Akkusative 
++ Die Mutter kocht
++ Die Mutter kocht die Supper
++ die -> die -> eine
++ der -> den -> einen
++ das -> das -> ein
+
+# Lesson 11
++ https://www.tedescopertutti.com/uploads/3/7/9/7/3797282/bung_1_akk-nom..pdf
