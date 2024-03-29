@@ -1,4 +1,4 @@
-![Islamic Art Museum, Berlin](/public/84c77bc3ef2cfb5eaa20e77479b981717e889c7a9dde42a66beccbca5eba6603.jpg)
+![](/public/d29c73903ec2db936580d47e5a93d47f9d3c28f2541182688c21e08d896ba73e.png)
 
 Ahlan, I'm **Emad Elsaid** (Arabic: **عماد السعيد**, IPA: **[ʕaˈmaːd ɪlˈsaʕiːd]**) . Welcome to my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's a public space. It includes notes, ideas, and experiments usually decorated with a photo I captured in my everyday life. Anything I'm involved in will be part of this garden.
 
