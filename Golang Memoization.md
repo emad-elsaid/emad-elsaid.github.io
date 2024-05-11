@@ -1,5 +1,5 @@
 * Memoization is one of the dynamic programming patterns where the program calculates the function once for the passed parameter(s)
-* There is a famous pattern for memoizing Go functions.
+* There is a common pattern for memoizing Go functions.
   * The function maintains a state. Usually, the state is a `Map`
   * The function stores the parameter as a key and returned value as value.
   * lookups up the map first at the beginning of the function.
