@@ -1,3 +1,5 @@
+#go
+
 * Memoization is one of the dynamic programming patterns where the program calculates the function once for the passed parameter(s)
 * There is a common pattern for memoizing Go functions.
   * The function maintains a state. Usually, the state is a `Map`
@@ -165,4 +167,80 @@ func MemoryMemoizerWithErr[In any, Out any, F func(In) (Out, error)](fun F) F {
 	return m.Do
 }
 ```
+
+# Comparison to Go programming language book memo example
+
+* The example [here](https://github.com/adonovan/gopl.io/blob/master/ch9/memo5/memo.go) lists a solution for the same problem. 
+* The example uses a dedicated go routine to avoid parallel access to the map
+* I was curious to compare the performance of both solutions. (commit)
+* The results show that the solution in this post is twice as fast in single go routine use. and 10 times faster in parallel use.
+
+```
+go test --bench .
+goos: linux
+goarch: amd64
+pkg: github.com/emad-elsaid/memoize
+cpu: AMD Ryzen 7 2700X Eight-Core Processor
+BenchmarkGoplio/Keys:10-16      	1000000	     1364 ns/op
+BenchmarkGoplio/Keys:100-16     	 787778	     1459 ns/op
+BenchmarkGoplio/Keys:1000-16    	 870450	     1449 ns/op
+BenchmarkGoplio/Keys:10000-16   	 859154	     1396 ns/op
+BenchmarkGoplio/Keys:100000-16  	 620088	     1733 ns/op
+BenchmarkGoplioParallel/Keys:10-16         	1000000	     1090 ns/op
+BenchmarkGoplioParallel/Keys:100-16        	1000000	     1165 ns/op
+BenchmarkGoplioParallel/Keys:1000-16       	 999837	     1176 ns/op
+BenchmarkGoplioParallel/Keys:10000-16      	 985710	     1200 ns/op
+BenchmarkGoplioParallel/Keys:100000-16     	 879453	     1379 ns/op
+BenchmarkMemoizer/Keys:10-16               	2594858	      439.7 ns/op
+BenchmarkMemoizer/Keys:100-16              	2828440	      459.8 ns/op
+BenchmarkMemoizer/Keys:1000-16             	2630336	      455.1 ns/op
+BenchmarkMemoizer/Keys:10000-16            	2582623	      456.1 ns/op
+BenchmarkMemoizer/Keys:100000-16           	2357390	      464.5 ns/op
+BenchmarkMemoizerParallel/Keys:10-16       	14447314	       84.29 ns/op
+BenchmarkMemoizerParallel/Keys:100-16      	14607079	       83.06 ns/op
+BenchmarkMemoizerParallel/Keys:1000-16     	14245002	       84.10 ns/op
+BenchmarkMemoizerParallel/Keys:10000-16    	12791991	       91.26 ns/op
+BenchmarkMemoizerParallel/Keys:100000-16   	2490600	      450.4 ns/op
+PASS
+ok  	github.com/emad-elsaid/memoize	33.902s
+```
+
+* I implemented an improvement to make it faster for cache hits to return early and avoid memory allocation and the performance jumped to 1800% faster implementation compared to gopl example ([commit](https://github.com/emad-elsaid/memoize/tree/f5d15324d1801ab223b327f1f211952fd98c32ca))
+
+```
+➜ go test --bench .
+goos: linux
+goarch: amd64
+pkg: github.com/emad-elsaid/memoize
+cpu: AMD Ryzen 7 2700X Eight-Core Processor
+BenchmarkGoplio/Keys:10-16      	1000000	     1287 ns/op
+BenchmarkGoplio/Keys:100-16     	 940515	     1294 ns/op
+BenchmarkGoplio/Keys:1000-16    	 897920	     1232 ns/op
+BenchmarkGoplio/Keys:10000-16   	 847644	     1328 ns/op
+BenchmarkGoplio/Keys:100000-16  	 776767	     1542 ns/op
+BenchmarkGoplioParallel/Keys:10-16         	1000000	     1029 ns/op
+BenchmarkGoplioParallel/Keys:100-16        	 971307	     1188 ns/op
+BenchmarkGoplioParallel/Keys:1000-16       	1000000	     1125 ns/op
+BenchmarkGoplioParallel/Keys:10000-16      	1000000	     1120 ns/op
+BenchmarkGoplioParallel/Keys:100000-16     	1000000	     1239 ns/op
+BenchmarkMemoizer/Keys:10-16               	25258276	       43.08 ns/op
+BenchmarkMemoizer/Keys:100-16              	25672358	       46.79 ns/op
+BenchmarkMemoizer/Keys:1000-16             	27347005	       42.03 ns/op
+BenchmarkMemoizer/Keys:10000-16            	21916824	       55.37 ns/op
+BenchmarkMemoizer/Keys:100000-16           	14022218	       84.96 ns/op
+BenchmarkMemoizerParallel/Keys:10-16       	45314600	       26.33 ns/op
+BenchmarkMemoizerParallel/Keys:100-16      	45316003	       25.73 ns/op
+BenchmarkMemoizerParallel/Keys:1000-16     	41009624	       26.64 ns/op
+BenchmarkMemoizerParallel/Keys:10000-16    	37614056	       28.19 ns/op
+BenchmarkMemoizerParallel/Keys:100000-16   	2024397	      537.5 ns/op
+PASS
+ok  	github.com/emad-elsaid/memoize	29.049s
+```
+
+
+# Go package
+
+I have released the previous implementation + performance improvement as a go package
+
+https://github.com/emad-elsaid/memoize/tree/master
 

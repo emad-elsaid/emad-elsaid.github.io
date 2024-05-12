@@ -440,3 +440,31 @@ Der Akkusative
 
 # Lesson 11
 + https://www.tedescopertutti.com/uploads/3/7/9/7/3797282/bung_1_akk-nom..pdf
+
+# Lesson 12
++ Besondere Hobbys
++ Haufigkeit
+  + immer
+  + oft
+  + manchmal
+  + ein Mal pro woche
+  + selten
+  + fast nie
+  + nie
++ Modalverben
+  + konnen
+  + durfen
+  + sollen
+  + mussen
+  + wollen
+  + mochten
+
+# Lesson 13
++ Perfekt:
+  + https://deutschlernerblog.de/wp-content/uploads/2018/02/Deutsche-Verben-unregelm%C3%A4%C3%9Fige-starke-Verben-Liste-nach-Sprachniveau-Deutsch-deutschlernerblog_2.pdf
+  + https://www.deutschakademie.com/wp-content/uploads/2020/06/unregelmaessige-verben.pdf
+  + https://www.deutschakademie.de/online-deutschkurs/deutschkurs/nach-thema/perfekt-habensein-trennbare-verben
+ 
+# Lesson 14
++ Test
++ Possessive 
