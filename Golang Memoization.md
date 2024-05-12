@@ -36,12 +36,12 @@ func NewPage(name string) *Page {
 
 # Double execution
 
-* if two Go routines called `Page` for the same parameter
-* in the time between the function getting the key value from the map and setting it
+* If two Go routines called `Page` for the same parameter
+* In the time between the function getting the key value from the map and setting it
 * And you don't have  a lock or unlock before you finish calculating the new value
-* Both functions will calculate the value concurrently
+* Both calls will calculate the value concurrently instead of only one
 
-# Adding a lock stop the world
+# Adding a lock stops the world
 
 If you have a lock that looks like so, it'll lock the whole map while you're calculating the value and setting it in the map
 
