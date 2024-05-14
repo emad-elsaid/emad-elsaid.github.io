@@ -91,3 +91,11 @@ It's Important to say I'm left handed and I write in Arabic. which I believe a v
 * So I contacted the support and they asked for the same result but with a recorded video. so I did. 
 * They asked to send the tablet back for repair. and after a couple of weeks, I got a replacement tablet.
 * When I tried the same experiment on it. it worked perfectly. but still, I feel that my writing is somehow odd. I can't articulate it but it feels that the first tablet got writing and not straight lines. the second got straight lines but slightly worse writing.
+
+# Refused to update
+* After being not used for a while. coming back to it to update it shows an error.
+* SSHed to it. checked the update-engine service logs
+* It shows that the SSL is valid in the future
+* Checked the time and it's last month
+* disabled NTP, set the time then enable NTP again.
+* Updated worked
