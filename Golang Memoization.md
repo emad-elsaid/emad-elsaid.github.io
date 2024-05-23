@@ -1,21 +1,24 @@
 #go
 
-* Memoization is one of the dynamic programming patterns where the program calculates the function once for the passed parameter(s)
+Memoization is one of the dynamic programming patterns where the program calculates the function once for the passed parameter(s) and reuses the output in subsequent calls instead of calculating it. This article shows an approach to achieve a generic memoization for Go.
+
+# The Trivial Memoization
+
 * There is a common pattern for memoizing Go functions.
   * The function maintains a state. Usually, the state is a `Map`
-  * The function stores the parameter as a key and returned value as value.
-  * lookups up the map first at the beginning of the function.
+  * The function stores the parameter as a key and the returned value as the map value.
+  * The function looks up the map first:
     * If the key exists it returns it
-    * if not it calculate the output and store it
-  * here is an example
+    * if not it calculates the output and stores it in the map
+
+The following is an example:
  
 ```go
 type Page struct{ name string }
 
 var pages map[string]*Page = map[string]*Page{}
 
-func NewPage(name string) *Page {
-	var p *Page
+func NewPage(name string) (p *Page) {
 	var ok bool
 	if p, ok = pages[name]; !ok {
 		p = &Page{
@@ -36,7 +39,7 @@ func NewPage(name string) *Page {
 
 # Double execution
 
-* If two Go routines called `Page` for the same parameter
+* If two Go routines called `NewPage` with the same parameter
 * In the time between the function getting the key value from the map and setting it
 * And you don't have  a lock or unlock before you finish calculating the new value
 * Both calls will calculate the value concurrently instead of only one
@@ -49,8 +52,7 @@ If you have a lock that looks like so, it'll lock the whole map while you're cal
 var pages map[string]*Page = map[string]*Page{}
 var l sync.Mutex
 
-func NewPage(name string) *Page {
-	var p *Page
+func NewPage(name string) (p *Page) {
 	var ok bool
 	l.Lock()
 	if p, ok = pages[name]; !ok {
@@ -78,7 +80,8 @@ The solution I came up with is the following:
 * So `OnceValue` makes sure the calculation runs once for each parameter
 * Creating a `Once` instance is assumed to be faster than the actual calculation I want to do
 * And if I used an interface instead of `sync#Map` I can swap it for another implementation that caches on disk/redis/database
-* Here is the implementation
+
+Here is the implementation
 
 ```go
 import (
