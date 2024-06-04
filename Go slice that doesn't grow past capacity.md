@@ -30,3 +30,7 @@ fmt.Println(s) // prints [90 91 92 93 94 95 96 97 98 99]
 ```
 
 Go playground: [https://go.dev/play/p/0MpcHN7OSTF](https://go.dev/play/p/0MpcHN7OSTF)
+
+# Update 23-06-2024 
+
+Golang now has a ring and double linked list https://pkg.go.dev/container which can be used for the same purpose instead of copying, it'll add an allocation overhead for each element, but adding/removing elements is in constant time.
