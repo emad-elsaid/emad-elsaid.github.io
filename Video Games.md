@@ -20,7 +20,7 @@ I play :video_game:  games on many platforms:
 * Hades 
 * Cult of the Lamb
 * Darksiders II and III
-* Diablo 3
+* Diablo 3 and 4
 * Stray
 * Destiny 2
 * The Elder scrolls online
