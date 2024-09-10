@@ -40,7 +40,7 @@ exec-once = open-in-workspace slack 4
 
 I was doing these steps manually everytime I start my machine in the morning. this script will save me a bit of effort.
 
-## Edit
+# Edit
 
 turns out Hyprland has a syntax to open the application in a specific workspace. knew it from an [issue on github](https://github.com/hyprwm/Hyprland/discussions/982).
 
