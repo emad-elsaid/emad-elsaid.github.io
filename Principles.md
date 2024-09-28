@@ -22,6 +22,10 @@ List of principles to remind me of what I believe in
   * The goal is to be able to make money when I want to fulfill my needs.
   * Spending money on investing in yourself raises your value. and in effect your ability to make money.
   * Investing in yourself is the highest investment you can do in life and it's never a losing investment.
+* Be the best version of yourself
+  * That means I don't compare myself to others. It's depressing.
+  * Look up to others for inspiration not comparison.
+  * Emad today should be better than yesterday and tomorrow better than today.
 * Being a good person
   * Being a good person in the general sense is not an easy principle.
   * You can't be a good person for everyone, but you can be a good person for a large number of people
