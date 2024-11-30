@@ -5,6 +5,7 @@ Thanks to [Christian](https://community.sony.at/t5/tipps-tutorials-faqs/sony-kam
 * PC remote control -> on
 * USB setting -> PC remote control
 
+# Prepare the machine
 1. install packages
 ```shell
 sudo apt install ffmpeg gphoto2 v4l2loopback-dkms v4l2loopback-utils
@@ -31,3 +32,6 @@ gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p
 # With hardware acceleration (I have a NVIDIA RTX 2060)
 gphoto2 --stdout --capture-movie | ffmpeg -hwaccel nvdec -c:v mjpeg_cuvid -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video2
 ```
+
+# Tips
+* I tried connecting the device to USB port in the front of the PC and the lag was high. connecting it to one of the back ports was faster. still laggy but less.
