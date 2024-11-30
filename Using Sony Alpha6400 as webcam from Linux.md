@@ -35,3 +35,4 @@ gphoto2 --stdout --capture-movie | ffmpeg -hwaccel nvdec -c:v mjpeg_cuvid -i - -
 
 # Tips
 * I tried connecting the device to USB port in the front of the PC and the lag was high. connecting it to one of the back ports was faster. still laggy but less.
+* Also I have 2 RTX2060, 1 of them is connected to the monitor. I used the other for ffmpeg hardware acceleration by adding `-hwaccel_device 1` for ffmpeg commang. (I got an overview of the cards usage with `nvidia-smi` command). This reduces the lag
