@@ -23,9 +23,8 @@ I ordered it 12 December 2024 and was delivered 23 December 2024.
 
 * it comes with 2 dongles USB and USB-C AND a USB-C to USB-C cable + a converter from C to A. very thoughtful of Keychron.
 * I miss the arm rest of the microsoft sculpt, it was so comfortable
-* The keys are a little closer to each other so I mistype a lot. I mistake (C,V) and (N,B) and I touch the knob everytime I was to press the ESC key.
+* The keys are a little closer to each other so I mistype a lot. I mistake (C,V) and (N,B) and I touch the knob everytime I want to press the ESC key.
 * It's not clicky but the brown switches still make some noise. I may switch the keycaps and the switches later to something more silent
-
 
 # Changing the layout
 * I tried to change some keys using Keychron launcher from google-chrome aaaand it didn't work. 
@@ -33,7 +32,7 @@ I ordered it 12 December 2024 and was delivered 23 December 2024.
 ```
 sudo chmod a+rw /dev/hidraw3
 ```
-* Then it connected but it shows error that the firmware doesn't support wireless. so I connected it using the USB cable. gave `/hidraw7` write permission this time and it worked. 
+* Then it connects but it shows an error that the firmware doesn't support wireless. so I connected it using the USB cable. gave `/hidraw7` write permission this time and it worked. 
 * I already switch L-Ctrl and L-Alt so I just needed to switch the caps. 
 * The Meta/Super key is a little uncomfortable for me and I depend on it as Hyprland Mod Key. So I changed the FN key to Meta and the last M5 key to FN. 
 * Also notice this layout doesn't have a printscreen key, so I had to make the Delete key in the last layer a print screen.
