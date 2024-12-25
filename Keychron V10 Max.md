@@ -38,3 +38,8 @@ sudo chmod a+rw /dev/hidraw3
 
 ![](/public/d494c28af377c0ff57c77f85d1e12c1f9126ae973db77cbf900f5a5400d7a82f.png)
 ![](/public/9bfadd370cfdad2ab676789eef1f55f5c1594bc14d758c141b184464f717a601.png)
+
+
+# First day of use
+* I'm not sure if I should keep it, but noticed also that I have like 5 days to decide, as keychron return policy states that I have to tell them within 7 working days of the delivery and I have to pay for the return myself (around 18 EUR with DHL)
+* I for sure need arm rest. the keyboard shape is not straight so any arm rest will leave gaps from each side. 
