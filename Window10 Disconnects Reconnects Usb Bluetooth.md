@@ -3,7 +3,7 @@ On my PC I have windows 10 + USB bluetooth I use them for gaming with wireless x
 
 I noticed in idle times that the PC was making sound of a USB device disconnecting, this is something that shouldn't be hapenning, I wasn't using the machine and it was idle doing nothing.
 
-## Debugging
+# Debugging
 
 I wanted to see some system logs like `journalctl` we have on linux, the nearest logger I found was the windows events viewer, under "System" I found warnings and errors from "Bluetooth HID device either went out of range or became unresponsive".
 
