@@ -1,3 +1,5 @@
+![](/public/2dd0d9d96790948c51e6b3c97a7c2aef22089b881c4fff27437d985fbf94d4a6.jpeg)
+
 I was looking for a keyboard upgrade for my Microsoft sculpt. My criteria was:
 
 - It has to be split, I got used to it, can't go backup
@@ -7,9 +9,6 @@ I was looking for a keyboard upgrade for my Microsoft sculpt. My criteria was:
 
 
 So I got a keychron V10 Max, the price is reasonable, not too cheap, not too expensive. I ordered it from Keychron website, because from Amazon it was more expensive.
-
-![](/public/2dd0d9d96790948c51e6b3c97a7c2aef22089b881c4fff27437d985fbf94d4a6.jpeg)
-
 
 I ordered it 12 December 2024 and was delivered 23 December 2024.
 
