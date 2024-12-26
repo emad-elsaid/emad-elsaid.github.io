@@ -43,3 +43,6 @@ sudo chmod a+rw /dev/hidraw3
 # First day of use
 * I'm not sure if I should keep it, but noticed also that I have like 5 days to decide, as keychron return policy states that I have to tell them within 7 working days of the delivery and I have to pay for the return myself (around 18 EUR with DHL)
 * I for sure need arm rest. the keyboard shape is not straight so any arm rest will leave gaps from each side. 
+
+# Second day of use
+* I feel I'm writing faster and with less effort, it's easier to press the keys, maybe the force needed to press the keys is less than my last keyboard
