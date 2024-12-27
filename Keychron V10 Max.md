@@ -46,3 +46,4 @@ sudo chmod a+rw /dev/hidraw3
 
 # Second day of use
 * I feel I'm writing faster and with less effort, it's easier to press the keys, maybe the force needed to press the keys is less than my last keyboard
+* I noticed the keylayout has 2 `B` keys. I always use the one on the left hand. so I switched the right key to be `ESC` as the usual place for `ESC` is too far. The keyboard also came with an extra keycap for `ESC` so I switched it too.
