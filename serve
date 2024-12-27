@@ -13,6 +13,5 @@ go run ./cmd/xlog \
 --og.domain=www.emadelsaid.com \
 --twitter.username=@emad__elsaid \
 --github.url=https://github.com/emad-elsaid/emad-elsaid.github.io/edit/master \
---disabled-extensions=hotreload \
 --rss.domain=www.emadelsaid.com \
 --rss.description="A Software Engineer. Ruby Golang. 🇪🇬 Egyptian 📷 Youtuber 🎮 Casual gamer and 🚀 Sci-Fi addict. My opinions are my own"
