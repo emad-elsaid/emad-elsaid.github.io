@@ -19,7 +19,7 @@ The following is my hardware and its specifications:
 	- Fans: 2 X NZXT AER RGB 2 52.44 CFM 120 mm Fan
 - Peripherals:
 	- Monitor: LG 27GL850-B 68,58 cm (27 inch) UltraGear QHD IPS Gaming Monitor (144 Hz, 1ms GTG, G-Sync, DAS Mode)
-	- Keyboard: Microsoft Sculpt Ergonomic Keyboard For Business Wireless Ergonomic Keyboard
+	- Keyboard: Keychron V10 Max
 	- Webcam: Logitech C920 HD PRO Webcam, Full-HD 1080p
 	- Headphones: Bose QC35  Headset
 	- Lights: Logitech Litra Glow Premium LED Streaming-Licht mit TrueSoft
