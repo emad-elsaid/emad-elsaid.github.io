@@ -1,3 +1,5 @@
+#opinion
+
 Consistency is doing the same thing in the same way everytime, in software engineering it means using same design pattern to accomplish the same task no matter who is doing the task or when he's doing it.
 
 For example if you're developing a new task, always looks for similar tasks that was done before, seek out the implementation, and do your new tasks in a similar way, use same directory structure, same naming convention, same patterns.

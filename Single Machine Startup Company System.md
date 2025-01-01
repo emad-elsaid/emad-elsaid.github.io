@@ -1,3 +1,5 @@
+#opinion
+
 Technology is moving fast. This is true for the tools we developers are using to build web applications. You wake up everyday on news about new library or framework or a new feature in the language you're already using. Tools are getting more complex and layers of abstractions are added over each other faster than I can keep up with. Marketing are getting stronger everyday. Reading documentation for a framework/program recently triggers me with a lot of marketing sentences that doesn't deliver any concrete proof to their claims, just shiny buzz words that should excite me to use this new tool.
 
 With that I think it's more sane for me to understand the existing software that I have on my system before I add anything to it. I'm using Linux on all of my work machines and servers. That means I should gain a deeper understanding to the userland applications that comes with my work machine distribution (Archlinux) and the one I use on my servers (Ubuntu). With a better understanding to what the system can already do I would gain a more stable knowledge that has a further expiration date than say a new components JavaScript library.

@@ -1,3 +1,5 @@
+#opinion
+
 I'm writing this to dump some ideas I had for a while about the excessive use of made up terms and acronyms in the technology field and the feeling I had that the matter is largely an obsession with it more than being a way to compress the language to be more efficient.
 
 If we're looking at the human language we'll see we're trying to communicate ideas and intents with it, and that takes time so we gradually try to make it less time to express the same ideas over and over to other people, to do that we compress the language. So Instead of says "we need to increase our output in the same time frame" we just say "we need to be more efficient". So we compressed the idea of "increase our output in the same time frame" to be one word "efficient".

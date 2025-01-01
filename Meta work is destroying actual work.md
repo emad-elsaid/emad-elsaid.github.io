@@ -1,5 +1,7 @@
 ![](/public/139418066_1050912945385953_4786806288650608936_n.jpg)
 
+#opinion
+
 Lets say you're a company that makes a photo editing application. Imagine it as a startup that tries to create an alternative for Adobe Photoshop.
 
 "Work" for me is creating the software itself. that's what the company sells. so everyone in the team should be contributing to this end artifact. That's what solely matters the freaking thing you're selling.

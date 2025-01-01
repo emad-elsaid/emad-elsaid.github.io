@@ -1,3 +1,5 @@
+#opinion
+
 As software engineers problem solving is part of what we do, we tend to face a lot of problems during our work or learning time, problems is part of our life routine.
 
 But lately I noticed a pattern, it annoyed me so much that I had to write this article about it.

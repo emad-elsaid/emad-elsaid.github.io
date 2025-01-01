@@ -74,20 +74,13 @@ I developed an interest in decentralization technologies and #p2p  solutions. th
 /hashtag-pages #sql
     
 ##  Javascript
-- Implementing Hover Cards With Minimum Javascript
+/hashtag-pages #javascript
     
 ##  C++ 
 /hashtag-pages #cpp
 
 ## Opinions 
-
-- Consistency Over Creativity
-- Meta work is destroying actual work
-- On Modern Web Applications Stability
-- Don't Throw Your Question Over the Fence
-- Language Compression
-- Single Machine Startup Company System
-
+/hashtag-pages #opinion
 
 ## Book Reviews
 /hashtag-pages #book
