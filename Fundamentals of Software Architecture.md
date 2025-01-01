@@ -1,5 +1,7 @@
 ![](/public/IMG_20210522_200302.jpg)
 
+#book
+
 I picked up [Fundamentals of software architecture](https://www.goodreads.com/book/show/44144493-fundamentals-of-software-architecture) last week. Overall the book is good as a starting point.
 
 - It'll help introduce and define the basic concepts.

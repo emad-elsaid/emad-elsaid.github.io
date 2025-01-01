@@ -1,5 +1,7 @@
 ![](/public/IMG_20210521_203605.jpg)
 
+#journey
+
 It's been more than a year since I went to any meaningful trip. Lately [Heide Park Resort](https://www.heide-park.de/en/) Opened their doors for visitors with a negative corona test result. So we packed our backpack and went from Berlin to the park spent the day riding roller coasters and came back in the same day. I'll describe the steps I took and the price for each and what to look for if you want to do the same.
 
 # Corona test

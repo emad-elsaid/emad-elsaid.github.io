@@ -1,3 +1,5 @@
+#journey
+
 It's been crazy since the beginning of the year 2020, And since the lock-down I have been working from home constantly, and naturally the idea of taking a vacation was distant, the fact that I'm working from home feels like I shouldn't take a vacation, my mind just pushed it to the back of my head, until I felt I really need some time off.
 
 Around the end of July I thought of taking off one week and go somewhere, As I love the sight of the sea, My wife started planning for the journey, she choose one place to visit for couple days and see some water, walk on the beach together and smell different air.

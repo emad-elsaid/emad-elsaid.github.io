@@ -1,3 +1,5 @@
+#sql #ruby 
+
 I needed to see all plans for the executed SQL statements in my rails project while in development. so I found this [Gem
 repository](https://github.com/yhirano55/activerecord-explainer)
 

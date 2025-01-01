@@ -1,8 +1,11 @@
 ![](/public/d29c73903ec2db936580d47e5a93d47f9d3c28f2541182688c21e08d896ba73e.png)
 
-Ahlan, I'm **Emad Elsaid** (Arabic: **عماد السعيد**, IPA: **[ʕaˈmaːd ɪlˈsaʕiːd]**) . Welcome to my :sunflower:  [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's a public space. It includes notes, ideas, principles and experiments usually decorated with a photo I captured in my everyday life. Anything I'm involved in will be part of this garden.
+Ahlan, I'm **Emad Elsaid** (Arabic: **عماد السعيد**, IPA: **[ʕaˈmaːd ɪlˈsaʕiːd]**).
 
-I'm from Egypt 🇪🇬 and based in Berlin 🇩🇪. I work as a [software engineer](</Why I became a software developer>) backend focused. I mainly use #Ruby #Go and #C.
+Welcome to my [digital garden](https://github.com/MaggieAppleton/digital-gardeners). It's a public space. It includes notes, ideas, principles and experiments usually decorated with a photo I captured in my everyday life. Anything I'm involved in will be part of this garden.
+
+
+I'm from Egypt 🇪🇬 and based in Berlin 🇩🇪. I'm a backend [software engineer](</Why I became a software developer>). I use #Ruby #Go and #C.
 
 # Social profiles
 
@@ -19,16 +22,14 @@ I'm from Egypt 🇪🇬 and based in Berlin 🇩🇪. I work as a [software engi
 * :video_game:  Video Games (Hardware)
 * :book:  Reading science fiction
 * :camera: Photography
-* :ice_skate:  [Inline Skating](</Learning Rollerblades at My Thirties>)
-* :bike:  Cycling
 
 # Projects
 
 The following are projects I'm involved in right now or in operation without development: 
 
+* Xlog: Personal knowledgebase server. It's what generates this blog
 * Mau: a convention for building P2P Web 2 applications 
 * Who is popular today? : a project that collects news and people pages from Wikipedia and cross-links them together.
-* Xlog: Personal knowledgebase server and it's what generates this blog
 * [Golang Debugger](https://github.com/emad-elsaid/debugger) : a GUI interface for Delve #go debugger
 * [Rubik's Cube timer](/timer): A timer to generate permutations of Rubik's cube and timer.
 
@@ -64,29 +65,19 @@ I developed an interest in decentralization technologies and #p2p  solutions. th
 /hashtag-pages #go 
 
 ##  Ruby
-- Cloning All Your GitHub Repositories or Updating Them in One Command
-- ERB Templates as Standalone Executables
-- Git as Messages Queue
-- Deploy rails application with docker compose and Capistrano
-- Integerating Jekyll and Octopress in Emacs
-- Enforcing Project Structure With Rspec
-- Tracing Ruby Applications Execution in 4 Lines
-- Rails Accepts_nested_attributes for polymorphic relation solution
-- Projects Files Flame Graph
-- Download RSS Offline
+/hashtag-pages #ruby
 
 ##  Shell
-- Linux named pipes
-- Getting Your CPU Speed in GHz on Linux
+/hashtag-pages #shell
     
 ##  SQL
-- Representing Named Entity Mention in Postgres for Fast Queries
+/hashtag-pages #sql
     
 ##  Javascript
 - Implementing Hover Cards With Minimum Javascript
     
 ##  C++ 
-- CPP Limit int type by max value
+/hashtag-pages #cpp
 
 ## Opinions 
 
@@ -99,34 +90,10 @@ I developed an interest in decentralization technologies and #p2p  solutions. th
 
 
 ## Book Reviews
+/hashtag-pages #book
 
-- Fundamentals of Software Architecture
-
-## Misc
-
-- Explain all SQL statements in rails
-- Exporting a Facebook Group as a Website
-- Faculty of Computer and Informatics Suez Canal University curriculums list
-- Favorite Developers
-- How I keep zero inbox for all my emails
-- How do I prototype my ideas
-- How to Find a Solution for Your Problem
-- Interesting GNU Projects
-- Monitor Window10 Foreground Window
-- Moving from Lastpass.com to KeePassXC on Linux-Android-Windows
-- Posting to Hugo Static Site From a Facebook Profile
-- The Chronicles of a Left Handed in Egypt
-- The quest to collect all software man pages
-- Using Emacs as email client
-- Why Am I Using KeePassXC
-- Window10 Disconnects Reconnects Usb Bluetooth
-- Working With Legacy Code
-- a week with remarkable 2
-
-## Adventures
-
-- Scharbeutz Vacation
-- Experiencing Heide Park Resort Rollercoasters One Day Trip
+## Journeys
+/hashtag-pages #journey
 
 # ملاحظات بالعربي  :egypt: 
 
