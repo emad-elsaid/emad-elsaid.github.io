@@ -53,14 +53,6 @@ I developed an interest in decentralization technologies and #p2p  solutions. th
 - Sound approach for a p2p social network which falls back to current web
 - what are we sharing
 
-## Web development
-
-- A solution for implementing Bulma navigation bar for mobile with CSS only
-- Async Rendering a Page With Sinatra
-- Bind Remote Server Port to Local Machine With SSH
-- Bulma HTML5 Dialog
-- The benefits of microservices over monolithic application
-
 ## Go
 /hashtag-pages #go 
 
