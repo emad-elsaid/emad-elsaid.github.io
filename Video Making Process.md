@@ -1,3 +1,5 @@
+#checklist 
+
 # General
 
 + No stock photos, videos or music. every element is either original or bought from the creator

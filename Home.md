@@ -34,12 +34,7 @@ The following are projects I'm involved in right now or in operation without dev
 * [Rubik's Cube timer](/timer): A timer to generate permutations of Rubik's cube and timer.
 
 # :white_check_mark: Checklists
-- CodeReview
-- Product Change Workflow
-- Writing For Developers
-- Open Source Project
-- Onboarding
-- Video Making Process
+/hashtag-pages #checklist 
 
 # :us:  English Notes
 
