@@ -31,28 +31,27 @@ jobs:
       - name: restore timestamps
         uses: chetan/git-restore-mtime-action@v1
 
-      # - name: Install xlog
-      #   env:
-      #     XLOG_VERSION: v1.6.7
-      #   run: |
-      #     curl -vvv --location -o ../xlog.tar.gz https://github.com/emad-elsaid/xlog/releases/download/${XLOG_VERSION}/xlog-${XLOG_VERSION}-linux-amd64.tar.gz
-      #     tar -xvf ../xlog.tar.gz -C ..
+      - name: Install xlog
+        env:
+          XLOG_VERSION: v2.0.0
+        run: |
+          curl -vvv --location -o ../xlog.tar.gz https://github.com/emad-elsaid/xlog/releases/download/${XLOG_VERSION}/xlog-${XLOG_VERSION}-linux-amd64.tar.gz
+          tar -xvf ../xlog.tar.gz -C ..
 
       - name: Build
-        uses: ghcr.io/emad-elsaid/xlog:v2.0.0
         run: |
-          xlog \
+          ../xlog \
           --build . \
           --sitename "Emad Elsaid" \
           --index=Home \
-          --custom_head=header.html \
+          --custom.head=header.html \
           --sitemap.domain=www.emadelsaid.com \
           --activitypub.domain=www.emadelsaid.com \
           --activitypub.username=Emad \
           --activitypub.summary="A Software Engineer. Ruby Golang. 🇪🇬 Egyptian 📷 Youtuber 🎮 Casual gamer and 🚀 Sci-Fi addict. My opinions are my own" \
           --og.domain=www.emadelsaid.com \
           --twitter.username=@emad__elsaid \
-          --github.repo=https://github.com/emad-elsaid/emad-elsaid.github.io \
+          --github.url=https://github.com/emad-elsaid/emad-elsaid.github.io/edit/master \
           --rss.domain=www.emadelsaid.com \
           --rss.description="A Software Engineer. Ruby Golang. 🇪🇬 Egyptian 📷 Youtuber 🎮 Casual gamer and 🚀 Sci-Fi addict. My opinions are my own"
           rm *.md
