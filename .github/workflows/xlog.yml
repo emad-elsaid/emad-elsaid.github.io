@@ -35,8 +35,7 @@ jobs:
         env:
           XLOG_VERSION: v2.0.0
         run: |
-          curl -vvv --location -o ../xlog.tar.gz https://github.com/emad-elsaid/xlog/releases/download/${XLOG_VERSION}/xlog-${XLOG_VERSION}-linux-amd64.tar.gz
-          tar -xvf ../xlog.tar.gz -C ..
+          curl --location https://github.com/emad-elsaid/xlog/releases/download/${XLOG_VERSION}/xlog-${XLOG_VERSION}-linux-amd64.tar.gz | tar -xz -C ..
 
       - name: Build
         run: |
