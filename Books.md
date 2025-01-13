@@ -16,6 +16,12 @@ author: Tatsuki Fujimoto
 image: /public/0ec2471c7ace52bc32a69ea1746b4005e8687ed6012d00f2cf78648f4701f586.webp
 ```
 
+```book
+title: Chainsaw man Second Arc Vol. (12) 
+author: Tatsuki Fujimoto
+image: /public/0ec2471c7ace52bc32a69ea1746b4005e8687ed6012d00f2cf78648f4701f586.webp
+```
+
 # Tried to read and didn't like it
 
 ```book
