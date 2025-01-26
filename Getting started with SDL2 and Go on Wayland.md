@@ -21,42 +21,27 @@ import (
 
 func main() {
 	slog.Info("Initializing...")
-	if err := sdl.Init(sdl.INIT_EVERYTHING); err != nil {
-		slog.Error("Failed to initialize SDL", "error", err)
-		os.Exit(1)
-	}
+	ErrAndExit("Failed to initialize SDL", sdl.Init(sdl.INIT_EVERYTHING))
+	defer sdl.Quit()
 
-	window, err := sdl.CreateWindow("Example", sdl.WINDOWPOS_UNDEFINED, sdl.WINDOWPOS_UNDEFINED, 1280, 720, sdl.WINDOWEVENT_SHOWN)
+	w, err := sdl.CreateWindow("Example", sdl.WINDOWPOS_UNDEFINED, sdl.WINDOWPOS_UNDEFINED, 1280, 720, sdl.WINDOWEVENT_SHOWN)
+	ErrAndExit("Failed to create a window", err)
+	defer w.Destroy()
+
+	s, err := w.GetSurface()
+	ErrAndExit("Failed to get window surface", err)
+
+	ErrAndExit("Failed to fill rect", s.FillRect(nil, sdl.MapRGB(s.Format, 255, 90, 120)))
+	ErrAndExit("Failed to update surface", w.UpdateSurface())
+
+	time.Sleep(time.Second * 3)
+}
+
+func ErrAndExit(msg string, err error) {
 	if err != nil {
-		slog.Error("Failed to create a window", "error", err)
-		os.Exit(1)
-	}
-
-	surface, err := window.GetSurface()
-	if err != nil {
-		slog.Error("Failed to get window surface", "error", err)
-		os.Exit(1)
-	}
-
-	c := sdl.MapRGB(surface.Format, 255, 90, 120)
-
-	if err := surface.FillRect(nil, c); err != nil {
-		slog.Error("Failed to fill rect", "error", err)
-		os.Exit(1)
-	}
-
-	if err := window.UpdateSurface(); err != nil {
 		slog.Error("Failed to update surface", "error", err)
 		os.Exit(1)
 	}
-
-	time.Sleep(time.Second * 3)
-
-	if err := window.Destroy(); err != nil {
-		slog.Error("failed to destroy window", "error", err)
-	}
-
-	sdl.Quit()
 }
 ```
 
@@ -65,8 +50,7 @@ It needs to run using the following command otherwise the window appears black:
 SDL_VIDEODRIVER=wayland  go run main.go
 ```
 
-The output looks like the following, Also notice the error while closing the window:
+The output looks like the following
 ```
 2025/01/26 12:40:32 INFO Initializing...
-2025/01/26 12:40:35 ERROR failed to destroy window error="That operation is not supported"
 ```
