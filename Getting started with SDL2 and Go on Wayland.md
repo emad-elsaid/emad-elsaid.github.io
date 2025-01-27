@@ -1,4 +1,4 @@
-#go
+#go 26-January-2025
 
 * A [binding](https://github.com/veandco/go-sdl2) for SDL2 exists already for Go, so there is no need to use the C functions directly
 * A simple program to run a window and color it didn't work out of the box and `SDL_VIDEODRIVER=wayland` needs to be set.
