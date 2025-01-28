@@ -1,3 +1,5 @@
+![](/public/b9983c6e588815bc264b414a9afd7b2f2d6ae66ca8a2d5376f8e0bcec3c3510d.jpg)
+
 #go 26-January-2025
 
 * A [binding](https://github.com/veandco/go-sdl2) for SDL2 exists already for Go, so there is no need to use the C functions directly
@@ -82,3 +84,4 @@ defer i.Free()
 
 ErrAndExit("Failed to draw image", i.Blit(nil, s, &sdl.Rect{X: 0, Y: 0}))
 ```
+
