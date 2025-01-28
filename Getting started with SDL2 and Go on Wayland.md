@@ -142,3 +142,44 @@ func loadImageAsSurface(filePath string) (*sdl.Surface, error) {
 	return surface, nil
 }
 ```
+
+# Hello world text
+
+Init TTF, Load a font, print hello world to a surface, convert it to texture and draw it
+
+```go
+ErrAndExit("Failed to initialize TTF", ttf.Init())
+defer ttf.Quit()
+
+f, err := ttf.OpenFont("/usr/share/fonts/inter/InterVariable.ttf", 32)
+ErrAndExit("Failed to open fond", err)
+defer f.Close()
+
+txt, err := f.RenderUTF8Solid("Hello world", sdl.Color{R: 255, G: 255, B: 255})
+ErrAndExit("Failed to render text", err)
+defer txt.Free()
+
+txtt, err := r.CreateTextureFromSurface(txt)
+ErrAndExit("Failed to convert text surface to texture", err)
+defer txtt.Destroy()
+
+r.Copy(txtt, nil, &sdl.Rect{X: 10, Y: 10, W: txt.W, H: txt.H})
+```
+
+# Vsync
+
+Split creating the window and renderer to be able to pass flags for VSYNC
+
+```go
+w, err := sdl.CreateWindow("Example", sdl.WINDOWPOS_UNDEFINED, sdl.WINDOWPOS_UNDEFINED, 1280, 720, sdl.WINDOWEVENT_SHOWN)
+ErrAndExit("Failed to create a window", err)
+defer w.Destroy()
+
+r, err := sdl.CreateRenderer(w, -1, sdl.RENDERER_ACCELERATED|sdl.RENDERER_PRESENTVSYNC)
+ErrAndExit("Failed to create renderer", err)
+defer r.Destroy()
+```
+
+# References
+
+* [SDL2 tutorial](https://thenumb.at/cpp-course/sdl2/01/01.html)
