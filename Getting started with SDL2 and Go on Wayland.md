@@ -112,8 +112,7 @@ r.Present()
 
 # Switch to Go image stdlib
 
-This function loads an image and convert it to SDL surface. It can be used
-instead of `sdl.LoadBMP` so there is no need for SDL image
+This function loads an image and convert it to SDL surface. It can be used instead of `sdl.LoadBMP` so there is no need for SDL image
 
 ```go
 func loadImageAsSurface(filePath string) (*sdl.Surface, error) {
