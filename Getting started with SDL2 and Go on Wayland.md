@@ -54,3 +54,31 @@ The output looks like the following
 ```
 2025/01/26 12:40:32 INFO Initializing...
 ```
+
+# Press Q to exit
+
+Replace `time.Sleep` with the following, will exit when `q` is pressed or the program gets a quit signal from the system
+```go
+for {
+    switch e := sdl.PollEvent().(type) {
+    case *sdl.QuitEvent:
+        os.Exit(0)
+    case *sdl.KeyboardEvent:
+        if e.Keysym.Sym == sdl.K_q {
+            os.Exit(0)
+        }
+    }
+}
+```
+
+# Load an Image
+
+Before updating the surface we can load an image and draw it
+
+```go
+i, err := sdl.LoadBMP("image.bmp")
+ErrAndExit("Failed to load image", err)
+defer i.Free()
+
+ErrAndExit("Failed to draw image", i.Blit(nil, s, &sdl.Rect{X: 0, Y: 0}))
+```
