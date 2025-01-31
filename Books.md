@@ -28,6 +28,12 @@ author: Tatsuki Fujimoto
 image: /public/0ec2471c7ace52bc32a69ea1746b4005e8687ed6012d00f2cf78648f4701f586.webp
 ```
 
+```book
+title: Solo leveling Ch. (1-180) 
+author: Chugong 추공 
+image: /public/7e6Y7L4.png
+```
+
 # Tried to read and didn't like it
 
 ```book
