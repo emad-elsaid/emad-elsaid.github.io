@@ -41,6 +41,7 @@ jobs:
           ../xlog \
           --build . \
           --sitename "Emad Elsaid" \
+          --theme "light" \
           --index=Home \
           --custom.head=header.html \
           --sitemap.domain=www.emadelsaid.com \
