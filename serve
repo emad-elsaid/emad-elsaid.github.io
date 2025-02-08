@@ -2,6 +2,7 @@
 
 go run ./cmd/xlog \
    --sitename "Emad Elsaid" \
+   --theme "light" \
    --index=Home \
    --source=/home/emad/code/emad-elsaid.github.io \
    --gpg=A9835BF728B3C71784FE538C5D33E3F3A9937BAD \
