@@ -40,8 +40,9 @@ jobs:
         run: |
           ../xlog \
           --build . \
-          --sitename "Emad Elsaid" \
-          --theme "light" \
+          --sitename="Emad Elsaid" \
+          --theme="light" \
+          --codestyle="catppuccin-latte" \
           --index=Home \
           --custom.head=header.html \
           --sitemap.domain=www.emadelsaid.com \
