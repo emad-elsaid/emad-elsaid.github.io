@@ -2,7 +2,7 @@
 
 #devices
 
-I got my steam deck 21-September-2022 as my 34th birthday gift. 
+:joystick: I got my steam deck 21-September-2022 as my 34th birthday gift. 
 
 * The steam deck I got was the 512GB version. 
 * It came with a hard case, microfiber cloth, a charger and a pouch bag for the charger.
@@ -44,3 +44,12 @@ It felt good that I got a game on steam deck and also played it on my PC. I got 
 + I contacted Steam support, the helped with troubleshooting
   + The first troubleshooting was to try to get into BIOS by powering on + pressing the volume up (+) and that works but still didn't solve the problem
   + The second step was to put it in "Battery shipping mode" from the BIOS power menu and leave it a couple of minutes  and then connect it to power. that solved the issue.
+  
+* On end of 2024 the device battery was drained after I stopped using it for a couple of months. 
+  * Charging it and turning it on didn't turn on the screen. but I heard the chim sound and vibrating indicating it started
+  * Trying external monitor didn't work either
+  * Tried contacting the support and they suggesting holding `-` and `...` and power button. that didn't work
+  * The suggested another solution `+` and power button. that didn't work either
+  * The last suggestion is that it's a specific issue and it's been too long since I bought it so I have to pay for the repair which is not less than 200eur. 
+  
+I guess I'm getting a Nintendo switch 2 when it comes out then :shrug:
