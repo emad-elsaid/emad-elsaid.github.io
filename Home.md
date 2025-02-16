@@ -1,4 +1,4 @@
-![Alpaca watching from a distance](/public/a6f6c32da0cd7df11eb65743795caba1acfc71d9888e5163caa3d01ec3b4c0d5.jpg)
+![Canon vintage cameras](/public/5ac82826c8652540c4383d39bd70a7b3a2056b4e48a08beeb18c3c41f3d1e66a.jpg)
 
 Ahlan, I'm **Emad Elsaid** (Arabic: **عماد السعيد**, IPA: **[ʕaˈmaːd ɪlˈsaʕiːd]**).
 
