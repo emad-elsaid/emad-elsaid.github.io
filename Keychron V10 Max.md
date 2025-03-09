@@ -26,19 +26,24 @@ I ordered it 12 December 2024 and was delivered 23 December 2024.
 * It's not clicky but the brown switches still make some noise. I may switch the keycaps and the switches later to something more silent
 
 # Changing the layout
-* I tried to change some keys using Keychron launcher from google-chrome aaaand it didn't work. 
+* I tried to change some keys using [Keychron launcher](https://launcher.keychron.com/) from google-chrome aaaand it didn't work. 
 * I had to open "chrome://device-log/" to check the error. found permission denied for /dev/hidraw3 so I gave it permission 
 ```
 sudo chmod a+rw /dev/hidraw3
 ```
 * Then it connects but it shows an error that the firmware doesn't support wireless. so I connected it using the USB cable. gave `/hidraw7` write permission this time and it worked. 
 * I already switch L-Ctrl and L-Alt so I just needed to switch the caps. 
-* The Meta/Super key is a little uncomfortable for me and I depend on it as Hyprland Mod Key. So I changed the FN key to Meta and the last M5 key to FN. 
-* Also notice this layout doesn't have a printscreen key, so I had to make the Delete key in the last layer a print screen.
+* ~~The Meta/Super key is a little uncomfortable for me and I depend on it as Hyprland Mod Key. So I changed the FN key to Meta and the last M5 key to FN.~~
+* Also notice this layout doesn't have a printscreen key, so I had to make the ~~Delete~~ M1 key in the last layer a print screen.
 
 ![](/public/d494c28af377c0ff57c77f85d1e12c1f9126ae973db77cbf900f5a5400d7a82f.png)
 ![](/public/9bfadd370cfdad2ab676789eef1f55f5c1594bc14d758c141b184464f717a601.png)
 
+# The following udev rule allow assigning the hidraw devices to my user automatically to have write permission
+```
+# save to /etc/udev/rules.d/99-hidraw-permissions.rules
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0660", GROUP="hid", TAG+="uaccess", OWNER="emad"
+```
 
 # First day of use
 * I'm not sure if I should keep it, but noticed also that I have like 5 days to decide, as keychron return policy states that I have to tell them within 7 working days of the delivery and I have to pay for the return myself (around 18 EUR with DHL)
@@ -46,4 +51,4 @@ sudo chmod a+rw /dev/hidraw3
 
 # Second day of use
 * I feel I'm writing faster and with less effort, it's easier to press the keys, maybe the force needed to press the keys is less than my last keyboard
-* I noticed the keylayout has 2 `B` keys. I always use the one on the left hand. so I switched the right key to be `ESC` as the usual place for `ESC` is too far. The keyboard also came with an extra keycap for `ESC` so I switched it too.
+* ~~I noticed the keylayout has 2 `B` keys. I always use the one on the left hand. so I switched the right key to be `ESC` as the usual place for `ESC` is too far. The keyboard also came with an extra keycap for `ESC` so I switched it too.~~
