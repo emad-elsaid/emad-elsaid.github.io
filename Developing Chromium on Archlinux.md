@@ -12,7 +12,14 @@ fetch --nohooks chromium # full clone with history
 fetch --nohooks --no-history chromium # without history (faster)
 ```
 
-When I compiled the first time it failed as `gperf` wasn't on the system. so `pacman -S gperf` first. then we compile.
+install dependencies needed to compile. it takes hours on my machine, so take a walk, touch grass.
+```sh
+sudo pacman -S --needed python perl gcc gcc-libs bison flex gperf pkgconfig \
+nss alsa-lib glib2 gtk3 nspr freetype2 cairo dbus xorg-server-xvfb \
+xorg-xdpyinfo
+```
+
+Then we compile.
 ```sh
 gclient runhooks
 cd src
