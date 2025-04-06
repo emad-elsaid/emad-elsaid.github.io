@@ -14,6 +14,12 @@ blood(c, {
   qt.force_software_rendering:
     global: chromium
 ```
+* to make sure it only works on the nvidia machines not the rest of my machines, I removed it and added this to `config.py`
+```yaml
+if os.environ.get("GBM_BACKEND") == "nvidia":
+    c.qt.force_software_rendering = "chromium"
+```
+
  * I have a muscle memory on `ctrl+t` and `ctrl+w` to open new tab and close existing tab. `ctrl+w` already works. so lets fix `ctrl+t`
 ```yaml
 config.bind("<Ctrl+t>","cmd-set-text -s :open -t")
