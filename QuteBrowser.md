@@ -37,3 +37,13 @@ config.bind("<Ctrl+t>","cmd-set-text -s :open -t")
   statusbar.show:
     global: never
 ```
+ * Change the default editor from `gvim` to `emacs`
+```yaml
+  editor.command:
+    global:
+    - emacsclient
+    - -n
+    - -a
+    - +{line}:{column0}
+    - '{file}'
+```
