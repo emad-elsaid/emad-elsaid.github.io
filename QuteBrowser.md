@@ -30,3 +30,10 @@ config.bind("<Ctrl+t>","cmd-set-text -s :open -t")
     global:
       DEFAULT: https://www.google.com/search?q={}
 ```
+ * I wrote in My ideal browser. that I want no UI around the page whatsoevery. so hiding the tab and status bar and any window decoration.
+```yaml
+  tabs.show:
+    global: never
+  statusbar.show:
+    global: never
+```
