@@ -6,4 +6,4 @@
 * Search images in pages by content.
 * Should be programmable. I don't need artificial limits. I should be able to override any part of this browser and extend it with a sane programming language.
 * Videos transcribed and saved. and searchable. like any other content.
-* No app store. just users writing their own packages/extensions or whatever you call them. and share it with each other. No big brother trying to save the little kids using their browser kind of bullshit.
+* No app store. just users writing their own packages/extensions or whatever you call them. and share it with each other. No big brother trying to save the little kids using their browser kind of bullshit. (QuteBrowser fullfills this item)
