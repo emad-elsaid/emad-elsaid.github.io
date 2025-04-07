@@ -47,3 +47,8 @@ config.bind("<Ctrl+t>","cmd-set-text -s :open -t")
     - +{line}:{column0}
     - '{file}'
 ```
+
+# Issues
+* Camera and Microphone doesn't work. the browser doesn't show the permission dialog
+* Sometimes I expect the page to be in insert mode like when there is a blinking cursor. but some websites fake it or something. maybe that's the issue?
+* In Gmail I have keyboard shortcuts enabled, but I have to remember to get to insert mode first before using them.
