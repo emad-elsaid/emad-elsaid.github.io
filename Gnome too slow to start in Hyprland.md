@@ -6,4 +6,4 @@
 All of these symptoms happen at the same time at random times. when it happens it happens for days. then it disappear (not sure of the trigger or the reason it's fixed)
 
 * Turns out the issue was that I start Hyprland from `.bash_profile` using `exec Hyprland`.
-* The solutions is to start Hyrprland with dbus session `exec dbus-run-session -- Hyprland`
+* The solution is to start Hyrprland with dbus session `exec dbus-run-session -- Hyprland`
