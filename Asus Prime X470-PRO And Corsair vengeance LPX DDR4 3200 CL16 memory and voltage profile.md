@@ -119,13 +119,13 @@ NUMA:
 
 # Stress test
 ```
-sudo stress-ng --vm 2 --vm-bytes 80% --timeout 600s
-stress-ng: info:  [2830] setting to a 10 mins run per stressor
-stress-ng: info:  [2830] dispatching hogs: 2 vm
-stress-ng: info:  [2830] skipped: 0
-stress-ng: info:  [2830] passed: 2: vm (2)
-stress-ng: info:  [2830] failed: 0
-stress-ng: info:  [2830] metrics untrustworthy: 0
-stress-ng: info:  [2830] successful run completed in 10 mins, 5.57 secs
+sudo stress-ng --vm 4 --vm-bytes 80% --timeout 300s
+stress-ng: info:  [3048] setting to a 5 mins run per stressor
+stress-ng: info:  [3048] dispatching hogs: 4 vm
+stress-ng: info:  [3048] skipped: 0
+stress-ng: info:  [3048] passed: 4: vm (4)
+stress-ng: info:  [3048] failed: 0
+stress-ng: info:  [3048] metrics untrustworthy: 0
+stress-ng: info:  [3048] successful run completed in 5 mins, 3.50 secs
 ```
 
