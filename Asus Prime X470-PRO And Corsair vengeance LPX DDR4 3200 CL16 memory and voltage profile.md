@@ -1,6 +1,6 @@
 13-Apr-2025 #hardware
 
-The following are my Asus mobo and memory AI Tweak profile settings. These are the maximum values that can be used without introducing instability to the hardware. 
+The following are my Asus mobo and memory AI Tweaker profile settings. These are the maximum values that can be used without introducing instability to the hardware. 
 
 # Motherboard
 ```
@@ -109,12 +109,13 @@ NUMA:
   NUMA node0 CPU(s):      0-15
 ```
 
-# AI Teak settings Settings
-- DOCP disabled
+# AI Teaker settings Settings
+- DOCP disabled (only 16-20-20-36 timing is available when enabling DOCP and the system doesn't start)
 - DDR4 Frequency 2933MHz (3000MHz is not stable)
-- Timing: Auto
+- Timing: Auto (not possible to set it while DOCP is disabled)
 - DRAM voltage 1.35V
-- SOC Voltage: (manual) 1.05V
+- SOC Voltage: (manual) 1.1V
+- Ai Tweaker\DRAM Timing Control -> Gear Down Mode: Enabled
 
 # Stress test
 ```
