@@ -1,7 +1,6 @@
 According to the following guide 
 
-https://youtu.be/L0igr0tf4Ik
-
+https://youtu.be/IFYzTcnKwbc
 
 Same as the standard format with the following modifications: 
 * Build a storyboard by:
@@ -21,6 +20,9 @@ Same as the standard format with the following modifications:
 Banned from storyboard: 
 * A whole new world
 * Be prepared
+* Beyond the Horizon
 
+# Reference
+* [Format rules document](https://drive.google.com/file/d/1UnjhO-kqy_fDWBM5SIR0wr1U_4RPAjtp/view)
 
 #Lorcana
