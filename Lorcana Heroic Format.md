@@ -15,6 +15,7 @@ Same as the standard format with the following modifications:
 * Every time a storyboard card is put back into the storyboard, a "Tax counter" is increased
 * You can play a storyboard card in your turn by paying the cost of the card + the tax
 * The tax does not increase the shift cost
+* The first user reaching 30 lore wins instead of 20
 
 Banned from storyboard: 
 * A whole new world
