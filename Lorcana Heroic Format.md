@@ -1,4 +1,6 @@
-According to the [following guide](https://youtu.be/L0igr0tf4Ik)
+According to the following guide 
+
+https://youtu.be/L0igr0tf4Ik
 
 Same as the standard format with the following modifications: 
 * Build a storyboard by:
