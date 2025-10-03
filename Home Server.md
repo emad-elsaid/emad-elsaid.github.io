@@ -365,6 +365,20 @@ Title
 > [Arabic] 14TB Archlinux Linux ZFS Home server Build |  ارتش لينكس 14 تيرابايت سيرفر للبيت
 
 Description
+
+# Update 03-10-2025
+* I heared continious clicking from the server at all times.
+* I thought it was needle parking noise as segate is famous for this behavior. so I first turned off all new docker containers I started such as gitlab, gitlab runner, AI UI, ollama. The issue didn't go away.
+* Then I tried to run ZFS scrub. it took around a day to finish and the issue went away. then appeared again.
+* So I tried to clean the server.
+  * Turning on the server didn't POST. just the case light and the fans are running, no noise or beeps.
+  * connected a GPU and monitor, keyboard, mouse. didn't work.
+  * Opened it again and pressed on every component and cable.
+  * That fixed the POST issue. next the Dracut stick wasn't recognized at all, changed the USB port and it worked.
+  * Booting to the system and found the network interface was down and instead of enp3s0 it was enp4s0 that's because the enumeration of MOBO of buses was different. trying `networkctl up enp4s0` failed with error that the driver can't be loaded. also I remembered the CPU as  integrated graphics.
+  * Removed the GPU and rebooted, it worked as expected.
+
+ 
 > شرح تفصيلي لمشروع ارتش لينكس سيرفر للبيت واختيارات الهاردوير والسوفتوير والمميزات التي تم اختيارها مثل ZFS, Zigbee gateway, Docker containers, Self hosted services
 معلومات تفصيلية عن المشروع: https://www.emadelsaid.com/Home%20Server/
 المشروع على جيت هب: https://github.com/emad-elsaid/home
