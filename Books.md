@@ -155,6 +155,12 @@ image: /public/36d2acfaa75387ad2c6cbc6e70968eb831beddd80c092f25f8da4853f1a8d272.
 # Currently Reading
 
 ```book
+title: Red Rising
+author: Pierce Brown
+image: /public/6d3ff624d0a78f580a1cc2f13c430c09eca3aafb498f76731f4d66196729fef4.jpg
+```
+
+```book
 title: "All These Worlds (Bobiverse, #3)"
 author: Dennis E. Taylor
 image: /public/bf9dd3d1947e68b0bddab6ba35b0b2dccae298a596f4af1f473cec894c021f2b.jpg
