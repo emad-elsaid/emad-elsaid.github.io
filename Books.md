@@ -71,6 +71,7 @@ image: /public/dac1dc325b00479ded721d59f5214d034fc9089084221e3aca6792c226f402e5.
 ```book
 title: الديانة المصرية
 author: خزعل الماجدي
+image: /public/11ae0548dcbced0d1fca7c3911c177a02289f8654342ec9569d3929df0b00414.jpg
 ```
 
 ```book
@@ -118,6 +119,7 @@ image: /public/9a1fbe2d696811edc485a4bfa1de4dbea566a125367b58d0aef71f4d09bf4c40.
 ```book
 title: Fry The Monkeys - Create A Solution
 author: Alan Kay
+image: /public/7ee6b43cda8b5abad0fc02eb9834506755d7b20b2088448de86e8de638dec7f0.jpg
 ```
 
 ```book
@@ -155,6 +157,7 @@ image: /public/36d2acfaa75387ad2c6cbc6e70968eb831beddd80c092f25f8da4853f1a8d272.
 ```book
 title: "All These Worlds (Bobiverse, #3)"
 author: Dennis E. Taylor
+image: /public/bf9dd3d1947e68b0bddab6ba35b0b2dccae298a596f4af1f473cec894c021f2b.jpg
 ```
 
 # 2025 Reads
@@ -196,6 +199,7 @@ image: /public/e87a5c6ae92feacab6819340a4fbdbb10cd10d37fdd2707e36d8227817710231.
 ```book
 title: "رحلة الدم (القتلة الأوائل، #1)"
 author: Ibrahim Essa
+image: /public/e29c738fbd2b9f3c62bbdf9c97053a17a841281df82f1717272a39955a7750f3.jpg
 ```
 
 ```book
@@ -207,6 +211,7 @@ image: /public/6ab6a3dc5c0cb267ec3f15ac7d9cd001f60c4b1adcc1b465a04f8411ff093ccd.
 ```book
 title: "Moon Knight Epic Collection, Vol. 1: Bad Moon Rising"
 author: Doug Moench
+image: /public/408afac206b2e938310ab972729ddcb7878a11febe905b0ba7862a4823c69621.jpg
 ```
 
 ```book
@@ -236,11 +241,13 @@ image: /public/d51c9b95e2a15c36d82b5ade31b5d4fb431b71f14bf09eb125637a1d2ee34ad6.
 ```book
 title: المادة السوداء
 author: Blake Crouch
+image: /public/56b5af87c59590bc5835e065d2cb9382784ed8642424d1deac55c9bac1223246.jpg
 ```
 
 ```book
 title: كون من لا شيء
 author: Lawrence M. Krauss
+image: /public/9b56fb877d495aea0c5aae966ec237707fc504e503d998a15c72d8055e39d122.jpg
 ```
 
 ```book
@@ -252,6 +259,7 @@ image: /public/5631f4561852a9889e899f0647ffe5db594f27fcbf58e8c404eebb75e73f6539.
 ```book
 title: أفراح المقبرة
 author: Ahmed Khaled Towfik
+image: /public/018bbdd3b13d6f5f0cadac496439809fbd133ebd0122fa73ed0a81d3db9aad03.jpg
 ```
 
 ```book
@@ -295,11 +303,13 @@ image: /public/917b49707c6323e994f82857c66acafbd54b7e5484e6e7bdd9081fb29d226134.
 ```book
 title: O anarhizmu
 author: Noam Chomsky
+image: /public/512d8989e5423d80b9f0ae0c055cd8bdd141be08b8a8ac0632c02c1f8b8ed562.jpg
 ```
 
 ```book
 title: "We Are Legion (We Are Bob) (Bobiverse, #1)"
 author: Dennis E. Taylor
+image: /public/52a9d8c33542c954af7e4d90b2f6026733f8d30429e2d9e5ae2bd66b3460e2fd.jpg
 ```
 
 ```book
@@ -371,6 +381,7 @@ image: /public/92bfeb978e4c938902c30a5c7d409ef3126ca60cdce6a7dc71817aa1624ea52d.
 ```book
 title: How To Lead Smart People
 author: Arun Singh
+image: /public/af066db3fe9366bbfc6c34f09cdafd5cc6d8e810c544f2a50a40cfa70fd8d15f.jpg
 ```
 
 ```book
@@ -406,6 +417,7 @@ image: /public/8072ea81a59105dc1e51d543f12099c72052d951a3d49fa0c139d585dc60f281.
 ```book
 title: "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life"
 author: Mark Manson
+image: /public/f08dde6f2eb488abdf13266fccddca1b399d0aac4dbe1d30fb4f2073ff04df88.jpg
 ```
 
 ```book
@@ -425,6 +437,7 @@ image: /public/9e5273a1931d3b6f60ef79689dabf6f1f270132489784f71d858dc2375750388.
 ```book
 title: The Wandering Earth
 author: Liu Cixin
+image: /public/db11a7361ea4f309bb5569e2088fa6c0ddf3365556cc5fada4295943319e1193.jpg
 ```
 
 ```book
@@ -460,16 +473,19 @@ image: /public/f0573114f04c4eb91b149297b32a4362ef970b8f6ad66d72037f4f62dee5d5be.
 ```book
 title: في مدينة الجحيم
 author: نادر السعيد
+image: /public/a6068591243157dcb850ee01f2c873c9b9cb1cf0afd614f93427221064aab3be.jpg
 ```
 
 ```book
 title: الآلة
 author: Amr Algendy
+image: /public/fd79f0e018d8b11042757a820a496d916b056c6533d69b0a42e348c00d790901.jpg
 ```
 
 ```book
 title: الجيل الثالث
 author: محمود علام
+image: /public/bccb26ba83720cb1c2cde7958fb348e00d17fd84676703b835736adfec245263.jpg
 ```
 
 ```book
@@ -513,6 +529,7 @@ image: /public/3ce5508448fcdcc8d3ce3482c7193d4eca17252c4b7906fa26873e22ba37d99f.
 ```book
 title: "Homo Deus: A History of Tomorrow"
 author: Yuval Noah Harari
+image: /public/e87a985ae756e0ef6a135812bdb226af2869311339fb29454ff6d33ad676cafb.jpg
 ```
 
 ```book
@@ -530,6 +547,7 @@ image: /public/d830fbb2d5e7af1eb0508c2aae4109051406c7c7bd7b828cba4ca7fd1def2f4c.
 ```book
 title: مولانا
 author: Ibrahim Essa
+image: /public/9d1fc8dcd13b26acf8f88e8f3fd4b1b213383a7eb11315436a81563eae05f20a.jpg
 ```
 
 ```book
@@ -611,6 +629,7 @@ image: /public/4e3238645c32fd1d049a4ccf58ddf2afbd30abe11b74293d2153164843ca4f31.
 ```book
 title: في مستوطنة العقاب
 author: Franz Kafka
+image: /public/efd2cc20dd41f3c2585f023b954a266f87ed113972a7e087c3d11823cb6d0a5d.jpg
 ```
 
 ```book
@@ -652,6 +671,7 @@ image: /public/ed2b0e2e7f01b1c3f3849155cd96f9e71ee3a31effd8b44aa4d56a6ae7c880d6.
 ```book
 title: الحزب الهاشمي وتأسيس الدولة الإسلامية
 author: سيد القمني
+image: /public/4f93297a0513764dd1ff6ac86d02f736fdafc3bafb0c130615571435fee41264.jpg
 ```
 
 ```book
@@ -663,6 +683,7 @@ image: /public/562dc068967e508bde7079f9fe3e42fc1080c12ff717d1ed329dcf85a47dc489.
 ```book
 title: "Finders Keepers (Bill Hodges Trilogy, #2)"
 author: Stephen  King
+image: /public/957dfe3f8eb34cbd2b307be4662a9b1ac269f377f9ba3b01dc826ecd82bd55e8.jpg
 ```
 
 # 2016 Reads
@@ -682,11 +703,13 @@ image: /public/f9de9c3f553199b85b85bd67c8af73db3dc0eeff8b97df942159f40f712269b5.
 ```book
 title: مثل إيكاروس
 author: Ahmed Khaled Towfik
+image: /public/281fde9f5be660e88b103e0f69e0de4c9200fda9ea3a7a41675c78fe31cd1a13.jpg
 ```
 
 ```book
 title: "Thrall: Twilight of the Aspects (World of WarCraft, #9)"
 author: Christie Golden
+image: /public/0000c7eeaefb87258e59e7451d2b7d6bf348c33b07badf95a3fcf9d4beb8e58d.jpg
 ```
 
 # 2015 Reads
@@ -694,26 +717,31 @@ author: Christie Golden
 ```book
 title: "How to Talk to Anyone: 92 Little Tricks for Big Success in Relationships"
 author: Leil Lowndes
+image: /public/c8d8cae85d4938e30c19fef37e8817c5cffcc8760b669875e3b2998509632c65.jpg
 ```
 
 ```book
 title: "The Power of Habit: Why We Do What We Do and How to Change"
 author: Charles Duhigg
+image: /public/c4afeaec6aaf544d00581d36ac87d7b39c4db5b755ab6d2380b31357c591922e.jpg
 ```
 
 ```book
 title: "Philosophy 101: From Plato and Socrates to Ethics and Metaphysics, an Essential Primer on the History of Thought (Adams 101 Series)"
 author: Paul Kleinman
+image: /public/e5531f665ada025a0c9a106b66eb6e2e780e55ddcfe1ffc6f68e8295cd9fc2b2.jpg
 ```
 
 ```book
 title: عواصف
 author: يوسف عز الدين عيسى
+image: /public/a8b90ed778ece9b086b92e539f65d3346ab3a4daf7c3e01f394b5fa88744ee11.jpg
 ```
 
 ```book
 title: جسمك لا يكذب
 author: أنيس منصور
+image: /public/2c8304d8ce98e822c1f0457120300fc18ab4859a144a03d7fb0f5cc3edb0d093.jpg
 ```
 
 ```book
@@ -733,6 +761,7 @@ image: /public/546bd18324ae723c7607f3c2a7e234c0b01d137e6eed82cbc727eafd8be40598.
 ```book
 title: "The Shattering: Prelude to Cataclysm (World of Warcraft, #8)"
 author: Christie Golden
+image: /public/417939b44f840974ee37105c4f3b5a342a18f28aaa956dce4de0354c1d2aecab.jpg
 ```
 
 ```book
@@ -744,11 +773,13 @@ image: /public/6f23e49670f29e4d7a3335fde92d3ddf0adec9b2dc83b41cc0210e5f4c8e7b31.
 ```book
 title: ديرمافوريا
 author: Craig Clevenger
+image: /public/1ea4331297980b55bb5b57b4d6ab5975117e92300ab70168361d22da317abe7a.jpg
 ```
 
 ```book
 title: "البدايات: 14 مليار عام من تطور الكون"
 author: Neil deGrasse Tyson
+image: /public/6a0eaf52e76878b402b35c9ad90ddd5c0fef4af6b07a803ec048f7de8f1300ec.jpg
 ```
 
 ```book
@@ -772,16 +803,19 @@ image: /public/72d202b60d5806c58549f8bb9708c2c0651e5a8a656029d8ddbb517d4af8f949.
 ```book
 title: متاهات الوهم
 author: Youssef Ziedan
+image: /public/9664199fa46dca8505f0fab3deaed28f69c2545e7278b1d92f034dbda299aa08.jpg
 ```
 
 ```book
 title: أجوان
 author: Noura Noman
+image: /public/8da7359a74566290699d104b1e50b0dd810a4b6ae828a50a1d6b490aba476c32.jpg
 ```
 
 ```book
 title: النذير
 author: فرج فودة
+image: /public/fb0d724c8aedf1d078d4fbec5d363d439f486b4a0d99861671a98120346b52d9.jpg
 ```
 
 # 2013 Reads
@@ -789,6 +823,7 @@ author: فرج فودة
 ```book
 title: النبطي
 author: Youssef Ziedan
+image: /public/afb2d55680b4b1189b9640ec21f60c0a1395b5888e1a52e9faed201c7323f748.jpg
 ```
 
 ```book
@@ -806,11 +841,13 @@ image: /public/7a8c05a1fc021c4438286a10e766ddf5a93ac3e343e15467f3514c4b7cf03221.
 ```book
 title: الواجهة
 author: يوسف عز الدين عيسى
+image: /public/b888d6342f0fa50b882e9173aba0942a0c325644227a39d42bdeb5b098bd59e9.jpg
 ```
 
 ```book
 title: شرح رأس المال لكارل ماركس
 author: Karl Marx
+image: /public/0abe5f164d4764660188348cf9dcf827e4f828fa003f5d8939c1818456683433.jpg
 ```
 
 ```book
@@ -822,6 +859,7 @@ image: /public/7a720c6aec50a03d296823d715a3e1cd48ee8fe0d279c670b841b8b22cda2f49.
 ```book
 title: العقرب - الجزء الاول
 author: نبيل فاروق
+image: /public/cdbf0317b88ca40e8b9f1e2ead76ab4a6b82a59caac6137a0e52c5017448377d.jpg
 ```
 
 ```book
@@ -835,11 +873,13 @@ image: /public/04deca9f259ee27cd2b913282dd98f0ba9c6bbbd6c64ab8020aa8ac081570492.
 ```book
 title: كنت رئيسا لمصر
 author: محمد نجيب
+image: /public/1ac1d86aa5a4eeffbc9e1f453aa6bd86c6df3a2bb5dc7bee14cb47ca0fd1642e.jpg
 ```
 
 ```book
 title: البحث عن الذات
 author: Anwar El-Sadat
+image: /public/2d48329c6bde956cbbec6ea23120664a3a48900af30d703b28af30dca97eee9c.jpg
 ```
 
 ```book
@@ -851,11 +891,13 @@ image: /public/cd940547db8ef76f9639a4b71bc421871b816e1284e274175accde67ca859176.
 ```book
 title: خلف جدار النوم
 author: H.P. Lovecraft
+image: /public/3c3fce3685831fe74078d63442a796f138374dad8a7c8fa07bb3f9e0c28871aa.jpg
 ```
 
 ```book
 title: "أسطورتها..! (ما وراء الطبيعة، #31)"
 author: Ahmed Khaled Towfik
+image: /public/3cab88c2e81d4d3d61d47cb0574ea3d0d44e308f6dc89dc5e66309ec20453019.jpg
 ```
 
 ```book
@@ -867,6 +909,7 @@ image: /public/b9bc18c9af275ae533430eda968c8a307d3a0d71236e5efa83a451889fcea171.
 ```book
 title: سليم
 author: احمد علي
+image: /public/9992aab3458e6fe1bacd44496226c017cbabb4a436f320cd98dee466e519d2ba.jpg
 ```
 
 ```book
@@ -896,6 +939,7 @@ image: /public/a2d047eb480071730ce56efee475efba4118fe0d7d0773937a80a3811cbcfc5a.
 ```book
 title: "Business Express: How Solve Problems and Make Decisions: Successfully analyse facts & data and produce an appropriate & creative range of solutions"
 author: Richard Hall
+image: /public/f29edc98b7eb5020974425a30b2373d90a87b44b62d556264e9d6012e1c11d1e.jpg
 ```
 
 ```book
@@ -907,6 +951,7 @@ image: /public/2f824cb59314e7da911c544b96d784319c0733097c7ace0e19feee7add1e963c.
 ```book
 title: Designing Autonomous Teams and Services
 author: Scott Millett
+image: /public/bb19e409f068f6c0322d04bbc26684dec4dd3da744435e0c96c13b7c77aca121.jpg
 ```
 
 ```book
@@ -924,6 +969,7 @@ image: /public/73e309ca83432c293f39463a88cbc8e50904dc23e4fca2ad99750c629c0ac24c.
 ```book
 title: محاورات برتراند راسل
 author: Bertrand Russell
+image: /public/dab04fa2564de901c3eebca80c806ccb4c2e7d8ff063780341d1e369e64fed52.jpg
 ```
 
 ```book
@@ -965,11 +1011,13 @@ image: /public/35faefb2ab0b27248c512bee637c07e428afcc936cde56b58683b2a605635508.
 ```book
 title: "أسطورتهم (ما وراء الطبيعة، #64)"
 author: Ahmed Khaled Towfik
+image: /public/ff9fb2eace3e3e1894c6004f862834384b8474fe686421a2749879aa5b2e116c.jpg
 ```
 
 ```book
 title: Developing an Ember.js Edge
 author: Jamie   White
+image: /public/a7691e398222d80322dd16604c9a7715f05e79f850b09ea664ded565fbd2b7c2.jpg
 ```
 
 ```book
@@ -1035,11 +1083,13 @@ image: /public/ac5e41f50f9ebc74ae113978096adf1b287e681206bfcf99cab484a291d03e7f.
 ```book
 title: الفيل الأزرق
 author: Ahmed Mourad
+image: /public/0061b2f1a90dc87d134b4a620231d6d03d0a537accf84f1342ccb6a71606c51f.jpg
 ```
 
 ```book
 title: حوار مع صديقي الملحد
 author: Mostafa Mahmoud
+image: /public/540341b27eafc2ead1ff6f6f697be049a8261294d85c18d8255f97868af52a4c.jpg
 ```
 
 ```book
@@ -1051,26 +1101,31 @@ image: /public/8ec4aecf3452408e82df7e34e7ac537b6b8eddd681c67f5714bd8402bbe1ee58.
 ```book
 title: صرع
 author: نبيل فاروق
+image: /public/6c890d50815d695797e1769bb6e4485b3bdaa41e061fc19766a9a896f146b10d.jpg
 ```
 
 ```book
 title: "مخطوطة بن إسحاق: مدينة الموتى"
 author: حسن الجندي
+image: /public/86e8d8a7195e23e83aa0f9a9aa24145dd4b0cfb69431d5a172866b5edd92d8b6.jpg
 ```
 
 ```book
 title: أينشتين والنسبية
 author: Mostafa Mahmoud
+image: /public/6ef79d05d57ce362432187b4b415b841b37c7c3ebdf8fe00312d7c2a53406dcf.jpg
 ```
 
 ```book
 title: الإرهاب
 author: فرج فودة
+image: /public/6a256d74516aec93bf00955e55b9042e4444b9db259259f657364f46c34da0da.jpg
 ```
 
 ```book
 title: "Angels & Demons (Robert Langdon, #1)"
 author: Dan    Brown
+image: /public/790dbadc71f22edd15df42077e2bb1f35b3787b1be200029c5632a253cf9e273.jpg
 ```
 
 ```book
@@ -1082,76 +1137,91 @@ image: /public/be06a7b5e62162142f2d114a74593e27c48c5c3aff549626e637626565164b9c.
 ```book
 title: نيران صديقة
 author: Alaa Al Aswany
+image: /public/4dd51852c41d5b6a88fe4d3e2d73b779a14f4d37ef660ac532cf1e8867982c09.jpg
 ```
 
 ```book
 title: الرجل الخفي
 author: H.G. Wells
+image: /public/911d3895e688b4dcaaf01f052e4abcdb86a8b0a2cfbcfc661c6fe8c62ca0d06a.jpg
 ```
 
 ```book
 title: حوار حول العلمانية
 author: فرج فودة
+image: /public/b9686d77a6473b110a566113afac2bf96cea80c32281ab0a16d6e82a0ba64bc3.jpg
 ```
 
 ```book
 title: حتى لا يكون كلامًا في الهواء
 author: فرج فودة
+image: /public/4877ec6fa6c790c40458ff0cdf8b030d470071e28596ff2e94a9be35f62c998b.jpg
 ```
 
 ```book
 title: نكون أو لا نكون
 author: فرج فودة
+image: /public/54da365a27dce76487e52e729af4f0d8b60d73fc7273ea74665daef4bf0b5349.jpg
 ```
 
 ```book
 title: الإمام الشافعي وتأسيس الأيديولوجية الوسطية
 author: Nasr Hamid Abu Zaid
+image: /public/d4951faec15a67b7de951825f816a468dbf756db6be6c8478dc3910af33d725c.jpg
 ```
 
 ```book
 title: "الاتجاه العقلي في التفسير: دراسة في قضية المجاز في القرآن عند المعتزلة"
 author: Nasr Hamid Abu Zaid
+image: /public/5d2c17b4fdac3fad5798c2b69744f1112459e2d9eadd8ebacf2c512d6435c9fd.jpg
 ```
 
 ```book
 title: المغالطات المنطقية
 author: عادل مصطفى
+image: /public/bc7beee22b0717d44c0066aac2fe93dc33f7262f67bcfb50793f32ae5a46fac8.jpg
 ```
 
 ```book
 title: الإرهاب
 author: فرج فودة
+image: /public/6a256d74516aec93bf00955e55b9042e4444b9db259259f657364f46c34da0da.jpg
 ```
 
 ```book
 title: "التفكير في زمن التكفير: ضد الجهل والزيف والخرافة"
 author: Nasr Hamid Abu Zaid
+image: /public/cc101c27e048d18bcee27aad75e447e1527c2b2ac54742b2bcfad4edfd58fca6.jpg
 ```
 
 ```book
 title: عودة الوعى
 author: Tawfiq Al-Hakim
+image: /public/14b8cd79c32ea894f3ce360ba324d5ca7d4d159af2dc6e799bb25b06dec0ecaf.jpg
 ```
 
 ```book
 title: "أسطورة الموتى الأحياء (ما وراء الطبيعة، #5)"
 author: Ahmed Khaled Towfik
+image: /public/0d660db991f7b7c5abf4cd64d2a7f02b3ad2dc2c93c1dc0171821a3eecf026ce.jpg
 ```
 
 ```book
 title: Twenty Thousand Leagues Under the Sea
 author: Jules Verne
+image: /public/0611bcb6cbd2dad1280a843b8fc21137e09e5a880ccbab34df90608bfa59f822.jpg
 ```
 
 ```book
 title: "عشان ما تنضربش على قفاك .. !!"
 author: عمر عفيفي
+image: /public/3d3c6302a0a454febb0c85318a5c7273a9bed37f02fb736b7ea6ae6a197452e1.jpg
 ```
 
 ```book
 title: قصاصات قابلة للحرق
 author: Ahmed Khaled Towfik
+image: /public/210f6dc99769b157f9c0654d1deb0fbd44904824271db0552bb6a5fd69cd2e46.jpg
 ```
 
 ```book
@@ -1169,21 +1239,25 @@ image: /public/2221091edc7e1fc81d6ba90ec9a9b161cfd1567e613b3f7d257f9c661a56dbb4.
 ```book
 title: فن الحرب
 author: Sun Tzu
+image: /public/cae4edcbab312402394af2138b7de2b5f66c0a72f9f3f4f28e3d106a578f146f.jpg
 ```
 
 ```book
 title: السنجة
 author: Ahmed Khaled Towfik
+image: /public/6a4b5d2170eed7ec3f473591027c724efa5a7617f11d0f325c6ef92eb5c0dec7.jpg
 ```
 
 ```book
 title: 28 حرف
 author: أحمد حلمي
+image: /public/c679ebd4cdde6d667abd4f712e31d06e38231768942a93960ab78ed74bccf617.jpg
 ```
 
 ```book
 title: شيكاجو
 author: Alaa Al Aswany
+image: /public/aa0357709cfd26786c3ba48758d5b452f4c7c7a4c4a9c026fb19ce8afc986571.jpg
 ```
 
 ```book
@@ -1219,186 +1293,223 @@ image: /public/9d996c437ff1c568a75ccc08d4414d8d62194aa16f1bb87ae09134b8aa970f50.
 ```book
 title: فصل المقال فيما بين الحكمة والشريعة من الاتصال
 author: ibn Rushd
+image: /public/c7446688b18e40b7e5faddb728b4e7a9d4abf6135bcb7795548c12e0c765995b.jpg
 ```
 
 ```book
 title: "أسطورة الطوطم (ما وراء الطبيعة، #72)"
 author: Ahmed Khaled Towfik
+image: /public/ba72e22f7dc15a9baac1f49c84cd7043e81091775f98f65b9e9d66ec7b9e49e7.jpg
 ```
 
 ```book
 title: "أسطورة الظلال (ما وراء الطبيعة، #71)"
 author: Ahmed Khaled Towfik
+image: /public/07739ae2321c58aa3729988cdd089e6831f8601f35903aa8ca60f248d1708644.jpg
 ```
 
 ```book
 title: "الحلقات المنسية (ما وراء الطبيعة، #70)"
 author: Ahmed Khaled Towfik
+image: /public/934cf6c3602d26d51ab0df8063eaf7aa9134fb2e126f364c936c7d66390f50d1.jpg
 ```
 
 ```book
 title: "أسطورة نادي الغيلان (ما وراء الطبيعة، #69)"
 author: Ahmed Khaled Towfik
+image: /public/2b15cad979563248f9242b9cb832bc4d079466d49651c7cd34498c10b9496f98.jpg
 ```
 
 ```book
 title: "أسطورة بيت الأشباح (ما وراء الطبيعة، #67)"
 author: Ahmed Khaled Towfik
+image: /public/d3494b0f4ac3e14d0d287962aeca89a38e2988dccd340fdb2d0b948a464f1adf.jpg
 ```
 
 ```book
 title: "أسطورة الرجال الذين لم يعودوا كذلك! (ما وراء الطبيعة، #66)"
 author: Ahmed Khaled Towfik
+image: /public/be464c9fddff54deea4e28071e6bf0d974ed1995fe952c8f173a45f3eca88afe.jpg
 ```
 
 ```book
 title: "أسطورة العلامات الدامية (ما وراء الطبيعة، #65)"
 author: Ahmed Khaled Towfik
+image: /public/a389cb8ef571ac72c4d6f544794438c80ed67e4964c7086963578e44af7922dc.jpg
 ```
 
 ```book
 title: "أسطورة المحركين (ما وراء الطبيعة، #63)"
 author: Ahmed Khaled Towfik
+image: /public/91ef2f380b9bc9250b7cdd3e9954d515036d458f77c465951560d26fd3353f3d.jpg
 ```
 
 ```book
 title: "أسطورة صندوق بندورا (ما وراء الطبيعة، #62)"
 author: Ahmed Khaled Towfik
+image: /public/0187032f91fa08c6f4cb847027ac3aad75729de880a22d31e49d2bad6d31e290.jpg
 ```
 
 ```book
 title: "أسطورة الشيء (ما وراء الطبيعة، #61)"
 author: Ahmed Khaled Towfik
+image: /public/1775ca68f30598ee5e06bd76845c17460b50663a85d4be9549e264bfa2b6d1c7.jpg
 ```
 
 ```book
 title: "المتحف الأسود (ما وراء الطبيعة، #60)"
 author: Ahmed Khaled Towfik
+image: /public/f05bacf5b5b453489feef346969b8b7fe1c4f9fbade6ec2c0a79ac9e95b96a51.jpg
 ```
 
 ```book
 title: "أسطورة أرض العظايا (ما وراء الطبيعة، #58)"
 author: Ahmed Khaled Towfik
+image: /public/55896b89751aab51c462984ca339ada6298dcb66762675f4e858a5371bd6106d.jpg
 ```
 
 ```book
 title: "أسطورة المقبرة (ما وراء الطبيعة، #57)"
 author: Ahmed Khaled Towfik
+image: /public/96bc78cd677cca1111efb96511f147a684e911286cf8134c7717cc5d717eaf9b.jpg
 ```
 
 ```book
 title: "أسطورة ملك الذباب (ما وراء الطبيعة، #56)"
 author: Ahmed Khaled Towfik
+image: /public/32162ac15c3d21951cdad9ead31cb89674a82544f0d7e1bc9b74779e5504b730.jpg
 ```
 
 ```book
 title: "أسطورة Ø99### (ما وراء الطبيعة، #55)"
 author: Ahmed Khaled Towfik
+image: /public/683ad9597f0c172396a57bda2bc29dcd9ac9bcce8138264cf313420d3d3def53.jpg
 ```
 
 ```book
 title: "أسطورة العراف (ما وراء الطبيعة، #54)"
 author: Ahmed Khaled Towfik
+image: /public/f8c417f985f77c7598af3f0d6836dedc638f96cc689c94a8b9faaa784fcd4f43.jpg
 ```
 
 ```book
 title: "أسطورة النبوءة (ما وراء الطبيعة، #53)"
 author: Ahmed Khaled Towfik
+image: /public/133910fc6fe22c4091ed3eb8e15b2c14eb2632d152b45113e5fe17b522ae556d.jpg
 ```
 
 ```book
 title: "أسطورة مملة (ما وراء الطبيعة، #52)"
 author: Ahmed Khaled Towfik
+image: /public/4a4d7b2270b943449b20826f09051e02198a8eeb36a4ba47da53da74bfa910ff.jpg
 ```
 
 ```book
 title: "أسطورة الرقم المشئوم (ما وراء الطبيعة، #51)"
 author: Ahmed Khaled Towfik
+image: /public/3aa91855baa338dffc4972275c042776e8e52f2fb021d45fc5f533931a2d8849.jpg
 ```
 
 ```book
 title: "في جانب النجوم (ما وراء الطبيعة، #50)"
 author: Ahmed Khaled Towfik
+image: /public/3344e0fab58cada60c8d5fe9dbd4ed15f79a8a59950eefee6f130eada86953fd.jpg
 ```
 
 ```book
 title: "أسطورة المومياء (ما وراء الطبيعة، #48)"
 author: Ahmed Khaled Towfik
+image: /public/5b0fb7185861cde152ff037c6026a4fd1f148f016adc66336ad0bfd2ef0306e7.jpg
 ```
 
 ```book
 title: "أسطورة العشيرة (ما وراء الطبيعة، #49)"
 author: Ahmed Khaled Towfik
+image: /public/042f40278286a0c1e042ebe0044f55a25bc9e8b9a5b9c5b03a2bcdf1a25e31aa.jpg
 ```
 
 ```book
 title: "أسطورة المنزل رقم 5 (ما وراء الطبيعة، #47)"
 author: Ahmed Khaled Towfik
+image: /public/95e662a942766b9018d43b67253f836252980a3c44f4a57cec57aaabd3266957.jpg
 ```
 
 ```book
 title: "أسطورة طفل آخر (ما وراء الطبيعة، #46)"
 author: Ahmed Khaled Towfik
+image: /public/b9d53d7486c1a6b55e85fc872a9f5a0e0b15cdeb98d0ba04d0be09a93b74196a.jpg
 ```
 
 ```book
 title: "أسطورة بيت الأفاعي (ما وراء الطبيعة، #45)"
 author: Ahmed Khaled Towfik
+image: /public/f171a569dcda4e689993010f5284a61664b7c51ed55ce2f9174425fb23f5c6e1.jpg
 ```
 
 ```book
 title: "أسطورة رجل بكين (ما وراء الطبيعة، #44)"
 author: Ahmed Khaled Towfik
+image: /public/7d01df4c30c5a2c4d76e2eb3a0dae1ad2dafb76622d56f8c3cb4e1aea8d43732.jpg
 ```
 
 ```book
 title: "أسطورة تختلف..! (ما وراء الطبيعة، #43)"
 author: Ahmed Khaled Towfik
+image: /public/9020ef3caffdfa8dd3d0463ef72188b19e85dd18f7d61985ca94b08d38c79cd3.jpg
 ```
 
 ```book
 title: "أسطورة فرانكنشتاين (ما وراء الطبيعة، #41)"
 author: Ahmed Khaled Towfik
+image: /public/cbf783fbf8c00b47c79a04c2a1ae9905cd272dd15602706047d6997c5eded834.jpg
 ```
 
 ```book
 title: "أسطورة التوءمين (ما وراء الطبيعة، #39)"
 author: Ahmed Khaled Towfik
+image: /public/699876d8b74eb0d535388192b0e46d8d081f7d54146c6306b2becb17fbc74d3f.jpg
 ```
 
 ```book
 title: "أسطورة النصف الآخر (ما وراء الطبيعة، #38)"
 author: Ahmed Khaled Towfik
+image: /public/16cc87489b3de150a6b3d3d0249132c276d006c26425e91bcf7fa2687a73441c.jpg
 ```
 
 ```book
 title: "أسطورة الدمية (ما وراء الطبيعة، #37)"
 author: Ahmed Khaled Towfik
+image: /public/74d9183a4e91486e3841fab01be2607d73b6f3a3c2db20ced777ca064be09ff4.jpg
 ```
 
 ```book
 title: "أسطورة الفصيلة السادسة (ما وراء الطبيعة، #36)"
 author: Ahmed Khaled Towfik
+image: /public/30eedbd41375db5c3a61a8889408c7e359a69f452404d3d030e2f1ce474ac65e.jpg
 ```
 
 ```book
 title: "أسطورة دماء دراكيولا (ما وراء الطبيعة، #35)"
 author: Ahmed Khaled Towfik
+image: /public/22a714882c9803e0d18e9a2517bbbc2d4c38a66ac6229ecd17a3789cda180222.jpg
 ```
 
 ```book
 title: "أسطورة الشاحبين (ما وراء الطبيعة، #34)"
 author: Ahmed Khaled Towfik
+image: /public/5e0477e3dc26f0e357d64b16b5f917c2c0416e5356ea0da97c6418967321c672.jpg
 ```
 
 ```book
 title: "أسطورة أرض المغول (ما وراء الطبيعة، #33)"
 author: Ahmed Khaled Towfik
+image: /public/686032bf55984e2b217c73f1b49f85c7a65ab081745542b36c71117c43ca147b.jpg
 ```
 
 ```book
 title: "خاطفو الأجساد (سافاري، #2)"
 author: Ahmed Khaled Towfik
+image: /public/32695ea71f7ba2c06eaa716fe1c40cf7b63e18c5f682845073c4bb4dddbbc5f9.jpg
 ```
 
 ```book
@@ -1410,141 +1521,169 @@ image: /public/11fe4ff14d505326fe62efe702eb52262b210adfaf9fb216cf667ca5d12289f9.
 ```book
 title: "أسطورة رفعت! (ما وراء الطبيعة، #32)"
 author: Ahmed Khaled Towfik
+image: /public/d507650333219bc2aa8aa91ee348d31cdca68d77d52e641c8fce50667a646869.jpg
 ```
 
 ```book
 title: "أسطورة آخر الليل (ما وراء الطبيعة، #28)"
 author: Ahmed Khaled Towfik
+image: /public/81b0fee371c1540e63196e00e655d8a726b2206048b4ba859fc7e489dd630f39.jpg
 ```
 
 ```book
 title: "أسطورة المواجهة (ما وراء الطبيعة، #26)"
 author: Ahmed Khaled Towfik
+image: /public/f21e291117ebe2ac3ac599fc41bf383f929a91496b8a4b02e429084eb2da6ccf.jpg
 ```
 
 ```book
 title: "أسطورة أرض الظلام (ما وراء الطبيعة، #68)"
 author: Ahmed Khaled Towfik
+image: /public/b4c1e1fcd9c3d9698aa27836d42be051b3cbae1d6cef13c1e4318cc2e732fde4.jpg
 ```
 
 ```book
 title: "وراء الباب المغلق (ما وراء الطبيعة، #40)"
 author: Ahmed Khaled Towfik
+image: /public/8629bcce629c931c13a4154ecfffde3edd267001d45d001b881d70b65914a1c0.jpg
 ```
 
 ```book
 title: "أسطورتنا..! (ما وراء الطبيعة، #27)"
 author: Ahmed Khaled Towfik
+image: /public/4e46c7c2c66adaa464bf9808a6f8b2c52ec40204292c90a89b49be89eda7f243.jpg
 ```
 
 ```book
 title: "أسطورة الكلمات السبع (ما وراء الطبيعة، #42)"
 author: Ahmed Khaled Towfik
+image: /public/ed403110635b85028373c46ae08edbdb542c7d055825a722215f1e9eb29d974e.jpg
 ```
 
 ```book
 title: "أسطورة الكاهن الأخير (ما وراء الطبيعة، #11)"
 author: Ahmed Khaled Towfik
+image: /public/e96ee96eafb4ded6feb035251a6be9e12d86334d5c9d1117a7852989ede54183.jpg
 ```
 
 ```book
 title: عقل بلا جسد
 author: Ahmed Khaled Towfik
+image: /public/96d8dd96be5af3702c28739113e5067f795ac54f4c234d7eddbff553984c7ca8.jpg
 ```
 
 ```book
 title: "أسطورة البيت (ما وراء الطبيعة، #12)"
 author: Ahmed Khaled Towfik
+image: /public/f4453afb214652197648c720da7552a7563a31207d3dfe43ea83b2d5f8f7f2b3.jpg
 ```
 
 ```book
 title: "أسطورة الجنرال العائد (ما وراء الطبيعة، #25)"
 author: Ahmed Khaled Towfik
+image: /public/c1dc7154841cfe43f9c2b5a6daa6386122f737c10d6e2c0863818b4618a0b7ec.jpg
 ```
 
 ```book
 title: "أسطورة رعب المستنقعات (ما وراء الطبيعة، #23)"
 author: Ahmed Khaled Towfik
+image: /public/fed8ac6c64f08e58ed16666db17750c81854438e285fe8b8d82152d618f5e816.jpg
 ```
 
 ```book
 title: "أسطورة عدو الشمس (ما وراء الطبيعة، #21)"
 author: Ahmed Khaled Towfik
+image: /public/1ee8f6471849f34099a5fcf2a1cb824fde3c21029074a572eac90a48541d5d67.jpg
 ```
 
 ```book
 title: "أسطورة المينوتور (ما وراء الطبيعة، #22)"
 author: Ahmed Khaled Towfik
+image: /public/8cc5ed6cbdc6f2950c533784905a0948c9665099861adfb8a88e62d00a675651.jpg
 ```
 
 ```book
 title: "أسطورة بو (ما وراء الطبيعة، #19)"
 author: Ahmed Khaled Towfik
+image: /public/4b50d2b6c3e0e08bf20cb30399ff09d28acd6c994bb9a437feecb0e148f320b2.jpg
 ```
 
 ```book
 title: "أسطورة الغرباء (ما وراء الطبيعة، #18)"
 author: Ahmed Khaled Towfik
+image: /public/dea1243caed5aa42e79b8d0678ece0d408332dd7d3f28ca846936b523c13fb05.jpg
 ```
 
 ```book
 title: "أسطورة حسناء المقبرة (ما وراء الطبيعة، #17)"
 author: Ahmed Khaled Towfik
+image: /public/c869ccac85573604ae4f2bd99f42c07f6cd4b641e9cb03ab5372f29aeb1ee1e6.jpg
 ```
 
 ```book
 title: "أسطورة النافاراي (ما وراء الطبيعة، #16)"
 author: Ahmed Khaled Towfik
+image: /public/75e9467bf16ee3d110611c9b3811f035918b5eb988d20dd178d15751c7cabc72.jpg
 ```
 
 ```book
 title: "أسطورة النبات (ما وراء الطبيعة، #15)"
 author: Ahmed Khaled Towfik
+image: /public/6b6359af5fd4636a0306f19e686bebbc85ed82210f34c64b135db71b85a88520.jpg
 ```
 
 ```book
 title: "أسطورة رجل الثلوج (ما وراء الطبيعة، #14)"
 author: Ahmed Khaled Towfik
+image: /public/ede2faff91c6149feed8daa6937d4fdbb7c2036df92e7660508028a6897e7eb6.jpg
 ```
 
 ```book
 title: "أسطورة اللهب الأزرق (ما وراء الطبيعة، #13)"
 author: Ahmed Khaled Towfik
+image: /public/44acf04e8c6e26c9b61a48ed225ed984c071c8059bf6988a1c84160e90f72319.jpg
 ```
 
 ```book
 title: "أسطورة لعنة الفرعون (ما وراء الطبيعة، #9)"
 author: Ahmed Khaled Towfik
+image: /public/69106678831f9408beb8ed045930ec6878acdead7fed2678e88d17218ab02994.jpg
 ```
 
 ```book
 title: "أسطورة أرض أخرى (ما وراء الطبيعة، #8)"
 author: Ahmed Khaled Towfik
+image: /public/0d38cdcdf8c4656e8c8638d04ea8376ae291fd50324a53d71bb432c3eca3108c.jpg
 ```
 
 ```book
 title: "أسطورة حارس الكهف (ما وراء الطبيعة، #7)"
 author: Ahmed Khaled Towfik
+image: /public/0ce3a50e4302cb319d376a23e01c4af97a506309797decb0a7c21a29f2fd833c.jpg
 ```
 
 ```book
 title: "أسطورة آكل البشر (ما وراء الطبيعة، #4)"
 author: Ahmed Khaled Towfik
+image: /public/c59eae3b8defc773fc4fec8e4b8ba118965e26a0abfc2148ec9a44c687d14ba9.jpg
 ```
 
 ```book
 title: "أسطورة وحش البحيرة (ما وراء الطبيعة، #3)"
 author: Ahmed Khaled Towfik
+image: /public/18c13ab4ebe1315524536b409c57eaaed78a14fb8ba2c1c7ba55a1fb80cd0566.jpg
 ```
 
 ```book
 title: "أسطورة رأس ميدوسا (ما وراء الطبيعة، #6)"
 author: Ahmed Khaled Towfik
+image: /public/3ab3d3ce42d4a1c9f14eb0cfb4e560c1dfac5bb714149ae38747f97cc6a0a0c2.jpg
 ```
 
 ```book
 title: "مصاص الدماء وأسطورة الرجل الذئب (ما وراء الطبيعة، #1)"
 author: Ahmed Khaled Towfik
+image: /public/0f0e8a9283dfb3acf6ac78298d9b6ec95860e9659e073f4c0e454c62253b27c0.jpg
 ```
 
 ```book
@@ -1556,6 +1695,7 @@ image: /public/a1f5496f32f435c8e9f656b23a1742c70c08affbd066940923f575d734fdc3d9.
 ```book
 title: سلسلة ملف المستقبل كاملة
 author: نبيل فاروق
+image: /public/9f24797f8cf0afedb6a0aacebfc0d281ac8613646a68b7ecec686565fb0f62fc.jpg
 ```
 
 ```book
@@ -1567,31 +1707,37 @@ image: /public/6dc46d21aaba312c2c155010a03142768ff2d6cc9f41cf69582dcf8102bc2187.
 ```book
 title: "أسطورة النداهة (ما وراء الطبيعة، #2)"
 author: Ahmed Khaled Towfik
+image: /public/ff0f14711751cad25c3d8d1e66abf62f4f49e7e1b97307d814a6bd33281cb620.jpg
 ```
 
 ```book
 title: "حلقة الرعب (ما وراء الطبيعة، #10)"
 author: Ahmed Khaled Towfik
+image: /public/1dcdc5700c51bce97c2d21bda055941907046707099f963465f2fc5bdb800e47.jpg
 ```
 
 ```book
 title: "حكايات التاروت (ما وراء الطبيعة، #20)"
 author: Ahmed Khaled Towfik
+image: /public/88bb6b0d691c535e1636bb5c3cb60447c79569cc3343a8276ee2214878fb2603.jpg
 ```
 
 ```book
 title: "أسطورة إيجور (ما وراء الطبيعة، #24)"
 author: Ahmed Khaled Towfik
+image: /public/dc2de7614e2fbe77a926a3c8838b1c081ab82d17097ff43206fb504525d2a535.jpg
 ```
 
 ```book
 title: "أسطورة الجاثوم (ما وراء الطبيعة، #29)"
 author: Ahmed Khaled Towfik
+image: /public/caec0469a2270c2798a1a4be2f9d43f97f8dccc17236d36caa9786db282e8b50.jpg
 ```
 
 ```book
 title: "أسطورة بعد منتصف الليل (ما وراء الطبيعة، #30)"
 author: Ahmed Khaled Towfik
+image: /public/a5dc204f42b8abb5a961d2c995ac4268e003761ca4925e6f9c384627cf727823.jpg
 ```
 
 ```book
@@ -1603,11 +1749,13 @@ image: /public/9c1e54ef45465a0325883091300aa12e46e6612ea6bffb6ebd65a8e5f46d5afd.
 ```book
 title: دماغي كده
 author: Ahmed Khaled Towfik
+image: /public/5f3e1654d6943699c30b69da90600559691609d7e66053478158d6899f373709.jpg
 ```
 
 ```book
 title: تراب الماس
 author: Ahmed Mourad
+image: /public/527541136aad5f784368973347be29e16cdf72911efcef9f959dfeecca8dbeae.jpg
 ```
 
 ```book
@@ -1627,11 +1775,13 @@ image: /public/543860c6e12c7a3a6af360551e852c36a1bd5e05cd76aa878b8fc8621ba4de1c.
 ```book
 title: "Programming in Scala: A Comprehensive Step-by-step Guide"
 author: Martin Odersky
+image: /public/d0ce640fb9c9211beae903de4126b5219dd8962391a0fbdb27cc239b25d31fdc.jpg
 ```
 
 ```book
 title: سيرة سيد الباشا
 author: أحمد الفخراني
+image: /public/d59bc3a1e7f7285c418705b7f31b3822e153fce2a4ae8b1a15c5b602d600b492.jpg
 ```
 
 ```book
@@ -1649,10 +1799,12 @@ image: /public/636295d0c218f2220f6f9cf45463e9afcef5c40c8f761195866509eba2000b46.
 ```book
 title: هيبتا
 author: محمد صادق
+image: /public/a37ad623e5af8ff72c200a95cd6085427d805a22c96ee2c55fda3b2c68b6e35d.jpg
 ```
 
 ```book
 title: الاستدعاء الأخير
 author: عمرو المنوفي
+image: /public/f6815e1485328e315d1e00161773e675318e882ef111956ceaddaa5c12891fe5.jpg
 ```
 
