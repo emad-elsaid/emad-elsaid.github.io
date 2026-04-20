@@ -35,6 +35,7 @@ image: /public/3a2b3ec81d0b61ad7d2faa127bf58927c567b42119da77769c653f17d8dc472a.
 ```book
 title: Xenocide (Ender's Saga, #3)
 author: Orson Scott Card
+image: /public/30b97174a158217de7faa79f879dee44e8e864e1362bedc40241770cf5aea3e9.jpg
 ```
 
 ```book
@@ -58,6 +59,7 @@ image: /public/71fce4bcdb2b17eb375939813f4a7a28a47804de749293ff9d36bd1f4042e9e3.
 ```book
 title: The Peripheral (Jackpot #1)
 author: William Gibson
+image: /public/9c776c5f965cdd32061d4d3a2aa6d3df399e9be07d126a0d6d841989829c702a.jpg
 ```
 
 ```book
@@ -104,6 +106,7 @@ image: /public/c7fdcc3744cdf2a16ea89e95706e2494b2f81e3da6f668a16b95db0192096e30.
 ```book
 title: Death's End (Remembrance of Earth’s Past, #3)
 author: Liu Cixin
+image: /public/6574280b0a2f7fe71e8d469a957d26b10e16159b22f5231c981f799073124483.jpg
 ```
 
 ```book
@@ -126,6 +129,7 @@ image: /public/0019bbe0df0dcf638d3c981081c6b5c315eb840669d89c51e344792e4a8d296d.
 ```book
 title: The Blade Itself (The First Law, #1)
 author: Joe Abercrombie
+image: /public/c47030db4e4c16f0495ac41ea6ca8bce2c02036cd7b24dfdf9f7b240844cc50a.jpg
 ```
 
 ```book
@@ -137,6 +141,7 @@ image: /public/e927d284ae238ce30c8bfb8e2ba65d6a3d55460778b5e6220729878ae0f34667.
 ```book
 title: Ishmael (Ishmael, #1)
 author: Daniel Quinn
+image: /public/2930e14adc6eb20ec409cf1aff1b433f3a0ea5f3dd746a7ca6fe4dcfa406782e.jpg
 ```
 
 ```book
@@ -225,6 +230,7 @@ image: /public/ce545eec70a2b7bc192e6802f064ff66b61c22b877563badc1a5b8102f57b1bc.
 ```book
 title: Speaker for the Dead (Ender's Saga, #2)
 author: Orson Scott Card
+image: /public/d51c9b95e2a15c36d82b5ade31b5d4fb431b71f14bf09eb125637a1d2ee34ad6.jpg
 ```
 
 ```book
@@ -269,6 +275,7 @@ image: /public/2894765f1a1959504d74639811d1a06f559a246ca126ab38ec55709c2130b01e.
 ```book
 title: For We Are Many (Bobiverse, #2)
 author: Dennis E. Taylor
+image: /public/cfe95a00e1dc5847be4c70dc713a627f119ecd70d5330e2d7aa566f7d68a22a2.jpg
 ```
 
 # 2021 Reads
@@ -282,6 +289,7 @@ image: /public/b31266a2c19b43376ef085cba97fe7c43eae3701801d82e3f1d1dca5f75e841d.
 ```book
 title: All Systems Red (The Murderbot Diaries, #1)
 author: Martha Wells
+image: /public/917b49707c6323e994f82857c66acafbd54b7e5484e6e7bdd9081fb29d226134.jpg
 ```
 
 ```book
@@ -321,6 +329,7 @@ image: /public/e254961c6f0325902df4c5d3bda4da2ffe7ac235bd7a25477e2f5bcccac36290.
 ```book
 title: Pebble in the Sky (Galactic Empire, #3)
 author: Isaac Asimov
+image: /public/ec9b506ba3469811b15e79cc6ee3609699de2181e08e558a943fd905a0063964.jpg
 ```
 
 ```book
@@ -492,6 +501,7 @@ image: /public/dca9fdf216e905ded93743a64b9f4220af442f03c1a3aa9e7da4210b926db822.
 ```book
 title: The Dark Forest (Remembrance of Earth’s Past, #2)
 author: Liu Cixin
+image: /public/c059c57090d338db52c555cb89c1222eb59a77084c9dfd5f1438848be30c1348.jpg
 ```
 
 ```book
@@ -508,11 +518,13 @@ author: Yuval Noah Harari
 ```book
 title: The Three-Body Problem (Remembrance of Earth’s Past, #1)
 author: Liu Cixin
+image: /public/39d2704eed823d7e8096e0a9eb7b1342d5316df5eb7bf0a9fb608de9c495f26e.jpg
 ```
 
 ```book
 title: Do Androids Dream of Electric Sheep? (Blade Runner #1)
 author: Philip K. Dick
+image: /public/d830fbb2d5e7af1eb0508c2aae4109051406c7c7bd7b828cba4ca7fd1def2f4c.jpg
 ```
 
 ```book
@@ -645,6 +657,7 @@ author: سيد القمني
 ```book
 title: Rivers of London (Rivers of London, #1)
 author: Ben Aaronovitch
+image: /public/562dc068967e508bde7079f9fe3e42fc1080c12ff717d1ed329dcf85a47dc489.jpg
 ```
 
 ```book
@@ -657,6 +670,7 @@ author: Stephen  King
 ```book
 title: Foundation (Foundation, #1)
 author: Isaac Asimov
+image: /public/99dfd6bc6e83e4140bb2c018bd590ce2d570abe4a75b5fcdff79712be79c40e4.jpg
 ```
 
 ```book
@@ -705,6 +719,7 @@ author: أنيس منصور
 ```book
 title: 20,000 Leagues Under the Sea (Captain Nemo, #2)
 author: Jules Verne
+image: /public/d5a6241133ef717639f2ed33406de0121c363e740b4dd6f2e165d1fc24178333.jpg
 ```
 
 # 2014 Reads
@@ -723,6 +738,7 @@ author: Christie Golden
 ```book
 title: Ender’s Game (Ender's Saga, #1)
 author: Orson Scott Card
+image: /public/6f23e49670f29e4d7a3335fde92d3ddf0adec9b2dc83b41cc0210e5f4c8e7b31.jpg
 ```
 
 ```book
@@ -750,6 +766,7 @@ image: /public/7dad5b635f43fb8a117e65e1f8f127441cd147f3c8029c645cf2190a61b23f50.
 ```book
 title: The Naked Sun (Robot, #2)
 author: Isaac Asimov
+image: /public/72d202b60d5806c58549f8bb9708c2c0651e5a8a656029d8ddbb517d4af8f949.jpg
 ```
 
 ```book
@@ -810,6 +827,7 @@ author: نبيل فاروق
 ```book
 title: Inferno (Robert Langdon, #4)
 author: Dan    Brown
+image: /public/04deca9f259ee27cd2b913282dd98f0ba9c6bbbd6c64ab8020aa8ac081570492.jpg
 ```
 
 # Undated Reads
@@ -975,6 +993,7 @@ image: /public/a4290cf191c19a8e23691918ce3cf444d51ff02db6a8c03eebc021d53ca8be4c.
 ```book
 title: Harry Potter and the Goblet of Fire (Harry Potter, #4)
 author: J.K. Rowling
+image: /public/21ce5bae85489cd8150a49ddac2321032916972d34463288c9b88cd0083c505f.jpg
 ```
 
 ```book
@@ -986,6 +1005,7 @@ image: /public/77be5504ba8d55d25441057505806ff11e0f56c3d0bb1b7c750a414d9f6b2505.
 ```book
 title: Harry Potter and the Half-Blood Prince (Harry Potter, #6)
 author: J.K. Rowling
+image: /public/c34b8e7a319f5ff65f804eef8650850ff2ceb0999699443c517f48b22c32c43e.jpg
 ```
 
 ```book
@@ -997,6 +1017,7 @@ image: /public/1e8eeb076f5c727cbd42b86e2f76ee635e54fdce131091dd22a7089b2937fba3.
 ```book
 title: Harry Potter and the Order of the Phoenix (Harry Potter, #5)
 author: J.K. Rowling
+image: /public/297f6c8167baea39d82ab3c1ff1198c8b01056dfcab9f450674a04244d4995d3.jpg
 ```
 
 ```book
@@ -1186,11 +1207,13 @@ image: /public/2a0dc14df9dc3b5ac63a7cc962d056bee198542005bb44daeaa05a44712d709e.
 ```book
 title: The Lost Symbol (Robert Langdon, #3)
 author: Dan    Brown
+image: /public/3337837fe363783a8c9e833fc06a41553344509795dc91ac970d607ea57f548d.jpg
 ```
 
 ```book
 title: The Da Vinci Code (Robert Langdon, #2)
 author: Dan    Brown
+image: /public/9d996c437ff1c568a75ccc08d4414d8d62194aa16f1bb87ae09134b8aa970f50.jpg
 ```
 
 ```book
@@ -1381,6 +1404,7 @@ author: Ahmed Khaled Towfik
 ```book
 title: الوباء (سافاري، #1)
 author: Ahmed Khaled Towfik
+image: /public/11fe4ff14d505326fe62efe702eb52262b210adfaf9fb216cf667ca5d12289f9.jpg
 ```
 
 ```book
@@ -1619,6 +1643,7 @@ image: /public/98bb06b0edd651c171c02b1eb8dd82450dc26a759f7f0558c6b04d7b945073d0.
 ```book
 title: The Calculating Stars (Lady Astronaut Universe, #1)
 author: Mary Robinette Kowal
+image: /public/636295d0c218f2220f6f9cf45463e9afcef5c40c8f761195866509eba2000b46.jpg
 ```
 
 ```book
