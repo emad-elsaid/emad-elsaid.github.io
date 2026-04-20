@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-go run ./cmd/xlog \
+xlog \
    --sitename="Emad Elsaid" \
    --theme="light" \
    --codestyle="catppuccin-latte" \
