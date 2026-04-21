@@ -1,7 +1,7 @@
 Update Books.md based on the user's reading status update: $ARGUMENTS
 
 ## Books.md location
-`/home/emad/code/emad-elsaid.github.io/Books.md`
+`./Books.md`
 
 ## Cover image helper
 Images live in `/home/emad/code/emad-elsaid.github.io/public/` named by SHA-256 of
@@ -13,7 +13,7 @@ from urllib.request import urlopen, Request
 from urllib.parse import quote
 
 def fetch_cover(title, author=''):
-    PUBLIC_DIR = '/home/emad/code/emad-elsaid.github.io/public'
+    PUBLIC_DIR = './public'
     def get(url):
         try:
             r = urlopen(Request(url, headers={'User-Agent': 'BookCoverFetcher/1.0'}), timeout=10)
