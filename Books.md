@@ -3,6 +3,12 @@
 # Want to read
 
 ```book
+title: Dungeon Crawler Carl
+author: Matt Dinniman
+image: /public/44b812562e01dfe5eec06406a63ee6ffcc527968054e5b1bdb3bfa09a08d5a68.jpg
+```
+
+```book
 title: The Star Diaries
 author: Stanisław Lem
 image: /public/aacda91b07eae13fadcef945a8e9fd43c4f769d0ae522d1eefe737badacf7bde.jpg
