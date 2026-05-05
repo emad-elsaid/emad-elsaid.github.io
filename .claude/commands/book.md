@@ -66,7 +66,16 @@ image: /public/<sha256>.jpg
 | "I want to read X" | Add to `# Want to read` |
 | "I didn't like / gave up on / couldn't finish X" | Move/add to `# Tried to read and did not like it` |
 
-## Steps
+## Book opinions/thoughts
+
+When the user shares thoughts or opinions about a book (reviews, reflections, analysis):
+
+1. Create or append to a file named exactly as the book title appears in Books.md (e.g., "Red Rising.md")
+2. Write the user's thoughts preserving their voice and phrasing — do NOT rephrase
+3. You may fix obvious typos and organize with headers or formatting for clarity
+4. If the file exists, append new thoughts; if not, create it
+
+## Steps (for reading status updates)
 
 1. Parse `$ARGUMENTS` to extract the book title (and author if mentioned) and the intent.
 2. Search Books.md for an existing entry matching that title (case-insensitive, partial match ok).
