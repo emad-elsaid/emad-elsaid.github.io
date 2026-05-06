@@ -160,6 +160,12 @@ image: /public/36d2acfaa75387ad2c6cbc6e70968eb831beddd80c092f25f8da4853f1a8d272.
 
 # Currently Reading
 
+```book
+title: One Billion Years to the End of the World
+author: Arkady Strugatsky
+image: /public/f04d045b6ae2a38015f854b0e4db8f396e286d4599de46d138fbbd3d01585169.jpg
+```
+
 # 2026 Reads
 
 ```book
