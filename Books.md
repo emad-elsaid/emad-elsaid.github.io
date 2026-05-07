@@ -105,9 +105,9 @@ image: /public/c7fdcc3744cdf2a16ea89e95706e2494b2f81e3da6f668a16b95db0192096e30.
 ```
 
 ```book
-title: "Death's End (Remembrance of Earth’s Past, #3)"
+title: "Death's End (Remembrance of Earth's Past, #3)"
 author: Liu Cixin
-image: /public/6574280b0a2f7fe71e8d469a957d26b10e16159b22f5231c981f799073124483.jpg
+image: /public/39d2704eed823d7e8096e0a9eb7b1342d5316df5eb7bf0a9fb608de9c495f26e.jpg
 ```
 
 ```book
