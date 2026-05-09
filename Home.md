@@ -29,7 +29,6 @@ The following are projects I'm involved in right now or in operation without dev
 
 * Xlog: Personal knowledgebase server. It's what generates this blog
 * Mau: a convention for building P2P Web 2 applications 
-* Who is popular today? : a project that collects news and people pages from Wikipedia and cross-links them together.
 * [Golang Debugger](https://github.com/emad-elsaid/debugger) : a GUI interface for Delve #go debugger
 * [Rubik's Cube timer](/timer): A timer to generate permutations of Rubik's cube and timer.
 
