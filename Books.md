@@ -154,6 +154,12 @@ image: /public/36d2acfaa75387ad2c6cbc6e70968eb831beddd80c092f25f8da4853f1a8d272.
 
 # Currently Reading
 
+```book
+title: "The Hitchhiker's Guide to the Galaxy: A Trilogy in Five Parts"
+author: Douglas Adams
+image: /public/00c738761f68c68091320e2fbe41ba5c0a4a8cb2633bf0cbd604c03b2c789628.jpg
+```
+
 # 2026 Reads
 
 ```book
