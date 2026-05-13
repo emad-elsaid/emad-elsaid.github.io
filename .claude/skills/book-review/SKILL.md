@@ -68,7 +68,7 @@ Ask these questions ONE AT A TIME, allowing user to respond before proceeding:
 ### Step 4: Build Review
 
 Replace placeholders in template:
-- `{BOOK_TITLE}` → exact title from Books.md
+- `{BOOK_BLOCK}` → the complete book block from Books.md (including ```book markers, title, author, and image)
 - `{CURRENT_DATE}` → today's date in YYYY-MM-DD format
 - `{RATING}` → numerical rating
 - Fill each section with user's responses

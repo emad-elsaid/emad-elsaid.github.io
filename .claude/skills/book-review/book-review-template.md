@@ -1,4 +1,4 @@
-# {BOOK_TITLE}
+{BOOK_BLOCK}
 
 **Reviewed on:** {CURRENT_DATE}
 

@@ -1,4 +1,8 @@
-# Dungeon Crawler Carl
+```book
+title: Dungeon Crawler Carl
+author: Matt Dinniman
+image: /public/44b812562e01dfe5eec06406a63ee6ffcc527968054e5b1bdb3bfa09a08d5a68.jpg
+```
 
 **Reviewed on:** 2026-05-13
 
