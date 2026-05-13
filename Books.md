@@ -154,13 +154,13 @@ image: /public/36d2acfaa75387ad2c6cbc6e70968eb831beddd80c092f25f8da4853f1a8d272.
 
 # Currently Reading
 
+# 2026 Reads
+
 ```book
 title: Dungeon Crawler Carl
 author: Matt Dinniman
 image: /public/44b812562e01dfe5eec06406a63ee6ffcc527968054e5b1bdb3bfa09a08d5a68.jpg
 ```
-
-# 2026 Reads
 
 ```book
 title: One Billion Years to the End of the World
