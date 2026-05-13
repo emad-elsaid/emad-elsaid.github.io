@@ -2,19 +2,13 @@
 
 **Reviewed on:** 2026-05-13
 
----
-
 ## First Impression
 
 I picked the book at Thalia bookshop and tried to read the first chapter and it hooked me instantly and decided to take it home. Matt's style is funny, punchy and has a lot of F bombs. His sarcastic style reminds me of the Hitchhiker's Guide to the Galaxy.
 
----
-
 ## Writing Style
 
 He's very funny. Creates some absurd situations and runs with it. Like the main hero starts the book running in his underwear bare foot, and ends the same way but with some pedicure and a ring on his toe 😂. His style in general is light and was a good choice to read for pleasure again.
-
----
 
 ## Core Ideas
 
@@ -26,8 +20,6 @@ Another situation where he's been on a TV show and the host started to talk abou
 
 It's pretty good and kinda hits you in the face while laughing and then you realize oh-oh that actually needs thinking not laughing.
 
----
-
 ## Enjoyment
 
 ### What I Enjoyed
@@ -38,27 +30,19 @@ I enjoyed the fast action. I didn't feel bored at any time while reading it alth
 
 Sometimes Matt describes devices or contraptions in details but it's really hard to imagine what he's describing. That part seemed off. Not sure if it's my problem or the writing itself.
 
----
-
 ## Overall Rating
 
 **4/5**
 
 I really enjoyed it but it's not as deep or philosophical as other books I enjoyed like "Speaker for the Dead" for example. So I'm leaving the 5 for the best.
 
----
-
 ## Who Is It For?
 
 I think anyone that likes video games, comedy, action and gore and sometimes disgusting scenes, will enjoy this book.
 
----
-
 ## Personal Reflection
 
 I can't say it'll leave a mark, but it definitely changed my mood at times and made me laugh at times.
-
----
 
 ## Memorable Quotes
 
