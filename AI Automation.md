@@ -13,3 +13,7 @@ With that, creating organizations could happen using only one person. Maybe even
 As the AI started a couple years ago, it was really very basic. Could do small things as part of the job and started to take over more and more complex and larger use cases. And now it can take entry or mid-level or even senior positions and it will move on and on until it takes whole organizations and maybe Groups of organizations and we'll have to stop and think or even we can't stop we'll have to just think about what is it that we are going to do in the future.
 
 As the idea of grouping people by specialization towards a single goal, which is what organizations are for right now, we have to think about grouping and utilizing AI for the good of humanity, and start to set specific goals for society and countries, and utilize AI with agents to do the mental work. This will probably leave us with what remains that the AI can't do right now, which is the physical work. Until, of course, automation with robotics and the merge with AI happens, which is not too far in the future. And at that point, we'll have to think about what is it exactly that we wanted to do as countries, as societies, as humanity.
+
+## First wave of layoffs (Individual contributors)
+
+- [Building for the future](https://blog.cloudflare.com/building-for-the-future/)
