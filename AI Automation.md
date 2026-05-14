@@ -17,3 +17,4 @@ As the idea of grouping people by specialization towards a single goal, which is
 ## First wave of layoffs (Individual contributors)
 
 - [Building for the future](https://blog.cloudflare.com/building-for-the-future/)
+- [Coinbase](https://x.com/brian_armstrong/status/2051616759145185723)
