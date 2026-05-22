@@ -45,6 +45,7 @@ jobs:
           --codestyle="catppuccin-latte" \
           --index=Home \
           --custom.head=header.html \
+          --custom.after_view=twitch-player.html \
           --sitemap.domain=www.emadelsaid.com \
           --activitypub.domain=www.emadelsaid.com \
           --activitypub.username=Emad \
