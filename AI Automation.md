@@ -20,4 +20,5 @@ As the idea of grouping people by specialization towards a single goal, which is
 - [Coinbase](https://x.com/brian_armstrong/status/2051616759145185723)
 - [Facebook](https://x.com/MikeIsaac/status/2057124374730469735)
 - [ClickUp](https://x.com/DJ_CURFEW/status/2057522382315929802)
+- [Block](https://www.reuters.com/business/blocks-fourth-quarter-profit-rises-announces-over-4000-job-cuts-2026-02-26/)
 
