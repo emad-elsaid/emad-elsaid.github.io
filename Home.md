@@ -9,6 +9,7 @@ I'm from Egypt 🇪🇬 and based in Berlin 🇩🇪. I'm a backend [software en
 
 # Social profiles
 
+* [Twitch](https://www.twitch.tv/internalerr) streams are regular and are either gaming or coding
 * [GitHub](https://www.github.com/emad-elsaid) have all my sideprojects. it's one of my hobbies.
 * [Twitter](https://www.twitter.com/emad__elsaid) will have my random ideas or photographs. 
 * [Facebook](https://www.facebook.com/emad.elsaid.hamed) for me is more about connecting to family and the Egyptian devs community
