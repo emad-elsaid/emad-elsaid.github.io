@@ -35,6 +35,6 @@ A street game used to be played in Portsaid, Egypt around late 90s early 2000.
 I believe this game isn't popular anymore. It was popular to me during my childhood but I guess kids don't play on the streets anymore and there are no more stones to collect to play the game. 
 I live in an area where it was new project so sand and stones were normal to find around. Maybe stones can be replaced by a some plastic disks or wooden plates. The idea is that it should be stackable but not too perfect. it has to add a challenge and require hand dexterity to stack them. 
 
-Thanks for Mohamed Elimam for reminding me about this game
+Thanks for Ahmed Elemam for reminding me about this game
 
 https://x.com/i/status/2070278479749185747
