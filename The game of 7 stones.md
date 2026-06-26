@@ -27,7 +27,7 @@ A street game used to be played in Portsaid, Egypt around late 90s early 2000.
 * Players from Team A, 1 of them fetch the ball, others strategize the pin down Team B players. (They're not allowed to touch each other)
 * Players from Team B meanwhile try to stack the stones
 * When Team A player fetch the ball, they pass it around to his team. to hit one of the Team B players.
-* Team B players strategize so that they're both far away and luring Team A players away from the stones to another Team B player has the chance to arrange the remaining stones
+* Team B players strategize so that they're both far away and luring Team A players away from the stones so another Team B player has the chance to arrange the remaining stones
 * There are techniques where you can sacrifice one of the Team B players in order to have some stones arranged.
 * Sometimes the stones are not perfectly stackable and they fall off mid game and Team B has to rearrange them. This is usual.
 
@@ -35,6 +35,6 @@ A street game used to be played in Portsaid, Egypt around late 90s early 2000.
 I believe this game isn't popular anymore. It was popular to me during my childhood but I guess kids don't play on the streets anymore and there are no more stones to collect to play the game. 
 I live in an area where it was new project so sand and stones were normal to find around. Maybe stones can be replaced by a some plastic disks or wooden plates. The idea is that it should be stackable but not too perfect. it has to add a challenge and require hand dexterity to stack them. 
 
-Thanks for Ahmed Elemam for reminding me about this game
+Thanks for Ahmed Elemam for reminding me of this game
 
 https://x.com/i/status/2070278479749185747
