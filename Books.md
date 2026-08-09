@@ -160,6 +160,12 @@ image: /public/36d2acfaa75387ad2c6cbc6e70968eb831beddd80c092f25f8da4853f1a8d272.
 
 # Currently Reading
 
+```book
+title: "Carl's Doomsday Scenario (Dungeon Crawler Carl, #2)"
+author: Matt Dinniman
+image: /public/bef38ff23b4fce3e7b0479fe8e2f8b26c7e0f04ff99cd6322a1268990f075b44.jpg
+```
+
 # 2026 Reads
 
 ```book
