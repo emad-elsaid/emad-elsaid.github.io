@@ -19,57 +19,21 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v7
+      - uses: emad-elsaid/xlog/action@master
         with:
-          fetch-depth: 0
-
-      - name: Allow non-ASCII character
-        run: git config core.quotepath false
-
-      - name: restore timestamps
-        uses: chetan/git-restore-mtime-action@v2
-
-      - name: Install xlog
-        env:
-          XLOG_VERSION: v1.7.12
-        run: curl --location https://github.com/emad-elsaid/xlog/releases/download/${XLOG_VERSION}/xlog-${XLOG_VERSION}-linux-amd64.tar.gz | tar -xz -C ..
-
-      - name: Build
-        run: |
-          ../xlog \
-          --build . \
-          --sitename="Emad Elsaid" \
-          --theme="light" \
-          --codestyle="catppuccin-latte" \
-          --index=Home \
-          --custom.head=header.html \
-          --custom.after_view=twitch-player.html \
-          --sitemap.domain=www.emadelsaid.com \
-          --activitypub.domain=www.emadelsaid.com \
-          --activitypub.username=Emad \
-          --activitypub.summary="A Software Engineer. Ruby Golang. 🇪🇬 Egyptian 📷 Youtuber 🎮 Casual gamer and 🚀 Sci-Fi addict. My opinions are my own" \
-          --og.domain=www.emadelsaid.com \
-          --twitter.username=@emad__elsaid \
-          --github.url=https://github.com/emad-elsaid/emad-elsaid.github.io/edit/master \
-          --rss.domain=www.emadelsaid.com \
-          --rss.description="A Software Engineer. Ruby Golang. 🇪🇬 Egyptian 📷 Youtuber 🎮 Casual gamer and 🚀 Sci-Fi addict. My opinions are my own"
-          rm *.md
-          chmod -R 0777 .
-
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: .
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+          remove-root-markdown: true
+          args: >-
+            --build .
+            --index=Home
+            --sitename="Emad Elsaid"
+            --theme="light"
+            --codestyle="catppuccin-latte"
+            --custom.head=header.html --custom.after_view=twitch-player.html
+            --sitemap.domain=www.emadelsaid.com
+            --activitypub.domain=www.emadelsaid.com --activitypub.username=Emad
+            --activitypub.summary="A Software Engineer. Ruby Golang. 🇪🇬 Egyptian 📷 Youtuber 🎮 Casual gamer and 🚀 Sci-Fi addict. My opinions are my own"
+            --og.domain=www.emadelsaid.com --twitter.username=@emad__elsaid
+            --github.url=https://github.com/emad-elsaid/emad-elsaid.github.io/edit/master
+            --rss.domain=www.emadelsaid.com
+            --rss.description="A Software Engineer. Ruby Golang. 🇪🇬 Egyptian 📷 Youtuber 🎮 Casual gamer and 🚀 Sci-Fi addict. My opinions are my own"
