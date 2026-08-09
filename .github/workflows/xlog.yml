@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: emad-elsaid/xlog/action@master
         with:
-          remove-root-markdown: true
+          version: v1.8.0
           args: >-
             --build .
             --index=Home
